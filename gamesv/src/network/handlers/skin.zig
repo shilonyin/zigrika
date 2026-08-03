@@ -13,6 +13,8 @@ const PlayerEchoComponent = @import("../../logic/component/player/PlayerEchoComp
 const CosmeticInfo = @import("../../fs/CosmeticInfo.zig");
 const RoleHelper = @import("../../logic/helpers/role.zig");
 const std = @import("std");
+const BuffTimerScheduler = @import("../../logic/schedulers/BuffTimerScheduler.zig");
+const buff_helper = @import("../../logic/helpers/buff.zig");
 
 fn buildFlyEquipData(role_comp: *PlayerRoleComponent, arena: std.mem.Allocator, skin_id: i32) !std.ArrayList(pb.EquipFlySkinData) {
     var list: std.ArrayList(pb.EquipFlySkinData) = .empty;
@@ -80,6 +82,7 @@ fn pushEntityFlySkinChange(
     scene: *Scene,
     role_id: i32,
     skin: Assets.DataTables.FlySkinConfig,
+    io: std.Io,
 ) !void {
     const slice = scene.entities.slice();
 
@@ -117,9 +120,9 @@ fn pushEntityFlySkinChange(
             .FlySkinConfigData = fly_skin_config_data,
         });
 
-        try txn.conn.push(pb.SoarWingOrParaglidingSkinChangeNotify{
+        try txn.conn.push(alloc.gpa, io, pb.SoarWingOrParaglidingSkinChangeNotify{
             .FlySkinData = fly_skin_data,
-        }, alloc.arena);
+        });
         return;
     }
 }
@@ -131,6 +134,7 @@ fn pushEntityWeaponSkinChange(
     scene: *Scene,
     role_id: i32,
     skin_id: i32,
+    io: std.Io,
 ) !void {
     const slice = scene.entities.slice();
 
@@ -149,16 +153,16 @@ fn pushEntityWeaponSkinChange(
         };
 
         try scene.saveComponents(fs, alloc.gpa, entity, &.{Scene.Entity.WeaponSkinComponent});
-        try txn.conn.push(pb.EntityEquipSkinChangeNotify{
+        try txn.conn.push(alloc.gpa, io, pb.EntityEquipSkinChangeNotify{
             .EntityId = entity.net_id,
             .WeaponSkinComponentPb = .{ .WeaponSkinId = skin_id },
-        }, alloc.arena);
+        });
 
         return;
     }
 }
 
-fn pushWeaponSkinEquipTakeOnNotify(txn: anytype, alloc: mem.Alloc, role_id: i32, skin_id: i32) !void {
+fn pushWeaponSkinEquipTakeOnNotify(txn: anytype, alloc: mem.Alloc, role_id: i32, skin_id: i32, io: std.Io) !void {
     var data_list: std.ArrayList(pb.RoleLoadEquipData) = .empty;
     try data_list.append(alloc.arena, .{
         .RoleId = role_id,
@@ -166,7 +170,7 @@ fn pushWeaponSkinEquipTakeOnNotify(txn: anytype, alloc: mem.Alloc, role_id: i32,
         .EquipIncId = skin_id,
     });
 
-    try txn.conn.push(pb.EquipTakeOnNotify{ .DataList = data_list }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.EquipTakeOnNotify{ .DataList = data_list });
 }
 
 fn buildSingleWeaponSkinEquipList(alloc: mem.Alloc, role_id: i32, skin_id: i32) !std.ArrayList(pb.LoadEquipData) {
@@ -185,6 +189,9 @@ fn refreshRoleOrnamentEntity(
     role_id: i32,
     role: anytype,
     stale_ornament_ids: []const i32,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
+    now_ms: i64,
 ) !void {
     _ = events;
     const slice = scene.entities.slice();
@@ -208,6 +215,13 @@ fn refreshRoleOrnamentEntity(
             .index = i,
             .net_id = slice.items(.entity_id)[i].net_id,
         };
+        try buff_timers.ensureEntityRegistered(
+            alloc.gpa,
+            scene,
+            assets,
+            entity.net_id,
+            now_ms,
+        );
         const combat_common: pb.CombatCommon = .{ .EntityId = entity.net_id };
         var combat_notify: pb.CombatReceivePackNotify = .{};
 
@@ -215,6 +229,7 @@ fn refreshRoleOrnamentEntity(
             for (stale_ornament_buffs.items) |entry| {
                 if (buffs.getByBuffId(entry.id)) |buff| {
                     const handle_id = buff.HandleId;
+                    buff_timers.cancelHandle(entity.net_id, handle_id);
                     buffs.removeByHandleId(alloc.gpa, handle_id);
                     try combat_notify.Data.append(alloc.arena, .{ .Message = .{
                         .CombatNotifyData = .{
@@ -230,6 +245,7 @@ fn refreshRoleOrnamentEntity(
                 }
             }
             for (ornament_buffs.items) |entry| {
+                const buff_data = assets.tables.buff.getDataById(entry.id) orelse continue;
                 scene.*.instance.buff_handle += 1;
                 buffs.fight_buff_infos = try alloc.gpa.realloc(buffs.fight_buff_infos, buffs.fight_buff_infos.len + 1);
                 buffs.fight_buff_infos[buffs.fight_buff_infos.len - 1] = .{
@@ -240,6 +256,13 @@ fn refreshRoleOrnamentEntity(
                     .EntityId = entity.net_id,
                     .IsActive = entry.is_active,
                 };
+                try buff_timers.scheduleNewBuff(
+                    alloc.gpa,
+                    buffs.fight_buff_infos[buffs.fight_buff_infos.len - 1],
+                    &buff_data,
+                    entity.net_id,
+                    now_ms,
+                );
                 try combat_notify.Data.append(alloc.arena, .{ .Message = .{
                     .CombatNotifyData = .{
                         .CombatCommon = combat_common,
@@ -255,31 +278,57 @@ fn refreshRoleOrnamentEntity(
                         },
                     },
                 } });
+                const disposition = BuffTimerScheduler.applicationDisposition(
+                    &buff_data,
+                    true,
+                    false,
+                    entry.is_active,
+                );
+                if (disposition.execute_periodic_now) {
+                    try scene.saveComponents(fs, alloc.gpa, entity, &.{Scene.Entity.FightBuffComponent});
+                    const effect_query: Scene.Query(&.{
+                        Scene.Entity,
+                        *Scene.Entity.FightBuffComponent,
+                        ?*Scene.Entity.AttributeComponent,
+                    }) = .{ .iterator = .{ .entities = &scene.entities } };
+                    try buff_helper.execute_periodic_buff_effects(
+                        &combat_notify.Data,
+                        entity.net_id,
+                        entity.net_id,
+                        &buff_data,
+                        scene,
+                        fs,
+                        io,
+                        effect_query,
+                        alloc,
+                    );
+                }
             }
             if (buffs.born_buff_ids.len != 0) alloc.gpa.free(buffs.born_buff_ids);
             buffs.born_buff_ids = ornament_born_buff_ids;
             buffs.born_message_id = if (ornament_born_buff_ids.len == 0) 0 else slice.items(.entity_id)[i].net_id;
         }
 
+        buff_timers.syncEntityLeftDurations(scene, entity.net_id, now_ms);
         try scene.saveComponents(fs, alloc.gpa, entity, &.{ Scene.Entity.OrnamentComponent, Scene.Entity.FightBuffComponent });
 
         var entity_ornament_ids: std.ArrayList(i32) = .empty;
         try entity_ornament_ids.ensureTotalCapacity(alloc.arena, ornament_ids.len);
         for (ornament_ids) |id| entity_ornament_ids.appendAssumeCapacity(id);
-        try txn.conn.push(pb.EntityDressOrnamentChangeNotify{
+        try txn.conn.push(alloc.gpa, io, pb.EntityDressOrnamentChangeNotify{
             .EntityId = entity.net_id,
             .OrnamentComponentPb = try ornament_comp.toProto(),
-        }, alloc.arena);
+        });
 
-        if (combat_notify.Data.items.len != 0) try txn.conn.push(combat_notify, alloc.arena);
+        if (combat_notify.Data.items.len != 0) try txn.conn.push(alloc.gpa, io, combat_notify);
         return;
     }
 }
 
-fn pushOrnamentEquipMap(txn: anytype, alloc: mem.Alloc, role_comp: *PlayerRoleComponent) !void {
-    try txn.conn.push(pb.OrnamentDressInfoUpdateNotify{
+fn pushOrnamentEquipMap(txn: anytype, alloc: mem.Alloc, role_comp: *PlayerRoleComponent, io: std.Io) !void {
+    try txn.conn.push(alloc.gpa, io, pb.OrnamentDressInfoUpdateNotify{
         .OrnamentDressInfos = try CosmeticsHelper.buildOrnamentEquipMap(role_comp, alloc.arena),
-    }, alloc.arena);
+    });
 }
 
 fn equippedCalabashSkinId(assets: *const Assets, role_comp: *PlayerRoleComponent) i32 {
@@ -310,6 +359,7 @@ fn pushEntityCalabashSkinChange(
     assets: *const Assets,
     scene: *Scene,
     skin_id: i32,
+    io: std.Io,
 ) !void {
     const slice = scene.entities.slice();
 
@@ -327,10 +377,10 @@ fn pushEntityCalabashSkinChange(
             .net_id = slice.items(.entity_id)[i].net_id,
         };
         try scene.saveComponents(fs, alloc.gpa, entity, &.{Scene.Entity.CalabashSkinComponent});
-        try txn.conn.push(pb.EntityCalabashSkinChangeNotify{
+        try txn.conn.push(alloc.gpa, io, pb.EntityCalabashSkinChangeNotify{
             .EntityId = entity.net_id,
             .CalabashSkinCoponent = .{ .CalabashSkinId = skin_id },
-        }, alloc.arena);
+        });
     }
 }
 
@@ -355,6 +405,7 @@ pub fn onCalabashSkinTakeOnRequest(
     assets: *const Assets,
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
+    io: std.Io,
 ) !void {
     const skin_id = txn.message.SkinId;
     if (skin_id != 0 and assets.tables.calabash_skin.getDataById(skin_id) == null) {
@@ -379,7 +430,7 @@ pub fn onCalabashSkinTakeOnRequest(
         try events.enqueue(.role_info_modified, .{ .role_id = role_id });
     }
 
-    try pushEntityCalabashSkinChange(txn, alloc, fs, assets, scene, skin_id);
+    try pushEntityCalabashSkinChange(txn, alloc, fs, assets, scene, skin_id, io);
     txn.respond(.{ .ErrorCode = .Success, .SkinId = skin_id });
 }
 
@@ -413,6 +464,7 @@ pub fn onEquipWeaponSkinRequest(
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
     cosmetic_comp: *PlayerCosmeticComponent,
+    io: std.Io,
 ) !void {
     const data = txn.message.Data orelse {
         txn.respond(.{ .ErrorCode = .RequestParamError });
@@ -432,8 +484,8 @@ pub fn onEquipWeaponSkinRequest(
     role.weapon_skin_id = data.SkinId;
     try events.enqueue(.role_info_modified, .{ .role_id = data.RoleId });
     try events.enqueue(.update_formations, .{});
-    try pushEntityWeaponSkinChange(txn, alloc, fs, scene, data.RoleId, data.SkinId);
-    try pushWeaponSkinEquipTakeOnNotify(txn, alloc, data.RoleId, data.SkinId);
+    try pushEntityWeaponSkinChange(txn, alloc, fs, scene, data.RoleId, data.SkinId, io);
+    try pushWeaponSkinEquipTakeOnNotify(txn, alloc, data.RoleId, data.SkinId, io);
 
     txn.respond(.{
         .ErrorCode = .Success,
@@ -450,6 +502,7 @@ pub fn onFlySkinWearRequest(
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
     cosmetic_comp: *PlayerCosmeticComponent,
+    io: std.Io,
 ) !void {
     const request = txn.message;
     if (!isOwnedFlySkin(cosmetic_comp.info, request.SkinId)) {
@@ -468,7 +521,7 @@ pub fn onFlySkinWearRequest(
 
     setFlySkin(role, skin);
     try events.enqueue(.role_info_modified, .{ .role_id = request.RoleId });
-    try pushEntityFlySkinChange(txn, alloc, fs, scene, request.RoleId, skin);
+    try pushEntityFlySkinChange(txn, alloc, fs, scene, request.RoleId, skin, io);
     txn.respond(.{ .ErrorCode = .Success });
 }
 
@@ -481,6 +534,7 @@ pub fn onFlySkinWearAllRoleRequest(
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
     cosmetic_comp: *PlayerCosmeticComponent,
+    io: std.Io,
 ) !void {
     const request = txn.message;
     if (!isOwnedFlySkin(cosmetic_comp.info, request.SkinId)) {
@@ -496,7 +550,7 @@ pub fn onFlySkinWearAllRoleRequest(
     while (iterator.next()) |kv| {
         setFlySkin(kv.value_ptr, skin);
         try events.enqueue(.role_info_modified, .{ .role_id = kv.key_ptr.* });
-        try pushEntityFlySkinChange(txn, alloc, fs, scene, kv.key_ptr.*, skin);
+        try pushEntityFlySkinChange(txn, alloc, fs, scene, kv.key_ptr.*, skin, io);
     }
 
     txn.respond(.{
@@ -512,6 +566,7 @@ pub fn onSendEquipSkinRequest(
     fs: *FileSystem,
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
+    io: std.Io,
 ) !void {
     const request = txn.message;
     const role = role_comp.role_map.getPtr(request.RoleId) orelse {
@@ -522,11 +577,11 @@ pub fn onSendEquipSkinRequest(
     role.weapon_skin_id = 0;
     try events.enqueue(.role_info_modified, .{ .role_id = request.RoleId });
     try events.enqueue(.update_formations, .{});
-    try pushEntityWeaponSkinChange(txn, alloc, fs, scene, request.RoleId, 0);
-    try txn.conn.push(pb.WeaponSkinDeleteNotify{
+    try pushEntityWeaponSkinChange(txn, alloc, fs, scene, request.RoleId, 0, io);
+    try txn.conn.push(alloc.gpa, io, pb.WeaponSkinDeleteNotify{
         .RoleId = request.RoleId,
         .SkinId = 0,
-    }, alloc.arena);
+    });
     txn.respond(.{ .ErrorCode = .Success });
 }
 
@@ -541,7 +596,10 @@ pub fn onRoleSkinChangeRequest(
     cosmetic_comp: *PlayerCosmeticComponent,
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
 ) !void {
+    const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
     const request = txn.message;
     const role = role_comp.role_map.getPtr(request.RoleId) orelse {
         txn.respond(.{ .ErrorCode = .RequestParamError });
@@ -572,8 +630,8 @@ pub fn onRoleSkinChangeRequest(
         if (skin) |role_skin| {
             if (isOwnedWeaponSkin(cosmetic_comp.info, role_skin.SuitWeaponSkinId) and CosmeticsHelper.isWeaponSkinCompatible(assets, request.RoleId, role_skin.SuitWeaponSkinId)) {
                 role.weapon_skin_id = role_skin.SuitWeaponSkinId;
-                try pushEntityWeaponSkinChange(txn, alloc, fs, scene, request.RoleId, role.weapon_skin_id);
-                try pushWeaponSkinEquipTakeOnNotify(txn, alloc, request.RoleId, role.weapon_skin_id);
+                try pushEntityWeaponSkinChange(txn, alloc, fs, scene, request.RoleId, role.weapon_skin_id, io);
+                try pushWeaponSkinEquipTakeOnNotify(txn, alloc, request.RoleId, role.weapon_skin_id, io);
             }
         }
     }
@@ -587,11 +645,14 @@ pub fn onRoleSkinChangeRequest(
         txn.conn,
         alloc,
         &.{request.RoleId},
+        buff_timers,
+        now_ms,
+        io,
     );
 
     try events.enqueue(.role_info_modified, .{ .role_id = request.RoleId });
     try events.enqueue(.update_formations, .{});
-    try refreshRoleOrnamentEntity(txn, events, alloc, assets, fs, scene, request.RoleId, role, stale_ornament_ids);
+    try refreshRoleOrnamentEntity(txn, events, alloc, assets, fs, scene, request.RoleId, role, stale_ornament_ids, buff_timers, io, now_ms);
 
     txn.respond(.{ .ErrorCode = .Success });
 }
@@ -605,7 +666,10 @@ pub fn onChangeOrnamentRequest(
     scene: *Scene,
     role_comp: *PlayerRoleComponent,
     cosmetic_comp: *PlayerCosmeticComponent,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
 ) !void {
+    const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
     const role_skin_id = txn.message.RoleSkinId;
     const ornament_id = txn.message.OrnamentId;
     const role_id = roleIdForSkin(assets, role_skin_id) orelse {
@@ -632,9 +696,9 @@ pub fn onChangeOrnamentRequest(
     if (changed) {
         try events.enqueue(.role_info_modified, .{ .role_id = role_id });
         try events.enqueue(.update_formations, .{});
-        try refreshRoleOrnamentEntity(txn, events, alloc, assets, fs, scene, role_id, role, stale_ornament_ids);
+        try refreshRoleOrnamentEntity(txn, events, alloc, assets, fs, scene, role_id, role, stale_ornament_ids, buff_timers, io, now_ms);
     }
 
     txn.respond(.{ .ErrorCode = .Success });
-    try pushOrnamentEquipMap(txn, alloc, role_comp);
+    try pushOrnamentEquipMap(txn, alloc, role_comp, io);
 }

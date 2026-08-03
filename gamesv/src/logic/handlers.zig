@@ -14,16 +14,27 @@ const logic_namespaces: []const type = &.{
     @import("handlers/buff.zig"),
     @import("handlers/tags.zig"),
     @import("handlers/chat.zig"),
-    @import("handlers/time.zig"),
 };
 
-pub fn drainEventQueue(event_queue: *EventQueue, state: *State) !void {
+pub fn drainEventQueue(event_queue: *EventQueue, state: *State, gpa: std.mem.Allocator, io: std.Io) !void {
     while (event_queue.deque.popFront()) |event| {
-        try dispatchLogicEvent(event_queue, event, state);
+        try dispatchLogicEvent(event_queue, event, state, gpa, io);
     }
 }
 
-fn dispatchLogicEvent(q: *EventQueue, e: EventQueue.Event, state: *State) !void {
+pub fn drainEventQueueBestEffort(event_queue: *EventQueue, state: *State, gpa: std.mem.Allocator, io: std.Io) void {
+    const log = std.log.scoped(.gameplay_deadline);
+
+    while (event_queue.deque.popFront()) |event| {
+        dispatchLogicEvent(event_queue, event, state, gpa, io) catch |err| {
+            log.err("failed to handle {s}: {t}", .{ @tagName(std.meta.activeTag(event)), err });
+        };
+    }
+}
+
+fn dispatchLogicEvent(q: *EventQueue, e: EventQueue.Event, state: *State, gpa: std.mem.Allocator, io: std.Io) !void {
+    @setEvalBranchQuota(2_000);
+
     switch (e) {
         inline else => |event, tag| {
             inline for (logic_namespaces) |namespace| {
@@ -36,7 +47,7 @@ fn dispatchLogicEvent(q: *EventQueue, e: EventQueue.Event, state: *State) !void 
                             if (!@hasDecl(EventDequeue, "dequeue_event_tag")) continue;
 
                             if (EventDequeue.dequeue_event_tag != tag) continue;
-                            try invokeEventHandler(q, event, state, @field(namespace, decl.name));
+                            try invokeEventHandler(q, event, state, gpa, io, @field(namespace, decl.name));
                         },
                         else => {},
                     }
@@ -46,7 +57,7 @@ fn dispatchLogicEvent(q: *EventQueue, e: EventQueue.Event, state: *State) !void 
     }
 }
 
-fn invokeEventHandler(q: *EventQueue, e: anytype, state: *State, handler: anytype) !void {
+fn invokeEventHandler(q: *EventQueue, e: anytype, state: *State, gpa: std.mem.Allocator, io: std.Io, handler: anytype) !void {
     const Args = std.meta.ArgsTuple(@TypeOf(handler));
 
     var args: Args = undefined;
@@ -56,7 +67,7 @@ fn invokeEventHandler(q: *EventQueue, e: anytype, state: *State, handler: anytyp
         if (param.type == *EventQueue)
             args[i] = q
         else
-            args[i] = state.extract(param.type) catch return;
+            args[i] = state.extract(gpa, io, param.type) catch return;
     }
 
     try @call(.auto, handler, args);

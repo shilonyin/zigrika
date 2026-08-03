@@ -12,9 +12,11 @@ const ArenaAllocator = std.heap.ArenaAllocator;
 const Scene = @import("../logic/Scene.zig");
 const PlayerID = @import("../logic/PlayerID.zig");
 const PlayerComponentStorage = @import("../logic/component/player/PlayerComponentStorage.zig");
+const BuffTimerScheduler = @import("../logic/schedulers/BuffTimerScheduler.zig");
+const DirtySaveQueue = @import("../logic/schedulers/DirtySaveQueue.zig");
 
-io: Io,
-gpa: Allocator,
+const log = std.log.scoped(.state);
+
 fs: *FileSystem,
 conn: *Connection,
 assets: *const Assets,
@@ -22,10 +24,11 @@ arena: ArenaAllocator,
 player_id: PlayerID,
 player_components: PlayerComponentStorage,
 scene: ?Scene,
+buff_timers: BuffTimerScheduler,
+dirty_saves: DirtySaveQueue,
 
 pub fn init(
     gpa: Allocator,
-    io: Io,
     fs: *FileSystem,
     conn: *Connection,
     assets: *const Assets,
@@ -33,8 +36,6 @@ pub fn init(
     player_id: i32,
 ) State {
     return .{
-        .io = io,
-        .gpa = gpa,
         .fs = fs,
         .conn = conn,
         .arena = .init(gpa),
@@ -42,28 +43,61 @@ pub fn init(
         .player_components = pcs,
         .player_id = .{ .id = player_id },
         .scene = null,
+        .buff_timers = .{},
+        .dirty_saves = .{},
     };
 }
 
-pub fn deinit(s: *State, fs: *FileSystem) void {
+pub fn deinit(s: *State, gpa: Allocator, io: Io, fs: *FileSystem) void {
+    const now_ms = (Io.Clock.awake).now(io).toMilliseconds();
+    if (s.scene) |*scene| {
+        DirtySaveQueue.saveAllBuffs(
+            gpa,
+            fs,
+            scene,
+            &s.buff_timers,
+            s.assets,
+            now_ms,
+        ) catch |err| {
+            log.err("failed to save buff durations during session cleanup: {t}", .{err});
+        };
+    }
+
+    s.dirty_saves.flush(
+        gpa,
+        fs,
+        &s.player_components.role,
+        &s.player_components.weapon,
+        if (s.scene) |*scene| scene else null,
+        &s.buff_timers,
+        s.assets,
+        now_ms,
+    ) catch |err| {
+        log.err("failed to flush dirty saves during session cleanup: {t}", .{err});
+    };
+
+    s.dirty_saves.deinit(gpa);
+    s.buff_timers.deinit(gpa);
     s.arena.deinit();
-    s.player_components.deinit(s.gpa);
-    if (s.scene) |*scene| scene.deinit(s.gpa, fs);
+    s.player_components.deinit(gpa);
+    if (s.scene) |*scene| scene.deinit(gpa, fs);
 }
 
-pub fn extract(s: *State, comptime T: type) !T {
-    if (T == Io) return s.io;
+pub fn extract(s: *State, gpa: Allocator, io: Io, comptime T: type) !T {
+    if (T == Io) return io;
     if (T == *FileSystem) return s.fs;
     if (T == *Connection) return s.conn;
     if (T == *const Assets) return s.assets;
     if (T == PlayerID) return s.player_id;
     if (T == mem.Alloc) return .{
-        .gpa = s.gpa,
+        .gpa = gpa,
         .arena = s.arena.allocator(),
     };
 
     if (T == *?Scene) return &s.scene;
     if (T == *Scene) return &(s.scene orelse return error.NotInScene);
+    if (T == *BuffTimerScheduler) return &s.buff_timers;
+    if (T == *DirtySaveQueue) return &s.dirty_saves;
 
     const is_struct = comptime std.meta.activeTag(@typeInfo(T)) == .@"struct";
 

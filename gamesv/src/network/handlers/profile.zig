@@ -91,14 +91,15 @@ pub fn onChangePlayerTitleRequest(
     alloc: mem.Alloc,
     assets: *const Assets,
     basic_comp: *PlayerBasicComponent,
+    io: std.Io,
 ) !void {
     if (txn.message.PlayerTitleId == 0 or assets.tables.player_title.getDataById(txn.message.PlayerTitleId) != null) {
         basic_comp.info.cur_player_title_id = txn.message.PlayerTitleId;
         try saveBasicInfo(fs, alloc.arena, basic_comp);
-        try txn.conn.push(pb.SetDressedPlayerTitleNotify{
+        try txn.conn.push(alloc.gpa, io, pb.SetDressedPlayerTitleNotify{
             .PlayerTitleId = txn.message.PlayerTitleId,
             .CurPlayerTitleId = if (txn.message.PlayerTitleId == 0) 0 else 1, // PlayerTitleExtraParam
-        }, alloc.arena);
+        });
     }
 
     txn.respond(.{ .ErrorCode = .Success });
@@ -119,10 +120,10 @@ pub fn onModifyNameRequest(
     basic_comp.info.last_modify_name_time = last_modify_name_time;
     try saveBasicInfo(fs, alloc.arena, basic_comp);
 
-    try txn.conn.push(pb.PlayerNameUpdateNotify{
+    try txn.conn.push(alloc.gpa, io, pb.PlayerNameUpdateNotify{
         .Name = basic_comp.info.attributes.name,
         .LastModifyNameTime = last_modify_name_time,
-    }, alloc.arena);
+    });
 
     txn.respond(.{
         .Name = basic_comp.info.attributes.name,
@@ -165,15 +166,16 @@ pub fn onBirthdayInitRequest(
     fs: *FileSystem,
     alloc: mem.Alloc,
     basic_comp: *PlayerBasicComponent,
+    io: std.Io,
 ) !void {
     if (txn.message.Birthday > 0) {
         basic_comp.info.birthday = txn.message.Birthday;
         basic_comp.info.display_birthday = true;
         try saveBasicInfo(fs, alloc.arena, basic_comp);
-        try txn.conn.push(pb.BirthdayInfoUpdateNotify{
+        try txn.conn.push(alloc.gpa, io, pb.BirthdayInfoUpdateNotify{
             .BirthDayReset = true,
             .RecentRewardTime = @divTrunc(basic_comp.info.birthday, 10000),
-        }, alloc.arena);
+        });
     }
 
     txn.respond(.{ .ErrorCode = .Success });

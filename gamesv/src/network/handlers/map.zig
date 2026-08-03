@@ -131,10 +131,11 @@ pub fn onMapTraceInfoRequest(
     txn: *Transaction(pb.MapTraceInfoRequest),
     map_comp: *PlayerMapComponent,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     const marks = try appendCustomMarks(alloc.arena, map_comp);
     if (marks.items.len != 0) {
-        try txn.conn.push(pb.MapMarkInfoNotify{ .InfoList = marks }, alloc.arena);
+        try txn.conn.push(alloc.gpa, io, pb.MapMarkInfoNotify{ .InfoList = marks });
     }
 
     txn.respond(.{
@@ -148,6 +149,7 @@ pub fn onMapMarkRequest(
     map_comp: *PlayerMapComponent,
     fs: *FileSystem,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     const request_mark = txn.message.MarkPointRequestInfo orelse {
         txn.respond(.{ .ErrorCode = .RequestParamError });
@@ -159,7 +161,7 @@ pub fn onMapMarkRequest(
 
     const mark = saved_mark.toPb();
 
-    try txn.conn.push(pb.MapMarkAddNotify{ .Info = mark }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.MapMarkAddNotify{ .Info = mark });
 
     txn.respond(.{
         .ErrorCode = .Success,
@@ -172,13 +174,14 @@ pub fn onRemoveMapMarkRequest(
     map_comp: *PlayerMapComponent,
     fs: *FileSystem,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     try map_comp.info.deleteCustomMarks(alloc.gpa, txn.message.MarkList.items);
     try map_comp.save(fs, alloc.arena);
 
-    try txn.conn.push(pb.MapMarkInfoNotify{
+    try txn.conn.push(alloc.gpa, io, pb.MapMarkInfoNotify{
         .InfoList = try appendCustomMarks(alloc.arena, map_comp),
-    }, alloc.arena);
+    });
 
     txn.respond(.{
         .ErrorCode = .Success,
@@ -190,6 +193,7 @@ pub fn onMapUnlockFieldInfoRequest(
     txn: *Transaction(pb.MapUnlockFieldInfoRequest),
     assets: *const Assets,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     var fields: std.ArrayList(i32) = .empty;
 
@@ -207,10 +211,10 @@ pub fn onMapUnlockFieldInfoRequest(
         try map_blocks.append(alloc.arena, block.BlockId);
     }
 
-    try txn.conn.push(pb.MapUnlockDataNotify{
+    try txn.conn.push(alloc.gpa, io, pb.MapUnlockDataNotify{
         .UnlockMultiMapIds = multi_maps,
         .UnlockMapBlockIds = map_blocks,
-    }, alloc.arena);
+    });
 
     txn.respond(.{
         .ErrorCode = .Success,
@@ -222,14 +226,15 @@ pub fn onExploreProgressRequest(
     txn: *Transaction(pb.ExploreProgressRequest),
     assets: *const Assets,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
-    try txn.conn.push(pb.ExploreLevelNotify{
+    try txn.conn.push(alloc.gpa, io, pb.ExploreLevelNotify{
         .CountryExploreLevel = try appendMaxExploreLevelEntries(alloc.arena, assets, null),
-    }, alloc.arena);
+    });
 
-    try txn.conn.push(pb.ExploreProgressRewardIdsNotify{
+    try txn.conn.push(alloc.gpa, io, pb.ExploreProgressRewardIdsNotify{
         .AreaStageRewardDataList = try appendExploreProgressRewardIds(alloc.arena, assets),
-    }, alloc.arena);
+    });
 
     var area_progress: std.ArrayList(pb.AreaExploreInfo) = .empty;
 
@@ -259,12 +264,13 @@ pub fn onCountryExploreScoreInfoRequest(
     txn: *Transaction(pb.CountryExploreScoreInfoRequest),
     assets: *const Assets,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     const country_id = txn.message.CountryId;
     const score_data = try buildCountryExploreScoreData(alloc.arena, assets, country_id);
     const levels = try appendMaxExploreLevelEntries(alloc.arena, assets, country_id);
 
-    try txn.conn.push(pb.ExploreLevelNotify{ .CountryExploreLevel = levels }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.ExploreLevelNotify{ .CountryExploreLevel = levels });
     txn.respond(.{
         .ExploreScore = score_data.score,
         .CountryExploreScoreReceived = score_data.received,

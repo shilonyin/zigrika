@@ -12,6 +12,7 @@ pub fn onCalabashLevelRewardRequest(
     fs: *FileSystem,
     assets: *const Assets,
     echo_comp: *PlayerEchoComponent,
+    io: std.Io,
 ) !void {
     const level = txn.message.Level;
     _ = assets.tables.calabash_level.getDataById(level) orelse {
@@ -25,7 +26,7 @@ pub fn onCalabashLevelRewardRequest(
     try PlayerEchoComponent.saveCalabash(alloc.gpa, fs, echo_comp.player_id, echo_comp.calabash_info);
 
     const rewarded_levels = try intList(echo_comp.calabash_info.rewarded_levels, alloc.arena);
-    try txn.conn.push(pb.CalabashLevelsRewardNotify{ .RewardedLevels = rewarded_levels }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.CalabashLevelsRewardNotify{ .RewardedLevels = rewarded_levels });
     txn.respond(.{ .ErrorCode = .Success });
 }
 

@@ -17,6 +17,7 @@ pub fn pushData(
     role_comp: *PlayerRoleComponent,
     echo_comp: *PlayerEchoComponent,
     cosmetic_comp: *PlayerCosmeticComponent,
+    io: std.Io,
 ) !void {
     var role_notify: pb.RoleConfigInfoNotify = .default;
     var iterator = role_comp.role_map.iterator();
@@ -25,7 +26,7 @@ pub fn pushData(
         try role_notify.RoleConfigs.append(alloc.arena, pb.RoleConfigInfo{ .RoleId = role.key_ptr.*, .SkillBranch = 0 });
     }
 
-    try conn.push(role_notify, alloc.arena);
+    try conn.push(alloc.gpa, io, role_notify);
     var notify: pb.FuncOpenNotify = .default;
 
     for (assets.tables.function_condition.items) |config| {
@@ -35,27 +36,27 @@ pub fn pushData(
         });
     }
 
-    try conn.push(notify, alloc.arena);
+    try conn.push(alloc.gpa, io, notify);
 
-    try conn.push(pb.AdviceSettingNotify{ .IsShow = false }, alloc.arena);
-    try conn.push(pb.ControlInfoNotify{}, alloc.arena);
-    try conn.push(pb.InstDataNotify{}, alloc.arena);
-    try conn.push(try buildCalabashMsgNotify(alloc, assets), alloc.arena);
-    try conn.push(try phantom_projector.buildUnlockNotify(alloc, assets, echo_comp.calabash_info, cosmetic_comp.info), alloc.arena);
-    try conn.push(pb.CalabashLevelsRewardNotify{
+    try conn.push(alloc.gpa, io, pb.AdviceSettingNotify{ .IsShow = false });
+    try conn.push(alloc.gpa, io, pb.ControlInfoNotify{});
+    try conn.push(alloc.gpa, io, pb.InstDataNotify{});
+    try conn.push(alloc.gpa, io, try buildCalabashMsgNotify(alloc, assets));
+    try conn.push(alloc.gpa, io, try phantom_projector.buildUnlockNotify(alloc, assets, echo_comp.calabash_info, cosmetic_comp.info));
+    try conn.push(alloc.gpa, io, pb.CalabashLevelsRewardNotify{
         .RewardedLevels = try intList(echo_comp.calabash_info.rewarded_levels, alloc.arena),
-    }, alloc.arena);
+    });
 
     var open_pkg: std.ArrayList(i32) = .empty;
     defer open_pkg.deinit(alloc.gpa);
     for (0..8) |i| {
         try open_pkg.append(alloc.gpa, @intCast(i));
     }
-    try conn.push(pb.ItemPkgOpenNotify{
+    try conn.push(alloc.gpa, io, pb.ItemPkgOpenNotify{
         .OpenPkg = open_pkg,
-    }, alloc.arena);
+    });
 
-    try conn.push(pb.BuffItemNotify{}, alloc.arena);
+    try conn.push(alloc.gpa, io, pb.BuffItemNotify{});
 
     var update_info: std.ArrayList(pb.EnergyInfo) = .empty;
     defer update_info.deinit(alloc.gpa);
@@ -69,18 +70,18 @@ pub fn pushData(
         .LastRenewEnergyTime = 0,
         .EnergyType = 6,
     });
-    try conn.push(pb.EnergyUpdateNotify{
+    try conn.push(alloc.gpa, io, pb.EnergyUpdateNotify{
         .UpdateInfo = update_info,
-    }, alloc.arena);
-    try conn.push(pb.LevelPlayInfoNotify{}, alloc.arena);
-    try conn.push(pb.PlayerVarNotify{}, alloc.arena);
-    try conn.push(pb.RoguelikeCurrencyNotify{}, alloc.arena);
-    try conn.push(pb.PassiveSkillNotify{}, alloc.arena);
-    try conn.push(pb.MailInfosNotify{}, alloc.arena);
-    try conn.push(pb.SettingNotify{}, alloc.arena);
-    try conn.push(pb.MoonChasingTrackMoonHandbookRewardNotify{}, alloc.arena);
-    try conn.push(pb.MoonChasingTargetGetCountNotify{}, alloc.arena);
-    try conn.push(pb.SilenceNpcNotify{}, alloc.arena);
+    });
+    try conn.push(alloc.gpa, io, pb.LevelPlayInfoNotify{});
+    try conn.push(alloc.gpa, io, pb.PlayerVarNotify{});
+    try conn.push(alloc.gpa, io, pb.RoguelikeCurrencyNotify{});
+    try conn.push(alloc.gpa, io, pb.PassiveSkillNotify{});
+    try conn.push(alloc.gpa, io, pb.MailInfosNotify{});
+    try conn.push(alloc.gpa, io, pb.SettingNotify{});
+    try conn.push(alloc.gpa, io, pb.MoonChasingTrackMoonHandbookRewardNotify{});
+    try conn.push(alloc.gpa, io, pb.MoonChasingTargetGetCountNotify{});
+    try conn.push(alloc.gpa, io, pb.SilenceNpcNotify{});
 }
 
 fn buildCalabashMsgNotify(alloc: mem.Alloc, assets: *const Assets) !pb.CalabashMsgNotify {

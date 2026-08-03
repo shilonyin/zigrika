@@ -20,8 +20,9 @@ const RoleAttributeSync = @import("../helpers/role_attribute_sync.zig");
 const RoleStats = @import("../../logic/helpers/role_stats.zig");
 const RoleHelper = @import("../../logic/helpers/role.zig");
 const EchoShared = @import("echo/shared.zig");
+const BuffTimerScheduler = @import("../../logic/schedulers/BuffTimerScheduler.zig");
 
-fn pushWeaponEquipNotify(txn: anytype, alloc: mem.Alloc, role_id: i32, weapon_id: i32) !void {
+fn pushWeaponEquipNotify(txn: anytype, alloc: mem.Alloc, role_id: i32, weapon_id: i32, io: std.Io) !void {
     if (weapon_id == 0) return;
 
     var data_list: std.ArrayList(pb.RoleLoadEquipData) = .empty;
@@ -32,7 +33,7 @@ fn pushWeaponEquipNotify(txn: anytype, alloc: mem.Alloc, role_id: i32, weapon_id
         .EquipIncId = weapon_id,
     });
 
-    try txn.conn.push(pb.EquipTakeOnNotify{ .DataList = data_list }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.EquipTakeOnNotify{ .DataList = data_list });
 }
 
 fn pushPhantomEquipNotify(
@@ -43,15 +44,16 @@ fn pushPhantomEquipNotify(
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
     role_id: i32,
+    io: std.Io,
 ) !void {
     var changed_roles: std.array_hash_map.Auto(i32, void) = .empty;
     defer changed_roles.deinit(alloc.gpa);
     try changed_roles.put(alloc.gpa, role_id, {});
 
-    try EchoShared.pushRolePropUpdate(txn, alloc, assets, role_comp, echo_comp, weapon_comp, changed_roles);
-    try txn.conn.push(pb.PhantomPutOnNotify{
+    try EchoShared.pushRolePropUpdate(txn, alloc, assets, role_comp, echo_comp, weapon_comp, changed_roles, io);
+    try txn.conn.push(alloc.gpa, io, pb.PhantomPutOnNotify{
         .EquipInfoList = try EchoShared.changedEquipInfoList(echo_comp, changed_roles, alloc.arena),
-    }, alloc.arena);
+    });
 }
 
 pub fn onRoleFavorListRequest(
@@ -116,7 +118,10 @@ pub fn onRoleSexChangeRequest(
     role_comp: *PlayerRoleComponent,
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
 ) !void {
+    const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
     const target_gender = txn.message.Sex;
     const current_gender = basic_comp.info.attributes.sex;
 
@@ -180,7 +185,12 @@ pub fn onRoleSexChangeRequest(
             txn.conn,
             alloc,
             &.{target_role_id},
+            buff_timers,
+            now_ms,
+            io,
         );
+        try buff_timers.ensureAllRegistered(alloc.gpa, scene, assets, now_ms);
+        buff_timers.syncAllLeftDurations(scene, now_ms);
         try scene.save(fs, alloc.gpa);
         try events.enqueue(.update_formations, .{});
     }
@@ -193,7 +203,7 @@ pub fn onRoleSexChangeRequest(
         return;
     };
 
-    try txn.conn.push(pb.RoleChangeNotify{
+    try txn.conn.push(alloc.gpa, io, pb.RoleChangeNotify{
         .SourceRoleId = source_role_id,
         .RoleInfo = try RoleStats.toClientRoleInfo(
             alloc.gpa,
@@ -205,18 +215,18 @@ pub fn onRoleSexChangeRequest(
             weapon_comp,
             echo_comp,
         ),
-    }, alloc.arena);
-    try txn.conn.push(pb.RoleChangeUnlockNotify{
+    });
+    try txn.conn.push(alloc.gpa, io, pb.RoleChangeUnlockNotify{
         .UnlockRoleIds = try RoleHelper.mainRoleUnlockList(assets, target_gender, alloc.arena),
-    }, alloc.arena);
+    });
 
     txn.respond(.{
         .ErrorCode = .Success,
         .Sex = target_gender,
     });
-    try txn.conn.push(pb.LogoutNotify{
+    try txn.conn.push(alloc.gpa, io, pb.LogoutNotify{
         .ErrorCode = .ErrSexChangeLogout,
-    }, alloc.arena);
+    });
 }
 
 pub fn onRoleElementChangeRequest(
@@ -230,7 +240,10 @@ pub fn onRoleElementChangeRequest(
     role_comp: *PlayerRoleComponent,
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
 ) !void {
+    const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
     const gender = basic_comp.info.attributes.sex;
     const target_role_id = RoleHelper.mainRoleIdForElement(assets, gender, txn.message.ElementType) orelse {
         txn.respond(.{ .ErrorCode = .ErrRoleChangeElementFunc });
@@ -265,7 +278,12 @@ pub fn onRoleElementChangeRequest(
             txn.conn,
             alloc,
             &.{target_role_id},
+            buff_timers,
+            now_ms,
+            io,
         );
+        try buff_timers.ensureAllRegistered(alloc.gpa, scene, assets, now_ms);
+        buff_timers.syncAllLeftDurations(scene, now_ms);
         try scene.save(fs, alloc.gpa);
         try events.enqueue(.update_formations, .{});
     }
@@ -275,8 +293,8 @@ pub fn onRoleElementChangeRequest(
         return;
     };
 
-    try pushWeaponEquipNotify(txn, alloc, target_role_id, target_role.weapon);
-    try txn.conn.push(pb.RoleChangeNotify{
+    try pushWeaponEquipNotify(txn, alloc, target_role_id, target_role.weapon, io);
+    try txn.conn.push(alloc.gpa, io, pb.RoleChangeNotify{
         .SourceRoleId = source_role_id,
         .RoleInfo = try RoleStats.toClientRoleInfo(
             alloc.gpa,
@@ -288,8 +306,8 @@ pub fn onRoleElementChangeRequest(
             weapon_comp,
             echo_comp,
         ),
-    }, alloc.arena);
-    try pushPhantomEquipNotify(txn, alloc, assets, role_comp, weapon_comp, echo_comp, target_role_id);
+    });
+    try pushPhantomEquipNotify(txn, alloc, assets, role_comp, weapon_comp, echo_comp, target_role_id, io);
 
     txn.respond(.{ .ErrorCode = .Success });
 }
@@ -299,7 +317,11 @@ pub fn SwitchRoleRequest(
     scene: *Scene,
     fs: *FileSystem,
     alloc: mem.Alloc,
+    assets: *const Assets,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
 ) !void {
+    const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
     const request: pb.SwitchRoleRequest = txn.payload;
     const formation = &scene.formation_info.formations[@intCast(scene.formation_info.cur_formation)];
     const previous_role = formation.cur_role;
@@ -314,6 +336,8 @@ pub fn SwitchRoleRequest(
         }
     }
 
+    try buff_timers.ensureAllRegistered(alloc.gpa, scene, assets, now_ms);
+    buff_timers.syncAllLeftDurations(scene, now_ms);
     try scene.save(fs, alloc.gpa);
     txn.respond(.{ .ErrorCode = .Success, .RoleId = request.RoleId });
 }
@@ -516,6 +540,7 @@ pub fn onRoleActivateSkillRequest(
     role_comp: *PlayerRoleComponent,
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
+    io: std.Io,
 ) !void {
     const request = txn.message;
     const role = role_comp.role_map.getPtr(request.RoleId) orelse {
@@ -541,11 +566,11 @@ pub fn onRoleActivateSkillRequest(
         });
     }
 
-    try txn.conn.push(pb.RoleSkillNodeNotify{
+    try txn.conn.push(alloc.gpa, io, pb.RoleSkillNodeNotify{
         .RoleId = request.RoleId,
         .SkillNodeState = node_states,
-    }, alloc.arena);
-    try RoleAttributeSync.refreshRole(txn, alloc, fs, scene, assets, role_comp, weapon_comp, echo_comp, stat_query, request.RoleId);
+    });
+    try RoleAttributeSync.refreshRole(txn, alloc, fs, scene, assets, role_comp, weapon_comp, echo_comp, stat_query, request.RoleId, io);
 
     txn.respond(.{
         .ErrorCode = .Success,
@@ -694,6 +719,7 @@ pub fn onResonantChainUnlockRequest(
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
     inventory_comp: *PlayerInventoryComponent,
+    io: std.Io,
 ) !void {
     const request = txn.message;
     const role = role_comp.role_map.getPtr(request.RoleId) orelse {
@@ -766,11 +792,11 @@ pub fn onResonantChainUnlockRequest(
 
     const path = try std.fmt.allocPrint(alloc.arena, "player/{}/{s}", .{ inventory_comp.player_id, InventoryInfo.data_path });
     try comp_util.saveStruct(fs, inventory_comp.info, path, alloc.arena);
-    try txn.conn.push(pb.NormalItemUpdateNotify{
+    try txn.conn.push(alloc.gpa, io, pb.NormalItemUpdateNotify{
         .NormalItemList = updated_items,
         .NoTips = true,
-    }, alloc.arena);
-    try RoleAttributeSync.refreshRole(txn, alloc, fs, scene, assets, role_comp, weapon_comp, echo_comp, stat_query, request.RoleId);
+    });
+    try RoleAttributeSync.refreshRole(txn, alloc, fs, scene, assets, role_comp, weapon_comp, echo_comp, stat_query, request.RoleId, io);
 
     txn.respond(.{
         .ErrorCode = .Success,

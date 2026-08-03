@@ -85,6 +85,8 @@ pub const NetEventHandler = struct {
     pub inline fn invoke(
         comptime handler: NetEventHandler,
         state: *State,
+        gpa: std.mem.Allocator,
+        io: Io,
         message: handler.Message,
         rpc_id: u16,
     ) !void {
@@ -107,30 +109,16 @@ pub const NetEventHandler = struct {
             if (param.type == *EventQueue)
                 args[i] = &event_queue
             else
-                args[i] = try state.extract(param.type);
+                args[i] = try state.extract(gpa, io, param.type);
         }
 
         try @call(.auto, target_fn, args);
 
-        try logic_handlers.drainEventQueue(&event_queue, state);
+        try logic_handlers.drainEventQueue(&event_queue, state, gpa, io);
 
         if (Txn.Response != void) {
             if (txn.response) |response| {
-                const name = @typeName(@TypeOf(response))[3..];
-                if (!@hasDecl(proto.pb_desc, name)) return;
-
-                const header: Message.Header.Response = .{
-                    .rpc_id = rpc_id,
-                    .seq_no = txn.conn.nextSeqNo(),
-                    .msg_id = @field(proto.pb_desc, name).msg_id,
-                };
-
-                _ = try txn.conn.kcp.send(try Message.encodeAlloc(
-                    .{ .response = header },
-                    response,
-                    state.arena.allocator(),
-                    txn.conn.session_key,
-                ));
+                try txn.conn.respond(gpa, io, rpc_id, response);
             } else log.err("response of type {s} is not set", .{@typeName(Txn.Response)});
         }
     }
@@ -173,18 +161,10 @@ const MessageId = build_enum: {
 
 pub fn dispatchMessage(
     state: *State,
+    gpa: std.mem.Allocator,
+    io: Io,
     message: Message,
 ) !void {
-    if (state.scene != null) {
-        var event_queue: EventQueue = .{ .arena = state.arena.allocator() };
-        event_queue.enqueue(.tick_time, .{}) catch |err| {
-            log.err("failed to tick time: {t}", .{err});
-        };
-
-        logic_handlers.drainEventQueue(&event_queue, state) catch |err| {
-            log.err("failed to execute tick event chain: {t}", .{err});
-        };
-    }
     const message_id = std.enums.fromInt(MessageId, message.header.getMessageId()) orelse return error.HandlerNotFound;
     const rpc_id = switch (message.header) {
         .request => |request| request.rpc_id,
@@ -201,9 +181,12 @@ pub fn dispatchMessage(
                 return;
             };
 
-            handler.invoke(state, msg, rpc_id) catch |err| {
-                log.err("failed to handle message of type {s}: {}", .{ @typeName(handler.Message), err });
-                return;
+            handler.invoke(state, gpa, io, msg, rpc_id) catch |err| switch (err) {
+                error.Closed, error.Canceled => return err,
+                else => {
+                    log.err("failed to handle message of type {s}: {}", .{ @typeName(handler.Message), err });
+                    return;
+                },
             };
 
             log.debug("handled message of type {s}", .{@typeName(handler.Message)});

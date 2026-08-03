@@ -12,6 +12,7 @@ const starter_bot_msg = "use \"help\" to get a list of commands.";
 pub fn onPrivateChatDataRequest(
     txn: *Transaction(pb.PrivateChatDataRequest),
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     var chat_content_history: std.ArrayList(pb.ChatContentProto) = .empty;
     defer chat_content_history.deinit(alloc.gpa);
@@ -31,22 +32,23 @@ pub fn onPrivateChatDataRequest(
         .HistoryIsEnd = false,
         .TotalNums = 1,
     });
-    try txn.conn.push(pb.PrivateChatHistoryNotify{ .AllChats = chat_history }, alloc.arena);
+    try txn.conn.push(alloc.gpa, io, pb.PrivateChatHistoryNotify{ .AllChats = chat_history });
     txn.respond(.{ .LoadSucc = true });
 }
 
 pub fn onPrivateChatHistoryRequest(
     txn: *Transaction(pb.PrivateChatHistoryRequest),
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     if (txn.message.TargetUid == chat_bot_uid) {
-        try txn.conn.push(pb.PrivateMessageNotify{ .ChatContent = .{
+        try txn.conn.push(alloc.gpa, io, pb.PrivateMessageNotify{ .ChatContent = .{
             .SenderUid = chat_bot_uid,
             .ChatContentType = .Text,
             .Content = starter_bot_msg,
             .OfflineMsg = false,
             .UtcTime = 0,
-        } }, alloc.arena);
+        } });
     }
     txn.respond(.{});
 }
@@ -55,8 +57,10 @@ pub fn onPrivateChatRequest(
     txn: *Transaction(pb.PrivateChatRequest),
     state: *State,
     events: *EventQueue,
+    alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
-    commands.dispatch(state, events, txn.message.Content) catch |err| {
+    commands.dispatch(state, alloc.gpa, io, events, txn.message.Content) catch |err| {
         try events.enqueue(.chat_command_response, .{ .content = @errorName(err) });
     };
 

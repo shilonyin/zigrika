@@ -1,7 +1,8 @@
+const std = @import("std");
 const pb = @import("proto").pb;
-const mem = @import("../../mem.zig");
 const EventQueue = @import("../EventQueue.zig");
 const Connection = @import("../../network/Connection.zig");
+const mem = @import("../../mem.zig");
 
 pub fn runEnterGamePhase(
     _: EventQueue.Dequeue(.enter_game),
@@ -17,7 +18,8 @@ pub fn notifyPushDataComplete(
     _: EventQueue.Dequeue(.push_data_complete),
     conn: *Connection,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
-    try conn.push(pb.PushContextIdNotify{ .Id = 0 }, alloc.arena);
-    try conn.push(pb.PushDataCompleteNotify{}, alloc.arena);
+    try conn.push(alloc.gpa, io, pb.PushContextIdNotify{ .Id = 0 });
+    try conn.push(alloc.gpa, io, pb.PushDataCompleteNotify{});
 }

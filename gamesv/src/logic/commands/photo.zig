@@ -15,6 +15,7 @@ pub const photo = struct {
         conn: *Connection,
         alloc: mem.Alloc,
         mode: ?bool,
+        io: std.Io,
     ) !void {
         if (mode orelse true) {
             const fight_photo_notify = pb.FightPhotoLevelDataUpdateNotify{
@@ -102,14 +103,14 @@ pub const photo = struct {
                 .Status = .Progress,
             };
 
-            try conn.push(fight_photo_notify, alloc.arena);
-            try conn.push(instance_dungeon_notify, alloc.arena);
-            try conn.push(behavior_tree_info_notify, alloc.arena);
-            try conn.push(update_node_status_notify, alloc.arena);
-            try conn.push(child_quest_notify_1, alloc.arena);
-            try conn.push(child_quest_notify_2, alloc.arena);
-            try conn.push(level_event_notify, alloc.arena);
-            try conn.push(child_quest_notify_3, alloc.arena);
+            try conn.push(alloc.gpa, io, fight_photo_notify);
+            try conn.push(alloc.gpa, io, instance_dungeon_notify);
+            try conn.push(alloc.gpa, io, behavior_tree_info_notify);
+            try conn.push(alloc.gpa, io, update_node_status_notify);
+            try conn.push(alloc.gpa, io, child_quest_notify_1);
+            try conn.push(alloc.gpa, io, child_quest_notify_2);
+            try conn.push(alloc.gpa, io, level_event_notify);
+            try conn.push(alloc.gpa, io, child_quest_notify_3);
 
             try events.enqueue(.chat_command_response, .{ .content = "photo event enabled." });
         } else {
@@ -121,7 +122,7 @@ pub const photo = struct {
                 },
             };
 
-            try conn.push(behavior_tree_delete_notify, alloc.arena);
+            try conn.push(alloc.gpa, io, behavior_tree_delete_notify);
 
             try events.enqueue(.chat_command_response, .{ .content = "photo event disabled." });
         }

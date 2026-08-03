@@ -11,12 +11,13 @@ pub fn onFlowEndRequest(
     fs: *FileSystem,
     conn: *Connection,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     const js = try Io.Dir.readFileAlloc(Io.Dir.cwd(), fs.io, "assets/scripts/misc_patches/flow_ender.js", alloc.gpa, Io.Limit.unlimited);
     defer alloc.gpa.free(js);
-    try conn.push(pb.JSPatchNotify{
+    try conn.push(alloc.gpa, io, pb.JSPatchNotify{
         .Content = js,
-    }, alloc.arena);
+    });
 
     txn.respond(.{});
 }

@@ -16,6 +16,7 @@ pub fn pushData(
     assets: *const Assets,
     basic_comp: *const PlayerBasicComponent,
     role_comp: *const PlayerRoleComponent,
+    io: std.Io,
 ) !void {
     var notify: pb.BasicInfoNotify = .{ .Id = player_id.id };
 
@@ -29,12 +30,12 @@ pub fn pushData(
     notify.LastModifyNameTime = basic_comp.info.last_modify_name_time;
     notify.ModifyNameTime = "";
 
-    try conn.push(notify, alloc.arena);
+    try conn.push(alloc.gpa, io, notify);
     if (basic_comp.info.cur_player_title_id > 0) {
-        try conn.push(pb.SetDressedPlayerTitleNotify{
+        try conn.push(alloc.gpa, io, pb.SetDressedPlayerTitleNotify{
             .PlayerTitleId = basic_comp.info.cur_player_title_id,
             .CurPlayerTitleId = 1, // PlayerTitleExtraParam
-        }, alloc.arena);
+        });
     }
 }
 

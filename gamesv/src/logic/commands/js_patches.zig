@@ -18,9 +18,9 @@ pub const sequence_patch = struct {
         const js_path = try std.fmt.allocPrint(alloc.arena, "assets/scripts/sequence_patch_profiles/{d}.js", .{mode});
         const js = try Io.Dir.readFileAlloc(Io.Dir.cwd(), io, js_path, alloc.arena, Io.Limit.unlimited);
 
-        try conn.push(pb.JSPatchNotify{
+        try conn.push(alloc.gpa, io, pb.JSPatchNotify{
             .Content = js,
-        }, alloc.arena);
+        });
 
         try events.enqueue(.chat_command_response, .{ .content = "successfully applied sequence patch mode." });
     }
@@ -35,9 +35,9 @@ pub const reset_cd = struct {
         alloc: mem.Alloc,
         io: Io,
     ) !void {
-        try conn.push(pb.JSPatchNotify{
+        try conn.push(alloc.gpa, io, pb.JSPatchNotify{
             .Content = try Io.Dir.readFileAlloc(Io.Dir.cwd(), io, "assets/scripts/misc_patches/cd_ender.js", alloc.arena, Io.Limit.unlimited),
-        }, alloc.arena);
+        });
 
         try events.enqueue(.chat_command_response, .{ .content = "successfully reset cooldown." });
     }
@@ -57,9 +57,9 @@ pub const weather = struct {
         const weather_id_str = try std.fmt.allocPrint(alloc.arena, "{d}", .{weather_id});
         const js = try std.mem.replaceOwned(u8, alloc.arena, js_raw, "{WEATHER_ID}", weather_id_str);
 
-        try conn.push(pb.JSPatchNotify{
+        try conn.push(alloc.gpa, io, pb.JSPatchNotify{
             .Content = js,
-        }, alloc.arena);
+        });
         try events.enqueue(.chat_command_response, .{ .content = "set weather successfully" });
     }
 };
@@ -78,9 +78,9 @@ pub const team_cd_controller = struct {
         const controller_type_str = try std.fmt.allocPrint(alloc.arena, "{d}", .{controller_type});
         const js = try std.mem.replaceOwned(u8, alloc.arena, js_raw, "{CONTROLLER_TYPE}", controller_type_str);
 
-        try conn.push(pb.JSPatchNotify{
+        try conn.push(alloc.gpa, io, pb.JSPatchNotify{
             .Content = js,
-        }, alloc.arena);
+        });
         try events.enqueue(.chat_command_response, .{ .content = "changed controller successfully" });
     }
 };
@@ -94,9 +94,9 @@ pub const timer_bind = struct {
         alloc: mem.Alloc,
         io: Io,
     ) !void {
-        try conn.push(pb.JSPatchNotify{
+        try conn.push(alloc.gpa, io, pb.JSPatchNotify{
             .Content = try Io.Dir.readFileAlloc(Io.Dir.cwd(), io, "assets/scripts/misc_patches/timer_bind.js", alloc.arena, Io.Limit.unlimited),
-        }, alloc.arena);
+        });
 
         try events.enqueue(.chat_command_response, .{ .content = "successfully binded." });
     }

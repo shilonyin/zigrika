@@ -35,7 +35,7 @@ fn parseArg(comptime T: type, s: []const u8) !T {
     };
 }
 
-pub fn dispatch(state: *State, events: *EventQueue, input: []const u8) !void {
+pub fn dispatch(state: *State, gpa: std.mem.Allocator, io: std.Io, events: *EventQueue, input: []const u8) !void {
     var commands = std.mem.splitScalar(u8, input, ';');
     while (commands.next()) |command| {
         var tokens: [64][]const u8 = undefined;
@@ -104,10 +104,10 @@ pub fn dispatch(state: *State, events: *EventQueue, input: []const u8) !void {
                             } else if (param.type == *EventQueue) {
                                 args[i] = events;
                             } else {
-                                args[i] = try state.extract(param.type);
+                                args[i] = try state.extract(gpa, io, param.type);
                             },
                             else => {
-                                args[i] = try state.extract(param.type);
+                                args[i] = try state.extract(gpa, io, param.type);
                             },
                         }
                     }

@@ -31,6 +31,7 @@ pub fn onTeleportTransferRequest(
     events: *EventQueue,
     alloc: mem.Alloc,
     scene_comp: *PlayerSceneComponent,
+    io: std.Io,
 ) !void {
     const teleporter = assets.tables.teleporter.getDataById(txn.message.Id) orelse {
         txn.respond(.{ .ErrorCode = .ErrTeleportIdNotExist });
@@ -53,16 +54,16 @@ pub fn onTeleportTransferRequest(
     const z = raw.Z / scale.Z;
 
     if (scene_comp.last_scene_info.instance_id == teleporter.MapId) {
-        try txn.conn.push(pb.TeleportNotify{
+        try txn.conn.push(alloc.gpa, io, pb.TeleportNotify{
             .MapId = teleporter.MapId,
             .Pos = .{ .X = x, .Y = y, .Z = z },
-        }, alloc.arena);
+        });
     } else {
-        try txn.conn.push(pb.LeaveSceneNotify{
+        try txn.conn.push(alloc.gpa, io, pb.LeaveSceneNotify{
             .PlayerId = scene_comp.player_id,
             .SceneId = "",
             .TransitionOption = .{},
-        }, alloc.arena);
+        });
         scene_comp.last_scene_info.instance_id = teleporter.MapId;
         try scene.saveLastScene(scene_comp, fs, alloc.gpa);
         try events.enqueue(.initial_scene_join, .{ .location = .{ x, y, z } });

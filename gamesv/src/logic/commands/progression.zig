@@ -40,6 +40,7 @@ pub const resonance_item = struct {
         }),
         subject: ?[]const u8,
         action: ?[]const u8,
+        io: std.Io,
     ) !void {
         const token = subject orelse {
             try respond(events, alloc.arena, "no character specified", .{});
@@ -52,7 +53,7 @@ pub const resonance_item = struct {
 
         if (action) |value| {
             if (std.ascii.eqlIgnoreCase(value, "clear")) {
-                try clearWavebands(events, alloc, assets, fs, conn, scene, inventory_comp, role_comp, weapon_comp, echo_comp, query, token);
+                try clearWavebands(events, alloc, assets, fs, conn, scene, inventory_comp, role_comp, weapon_comp, echo_comp, query, token, io);
                 return;
             }
         }
@@ -74,15 +75,15 @@ pub const resonance_item = struct {
             .ExpireTime = 0,
         });
         if (old_count == 0) {
-            try conn.push(pb.NormalItemAddNotify{
+            try conn.push(alloc.gpa, io, pb.NormalItemAddNotify{
                 .NormalItemList = updated_items,
                 .NoTips = true,
-            }, alloc.arena);
+            });
         } else {
-            try conn.push(pb.NormalItemUpdateNotify{
+            try conn.push(alloc.gpa, io, pb.NormalItemUpdateNotify{
                 .NormalItemList = updated_items,
                 .NoTips = true,
-            }, alloc.arena);
+            });
         }
 
         try respond(events, alloc.arena, "granted {d} wavebands for {s} ({d}, total {d})", .{
@@ -114,6 +115,7 @@ pub const weapon_item = struct {
         }),
         subject: ?[]const u8,
         action: ?[]const u8,
+        io: std.Io,
     ) !void {
         const token = subject orelse {
             try respond(events, alloc.arena, "weapon must be specified", .{});
@@ -126,7 +128,7 @@ pub const weapon_item = struct {
         const weapon_id = try resolveWeaponId(events, alloc, assets, scene, role_comp, weapon_comp, token) orelse return;
         if (action) |value| {
             if (std.ascii.eqlIgnoreCase(value, "clear")) {
-                try clearWeaponCopies(events, alloc, assets, fs, conn, query, weapon_comp, weapon_id);
+                try clearWeaponCopies(events, alloc, assets, fs, conn, query, weapon_comp, weapon_id, io);
                 return;
             }
         }
@@ -138,7 +140,7 @@ pub const weapon_item = struct {
 
         var added: std.ArrayList(pb.WeaponItem) = .empty;
         try addWeaponCopies(alloc, fs, assets, weapon_comp, weapon_id, count, &added);
-        try pushWeaponAdds(conn, alloc, added);
+        try pushWeaponAdds(conn, alloc, added, io);
         try respond(events, alloc.arena, "granted {d} copies of weapon {d}", .{ count, weapon_id });
     }
 };
@@ -193,13 +195,14 @@ fn pushWeaponAdds(
     conn: *Connection,
     alloc: mem.Alloc,
     added: std.ArrayList(pb.WeaponItem),
+    io: std.Io,
 ) !void {
     if (added.items.len == 0) return;
-    try conn.push(pb.WeaponItemAddNotify{
+    try conn.push(alloc.gpa, io, pb.WeaponItemAddNotify{
         .WeaponItemList = added,
         .AddFromRole = false,
         .Reason = 0,
-    }, alloc.arena);
+    });
 }
 
 fn currentWeaponId(
@@ -260,6 +263,7 @@ fn clearWeaponCopies(
     }),
     weapon_comp: *PlayerWeaponComponent,
     weapon_id: i32,
+    io: std.Io,
 ) !void {
     var removed_ids: std.ArrayList(i32) = .empty;
     var updated_items: std.ArrayList(pb.WeaponItem) = .empty;
@@ -312,9 +316,9 @@ fn clearWeaponCopies(
     }
 
     if (removed_ids.items.len != 0) {
-        try conn.push(pb.WeaponItemRemoveNotify{ .WeaponItemIncrIdList = removed_ids }, alloc.arena);
+        try conn.push(alloc.gpa, io, pb.WeaponItemRemoveNotify{ .WeaponItemIncrIdList = removed_ids });
     }
-    try pushWeaponAdds(conn, alloc, updated_items);
+    try pushWeaponAdds(conn, alloc, updated_items, io);
     try respond(events, alloc.arena, "cleared weapon {d}", .{weapon_id});
 }
 
@@ -335,6 +339,7 @@ fn clearWavebands(
         *Scene.Entity.ConfigComponent,
     }),
     token: []const u8,
+    io: std.Io,
 ) !void {
     if (std.ascii.eqlIgnoreCase(token, "all")) {
         try respond(events, alloc.arena, "no character specified", .{});
@@ -383,15 +388,15 @@ fn clearWavebands(
                 weapon_comp,
                 echo_comp,
             ));
-            try conn.push(pb.PbGetRoleListNotify{ .RoleList = role_list }, alloc.arena);
+            try conn.push(alloc.gpa, io, pb.PbGetRoleListNotify{ .RoleList = role_list });
         }
     }
 
     try saveInventoryInfo(alloc, fs, inventory_comp);
-    try conn.push(pb.NormalItemUpdateNotify{
+    try conn.push(alloc.gpa, io, pb.NormalItemUpdateNotify{
         .NormalItemList = updated_items,
         .NoTips = true,
-    }, alloc.arena);
+    });
     try respond(events, alloc.arena, "cleared wavebands for {s}", .{token});
 }
 

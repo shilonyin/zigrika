@@ -13,8 +13,23 @@ const Account = @import("../../fs/Account.zig");
 const FileSystem = @import("common").FileSystem;
 
 const proto_key_type: i32 = 2;
+const reconnect_token_bytes = 32;
 
-pub fn handleAuthGroupRequest(message: Message, conn: *Connection, fs: *FileSystem, gpa: Allocator, player_id: *?i32, enter: *bool) !void {
+pub const PendingReconnect = struct {
+    rpc_id: u16,
+    last_server_seq_no: i32,
+};
+
+pub fn handleAuthGroupRequest(
+    message: Message,
+    conn: *Connection,
+    fs: *FileSystem,
+    gpa: Allocator,
+    io: Io,
+    player_id: *?i32,
+    enter: *bool,
+    pending_reconnect: *?PendingReconnect,
+) !void {
     if (std.meta.activeTag(message.header) != .request) return error.InvalidMessageType;
     const auth_message_type = std.enums.fromInt(AuthMessageType, message.header.request.msg_id) orelse return error.UnexpectedMessageId;
 
@@ -23,7 +38,7 @@ pub fn handleAuthGroupRequest(message: Message, conn: *Connection, fs: *FileSyst
             inline for (comptime std.meta.declarations(@This())) |decl| {
                 switch (@typeInfo(@TypeOf(@field(@This(), decl.name)))) {
                     .@"fn" => |f| {
-                        if (f.params.len != 3) continue;
+                        if (f.params.len != 5) continue;
                         const Context = f.params[0].type.?;
                         if (!@hasDecl(Context, "Request")) continue;
 
@@ -41,7 +56,8 @@ pub fn handleAuthGroupRequest(message: Message, conn: *Connection, fs: *FileSyst
                             .conn = conn,
                             .player_id = player_id,
                             .enter = enter,
-                        }, arena.allocator(), fs);
+                            .pending_reconnect = pending_reconnect,
+                        }, arena.allocator(), fs, gpa, io);
                     },
                     else => {},
                 }
@@ -56,7 +72,7 @@ const AuthMessageType = blk: {
     for (std.meta.declarations(@This())) |decl| {
         switch (@typeInfo(@TypeOf(@field(@This(), decl.name)))) {
             .@"fn" => |f| {
-                if (f.params.len != 3) continue;
+                if (f.params.len != 5) continue;
                 const Context = f.params[0].type.?;
 
                 if (!@hasDecl(Context, "Request")) continue;
@@ -84,28 +100,15 @@ fn AuthContext(comptime R: type) type {
         conn: *Connection,
         player_id: *?i32,
         enter: *bool,
+        pending_reconnect: *?PendingReconnect,
 
-        pub fn respond(ac: @This(), response: anytype, arena: Allocator) !void {
-            const name = @typeName(@TypeOf(response))[3..];
-            if (!@hasDecl(proto.pb_desc, name)) return;
-
-            const header: Message.Header.Response = .{
-                .rpc_id = ac.rpc_id,
-                .seq_no = ac.conn.nextSeqNo(),
-                .msg_id = @field(proto.pb_desc, name).msg_id,
-            };
-
-            _ = try ac.conn.kcp.send(try Message.encodeAlloc(
-                .{ .response = header },
-                response,
-                arena,
-                ac.conn.session_key,
-            ));
+        pub fn respond(ac: @This(), gpa: Allocator, io: Io, response: anytype) !void {
+            try ac.conn.respond(gpa, io, ac.rpc_id, response);
         }
     };
 }
 
-pub fn handleProtoKeyRequest(ac: AuthContext(pb.ProtoKeyRequest), arena: Allocator, fs: *FileSystem) !void {
+pub fn handleProtoKeyRequest(ac: AuthContext(pb.ProtoKeyRequest), arena: Allocator, fs: *FileSystem, gpa: Allocator, io: Io) !void {
     const log = std.log.scoped(.proto_key);
     log.debug("request: {}", .{ac.request});
 
@@ -117,63 +120,92 @@ pub fn handleProtoKeyRequest(ac: AuthContext(pb.ProtoKeyRequest), arena: Allocat
     var encrypted_key: [encryption.pkcsv1_5_padded_size]u8 = undefined;
     try encryption.rsaEncrypt(public_key_der, session_key[0..], encrypted_key[0..], fs.io);
 
-    try ac.respond(pb.ProtoKeyResponse{
+    try ac.respond(gpa, io, pb.ProtoKeyResponse{
         .Type = proto_key_type,
         .Key = encrypted_key[0..],
-    }, arena);
+    });
 
     ac.conn.session_key = session_key;
 }
 
-pub fn handleLoginRequest(ac: AuthContext(pb.LoginRequest), arena: Allocator, fs: *FileSystem) !void {
+pub fn handleLoginRequest(ac: AuthContext(pb.LoginRequest), arena: Allocator, fs: *FileSystem, gpa: Allocator, io: Io) !void {
     const log = std.log.scoped(.login);
     log.debug("request: {}", .{ac.request});
 
     const account = try Account.loadOrCreate(arena, fs, ac.request.Account);
     ac.player_id.* = account.player_id;
 
-    try ac.respond(pb.LoginResponse{
+    try ac.respond(gpa, io, pb.LoginResponse{
+        .ReconnectToken = try issueReconnectToken(arena, fs, account.player_id),
         .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
-    }, arena);
+    });
 }
 
-pub fn handleReconnectRequest(ac: AuthContext(pb.ReconnectRequest), arena: Allocator, fs: *FileSystem) !void {
+pub fn handleReconnectRequest(ac: AuthContext(pb.ReconnectRequest), arena: Allocator, fs: *FileSystem, gpa: Allocator, io: Io) !void {
     const log = std.log.scoped(.reconnect);
     log.debug("request: {}", .{ac.request});
 
     if (ac.request.PlayerId <= 0) {
-        try ac.respond(pb.ReconnectResponse{
+        try ac.respond(gpa, io, pb.ReconnectResponse{
             .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
             .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
             .IsPermittedSilentLogin = true,
-        }, arena);
+        });
         return;
     }
 
     const basic_info_path = try std.fmt.allocPrint(arena, "player/{}/basic_info", .{ac.request.PlayerId});
     if (try fs.readFile(arena, basic_info_path) == null) {
-        try ac.respond(pb.ReconnectResponse{
+        try ac.respond(gpa, io, pb.ReconnectResponse{
             .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
             .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
             .IsPermittedSilentLogin = true,
-        }, arena);
+        });
+        return;
+    }
+
+    if (!try validateReconnectToken(arena, fs, ac.request.PlayerId, ac.request.ReconnectToken)) {
+        try ac.respond(gpa, io, pb.ReconnectResponse{
+            .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
+            .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
+            .IsPermittedSilentLogin = true,
+        });
         return;
     }
 
     ac.player_id.* = ac.request.PlayerId;
     ac.enter.* = true;
-    try ac.respond(pb.ReconnectResponse{
-        .ErrorCode = .Success,
-        .LastRecvSeqNo = ac.request.LastSvrSeqNo,
-        .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
-    }, arena);
+    ac.pending_reconnect.* = .{
+        .rpc_id = ac.rpc_id,
+        .last_server_seq_no = ac.request.LastSvrSeqNo,
+    };
 }
 
-pub fn handleEnterGameRequest(ac: AuthContext(pb.EnterGameRequest), arena: Allocator, fs: *FileSystem) !void {
+pub fn handleEnterGameRequest(ac: AuthContext(pb.EnterGameRequest), _: Allocator, fs: *FileSystem, gpa: Allocator, io: Io) !void {
     const log = std.log.scoped(.enter_game);
     log.debug("request: {}", .{ac.request});
 
     _ = fs;
     ac.enter.* = true; // switch state
-    try ac.respond(pb.EnterGameResponse{}, arena);
+    try ac.respond(gpa, io, pb.EnterGameResponse{});
+}
+
+fn issueReconnectToken(arena: Allocator, fs: *FileSystem, player_id: i32) ![]const u8 {
+    var random: [reconnect_token_bytes]u8 = undefined;
+    Io.random(fs.io, &random);
+
+    const token_hex = std.fmt.bytesToHex(random, .lower);
+    const token = try arena.dupe(u8, &token_hex);
+    try fs.writeFile(try reconnectTokenPath(arena, player_id), token);
+    return token;
+}
+
+fn validateReconnectToken(arena: Allocator, fs: *FileSystem, player_id: i32, token: []const u8) !bool {
+    if (token.len != reconnect_token_bytes * 2) return false;
+    const saved = try fs.readFile(arena, try reconnectTokenPath(arena, player_id)) orelse return false;
+    return std.mem.eql(u8, saved, token);
+}
+
+fn reconnectTokenPath(arena: Allocator, player_id: i32) ![]const u8 {
+    return std.fmt.allocPrint(arena, "player/{}/reconnect_token", .{player_id});
 }

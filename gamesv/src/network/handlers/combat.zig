@@ -58,6 +58,8 @@ pub fn dispatch(
     comptime DataType: type,
     data: DataType,
     state: *State,
+    gpa: std.mem.Allocator,
+    io: std.Io,
     events: *EventQueue,
     receive_data_pack: ?*std.ArrayList(pb.CombatReceiveData),
 ) !?pb.CombatReceiveData {
@@ -100,7 +102,7 @@ pub fn dispatch(
                     if (param.type == *EventQueue)
                         args[i] = events
                     else
-                        args[i] = try state.extract(param.type);
+                        args[i] = try state.extract(gpa, io, param.type);
                 }
 
                 try @call(.auto, target_fn, args);
@@ -117,7 +119,7 @@ pub fn dispatch(
                     else if (param.type == ?pb.CombatCommon)
                         args[i] = data.CombatCommon
                     else
-                        args[i] = try state.extract(param.type);
+                        args[i] = try state.extract(gpa, io, param.type);
                 }
 
                 try @call(.auto, target_fn, args);
@@ -131,6 +133,8 @@ pub fn dispatch(
 pub fn onCombatSendPackRequest(
     txn: *Transaction(pb.CombatSendPackRequest),
     state: *State,
+    alloc: mem.Alloc,
+    io: std.Io,
     events: *EventQueue,
 ) !void {
     var receive_data_pack: std.ArrayList(pb.CombatReceiveData) = .empty;
@@ -140,11 +144,11 @@ pub fn onCombatSendPackRequest(
         switch (inner) {
             .Push => |maybe_push| {
                 const push = maybe_push orelse continue;
-                _ = try dispatch(pb.CombatPushData, push, state, events, null);
+                _ = try dispatch(pb.CombatPushData, push, state, alloc.gpa, io, events, null);
             },
             .Request => |maybe_req| {
                 const req = maybe_req orelse continue;
-                if (try dispatch(pb.CombatRequestData, req, state, events, &receive_data_pack)) |response| {
+                if (try dispatch(pb.CombatRequestData, req, state, alloc.gpa, io, events, &receive_data_pack)) |response| {
                     try receive_data_pack.append(state.arena.allocator(), response);
                 }
             },

@@ -104,6 +104,7 @@ pub const echo = struct {
         tier4: ?i32,
         sub5: ?[]const u8,
         tier5: ?i32,
+        io: std.Io,
     ) !void {
         const item = assets.tables.phantom_item.getDataById(echo_item_id) orelse {
             try respond(events, alloc.arena, "unknown Echo item id: {d}", .{echo_item_id});
@@ -151,7 +152,7 @@ pub const echo = struct {
 
         var list: std.ArrayList(pb.PhantomItem) = .empty;
         try list.append(alloc.arena, try new_echo.toProto(incr_id, alloc.arena));
-        try conn.push(pb.PhantomItemAddNotify{ .PhantomItemList = list }, alloc.arena);
+        try conn.push(alloc.gpa, io, pb.PhantomItemAddNotify{ .PhantomItemList = list });
 
         try respond(events, alloc.arena, "created Echo {d} with incr id {d}", .{ echo_item_id, incr_id });
     }

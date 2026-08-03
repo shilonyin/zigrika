@@ -1,3 +1,4 @@
+const std = @import("std");
 const pb = @import("proto").pb;
 const EventQueue = @import("../../logic/EventQueue.zig");
 const Scene = @import("../../logic/Scene.zig");
@@ -17,14 +18,15 @@ pub const map = struct {
         conn: *Connection,
         scene_comp: *PlayerSceneComponent,
         map_id: i32,
+        io: std.Io,
     ) !void {
         try events.enqueue(.chat_command_response, .{ .content = "sending to map..." });
 
-        try conn.push(pb.LeaveSceneNotify{
+        try conn.push(alloc.gpa, io, pb.LeaveSceneNotify{
             .PlayerId = scene_comp.player_id,
             .SceneId = "",
             .TransitionOption = .{},
-        }, alloc.arena);
+        });
         scene_comp.last_scene_info.instance_id = map_id;
         try scene.saveLastScene(scene_comp, fs, alloc.gpa);
         try events.enqueue(.initial_scene_join, .{});

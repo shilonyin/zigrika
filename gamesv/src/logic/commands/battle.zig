@@ -14,6 +14,7 @@ pub const battle = struct {
         conn: *Connection,
         alloc: mem.Alloc,
         mode: bool,
+        io: std.Io,
     ) !void {
         const formation = scene.formation_info.formations[@intCast(scene.formation_info.cur_formation)];
         const cur_role_entity_id = blk: {
@@ -39,7 +40,7 @@ pub const battle = struct {
                 },
             },
         } });
-        try conn.push(notify, alloc.arena);
+        try conn.push(alloc.gpa, io, notify);
         try events.enqueue(.chat_command_response, .{ .content = "changed battle state" });
     }
 };

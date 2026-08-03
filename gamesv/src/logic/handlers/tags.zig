@@ -1,3 +1,4 @@
+const std = @import("std");
 const pb = @import("proto").pb;
 const EventQueue = @import("../EventQueue.zig");
 const mem = @import("../../mem.zig");
@@ -7,6 +8,7 @@ pub fn updateGameplayTags(
     event: EventQueue.Dequeue(.gameplay_tag_change),
     conn: *Connection,
     alloc: mem.Alloc,
+    io: std.Io,
 ) !void {
     const combat_common: pb.CombatCommon = .{ .EntityId = event.data.entity.net_id };
     var notify: pb.CombatReceivePackNotify = .{};
@@ -19,7 +21,7 @@ pub fn updateGameplayTags(
     }
 
     if (notify.Data.items.len != 0) {
-        try conn.push(notify, alloc.arena);
+        try conn.push(alloc.gpa, io, notify);
     }
 }
 

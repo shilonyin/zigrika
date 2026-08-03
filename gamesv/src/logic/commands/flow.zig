@@ -23,15 +23,16 @@ pub const flow = struct {
         flow_namespace: []const u8,
         flow_id: i32,
         state_id: i32,
+        io: std.Io,
     ) !void {
         try events.enqueue(.chat_command_response, .{ .content = "sending to flow..." });
 
         const flow_inst = assets.tables.flow.getDataById(try std.fmt.allocPrint(alloc.arena, "{s}_{d}", .{ flow_namespace, flow_id })) orelse return;
-        try conn.push(pb.LeaveSceneNotify{
+        try conn.push(alloc.gpa, io, pb.LeaveSceneNotify{
             .PlayerId = scene_comp.player_id,
             .SceneId = "",
             .TransitionOption = .{},
-        }, alloc.arena);
+        });
         scene_comp.last_scene_info.instance_id = flow_inst.DungeonId;
         try scene.saveLastScene(scene_comp, fs, alloc.gpa);
 

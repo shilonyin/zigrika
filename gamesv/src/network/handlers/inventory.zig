@@ -37,16 +37,17 @@ pub fn onItemLockRequest(
     fs: *FileSystem,
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
+    io: std.Io,
 ) !void {
     const func_value: i32 = if (txn.message.ItemId == 1) 1 else 0;
 
     if (weapon_comp.weapon_map.getPtr(txn.message.IncrId)) |item| {
         item.func_value = func_value;
         try PlayerWeaponComponent.saveAll(alloc.gpa, fs, weapon_comp.player_id, weapon_comp.weapon_map);
-        try txn.conn.push(pb.ItemFuncValueUpdateNotify{
+        try txn.conn.push(alloc.gpa, io, pb.ItemFuncValueUpdateNotify{
             .IncrId = txn.message.IncrId,
             .FuncValue = item.func_value,
-        }, alloc.arena);
+        });
         txn.respond(.{ .ErrorCode = .Success });
         return;
     }
@@ -58,10 +59,10 @@ pub fn onItemLockRequest(
 
     item.func_value = func_value;
     try PlayerEchoComponent.saveAll(alloc.gpa, fs, echo_comp.player_id, echo_comp.echo_map);
-    try txn.conn.push(pb.ItemFuncValueUpdateNotify{
+    try txn.conn.push(alloc.gpa, io, pb.ItemFuncValueUpdateNotify{
         .IncrId = txn.message.IncrId,
         .FuncValue = item.func_value,
-    }, alloc.arena);
+    });
 
     txn.respond(.{ .ErrorCode = .Success });
 }

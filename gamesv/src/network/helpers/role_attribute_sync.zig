@@ -21,6 +21,7 @@ pub fn refreshRole(
     echo_comp: *PlayerEchoComponent,
     query: anytype,
     role_id: i32,
+    io: std.Io,
 ) !void {
     var it = query.iterator;
     while (it.next()) |item| {
@@ -29,11 +30,11 @@ pub fn refreshRole(
 
         try RoleStats.refreshAttributeComponent(alloc.gpa, assets, role_comp, role_id, weapon_comp, echo_comp, attr_comp);
         try scene.saveComponents(fs, alloc.gpa, entity, &.{Scene.Entity.AttributeComponent});
-        try pushAttributeChange(txn, alloc, entity.net_id, attr_comp);
+        try pushAttributeChange(txn, alloc, entity.net_id, attr_comp, io);
         break;
     }
 
-    try pushRoleInfoNotify(txn, alloc, assets, role_comp, weapon_comp, echo_comp, role_id);
+    try pushRoleInfoNotify(txn, alloc, assets, role_comp, weapon_comp, echo_comp, role_id, io);
 }
 
 pub fn pushRoleInfoNotify(
@@ -44,8 +45,9 @@ pub fn pushRoleInfoNotify(
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
     role_id: i32,
+    io: std.Io,
 ) !void {
-    try pushRoleInfoNotifyForRoles(txn, alloc, assets, role_comp, weapon_comp, echo_comp, &.{role_id});
+    try pushRoleInfoNotifyForRoles(txn, alloc, assets, role_comp, weapon_comp, echo_comp, &.{role_id}, io);
 }
 
 pub fn pushRoleInfoNotifyForRoles(
@@ -56,6 +58,7 @@ pub fn pushRoleInfoNotifyForRoles(
     weapon_comp: *PlayerWeaponComponent,
     echo_comp: *PlayerEchoComponent,
     role_ids: []const i32,
+    io: std.Io,
 ) !void {
     var role_list: std.ArrayList(pb.RoleInfo) = .empty;
     try role_list.ensureTotalCapacity(alloc.arena, role_ids.len);
@@ -75,7 +78,7 @@ pub fn pushRoleInfoNotifyForRoles(
     }
 
     if (role_list.items.len != 0) {
-        try txn.conn.push(pb.PbGetRoleListNotify{ .RoleList = role_list }, alloc.arena);
+        try txn.conn.push(alloc.gpa, io, pb.PbGetRoleListNotify{ .RoleList = role_list });
     }
 }
 
@@ -84,6 +87,7 @@ fn pushAttributeChange(
     alloc: mem.Alloc,
     entity_id: i64,
     attr_comp: *Scene.Entity.AttributeComponent,
+    io: std.Io,
 ) !void {
     var attrs: std.ArrayList(pb.GameplayAttributeData) = .empty;
     inline for (comptime std.meta.fields(pb.EAttributeType), 0..) |field, index| {
@@ -94,7 +98,7 @@ fn pushAttributeChange(
         ));
     }
 
-    try txn.conn.push(pb.CombatReceivePackNotify{ .Data = blk: {
+    try txn.conn.push(alloc.gpa, io, pb.CombatReceivePackNotify{ .Data = blk: {
         var data: std.ArrayList(pb.CombatReceiveData) = .empty;
         try data.append(alloc.arena, .{ .Message = .{
             .CombatNotifyData = .{
@@ -103,5 +107,5 @@ fn pushAttributeChange(
             },
         } });
         break :blk data;
-    } }, alloc.arena);
+    } });
 }
