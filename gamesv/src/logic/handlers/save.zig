@@ -45,8 +45,8 @@ pub fn onBuffChange(
     try dirty_saves.markBuffChange(alloc.gpa, event.data.entity, nowMs(io));
 }
 
-pub fn onDirtySaveTick(
-    event: EventQueue.Dequeue(.dirty_save_tick),
+pub fn onDirtySavesDue(
+    event: EventQueue.Dequeue(.dirty_saves_due),
     alloc: mem.Alloc,
     fs: *FileSystem,
     dirty_saves: *DirtySaveQueue,

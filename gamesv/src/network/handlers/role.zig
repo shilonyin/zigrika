@@ -12,6 +12,7 @@ const PlayerWeaponComponent = @import("../../logic/component/player/PlayerWeapon
 const PlayerEchoComponent = @import("../../logic/component/player/PlayerEchoComponent.zig");
 const PlayerInventoryComponent = @import("../../logic/component/player/PlayerInventoryComponent.zig");
 const InventoryInfo = @import("../../fs/InventoryInfo.zig");
+const RoleInfo = @import("../../fs/RoleInfo.zig");
 const Account = @import("../../fs/Account.zig");
 const comp_util = @import("../../logic/component/comp_util.zig");
 const EventQueue = @import("../../logic/EventQueue.zig");
@@ -342,7 +343,7 @@ pub fn SwitchRoleRequest(
     txn.respond(.{ .ErrorCode = .Success, .RoleId = request.RoleId });
 }
 
-fn setSkillLevel(role: anytype, gpa: std.mem.Allocator, skill_id: i32, level: i32) !void {
+fn setSkillLevel(role: *RoleInfo, gpa: std.mem.Allocator, skill_id: i32, level: i32) !void {
     for (role.skills) |*entry| {
         if (entry[0] == skill_id) {
             entry[1] = level;
@@ -358,14 +359,14 @@ fn setSkillLevel(role: anytype, gpa: std.mem.Allocator, skill_id: i32, level: i3
     role.skills = new_skills;
 }
 
-fn getSkillLevel(role: anytype, skill_id: i32) i32 {
+fn getSkillLevel(role: *const RoleInfo, skill_id: i32) i32 {
     for (role.skills) |entry| {
         if (entry[0] == skill_id) return entry[1];
     }
     return 0;
 }
 
-fn setSkillNodeState(role: anytype, gpa: std.mem.Allocator, node_id: i32, active: bool, skill_id: i32) !void {
+fn setSkillNodeState(role: *RoleInfo, gpa: std.mem.Allocator, node_id: i32, active: bool, skill_id: i32) !void {
     for (role.skill_node_state) |*entry| {
         if (entry.node_id == node_id) {
             entry.active = active;
@@ -397,7 +398,7 @@ fn getResonantChainByIndex(assets: *const Assets, group_id: i32, index: i32) ?As
     return null;
 }
 
-fn hasActivateConsumeItems(info: InventoryInfo, chain: anytype) bool {
+fn hasActivateConsumeItems(info: InventoryInfo, chain: Assets.DataTables.ResonantChain) bool {
     var iterator = chain.ActivateConsume.map.iterator();
     while (iterator.next()) |entry| {
         if (info.normalItemCount(entry.key_ptr.*) < entry.value_ptr.*) return false;
@@ -409,7 +410,7 @@ fn consumeActivateItems(
     info: *InventoryInfo,
     gpa: std.mem.Allocator,
     arena: std.mem.Allocator,
-    chain: anytype,
+    chain: Assets.DataTables.ResonantChain,
 ) !std.ArrayList(pb.NormalItem) {
     var updated_items: std.ArrayList(pb.NormalItem) = .empty;
     var iterator = chain.ActivateConsume.map.iterator();
@@ -424,7 +425,7 @@ fn consumeActivateItems(
     return updated_items;
 }
 
-fn toClientRoleInfo(info: anytype, arena: std.mem.Allocator, id: i32) !pb.RoleInfo {
+fn toClientRoleInfo(info: *const RoleInfo, arena: std.mem.Allocator, id: i32) !pb.RoleInfo {
     var proto: pb.RoleInfo = .{
         .RoleId = id,
         .Name = "",

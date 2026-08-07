@@ -1,5 +1,6 @@
 const Entity = @import("Scene.zig").Entity;
 const std = @import("std");
+const FsmTypes = @import("fsm/Types.zig");
 
 // shitty solution for a shitty problem...
 pub const PendingFlow = struct {
@@ -37,11 +38,16 @@ pub const EntityMovement = struct {
     entity: Entity,
 };
 
+pub const BuffRemovalByFsmBind = struct {
+    entity: Entity,
+    source: FsmTypes.FsmBindBuffSource,
+};
 pub const BuffAdditionEntry = struct {
     id: i64,
     stack_count: i32 = 0,
     is_active: bool,
     duration_seconds: ?f32 = null,
+    fsm_bind_source: ?FsmTypes.FsmBindBuffSource = null,
 };
 
 pub const BuffRemoval = struct {
@@ -54,6 +60,11 @@ pub const BuffRemoval = struct {
     } = null,
 };
 
+pub const BuffRemovalById = struct {
+    entity: Entity,
+    buff_id: i64,
+};
+
 pub const BuffAddition = struct {
     target: Entity,
     instigator: Entity,
@@ -62,11 +73,43 @@ pub const BuffAddition = struct {
 
 pub const BuffChange = struct { entity: Entity };
 
-pub const BuffTimerTick = struct {
+pub const BuffTimersDue = struct {
     now_ms: i64,
 };
 
-pub const DirtySaveTick = struct {
+pub const FsmWake = struct {
+    now_ms: i64,
+};
+
+pub const FsmServerActionKind = union(enum) {
+    enter_fight,
+    cue_paralysis,
+    reset_status,
+    set_rage_full,
+    instance_state: i32,
+    activate_part: FsmTypes.PartActivation,
+    reset_part: FsmTypes.PartReset,
+};
+
+pub const FsmServerAction = struct {
+    entity: Entity,
+    kind: FsmServerActionKind,
+};
+
+pub const FsmLifecycleComplete = struct {
+    entity: Entity,
+    now_ms: i64,
+    recheck: bool = true,
+};
+
+pub const LevelPlayTimersDue = struct {
+    now_ms: i64,
+};
+
+pub const ScenePendingUpdates = struct {
+    now_ms: i64,
+};
+pub const DirtySavesDue = struct {
     now_ms: i64,
 };
 
@@ -74,6 +117,7 @@ pub const GameplayTagChange = struct {
     entity: Entity,
     add_tag_ids: []i32,
     remove_tag_ids: []i32,
+    remove_before_add: bool = false,
 };
 
 pub const ChatCommandResponse = struct { content: []const u8 };

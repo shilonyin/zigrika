@@ -133,6 +133,24 @@ fn appendCompletedRoadDataLayers(scene_info: *pb.SceneInformation, assets: *cons
     scene_info.DataLayers = data_layers;
 }
 
+pub fn handleScenePendingUpdates(
+    _: EventQueue.Dequeue(.scene_pending_updates),
+    scene: *Scene,
+    conn: *Connection,
+    alloc: mem.Alloc,
+    io: std.Io,
+) !void {
+    var data: std.ArrayList(pb.CombatReceiveData) = .empty;
+    _ = try scene.appendBattleStateNotify(alloc.arena, &data);
+    const combine_detaches = scene.pendingCombineDetaches();
+    for (combine_detaches) |detach| try data.append(alloc.arena, Scene.removeCombineNotify(detach));
+    if (data.items.len == 0) return;
+
+    try conn.push(alloc.gpa, io, pb.CombatReceivePackNotify{ .Data = data });
+    for (combine_detaches) |detach| try scene.signalFsmDissolveCombine(alloc.gpa, detach.combine_entity_id);
+    scene.clearPendingCombineDetaches();
+}
+
 pub fn exploreSkillNotify(alloc: mem.Alloc, scene: *Scene, conn: *Connection, io: std.Io) !void {
     var roulette_info: std.ArrayList(pb.ExploreSkillRoulette) = .empty;
     defer roulette_info.deinit(alloc.gpa);
@@ -447,6 +465,8 @@ pub fn notifyJoinScene(
     const now_ms = (Io.Clock.awake).now(io).toMilliseconds();
     try buff_timers.ensureAllRegistered(alloc.gpa, scene, assets, now_ms);
     buff_timers.syncAllLeftDurations(scene, now_ms);
+    const fsm_clock: Io.Clock = .awake;
+    try scene.initFsmRuntimes(alloc.gpa, fsm_clock.now(io).toMilliseconds());
     try scene.save(fs, alloc.gpa);
 
     var aoi: pb.PlayerSceneAoiData = .{};
@@ -589,6 +609,7 @@ pub fn afterSceneJoin(
     const now_ms = rtc.now(io).toMilliseconds();
     const monotonic_now = monotonic_clock.now(io).toMilliseconds();
     scene.scene_time.reset(now_ms, monotonic_now);
+    try scene.initFsmRuntimes(alloc.gpa, monotonic_now);
     try conn.push(alloc.gpa, io, pb.TimeCheckNotify{
         .ClientTime = 0,
         .ServerTime = now_ms,

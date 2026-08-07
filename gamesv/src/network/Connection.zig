@@ -210,6 +210,7 @@ fn drainGameplayDeadlines(state: *State, gpa: Allocator, io: Io, now_ms: i64) bo
     if (state.scene) |*scene| {
         if (!budget.canStart(clock.now(io).toNanoseconds())) return scheduled_changed;
 
+        var buffs_ready = true;
         state.buff_timers.ensureInitialized(
             gpa,
             scene,
@@ -217,14 +218,60 @@ fn drainGameplayDeadlines(state: *State, gpa: Allocator, io: Io, now_ms: i64) bo
             now_ms,
         ) catch |err| {
             std.log.scoped(.connection).err("failed to initialize buff timers: {t}", .{err});
-            return scheduled_changed;
+            buffs_ready = false;
         };
 
-        while (budget.canStart(clock.now(io).toNanoseconds()) and
-            buffDeadlineDue(&state.buff_timers, now_ms))
+        if (buffs_ready and
+            buffDeadlineDue(&state.buff_timers, now_ms) and
+            budget.canStart(clock.now(io).toNanoseconds()))
         {
             var event_queue: EventQueue = .{ .arena = state.arena.allocator() };
-            event_queue.enqueue(.buff_timer_tick, .{ .now_ms = now_ms }) catch |err| {
+            event_queue.enqueue(.buff_timers_due, .{ .now_ms = now_ms }) catch |err| {
+                std.log.scoped(.connection).err("failed to schedule buff timer: {t}", .{err});
+                _ = state.arena.reset(.free_all);
+                buffs_ready = false;
+            };
+            if (buffs_ready) {
+                drainEventChain(state, gpa, io, &event_queue);
+                budget.complete();
+                scheduled_changed = true;
+            }
+        }
+
+        if (deadlineDue(scene.fsm_wakes.nextWakeDelayMs(now_ms)) and
+            budget.canStart(clock.now(io).toNanoseconds()))
+        {
+            var event_queue: EventQueue = .{ .arena = state.arena.allocator() };
+            event_queue.enqueue(.fsm_wake, .{ .now_ms = now_ms }) catch |err| {
+                std.log.scoped(.connection).err("failed to schedule FSM work: {t}", .{err});
+                _ = state.arena.reset(.free_all);
+                return scheduled_changed;
+            };
+            drainEventChain(state, gpa, io, &event_queue);
+            budget.complete();
+            scheduled_changed = true;
+        }
+
+        if (deadlineDue(scene.pendingUpdateWakeDelayMs()) and
+            budget.canStart(clock.now(io).toNanoseconds()))
+        {
+            var event_queue: EventQueue = .{ .arena = state.arena.allocator() };
+            event_queue.enqueue(.scene_pending_updates, .{ .now_ms = now_ms }) catch |err| {
+                std.log.scoped(.connection).err("failed to schedule scene pending updates: {t}", .{err});
+                _ = state.arena.reset(.free_all);
+                return scheduled_changed;
+            };
+            drainEventChain(state, gpa, io, &event_queue);
+            budget.complete();
+            scheduled_changed = true;
+        }
+
+        while (buffs_ready and
+            buffDeadlineDue(&state.buff_timers, now_ms) and
+            budget.canStart(clock.now(io).toNanoseconds()))
+        {
+            var event_queue: EventQueue = .{ .arena = state.arena.allocator() };
+            event_queue.enqueue(.buff_timers_due, .{ .now_ms = now_ms }) catch |err| {
                 std.log.scoped(.connection).err("failed to continue buff timers: {t}", .{err});
                 _ = state.arena.reset(.free_all);
                 break;
@@ -248,19 +295,32 @@ fn buffDeadlineDue(scheduler: *const @import("../logic/schedulers/BuffTimerSched
     return due_ms <= now_ms;
 }
 
+fn deadlineDue(delay_ms: ?i64) bool {
+    return if (delay_ms) |delay| delay <= 0 else false;
+}
+
 fn nextGameplayWakeDelayMs(state: ?*const State, now_ms: i64) ?i64 {
     const s = state orelse return null;
+    const scene = if (s.scene) |*scene| scene else null;
     return gameplayWakeDelayMs(
-        if (s.scene != null) s.buff_timers.nextWakeDelayMs(now_ms) else null,
+        if (scene != null) s.buff_timers.nextWakeDelayMs(now_ms) else null,
+        if (scene) |active_scene| active_scene.fsm_wakes.nextWakeDelayMs(now_ms) else null,
+        if (scene) |active_scene| active_scene.pendingUpdateWakeDelayMs() else null,
         s.dirty_saves.nextWakeDelayMs(now_ms),
     );
 }
 
-fn gameplayWakeDelayMs(buff_delay_ms: ?i64, dirty_delay_ms: ?i64) ?i64 {
-    if (dirty_delay_ms) |dirty_delay| {
-        return if (buff_delay_ms) |buff_delay| @min(buff_delay, dirty_delay) else dirty_delay;
+fn gameplayWakeDelayMs(
+    buff_delay_ms: ?i64,
+    fsm_delay_ms: ?i64,
+    pending_update_delay_ms: ?i64,
+    dirty_delay_ms: ?i64,
+) ?i64 {
+    var delay_ms: ?i64 = null;
+    for ([_]?i64{ buff_delay_ms, fsm_delay_ms, pending_update_delay_ms, dirty_delay_ms }) |candidate| {
+        if (candidate) |delay| delay_ms = if (delay_ms) |current| @min(current, delay) else delay;
     }
-    return buff_delay_ms;
+    return delay_ms;
 }
 
 pub fn runGameplay(
@@ -626,9 +686,9 @@ test "gameplay budget always starts one chain and then enforces both limits" {
 }
 
 test "gameplay wake selects the earliest exact deadline" {
-    try std.testing.expectEqual(@as(?i64, 0), gameplayWakeDelayMs(0, 30_000));
-    try std.testing.expectEqual(@as(?i64, 25), gameplayWakeDelayMs(50, 25));
-    try std.testing.expectEqual(@as(?i64, 50), gameplayWakeDelayMs(50, null));
-    try std.testing.expectEqual(@as(?i64, 30_000), gameplayWakeDelayMs(null, 30_000));
-    try std.testing.expect(gameplayWakeDelayMs(null, null) == null);
+    try std.testing.expectEqual(@as(?i64, 0), gameplayWakeDelayMs(50, 0, 1_000, 30_000));
+    try std.testing.expectEqual(@as(?i64, 25), gameplayWakeDelayMs(50, 100, null, 25));
+    try std.testing.expectEqual(@as(?i64, 50), gameplayWakeDelayMs(50, 100, 1_000, null));
+    try std.testing.expectEqual(@as(?i64, 1_000), gameplayWakeDelayMs(null, null, 1_000, 30_000));
+    try std.testing.expect(gameplayWakeDelayMs(null, null, null, null) == null);
 }

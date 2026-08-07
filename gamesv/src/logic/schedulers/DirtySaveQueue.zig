@@ -45,7 +45,7 @@ pub fn enqueueDue(
     now_ms: i64,
 ) !bool {
     if (!queue.isDue(now_ms)) return false;
-    try event_queue.enqueue(.dirty_save_tick, .{ .now_ms = now_ms });
+    try event_queue.enqueue(.dirty_saves_due, .{ .now_ms = now_ms });
     return true;
 }
 
@@ -291,7 +291,7 @@ test "due dirty save enqueues one timestamped event" {
     try std.testing.expect(try queue.enqueueDue(&event_queue, 30_100));
 
     const event = event_queue.deque.popFront().?;
-    try std.testing.expectEqual(@as(i64, 30_100), event.dirty_save_tick.now_ms);
+    try std.testing.expectEqual(@as(i64, 30_100), event.dirty_saves_due.now_ms);
     try std.testing.expect(event_queue.deque.popFront() == null);
 }
 

@@ -11,6 +11,7 @@ const PlayerCosmeticComponent = @import("../../logic/component/player/PlayerCosm
 const PlayerWeaponComponent = @import("../../logic/component/player/PlayerWeaponComponent.zig");
 const PlayerEchoComponent = @import("../../logic/component/player/PlayerEchoComponent.zig");
 const CosmeticInfo = @import("../../fs/CosmeticInfo.zig");
+const RoleInfo = @import("../../fs/RoleInfo.zig");
 const RoleHelper = @import("../../logic/helpers/role.zig");
 const std = @import("std");
 const BuffTimerScheduler = @import("../../logic/schedulers/BuffTimerScheduler.zig");
@@ -67,7 +68,7 @@ fn findFlySkin(assets: *const Assets, skin_id: i32) ?Assets.DataTables.FlySkinCo
     return assets.tables.fly_skin_config.getDataById(skin_id);
 }
 
-fn setFlySkin(role: anytype, skin: Assets.DataTables.FlySkinConfig) void {
+fn setFlySkin(role: *RoleInfo, skin: Assets.DataTables.FlySkinConfig) void {
     if (skin.SkinType == 0) {
         role.soar_skin_id = skin.Id;
     } else {
@@ -187,7 +188,7 @@ fn refreshRoleOrnamentEntity(
     fs: *FileSystem,
     scene: *Scene,
     role_id: i32,
-    role: anytype,
+    role: *RoleInfo,
     stale_ornament_ids: []const i32,
     buff_timers: *BuffTimerScheduler,
     io: std.Io,
@@ -320,7 +321,10 @@ fn refreshRoleOrnamentEntity(
             .OrnamentComponentPb = try ornament_comp.toProto(),
         });
 
-        if (combat_notify.Data.items.len != 0) try txn.conn.push(alloc.gpa, io, combat_notify);
+        if (combat_notify.Data.items.len != 0) {
+            try txn.conn.push(alloc.gpa, io, combat_notify);
+            try scene.markFsmDirty(alloc.gpa, entity.net_id, Scene.Entity.FsmComponent.WakeReason.buff);
+        }
         return;
     }
 }

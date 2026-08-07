@@ -306,6 +306,10 @@ pub fn refreshRoleEntities(
         );
 
         if (!vision_state.changed and !vision_skill_changed and !attribute_changed and !buff_changed) continue;
+        var wake_reason: Entity.FsmComponent.WakeMask = 0;
+        if (attribute_changed) wake_reason |= Entity.FsmComponent.WakeReason.attribute;
+        if (buff_changed) wake_reason |= Entity.FsmComponent.WakeReason.buff;
+        try scene.markFsmDirty(alloc.gpa, entity.net_id, wake_reason);
         try buff_timers.ensureEntityRegistered(
             alloc.gpa,
             scene,

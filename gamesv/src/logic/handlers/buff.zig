@@ -80,6 +80,80 @@ pub fn removeBuffFromEntity(
     });
 }
 
+pub fn removeBuffFromEntityById(
+    event: EventQueue.Dequeue(.buff_removal_by_id),
+    conn: *Connection,
+    events: *EventQueue,
+    alloc: mem.Alloc,
+    buff_timers: *BuffTimerScheduler,
+    query: Scene.Query(&.{ *Entity.FightBuffComponent, ?*Entity.AttributeComponent }),
+    io: std.Io,
+) !void {
+    const item = query.byEntityHandle(event.data.entity) orelse return;
+    const buff = item[0].getByBuffId(event.data.buff_id) orelse return;
+    const handles = [_]i32{buff.HandleId};
+    try removeBuffHandles(event.data.entity, &handles, item[0], conn, events, alloc, buff_timers, io);
+}
+
+pub fn removeBuffFromEntityByFsmBind(
+    event: EventQueue.Dequeue(.buff_removal_by_fsm_bind),
+    conn: *Connection,
+    events: *EventQueue,
+    alloc: mem.Alloc,
+    buff_timers: *BuffTimerScheduler,
+    query: Scene.Query(&.{ *Entity.FightBuffComponent, ?*Entity.AttributeComponent }),
+    io: std.Io,
+) !void {
+    const item = query.byEntityHandle(event.data.entity) orelse return;
+    const release = item[0].releaseFsmBindLease(alloc.gpa, event.data.source) orelse return;
+    switch (release) {
+        .preserve => try events.enqueue(.buff_change, .{ .entity = event.data.entity }),
+        .remove => |handle_id| {
+            if (item[0].getByHandleId(handle_id) != null) {
+                const handles = [_]i32{handle_id};
+                try removeBuffHandles(event.data.entity, &handles, item[0], conn, events, alloc, buff_timers, io);
+            } else {
+                try events.enqueue(.buff_change, .{ .entity = event.data.entity });
+            }
+        },
+    }
+}
+
+pub fn removeBuffHandles(
+    entity: Entity,
+    handle_ids: []const i32,
+    buffs: *Entity.FightBuffComponent,
+    conn: *Connection,
+    events: *EventQueue,
+    alloc: mem.Alloc,
+    buff_timers: *BuffTimerScheduler,
+    io: std.Io,
+) !void {
+    const combat_common: pb.CombatCommon = .{ .EntityId = entity.net_id };
+    var notify: pb.CombatReceivePackNotify = .{};
+
+    for (handle_ids) |handle_id| {
+        if (buffs.getByHandleId(handle_id) == null) continue;
+        buff_timers.cancelHandle(entity.net_id, handle_id);
+        buffs.removeByHandleId(alloc.gpa, handle_id);
+        try notify.Data.append(alloc.arena, .{ .Message = .{
+            .CombatNotifyData = .{
+                .CombatCommon = combat_common,
+                .Message = .{
+                    .RemoveGameplayEffectNotify = .{
+                        .EntityId = entity.net_id,
+                        .Handle = handle_id,
+                    },
+                },
+            },
+        } });
+    }
+
+    if (notify.Data.items.len == 0) return;
+    try conn.push(alloc.gpa, io, notify);
+    try events.enqueue(.buff_change, .{ .entity = entity });
+}
+
 pub fn addBuffToEntity(
     event: EventQueue.Dequeue(.buff_addition),
     conn: *Connection,
@@ -142,9 +216,17 @@ pub fn addBuffToEntity(
             );
             continue;
         }
+        if (entry.fsm_bind_source) |source| {
+            if (!buff_component.prepareFsmBindAcquire(alloc.gpa, source)) continue;
+        }
         const existing = buff_component.getByBuffId(entry.id);
         const stack_count = if (entry.stack_count > 0) entry.stack_count else 1;
         if (existing) |buff| { // no dupes
+            if (entry.fsm_bind_source) |source| {
+                try buff_component.addFsmBindLease(alloc.gpa, source, buff.HandleId, false);
+            } else {
+                buff_component.markFsmBindHandleExternal(alloc.gpa, buff.HandleId);
+            }
             buff_timers.syncHandleLeftDuration(
                 scene,
                 event.data.target.net_id,
@@ -272,6 +354,13 @@ pub fn addBuffToEntity(
                 return err;
             };
             buff_component.fight_buff_infos[buff_component.fight_buff_infos.len - 1] = new_buff;
+            if (entry.fsm_bind_source) |source| {
+                buff_component.addFsmBindLease(alloc.gpa, source, new_buff.HandleId, true) catch |err| {
+                    buff_timers.cancelHandle(event.data.target.net_id, new_buff.HandleId);
+                    buff_component.removeByHandleId(alloc.gpa, new_buff.HandleId);
+                    return err;
+                };
+            }
             scene.instance.buff_handle = handle_id;
 
             if (disposition.execute_periodic_now) {
@@ -355,8 +444,8 @@ fn enqueueBuffChangeOnce(
     enqueued.* = true;
 }
 
-pub fn handleBuffTimerTick(
-    event: EventQueue.Dequeue(.buff_timer_tick),
+pub fn handleBuffTimersDue(
+    event: EventQueue.Dequeue(.buff_timers_due),
     conn: *Connection,
     events: *EventQueue,
     buff_timers: *BuffTimerScheduler,

@@ -62,7 +62,6 @@ pub fn deinit(s: *State, gpa: Allocator, io: Io, fs: *FileSystem) void {
             log.err("failed to save buff durations during session cleanup: {t}", .{err});
         };
     }
-
     s.dirty_saves.flush(
         gpa,
         fs,
@@ -104,7 +103,10 @@ pub fn extract(s: *State, gpa: Allocator, io: Io, comptime T: type) !T {
     if (is_struct and @hasDecl(T, "scene_query_types")) {
         if (s.scene) |*scene| {
             return .{
-                .iterator = .{ .entities = &scene.entities },
+                .iterator = .{
+                    .entities = &scene.entities,
+                    .net_id_map = &scene.net_id_map,
+                },
             };
         } else {
             return error.NotInScene;

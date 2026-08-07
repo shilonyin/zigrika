@@ -703,7 +703,7 @@ pub const Registry = struct {
             .kind = .kcp_update,
             .due_ms = saturatingAdd(
                 now_ms,
-                session.kcp.nextUpdateDelay(session.elapsedMs(now_ms)),
+                @intCast(session.kcp.nextUpdateDelay(session.elapsedMs(now_ms))),
             ),
         });
     }
@@ -783,9 +783,8 @@ fn deadlineLess(a: DeadlineEntry, b: DeadlineEntry) bool {
     return @intFromEnum(a.kind) < @intFromEnum(b.kind);
 }
 
-fn saturatingAdd(base: i64, delta: anytype) i64 {
-    const delta_i64: i64 = @intCast(delta);
-    return std.math.add(i64, base, delta_i64) catch std.math.maxInt(i64);
+fn saturatingAdd(base: i64, delta: i64) i64 {
+    return std.math.add(i64, base, delta) catch std.math.maxInt(i64);
 }
 
 fn registeredEndpointMatches(

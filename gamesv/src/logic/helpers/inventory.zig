@@ -1,6 +1,9 @@
 const std = @import("std");
 const Assets = @import("../../data/Assets.zig");
 const InventoryInfo = @import("../../fs/InventoryInfo.zig");
+const IntMap = @import("../../data/tables/int_map.zig").IntMap;
+
+const ConsumeMap = IntMap(i32, i32);
 
 pub fn addDefaultProgressionItems(info: *InventoryInfo, gpa: std.mem.Allocator, assets: *const Assets) !void {
     try addDefaultGachaItems(info, gpa, assets);
@@ -92,7 +95,7 @@ pub fn gachaCurrencyItemId(gacha_id: i32, view_type: i32) i32 {
     };
 }
 
-fn ensureConsumeItems(info: *InventoryInfo, gpa: std.mem.Allocator, consume_map: anytype) !void {
+fn ensureConsumeItems(info: *InventoryInfo, gpa: std.mem.Allocator, consume_map: ConsumeMap) !void {
     var iterator = consume_map.map.iterator();
     while (iterator.next()) |consume| {
         try ensureNormalItem(info, gpa, consume.key_ptr.*, 777);

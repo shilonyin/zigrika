@@ -463,7 +463,7 @@ pub fn syncAllLeftDurations(
 
 pub fn drainOneDue(
     scheduler: *BuffTimerScheduler,
-    event: EventQueue.Dequeue(.buff_timer_tick),
+    event: EventQueue.Dequeue(.buff_timers_due),
     events: *EventQueue,
     scene: *Scene,
     assets: *const Assets,
