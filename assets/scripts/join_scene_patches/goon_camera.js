@@ -423,22 +423,21 @@ setTimeout(() => {
     if (seq.jio?.State !== 3) return;
 
     const seq_cine_camera =
-      ModelManager_1.ModelManager.CameraModel.SequenceCamera?.DisplayComponent
+      ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera?.DisplayComponent
         ?.CineCamera;
 
     if (seq_cine_camera) {
-      const loc = seq_cine_camera.K2_GetActorLocation();
-      const rot = seq_cine_camera.K2_GetActorRotation();
+        const loc = seq_cine_camera.K2_GetActorLocation();
+        const rot = seq_cine_camera.K2_GetActorRotation();
 
-      seq.PauseSequence(false);
-      seq.Yio?.AllStop();
+        seq.Yio?.AllStop();
 
-      const structure =
-        ModelManager_1.ModelManager.PhotographModel.GetPhotographerStructure();
-      const photographer = structure?.$Uo;
+        const structure =
+            ModelManager_1.ModelManager.PhotographModel.GetPhotographerStructure();
+        const photographer = structure?.$Uo;
 
-      photographer.K2_SetActorLocation(loc, false, void 0, false);
-      photographer.K2_SetActorRotation(rot, false, void 0, false);
+        photographer.K2_SetActorLocation(loc, false, void 0, false);
+        photographer.K2_SetActorRotation(rot, false, void 0, false);
     }
   }
 
@@ -575,9 +574,33 @@ setTimeout(() => {
     }
   }
 
+  let was_in_seq_camera = false;
+
+  const detach_sequence = () => {
+      const player_component = ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera?.PlayerComponent;
+      was_in_seq_camera = !!player_component?.exr;
+      if (!was_in_seq_camera) return;
+
+      ControllerHolder_1.ControllerHolder.CameraController.ExitCameraMode(
+          1, 0, 0, 0, () => {},
+          ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
+      );
+  };
+
+  const reattach_sequence = () => {
+      if (!was_in_seq_camera) return;
+      was_in_seq_camera = false;
+
+      ControllerHolder_1.ControllerHolder.CameraController.EnterCameraMode(
+          1, 0, 0, 0, () => {}, false,
+          ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
+      );
+  };
+
   // reattach
   UiCameraPhotographerStructure.prototype.OnDestroy = function () {
     this.YUo();
+    reattach_sequence();
     const seq = SequenceController_1.SequenceController;
     seq.Yio?.PreAllPlay();
     seq.ResumeSequence(!1);
@@ -593,8 +616,9 @@ setTimeout(() => {
     if (state !== 0) return;
 
     photo_mode_active = true;
-    seq.PauseSequence(false);
-    ControllerHolder_1.ControllerHolder.PhotographController.mEd(3);
+    ControllerHolder_1.ControllerHolder.PhotographController.TryOpenPhotograph(
+      0,
+    );
     UiManager_1.UiManager.CloseView("PlotSubtitleView");
   };
 
@@ -669,6 +693,7 @@ setTimeout(() => {
   PhotographView_1.PhotographView.prototype.OnBeforeCreate = function () {
     PhotographController_1.PhotographController.InitPhotographRelativeContent();
     dilate_time(0);
+    detach_sequence();
     detach_plot_camera();
   };
 
@@ -1377,10 +1402,23 @@ setTimeout(() => {
   //       InputDistributeDefine_1.inputDistributeTagDefine.UiInputRootTag,
   //     );
   //   };
+  const orig_refresh_input_tag =
+      InputDistributeController_1.InputDistributeController.RefreshInputTag.bind(
+          InputDistributeController_1.InputDistributeController,
+      );
+
   InputDistributeController_1.InputDistributeController.RefreshInputTag =
-    function () {
-      ModelManager_1.ModelManager.InputDistributeModel.RefreshInputDistributeTag();
-    };
+      function () {
+          orig_refresh_input_tag();
+          if (UiManager_1.UiManager.IsViewOpen("PhotographView")) {
+              ModelManager_1.ModelManager.InputDistributeModel.AddInputDistributeTag(
+                  InputDistributeDefine_1.inputDistributeTagDefine.FightInputRootTag,
+              );
+              this.AddInputDistributeTag(
+                InputDistributeDefine_1.inputDistributeTagDefine.UiInputRootTag,
+              );
+          }
+      };
 
   ControllerHolder_1.ControllerHolder.PhotographController.$ha = function (t) {
     return !0;

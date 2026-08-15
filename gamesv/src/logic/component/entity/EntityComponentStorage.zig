@@ -43,6 +43,7 @@ base_skin: ?BaseSkinComponent = null,
 calabash_skin: ?@import("CalabashSkinComponent.zig") = null,
 weapon_skin: ?@import("WeaponSkinComponent.zig") = null,
 ornament: ?@import("OrnamentComponent.zig") = null,
+state_tag: ?@import("StateTagComponent.zig") = null,
 
 pub fn fieldIndexForType(comptime Component: type) usize {
     return comptime fieldByType(Component).@"1";
@@ -392,6 +393,12 @@ pub fn entityToProto(
     if (storage.calabash_skin) |comp| {
         try entity.ComponentPbs.append(alloc.arena, .{
             .ComponentPb = .{ .CalabashSkinComponentPb = try comp.toProto() },
+        });
+    }
+
+    if (storage.state_tag) |comp| {
+        try entity.ComponentPbs.append(alloc.arena, .{
+            .ComponentPb = .{ .StateTagComponentPb = try comp.toProto() },
         });
     }
 

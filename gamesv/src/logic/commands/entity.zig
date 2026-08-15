@@ -355,55 +355,61 @@ pub const spawn = struct {
         }
         const weapon_id = if (ai_comp) |comp| parseOptionalInt(comp.WeaponId) else 0;
         const final_camp = spawnCamp(base_info, &template_config, spawn_base);
+        const model_id = if (components_data.ModelComponent) |model| model.ModelType.ModelId else 0;
+
         const use_ai_runtime = useAiRuntime(spawn_base.entity_type);
-        const fsm_component = if (use_ai_runtime)
-            Entity.FsmComponent.fromAiBaseId(ai_id, assets)
-        else
-            null;
-        const combat_attributes: ?Entity.AttributeComponent = if (use_ai_runtime)
-            (try entity_attributes.createCombatAttributes(
+        var fsm_component: ?Entity.FsmComponent = null;
+        var attribute_component: ?Entity.AttributeComponent = null;
+        var tag_component: ?Entity.TagComponent = null;
+        var part_component: ?Entity.PartComponent = null;
+        var state_tag_component: ?Entity.StateTagComponent = null;
+        if (use_ai_runtime) {
+            fsm_component = Entity.FsmComponent.fromAiBaseId(ai_id, assets);
+            attribute_component = (try entity_attributes.createCombatAttributes(
                 assets,
                 &components_data,
                 blueprint_config.EntityLogic,
                 entity_config.AreaId,
                 basic_comp.info.attributes.cur_world_level,
                 alloc,
-            ))
-        else
-            null;
-        const attribute_component: ?Entity.AttributeComponent = if (use_ai_runtime)
-            combat_attributes orelse Entity.AttributeComponent{}
-        else
-            null;
-        var tag_component: ?Entity.TagComponent = if (use_ai_runtime)
-            try initialTagComponent(
+            ) orelse Entity.AttributeComponent{});
+            tag_component = try initialTagComponent(
                 &components_data,
                 &assets.tables.gameplay_tag_remap,
                 repeat_boss_startup,
                 alloc.gpa,
-            )
-        else
-            null;
-        errdefer if (tag_component) |*tags| tags.deinit(alloc.gpa);
-        const model_id = if (components_data.ModelComponent) |model| model.ModelType.ModelId else 0;
-        const life_max_index = @intFromEnum(pb.EAttributeType.LifeMax);
-        const life_max = if (attribute_component) |attribute|
-            if (life_max_index < attribute.attributes.len) attribute.attributes[life_max_index].current else 0
-        else
-            0;
-        var part_component: ?Entity.PartComponent = if (use_ai_runtime)
-            if (assets.tables.character_part_config.getDataById(model_id)) |config|
+            );
+            const life_max_index = @intFromEnum(pb.EAttributeType.LifeMax);
+            const life_max = if (attribute_component) |attribute|
+                if (life_max_index < attribute.attributes.len) attribute.attributes[life_max_index].current else 0
+            else
+                0;
+            part_component = if (assets.tables.character_part_config.getDataById(model_id)) |config|
                 try Entity.PartComponent.init(config, life_max, alloc.gpa)
             else
-                null
-        else
-            null;
+                null;
+        }
+        if (template_config.ComponentsData.EntityStateComponent != null) {
+            state_tag_component = Entity.StateTagComponent{};
+            if (tag_component == null) {
+                tag_component = try initialTagComponent(
+                    &components_data,
+                    &assets.tables.gameplay_tag_remap,
+                    repeat_boss_startup,
+                    alloc.gpa,
+                );
+            }
+        }
+        errdefer if (fsm_component) |*fsm| fsm.deinit(alloc.gpa);
+        errdefer if (attribute_component) |*attr| alloc.gpa.free(attr.attributes);
+        errdefer if (tag_component) |*tags| tags.deinit(alloc.gpa);
         errdefer if (part_component) |*part| part.deinit(alloc.gpa);
         if (part_component) |*part| {
             const tags = if (tag_component) |*component| component else null;
             try part.syncActiveTags(tags, alloc.gpa);
         }
-        const entity = if (fsm_component) |fsm| try scene.spawn(alloc.gpa, fs, .{
+
+        const entity = try scene.spawn(alloc.gpa, fs, .{
             Entity.ConfigComponent{
                 .camp = final_camp,
                 .config_id = @intCast(entity_id),
@@ -418,60 +424,22 @@ pub const spawn = struct {
                 .rotation = scene.instance.players[0].rotation,
             },
             Entity.FightBuffComponent{},
-            attribute_component.?,
-            Entity.LogicStateComponent{},
-            Entity.MonsterAiComponent{
+            attribute_component,
+            if (use_ai_runtime) Entity.LogicStateComponent{} else null,
+            if (use_ai_runtime) Entity.MonsterAiComponent{
                 .weapon_id = weapon_id,
                 .hatred_group_id = 0,
                 .ai_team_init_id = 100,
                 .combat_message_id = 0,
-            },
-            Entity.CharacterAttachComponent{},
-            tag_component.?,
+            } else null,
+            if (use_ai_runtime) Entity.CharacterAttachComponent{} else null,
+            tag_component,
             part_component,
-            fsm,
-        }) else if (use_ai_runtime) try scene.spawn(alloc.gpa, fs, .{
-            Entity.ConfigComponent{
-                .camp = final_camp,
-                .config_id = @intCast(entity_id),
-                .config_type = spawn_base.config_type,
-                .entity_type = spawn_base.entity_type,
-                .state = spawn_base.entity_state,
-            },
-            Entity.ActorVisibleMarker{},
-            Entity.VisibleMarker{},
-            Entity.PositionComponent{
-                .location = scene.instance.players[0].location,
-                .rotation = scene.instance.players[0].rotation,
-            },
-            Entity.FightBuffComponent{},
-            attribute_component.?,
-            Entity.LogicStateComponent{},
-            Entity.MonsterAiComponent{
-                .weapon_id = weapon_id,
-                .hatred_group_id = 0,
-                .ai_team_init_id = 100,
-                .combat_message_id = 0,
-            },
-            Entity.CharacterAttachComponent{},
-            tag_component.?,
-            part_component,
-        }) else try scene.spawn(alloc.gpa, fs, .{
-            Entity.ConfigComponent{
-                .camp = final_camp,
-                .config_id = @intCast(entity_id),
-                .config_type = spawn_base.config_type,
-                .entity_type = spawn_base.entity_type,
-                .state = spawn_base.entity_state,
-            },
-            Entity.ActorVisibleMarker{},
-            Entity.VisibleMarker{},
-            Entity.PositionComponent{
-                .location = scene.instance.players[0].location,
-                .rotation = scene.instance.players[0].rotation,
-            },
-            Entity.FightBuffComponent{},
+            fsm_component,
+            state_tag_component,
         });
+        fsm_component = null;
+        attribute_component = null;
         tag_component = null;
         part_component = null;
         var route_patch_sent = false;

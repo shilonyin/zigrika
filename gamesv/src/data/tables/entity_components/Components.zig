@@ -5,6 +5,7 @@ AiComponent: ?@import("Ai.zig") = null,
 AttributeComponent: ?@import("Attribute.zig") = null,
 ModelComponent: ?@import("Model.zig") = null,
 MonsterComponent: ?@import("Monster.zig") = null,
+EntityStateComponent: ?@import("EntityState.zig") = null,
 
 fn mergeComponentField(comptime field_name: []const u8, template: *const @This(), target: *@This()) void {
     if (@field(target, field_name)) |*target_comp| {

@@ -12,6 +12,10 @@ attributes: []Attribute = &.{},
 hardness_mode_id: i32 = 0,
 rage_mode_id: i32 = 0,
 
+pub fn deinit(comp: *Component, gpa: std.mem.Allocator) void {
+    gpa.free(comp.attributes);
+}
+
 pub fn toProto(comp: Component, alloc: mem.Alloc) !pb.AttributeComponentPb {
     var comp_pb: pb.AttributeComponentPb = .{
         .HardnessModeId = comp.hardness_mode_id,

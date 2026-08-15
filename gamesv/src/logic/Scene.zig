@@ -102,6 +102,7 @@ pub const Entity = struct {
     pub const WeaponSkinComponent = @import("component/entity/WeaponSkinComponent.zig");
     pub const OrnamentComponent = @import("component/entity/OrnamentComponent.zig");
     pub const CalabashSkinComponent = @import("component/entity/CalabashSkinComponent.zig");
+    pub const StateTagComponent = @import("component/entity/StateTagComponent.zig");
 
     index: usize,
     net_id: i64,
