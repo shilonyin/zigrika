@@ -5,9 +5,10 @@
   "ResVersions": {
     "launcher": {
       "Name": "launcher",
-      "Version": "3.6.5",
+      "Version": "3.6.6",
       "IndexSha1": {
-        "3.6.5": "3E7FE32CC3264795DB6CAD21B37B6FC8DC1EE0C2"
+        "3.6.5": "3E7FE32CC3264795DB6CAD21B37B6FC8DC1EE0C2",
+        "3.6.6": "B2EB1592C14848BD83BDD18DC85D1869FF047980"
       }
     },
     "resource": {
