@@ -1,6 +1,6 @@
 {
   "PackageVersion": "3.6.0",
-  "ChangeList": "8372998",
+  "ChangeList": "8434066",
   "CompatibleChangeLists": [],
   "ResVersions": {
     "launcher": {
@@ -12,13 +12,15 @@
     },
     "resource": {
       "Name": "resource",
-      "Version": "3.6.5",
+      "Version": "3.6.7",
       "IndexSha1": {
         "3.6.1": "B2D927A906464D6023658405008ED963DB954BFC",
         "3.6.2": "A1BD87608DE3C05C9755705D9D634A3486978578",
         "3.6.3": "D976C6B32C71D72C4D947DB708BEFBE0D85A2883",
         "3.6.4": "224B004D9A8BFB57B185FE990395CFEC57DDA2C9",
-        "3.6.5": "655C5E191B1A03622BF4AFF3BE7696C9BA4DC685"
+        "3.6.5": "655C5E191B1A03622BF4AFF3BE7696C9BA4DC685",
+        "3.6.6": "3B3E49AB1FF106D2EFE1AF003B717AAE8BCB104E",
+        "3.6.7": "F06D354AFD3D394DE1B3703528EDB4E55E938D96"
       }
     },
     "en": {

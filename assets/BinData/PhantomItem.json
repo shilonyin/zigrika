@@ -50098,7 +50098,8 @@
     "Destructible": true,
     "RedDotDisableRule": 0,
     "FetterGroup": [
-      34
+      34,
+      35
     ],
     "PhantomType": 1
   },
@@ -50156,7 +50157,8 @@
     "Destructible": true,
     "RedDotDisableRule": 0,
     "FetterGroup": [
-      34
+      34,
+      35
     ],
     "PhantomType": 1
   },
@@ -50214,7 +50216,8 @@
     "Destructible": true,
     "RedDotDisableRule": 0,
     "FetterGroup": [
-      34
+      34,
+      35
     ],
     "PhantomType": 1
   },
@@ -50272,7 +50275,8 @@
     "Destructible": true,
     "RedDotDisableRule": 0,
     "FetterGroup": [
-      34
+      34,
+      35
     ],
     "PhantomType": 1
   },

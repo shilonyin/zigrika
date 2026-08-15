@@ -2907,6 +2907,18 @@
   },
   {
     "Id": 193,
+    "FsmKey": "SM_MO1DingdongdongMd00202",
+    "ActorClass": [],
+    "Animations": [],
+    "Effects": [],
+    "Audios": [],
+    "Meshes": [],
+    "Materials": [],
+    "AnimationBlueprints": [],
+    "Others": []
+  },
+  {
+    "Id": 194,
     "FsmKey": "SM_MO1DingXuanWeiManMd00002",
     "ActorClass": [],
     "Animations": [],
@@ -2922,7 +2934,7 @@
     ]
   },
   {
-    "Id": 194,
+    "Id": 195,
     "FsmKey": "SM_MO1DingXuanWeiManMd00003",
     "ActorClass": [],
     "Animations": [],
@@ -2938,7 +2950,7 @@
     ]
   },
   {
-    "Id": 195,
+    "Id": 196,
     "FsmKey": "SM_MO1DingXuanWeiWomanMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -2954,7 +2966,7 @@
     ]
   },
   {
-    "Id": 196,
+    "Id": 197,
     "FsmKey": "SM_MO1DingXuanWeiWomanMd00002",
     "ActorClass": [],
     "Animations": [],
@@ -2970,7 +2982,7 @@
     ]
   },
   {
-    "Id": 197,
+    "Id": 198,
     "FsmKey": "SM_MO1DujiaoshouMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -2982,7 +2994,7 @@
     "Others": []
   },
   {
-    "Id": 198,
+    "Id": 199,
     "FsmKey": "SM_MO1FenglieMd00401_2",
     "ActorClass": [],
     "Animations": [],
@@ -2994,7 +3006,7 @@
     "Others": []
   },
   {
-    "Id": 199,
+    "Id": 200,
     "FsmKey": "SM_MO1FHuxiuxiuMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3006,7 +3018,7 @@
     "Others": []
   },
   {
-    "Id": 200,
+    "Id": 201,
     "FsmKey": "SM_MO1GAziziMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3018,7 +3030,7 @@
     "Others": []
   },
   {
-    "Id": 201,
+    "Id": 202,
     "FsmKey": "SM_MO1GAziziMd00501_xxgtest",
     "ActorClass": [],
     "Animations": [],
@@ -3030,7 +3042,7 @@
     "Others": []
   },
   {
-    "Id": 202,
+    "Id": 203,
     "FsmKey": "SM_MO1GuangXYLMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3042,7 +3054,7 @@
     "Others": []
   },
   {
-    "Id": 203,
+    "Id": 204,
     "FsmKey": "SM_MO1GuangZhuMd00003",
     "ActorClass": [],
     "Animations": [],
@@ -3054,7 +3066,7 @@
     "Others": []
   },
   {
-    "Id": 204,
+    "Id": 205,
     "FsmKey": "SM_MO1GuguhetunMd00201_Dredge",
     "ActorClass": [],
     "Animations": [],
@@ -3066,7 +3078,7 @@
     "Others": []
   },
   {
-    "Id": 205,
+    "Id": 206,
     "FsmKey": "SM_MO1GuguhetunMd00201_JiYanTask",
     "ActorClass": [],
     "Animations": [],
@@ -3078,7 +3090,7 @@
     "Others": []
   },
   {
-    "Id": 206,
+    "Id": 207,
     "FsmKey": "SM_MO1GuguhetunMd00201_SpecialMonster",
     "ActorClass": [],
     "Animations": [],
@@ -3090,7 +3102,7 @@
     "Others": []
   },
   {
-    "Id": 207,
+    "Id": 208,
     "FsmKey": "SM_MO1HKacacaMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3102,7 +3114,7 @@
     "Others": []
   },
   {
-    "Id": 208,
+    "Id": 209,
     "FsmKey": "SM_MO1HongLvDengMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3114,7 +3126,7 @@
     "Others": []
   },
   {
-    "Id": 209,
+    "Id": 210,
     "FsmKey": "SM_MO1HuojinMd00101_2",
     "ActorClass": [],
     "Animations": [],
@@ -3126,7 +3138,7 @@
     "Others": []
   },
   {
-    "Id": 210,
+    "Id": 211,
     "FsmKey": "SM_MO1HuoXYLMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3138,7 +3150,7 @@
     "Others": []
   },
   {
-    "Id": 211,
+    "Id": 212,
     "FsmKey": "SM_MO1JiBinMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3154,7 +3166,7 @@
     ]
   },
   {
-    "Id": 212,
+    "Id": 213,
     "FsmKey": "SM_MO1JiBinMd00002",
     "ActorClass": [],
     "Animations": [],
@@ -3166,7 +3178,7 @@
     "Others": []
   },
   {
-    "Id": 213,
+    "Id": 214,
     "FsmKey": "SM_MO1JiBinMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3182,7 +3194,7 @@
     ]
   },
   {
-    "Id": 214,
+    "Id": 215,
     "FsmKey": "SM_MO1JiBinMd00201",
     "ActorClass": [],
     "Animations": [],
@@ -3198,7 +3210,7 @@
     ]
   },
   {
-    "Id": 215,
+    "Id": 216,
     "FsmKey": "SM_MO1JiBinMd00201_2",
     "ActorClass": [],
     "Animations": [],
@@ -3210,7 +3222,7 @@
     "Others": []
   },
   {
-    "Id": 216,
+    "Id": 217,
     "FsmKey": "SM_MO1JiBinMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -3226,7 +3238,7 @@
     ]
   },
   {
-    "Id": 217,
+    "Id": 218,
     "FsmKey": "SM_MO1JiBinMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3242,7 +3254,7 @@
     ]
   },
   {
-    "Id": 218,
+    "Id": 219,
     "FsmKey": "SM_MO1JiBinMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -3258,7 +3270,7 @@
     ]
   },
   {
-    "Id": 219,
+    "Id": 220,
     "FsmKey": "SM_MO1JinTingHouMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3273,7 +3285,7 @@
     ]
   },
   {
-    "Id": 220,
+    "Id": 221,
     "FsmKey": "SM_MO1JiQiangKuLuoLuoMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3285,7 +3297,7 @@
     "Others": []
   },
   {
-    "Id": 221,
+    "Id": 222,
     "FsmKey": "SM_MO1JTMuShiMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3297,7 +3309,7 @@
     "Others": []
   },
   {
-    "Id": 222,
+    "Id": 223,
     "FsmKey": "SM_MO1JTQiShiMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3309,7 +3321,7 @@
     "Others": []
   },
   {
-    "Id": 223,
+    "Id": 224,
     "FsmKey": "SM_MO1JTQiShiMd00001_rhythm",
     "ActorClass": [],
     "Animations": [],
@@ -3325,7 +3337,7 @@
     ]
   },
   {
-    "Id": 224,
+    "Id": 225,
     "FsmKey": "SM_MO1JTQiShiMd00001_Sum",
     "ActorClass": [],
     "Animations": [],
@@ -3339,7 +3351,7 @@
     ]
   },
   {
-    "Id": 225,
+    "Id": 226,
     "FsmKey": "SM_MO1JTSheShouMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3351,7 +3363,7 @@
     "Others": []
   },
   {
-    "Id": 226,
+    "Id": 227,
     "FsmKey": "SM_MO1JTSheShouMd00501_rhythm",
     "ActorClass": [],
     "Animations": [],
@@ -3367,7 +3379,7 @@
     ]
   },
   {
-    "Id": 227,
+    "Id": 228,
     "FsmKey": "SM_MO1JTSheShouMd00501_Sum",
     "ActorClass": [],
     "Animations": [],
@@ -3381,7 +3393,7 @@
     ]
   },
   {
-    "Id": 228,
+    "Id": 229,
     "FsmKey": "SM_MO1LeilieMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -3393,7 +3405,7 @@
     "Others": []
   },
   {
-    "Id": 229,
+    "Id": 230,
     "FsmKey": "SM_MO1LeilieMd00301_sanchongta",
     "ActorClass": [],
     "Animations": [],
@@ -3407,7 +3419,7 @@
     ]
   },
   {
-    "Id": 230,
+    "Id": 231,
     "FsmKey": "SM_MO1LeiXYLMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -3419,7 +3431,7 @@
     "Others": []
   },
   {
-    "Id": 231,
+    "Id": 232,
     "FsmKey": "SM_MO1LiufangzhemanMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3435,7 +3447,7 @@
     ]
   },
   {
-    "Id": 232,
+    "Id": 233,
     "FsmKey": "SM_MO1LuguiMd00201",
     "ActorClass": [],
     "Animations": [],
@@ -3447,7 +3459,7 @@
     "Others": []
   },
   {
-    "Id": 233,
+    "Id": 234,
     "FsmKey": "SM_MO1NabomoMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3465,7 +3477,7 @@
     ]
   },
   {
-    "Id": 234,
+    "Id": 235,
     "FsmKey": "SM_MO1QifuouyanjingMd00101_fengche",
     "ActorClass": [],
     "Animations": [],
@@ -3477,7 +3489,7 @@
     "Others": []
   },
   {
-    "Id": 235,
+    "Id": 236,
     "FsmKey": "SM_MO1QifuouyoushouMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -3493,7 +3505,7 @@
     ]
   },
   {
-    "Id": 236,
+    "Id": 237,
     "FsmKey": "SM_MO1QifuouzuoshouMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3509,7 +3521,7 @@
     ]
   },
   {
-    "Id": 237,
+    "Id": 238,
     "FsmKey": "SM_MO1QifuouzuoshouMd00501_fengche",
     "ActorClass": [],
     "Animations": [],
@@ -3521,7 +3533,7 @@
     "Others": []
   },
   {
-    "Id": 238,
+    "Id": 239,
     "FsmKey": "SM_MO1QifuouzuoshouMd00501_taofabaogao",
     "ActorClass": [],
     "Animations": [],
@@ -3533,7 +3545,7 @@
     "Others": []
   },
   {
-    "Id": 239,
+    "Id": 240,
     "FsmKey": "SM_MO1RonhuochongMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3545,7 +3557,7 @@
     "Others": []
   },
   {
-    "Id": 240,
+    "Id": 241,
     "FsmKey": "SM_MO1RonhuochongMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3559,7 +3571,7 @@
     "Others": []
   },
   {
-    "Id": 241,
+    "Id": 242,
     "FsmKey": "SM_MO1ShiTingHouMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3573,7 +3585,7 @@
     ]
   },
   {
-    "Id": 242,
+    "Id": 243,
     "FsmKey": "SM_MO1ShiZiTouMd00102",
     "ActorClass": [],
     "Animations": [],
@@ -3585,7 +3597,7 @@
     "Others": []
   },
   {
-    "Id": 243,
+    "Id": 244,
     "FsmKey": "SM_MO1ShouhuMd00002",
     "ActorClass": [],
     "Animations": [],
@@ -3597,7 +3609,7 @@
     "Others": []
   },
   {
-    "Id": 244,
+    "Id": 245,
     "FsmKey": "SM_MO1SiXiaoMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3609,7 +3621,7 @@
     "Others": []
   },
   {
-    "Id": 245,
+    "Id": 246,
     "FsmKey": "SM_MO1XiongFeng2Md00601",
     "ActorClass": [],
     "Animations": [],
@@ -3621,7 +3633,7 @@
     "Others": []
   },
   {
-    "Id": 246,
+    "Id": 247,
     "FsmKey": "SM_MO1YeGuiManMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3637,7 +3649,7 @@
     ]
   },
   {
-    "Id": 247,
+    "Id": 248,
     "FsmKey": "SM_MO1YoulinghuoMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3649,7 +3661,7 @@
     "Others": []
   },
   {
-    "Id": 248,
+    "Id": 249,
     "FsmKey": "SM_MO1YoulinghuoMd00102_taofabaogao",
     "ActorClass": [],
     "Animations": [],
@@ -3661,7 +3673,7 @@
     "Others": []
   },
   {
-    "Id": 249,
+    "Id": 250,
     "FsmKey": "SM_MO1YouyidieMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3673,7 +3685,7 @@
     "Others": []
   },
   {
-    "Id": 250,
+    "Id": 251,
     "FsmKey": "SM_MO1YuJiaMd000101",
     "ActorClass": [],
     "Animations": [],
@@ -3685,7 +3697,7 @@
     "Others": []
   },
   {
-    "Id": 251,
+    "Id": 252,
     "FsmKey": "SM_MO1YunhaiyaojingMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3697,7 +3709,7 @@
     "Others": []
   },
   {
-    "Id": 252,
+    "Id": 253,
     "FsmKey": "SM_MOP1BuouMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -3709,7 +3721,7 @@
     "Others": []
   },
   {
-    "Id": 253,
+    "Id": 254,
     "FsmKey": "SM_MOP1BuouMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3721,7 +3733,7 @@
     "Others": []
   },
   {
-    "Id": 254,
+    "Id": 255,
     "FsmKey": "SM_MOP1BuouMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -3733,7 +3745,7 @@
     "Others": []
   },
   {
-    "Id": 255,
+    "Id": 256,
     "FsmKey": "SM_MP1BingmengmaMd00201",
     "ActorClass": [],
     "Animations": [],
@@ -3750,7 +3762,7 @@
     "Others": []
   },
   {
-    "Id": 256,
+    "Id": 257,
     "FsmKey": "SM_MP1ChushounvMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -3767,7 +3779,7 @@
     "Others": []
   },
   {
-    "Id": 257,
+    "Id": 258,
     "FsmKey": "SM_MP1FengTingXieYou00201",
     "ActorClass": [],
     "Animations": [],
@@ -3788,7 +3800,7 @@
     ]
   },
   {
-    "Id": 258,
+    "Id": 259,
     "FsmKey": "SM_MP1HeibaiqishiMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -3806,7 +3818,7 @@
     "Others": []
   },
   {
-    "Id": 259,
+    "Id": 260,
     "FsmKey": "SM_MP1HeibaiqishiMd00301_Born",
     "ActorClass": [],
     "Animations": [],
@@ -3827,7 +3839,7 @@
     ]
   },
   {
-    "Id": 260,
+    "Id": 261,
     "FsmKey": "SM_MP1HeibaiqishiMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -3843,7 +3855,7 @@
     "Others": []
   },
   {
-    "Id": 261,
+    "Id": 262,
     "FsmKey": "SM_MP1HeibaiqishiMd00501_Born",
     "ActorClass": [],
     "Animations": [],
@@ -3862,7 +3874,7 @@
     ]
   },
   {
-    "Id": 262,
+    "Id": 263,
     "FsmKey": "SM_MP1HeibaiqishiMd00501_Born1",
     "ActorClass": [],
     "Animations": [],
@@ -3882,7 +3894,7 @@
     ]
   },
   {
-    "Id": 263,
+    "Id": 264,
     "FsmKey": "SM_MP1HeibaiqishiMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -3898,7 +3910,7 @@
     "Others": []
   },
   {
-    "Id": 264,
+    "Id": 265,
     "FsmKey": "SM_MP1HeibaiqishiMd00601_Born",
     "ActorClass": [],
     "Animations": [],
@@ -3917,7 +3929,7 @@
     ]
   },
   {
-    "Id": 265,
+    "Id": 266,
     "FsmKey": "SM_MP1HeibaiqishiMd00601_Born1",
     "ActorClass": [],
     "Animations": [],
@@ -3937,7 +3949,7 @@
     ]
   },
   {
-    "Id": 266,
+    "Id": 267,
     "FsmKey": "SM_MP1JiaoeMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -3953,7 +3965,7 @@
     ]
   },
   {
-    "Id": 267,
+    "Id": 268,
     "FsmKey": "SM_MP1ShijilongMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3965,7 +3977,7 @@
     "Others": []
   },
   {
-    "Id": 268,
+    "Id": 269,
     "FsmKey": "SM_MP1ShijilongZhuxianMd00101",
     "ActorClass": [],
     "Animations": [],
@@ -3977,7 +3989,7 @@
     "Others": []
   },
   {
-    "Id": 269,
+    "Id": 270,
     "FsmKey": "SM_MP1ShuangZiClawMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -3995,7 +4007,7 @@
     ]
   },
   {
-    "Id": 270,
+    "Id": 271,
     "FsmKey": "SM_MP1ShuangZiClawMd00302_bbt",
     "ActorClass": [],
     "Animations": [],
@@ -4013,7 +4025,7 @@
     ]
   },
   {
-    "Id": 271,
+    "Id": 272,
     "FsmKey": "SM_MP1ShuangZiGunMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -4029,7 +4041,7 @@
     ]
   },
   {
-    "Id": 272,
+    "Id": 273,
     "FsmKey": "SM_MP1ShuangZiGunMd00502_bbt",
     "ActorClass": [],
     "Animations": [],
@@ -4045,7 +4057,7 @@
     ]
   },
   {
-    "Id": 273,
+    "Id": 274,
     "FsmKey": "SM_MP1TaguanghuMd00501",
     "ActorClass": [],
     "Animations": [],
@@ -4059,7 +4071,7 @@
     ]
   },
   {
-    "Id": 274,
+    "Id": 275,
     "FsmKey": "SM_MP1TaguanghuMd00501_02",
     "ActorClass": [],
     "Animations": [],
@@ -4073,7 +4085,7 @@
     ]
   },
   {
-    "Id": 275,
+    "Id": 276,
     "FsmKey": "SM_MP1TaguanghuMd00501_ForTaskNew",
     "ActorClass": [],
     "Animations": [],
@@ -4087,7 +4099,7 @@
     ]
   },
   {
-    "Id": 276,
+    "Id": 277,
     "FsmKey": "SM_MP1YingsunMd00301",
     "ActorClass": [],
     "Animations": [],
@@ -4105,7 +4117,7 @@
     ]
   },
   {
-    "Id": 277,
+    "Id": 278,
     "FsmKey": "SM_MP1YingsunMd00401",
     "ActorClass": [],
     "Animations": [],
@@ -4122,7 +4134,7 @@
     ]
   },
   {
-    "Id": 278,
+    "Id": 279,
     "FsmKey": "SM_MRO1HuangBanRenMd00001",
     "ActorClass": [],
     "Animations": [],
@@ -4134,7 +4146,7 @@
     "Others": []
   },
   {
-    "Id": 279,
+    "Id": 280,
     "FsmKey": "SM_MRO1HuangBanRenMd00002",
     "ActorClass": [],
     "Animations": [],
@@ -4146,7 +4158,7 @@
     "Others": []
   },
   {
-    "Id": 280,
+    "Id": 281,
     "FsmKey": "SM_MT1ShaChongMd00601",
     "ActorClass": [],
     "Animations": [],
@@ -4158,7 +4170,7 @@
     "Others": []
   },
   {
-    "Id": 281,
+    "Id": 282,
     "FsmKey": "SM_Paotai110",
     "ActorClass": [],
     "Animations": [],
@@ -4170,7 +4182,7 @@
     "Others": []
   },
   {
-    "Id": 282,
+    "Id": 283,
     "FsmKey": "SM_Rebecca_Jiqiangta",
     "ActorClass": [],
     "Animations": [],
@@ -4182,7 +4194,7 @@
     "Others": []
   },
   {
-    "Id": 283,
+    "Id": 284,
     "FsmKey": "SM_RoleBeHit",
     "ActorClass": [],
     "Animations": [],
@@ -4194,7 +4206,7 @@
     "Others": []
   },
   {
-    "Id": 284,
+    "Id": 285,
     "FsmKey": "SM_TuanziCommon",
     "ActorClass": [],
     "Animations": [],
@@ -4206,7 +4218,7 @@
     "Others": []
   },
   {
-    "Id": 285,
+    "Id": 286,
     "FsmKey": "SM_XiGeLiKaMd00001",
     "ActorClass": [],
     "Animations": [],
