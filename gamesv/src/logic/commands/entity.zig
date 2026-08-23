@@ -401,7 +401,6 @@ pub const spawn = struct {
             }
         }
         errdefer if (fsm_component) |*fsm| fsm.deinit(alloc.gpa);
-        errdefer if (attribute_component) |*attr| alloc.gpa.free(attr.attributes);
         errdefer if (tag_component) |*tags| tags.deinit(alloc.gpa);
         errdefer if (part_component) |*part| part.deinit(alloc.gpa);
         if (part_component) |*part| {

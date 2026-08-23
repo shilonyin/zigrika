@@ -189,7 +189,7 @@ pub fn dispatchMessage(
                 },
             };
 
-            log.debug("handled message of type {s}", .{@typeName(handler.Message)});
+            // log.debug("handled message of type {s}", .{@typeName(handler.Message)});
         },
     }
 }

@@ -576,6 +576,7 @@ pub const AttrData = struct {
     pub const AttributeType_field_number: u32 = 1;
     pub const CurrentValue_field_number: u32 = 2;
     pub const ValueIncrement_field_number: u32 = 3;
+    pub const CurrentValue2_field_number: u32 = 4;
 };
 pub const GameplayTagData = struct {
     pub const Id_field_number: u32 = 1;
@@ -1130,9 +1131,12 @@ pub const TransitionInSeamlessPb = struct {
     } = null,
     Config: ?union(enum) {
     } = null,
+    DOLLARiy: ?union(enum) {
+    } = null,
     pub const TransitionWeatherDaPath_field_number: u32 = 8;
     pub const SceneEffectDaPath_field_number: u32 = 10;
     pub const SeamlessTeleportFinishConfig_field_number: u32 = 11;
+    pub const NormalStreamingLoad_field_number: u32 = 12;
     pub const EffectPath_field_number: u32 = 1;
     pub const LeastTime_field_number: u32 = 2;
     pub const EffectExpandTime_field_number: u32 = 3;
@@ -9049,6 +9053,7 @@ pub const PayShopInfo = struct {
     pub const Money_field_number: u32 = 8;
     pub const SortRule_field_number: u32 = 9;
     pub const PayShopTabTogContent_field_number: u32 = 10;
+    pub const EnableServerRedDot_field_number: u32 = 11;
 };
 pub const PayGiftShopInfo = struct {
     pub const Gifts_field_number: u32 = 1;
@@ -9484,6 +9489,7 @@ pub const VisionFetterRecommendInfo = struct {
     pub const Usage_field_number: u32 = 2;
     pub const RecommendFetterGroupInfos_field_number: u32 = 3;
     pub const CostCombinationInfos_field_number: u32 = 4;
+    pub const MainPhantomRecommendInfos_field_number: u32 = 5;
 };
 pub const RecommendFetterGroupInfo = struct {
     pub const RecommendFetterGroupId_field_number: u32 = 1;

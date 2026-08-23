@@ -49,10 +49,7 @@ pub fn createPlayerSceneEntity(
     });
     const entity = try scene.spawn(alloc.gpa, fs, .{
         Entity.FollowerComponent{ .list = followers },
-        try Entity.AttributeComponent.create(
-            try assets.tables.getProps(390077025, alloc.arena),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try assets.tables.getProps(390077025, alloc.arena)),
         Entity.ConfigComponent{
             .camp = 0,
             .state = .default,
@@ -93,10 +90,7 @@ pub fn createMotorcycleEntity(
     errdefer alloc.gpa.free(gameplay_tags);
 
     const entity = try scene.spawn(alloc.gpa, fs, .{
-        try Entity.AttributeComponent.create(
-            props,
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(props),
         Entity.ConfigComponent{
             .camp = 0,
             .state = .default,
@@ -209,10 +203,7 @@ pub fn ensureMotorcycleCompanionEntity(
         },
         Entity.ActorVisibleMarker{},
         Entity.FightBuffComponent{},
-        try Entity.AttributeComponent.create(
-            try assets.tables.getProps(motorcycle_companion_property_id, alloc.arena),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try assets.tables.getProps(motorcycle_companion_property_id, alloc.arena)),
         Entity.SummonerComponent{
             .player_id = player_id,
             .summon_cfg_id = summon_cfg.Id,
@@ -373,10 +364,7 @@ pub fn createMotorcyclePassengerEntity(
         Entity.VisibleMarker{},
         Entity.ActorVisibleMarker{},
         Entity.FightBuffComponent{},
-        try Entity.AttributeComponent.create(
-            try assets.tables.getProps(property_id, alloc.arena),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try assets.tables.getProps(property_id, alloc.arena)),
         Entity.NpcDriveVehicleComponent{
             .vehicle_entity_id = motorcycle_entity.net_id,
             .seat = seat,
@@ -542,10 +530,7 @@ pub fn createSceneBattleEntity(
     assets: *const Assets,
 ) !Entity {
     const entity = try scene.spawn(alloc.gpa, fs, .{
-        try Entity.AttributeComponent.create(
-            try assets.tables.getProps(390077025, alloc.arena),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try assets.tables.getProps(390077025, alloc.arena)),
         Entity.ConfigComponent{
             .camp = 0,
             .state = .default,

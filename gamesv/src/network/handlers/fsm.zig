@@ -195,7 +195,7 @@ pub fn ChangeStateRequest(
         },
         .mismatch => |pending_state| {
             current_state = pending_state;
-            response_error = try errorResult(alloc.arena, .ErrIEntityFsmActionNotMatchState, &.{
+            response_error = try errorResult(alloc.arena, .ErrIentityFsmActionNotMatchState, &.{
                 txn.payload.FsmId,
                 txn.payload.ToState,
                 pending_state,
@@ -207,7 +207,7 @@ pub fn ChangeStateRequest(
             txn.payload.FromState,
             current_state,
         }),
-        .invalid_target => response_error = try errorResult(alloc.arena, .ErrIEntityFsmTransitToState, &.{
+        .invalid_target => response_error = try errorResult(alloc.arena, .ErrIentityFsmTransitToState, &.{
             txn.payload.FsmId,
             txn.payload.ToState,
         }),
@@ -220,14 +220,14 @@ pub fn ChangeStateRequest(
                 }
                 const transition = notify.Message.?.CombatNotifyData.?.Message.?.ChangeStateNotify.?;
                 current_state = transition.ToState;
-                response_error = try errorResult(alloc.arena, .ErrIEntityFsmConfirmNotWait, &.{
+                response_error = try errorResult(alloc.arena, .ErrIentityFsmConfirmNotWait, &.{
                     transition.FsmId,
                     transition.FromState,
                     transition.ToState,
                 });
             } else {
                 current_state = fsm.currentState(txn.payload.FsmId) orelse current_state;
-                response_error = try errorResult(alloc.arena, .ErrIEntityFsmConfirmNotExist, &.{
+                response_error = try errorResult(alloc.arena, .ErrIentityFsmConfirmNotExist, &.{
                     txn.payload.FsmId,
                     current_state,
                 });
@@ -287,18 +287,18 @@ pub fn ChangeStateConfirmRequest(
         },
         .mismatch => |pending_state| {
             response_state = pending_state;
-            response_error = try errorResult(alloc.arena, .ErrIEntityFsmActionNotMatchState, &.{
+            response_error = try errorResult(alloc.arena, .ErrIentityFsmActionNotMatchState, &.{
                 txn.payload.FsmId,
                 txn.payload.State,
                 pending_state,
             });
         },
         .machine_not_found => response_error = try errorResult(alloc.arena, .ErrEntityFsmMachineNotExist, &.{txn.payload.FsmId}),
-        .invalid_target => response_error = try errorResult(alloc.arena, .ErrIEntityFsmTransitToState, &.{
+        .invalid_target => response_error = try errorResult(alloc.arena, .ErrIentityFsmTransitToState, &.{
             txn.payload.FsmId,
             txn.payload.State,
         }),
-        .no_pending => response_error = try errorResult(alloc.arena, .ErrIEntityFsmConfirmNotExist, &.{
+        .no_pending => response_error = try errorResult(alloc.arena, .ErrIentityFsmConfirmNotExist, &.{
             txn.payload.FsmId,
             response_state,
         }),
@@ -747,7 +747,7 @@ fn clientPassError(
             payload.FsmId,
             payload.FromState,
         }),
-        .invalid_target => try errorResult(arena, .ErrIEntityFsmTransitToState, &.{
+        .invalid_target => try errorResult(arena, .ErrIentityFsmTransitToState, &.{
             payload.FsmId,
             payload.ToState,
         }),
@@ -758,7 +758,7 @@ fn clientPassError(
         .condition_context_invalid,
         => try errorResult(
             arena,
-            .ErrIEntityFsmActionNotMatchState,
+            .ErrIentityFsmActionNotMatchState,
             &.{ payload.FsmId, payload.FromState, payload.ToState, payload.ConditionIndex },
         ),
     };

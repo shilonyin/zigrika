@@ -561,8 +561,7 @@ fn syncEchoAttributes(
     attr_comp: *Entity.AttributeComponent,
     io: std.Io,
 ) !bool {
-    const before = try alloc.gpa.dupe(Entity.AttributeComponent.Attribute, attr_comp.attributes);
-    defer alloc.gpa.free(before);
+    const before = attr_comp.attributes;
 
     try RoleStats.refreshAttributeComponent(alloc.gpa, assets, role_comp, role_id, weapon_comp, echo_comp, attr_comp);
 

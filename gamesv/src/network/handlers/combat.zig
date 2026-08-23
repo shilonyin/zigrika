@@ -84,8 +84,6 @@ pub fn dispatch(
                 return null;
             }
 
-            log.debug("handling combat message: {s}", .{@tagName(tag)});
-
             const target_fn = comptime handler;
             const Args = std.meta.ArgsTuple(@TypeOf(target_fn));
             var args: Args = undefined;
@@ -127,6 +125,8 @@ pub fn dispatch(
 
                 try @call(.auto, target_fn, args);
             }
+
+            // log.debug("handled combat message of type: {s}", .{@tagName(tag)});
 
             return null;
         },

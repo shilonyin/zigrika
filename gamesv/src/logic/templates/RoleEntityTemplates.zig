@@ -124,10 +124,7 @@ pub fn createConcomitantEntity(
         },
         Entity.ActorVisibleMarker{},
         Entity.FightBuffComponent{},
-        try Entity.AttributeComponent.create(
-            try alloc.arena.dupe(i32, role_info.base_prop),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try alloc.arena.dupe(i32, role_info.base_prop)),
         Entity.SummonerComponent{
             .player_id = player_id,
             .summon_cfg_id = summon_cfg.Id,
@@ -203,10 +200,7 @@ pub fn createVisionEntity(
         },
         Entity.ActorVisibleMarker{},
         Entity.FightBuffComponent{},
-        try Entity.AttributeComponent.create(
-            try alloc.arena.dupe(i32, role_info.base_prop),
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.create(try alloc.arena.dupe(i32, role_info.base_prop)),
         Entity.SummonerComponent{
             .player_id = player_id,
             .summon_cfg_id = summon_cfg.Id,
@@ -417,11 +411,7 @@ pub fn createRoleEntity(
         Entity.PlayerIDComponent{ .id = player_id },
         Entity.ActorVisibleMarker{},
         Entity.DirectControlMarker{},
-        try Entity.AttributeComponent.createWithIncrements(
-            role_snapshot.base_props,
-            role_snapshot.add_props,
-            alloc.gpa,
-        ),
+        try Entity.AttributeComponent.createWithIncrements(role_snapshot.base_props, role_snapshot.add_props),
         Entity.ConcomitantComponent{},
         Entity.PassiveGaSkillComponent{},
         try Entity.FsmComponent.fromStateMachineId(be_hit_state_machine, assets),

@@ -147,7 +147,7 @@ pub fn handleReconnectRequest(ac: AuthContext(pb.ReconnectRequest), arena: Alloc
 
     if (ac.request.PlayerId <= 0) {
         try ac.respond(gpa, io, pb.ReconnectResponse{
-            .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
+            .ErrorCode = .ErrReconnectGwgetGatePlayerFailed,
             .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
             .IsPermittedSilentLogin = true,
         });
@@ -157,7 +157,7 @@ pub fn handleReconnectRequest(ac: AuthContext(pb.ReconnectRequest), arena: Alloc
     const basic_info_path = try std.fmt.allocPrint(arena, "player/{}/basic_info", .{ac.request.PlayerId});
     if (try fs.readFile(arena, basic_info_path) == null) {
         try ac.respond(gpa, io, pb.ReconnectResponse{
-            .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
+            .ErrorCode = .ErrReconnectGwgetGatePlayerFailed,
             .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
             .IsPermittedSilentLogin = true,
         });
@@ -166,7 +166,7 @@ pub fn handleReconnectRequest(ac: AuthContext(pb.ReconnectRequest), arena: Alloc
 
     if (!try validateReconnectToken(arena, fs, ac.request.PlayerId, ac.request.ReconnectToken)) {
         try ac.respond(gpa, io, pb.ReconnectResponse{
-            .ErrorCode = .ErrReconnectGWGetGatePlayerFailed,
+            .ErrorCode = .ErrReconnectGwgetGatePlayerFailed,
             .Timestamp = Io.Clock.real.now(fs.io).toMilliseconds(),
             .IsPermittedSilentLogin = true,
         });

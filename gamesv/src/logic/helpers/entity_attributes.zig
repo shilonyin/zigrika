@@ -182,6 +182,5 @@ pub fn createCombatAttributes(
         props,
         hardnessModeId(components),
         rageModeId(components),
-        alloc.gpa,
     );
 }

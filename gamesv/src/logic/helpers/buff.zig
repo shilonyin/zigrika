@@ -115,8 +115,6 @@ fn executeBuffEffects(
         }
     };
 
-    log.debug("buff id {d}", .{buff_data.Id});
-
     switch (mode) {
         .instant => if (buff_data.DurationPolicy != .Instant) return,
         .periodic => if (buff_data.Period <= 0) return,
