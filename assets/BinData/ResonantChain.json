@@ -7562,7 +7562,7 @@
       "2",
       "1",
       "25",
-      "500%",
+      "400%",
       "4%",
       "1",
       "25"
@@ -7683,7 +7683,13 @@
     },
     "AttributesDescriptionParams": [
       "40%",
-      "40%"
+      "20%",
+      "2%",
+      "7",
+      "5%",
+      "2%",
+      "7",
+      "5%"
     ],
     "NodeIcon": "/Game/Aki/UI/UIResources/Common/Image/IconDevice/T_IconDevice_QingxiaoM6_UI.T_IconDevice_QingxiaoM6_UI"
   },
@@ -7848,20 +7854,18 @@
     "BgDescription": "PrefabTextItem_Empty_Text",
     "BuffIds": [
       1212900201,
-      1212900204,
-      1212900102
+      1212900204
     ],
     "AddProp": [],
     "ActivateConsume": {
       "10001212": 1
     },
     "AttributesDescriptionParams": [
-      "40%",
-      "40%",
+      "46%",
+      "46%",
       "4",
       "300",
-      "25",
-      "25",
+      "25%",
       "180%",
       "4"
     ],
@@ -7958,7 +7962,8 @@
     },
     "AttributesDescriptionParams": [
       "40%",
-      "50%",
+      "80%",
+      "15",
       "1"
     ],
     "NodeIcon": "/Game/Aki/UI/UIResources/Common/Image/IconDevice/T_IconDevice_JingranM6_UI.T_IconDevice_JingranM6_UI"
