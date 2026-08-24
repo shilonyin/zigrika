@@ -195,7 +195,7 @@ setTimeout(() => {
     const entity = teamItem.Kpo?.Entity;
     if (!entity?.Valid) continue;
 
-    const specialSkillComp = entity.GetComponent(286);
+    const specialSkillComp = entity.GetComponent(289);
     if (!specialSkillComp) continue;
 
     const specialSkill = specialSkillComp.SpecialSkill;
@@ -418,26 +418,70 @@ setTimeout(() => {
         ]);
   };
 
+  let was_in_seq_camera = false;
+
+  const detach_sequence = () => {
+    const player_component =
+      ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera
+        ?.PlayerComponent;
+    was_in_seq_camera = !!player_component?.exr;
+    if (!was_in_seq_camera) return;
+
+    ControllerHolder_1.ControllerHolder.CameraController.ExitCameraMode(
+      1,
+      0,
+      0,
+      0,
+      () => {},
+      ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
+    );
+  };
+
+  const reattach_sequence = () => {
+    if (!was_in_seq_camera) return;
+    was_in_seq_camera = false;
+
+    ControllerHolder_1.ControllerHolder.CameraController.EnterCameraMode(
+      1,
+      0,
+      0,
+      0,
+      () => {},
+      false,
+      ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
+    );
+  };
+
   function detach_plot_camera() {
     const seq = SequenceController_1.SequenceController;
     if (seq.jio?.State !== 3) return;
 
     const seq_cine_camera =
-      ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera?.DisplayComponent
-        ?.CineCamera;
+      ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera
+        ?.DisplayComponent?.CineCamera;
 
     if (seq_cine_camera) {
-        const loc = seq_cine_camera.K2_GetActorLocation();
-        const rot = seq_cine_camera.K2_GetActorRotation();
+      const loc = seq_cine_camera.K2_GetActorLocation();
+      const rot = seq_cine_camera.K2_GetActorRotation();
 
-        seq.Yio?.AllStop();
+      seq.Yio?.AllStop();
 
-        const structure =
-            ModelManager_1.ModelManager.PhotographModel.GetPhotographerStructure();
-        const photographer = structure?.$Uo;
+      ControllerHolder_1.ControllerHolder.CameraController.ExitCameraMode(
+        2,
+        0,
+        0,
+        0,
+        () => {},
+        ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
+      );
+      ControllerHolder_1.ControllerHolder.CameraController.EnterCameraMode(2);
 
-        photographer.K2_SetActorLocation(loc, false, void 0, false);
-        photographer.K2_SetActorRotation(rot, false, void 0, false);
+      const structure =
+        ModelManager_1.ModelManager.PhotographModel.GetPhotographerStructure();
+      const photographer = structure?.$Uo;
+
+      photographer.K2_SetActorLocation(loc, false, void 0, false);
+      photographer.K2_SetActorRotation(rot, false, void 0, false);
     }
   }
 
@@ -568,33 +612,10 @@ setTimeout(() => {
   PhotoSaveView.prototype.OnDestroy = function () {
     const freeze_time = PhotographModel.GetPhotographOption(MAX_ID + 3);
     if (freeze_time === 1 || freeze_time == true) {
-      dilate_time(0)
+      dilate_time(0);
     } else {
       dilate_time(PhotographModel.GetPhotographOption(MAX_ID + 4));
     }
-  }
-
-  let was_in_seq_camera = false;
-
-  const detach_sequence = () => {
-      const player_component = ModelManager_1.ModelManager.CameraModel.MainModel.SequenceCamera?.PlayerComponent;
-      was_in_seq_camera = !!player_component?.exr;
-      if (!was_in_seq_camera) return;
-
-      ControllerHolder_1.ControllerHolder.CameraController.ExitCameraMode(
-          1, 0, 0, 0, () => {},
-          ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
-      );
-  };
-
-  const reattach_sequence = () => {
-      if (!was_in_seq_camera) return;
-      was_in_seq_camera = false;
-
-      ControllerHolder_1.ControllerHolder.CameraController.EnterCameraMode(
-          1, 0, 0, 0, () => {}, false,
-          ModelManager_1.ModelManager.CameraModel.MainModel.CameraName,
-      );
   };
 
   // reattach
@@ -1403,22 +1424,19 @@ setTimeout(() => {
   //     );
   //   };
   const orig_refresh_input_tag =
-      InputDistributeController_1.InputDistributeController.RefreshInputTag.bind(
-          InputDistributeController_1.InputDistributeController,
-      );
+    InputDistributeController_1.InputDistributeController.RefreshInputTag.bind(
+      InputDistributeController_1.InputDistributeController,
+    );
 
   InputDistributeController_1.InputDistributeController.RefreshInputTag =
-      function () {
-          orig_refresh_input_tag();
-          if (UiManager_1.UiManager.IsViewOpen("PhotographView")) {
-              ModelManager_1.ModelManager.InputDistributeModel.AddInputDistributeTag(
-                  InputDistributeDefine_1.inputDistributeTagDefine.FightInputRootTag,
-              );
-              this.AddInputDistributeTag(
-                InputDistributeDefine_1.inputDistributeTagDefine.UiInputRootTag,
-              );
-          }
-      };
+    function () {
+      orig_refresh_input_tag();
+      if (UiManager_1.UiManager.IsViewOpen("PhotographView")) {
+        ModelManager_1.ModelManager.InputDistributeModel.AddInputDistributeTag(
+          InputDistributeDefine_1.inputDistributeTagDefine.UiInputRootTag,
+        );
+      }
+    };
 
   ControllerHolder_1.ControllerHolder.PhotographController.$ha = function (t) {
     return !0;
