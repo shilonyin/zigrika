@@ -1008,5 +1008,16 @@
     ],
     "CustomConcomitantIds": [],
     "ConcomitantBuffs": {}
+  },
+  {
+    "RoleId": "8004",
+    "FightBuffs": [
+      "10900000",
+      "10901001",
+      "10902001",
+      "100900211"
+    ],
+    "CustomConcomitantIds": [],
+    "ConcomitantBuffs": {}
   }
 ]

@@ -229,7 +229,6 @@ fn scaleProperty(value: *i32, ratio: i32) void {
 
 pub fn addDefaults(gpa: Allocator, assets: *const Assets, map: *std.array_hash_map.Auto(i32, RoleInfo)) !void {
     for (assets.tables.role_info.items) |info| {
-        if (info.Id < 1000 or info.Id > 1999) continue;
         try map.put(gpa, info.Id, try createDefault(gpa, assets, info.Id));
     }
 }
