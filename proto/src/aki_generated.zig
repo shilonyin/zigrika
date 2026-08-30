@@ -6518,6 +6518,12 @@ pub const SceneRoadSyncNotify = struct {
     pub const InstanceId_field_number: u32 = 13;
     pub const EnabledRoads_field_number: u32 = 15;
 };
+pub const BlackScreenStatePush = struct {
+    pub const msg_id: u16 = 24501;
+    pub const IsOpen_field_number: u32 = 4;
+    pub const Source_field_number: u32 = 1;
+    pub const BlackScreenReason_field_number: u32 = 14;
+};
 pub const MontageContext = struct {
     pub const SkillId_field_number: u32 = 1;
     pub const MontageIndex_field_number: u32 = 2;
@@ -7927,6 +7933,15 @@ pub const FlowOptionInfo = struct {
 pub const FlowEndResponse = struct {
     pub const msg_id: u16 = 21796;
     pub const ErrorCode_field_number: u32 = 13;
+};
+pub const FlowActionRequest = struct {
+    pub const msg_id: u16 = 22245;
+    pub const FlowIncId_field_number: u32 = 9;
+    pub const ActionId_field_number: u32 = 14;
+};
+pub const FlowActionResponse = struct {
+    pub const msg_id: u16 = 19764;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const FlySkinEquipData = struct {
     pub const SkinId_field_number: u32 = 1;

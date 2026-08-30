@@ -21,3 +21,9 @@ pub fn onFlowEndRequest(
 
     txn.respond(.{});
 }
+
+pub fn onFlowActionRequest(
+    txn: *Transaction(pb.FlowActionRequest),
+) !void {
+    txn.respond(.{});
+}

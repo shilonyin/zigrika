@@ -4,6 +4,9 @@ const {
 const SceneTeamController_1 = require("../Game/Module/SceneTeam/SceneTeamController.js");
 const SceneTeamDefine_1 = require("../Game/Module/SceneTeam/SceneTeamDefine.js");
 const ScrollingTipsController_1 = require("Game/Module/ScrollingTips/ScrollingTipsController.js");
+const InputDistributeController_1 = require("../Game/Ui/InputDistribute/InputDistributeController.js");
+const InputMappingsDefine_1 = require("../Game/Ui/InputDistribute/InputMappingsDefine.js");
+const ControllerHolder_1 = require("../Game/Manager/ControllerHolder.js");
 
 const CONTROLLER_TYPE = "{CONTROLLER_TYPE}";
 
@@ -32,6 +35,25 @@ SceneTeamCooperationHandler.prototype.Trigger = function (e, r) {
 
       return false;
     }
+  }
+
+  const open_photo_mode = () => {
+    ControllerHolder_1.ControllerHolder.PhotographController.TryOpenPhotograph(
+      0,
+    );
+  };
+
+  if (e.GetConfigId === 8004) {
+    InputDistributeController_1.InputDistributeController.UnBindAction(
+      InputMappingsDefine_1.actionMappings.UI键盘T手柄Y,
+      open_photo_mode,
+    );
+  }
+  if (r.GetConfigId === 8004) {
+    InputDistributeController_1.InputDistributeController.BindAction(
+      InputMappingsDefine_1.actionMappings.UI键盘T手柄Y,
+      open_photo_mode,
+    );
   }
 
   SceneTeamController_1.SceneTeamController.RequestChangeRole(

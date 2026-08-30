@@ -13243,6 +13243,17 @@ pub const SceneRoadSyncNotify = struct {
     InstanceId: i32 = 0,
     EnabledRoads: std.ArrayList(i32) = .empty,
 };
+pub const BlackScreenSourceType = enum(i32) {
+    pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
+    BehaviorTreeNode = 0,
+    ClientAuto = 1,
+};
+pub const BlackScreenStatePush = struct {
+    pub const default: @This() = .{};
+    IsOpen: bool = false,
+    Source: ?BlackScreenSourceType = null,
+    BlackScreenReason: []const u8 = "",
+};
 pub const EBulletCreateSource = enum(i32) {
     pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
     NormalSource = 0,
@@ -14803,6 +14814,15 @@ pub const FlowOptionInfo = struct {
     OptionIndex: i32 = 0,
 };
 pub const FlowEndResponse = struct {
+    pub const default: @This() = .{};
+    ErrorCode: ?ErrorCode = null,
+};
+pub const FlowActionRequest = struct {
+    pub const default: @This() = .{};
+    FlowIncId: i64 = 0,
+    ActionId: i32 = 0,
+};
+pub const FlowActionResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
 };

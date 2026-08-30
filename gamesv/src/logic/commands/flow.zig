@@ -37,21 +37,12 @@ pub const flow = struct {
         try scene.saveLastScene(scene_comp, fs, alloc.gpa);
 
         // this sucks btw
-        if (scene.instance_id == flow_inst.DungeonId) {
-            try conn.push(alloc.gpa, io, pb.FlowStartNotify{
-                .FlowIncId = 1,
-                .FlowListName = flow_namespace,
-                .FlowId = flow_id,
-                .StateId = state_id,
-            });
-        } else {
-            try events.enqueue(.initial_scene_join, .{ .pending_flow = .{
-                .inc_id = 1,
-                .namespace = flow_namespace,
-                .id = flow_id,
-                .state = state_id,
-            } });
-        }
+        try events.enqueue(.initial_scene_join, .{ .pending_flow = .{
+            .inc_id = 1,
+            .namespace = flow_namespace,
+            .id = flow_id,
+            .state = state_id,
+        } });
 
         try events.enqueue(.chat_command_response, .{ .content = "probably, sent you to flow successfully!" });
     }
