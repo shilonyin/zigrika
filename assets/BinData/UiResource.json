@@ -3980,7 +3980,8 @@
     "PcPath": "/Game/Aki/UI/UIResources/UiTips/Prefabs/PC/PC_UiView_RaceResultTip.PC_UiView_RaceResultTip",
     "ResourceType": "Activity",
     "ActivityType": [
-      "TeamParkOurActivity"
+      "TeamParkOurActivity",
+      "TowerDefenceActivity"
     ]
   },
   {
@@ -7281,14 +7282,14 @@
     "Id": "UiView_FightEdit",
     "Path": "/Game/Aki/UI/UIResources/UiFight/Prefabs/UiView_FightEdit.UiView_FightEdit",
     "PcPath": "",
-    "ResourceType": "Discard",
+    "ResourceType": "Common",
     "ActivityType": []
   },
   {
     "Id": "UiItem_Zudui",
     "Path": "/Game/Aki/UI/UIResources/UiChat/Prefabs/UiItem_Zudui.UiItem_Zudui",
     "PcPath": "",
-    "ResourceType": "Discard",
+    "ResourceType": "Common",
     "ActivityType": []
   },
   {
@@ -44877,7 +44878,7 @@
   {
     "Id": "UiView_RoverlikeMainView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RogueLevelMain.UiView_RogueLevelMain",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RogueLevelMain.PC_UiView_RogueLevelMain",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44886,7 +44887,7 @@
   {
     "Id": "UiView_RoverlikeShopView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RogueShop.UiView_RogueShop",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RogueShop.PC_UiView_RogueShop",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44895,7 +44896,7 @@
   {
     "Id": "UiView_RoverlikeQuestRewardView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RogueRewards.UiView_RogueRewards",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RogueRewards.PC_UiView_RogueRewards",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44904,7 +44905,7 @@
   {
     "Id": "UiView_RoverlikeHandBookView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_Rogue36Collect.UiView_Rogue36Collect",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_SpoilsCollect.PC_UiView_SpoilsCollect",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44913,7 +44914,7 @@
   {
     "Id": "UiView_RoverlikeRoleUnlockView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiView_RoleUnlockPopup.UiView_RoleUnlockPopup",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiView_RoleUnlockPopup.PC_UiView_RoleUnlockPopup",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44922,7 +44923,7 @@
   {
     "Id": "UiView_RoverlikeLevelSelectView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RogueSelectLevel.UiView_RogueSelectLevel",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RogueSelectLevel.PC_UiView_RogueSelectLevel",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44931,7 +44932,7 @@
   {
     "Id": "UiView_RoverlikeTalentTreeView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/SkillTree/UiView_RogueSkill.UiView_RogueSkill",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/SkillTree/PC_UiView_RogueSkill.PC_UiView_RogueSkill",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44940,7 +44941,7 @@
   {
     "Id": "UiView_RoverlikeTalentTreeUnlockView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/SkillTree/UiView_ActivationSuccessful.UiView_ActivationSuccessful",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/SkillTree/PC_UiView_ActivationSuccessful.PC_UiView_ActivationSuccessful",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -44958,7 +44959,7 @@
   {
     "Id": "UiView_RoverlikeLootUnlockView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiView_UnlockSpoils.UiView_UnlockSpoils",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiView_UnlockSpoils.PC_UiView_UnlockSpoils",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45002,7 +45003,7 @@
   {
     "Id": "UiView_RoverlikeGeneralActionView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiView_RoguePopupMain.UiView_RoguePopupMain",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiView_RoguePopupMain.PC_UiView_RoguePopupMain",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45011,7 +45012,7 @@
   {
     "Id": "UiView_RoverlikeBlessingReplaceView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiView_ReplaceBlessing.UiView_ReplaceBlessing",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiView_ReplaceBlessing.PC_UiView_ReplaceBlessing",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45020,7 +45021,7 @@
   {
     "Id": "UiView_RoverlikeGeneralObtainView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiView_RogueObtainPopup.UiView_RogueObtainPopup",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiView_RogueObtainPopup.PC_UiView_RogueObtainPopup",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45029,7 +45030,7 @@
   {
     "Id": "UiView_RoverlikeGameShopView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiItem_Rogue36Store.UiItem_Rogue36Store",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiItem_Rogue36Store.PC_UiItem_Rogue36Store",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45038,7 +45039,7 @@
   {
     "Id": "UiView_RoverlikePauseView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RoguePause.UiView_RoguePause",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RoguePause.PC_UiView_RoguePause",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45047,7 +45048,7 @@
   {
     "Id": "UiItem_RoverlikeBlessingSetPreview",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueBlessingSelectRole.UiItem_RogueBlessingSelectRole",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueBlessingSelectRole.PC_UiItem_RogueBlessingSelectRole",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45056,7 +45057,7 @@
   {
     "Id": "UiItem_RoverlikeBlessingSetChoose",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueBlessingSuit.UiItem_RogueBlessingSuit",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueBlessingSuit.PC_UiItem_RogueBlessingSuit",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45065,7 +45066,7 @@
   {
     "Id": "UiItem_RoverlikeBlessingSelect",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueSelectBlessing.UiItem_RogueSelectBlessing",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueSelectBlessing.PC_UiItem_RogueSelectBlessing",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45074,7 +45075,7 @@
   {
     "Id": "UiItem_RoverlikeRoleBuffSelect",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueSelectReinforcement.UiItem_RogueSelectReinforcement",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueSelectReinforcement.PC_UiItem_RogueSelectReinforcement",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45083,7 +45084,7 @@
   {
     "Id": "UiItem_RoverlikeGameEvent",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueSelectEven.UiItem_RogueSelectEven",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueSelectEven.PC_UiItem_RogueSelectEven",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45197,7 +45198,7 @@
   {
     "Id": "UiView_RoverlikeResultView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Settlement/UiView_Rogue36Settlement.UiView_Rogue36Settlement",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Settlement/PC_UiView_Rogue36Settlement.PC_UiView_Rogue36Settlement",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45508,14 +45509,14 @@
   {
     "Id": "UiView_VisionRecommend",
     "Path": "/Game/Aki/UI/UIResources/UiRole/Prefabs/RoleVision/VisioRecommend/UiView_VisionRecommend.UiView_VisionRecommend",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiRole/Prefabs/PC/RoleVision/VisioRecommend/PC_UiView_VisionRecommend.PC_UiView_VisionRecommend",
     "ResourceType": "Common",
     "ActivityType": []
   },
   {
     "Id": "UiView_VisionAssembleContrast",
     "Path": "/Game/Aki/UI/UIResources/UiRole/Prefabs/RoleVision/VisioRecommend/UiView_VisionAssembleContrast.UiView_VisionAssembleContrast",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiRole/Prefabs/PC/RoleVision/VisioRecommend/PC_UiView_VisionAssembleContrast.PC_UiView_VisionAssembleContrast",
     "ResourceType": "Common",
     "ActivityType": []
   },
@@ -45835,7 +45836,7 @@
   {
     "Id": "UiItem_RoverRougeTalentTreeNorNode",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/SkillTree/UiItem_SkillTreeL1.UiItem_SkillTreeL1",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/SkillTree/PC_UiItem_SkillTreeL1.PC_UiItem_SkillTreeL1",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45844,7 +45845,7 @@
   {
     "Id": "UiItem_RoverRougeTalentTreeSPNode",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/SkillTree/UiItem_SkillTreeL2.UiItem_SkillTreeL2",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/SkillTree/PC_UiItem_SkillTreeL2.PC_UiItem_SkillTreeL2",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45867,7 +45868,7 @@
   {
     "Id": "UiItem_RogueBlessingEnhance",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Popup/UiItem_RogueBlessingEnhance.UiItem_RogueBlessingEnhance",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Popup/PC_UiItem_RogueBlessingEnhance.PC_UiItem_RogueBlessingEnhance",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45876,7 +45877,7 @@
   {
     "Id": "UiView_LordGymReward",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/OnlineLordGym/Reward/UiView_LordGymReward.UiView_LordGymReward",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/OnlineLordGym/Reward/PC_UiView_LordGymReward.PC_UiView_LordGymReward",
     "ResourceType": "Activity",
     "ActivityType": [
       "TowerDefenceActivity"
@@ -45884,15 +45885,15 @@
   },
   {
     "Id": "UiView_SwordControlGroundView",
-    "Path": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/SwordFlight/UiView_UiItem_SwordFlightAim.UiView_UiItem_SwordFlightAim",
-    "PcPath": "",
+    "Path": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/SwordFlight/UiView_SwordFlightAim.UiView_SwordFlightAim",
+    "PcPath": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/PC/SwordFlight/PC_UiView_SwordFlightAim.PC_UiView_SwordFlightAim",
     "ResourceType": "Common",
     "ActivityType": []
   },
   {
     "Id": "UiItem_RoverRogueCaption",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Com/UiItem_RogueTop.UiItem_RogueTop",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Com/PC_UiItem_RogueTop.PC_UiItem_RogueTop",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -45901,7 +45902,7 @@
   {
     "Id": "UiView_LordGymRankView36",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/OnlineLordGym/Rank/UiView_LordGymRankView36.UiView_LordGymRankView36",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/OnlineLordGym/Rank/PC_UiView_LordGymRankView36.PC_UiView_LordGymRankView36",
     "ResourceType": "Activity",
     "ActivityType": [
       "TowerDefenceActivity"
@@ -45934,8 +45935,8 @@
   },
   {
     "Id": "UiView_SwordControlFlightView",
-    "Path": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/SwordFlight/UiView_UiItem_SwordFlightAimB.UiView_UiItem_SwordFlightAimB",
-    "PcPath": "",
+    "Path": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/SwordFlight/UiView_SwordFlightAimB.UiView_SwordFlightAimB",
+    "PcPath": "/Game/Aki/UI/UIResources/UiLevel/Prefabs/PC/SwordFlight/PC_UiView_SwordFlightAimB.PC_UiView_SwordFlightAimB",
     "ResourceType": "Common",
     "ActivityType": []
   },
@@ -45962,8 +45963,8 @@
   },
   {
     "Id": "UiItem_InteractLongPressButton",
-    "Path": "/Game/Aki/UI/UIResources/UiFight/Prefabs/PC/PC_UiItem_LongPressItem.PC_UiItem_LongPressItem",
-    "PcPath": "/Game/Aki/UI/UIResources/UiFight/Prefabs/UiItem_LongPressItem.UiItem_LongPressItem",
+    "Path": "/Game/Aki/UI/UIResources/UiFight/Prefabs/UiItem_LongPressItem.UiItem_LongPressItem",
+    "PcPath": "/Game/Aki/UI/UIResources/UiFight/Prefabs/PC/PC_UiItem_LongPressItem.PC_UiItem_LongPressItem",
     "ResourceType": "Common",
     "ActivityType": []
   },
@@ -46016,7 +46017,7 @@
   {
     "Id": "UiView_RoverLikeRoleSelectView",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/SelectElement/UiView_SelectElement.UiView_SelectElement",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/SelectElement/PC_UiView_SelectElement.PC_UiView_SelectElement",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46193,7 +46194,7 @@
   {
     "Id": "UiView_RogueFightInfo",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Fight/UiView_RogueFightInfo.UiView_RogueFightInfo",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Fight/PC_UiView_RogueFightInfo.PC_UiView_RogueFightInfo",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46236,7 +46237,7 @@
   {
     "Id": "UiView_RogueMainList",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_RogueMainList.UiView_RogueMainList",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/PC_UiView_RogueMainList.PC_UiView_RogueMainList",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46245,7 +46246,7 @@
   {
     "Id": "UiItem_Rogue36RoleInfo",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Collect/UiItem_Rogue36RoleInfo.UiItem_Rogue36RoleInfo",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Collect/PC_UiItem_Rogue36RoleInfo.PC_UiItem_Rogue36RoleInfo",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46254,7 +46255,7 @@
   {
     "Id": "UiItem_RugueCollect",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Collect/UiItem_RugueCollect.UiItem_RugueCollect",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Collect/PC_UiItem_RugueCollect.PC_UiItem_RugueCollect",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46263,7 +46264,7 @@
   {
     "Id": "UiView_RoverlikeLootTips",
     "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Fight/UiItem_RogueSpoilsTips.UiItem_RogueSpoilsTips",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/PC/Activity36/Activity36Rogue/Fight/PC_UiItem_RogueSpoilsTips.PC_UiItem_RogueSpoilsTips",
     "ResourceType": "Activity",
     "ActivityType": [
       "Roverlike"
@@ -46323,7 +46324,7 @@
   {
     "Id": "UiView_LordGymHall36",
     "Path": "/Game/Aki/UI/UIResources/UiCheckpoints/Prefabs/LordGym36/UiView_LordGymHall36.UiView_LordGymHall36",
-    "PcPath": "",
+    "PcPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Prefabs/PC/LordGym36/PC_UiView_LordGymHall36.PC_UiView_LordGymHall36",
     "ResourceType": "Activity",
     "ActivityType": [
       "TowerDefenceActivity"
@@ -46342,15 +46343,6 @@
     "PcPath": "",
     "ResourceType": "Common",
     "ActivityType": []
-  },
-  {
-    "Id": "UiItem_KurotatoEnemy1",
-    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity34/Survivor/Fight/UiItem_SurvivorEnemy1.UiItem_SurvivorEnemy1",
-    "PcPath": "",
-    "ResourceType": "Activity",
-    "ActivityType": [
-      "Kurotato"
-    ]
   },
   {
     "Id": "UiItem_RugueOutSideCollect",
@@ -46404,13 +46396,6 @@
     "ActivityType": []
   },
   {
-    "Id": "T_IconRoleHeadCircle256_2031_UI",
-    "Path": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_2031_UI.T_IconRoleHeadCircle256_2031_UI",
-    "PcPath": "",
-    "ResourceType": "Common",
-    "ActivityType": []
-  },
-  {
     "Id": "T_LordGymTitleBgA",
     "Path": "/Game/Aki/UI/UIResources/UiFight/Image/Activity/LordGym/T_LordGymTitleBgA.T_LordGymTitleBgA",
     "PcPath": "",
@@ -46426,6 +46411,15 @@
     "ResourceType": "Activity",
     "ActivityType": [
       "TowerDefenceActivity"
+    ]
+  },
+  {
+    "Id": "UiItem_KurotatoEnemy1",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity34/Survivor/Fight/UiItem_SurvivorEnemy1.UiItem_SurvivorEnemy1",
+    "PcPath": "",
+    "ResourceType": "Activity",
+    "ActivityType": [
+      "Kurotato"
     ]
   },
   {
@@ -46468,6 +46462,13 @@
   {
     "Id": "SP_VisionlQualityE",
     "Path": "/Game/Aki/UI/UIResources/Common/Atlas/SP_VisionlQualityE.SP_VisionlQualityE",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_IconRoleHeadCircle256_2031_UI",
+    "Path": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_2031_UI.T_IconRoleHeadCircle256_2031_UI",
     "PcPath": "",
     "ResourceType": "Common",
     "ActivityType": []
@@ -46522,27 +46523,6 @@
     "ActivityType": []
   },
   {
-    "Id": "UiItem_CG3_6_M3_12_06_p1",
-    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_06_p1.UiItem_CG3_6_M3_12_06_p1",
-    "PcPath": "",
-    "ResourceType": "Common",
-    "ActivityType": []
-  },
-  {
-    "Id": "UiItem_CG3_6_M3_12_06_p2",
-    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_06_p2.UiItem_CG3_6_M3_12_06_p2",
-    "PcPath": "",
-    "ResourceType": "Common",
-    "ActivityType": []
-  },
-  {
-    "Id": "UiItem_CG3_6_M3_12_10_p1",
-    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_10_p1.UiItem_CG3_6_M3_12_10_p1",
-    "PcPath": "",
-    "ResourceType": "Common",
-    "ActivityType": []
-  },
-  {
     "Id": "UiItem_CG3_6_ruoyun2",
     "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_ruoyun2.UiItem_CG3_6_ruoyun2",
     "PcPath": "",
@@ -46578,6 +46558,20 @@
     "ActivityType": []
   },
   {
+    "Id": "UiItem_CG3_6_M3_12_06_p1",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_06_p1.UiItem_CG3_6_M3_12_06_p1",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiItem_CG3_6_M3_12_06_p2",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_06_p2.UiItem_CG3_6_M3_12_06_p2",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
     "Id": "UiItem_PlayerIcon",
     "Path": "/Game/Aki/UI/UIResources/Common/Prefabs/UiItem_PlayerIcon.UiItem_PlayerIcon",
     "PcPath": "",
@@ -46587,9 +46581,90 @@
   {
     "Id": "UiView_SkinItemDetailPreview",
     "Path": "/Game/Aki/UI/UIResources/UiRole/Prefabs/UiView_SkinItemDetailPreview.UiView_SkinItemDetailPreview",
+    "PcPath": "/Game/Aki/UI/UIResources/UiRole/Prefabs/PC/PC_UiView_SkinItemDetailPreview.PC_UiView_SkinItemDetailPreview",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiItem_CG3_6_M3_12_10_p1",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_10_p1.UiItem_CG3_6_M3_12_10_p1",
     "PcPath": "",
     "ResourceType": "Common",
     "ActivityType": []
+  },
+  {
+    "Id": "UiItem_CG3_6_Main_03_06_C_06_p1",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_Main_03_06_C_06_p1.UiItem_CG3_6_Main_03_06_C_06_p1",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiView_RoverlikeUnlock",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/UiView_Rogue36OpeningTips.UiView_Rogue36OpeningTips",
+    "PcPath": "",
+    "ResourceType": "Activity",
+    "ActivityType": [
+      "Roverlike"
+    ]
+  },
+  {
+    "Id": "UiItem_CG3_6_T_Main_03_06_C_02",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_T_Main_03_06_C_02.UiItem_CG3_6_T_Main_03_06_C_02",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiView_MainStoryTextB",
+    "Path": "/Game/Aki/UI/UIResources/UiPlot/Prefabs/CGTexMS/UiView_MainStoryTextB.UiView_MainStoryTextB",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_CGTexMS01",
+    "Path": "/Game/Aki/UI/UIResources/UiPlot/Image/CGTexMS/CGTexMS36/T_CGTexMS01.T_CGTexMS01",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_CGTexMS02",
+    "Path": "/Game/Aki/UI/UIResources/UiPlot/Image/CGTexMS/CGTexMS36/T_CGTexMS02.T_CGTexMS02",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_CGTexMS03",
+    "Path": "/Game/Aki/UI/UIResources/UiPlot/Image/CGTexMS/CGTexMS36/T_CGTexMS03.T_CGTexMS03",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_CGTexMS04",
+    "Path": "/Game/Aki/UI/UIResources/UiPlot/Image/CGTexMS/CGTexMS36/T_CGTexMS04.T_CGTexMS04",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiItem_CG3_6_M3_12_07_p1",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_07_p1.UiItem_CG3_6_M3_12_07_p1",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "UiItem_Rogue36MonsterPos",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/Activity36Rogue/Fight/UiItem_Rogue36MonsterPos.UiItem_Rogue36MonsterPos",
+    "PcPath": "",
+    "ResourceType": "Activity",
+    "ActivityType": [
+      "Roverlike"
+    ]
   },
   {
     "Id": "UiItem_RugueOutSideCollect1",
@@ -46599,5 +46674,79 @@
     "ActivityType": [
       "Roverlike"
     ]
+  },
+  {
+    "Id": "UiItem_CG3_6_M3_12_25_p1",
+    "Path": "/Game/Aki/UI/UIResources/UiCG/Prefabs/CG3_6/UiItem_CG3_6_M3_12_25_p1.UiItem_CG3_6_M3_12_25_p1",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "ActivitySignIn_3_6",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity36/SignIn36/UiItem_SignIn36.UiItem_SignIn36",
+    "PcPath": "",
+    "ResourceType": "Activity",
+    "ActivityType": [
+      "Sign"
+    ]
+  },
+  {
+    "Id": "UiItem_SurvivorShareInfo",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Prefabs/Activity34/Survivor/Settlement/UiItem_SurvivorShareInfo.UiItem_SurvivorShareInfo",
+    "PcPath": "",
+    "ResourceType": "Activity",
+    "ActivityType": [
+      "Kurotato"
+    ]
+  },
+  {
+    "Id": "T_ScoreBigA",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigA.T_ScoreBigA",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigB",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigB.T_ScoreBigB",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigC",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigB.T_ScoreBigB",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigD",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigB.T_ScoreBigB",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigS",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigS.T_ScoreBigS",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigSS",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigSS.T_ScoreBigSS",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
+  },
+  {
+    "Id": "T_ScoreBigSSS",
+    "Path": "/Game/Aki/UI/UIResources/UiActivity/Image/ActivityMowingTower/Share/T_ScoreBigSSS.T_ScoreBigSSS",
+    "PcPath": "",
+    "ResourceType": "Common",
+    "ActivityType": []
   }
 ]

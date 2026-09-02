@@ -318,7 +318,7 @@
               "41",
               "1"
             ],
-            "CaseProgressId": 1030003,
+            "CaseProgressId": 1030004,
             "EndingId": 103001
           }
         ]
@@ -573,6 +573,84 @@
             ],
             "EndingId": 105002,
             "CaseProgressId": 1050004
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 800001,
+    "Remark": "残象复活",
+    "ClueIds": [
+      20101,
+      20102,
+      20103,
+      20104,
+      20105,
+      20106
+    ],
+    "QuestionConfigs": [
+      {
+        "QuestionId": 800001,
+        "ResultConfigs": [
+          {
+            "ClueCombination": [
+              20104,
+              20105
+            ],
+            "ReasoningStateId": [
+              "剧情_3_6_支线_残像复活",
+              "44",
+              "1"
+            ],
+            "ResultDesc": [
+              "剧情_3_6_支线_残像复活",
+              "24",
+              "1"
+            ],
+            "NextQuestionId": 800002
+          }
+        ]
+      },
+      {
+        "QuestionId": 800002,
+        "ResultConfigs": [
+          {
+            "ClueCombination": [
+              20103
+            ],
+            "ReasoningStateId": [
+              "剧情_3_6_支线_残像复活",
+              "26",
+              "1"
+            ],
+            "ResultDesc": [
+              "剧情_3_6_支线_残像复活",
+              "41",
+              "1"
+            ],
+            "NextQuestionId": 800003
+          }
+        ]
+      },
+      {
+        "QuestionId": 800003,
+        "ResultConfigs": [
+          {
+            "ClueCombination": [
+              20102
+            ],
+            "ReasoningStateId": [
+              "剧情_3_6_支线_残像复活",
+              "27",
+              "1"
+            ],
+            "ResultDesc": [
+              "剧情_3_6_支线_残像复活",
+              "43",
+              "1"
+            ],
+            "EndingId": 299001
           }
         ]
       }

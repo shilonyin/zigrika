@@ -3976,6 +3976,60 @@
     ]
   },
   {
+    "Id": 800048,
+    "Term": "凌空栈",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800049,
+    "Term": "护玄屏",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800050,
+    "Term": "异生雾",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800051,
+    "Term": "玄元境",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800052,
+    "Term": "内景",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800053,
+    "Term": "文明之匣",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800054,
+    "Term": "山猫妖",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800055,
+    "Term": "本命剑意",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
+    "Id": 800056,
+    "Term": "渐水舵",
+    "Color": "",
+    "Placeholder": []
+  },
+  {
     "Id": 141301,
     "Term": "琴心",
     "Color": "",
@@ -4056,7 +4110,7 @@
     ]
   },
   {
-    "Id": 800048,
+    "Id": 800057,
     "Term": "「剑魄」",
     "Color": "",
     "Placeholder": []
@@ -4082,7 +4136,7 @@
     "Placeholder": [
       "400%",
       "4%",
-      "1",
+      "2",
       "25"
     ]
   }

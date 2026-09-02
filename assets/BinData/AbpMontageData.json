@@ -42473,7 +42473,7 @@
   },
   {
     "Id": 800889,
-    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit02_Montage.Sit02_Montage",
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit03_Montage.Sit03_Montage",
     "MaleVariant": "",
     "InitState": "",
     "EndState": "",
@@ -42817,7 +42817,7 @@
   },
   {
     "Id": 751583,
-    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/Sit_Table_Eating01.Sit_Table_Eating01",
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/Sit_Table_Eating01_Voice.Sit_Table_Eating01_Voice",
     "MaleVariant": "",
     "InitState": "sit",
     "EndState": "",
@@ -42825,7 +42825,7 @@
   },
   {
     "Id": 751584,
-    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/Sit_Table_Eating01.Sit_Table_Eating01",
+    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/Sit_Table_Eating01_Voice.Sit_Table_Eating01_Voice",
     "MaleVariant": "",
     "InitState": "sit",
     "EndState": "",
@@ -42888,6 +42888,38 @@
     "DisableBlinkCurve": true
   },
   {
+    "Id": 800915,
+    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/NH_MaleM_198/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800916,
+    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/NH_MaleM_198/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800917,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/NH_Female_191/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800918,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/NH_Female_191/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
     "Id": 751592,
     "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleM/Danjin/Body/Montage/Sit.Sit",
     "MaleVariant": "",
@@ -42944,14 +42976,6 @@
     "DisableBlinkCurve": true
   },
   {
-    "Id": 751599,
-    "Montage": "/Game/Aki/Character/NPC/Monster/MO1JiBinMd00001_NPC/CommonAnim/Montage/Death_Loop3_Montage.Death_Loop3_Montage",
-    "MaleVariant": "",
-    "InitState": "",
-    "EndState": "",
-    "DisableBlinkCurve": false
-  },
-  {
     "Id": 800919,
     "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Weakness_Qingxiao_Montage.Weakness_Qingxiao_Montage",
     "MaleVariant": "",
@@ -42960,32 +42984,752 @@
     "DisableBlinkCurve": true
   },
   {
-    "Id": 800915,
-    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/NH_MaleM_198/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "Id": 751599,
+    "Montage": "/Game/Aki/Character/NPC/Monster/MO1JiBinMd00001_NPC/CommonAnim/Montage/Death_Loop3_Montage.Death_Loop3_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 751600,
+    "Montage": "/Game/Aki/Character/NPC/Monster/MO1JiBinMd00001_NPC/CommonAnim/Montage/Death_Loop3_Montage.Death_Loop3_Montage",
     "MaleVariant": "",
     "InitState": "",
     "EndState": "",
     "DisableBlinkCurve": true
   },
   {
-    "Id": 800916,
-    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/NH_MaleM_198/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "Id": 751601,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/Touch_face01_Start_Montage.Touch_face01_Start_Montage",
     "MaleVariant": "",
     "InitState": "",
     "EndState": "",
     "DisableBlinkCurve": true
   },
   {
-    "Id": 800917,
-    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/NH_Female_191/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "Id": 751602,
+    "Montage": "/Game/Aki/Character/NPC/FemaleS/Montage/Girl/Betouch_face01_Start_Montage.Betouch_face01_Start_Montage",
     "MaleVariant": "",
     "InitState": "",
     "EndState": "",
     "DisableBlinkCurve": true
   },
   {
-    "Id": 800918,
-    "Montage": "/Game/Aki/Character/NPC/FemaleM/Montage/NH_Female_191/Sleeping_Tired_Montage.Sleeping_Tired_Montage",
+    "Id": 800938,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm01_Montage.Calm01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800920,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm02_Montage.Calm02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800922,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm03_Montage.Calm03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800923,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Elevate02_Montage.Elevate02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800924,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/However01_Montage.However01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800925,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/JianZhi01_Montage.JianZhi01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800926,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy01_Montage.Shy01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800927,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy04_Montage.Shy04_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800928,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy05_Montage.Shy05_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800929,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit01_Montage.Sit01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800930,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit03_Montage.Sit03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800931,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Squat02_Montage.Squat02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800932,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Talk01_Montage.Talk01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800933,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Thinking01_Montage.Thinking01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800934,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Touch01_Montage.Touch01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800935,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Yaoqing_Montage.Yaoqing_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800936,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Zhi01_Montage.Zhi01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800937,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Weakness_Qingxiao_Montage.Weakness_Qingxiao_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800939,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Excite01_Montage.Excite01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800940,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Lose01_Montage.Lose01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800941,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Promise01_Montage.Promise01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800942,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Shy01_Fuxiong01_Touch01_Montage.Shy01_Fuxiong01_Touch01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800943,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand02_Loop_Montage.Stand02_Loop_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800944,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand_Hands01_Fuxiong01_Montage.Stand_Hands01_Fuxiong01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800945,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand_Hands01_Montage.Stand_Hands01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800946,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand_Hands01_walk01_Montage.Stand_Hands01_walk01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800947,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand_Promise01_Montage.Stand_Promise01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800948,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Stand_Think01_Montage.Stand_Think01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800949,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Talk01_Montage.Talk01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800950,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Thinking01_Montage.Thinking01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800951,
+    "Montage": "/Game/Aki/Character/NPC/FemaleM/Function/A_NH_FemaleM_206/CommonAnim/Montage/Touch01.Touch01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800952,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Stand_receive.Stand_receive",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800953,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Xuanling/Montage/Stand_receive_Montage.Stand_receive_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800954,
+    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/Montage_Behit_Stand_MaleM.Montage_Behit_Stand_MaleM",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800955,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Elevate02_Hold_Sfx.Elevate02_Hold_Sfx",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800956,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Expect03_Montage.Expect03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800957,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit_PlayGuqin.Sit_PlayGuqin",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800958,
+    "Montage": "/Game/Aki/Character/NPC/AlienNPC/Level_A/SA1Xiaoyu/CommonAnim/Idle_02_Fly_Montage.Idle_02_Fly_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800959,
+    "Montage": "/Game/Aki/Character/NPC/AlienNPC/Level_A/SA1Xiaoyu/CommonAnim/Idle_03_Fly_Montage.Idle_03_Fly_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800960,
+    "Montage": "/Game/Aki/Character/NPC/AlienNPC/Level_A/SA1Xiaoyu/CommonAnim/Idle_04_Fly_Montage.Idle_04_Fly_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800961,
+    "Montage": "/Game/Aki/Character/NPC/AlienNPC/Level_A/SA1Xiaoyu/CommonAnim/Idle_Fly_Montage.Idle_Fly_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800962,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/MaleM/JingRan/Montage/Good01_Montage_EyeMask.Good01_Montage_EyeMask",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800963,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm01_Montage.Calm01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800964,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm02_Montage.Calm02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800965,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Calm03_Montage.Calm03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800966,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Elevate02_Montage.Elevate02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800967,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/However01_Montage.However01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800968,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/JianZhi01_Montage.JianZhi01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800969,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy01_Montage.Shy01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800970,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy04_Montage.Shy04_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800971,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy05_Montage.Shy05_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800972,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit01_Montage.Sit01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800973,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Sit03_Montage.Sit03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800974,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Squat02_Montage.Squat02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800975,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Talk01_Montage.Talk01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800976,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Thinking01_Montage.Thinking01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800977,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Touch01_Montage.Touch01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800978,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Yaoqing_Montage.Yaoqing_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800979,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Zhi01_Montage.Zhi01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800980,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Weakness_Qingxiao_Montage.Weakness_Qingxiao_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800981,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Stand_receive.Stand_receive",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800982,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Elevate02_Hold_Sfx.Elevate02_Hold_Sfx",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800983,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Expect03_Montage.Expect03_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800984,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Montage_Stand03_Walk.Montage_Stand03_Walk",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800985,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Montage_Stand03.Montage_Stand03",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800986,
+    "Montage": "/Game/Aki/Character/NPC/FemaleXL/Function/A_NH_FemaleXL_003/CommonAnim/Montage/Stand_Think.Stand_Think",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800987,
+    "Montage": "/Game/Aki/Character/NPC/FemaleXL/Function/A_NH_FemaleXL_003/CommonAnim/Montage/Stand_Talk.Stand_Talk",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800988,
+    "Montage": "/Game/Aki/Character/NPC/FemaleXL/Function/A_NH_FemaleXL_003/CommonAnim/Montage/Stand_Finger.Stand_Finger",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800989,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Shy05_Sit02.Shy05_Sit02",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800990,
+    "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleMS/Buling/Body/Montage/Tongjing01_Montage.Tongjing01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800991,
+    "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleMS/Buling/Body/Montage/Wunai01_Montage.Wunai01_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800993,
+    "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleMS/Buling/Body/Montage/Greetings02_Montage.Greetings02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800992,
+    "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleMS/Buling/Body/Montage/Excite02_Montage.Excite02_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800994,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Guidi01.Guidi01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800995,
+    "Montage": "/Game/Aki/Character/NPC/MaleM/Montage/Montage_Stand_CrossHands_01_MaleM_NoBlendIn.Montage_Stand_CrossHands_01_MaleM_NoBlendIn",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800996,
+    "Montage": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleXL/Changli/Body/Montage/Sit01.Sit01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": false
+  },
+  {
+    "Id": 800997,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Clam01.Clam01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800998,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Clam02.Clam02",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 800999,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Elegant01.Elegant01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801000,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Complain02.Complain02",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801001,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Expect01.Expect01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801002,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Expect02.Expect02",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801003,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Expect03.Expect03",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801004,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Promise01.Promise01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801005,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleM/Jinxi/BaseAnim/Montage/Shy01.Shy01",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801006,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/MaleM/JingRan/Montage/Calm01_Montage_EyeMask.Calm01_Montage_EyeMask",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801007,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/JianZhi01_CloseEye_Montage.JianZhi01_CloseEye_Montage",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801008,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/CommonAnim/Sit_PlayGuqin_seq.Sit_PlayGuqin_seq",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801009,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/CommonAnim/Stand_Xinmo.Stand_Xinmo",
+    "MaleVariant": "",
+    "InitState": "",
+    "EndState": "",
+    "DisableBlinkCurve": true
+  },
+  {
+    "Id": 801010,
+    "Montage": "/Game/Aki/Character/NPC/RoleNPC/FemaleXL/Qingxiao/Montage/Special/Elevate02_Montage_seq.Elevate02_Montage_seq",
     "MaleVariant": "",
     "InitState": "",
     "EndState": "",

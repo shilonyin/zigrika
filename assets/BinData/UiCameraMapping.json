@@ -2627,8 +2627,10 @@
     "bPlayLoadingCameraAnimation": true,
     "BodyTargetType": 0,
     "BodyCameraSettingsNameMap": {},
-    "DefaultCameraBlendName": "1001",
-    "UiCameraBlendNameMap": {},
+    "DefaultCameraBlendName": "",
+    "UiCameraBlendNameMap": {
+      "MotorSkinBuyDetailView": "1001"
+    },
     "UiCameraDelayTime": 0
   },
   {
@@ -2747,6 +2749,19 @@
     "Id": 1186,
     "ViewName": "VisionNewRecommendPreviewView",
     "DefaultUiCameraSettingsName": "1012_Female154",
+    "IsCheckSpecialState": false,
+    "SpecialStateCameraSettingName": "1002",
+    "bPlayLoadingCameraAnimation": true,
+    "BodyTargetType": 0,
+    "BodyCameraSettingsNameMap": {},
+    "DefaultCameraBlendName": "",
+    "UiCameraBlendNameMap": {},
+    "UiCameraDelayTime": 0
+  },
+  {
+    "Id": 1195,
+    "ViewName": "WeaponSkinShowView",
+    "DefaultUiCameraSettingsName": "WeaponSkinPreviewCamera",
     "IsCheckSpecialState": false,
     "SpecialStateCameraSettingName": "1002",
     "bPlayLoadingCameraAnimation": true,

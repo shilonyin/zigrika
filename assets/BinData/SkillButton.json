@@ -10417,7 +10417,9 @@
     "ButtonType": 4,
     "ActionType": 4,
     "SkillId": 15020001,
-    "SkillIdTagMap": {},
+    "SkillIdTagMap": {
+      "-45192156": 15020101
+    },
     "SkillIconTags": [],
     "EnableTags": [],
     "DisableTags": [
@@ -10781,7 +10783,9 @@
     "ButtonType": 4,
     "ActionType": 4,
     "SkillId": 15020001,
-    "SkillIdTagMap": {},
+    "SkillIdTagMap": {
+      "-45192156": 15020101
+    },
     "SkillIconTags": [],
     "EnableTags": [],
     "DisableTags": [

@@ -2221,7 +2221,7 @@
     "Name": "RoverRogueBless_EffectName_Aogusita_SuperBeidong_Lv1",
     "Desc": "RoverRogueBless_EffectDesc_Aogusita_SuperBeidong_Lv1",
     "Params": [
-      "3",
+      "5",
       "10",
       "5",
       "30",
@@ -3357,9 +3357,8 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv1",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv1",
     "Params": [
-      "15",
-      "200",
-      "0.5"
+      "200%",
+      "5"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -3491,9 +3490,8 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv2",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv2",
     "Params": [
-      "25",
-      "200",
-      "0.5"
+      "200%",
+      "3"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -3511,9 +3509,8 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv3",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv3",
     "Params": [
-      "40",
-      "200",
-      "0.5"
+      "200%",
+      "1.5"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4438,6 +4435,178 @@
     "TriggerRoleInfo": ""
   },
   {
+    "Id": 1000102602,
+    "BlessRoleId": 1,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Feixue_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Feixue_Zhongji_Lv2",
+    "Params": [
+      "1",
+      "6"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeixue/SP_IconFeixueB3.SP_IconFeixueB3",
+    "NextBlessId": 1000102503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000202602,
+    "BlessRoleId": 2,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Feibi_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Feibi_Zhongji_Lv2",
+    "Params": [
+      "4",
+      "5",
+      "1"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeibi/SP_IconFeibiA2.SP_IconFeibiA2",
+    "NextBlessId": 1000202503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000302601,
+    "BlessRoleId": 3,
+    "SlotId": 2,
+    "Quality": 4,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Katixiya_Zhongji_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Katixiya_Zhongji_Lv1",
+    "Params": [
+      "70",
+      "10",
+      "10"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconKatixiya/SP_IconKatixiyaB1.SP_IconKatixiyaB1",
+    "NextBlessId": 1000302502,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000402602,
+    "BlessRoleId": 4,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Aogusita_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Zhongji_Lv2",
+    "Params": [
+      "20",
+      "6",
+      "10"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaB3.SP_IconAogusitaB3",
+    "NextBlessId": 1000402503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000502601,
+    "BlessRoleId": 5,
+    "SlotId": 2,
+    "Quality": 4,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Aimisi_Zhongji_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Aimisi_Zhongji_Lv1",
+    "Params": [
+      "80"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAimisi/SP_IconAimisiA3.SP_IconAimisiA3",
+    "NextBlessId": 1000502502,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000602602,
+    "BlessRoleId": 6,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Chun_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Chun_Zhongji_Lv2",
+    "Params": [
+      "2",
+      "6"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconChun/SP_IconChunD1.SP_IconChunD1",
+    "NextBlessId": 1000602503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000902602,
+    "BlessRoleId": 9,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Lu_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Lu_Zhongji_Lv2",
+    "Params": [
+      "50"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiA3.SP_IconLuhesiA3",
+    "NextBlessId": 1000902503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1001102602,
+    "BlessRoleId": 11,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Suisui_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Suisui_Zhongji_Lv2",
+    "Params": [
+      "4",
+      "5",
+      "1"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconSuisui/SP_IconSuisuiD1.SP_IconSuisuiD1",
+    "NextBlessId": 1001102503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1001202602,
+    "BlessRoleId": 12,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Fuluoluo_Zhongji_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Fuluoluo_Zhongji_Lv2",
+    "Params": [
+      "2"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFuluoluo/SP_IconFuluoluoB2.SP_IconFuluoluoB2",
+    "NextBlessId": 1001202503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
     "Id": 1000104301,
     "BlessRoleId": 1,
     "SlotId": 7,
@@ -4455,25 +4624,6 @@
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeixue/SP_IconFeixueC1.SP_IconFeixueC1",
     "NextBlessId": 1000104402,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000102602,
-    "BlessRoleId": 1,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Feixue_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Feixue_Zhongji_Lv2",
-    "Params": [
-      "1",
-      "6"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeixue/SP_IconFeixueB3.SP_IconFeixueB3",
-    "NextBlessId": 1000102503,
     "IsRecommend": false,
     "TriggerRoleInfo": ""
   },
@@ -4540,26 +4690,6 @@
     "TriggerRoleInfo": ""
   },
   {
-    "Id": 1000202602,
-    "BlessRoleId": 2,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Feibi_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Feibi_Zhongji_Lv2",
-    "Params": [
-      "4",
-      "5",
-      "1"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeibi/SP_IconFeibiA2.SP_IconFeibiA2",
-    "NextBlessId": 1000202503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
     "Id": 1000204602,
     "BlessRoleId": 2,
     "SlotId": 7,
@@ -4576,26 +4706,6 @@
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFeibi/SP_IconFeibiT.SP_IconFeibiT",
     "NextBlessId": 0,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000302601,
-    "BlessRoleId": 3,
-    "SlotId": 2,
-    "Quality": 4,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Katixiya_Zhongji_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Katixiya_Zhongji_Lv1",
-    "Params": [
-      "70",
-      "10",
-      "10"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconKatixiya/SP_IconKatixiyaB1.SP_IconKatixiyaB1",
-    "NextBlessId": 1000302502,
     "IsRecommend": true,
     "TriggerRoleInfo": ""
   },
@@ -4649,33 +4759,13 @@
     "Name": "RoverRogueBless_EffectName_Aogusita_SkillR_Lv1",
     "Desc": "RoverRogueBless_EffectDesc_Aogusita_SkillR_Lv1",
     "Params": [
-      "120"
+      "180"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA2.SP_IconAogusitaA2",
     "NextBlessId": 1000404402,
     "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000402602,
-    "BlessRoleId": 4,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Aogusita_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Zhongji_Lv2",
-    "Params": [
-      "20",
-      "6",
-      "10"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaB3.SP_IconAogusitaB3",
-    "NextBlessId": 1000402503,
-    "IsRecommend": false,
     "TriggerRoleInfo": ""
   },
   {
@@ -4687,7 +4777,7 @@
     "Name": "RoverRogueBless_EffectName_Aogusita_SkillR_Lv2",
     "Desc": "RoverRogueBless_EffectDesc_Aogusita_SkillR_Lv2",
     "Params": [
-      "240"
+      "360"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4705,30 +4795,12 @@
     "Name": "RoverRogueBless_EffectName_Aogusita_SkillR_Lv3",
     "Desc": "RoverRogueBless_EffectDesc_Aogusita_SkillR_Lv3",
     "Params": [
-      "360"
+      "540"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA2.SP_IconAogusitaA2",
     "NextBlessId": 0,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000502601,
-    "BlessRoleId": 5,
-    "SlotId": 2,
-    "Quality": 4,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Aimisi_Zhongji_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Aimisi_Zhongji_Lv1",
-    "Params": [
-      "80"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAimisi/SP_IconAimisiA3.SP_IconAimisiA3",
-    "NextBlessId": 1000502502,
     "IsRecommend": true,
     "TriggerRoleInfo": ""
   },
@@ -4744,8 +4816,8 @@
       "1",
       "10",
       "1",
-      "120",
-      "0.5"
+      "160",
+      "1"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4766,8 +4838,8 @@
       "1",
       "10",
       "1",
-      "240",
-      "0.5"
+      "320",
+      "1"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4788,8 +4860,8 @@
       "1",
       "10",
       "1",
-      "360",
-      "0.5"
+      "480",
+      "1"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4807,8 +4879,8 @@
     "Name": "RoverRogueBless_EffectName_Chun_SkillR_Lv1",
     "Desc": "RoverRogueBless_EffectDesc_Chun_SkillR_Lv1",
     "Params": [
-      "3",
-      "15"
+      "1.5",
+      "30"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4816,25 +4888,6 @@
     "NextBlessId": 1000604402,
     "IsRecommend": false,
     "TriggerRoleInfo": "RoverRogueBless_TriggerRoleInfo_06_01"
-  },
-  {
-    "Id": 1000602602,
-    "BlessRoleId": 6,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Chun_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Chun_Zhongji_Lv2",
-    "Params": [
-      "2",
-      "6"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconChun/SP_IconChunD1.SP_IconChunD1",
-    "NextBlessId": 1000602503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
   },
   {
     "Id": 1000604402,
@@ -4845,8 +4898,8 @@
     "Name": "RoverRogueBless_EffectName_Chun_SkillR_Lv2",
     "Desc": "RoverRogueBless_EffectDesc_Chun_SkillR_Lv2",
     "Params": [
-      "5",
-      "15"
+      "3",
+      "30"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4864,8 +4917,8 @@
     "Name": "RoverRogueBless_EffectName_Chun_SkillR_Lv3",
     "Desc": "RoverRogueBless_EffectDesc_Chun_SkillR_Lv3",
     "Params": [
-      "8",
-      "15"
+      "4.5",
+      "30"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
@@ -4873,120 +4926,6 @@
     "NextBlessId": 0,
     "IsRecommend": false,
     "TriggerRoleInfo": "RoverRogueBless_TriggerRoleInfo_06_01"
-  },
-  {
-    "Id": 1000902602,
-    "BlessRoleId": 9,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Lu_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Lu_Zhongji_Lv2",
-    "Params": [
-      "50"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiA3.SP_IconLuhesiA3",
-    "NextBlessId": 1000902503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1001102602,
-    "BlessRoleId": 11,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Suisui_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Suisui_Zhongji_Lv2",
-    "Params": [
-      "4",
-      "5",
-      "1"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconSuisui/SP_IconSuisuiD1.SP_IconSuisuiD1",
-    "NextBlessId": 1001102503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1001202602,
-    "BlessRoleId": 12,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Fuluoluo_Zhongji_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Fuluoluo_Zhongji_Lv2",
-    "Params": [
-      "2"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconFuluoluo/SP_IconFuluoluoB2.SP_IconFuluoluoB2",
-    "NextBlessId": 1001202503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000401503,
-    "BlessRoleId": 4,
-    "SlotId": 1,
-    "Quality": 5,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Aogusita_Pugong_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Pugong_Lv1",
-    "Params": [
-      "15",
-      "1",
-      "12"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA1.SP_IconAogusitaA1",
-    "NextBlessId": 1000401604,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000401604,
-    "BlessRoleId": 4,
-    "SlotId": 1,
-    "Quality": 6,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Aogusita_Pugong_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Pugong_Lv2",
-    "Params": [
-      "30",
-      "1",
-      "6"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA1.SP_IconAogusitaA1",
-    "NextBlessId": 0,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000704501,
-    "BlessRoleId": 7,
-    "SlotId": 7,
-    "Quality": 3,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv1",
-    "Params": [
-      "50"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
-    "NextBlessId": 1000704602,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
   },
   {
     "Id": 1000701703,
@@ -5028,42 +4967,6 @@
     "TriggerRoleInfo": ""
   },
   {
-    "Id": 1000704602,
-    "BlessRoleId": 7,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv2",
-    "Params": [
-      "100"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
-    "NextBlessId": 1000704703,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000704703,
-    "BlessRoleId": 7,
-    "SlotId": 7,
-    "Quality": 5,
-    "Level": 3,
-    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv3",
-    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv3",
-    "Params": [
-      "150"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
-    "NextBlessId": 0,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
     "Id": 1000705703,
     "BlessRoleId": 7,
     "SlotId": 7,
@@ -5080,44 +4983,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranT.SP_IconJingranT",
     "NextBlessId": 0,
     "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000804501,
-    "BlessRoleId": 8,
-    "SlotId": 7,
-    "Quality": 5,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Xuanling_SkillR_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Xuanling_SkillR_Lv1",
-    "Params": [
-      "30",
-      "25"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingB2.SP_IconXuanLingB2",
-    "NextBlessId": 1000804602,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000801703,
-    "BlessRoleId": 8,
-    "SlotId": 7,
-    "Quality": 5,
-    "Level": 3,
-    "Name": "RoverRogueBless_EffectName_Xuanling_Pugong_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Xuanling_Pugong_Lv2",
-    "Params": [
-      "3",
-      "3"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingA1.SP_IconXuanLingA1",
-    "NextBlessId": 0,
-    "IsRecommend": false,
     "TriggerRoleInfo": ""
   },
   {
@@ -5158,25 +5023,6 @@
     "TriggerRoleInfo": ""
   },
   {
-    "Id": 1000804602,
-    "BlessRoleId": 8,
-    "SlotId": 7,
-    "Quality": 6,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Xuanling_SkillR_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Xuanling_SkillR_Lv2",
-    "Params": [
-      "50",
-      "50"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingB2.SP_IconXuanLingB2",
-    "NextBlessId": 0,
-    "IsRecommend": true,
-    "TriggerRoleInfo": ""
-  },
-  {
     "Id": 1000805703,
     "BlessRoleId": 8,
     "SlotId": 7,
@@ -5193,80 +5039,6 @@
     "Icon": "/Game/Aki/UI/UIResources/UiActivity/Atlas/Activity36/Activity36Rogue/BlessingIcon/SP_IconDevice_XuanLingM3_UI.SP_IconDevice_XuanLingM3_UI",
     "NextBlessId": 0,
     "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000904301,
-    "BlessRoleId": 9,
-    "SlotId": 7,
-    "Quality": 3,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv1",
-    "Params": [
-      "1"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
-    "NextBlessId": 1000904402,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000904402,
-    "BlessRoleId": 9,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv2",
-    "Params": [
-      "2"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
-    "NextBlessId": 1000904503,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1000904503,
-    "BlessRoleId": 9,
-    "SlotId": 7,
-    "Quality": 5,
-    "Level": 2,
-    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv2",
-    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv2",
-    "Params": [
-      "3"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
-    "NextBlessId": 0,
-    "IsRecommend": false,
-    "TriggerRoleInfo": ""
-  },
-  {
-    "Id": 1001004501,
-    "BlessRoleId": 10,
-    "SlotId": 7,
-    "Quality": 4,
-    "Level": 1,
-    "Name": "RoverRogueBless_EffectName_Qingxiao_SkillR_Lv1",
-    "Desc": "RoverRogueBless_EffectDesc_Qingxiao_SkillR_Lv1",
-    "Params": [
-      "1",
-      "180",
-      "3"
-    ],
-    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
-    "AdditionParams": [],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconQingxiao/SP_IconQingxiaoB2.SP_IconQingxiaoB2",
-    "NextBlessId": 1001004602,
-    "IsRecommend": true,
     "TriggerRoleInfo": ""
   },
   {
@@ -5306,6 +5078,137 @@
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconQingxiao/SP_IconQingxiaoA3.SP_IconQingxiaoA3",
     "NextBlessId": 0,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000801703,
+    "BlessRoleId": 8,
+    "SlotId": 7,
+    "Quality": 5,
+    "Level": 3,
+    "Name": "RoverRogueBless_EffectName_Xuanling_Pugong_Lv3",
+    "Desc": "RoverRogueBless_EffectDesc_Xuanling_Pugong_Lv2",
+    "Params": [
+      "3",
+      "3"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingA1.SP_IconXuanLingA1",
+    "NextBlessId": 0,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000704501,
+    "BlessRoleId": 7,
+    "SlotId": 7,
+    "Quality": 3,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv1",
+    "Params": [
+      "50"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
+    "NextBlessId": 1000704602,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000704602,
+    "BlessRoleId": 7,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv2",
+    "Params": [
+      "100"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
+    "NextBlessId": 1000704703,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000704703,
+    "BlessRoleId": 7,
+    "SlotId": 7,
+    "Quality": 5,
+    "Level": 3,
+    "Name": "RoverRogueBless_EffectName_Jingran_SkillR_Lv3",
+    "Desc": "RoverRogueBless_EffectDesc_Jingran_SkillR_Lv3",
+    "Params": [
+      "150"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconJingran/SP_IconJingranB3.SP_IconJingranB3",
+    "NextBlessId": 0,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000804501,
+    "BlessRoleId": 8,
+    "SlotId": 7,
+    "Quality": 5,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Xuanling_SkillR_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Xuanling_SkillR_Lv1",
+    "Params": [
+      "30",
+      "25"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingB2.SP_IconXuanLingB2",
+    "NextBlessId": 1000804602,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000804602,
+    "BlessRoleId": 8,
+    "SlotId": 7,
+    "Quality": 6,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Xuanling_SkillR_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Xuanling_SkillR_Lv2",
+    "Params": [
+      "50",
+      "50"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconXuanLing/SP_IconXuanLingB2.SP_IconXuanLingB2",
+    "NextBlessId": 0,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1001004501,
+    "BlessRoleId": 10,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Qingxiao_SkillR_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Qingxiao_SkillR_Lv1",
+    "Params": [
+      "1",
+      "180",
+      "3"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconQingxiao/SP_IconQingxiaoB2.SP_IconQingxiaoB2",
+    "NextBlessId": 1001004602,
     "IsRecommend": true,
     "TriggerRoleInfo": ""
   },
@@ -5447,6 +5350,100 @@
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
     "AdditionParams": [],
     "Icon": "/Game/Aki/UI/UIResources/UiActivity/Atlas/Activity36/Activity36Rogue/BlessingIcon/SP_IconDevice_FuluoluoM3_UI.SP_IconDevice_FuluoluoM3_UI",
+    "NextBlessId": 0,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000904301,
+    "BlessRoleId": 9,
+    "SlotId": 7,
+    "Quality": 3,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv1",
+    "Params": [
+      "1"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
+    "NextBlessId": 1000904402,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000904402,
+    "BlessRoleId": 9,
+    "SlotId": 7,
+    "Quality": 4,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv2",
+    "Params": [
+      "2"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
+    "NextBlessId": 1000904503,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000904503,
+    "BlessRoleId": 9,
+    "SlotId": 7,
+    "Quality": 5,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Lu_SkillR_Lv3",
+    "Desc": "RoverRogueBless_EffectDesc_Lu_SkillR_Lv2",
+    "Params": [
+      "3"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconLuhesi/SP_IconLuhesiB1.SP_IconLuhesiB1",
+    "NextBlessId": 0,
+    "IsRecommend": false,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000401503,
+    "BlessRoleId": 4,
+    "SlotId": 1,
+    "Quality": 5,
+    "Level": 1,
+    "Name": "RoverRogueBless_EffectName_Aogusita_Pugong_Lv1",
+    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Pugong_Lv1",
+    "Params": [
+      "15",
+      "1",
+      "12"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA1.SP_IconAogusitaA1",
+    "NextBlessId": 1000401604,
+    "IsRecommend": true,
+    "TriggerRoleInfo": ""
+  },
+  {
+    "Id": 1000401604,
+    "BlessRoleId": 4,
+    "SlotId": 1,
+    "Quality": 6,
+    "Level": 2,
+    "Name": "RoverRogueBless_EffectName_Aogusita_Pugong_Lv2",
+    "Desc": "RoverRogueBless_EffectDesc_Aogusita_Pugong_Lv2",
+    "Params": [
+      "30",
+      "1",
+      "6"
+    ],
+    "AdditionText": "RoverRogue_SystemShow_CoreBlessing",
+    "AdditionParams": [],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconAogusita/SP_IconAogusitaA1.SP_IconAogusitaA1",
     "NextBlessId": 0,
     "IsRecommend": true,
     "TriggerRoleInfo": ""

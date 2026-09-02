@@ -1780,5 +1780,86 @@
     "ExitEvent": "",
     "ResetEvent": "",
     "MusicResetEvent": ""
+  },
+  {
+    "Id": 8630,
+    "Name": "InstanceTree_LJboss3",
+    "Event": "map_huodong_ljboss3",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 9020,
+    "Name": "InstanceTree_3_6_BugFinder",
+    "Event": "map_huodong_3_6_bugfinder",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3928,
+    "Name": "3_0_Instance_Hologram_Light",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3929,
+    "Name": "3_0_Instance_Hologram_Light_UI",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3930,
+    "Name": "3_5_Instance_Hologram_Light",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3931,
+    "Name": "3_5_Instance_Hologram_Light_UI",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3932,
+    "Name": "Instance_Mat_Challenge_01_Light",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 3933,
+    "Name": "Instance_Mat_Challenge_01_Light_UI",
+    "Event": "",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
+  },
+  {
+    "Id": 2101,
+    "Name": "InstanceTree_AdamSmasher_FuShua",
+    "Event": "map_system_yadang_fushua",
+    "EnterEvent": "",
+    "ExitEvent": "",
+    "ResetEvent": "",
+    "MusicResetEvent": ""
   }
 ]

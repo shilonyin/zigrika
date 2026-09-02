@@ -8986,5 +8986,27 @@
     },
     "RewardIdCalabash": {},
     "PreviewReward": {}
+  },
+  {
+    "Id": 50158,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 100060
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 50159,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 100061
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
   }
 ]

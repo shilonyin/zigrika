@@ -231,84 +231,6 @@
     }
   },
   {
-    "Id": 12111,
-    "RoadType": 2,
-    "Layer": 11,
-    "Floor": 2,
-    "LayerType": 1,
-    "AiTeamLevel": 1103,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 100,
-      "89000003": 100
-    }
-  },
-  {
-    "Id": 12112,
-    "RoadType": 2,
-    "Layer": 12,
-    "Floor": 2,
-    "LayerType": 2,
-    "AiTeamLevel": 1108,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 110,
-      "89000003": 110
-    }
-  },
-  {
-    "Id": 12113,
-    "RoadType": 2,
-    "Layer": 13,
-    "Floor": 2,
-    "LayerType": 1,
-    "AiTeamLevel": 1104,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 120,
-      "89000003": 120
-    }
-  },
-  {
-    "Id": 12114,
-    "RoadType": 2,
-    "Layer": 14,
-    "Floor": 2,
-    "LayerType": 1,
-    "AiTeamLevel": 1104,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 130,
-      "89000003": 130
-    }
-  },
-  {
-    "Id": 12115,
-    "RoadType": 2,
-    "Layer": 15,
-    "Floor": 2,
-    "LayerType": 1,
-    "AiTeamLevel": 1104,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 140,
-      "89000003": 140
-    }
-  },
-  {
-    "Id": 12116,
-    "RoadType": 2,
-    "Layer": 16,
-    "Floor": 2,
-    "LayerType": 3,
-    "AiTeamLevel": 1104,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 150,
-      "89000003": 150
-    }
-  },
-  {
     "Id": 13101,
     "RoadType": 3,
     "Layer": 1,
@@ -566,58 +488,6 @@
     }
   },
   {
-    "Id": 13211,
-    "RoadType": 3,
-    "Layer": 21,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 200,
-      "89000003": 200
-    }
-  },
-  {
-    "Id": 13212,
-    "RoadType": 3,
-    "Layer": 22,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 210,
-      "89000003": 210
-    }
-  },
-  {
-    "Id": 13213,
-    "RoadType": 3,
-    "Layer": 23,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 220,
-      "89000003": 220
-    }
-  },
-  {
-    "Id": 13214,
-    "RoadType": 3,
-    "Layer": 24,
-    "Floor": 3,
-    "LayerType": 3,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 230,
-      "89000003": 230
-    }
-  },
-  {
     "Id": 14101,
     "RoadType": 4,
     "Layer": 1,
@@ -872,58 +742,6 @@
     "FinishRewardItem": {
       "89000002": 190,
       "89000003": 190
-    }
-  },
-  {
-    "Id": 14211,
-    "RoadType": 4,
-    "Layer": 21,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 200,
-      "89000003": 200
-    }
-  },
-  {
-    "Id": 14212,
-    "RoadType": 4,
-    "Layer": 22,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 210,
-      "89000003": 210
-    }
-  },
-  {
-    "Id": 14213,
-    "RoadType": 4,
-    "Layer": 23,
-    "Floor": 3,
-    "LayerType": 1,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 220,
-      "89000003": 220
-    }
-  },
-  {
-    "Id": 14214,
-    "RoadType": 4,
-    "Layer": 24,
-    "Floor": 3,
-    "LayerType": 3,
-    "AiTeamLevel": 1106,
-    "FinishReward": 0,
-    "FinishRewardItem": {
-      "89000002": 230,
-      "89000003": 230
     }
   },
   {
@@ -1903,6 +1721,188 @@
     "FinishRewardItem": {
       "89000002": 250,
       "89000003": 250
+    }
+  },
+  {
+    "Id": 12111,
+    "RoadType": 2,
+    "Layer": 11,
+    "Floor": 2,
+    "LayerType": 1,
+    "AiTeamLevel": 1103,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 100,
+      "89000003": 100
+    }
+  },
+  {
+    "Id": 12112,
+    "RoadType": 2,
+    "Layer": 12,
+    "Floor": 2,
+    "LayerType": 2,
+    "AiTeamLevel": 1108,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 110,
+      "89000003": 110
+    }
+  },
+  {
+    "Id": 12113,
+    "RoadType": 2,
+    "Layer": 13,
+    "Floor": 2,
+    "LayerType": 1,
+    "AiTeamLevel": 1104,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 120,
+      "89000003": 120
+    }
+  },
+  {
+    "Id": 12114,
+    "RoadType": 2,
+    "Layer": 14,
+    "Floor": 2,
+    "LayerType": 1,
+    "AiTeamLevel": 1104,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 130,
+      "89000003": 130
+    }
+  },
+  {
+    "Id": 12115,
+    "RoadType": 2,
+    "Layer": 15,
+    "Floor": 2,
+    "LayerType": 1,
+    "AiTeamLevel": 1104,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 140,
+      "89000003": 140
+    }
+  },
+  {
+    "Id": 12116,
+    "RoadType": 2,
+    "Layer": 16,
+    "Floor": 2,
+    "LayerType": 3,
+    "AiTeamLevel": 1104,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 150,
+      "89000003": 150
+    }
+  },
+  {
+    "Id": 13211,
+    "RoadType": 3,
+    "Layer": 21,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 200,
+      "89000003": 200
+    }
+  },
+  {
+    "Id": 13212,
+    "RoadType": 3,
+    "Layer": 22,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 210,
+      "89000003": 210
+    }
+  },
+  {
+    "Id": 13213,
+    "RoadType": 3,
+    "Layer": 23,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 220,
+      "89000003": 220
+    }
+  },
+  {
+    "Id": 13214,
+    "RoadType": 3,
+    "Layer": 24,
+    "Floor": 3,
+    "LayerType": 3,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 230,
+      "89000003": 230
+    }
+  },
+  {
+    "Id": 14211,
+    "RoadType": 4,
+    "Layer": 21,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 200,
+      "89000003": 200
+    }
+  },
+  {
+    "Id": 14212,
+    "RoadType": 4,
+    "Layer": 22,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 210,
+      "89000003": 210
+    }
+  },
+  {
+    "Id": 14213,
+    "RoadType": 4,
+    "Layer": 23,
+    "Floor": 3,
+    "LayerType": 1,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 220,
+      "89000003": 220
+    }
+  },
+  {
+    "Id": 14214,
+    "RoadType": 4,
+    "Layer": 24,
+    "Floor": 3,
+    "LayerType": 3,
+    "AiTeamLevel": 1106,
+    "FinishReward": 0,
+    "FinishRewardItem": {
+      "89000002": 230,
+      "89000003": 230
     }
   }
 ]

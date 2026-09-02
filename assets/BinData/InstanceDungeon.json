@@ -548,7 +548,9 @@
     "RecommendRoleBottom": [],
     "RecommendElement": [],
     "ShareAttri": 1,
-    "FightInfoDtType": [],
+    "FightInfoDtType": [
+      2
+    ],
     "SaveDays": 0,
     "LimitViewName": [],
     "FuncLimit": [],
@@ -197436,7 +197438,12 @@
       0,
       0
     ],
-    "EntranceEntities": [],
+    "EntranceEntities": [
+      {
+        "DungeonId": 8,
+        "EntranceEntityId": 196800001
+      }
+    ],
     "ExitEntities": [],
     "DungeonDesc": "InstanceDungeon_1_DungeonDesc",
     "Title": 999,
@@ -197465,7 +197472,8 @@
     "RecommendElement": [],
     "ShareAttri": 1,
     "FightInfoDtType": [
-      15
+      15,
+      2
     ],
     "SaveDays": 0,
     "LimitViewName": [],
@@ -204691,12 +204699,12 @@
       0
     ],
     "RecoverWorldLocation": [
+      8,
+      -605250,
+      -42370,
+      -28470,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      100,
       0
     ],
     "ExitDungeonConfirmId": [
@@ -208014,7 +208022,7 @@
     "EntityLevelIds": [
       0
     ],
-    "MiniMapId": 1,
+    "MiniMapId": 0,
     "SubLevels": [
       "/Game/Aki/Map/Level/Main/3_5_Yuancheng/Art/Instance_YuanChenYiJi_01",
       "/Game/Aki/Map/Level/Main/3_5_Yuancheng/Art/Instance_YuanChenYiJi_01_Light",
@@ -208088,7 +208096,9 @@
     "SaveDays": 0,
     "LimitViewName": [
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "PhotographView",
+      "WorldMapView"
     ],
     "FuncLimit": [],
     "CanUseItem": 1,
@@ -212864,10 +212874,10 @@
     ],
     "ExitDungeonConfirmId": [
       0,
-      0,
-      0,
-      0,
-      0
+      287,
+      291,
+      289,
+      291
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
@@ -212895,7 +212905,7 @@
     "RecommendElement": [],
     "ShareAttri": 0,
     "FightInfoDtType": [],
-    "SaveDays": 60,
+    "SaveDays": 0,
     "LimitViewName": [
       "EditFormationView",
       "EditBattleTeamView"
@@ -216304,11 +216314,11 @@
     "MiniMapId": 1,
     "SubLevels": [
       "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_ChuanCang_ShenGongHJ",
-      "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_XinHu02_ShenGongHJ_2",
       "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_XinHu02_ShenGongHJ_2_light",
-      "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_XinHu02_ShenGongHJ_2_cangshi_01"
+      "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_XinHu02_ShenGongHJ_2_cangshi_01",
+      "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_XinHu02_ShenGongHJ_2_CangShi_01_Light"
     ],
-    "FightFormationId": 2,
+    "FightFormationId": 0,
     "RoleTypeList": [
       0,
       0,
@@ -216319,7 +216329,7 @@
       0,
       0
     ],
-    "TrialRoleFormation": 0,
+    "TrialRoleFormation": 1598,
     "ReviveId": 7,
     "BornPosition": [
       100020,
@@ -216332,10 +216342,10 @@
       -90
     ],
     "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
+      911,
+      -7630,
+      -1302830,
+      27910,
       0,
       0,
       0
@@ -216372,7 +216382,9 @@
     "RecommendRoleBottom": [],
     "RecommendElement": [],
     "ShareAttri": 0,
-    "FightInfoDtType": [],
+    "FightInfoDtType": [
+      16
+    ],
     "SaveDays": 60,
     "LimitViewName": [
       "EditFormationView",
@@ -216674,7 +216686,7 @@
     ],
     "MiniMapId": 1,
     "SubLevels": [],
-    "FightFormationId": 2,
+    "FightFormationId": 0,
     "RoleTypeList": [
       0,
       0,
@@ -216685,26 +216697,26 @@
       0,
       0
     ],
-    "TrialRoleFormation": 0,
+    "TrialRoleFormation": 1601,
     "ReviveId": 7,
     "BornPosition": [
-      -1127,
-      8960,
-      -14166
+      -1116,
+      8728,
+      -14086
     ],
     "BornRotation": [
       0,
       0,
-      -180
+      -90
     ],
     "RecoverWorldLocation": [
+      8,
+      -687361,
+      -90783,
+      -18153,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0
+      173
     ],
     "ExitDungeonConfirmId": [
       0,
@@ -216742,7 +216754,8 @@
     "SaveDays": 60,
     "LimitViewName": [
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "WorldMapView"
     ],
     "FuncLimit": [],
     "CanUseItem": 1,
@@ -232105,7 +232118,7 @@
     ],
     "MiniMapId": 1,
     "SubLevels": [],
-    "FightFormationId": 2,
+    "FightFormationId": 0,
     "RoleTypeList": [
       0,
       0,
@@ -232116,12 +232129,12 @@
       0,
       0
     ],
-    "TrialRoleFormation": 0,
+    "TrialRoleFormation": 1612,
     "ReviveId": 7,
     "BornPosition": [
-      0,
-      0,
-      0
+      -1518,
+      -3,
+      28
     ],
     "BornRotation": [
       0,
@@ -232129,13 +232142,13 @@
       0
     ],
     "RecoverWorldLocation": [
+      8,
+      -605270,
+      -40644,
+      -28498,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0
+      -90
     ],
     "ExitDungeonConfirmId": [
       0,
@@ -232173,7 +232186,8 @@
     "SaveDays": 60,
     "LimitViewName": [
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "WorldMapView"
     ],
     "FuncLimit": [],
     "CanUseItem": 1,
@@ -242195,7 +242209,7 @@
       "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_Boss_B_ShenGongHJ",
       "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/Art/3_6_Boss_B_ShenGongHJ_light"
     ],
-    "FightFormationId": 2,
+    "FightFormationId": 0,
     "RoleTypeList": [
       0,
       0,
@@ -242206,7 +242220,7 @@
       0,
       0
     ],
-    "TrialRoleFormation": 0,
+    "TrialRoleFormation": 1618,
     "ReviveId": 7,
     "BornPosition": [
       -87854,
@@ -242219,13 +242233,13 @@
       -90
     ],
     "RecoverWorldLocation": [
+      8,
+      -687449,
+      -90770,
+      -18152,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0
+      -180
     ],
     "ExitDungeonConfirmId": [
       0,
@@ -242260,7 +242274,8 @@
     "RecommendElement": [],
     "ShareAttri": 0,
     "FightInfoDtType": [
-      15
+      15,
+      2
     ],
     "SaveDays": 60,
     "LimitViewName": [
@@ -248068,13 +248083,13 @@
       0
     ],
     "RecoverWorldLocation": [
+      911,
+      2715,
+      -1385892,
+      5237,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0
+      -90
     ],
     "ExitDungeonConfirmId": [
       0,
@@ -248109,7 +248124,7 @@
     "RecommendElement": [],
     "ShareAttri": 0,
     "FightInfoDtType": [],
-    "SaveDays": 60,
+    "SaveDays": 0,
     "LimitViewName": [
       "EditFormationView",
       "EditBattleTeamView"
@@ -270048,14 +270063,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 7,
     "BornPosition": [
-      -98020,
-      53870,
-      5843
+      -48470,
+      101000,
+      1430
     ],
     "BornRotation": [
       0,
       0,
-      30
+      50
     ],
     "RecoverWorldLocation": [
       0,
@@ -270291,7 +270306,7 @@
     "RenderSettings": {},
     "IsFogFullUnlock": false,
     "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
+    "MapShowMode": 1,
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
@@ -270753,7 +270768,7 @@
     "RenderSettings": {},
     "IsFogFullUnlock": false,
     "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
+    "MapShowMode": 1,
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
@@ -270775,8 +270790,8 @@
   },
   {
     "Id": 8900,
-    "MapConfigId": 8,
-    "MapName": "InstanceDungeon_8620_Name",
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8900_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -270784,10 +270799,12 @@
     "EnableMulti": true,
     "CustomTypes": [],
     "EntityLevelIds": [
-      8900
+      0
     ],
     "MiniMapId": 0,
-    "SubLevels": [],
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_003"
+    ],
     "FightFormationId": 8330,
     "RoleTypeList": [
       0,
@@ -270802,14 +270819,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      1220450,
-      1090520,
-      1570
+      107160,
+      -70,
+      -120
     ],
     "BornRotation": [
       0,
       0,
-      -90
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -270829,13 +270846,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8620_Description",
-    "Title": 8620,
+    "DungeonDesc": "InstanceDungeon_8900_Description",
+    "Title": 8900,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000110
+      340000113
     ],
-    "MonsterTips": "InstanceDungeon_8620_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8900_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -270846,13 +270863,13 @@
     "EnterCondition": [
       6,
       0,
-      35
+      39
     ],
     "EnterConditionText": "",
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
     "EntityLevel": 80,
     "RecommendLevel": {
-      "1": 90
+      "1": 80
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -270903,7 +270920,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8620_Name"
+      "1": "InstanceDungeon_8900_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -270913,7 +270930,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -270931,8 +270950,8 @@
   },
   {
     "Id": 8901,
-    "MapConfigId": 8,
-    "MapName": "InstanceDungeon_8621_Name",
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8901_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -270940,10 +270959,12 @@
     "EnableMulti": true,
     "CustomTypes": [],
     "EntityLevelIds": [
-      8900
+      0
     ],
     "MiniMapId": 0,
-    "SubLevels": [],
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_003"
+    ],
     "FightFormationId": 8330,
     "RoleTypeList": [
       0,
@@ -270958,14 +270979,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      1220450,
-      1090520,
-      1570
+      107160,
+      -70,
+      -120
     ],
     "BornRotation": [
       0,
       0,
-      -90
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -270985,653 +271006,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8621_Description",
-    "Title": 8620,
+    "DungeonDesc": "InstanceDungeon_8901_Description",
+    "Title": 8900,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000110
+      340000113
     ],
-    "MonsterTips": "InstanceDungeon_8621_MonsterTips",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [
-      6,
-      35,
-      36
-    ],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 90,
-    "RecommendLevel": {
-      "1": 90
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "UseReviveItemView",
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView"
-    ],
-    "FuncLimit": [
-      10001,
-      10002,
-      10003,
-      10007,
-      10010,
-      10011,
-      10013,
-      10026
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 4,
-    "SubTitle": {
-      "1": "InstanceDungeon_8621_Name"
-    },
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 8902,
-    "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8622_Name",
-    "InstType": 2,
-    "InstSubType": 21,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 0,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
-    ],
-    "FightFormationId": 8331,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 8,
-    "BornPosition": [
-      -799596,
-      -802220,
-      -373
-    ],
-    "BornRotation": [
-      0,
-      0,
-      90
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8622_Description",
-    "Title": 8622,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
-    "MonsterPreview": [
-      330000130
-    ],
-    "MonsterTips": "InstanceDungeon_8622_MonsterTips",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [
-      6,
-      0,
-      37
-    ],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 80,
-    "RecommendLevel": {
-      "1": 90
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "UseReviveItemView",
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView"
-    ],
-    "FuncLimit": [
-      10001,
-      10002,
-      10003,
-      10007,
-      10010,
-      10011,
-      10013,
-      10026
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 4,
-    "SubTitle": {
-      "1": "InstanceDungeon_8622_Name"
-    },
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 8903,
-    "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8623_Name",
-    "InstType": 2,
-    "InstSubType": 21,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 0,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
-    ],
-    "FightFormationId": 8331,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 8,
-    "BornPosition": [
-      -799596,
-      -802220,
-      -373
-    ],
-    "BornRotation": [
-      0,
-      0,
-      90
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8623_Description",
-    "Title": 8622,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
-    "MonsterPreview": [
-      330000130
-    ],
-    "MonsterTips": "InstanceDungeon_8623_MonsterTips",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [
-      6,
-      37,
-      38
-    ],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 90,
-    "RecommendLevel": {
-      "1": 90
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "UseReviveItemView",
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView"
-    ],
-    "FuncLimit": [
-      10001,
-      10002,
-      10003,
-      10007,
-      10010,
-      10011,
-      10013,
-      10026
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 4,
-    "SubTitle": {
-      "1": "InstanceDungeon_8623_Name"
-    },
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 8904,
-    "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8624_Name",
-    "InstType": 2,
-    "InstSubType": 21,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 0,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
-    ],
-    "FightFormationId": 8332,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 8,
-    "BornPosition": [
-      -799596,
-      -802220,
-      -373
-    ],
-    "BornRotation": [
-      0,
-      0,
-      90
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8624_Description",
-    "Title": 8624,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
-    "MonsterPreview": [
-      330000070
-    ],
-    "MonsterTips": "InstanceDungeon_8624_MonsterTips",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [
-      6,
-      0,
-      39
-    ],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 80,
-    "RecommendLevel": {
-      "1": 90
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "UseReviveItemView",
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView"
-    ],
-    "FuncLimit": [
-      10001,
-      10002,
-      10003,
-      10007,
-      10010,
-      10011,
-      10013,
-      10026
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 4,
-    "SubTitle": {
-      "1": "InstanceDungeon_8624_Name"
-    },
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 8905,
-    "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8625_Name",
-    "InstType": 2,
-    "InstSubType": 21,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 0,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
-    ],
-    "FightFormationId": 8332,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 8,
-    "BornPosition": [
-      -799596,
-      -802220,
-      -373
-    ],
-    "BornRotation": [
-      0,
-      0,
-      90
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8625_Description",
-    "Title": 8624,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
-    "MonsterPreview": [
-      330000070
-    ],
-    "MonsterTips": "InstanceDungeon_8625_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8901_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -271699,7 +271080,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8625_Name"
+      "1": "InstanceDungeon_8901_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -271709,7 +271090,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -271726,9 +271109,9 @@
     "IconTagPath": ""
   },
   {
-    "Id": 8906,
+    "Id": 8902,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8626_Name",
+    "MapName": "InstanceDungeon_8902_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -271740,11 +271123,9 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_004"
     ],
-    "FightFormationId": 8333,
+    "FightFormationId": 8331,
     "RoleTypeList": [
       0,
       0,
@@ -271758,14 +271139,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      206680,
+      180,
+      -2610
     ],
     "BornRotation": [
       0,
       0,
-      90
+      0
     ],
     "RecoverWorldLocation": [
       0,
@@ -271785,13 +271166,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8626_Description",
-    "Title": 8626,
+    "DungeonDesc": "InstanceDungeon_8902_Description",
+    "Title": 8902,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000120
+      340000142
     ],
-    "MonsterTips": "InstanceDungeon_8626_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8902_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -271802,11 +271183,171 @@
     "EnterCondition": [
       6,
       0,
-      41
+      37
     ],
     "EnterConditionText": "",
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
     "EntityLevel": 80,
+    "RecommendLevel": {
+      "1": 80
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "UseReviveItemView",
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
+    ],
+    "FuncLimit": [
+      10001,
+      10002,
+      10003,
+      10007,
+      10010,
+      10011,
+      10013,
+      10026
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {
+      "1": "InstanceDungeon_8902_Name"
+    },
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [
+      16
+    ],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 8903,
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8903_Name",
+    "InstType": 2,
+    "InstSubType": 21,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 0,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_004"
+    ],
+    "FightFormationId": 8331,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      206680,
+      180,
+      -2610
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_8903_Description",
+    "Title": 8902,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
+    "MonsterPreview": [
+      340000142
+    ],
+    "MonsterTips": "InstanceDungeon_8903_MonsterTips",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [
+      6,
+      37,
+      38
+    ],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 90,
     "RecommendLevel": {
       "1": 90
     },
@@ -271859,7 +271400,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8626_Name"
+      "1": "InstanceDungeon_8903_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -271869,7 +271410,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -271886,9 +271429,329 @@
     "IconTagPath": ""
   },
   {
-    "Id": 8907,
+    "Id": 8904,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8627_Name",
+    "MapName": "InstanceDungeon_8904_Name",
+    "InstType": 2,
+    "InstSubType": 21,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 0,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_004"
+    ],
+    "FightFormationId": 8332,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      206680,
+      180,
+      -2610
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_8904_Description",
+    "Title": 8904,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
+    "MonsterPreview": [
+      340000172
+    ],
+    "MonsterTips": "InstanceDungeon_8904_MonsterTips",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [
+      6,
+      0,
+      35
+    ],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 80,
+    "RecommendLevel": {
+      "1": 80
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "UseReviveItemView",
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
+    ],
+    "FuncLimit": [
+      10001,
+      10002,
+      10003,
+      10007,
+      10010,
+      10011,
+      10013,
+      10026
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {
+      "1": "InstanceDungeon_8904_Name"
+    },
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [
+      16
+    ],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 8905,
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8905_Name",
+    "InstType": 2,
+    "InstSubType": 21,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 0,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_C/Instance_Rogue_C_004"
+    ],
+    "FightFormationId": 8332,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      206680,
+      180,
+      -2610
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_8905_Description",
+    "Title": 8904,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
+    "MonsterPreview": [
+      340000172
+    ],
+    "MonsterTips": "InstanceDungeon_8905_MonsterTips",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [
+      6,
+      35,
+      36
+    ],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 90,
+    "RecommendLevel": {
+      "1": 90
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "UseReviveItemView",
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
+    ],
+    "FuncLimit": [
+      10001,
+      10002,
+      10003,
+      10007,
+      10010,
+      10011,
+      10013,
+      10026
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {
+      "1": "InstanceDungeon_8905_Name"
+    },
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [
+      16
+    ],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 8906,
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8906_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -271945,13 +271808,175 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8627_Description",
-    "Title": 8626,
+    "DungeonDesc": "InstanceDungeon_8906_Description",
+    "Title": 8906,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000120
+      340000123
     ],
-    "MonsterTips": "InstanceDungeon_8627_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8906_MonsterTips",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [
+      6,
+      0,
+      41
+    ],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 80,
+    "RecommendLevel": {
+      "1": 80
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "UseReviveItemView",
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
+    ],
+    "FuncLimit": [
+      10001,
+      10002,
+      10003,
+      10007,
+      10010,
+      10011,
+      10013,
+      10026
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {
+      "1": "InstanceDungeon_8906_Name"
+    },
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [
+      16
+    ],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 8907,
+    "MapConfigId": 8630,
+    "MapName": "InstanceDungeon_8907_Name",
+    "InstType": 2,
+    "InstSubType": 21,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 0,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
+      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
+      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+    ],
+    "FightFormationId": 8333,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      -799596,
+      -802220,
+      -373
+    ],
+    "BornRotation": [
+      0,
+      0,
+      90
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_8907_Description",
+    "Title": 8906,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
+    "MonsterPreview": [
+      340000123
+    ],
+    "MonsterTips": "InstanceDungeon_8907_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272019,7 +272044,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8627_Name"
+      "1": "InstanceDungeon_8907_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272029,7 +272054,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272048,7 +272075,7 @@
   {
     "Id": 8908,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8628_Name",
+    "MapName": "InstanceDungeon_8908_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272060,9 +272087,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_005",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_005_Light"
     ],
     "FightFormationId": 8334,
     "RoleTypeList": [
@@ -272078,14 +272104,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      198280,
+      101960,
+      -140
     ],
     "BornRotation": [
       0,
       0,
-      90
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -272105,13 +272131,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8628_Description",
-    "Title": 8628,
+    "DungeonDesc": "InstanceDungeon_8908_Description",
+    "Title": 8908,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      340000101
+      340000261
     ],
-    "MonsterTips": "InstanceDungeon_8628_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8908_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272128,7 +272154,7 @@
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
     "EntityLevel": 80,
     "RecommendLevel": {
-      "1": 90
+      "1": 80
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -272179,7 +272205,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8628_Name"
+      "1": "InstanceDungeon_8908_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272189,7 +272215,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272208,7 +272236,7 @@
   {
     "Id": 8909,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8629_Name",
+    "MapName": "InstanceDungeon_8909_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272220,9 +272248,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_005",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_005_Light"
     ],
     "FightFormationId": 8334,
     "RoleTypeList": [
@@ -272238,14 +272265,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      198280,
+      101960,
+      -140
     ],
     "BornRotation": [
       0,
       0,
-      90
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -272265,13 +272292,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8629_Description",
-    "Title": 8628,
+    "DungeonDesc": "InstanceDungeon_8909_Description",
+    "Title": 8908,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      340000101
+      340000261
     ],
-    "MonsterTips": "InstanceDungeon_8629_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8909_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272339,7 +272366,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8629_Name"
+      "1": "InstanceDungeon_8909_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272349,7 +272376,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272368,7 +272397,7 @@
   {
     "Id": 8910,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8625_Title",
+    "MapName": "InstanceDungeon_8910_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272380,9 +272409,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004_Light"
     ],
     "FightFormationId": 8335,
     "RoleTypeList": [
@@ -272398,14 +272426,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      -1750,
+      -1490,
+      569
     ],
     "BornRotation": [
       0,
       0,
-      90
+      -170
     ],
     "RecoverWorldLocation": [
       0,
@@ -272425,13 +272453,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8630_Description",
-    "Title": 8630,
+    "DungeonDesc": "InstanceDungeon_8910_Description",
+    "Title": 8910,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      340000120
+      340000221
     ],
-    "MonsterTips": "InstanceDungeon_8630_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8910_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272448,7 +272476,7 @@
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
     "EntityLevel": 80,
     "RecommendLevel": {
-      "1": 90
+      "1": 80
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -272499,7 +272527,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8630_Name"
+      "1": "InstanceDungeon_8910_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272509,7 +272537,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272528,7 +272558,7 @@
   {
     "Id": 8911,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8629_Name",
+    "MapName": "InstanceDungeon_8911_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272540,9 +272570,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004_Light"
     ],
     "FightFormationId": 8335,
     "RoleTypeList": [
@@ -272558,14 +272587,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      -1750,
+      -1490,
+      569
     ],
     "BornRotation": [
       0,
       0,
-      90
+      -170
     ],
     "RecoverWorldLocation": [
       0,
@@ -272585,13 +272614,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8631_Description",
-    "Title": 8630,
+    "DungeonDesc": "InstanceDungeon_8911_Description",
+    "Title": 8910,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      340000120
+      340000221
     ],
-    "MonsterTips": "InstanceDungeon_8631_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8911_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272659,7 +272688,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8631_Name"
+      "1": "InstanceDungeon_8911_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272669,7 +272698,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272688,7 +272719,7 @@
   {
     "Id": 8912,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8620_Name",
+    "MapName": "InstanceDungeon_8912_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272700,9 +272731,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004_Light"
     ],
     "FightFormationId": 8336,
     "RoleTypeList": [
@@ -272718,14 +272748,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      -1750,
+      -1490,
+      569
     ],
     "BornRotation": [
       0,
       0,
-      90
+      -170
     ],
     "RecoverWorldLocation": [
       0,
@@ -272745,13 +272775,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8620_Description",
-    "Title": 8620,
+    "DungeonDesc": "InstanceDungeon_8912_Description",
+    "Title": 8912,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000110
+      340000212
     ],
-    "MonsterTips": "InstanceDungeon_8620_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8912_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272768,7 +272798,7 @@
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
     "EntityLevel": 80,
     "RecommendLevel": {
-      "1": 90
+      "1": 80
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -272819,7 +272849,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8620_Name"
+      "1": "InstanceDungeon_8912_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272829,7 +272859,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -272848,7 +272880,7 @@
   {
     "Id": 8913,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8621_Name",
+    "MapName": "InstanceDungeon_8913_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -272860,9 +272892,8 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_01_Light",
-      "/Game/Aki/Map/Level/Main/2_2_Katixiya/Art/Instance_Katixiya_GI"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004",
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004_Light"
     ],
     "FightFormationId": 8336,
     "RoleTypeList": [
@@ -272878,14 +272909,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -799596,
-      -802220,
-      -373
+      -1750,
+      -1490,
+      569
     ],
     "BornRotation": [
       0,
       0,
-      90
+      -170
     ],
     "RecoverWorldLocation": [
       0,
@@ -272905,13 +272936,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8621_Description",
-    "Title": 8620,
+    "DungeonDesc": "InstanceDungeon_8913_Description",
+    "Title": 8912,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000110
+      340000212
     ],
-    "MonsterTips": "InstanceDungeon_8621_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8913_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -272979,7 +273010,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8621_Name"
+      "1": "InstanceDungeon_8913_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -272989,7 +273020,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -273008,7 +273041,7 @@
   {
     "Id": 8914,
     "MapConfigId": 8630,
-    "MapName": "InstanceDungeon_8629_Name",
+    "MapName": "InstanceDungeon_8914_Name",
     "InstType": 2,
     "InstSubType": 21,
     "WorldDungeonSubType": 0,
@@ -273020,8 +273053,7 @@
     ],
     "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004",
-      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_A/Instance_Rogue_A_004_Light"
+      "/Game/Aki/Map/Level/System/Rogue/Art/Rogue_BOSS/Instance_Rogue_Boss_001"
     ],
     "FightFormationId": 8337,
     "RoleTypeList": [
@@ -273037,14 +273069,14 @@
     "TrialRoleFormation": 0,
     "ReviveId": 8,
     "BornPosition": [
-      -1750,
-      -1490,
-      569
+      99280,
+      100590,
+      50
     ],
     "BornRotation": [
       0,
       0,
-      -170
+      0
     ],
     "RecoverWorldLocation": [
       0,
@@ -273064,15 +273096,15 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_8631_Description",
-    "Title": 8630,
+    "DungeonDesc": "InstanceDungeon_8914_Description",
+    "Title": 8914,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg45_UI.T_CheckpointsBg45_UI",
     "MonsterPreview": [
-      330000070,
-      340000080,
-      340000120
+      340000222,
+      340000213,
+      340000252
     ],
-    "MonsterTips": "InstanceDungeon_8631_MonsterTips",
+    "MonsterTips": "InstanceDungeon_8914_MonsterTips",
     "FirstRewardId": 0,
     "RewardId": 0,
     "RepeatRewardId": 0,
@@ -273082,7 +273114,7 @@
     "EnterControlId": 0,
     "EnterCondition": [
       6,
-      48,
+      0,
       49
     ],
     "EnterConditionText": "",
@@ -273140,7 +273172,7 @@
     "GuideValue": 0,
     "SettleButtonType": 4,
     "SubTitle": {
-      "1": "InstanceDungeon_8631_Name"
+      "1": "InstanceDungeon_8914_Name"
     },
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -273150,7 +273182,9 @@
     "DungeonMapTrackSwitch": 0,
     "RelatedQuestId": 0,
     "SubPackageId": 0,
-    "SubPackageIdList": [],
+    "SubPackageIdList": [
+      16
+    ],
     "IsExitOnlineTeam": false,
     "EnterBuff": 0,
     "SubInstanceTitle": "",
@@ -273187,7 +273221,7 @@
       "/Game/Aki/Map/Level/Huodong/3_1_JieRiHuoDong/Art/instance_jierihuong_sub02",
       "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_NewYearHouse"
     ],
-    "FightFormationId": 2,
+    "FightFormationId": 0,
     "RoleTypeList": [
       0,
       0,
@@ -273198,10 +273232,10 @@
       0,
       0
     ],
-    "TrialRoleFormation": 0,
+    "TrialRoleFormation": 1522,
     "ReviveId": 7,
     "BornPosition": [
-      -6408,
+      -106408,
       -7157,
       -1368
     ],
@@ -273593,6 +273627,314 @@
     "IconTagPath": ""
   },
   {
+    "Id": 249053,
+    "MapConfigId": 4044,
+    "MapName": "InstanceDungeon_249001_MapName",
+    "InstType": 2,
+    "InstSubType": 49,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01",
+      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01_Light"
+    ],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      -7380,
+      -110,
+      950
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_249001_Desc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 14001135,
+    "RewardId": 14001019,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 2,
+    "RecommendLevel": {
+      "1": 40
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 1,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "AdventureGuideView",
+      "AdventureTargetView",
+      "MonsterDetectView",
+      "SilentAreaView",
+      "DailyTaskHubView",
+      "SoundAreaView",
+      "NewSoundAreaView"
+    ],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": true,
+    "DifficultyLevel": [
+      30,
+      40
+    ],
+    "DifficultyDesc": [
+      "I",
+      "II"
+    ],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 249054,
+    "MapConfigId": 4044,
+    "MapName": "InstanceDungeon_249001_MapName",
+    "InstType": 2,
+    "InstSubType": 49,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01",
+      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01_Light"
+    ],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      -7380,
+      -110,
+      950
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_249001_Desc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 14001136,
+    "RewardId": 14001020,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 2,
+    "RecommendLevel": {
+      "1": 40
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 1,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "AdventureGuideView",
+      "AdventureTargetView",
+      "MonsterDetectView",
+      "SilentAreaView",
+      "DailyTaskHubView",
+      "SoundAreaView",
+      "NewSoundAreaView"
+    ],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 4,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": true,
+    "DifficultyLevel": [
+      30,
+      40
+    ],
+    "DifficultyDesc": [
+      "I",
+      "II"
+    ],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
     "Id": 2527,
     "MapConfigId": 2527,
     "MapName": "InstanceDungeon_2527_MapName",
@@ -273646,7 +273988,12 @@
       0,
       0
     ],
-    "EntranceEntities": [],
+    "EntranceEntities": [
+      {
+        "DungeonId": 8,
+        "EntranceEntityId": 915800065
+      }
+    ],
     "ExitEntities": [],
     "DungeonDesc": "InstanceDungeon_2527_DungeonDesc",
     "Title": 999,
@@ -273733,17 +274080,17 @@
       0,
       0
     ],
-    "TrialRoleFormation": 82047,
+    "TrialRoleFormation": 82051,
     "ReviveId": 7,
     "BornPosition": [
-      699200,
+      701050,
       -700000,
       70
     ],
     "BornRotation": [
       0,
       0,
-      0
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -273816,7 +274163,7 @@
     "CanUseItem": 0,
     "GameplayMode": 0,
     "GuideType": 4,
-    "GuideValue": 1610,
+    "GuideValue": 1413,
     "SettleButtonType": 3,
     "SubTitle": {},
     "ViewMapId": 0,
@@ -273929,8 +274276,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -274183,8 +274548,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -274301,8 +274684,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -274367,17 +274768,17 @@
       0,
       0
     ],
-    "TrialRoleFormation": 82047,
+    "TrialRoleFormation": 82052,
     "ReviveId": 7,
     "BornPosition": [
-      699200,
+      701050,
       -700000,
       70
     ],
     "BornRotation": [
       0,
       0,
-      0
+      180
     ],
     "RecoverWorldLocation": [
       0,
@@ -274450,7 +274851,7 @@
     "CanUseItem": 0,
     "GameplayMode": 0,
     "GuideType": 4,
-    "GuideValue": 1610,
+    "GuideValue": 1212,
     "SettleButtonType": 3,
     "SubTitle": {},
     "ViewMapId": 0,
@@ -274563,8 +274964,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -274685,8 +275104,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -274939,8 +275376,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -275057,8 +275512,26 @@
     "FightInfoDtType": [],
     "SaveDays": 0,
     "LimitViewName": [
+      "UseReviveItemView",
       "EditFormationView",
-      "EditBattleTeamView"
+      "EditBattleTeamView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView"
     ],
     "FuncLimit": [
       10053
@@ -275068,894 +275541,6 @@
     "GuideType": 4,
     "GuideValue": 1303,
     "SettleButtonType": 3,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9621,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9622,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9623,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9624,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9625,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
-    "SubTitle": {},
-    "ViewMapId": 0,
-    "RenderSettings": {},
-    "IsFogFullUnlock": false,
-    "MapMarkFilterRule": 0,
-    "MapShowMode": 0,
-    "DungeonMapTrackSwitch": 0,
-    "RelatedQuestId": 0,
-    "SubPackageId": 0,
-    "SubPackageIdList": [],
-    "IsExitOnlineTeam": false,
-    "EnterBuff": 0,
-    "SubInstanceTitle": "",
-    "AutoLeaveTime": 300,
-    "LimitTime": 0,
-    "LeaveWaitTime": 0,
-    "FailTips": "",
-    "VerifyCreatureGen": false,
-    "DifficultyLevel": [],
-    "DifficultyDesc": [],
-    "Drop": [],
-    "EnterCount": 0,
-    "EnterConditionGroup": 0,
-    "IconTagPath": ""
-  },
-  {
-    "Id": 9626,
-    "MapConfigId": 9020,
-    "MapName": "InstanceDungeon_9600_MapName",
-    "InstType": 2,
-    "InstSubType": 38,
-    "WorldDungeonSubType": 0,
-    "OnlineType": 1,
-    "EnableMulti": true,
-    "CustomTypes": [],
-    "EntityLevelIds": [
-      0
-    ],
-    "MiniMapId": 0,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
-      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
-      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
-    ],
-    "FightFormationId": 2,
-    "RoleTypeList": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleInfo": [
-      0,
-      0,
-      0
-    ],
-    "TrialRoleFormation": 0,
-    "ReviveId": 7,
-    "BornPosition": [
-      -1380,
-      45,
-      67
-    ],
-    "BornRotation": [
-      0,
-      0,
-      9
-    ],
-    "RecoverWorldLocation": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "ExitDungeonConfirmId": [
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "EntranceEntities": [],
-    "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
-    "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
-    "MonsterPreview": [],
-    "MonsterTips": "",
-    "FirstRewardId": 0,
-    "RewardId": 0,
-    "RepeatRewardId": 0,
-    "ExchangeRewardId": 0,
-    "DropVisionLimit": 0,
-    "SharedTreasureGroup": [],
-    "EnterControlId": 0,
-    "EnterCondition": [],
-    "EnterConditionText": "",
-    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 0,
-    "RecommendLevel": {
-      "1": 60
-    },
-    "RecommendRole": [],
-    "RecommendRoleBottom": [],
-    "RecommendElement": [],
-    "ShareAttri": 0,
-    "FightInfoDtType": [],
-    "SaveDays": 0,
-    "LimitViewName": [
-      "EditFormationView",
-      "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "GachaMainView",
-      "CommonActivityView",
-      "BattlePassMainView",
-      "functionView"
-    ],
-    "FuncLimit": [
-      10026010
-    ],
-    "CanUseItem": 1,
-    "GameplayMode": 0,
-    "GuideType": 0,
-    "GuideValue": 0,
-    "SettleButtonType": 1,
     "SubTitle": {},
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -279654,11 +279239,11 @@
     "IconTagPath": ""
   },
   {
-    "Id": 249053,
-    "MapConfigId": 4044,
-    "MapName": "InstanceDungeon_249001_MapName",
+    "Id": 9621,
+    "MapConfigId": 9020,
+    "MapName": "InstanceDungeon_9600_MapName",
     "InstType": 2,
-    "InstSubType": 49,
+    "InstSubType": 38,
     "WorldDungeonSubType": 0,
     "OnlineType": 1,
     "EnableMulti": true,
@@ -279666,10 +279251,11 @@
     "EntityLevelIds": [
       0
     ],
-    "MiniMapId": 1,
+    "MiniMapId": 0,
     "SubLevels": [
-      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01",
-      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01_Light"
+      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01",
+      "/Game/Aki/Map/Level/WorldInstance/3_0_SuShe/Art/Instance_SuShe_01_Light",
+      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLStudentDorm"
     ],
     "FightFormationId": 2,
     "RoleTypeList": [
@@ -279683,11 +279269,738 @@
       0
     ],
     "TrialRoleFormation": 0,
-    "ReviveId": 8,
+    "ReviveId": 7,
     "BornPosition": [
-      -7380,
-      -110,
-      950
+      -1380,
+      100045,
+      67
+    ],
+    "BornRotation": [
+      0,
+      0,
+      9
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 9622,
+    "MapConfigId": 906,
+    "MapName": "InstanceDungeon_9600_MapName",
+    "InstType": 2,
+    "InstSubType": 38,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      9622
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 7,
+    "BornPosition": [
+      -61128,
+      -544001,
+      35216
+    ],
+    "BornRotation": [
+      0,
+      0,
+      -106
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 9623,
+    "MapConfigId": 9020,
+    "MapName": "InstanceDungeon_9600_MapName",
+    "InstType": 2,
+    "InstSubType": 38,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/WorldInstance/3_1_Litang/Audio/Instance_3_2_Litang_Audio",
+      "/Game/Aki/Map/Level/WorldInstance/3_1_Litang/Audio/Instance_Litang_Audio",
+      "/Game/Aki/Map/Level/WorldInstance/3_1_Litang/Audio/Instance_Litang_Audio_01",
+      "/Game/Aki/Map/Level/WorldInstance/3_1_Litang/Art/Instance_Litang",
+      "/Game/Aki/Map/Level/WorldInstance/3_1_Litang/Art/Instance_Litang_Light",
+      "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/Gameplay/Gameplay_3_6_BugFinder_LHLLiTang"
+    ],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 7,
+    "BornPosition": [
+      99171,
+      573,
+      223
+    ],
+    "BornRotation": [
+      0,
+      0,
+      -161
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 9624,
+    "MapConfigId": 906,
+    "MapName": "InstanceDungeon_9600_MapName",
+    "InstType": 2,
+    "InstSubType": 38,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      9624
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 7,
+    "BornPosition": [
+      -370667,
+      -651494,
+      4262
+    ],
+    "BornRotation": [
+      0,
+      0,
+      90
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 9625,
+    "MapConfigId": 8,
+    "MapName": "InstanceDungeon_9600_MapName",
+    "InstType": 2,
+    "InstSubType": 38,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      9625
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 7,
+    "BornPosition": [
+      -673256,
+      26950,
+      -30232
+    ],
+    "BornRotation": [
+      0,
+      0,
+      -58
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 9626,
+    "MapConfigId": 8,
+    "MapName": "InstanceDungeon_9600_MapName",
+    "InstType": 2,
+    "InstSubType": 38,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      9626
+    ],
+    "MiniMapId": 0,
+    "SubLevels": [],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 7,
+    "BornPosition": [
+      -690768,
+      -70701,
+      -22604
     ],
     "BornRotation": [
       0,
@@ -279712,13 +280025,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_249001_Desc",
+    "DungeonDesc": "InstanceDungeon_9600_DungeonDesc",
     "Title": 999,
     "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
     "MonsterPreview": [],
     "MonsterTips": "",
-    "FirstRewardId": 14001135,
-    "RewardId": 14001019,
+    "FirstRewardId": 0,
+    "RewardId": 0,
     "RepeatRewardId": 0,
     "ExchangeRewardId": 0,
     "DropVisionLimit": 0,
@@ -279727,9 +280040,167 @@
     "EnterCondition": [],
     "EnterConditionText": "",
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 2,
+    "EntityLevel": 0,
     "RecommendLevel": {
-      "1": 40
+      "1": 60
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "InventoryView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "InventoryPcView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "WorldMapView",
+      "QuestView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "GachaMainView",
+      "CommonActivityView",
+      "BattlePassMainView",
+      "functionView"
+    ],
+    "FuncLimit": [
+      10026010
+    ],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 210301029,
+    "MapConfigId": 2103,
+    "MapName": "InstanceDungeon_2103_MapName",
+    "InstType": 2,
+    "InstSubType": 64,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/System/Material_Simple/Material_Boss/Art/Instance_Mat_Boss_01",
+      "/Game/Aki/Map/Level/System/Material_Simple/Material_Boss/Art/Instance_Mat_Boss_01_Light",
+      "/Game/Aki/Map/Level/System/Material_Simple/Material_Boss/Gameplay/3_5_Material_Boss/Gameplay_Mat_Boss_WuMingTanSuoZhe"
+    ],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 8,
+    "BornPosition": [
+      -1000,
+      0,
+      110
+    ],
+    "BornRotation": [
+      0,
+      0,
+      0
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_2100_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03520.T_Bgloading03520",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 10240,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [
+      2,
+      1
+    ],
+    "EnterConditionText": "InstanceDungeon_2021_EnterConditionText",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 20,
+      "2": 35,
+      "3": 45,
+      "4": 55,
+      "5": 65,
+      "6": 75,
+      "7": 85,
+      "8": 85
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -279776,7 +280247,9 @@
     "GuideType": 0,
     "GuideValue": 0,
     "SettleButtonType": 4,
-    "SubTitle": {},
+    "SubTitle": {
+      "2": "0"
+    },
     "ViewMapId": 0,
     "RenderSettings": {},
     "IsFogFullUnlock": false,
@@ -279793,7 +280266,7 @@
     "LimitTime": 0,
     "LeaveWaitTime": 0,
     "FailTips": "",
-    "VerifyCreatureGen": true,
+    "VerifyCreatureGen": false,
     "DifficultyLevel": [
       30,
       40
@@ -279808,11 +280281,11 @@
     "IconTagPath": ""
   },
   {
-    "Id": 249054,
-    "MapConfigId": 4044,
-    "MapName": "InstanceDungeon_249001_MapName",
-    "InstType": 2,
-    "InstSubType": 49,
+    "Id": 20110018,
+    "MapConfigId": 8,
+    "MapName": "InstanceDungeon_1567_MapName",
+    "InstType": 6,
+    "InstSubType": 13,
     "WorldDungeonSubType": 0,
     "OnlineType": 1,
     "EnableMulti": true,
@@ -279821,10 +280294,7 @@
       0
     ],
     "MiniMapId": 1,
-    "SubLevels": [
-      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01",
-      "/Game/Aki/Map/Level/System/Material/2_0_Material/Instance_Mat_Seabed_01_Light"
-    ],
+    "SubLevels": [],
     "FightFormationId": 2,
     "RoleTypeList": [
       0,
@@ -279837,16 +280307,169 @@
       0
     ],
     "TrialRoleFormation": 0,
-    "ReviveId": 8,
+    "ReviveId": 7,
     "BornPosition": [
-      -7380,
-      -110,
-      950
+      -48470,
+      101000,
+      1430
     ],
     "BornRotation": [
       0,
       0,
+      50
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      286,
+      291,
+      288,
+      291
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_1567_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 41
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 60,
+    "LimitViewName": [
+      "RoleRootView",
+      "RoleBreachView",
+      "RoleSkillView",
+      "RoleLevelUpView",
+      "RolePhantomSkillView",
+      "ShopView",
+      "FunctionView",
+      "MailBoxView",
+      "WeaponRootView",
+      "WeaponReplaceView",
+      "WeaponBreachSuccessView",
+      "WeaponResonanceSuccessView",
+      "PhantomCultureView",
+      "FriendView",
+      "PayShopRootView",
+      "OnlineWorldHallView",
+      "CommonActivityView",
+      "AdventureTargetView",
+      "AdventureGuideView",
+      "AdventureTargetView",
+      "MonsterDetectView",
+      "SilentAreaView",
+      "DailyTaskHubView",
+      "SoundAreaView",
+      "NewSoundAreaView",
+      "BattlePassMainView",
+      "GachaMainView",
+      "CalabashRootView",
+      "ComposeCarryOnView",
+      "MotorcycleRootView",
+      "AchievementMainView",
+      "HandBookEntranceView",
+      "RouletteAssemblyView",
+      "TutorialView"
+    ],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 2,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 1,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 5063,
+    "MapConfigId": 5001,
+    "MapName": "InstanceDungeon_5017_MapName",
+    "InstType": 2,
+    "InstSubType": 7,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [
+      5
+    ],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [],
+    "FightFormationId": 1062,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 9,
+    "BornPosition": [
+      10,
+      -2300,
+      90
+    ],
+    "BornRotation": [
+      0,
+      0,
+      -90
     ],
     "RecoverWorldLocation": [
       0,
@@ -279866,13 +280489,13 @@
     ],
     "EntranceEntities": [],
     "ExitEntities": [],
-    "DungeonDesc": "InstanceDungeon_249001_Desc",
+    "DungeonDesc": "InstanceDungeon_5001_DungeonDesc",
     "Title": 999,
-    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg8_UI.T_CheckpointsBg8_UI",
     "MonsterPreview": [],
     "MonsterTips": "",
-    "FirstRewardId": 14001136,
-    "RewardId": 14001020,
+    "FirstRewardId": 50158,
+    "RewardId": 50158,
     "RepeatRewardId": 0,
     "ExchangeRewardId": 0,
     "DropVisionLimit": 0,
@@ -279881,9 +280504,12 @@
     "EnterCondition": [],
     "EnterConditionText": "",
     "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
-    "EntityLevel": 2,
+    "EntityLevel": 90,
     "RecommendLevel": {
-      "1": 40
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 41
     },
     "RecommendRole": [],
     "RecommendRoleBottom": [],
@@ -279894,42 +280520,14 @@
     "LimitViewName": [
       "EditFormationView",
       "EditBattleTeamView",
-      "RoleRootView",
-      "RoleBreachView",
-      "RoleSkillView",
-      "RoleLevelUpView",
-      "RolePhantomSkillView",
-      "ShopView",
-      "FunctionView",
-      "InventoryView",
-      "MailBoxView",
-      "WeaponRootView",
-      "WeaponReplaceView",
-      "WeaponBreachSuccessView",
-      "WeaponResonanceSuccessView",
-      "PhantomCultureView",
-      "InventoryPcView",
-      "FriendView",
-      "PayShopRootView",
-      "OnlineWorldHallView",
-      "WorldMapView",
-      "QuestView",
-      "CommonActivityView",
-      "AdventureTargetView",
-      "AdventureGuideView",
-      "AdventureTargetView",
-      "MonsterDetectView",
-      "SilentAreaView",
-      "DailyTaskHubView",
-      "SoundAreaView",
-      "NewSoundAreaView"
+      "MenuView"
     ],
     "FuncLimit": [],
     "CanUseItem": 1,
     "GameplayMode": 0,
     "GuideType": 0,
     "GuideValue": 0,
-    "SettleButtonType": 4,
+    "SettleButtonType": 2,
     "SubTitle": {},
     "ViewMapId": 0,
     "RenderSettings": {},
@@ -279947,15 +280545,368 @@
     "LimitTime": 0,
     "LeaveWaitTime": 0,
     "FailTips": "",
-    "VerifyCreatureGen": true,
-    "DifficultyLevel": [
-      30,
-      40
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 5064,
+    "MapConfigId": 5001,
+    "MapName": "InstanceDungeon_5017_MapName",
+    "InstType": 2,
+    "InstSubType": 7,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [
+      5
     ],
-    "DifficultyDesc": [
-      "I",
-      "II"
+    "EntityLevelIds": [
+      0
     ],
+    "MiniMapId": 1,
+    "SubLevels": [],
+    "FightFormationId": 1063,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 9,
+    "BornPosition": [
+      10,
+      -2300,
+      90
+    ],
+    "BornRotation": [
+      0,
+      0,
+      -90
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_5001_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg8_UI.T_CheckpointsBg8_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 50159,
+    "RewardId": 50159,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 90,
+    "RecommendLevel": {
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 41
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 1,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView",
+      "MenuView"
+    ],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 2,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 2528,
+    "MapConfigId": 2528,
+    "MapName": "InstanceDungeon_2528_MapName",
+    "InstType": 1,
+    "InstSubType": 12,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": false,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      0
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [
+      "/Game/Aki/Map/Level/WorldInstance/3_5_LiangyuHome/Art/Instance_LiangyuHome",
+      "/Game/Aki/Map/Level/WorldInstance/3_5_LiangyuHome/Art/Instance_LiangyuHome_Light",
+      "/Game/Aki/Map/Level/WorldInstance/3_5_LiangyuHome/3_5_InstanceTree_LiangyuHome",
+      "/Game/Aki/Map/Level/Level_GI/GlobalGI"
+    ],
+    "FightFormationId": 2,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 0,
+    "ReviveId": 1,
+    "BornPosition": [
+      -1103,
+      180,
+      1050
+    ],
+    "BornRotation": [
+      0,
+      0,
+      91
+    ],
+    "RecoverWorldLocation": [
+      8,
+      -618907,
+      25572,
+      -28119,
+      0,
+      0,
+      12
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "EntranceEntities": [
+      {
+        "DungeonId": 8,
+        "EntranceEntityId": 164800015
+      }
+    ],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_2528_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {},
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 1,
+    "FightInfoDtType": [],
+    "SaveDays": 0,
+    "LimitViewName": [],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
+    "Drop": [],
+    "EnterCount": 0,
+    "EnterConditionGroup": 0,
+    "IconTagPath": ""
+  },
+  {
+    "Id": 1702,
+    "MapConfigId": 8,
+    "MapName": "InstanceDungeon_1702_MapName",
+    "InstType": 2,
+    "InstSubType": 2,
+    "WorldDungeonSubType": 0,
+    "OnlineType": 1,
+    "EnableMulti": true,
+    "CustomTypes": [],
+    "EntityLevelIds": [
+      1702
+    ],
+    "MiniMapId": 1,
+    "SubLevels": [],
+    "FightFormationId": 0,
+    "RoleTypeList": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleInfo": [
+      0,
+      0,
+      0
+    ],
+    "TrialRoleFormation": 1702,
+    "ReviveId": 7,
+    "BornPosition": [
+      -645690,
+      23240,
+      -28280
+    ],
+    "BornRotation": [
+      0,
+      0,
+      120
+    ],
+    "RecoverWorldLocation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ExitDungeonConfirmId": [
+      0,
+      286,
+      291,
+      288,
+      291
+    ],
+    "EntranceEntities": [],
+    "ExitEntities": [],
+    "DungeonDesc": "InstanceDungeon_1702_DungeonDesc",
+    "Title": 999,
+    "BannerPath": "/Game/Aki/UI/UIResources/UiCheckpoints/Image/T_CheckpointsBg1_UI.T_CheckpointsBg1_UI",
+    "MonsterPreview": [],
+    "MonsterTips": "",
+    "FirstRewardId": 0,
+    "RewardId": 0,
+    "RepeatRewardId": 0,
+    "ExchangeRewardId": 0,
+    "DropVisionLimit": 0,
+    "SharedTreasureGroup": [],
+    "EnterControlId": 0,
+    "EnterCondition": [],
+    "EnterConditionText": "",
+    "DifficultyIcon": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_14_UI.T_IconFunctionOpen_14_UI",
+    "EntityLevel": 0,
+    "RecommendLevel": {
+      "1": 1
+    },
+    "RecommendRole": [],
+    "RecommendRoleBottom": [],
+    "RecommendElement": [],
+    "ShareAttri": 0,
+    "FightInfoDtType": [],
+    "SaveDays": 60,
+    "LimitViewName": [
+      "EditFormationView",
+      "EditBattleTeamView"
+    ],
+    "FuncLimit": [],
+    "CanUseItem": 1,
+    "GameplayMode": 0,
+    "GuideType": 0,
+    "GuideValue": 0,
+    "SettleButtonType": 1,
+    "SubTitle": {},
+    "ViewMapId": 0,
+    "RenderSettings": {},
+    "IsFogFullUnlock": false,
+    "MapMarkFilterRule": 0,
+    "MapShowMode": 0,
+    "DungeonMapTrackSwitch": 0,
+    "RelatedQuestId": 0,
+    "SubPackageId": 0,
+    "SubPackageIdList": [],
+    "IsExitOnlineTeam": false,
+    "EnterBuff": 0,
+    "SubInstanceTitle": "",
+    "AutoLeaveTime": 300,
+    "LimitTime": 0,
+    "LeaveWaitTime": 0,
+    "FailTips": "",
+    "VerifyCreatureGen": false,
+    "DifficultyLevel": [],
+    "DifficultyDesc": [],
     "Drop": [],
     "EnterCount": 0,
     "EnterConditionGroup": 0,

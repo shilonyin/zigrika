@@ -2142,5 +2142,21 @@
     "ImageM": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03607.T_Bgloading03607",
     "ImageF": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03607.T_Bgloading03607",
     "UmgIcon": ""
+  },
+  {
+    "Id": 613701,
+    "Icon": "",
+    "Image": "",
+    "ImageM": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03605.T_Bgloading03605",
+    "ImageF": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03605.T_Bgloading03605",
+    "UmgIcon": ""
+  },
+  {
+    "Id": 613801,
+    "Icon": "",
+    "Image": "",
+    "ImageM": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03607.T_Bgloading03607",
+    "ImageF": "/Game/Aki/UI/UIResources/Common/Image/BgCg/Loading/T_Bgloading03607.T_Bgloading03607",
+    "UmgIcon": ""
   }
 ]

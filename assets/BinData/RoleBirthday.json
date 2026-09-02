@@ -418,7 +418,7 @@
   {
     "RoleId": 1413,
     "Priority": 100350,
-    "CardTextKey": "FavorWord_141300_Content",
+    "CardTextKey": "FavorWord_141320_Content",
     "VoiceEvent": "play_vo_qingxiao_sys_birthcele",
     "SceneCameraId": "1104",
     "CardCameraId": "1105"
@@ -426,9 +426,9 @@
   {
     "RoleId": 1212,
     "Priority": 100360,
-    "CardTextKey": "FavorWord_121200_Content",
+    "CardTextKey": "FavorWord_121219_Content",
     "VoiceEvent": "play_vo_jingran_sys_birthcele",
-    "SceneCameraId": "1110",
-    "CardCameraId": "1111"
+    "SceneCameraId": "1106",
+    "CardCameraId": "1107"
   }
 ]

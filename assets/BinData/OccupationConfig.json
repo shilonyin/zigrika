@@ -982,7 +982,7 @@
     "Id": "清宵",
     "OccupationType": "Npc",
     "NameStringKey": -1,
-    "Name": 249,
+    "Name": 251,
     "OccupationData": ""
   },
   {
@@ -1018,7 +1018,7 @@
     "Id": "景燃",
     "OccupationType": "Npc",
     "NameStringKey": -1,
-    "Name": 250,
+    "Name": 252,
     "OccupationData": ""
   },
   {
@@ -1122,5 +1122,12 @@
       "LevelId": 8,
       "IdentifyEntityId": 30750004
     }
+  },
+  {
+    "Id": "jiadawang",
+    "OccupationType": "Npc",
+    "NameStringKey": 249,
+    "Name": 250,
+    "OccupationData": ""
   }
 ]

@@ -988,10 +988,7 @@
         "Y": 14
       }
     ],
-    "BranchFinishQuestNode": [
-      880000045,
-      22
-    ],
+    "BranchFinishQuestNode": [],
     "OnGoingDesc": "QuestBranch_Ongoing",
     "MoveSpeed": 600,
     "PathSpeed": 800,

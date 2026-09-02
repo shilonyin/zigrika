@@ -172,7 +172,7 @@
   },
   {
     "Id": 100100011,
-    "RoomTypeId": "FightE1",
+    "RoomTypeId": "Feiqi",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_01_07",
       "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_03"
@@ -1052,7 +1052,7 @@
   },
   {
     "Id": 100100210,
-    "RoomTypeId": "FightE3",
+    "RoomTypeId": "Feiqi",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_03_05",
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_05_Light_Night",
@@ -1092,7 +1092,7 @@
     "RoomTypeId": "BossL3",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_03_08",
-      "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_08_Light",
+      "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_08_Light_2",
       "/Game/Aki/Map/Level/Level_GI/GlobalGI_Clouds_FarShadow",
       "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_03_Boss_L_01"
     ],
@@ -1113,7 +1113,7 @@
     "RoomTypeId": "BossL3",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_03_08",
-      "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_08_Light",
+      "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_08_Light_2",
       "/Game/Aki/Map/Level/Level_GI/GlobalGI_Clouds_FarShadow",
       "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_03_Boss_L_02"
     ],
@@ -1610,11 +1610,11 @@
     "MusicState": ""
   },
   {
-    "Id": 100100028,
+    "Id": 100100027,
     "RoomTypeId": "FightE1",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_01_07",
-      "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_04"
+      "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_05"
     ],
     "BornEntityId": 229800184,
     "EnableRepeat": false,
@@ -1627,11 +1627,11 @@
     "MusicState": ""
   },
   {
-    "Id": 100100027,
+    "Id": 100100028,
     "RoomTypeId": "FightE1",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_01_07",
-      "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_05"
+      "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_04"
     ],
     "BornEntityId": 229800184,
     "EnableRepeat": false,

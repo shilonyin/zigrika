@@ -23085,7 +23085,7 @@
     "Id": 1100505,
     "DebugText": "只有使用【衍射】【湮灭】【气动】属性的漂泊者才能进入玩法！",
     "Text": "ErrorCode_1100505_Text",
-    "IsTip": false
+    "IsTip": true
   },
   {
     "Id": 2500324,
@@ -24877,9 +24877,9 @@
   },
   {
     "Id": 2700206,
-    "DebugText": "索拉等级错误",
-    "Text": "",
-    "IsTip": false
+    "DebugText": "试用角色的索拉等级错误",
+    "Text": "ErrorCode_NewPlayerSupportWorldLvErr",
+    "IsTip": true
   },
   {
     "Id": 2700207,
@@ -28694,8 +28694,8 @@
   {
     "Id": 1100594,
     "DebugText": "没有角色数据",
-    "Text": "",
-    "IsTip": false
+    "Text": "Kurotato_Role_Selected_LimitRole",
+    "IsTip": true
   },
   {
     "Id": 1100595,
@@ -29132,8 +29132,8 @@
   {
     "Id": 3400015,
     "DebugText": "玩家正在玩娃娃机",
-    "Text": "ErrorCode_3400016_Text",
-    "IsTip": false
+    "Text": "ErrorCode_900026_Text",
+    "IsTip": true
   },
   {
     "Id": 3400016,
@@ -29678,8 +29678,8 @@
   {
     "Id": 2700304,
     "DebugText": "增益选项不存在",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_SurvivorsOptionEmpty_Text",
+    "IsTip": true
   },
   {
     "Id": 2700305,
@@ -29798,8 +29798,8 @@
   {
     "Id": 2700315,
     "DebugText": "房间任务参数错误",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_SurvivorsLevelNoConf_Text",
+    "IsTip": true
   },
   {
     "Id": 2700316,
@@ -29954,20 +29954,20 @@
   {
     "Id": 1900394,
     "DebugText": "声骸编队无法使用道具",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_ErrPhantomItemUse_Text",
+    "IsTip": true
   },
   {
     "Id": 1900395,
     "DebugText": "角色试用编队无法使用道具",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_ErrRoleTrailItemUse_Text",
+    "IsTip": true
   },
   {
     "Id": 1900396,
     "DebugText": "剧情中无法使用道具",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_ErrInFlowItemUse_Text",
+    "IsTip": true
   },
   {
     "Id": 200703,
@@ -29984,14 +29984,14 @@
   {
     "Id": 1900397,
     "DebugText": "处于载具无法使用道具",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_ErrInVehicleItemUse_Text",
+    "IsTip": true
   },
   {
     "Id": 1900398,
     "DebugText": "切换编队失败",
-    "Text": "",
-    "IsTip": false
+    "Text": "ErrorCode_ErrZitherNoMainRoleInFormation_Text",
+    "IsTip": true
   },
   {
     "Id": 3000201,
@@ -30002,12 +30002,6 @@
   {
     "Id": 3000202,
     "DebugText": "XSTS XUID 不匹配",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 1900399,
-    "DebugText": "试用辅助机禁止使用道具",
     "Text": "",
     "IsTip": false
   },
@@ -30036,6 +30030,54 @@
     "IsTip": false
   },
   {
+    "Id": 3000203,
+    "DebugText": "参数数量错误",
+    "Text": "ErrorCode_QingXiaoParamCountErr",
+    "IsTip": false
+  },
+  {
+    "Id": 3000204,
+    "DebugText": "任务配置不存在",
+    "Text": "ErrorCode_QingXiaoTaskFindErr",
+    "IsTip": false
+  },
+  {
+    "Id": 3000205,
+    "DebugText": "活动ID不匹配",
+    "Text": "ErrorCode_QingXiaoActivityIdErr",
+    "IsTip": false
+  },
+  {
+    "Id": 3000206,
+    "DebugText": "任务已领奖",
+    "Text": "ErrorCode_QingXiaoHadReward",
+    "IsTip": false
+  },
+  {
+    "Id": 3000207,
+    "DebugText": "任务未完成",
+    "Text": "ErrorCode_QingXiaoTaskRunning",
+    "IsTip": false
+  },
+  {
+    "Id": 3000208,
+    "DebugText": "掉落配置未找到",
+    "Text": "ErrorCode_QingXiaoDropNoFind",
+    "IsTip": false
+  },
+  {
+    "Id": 3000209,
+    "DebugText": "任务重复",
+    "Text": "ErrorCode_QingXiaoParamAgainErr",
+    "IsTip": false
+  },
+  {
+    "Id": 3000210,
+    "DebugText": "不存在领奖条目",
+    "Text": "ErrorCode_QingXiaoNoReward",
+    "IsTip": false
+  },
+  {
     "Id": 2700326,
     "DebugText": "祝福角色配置不存在",
     "Text": "",
@@ -30052,6 +30094,12 @@
     "DebugText": "特效球不存在",
     "Text": "",
     "IsTip": false
+  },
+  {
+    "Id": 1900399,
+    "DebugText": "试用辅助机禁止使用道具",
+    "Text": "ErrorCode_ErrTrialFollowShooterItemUse_Text",
+    "IsTip": true
   },
   {
     "Id": 2700329,
@@ -30078,50 +30126,26 @@
     "IsTip": false
   },
   {
-    "Id": 3000203,
-    "DebugText": "参数数量错误",
+    "Id": 3300025,
+    "DebugText": "检查链错误",
+    "Text": "ErrorCode_3300026_Text",
+    "IsTip": false
+  },
+  {
+    "Id": 1900400,
+    "DebugText": "主角角色语音设置Id错误",
     "Text": "",
     "IsTip": false
   },
   {
-    "Id": 3000204,
-    "DebugText": "任务配置不存在",
+    "Id": 1900401,
+    "DebugText": "不在回顾副本中",
     "Text": "",
     "IsTip": false
   },
   {
-    "Id": 3000205,
-    "DebugText": "活动ID不匹配",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 3000206,
-    "DebugText": "任务已领奖",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 3000207,
-    "DebugText": "任务未完成",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 3000208,
-    "DebugText": "掉落配置未找到",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 3000209,
-    "DebugText": "任务重复",
-    "Text": "",
-    "IsTip": false
-  },
-  {
-    "Id": 3000210,
-    "DebugText": "不存在领奖条目",
+    "Id": 3100320,
+    "DebugText": "摩托车外观不可见",
     "Text": "",
     "IsTip": false
   },
@@ -30130,5 +30154,47 @@
     "DebugText": "替换同一战利品",
     "Text": "",
     "IsTip": false
+  },
+  {
+    "Id": 3100323,
+    "DebugText": "编队中有同名角色，请先处理",
+    "Text": "ErrorCode_NewPlayerSupportSameParent",
+    "IsTip": true
+  },
+  {
+    "Id": 1900409,
+    "DebugText": "主角死亡无法使用道具",
+    "Text": "ErrorCode_ErrItemUseMainRoleDead_Text",
+    "IsTip": true
+  },
+  {
+    "Id": 1900410,
+    "DebugText": "等待其他玩家进入大世界无法使用",
+    "Text": "ErrorCode_ErrWaitingOtherJoinBanUse_Text",
+    "IsTip": true
+  },
+  {
+    "Id": 1900418,
+    "DebugText": "弹奏道具不在可以使用状态",
+    "Text": "ErrorCode_ErrZitherItemUse_Text",
+    "IsTip": true
+  },
+  {
+    "Id": 2600138,
+    "DebugText": "达到物品上限，无法获得",
+    "Text": "ErrorCode_500039_Text",
+    "IsTip": false
+  },
+  {
+    "Id": 1900419,
+    "DebugText": "传送中无法使用",
+    "Text": "ErrorCode_InTeleportItemUse_Text",
+    "IsTip": true
+  },
+  {
+    "Id": 1900420,
+    "DebugText": "匹配中无法使用",
+    "Text": "ErrorCode_IsMatchingItemUse_Text",
+    "IsTip": true
   }
 ]

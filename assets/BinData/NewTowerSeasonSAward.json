@@ -37,7 +37,7 @@
     "DropId": 3772,
     "MotorPreviewId": 0,
     "WeaponPreviewId": 0,
-    "PreviewIcon": ""
+    "PreviewIcon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity36/MowingTower/RewardIcon/T_MowingTowerRewardIcon2.T_MowingTowerRewardIcon2"
   },
   {
     "Id": 5,
@@ -47,7 +47,7 @@
     "DropId": 3773,
     "MotorPreviewId": 0,
     "WeaponPreviewId": 0,
-    "PreviewIcon": ""
+    "PreviewIcon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity36/MowingTower/RewardIcon/T_MowingTowerRewardIcon1.T_MowingTowerRewardIcon1"
   },
   {
     "Id": 6,
@@ -56,7 +56,7 @@
     "Score": 600,
     "DropId": 3775,
     "MotorPreviewId": 0,
-    "WeaponPreviewId": 0,
-    "PreviewIcon": ""
+    "WeaponPreviewId": 80080009,
+    "PreviewIcon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity36/MowingTower/RewardIcon/T_MowingTowerRewardIcon3.T_MowingTowerRewardIcon3"
   }
 ]

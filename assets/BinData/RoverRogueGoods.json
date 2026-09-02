@@ -408,30 +408,6 @@
     "ShowItemId": 7025
   },
   {
-    "Id": 2002,
-    "Type": 2,
-    "Param": 1,
-    "Price": 1250,
-    "Discount": 800,
-    "ShowItemId": 2001
-  },
-  {
-    "Id": 3002,
-    "Type": 3,
-    "Param": 1,
-    "Price": 600,
-    "Discount": 800,
-    "ShowItemId": 3001
-  },
-  {
-    "Id": 5002,
-    "Type": 5,
-    "Param": 1502052101,
-    "Price": 600,
-    "Discount": 800,
-    "ShowItemId": 5001
-  },
-  {
     "Id": 7027,
     "Type": 7,
     "Param": 1,
@@ -456,12 +432,28 @@
     "ShowItemId": 7029
   },
   {
-    "Id": 7030,
-    "Type": 7,
+    "Id": 2002,
+    "Type": 2,
     "Param": 1,
-    "Price": 300,
-    "Discount": 0,
-    "ShowItemId": 7030
+    "Price": 1250,
+    "Discount": 800,
+    "ShowItemId": 2001
+  },
+  {
+    "Id": 3002,
+    "Type": 3,
+    "Param": 1,
+    "Price": 600,
+    "Discount": 800,
+    "ShowItemId": 3001
+  },
+  {
+    "Id": 5002,
+    "Type": 5,
+    "Param": 1502052101,
+    "Price": 600,
+    "Discount": 800,
+    "ShowItemId": 5001
   },
   {
     "Id": 7031,

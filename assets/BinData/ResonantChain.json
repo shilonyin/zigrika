@@ -7564,7 +7564,7 @@
       "25",
       "400%",
       "4%",
-      "1",
+      "2",
       "25"
     ],
     "NodeIcon": "/Game/Aki/UI/UIResources/Common/Image/IconDevice/T_IconDevice_QingxiaoM1_UI.T_IconDevice_QingxiaoM1_UI"
@@ -7580,9 +7580,7 @@
     "BgDescription": "PrefabTextItem_Empty_Text",
     "BuffIds": [
       1413701201,
-      1413701302,
-      1413701304,
-      1413701305
+      1413701304
     ],
     "AddProp": [],
     "ActivateConsume": {
@@ -7890,6 +7888,7 @@
     },
     "AttributesDescriptionParams": [
       "5",
+      "15",
       "1000",
       "50",
       "2500"

@@ -327,7 +327,7 @@
   {
     "BitId": 66,
     "QuestId": 173000000,
-    "HasRefResource": 0
+    "HasRefResource": 1
   },
   {
     "BitId": 67,
@@ -342,7 +342,7 @@
   {
     "BitId": 69,
     "QuestId": 915000005,
-    "HasRefResource": 0
+    "HasRefResource": 1
   },
   {
     "BitId": 70,

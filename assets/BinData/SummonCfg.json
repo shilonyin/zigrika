@@ -9391,10 +9391,14 @@
     "InheritSummonerAttribute": {},
     "UnCalculateBuffAttributes": [],
     "FollowSummonerAttr": [],
-    "BornBuffId": [],
+    "BornBuffId": [
+      8003900001
+    ],
     "ShareDamage": true,
     "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
+    "BornSelectDamageAttributeTargetBuff": [
+      8003900007
+    ],
     "ShowWeaponSubMesh": [],
     "ApplyTriggerRoles": []
   },
@@ -9409,10 +9413,14 @@
     "InheritSummonerAttribute": {},
     "UnCalculateBuffAttributes": [],
     "FollowSummonerAttr": [],
-    "BornBuffId": [],
+    "BornBuffId": [
+      8003900001
+    ],
     "ShareDamage": true,
     "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
+    "BornSelectDamageAttributeTargetBuff": [
+      8003900007
+    ],
     "ShowWeaponSubMesh": [],
     "ApplyTriggerRoles": []
   },
@@ -9754,10 +9762,14 @@
     "InheritSummonerAttribute": {},
     "UnCalculateBuffAttributes": [],
     "FollowSummonerAttr": [],
-    "BornBuffId": [],
+    "BornBuffId": [
+      70000003
+    ],
     "ShareDamage": true,
     "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
+    "BornSelectDamageAttributeTargetBuff": [
+      8003900007
+    ],
     "ShowWeaponSubMesh": [],
     "ApplyTriggerRoles": []
   },
@@ -9772,10 +9784,14 @@
     "InheritSummonerAttribute": {},
     "UnCalculateBuffAttributes": [],
     "FollowSummonerAttr": [],
-    "BornBuffId": [],
+    "BornBuffId": [
+      70000003
+    ],
     "ShareDamage": true,
     "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
+    "BornSelectDamageAttributeTargetBuff": [
+      8003900007
+    ],
     "ShowWeaponSubMesh": [],
     "ApplyTriggerRoles": []
   },
@@ -10519,28 +10535,6 @@
     "ApplyTriggerRoles": []
   },
   {
-    "Id": 280044,
-    "BlueprintType": "VisionBoss046",
-    "SurvivalTime": 15,
-    "InheritLevelType": 2,
-    "InheritLevelParam": 1,
-    "AttributeType": 0,
-    "InheritAttributeBaseType": 0,
-    "InheritSummonerAttribute": {},
-    "UnCalculateBuffAttributes": [],
-    "FollowSummonerAttr": [],
-    "BornBuffId": [
-      1001002004,
-      1101009004,
-      2100000033
-    ],
-    "ShareDamage": false,
-    "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
-    "ShowWeaponSubMesh": [],
-    "ApplyTriggerRoles": []
-  },
-  {
     "Id": 281042,
     "BlueprintType": "VisionBoss045",
     "SurvivalTime": 15,
@@ -10563,52 +10557,8 @@
     "ApplyTriggerRoles": []
   },
   {
-    "Id": 201147,
-    "BlueprintType": "Vision201147",
-    "SurvivalTime": 15,
-    "InheritLevelType": 2,
-    "InheritLevelParam": 1,
-    "AttributeType": 0,
-    "InheritAttributeBaseType": 0,
-    "InheritSummonerAttribute": {},
-    "UnCalculateBuffAttributes": [],
-    "FollowSummonerAttr": [],
-    "BornBuffId": [
-      1001002004,
-      1101009004,
-      2100000033
-    ],
-    "ShareDamage": false,
-    "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
-    "ShowWeaponSubMesh": [],
-    "ApplyTriggerRoles": []
-  },
-  {
-    "Id": 200150,
-    "BlueprintType": "Vision200150",
-    "SurvivalTime": 15,
-    "InheritLevelType": 2,
-    "InheritLevelParam": 1,
-    "AttributeType": 0,
-    "InheritAttributeBaseType": 0,
-    "InheritSummonerAttribute": {},
-    "UnCalculateBuffAttributes": [],
-    "FollowSummonerAttr": [],
-    "BornBuffId": [
-      1001002004,
-      1101009004,
-      2100000033
-    ],
-    "ShareDamage": false,
-    "InitVisiable": false,
-    "BornSelectDamageAttributeTargetBuff": [],
-    "ShowWeaponSubMesh": [],
-    "ApplyTriggerRoles": []
-  },
-  {
-    "Id": 200151,
-    "BlueprintType": "Vision200151",
+    "Id": 280044,
+    "BlueprintType": "VisionBoss046",
     "SurvivalTime": 15,
     "InheritLevelType": 2,
     "InheritLevelParam": 1,
@@ -10759,6 +10709,94 @@
     "FollowSummonerAttr": [],
     "BornBuffId": [
       70196901
+    ],
+    "ShareDamage": false,
+    "InitVisiable": false,
+    "BornSelectDamageAttributeTargetBuff": [],
+    "ShowWeaponSubMesh": [],
+    "ApplyTriggerRoles": []
+  },
+  {
+    "Id": 200150,
+    "BlueprintType": "Vision200150",
+    "SurvivalTime": 15,
+    "InheritLevelType": 2,
+    "InheritLevelParam": 1,
+    "AttributeType": 0,
+    "InheritAttributeBaseType": 0,
+    "InheritSummonerAttribute": {},
+    "UnCalculateBuffAttributes": [],
+    "FollowSummonerAttr": [],
+    "BornBuffId": [
+      1001002004,
+      1101009004,
+      2100000033
+    ],
+    "ShareDamage": false,
+    "InitVisiable": false,
+    "BornSelectDamageAttributeTargetBuff": [],
+    "ShowWeaponSubMesh": [],
+    "ApplyTriggerRoles": []
+  },
+  {
+    "Id": 200151,
+    "BlueprintType": "Vision200151",
+    "SurvivalTime": 15,
+    "InheritLevelType": 2,
+    "InheritLevelParam": 1,
+    "AttributeType": 0,
+    "InheritAttributeBaseType": 0,
+    "InheritSummonerAttribute": {},
+    "UnCalculateBuffAttributes": [],
+    "FollowSummonerAttr": [],
+    "BornBuffId": [
+      1001002004,
+      1101009004,
+      2100000033
+    ],
+    "ShareDamage": false,
+    "InitVisiable": false,
+    "BornSelectDamageAttributeTargetBuff": [],
+    "ShowWeaponSubMesh": [],
+    "ApplyTriggerRoles": []
+  },
+  {
+    "Id": 201147,
+    "BlueprintType": "Vision201147",
+    "SurvivalTime": 15,
+    "InheritLevelType": 2,
+    "InheritLevelParam": 1,
+    "AttributeType": 0,
+    "InheritAttributeBaseType": 0,
+    "InheritSummonerAttribute": {},
+    "UnCalculateBuffAttributes": [],
+    "FollowSummonerAttr": [],
+    "BornBuffId": [
+      1001002004,
+      1101009004,
+      2100000033
+    ],
+    "ShareDamage": false,
+    "InitVisiable": false,
+    "BornSelectDamageAttributeTargetBuff": [],
+    "ShowWeaponSubMesh": [],
+    "ApplyTriggerRoles": []
+  },
+  {
+    "Id": 280047,
+    "BlueprintType": "VisionBoss047",
+    "SurvivalTime": 15,
+    "InheritLevelType": 2,
+    "InheritLevelParam": 1,
+    "AttributeType": 0,
+    "InheritAttributeBaseType": 0,
+    "InheritSummonerAttribute": {},
+    "UnCalculateBuffAttributes": [],
+    "FollowSummonerAttr": [],
+    "BornBuffId": [
+      1001002004,
+      1101009004,
+      2100000033
     ],
     "ShareDamage": false,
     "InitVisiable": false,

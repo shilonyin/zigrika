@@ -721,6 +721,34 @@
     "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_RoleShare_PiaoBoZhe_F.T_RoleShare_PiaoBoZhe_F"
   },
   {
+    "Id": 1413,
+    "Type": 1,
+    "ShareTypes": [],
+    "Desc": "Role_1413_ShareDesc",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_RoleShare_QingXiao.T_RoleShare_QingXiao"
+  },
+  {
+    "Id": 1212,
+    "Type": 1,
+    "ShareTypes": [],
+    "Desc": "Role_1212_ShareDesc",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_RoleShare_JingRan.T_RoleShare_JingRan"
+  },
+  {
+    "Id": 21020106,
+    "Type": 2,
+    "ShareTypes": [],
+    "Desc": "WeaponConf_21020106_BgDescription",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_WeaponShare_QingXiao.T_WeaponShare_QingXiao"
+  },
+  {
+    "Id": 21010076,
+    "Type": 2,
+    "ShareTypes": [],
+    "Desc": "WeaponConf_21010076_BgDescription",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_WeaponShare_JingRan.T_WeaponShare_JingRan"
+  },
+  {
     "Id": 1605,
     "Type": 1,
     "ShareTypes": [
@@ -749,6 +777,24 @@
   },
   {
     "Id": 1408,
+    "Type": 1,
+    "ShareTypes": [
+      11
+    ],
+    "Desc": "Role_1610_ShareDesc",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_RoleShare_PiaoBoZhe_F.T_RoleShare_PiaoBoZhe_F"
+  },
+  {
+    "Id": 1309,
+    "Type": 1,
+    "ShareTypes": [
+      11
+    ],
+    "Desc": "Role_1610_ShareDesc",
+    "SharePic": "/Game/Aki/UI/UIResources/Common/Image/BgCg/T_RoleShare_PiaoBoZhe.T_RoleShare_PiaoBoZhe"
+  },
+  {
+    "Id": 1310,
     "Type": 1,
     "ShareTypes": [
       11

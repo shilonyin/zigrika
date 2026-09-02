@@ -1416,7 +1416,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010024
+      20010024,
+      20010035
     ],
     "JumpGroup": [
       303025
@@ -1430,7 +1431,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010024
+      20010024,
+      20010035
     ],
     "JumpGroup": [
       303025
@@ -1444,7 +1446,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010024
+      20010024,
+      20010035
     ],
     "JumpGroup": [
       303025
@@ -1458,7 +1461,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010024
+      20010024,
+      20010035
     ],
     "JumpGroup": [
       303025
@@ -1472,7 +1476,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010026
+      20010026,
+      20010037
     ],
     "JumpGroup": [
       303026
@@ -1486,7 +1491,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010026
+      20010026,
+      20010037
     ],
     "JumpGroup": [
       303026
@@ -1500,7 +1506,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010026
+      20010026,
+      20010037
     ],
     "JumpGroup": [
       303026
@@ -1514,7 +1521,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010026
+      20010026,
+      20010037
     ],
     "JumpGroup": [
       303026
@@ -1528,7 +1536,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010028
+      20010028,
+      20010039
     ],
     "JumpGroup": [
       303024
@@ -1542,7 +1551,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010028
+      20010028,
+      20010039
     ],
     "JumpGroup": [
       303024
@@ -1556,7 +1566,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010028
+      20010028,
+      20010039
     ],
     "JumpGroup": [
       303024
@@ -1570,7 +1581,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010028
+      20010028,
+      20010039
     ],
     "JumpGroup": [
       303024
@@ -1584,7 +1596,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010027
+      20010027,
+      20010038
     ],
     "JumpGroup": [
       303023
@@ -1598,7 +1611,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010027
+      20010027,
+      20010038
     ],
     "JumpGroup": [
       303023
@@ -1612,7 +1626,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010027
+      20010027,
+      20010038
     ],
     "JumpGroup": [
       303023
@@ -1626,7 +1641,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010027
+      20010027,
+      20010038
     ],
     "JumpGroup": [
       303023
@@ -1640,7 +1656,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010025
+      20010025,
+      20010036
     ],
     "JumpGroup": [
       303022
@@ -1654,7 +1671,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010025
+      20010025,
+      20010036
     ],
     "JumpGroup": [
       303022
@@ -1668,7 +1686,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010025
+      20010025,
+      20010036
     ],
     "JumpGroup": [
       303022
@@ -1682,7 +1701,8 @@
     "ItemType": 4,
     "DetectionType": 1,
     "DetectionID": [
-      20010025
+      20010025,
+      20010036
     ],
     "JumpGroup": [
       303022
@@ -2110,7 +2130,7 @@
     "ItemType": 3,
     "DetectionType": 2,
     "DetectionID": [
-      30000022
+      30000023
     ],
     "JumpGroup": [],
     "SpecialJumpGroup": 0,

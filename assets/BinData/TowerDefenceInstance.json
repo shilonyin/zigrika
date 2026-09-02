@@ -17,7 +17,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 221700476,
     "UnlockScoreLimit": 1000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 2,
@@ -39,7 +40,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 221700351,
     "UnlockScoreLimit": 3500,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 3,
@@ -61,7 +63,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 221700493,
     "UnlockScoreLimit": 7000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 4,
@@ -86,7 +89,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 221700391,
     "UnlockScoreLimit": 11000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 5,
@@ -114,7 +118,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 221700516,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 6,
@@ -137,7 +142,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 7,
@@ -161,7 +167,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 8,
@@ -186,7 +193,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 9,
@@ -212,7 +220,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 10,
@@ -239,7 +248,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 11,
@@ -267,7 +277,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 12,
@@ -295,7 +306,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 13,
@@ -323,7 +335,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 14,
@@ -351,7 +364,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 15,
@@ -379,7 +393,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 16,
@@ -407,7 +422,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 17,
@@ -435,7 +451,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 18,
@@ -458,7 +475,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 19,
@@ -481,7 +499,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 20,
@@ -504,7 +523,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 21,
@@ -532,7 +552,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 22,
@@ -560,7 +581,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 23,
@@ -588,7 +610,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 24,
@@ -616,7 +639,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 0,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 25,
@@ -639,7 +663,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 26,
@@ -667,7 +692,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 27,
@@ -691,7 +717,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 28,
@@ -719,7 +746,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 29,
@@ -744,7 +772,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 30,
@@ -772,7 +801,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 31,
@@ -798,7 +828,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 32,
@@ -826,7 +857,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 33,
@@ -854,7 +886,8 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": ""
   },
   {
     "Id": 34,
@@ -882,13 +915,14 @@
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 30000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": ""
   },
   {
     "Id": 35,
-    "InstanceId": 8900,
+    "InstanceId": 8904,
     "ActivityId": 101900004,
-    "GroupId": 8900,
+    "GroupId": 8904,
     "Difficulty": 1,
     "BossRush": false,
     "SortId": 0,
@@ -899,18 +933,19 @@
     ],
     "OpenDay": 0,
     "Condition": 0,
-    "RewardId": 5110601,
+    "RewardId": 5243001,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 36,
-    "InstanceId": 8901,
+    "InstanceId": 8905,
     "ActivityId": 101900004,
-    "GroupId": 8900,
+    "GroupId": 8904,
     "Difficulty": 2,
     "BossRush": false,
     "SortId": 0,
@@ -921,12 +956,13 @@
     ],
     "OpenDay": 0,
     "Condition": 0,
-    "RewardId": 5110613,
+    "RewardId": 5243018,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 37,
@@ -940,16 +976,18 @@
       38,
       39,
       40,
-      41
+      41,
+      42
     ],
     "OpenDay": 1,
     "Condition": 0,
-    "RewardId": 5110602,
+    "RewardId": 5243002,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 38,
@@ -963,22 +1001,24 @@
       38,
       39,
       40,
-      41
+      41,
+      42
     ],
     "OpenDay": 1,
     "Condition": 0,
-    "RewardId": 5110614,
+    "RewardId": 5243019,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 39,
-    "InstanceId": 8904,
+    "InstanceId": 8900,
     "ActivityId": 101900004,
-    "GroupId": 8904,
+    "GroupId": 8900,
     "Difficulty": 1,
     "BossRush": false,
     "SortId": 0,
@@ -987,22 +1027,25 @@
       39,
       40,
       41,
-      42
+      42,
+      43,
+      44
     ],
     "OpenDay": 2,
     "Condition": 0,
-    "RewardId": 5110603,
+    "RewardId": 5243003,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 40,
-    "InstanceId": 8905,
+    "InstanceId": 8901,
     "ActivityId": 101900004,
-    "GroupId": 8904,
+    "GroupId": 8900,
     "Difficulty": 2,
     "BossRush": false,
     "SortId": 0,
@@ -1011,16 +1054,19 @@
       39,
       40,
       41,
-      42
+      42,
+      43,
+      44
     ],
     "OpenDay": 2,
     "Condition": 0,
-    "RewardId": 5110615,
+    "RewardId": 5243020,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 41,
@@ -1036,16 +1082,20 @@
       40,
       41,
       42,
-      43
+      43,
+      44,
+      45,
+      46
     ],
     "OpenDay": 3,
     "Condition": 0,
-    "RewardId": 5110604,
+    "RewardId": 5243004,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 42,
@@ -1061,16 +1111,20 @@
       40,
       41,
       42,
-      43
+      43,
+      44,
+      45,
+      46
     ],
     "OpenDay": 3,
     "Condition": 0,
-    "RewardId": 5110616,
+    "RewardId": 5243021,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg2.T_LordGymLevelBg2"
   },
   {
     "Id": 43,
@@ -1087,16 +1141,19 @@
       41,
       42,
       43,
-      44
+      44,
+      45,
+      46
     ],
     "OpenDay": 4,
     "Condition": 0,
-    "RewardId": 5110605,
+    "RewardId": 5243005,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 44,
@@ -1113,16 +1170,19 @@
       41,
       42,
       43,
-      44
+      44,
+      45,
+      46
     ],
     "OpenDay": 4,
     "Condition": 0,
-    "RewardId": 5110617,
+    "RewardId": 5243022,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 45,
@@ -1140,16 +1200,18 @@
       42,
       43,
       44,
-      45
+      45,
+      46
     ],
     "OpenDay": 5,
     "Condition": 0,
-    "RewardId": 5110605,
+    "RewardId": 5243006,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 46,
@@ -1167,16 +1229,18 @@
       42,
       43,
       44,
-      45
+      45,
+      46
     ],
     "OpenDay": 5,
     "Condition": 0,
-    "RewardId": 5110617,
+    "RewardId": 5243023,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 47,
@@ -1199,12 +1263,13 @@
     ],
     "OpenDay": 6,
     "Condition": 0,
-    "RewardId": 5110601,
+    "RewardId": 5243007,
     "RewardScore": 2000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 48,
@@ -1227,12 +1292,13 @@
     ],
     "OpenDay": 6,
     "Condition": 0,
-    "RewardId": 5110613,
+    "RewardId": 5243024,
     "RewardScore": 0,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": true
+    "IsDifficult": true,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelBg1.T_LordGymLevelBg1"
   },
   {
     "Id": 49,
@@ -1255,11 +1321,12 @@
     ],
     "OpenDay": 0,
     "Condition": 0,
-    "RewardId": 5110617,
+    "RewardId": 5243008,
     "RewardScore": 6000,
     "LevelRewardDesc": "",
     "BaseEntityId": 0,
     "UnlockScoreLimit": 34000,
-    "IsDifficult": false
+    "IsDifficult": false,
+    "BgPath": "/Game/Aki/UI/UIResources/Common/Image/BgCgBig/Activity/Activity36/OnlineLordGym/Bg/T_LordGymLevelEndlessBg.T_LordGymLevelEndlessBg"
   }
 ]

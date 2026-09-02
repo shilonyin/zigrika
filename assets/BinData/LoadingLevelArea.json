@@ -3352,7 +3352,7 @@
     "MapId": [
       911
     ],
-    "ConditionGroup": 0,
+    "ConditionGroup": 13010004,
     "IsLimitShow": false,
     "BeginTime": 0,
     "EndTime": 0,
@@ -3388,7 +3388,7 @@
     "MapId": [],
     "ConditionGroup": 0,
     "IsLimitShow": false,
-    "BeginTime": 2119,
+    "BeginTime": 2121,
     "EndTime": 0,
     "ActivityId": 0,
     "Type": 1,
@@ -3440,6 +3440,108 @@
     "EndTime": 0,
     "ActivityId": 0,
     "Type": 2,
+    "DuringTime": 0
+  },
+  {
+    "Id": 9249,
+    "LevelRange": [
+      2,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [],
+    "ConditionGroup": 0,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 2,
+    "DuringTime": 0
+  },
+  {
+    "Id": 9250,
+    "LevelRange": [
+      2,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [],
+    "ConditionGroup": 0,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 2,
+    "DuringTime": 0
+  },
+  {
+    "Id": 6137,
+    "LevelRange": [
+      1,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [
+      911
+    ],
+    "ConditionGroup": 13010002,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 0,
+    "DuringTime": 0
+  },
+  {
+    "Id": 6138,
+    "LevelRange": [
+      1,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [
+      911
+    ],
+    "ConditionGroup": 13010003,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 0,
+    "DuringTime": 0
+  },
+  {
+    "Id": 9259,
+    "LevelRange": [
+      2,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [],
+    "ConditionGroup": 0,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 2,
+    "DuringTime": 0
+  },
+  {
+    "Id": 6142,
+    "LevelRange": [
+      1,
+      999
+    ],
+    "AreaId": [],
+    "MapId": [
+      911
+    ],
+    "ConditionGroup": 13010005,
+    "IsLimitShow": false,
+    "BeginTime": 0,
+    "EndTime": 0,
+    "ActivityId": 0,
+    "Type": 0,
     "DuringTime": 0
   }
 ]

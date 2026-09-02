@@ -93492,10 +93492,9 @@
     "ParentId": 1302,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -93540,8 +93539,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -93586,7 +93585,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -93640,10 +93638,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -93817,10 +93813,9 @@
     "ParentId": 1205,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -93865,8 +93860,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -93911,7 +93906,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -93965,10 +93959,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94142,10 +94134,9 @@
     "ParentId": 1304,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94190,8 +94181,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94236,7 +94227,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -94290,10 +94280,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94467,10 +94455,9 @@
     "ParentId": 1603,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94515,8 +94502,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94561,7 +94548,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -94633,10 +94619,9 @@
     "ParentId": 1302,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94681,8 +94666,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94727,7 +94712,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -94781,10 +94765,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -94958,10 +94940,9 @@
     "ParentId": 1205,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95006,8 +94987,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95052,7 +95033,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -95106,10 +95086,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95283,10 +95261,9 @@
     "ParentId": 1304,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95331,8 +95308,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95377,7 +95354,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -95431,10 +95407,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95608,10 +95582,9 @@
     "ParentId": 1603,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95656,8 +95629,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -95702,7 +95675,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -101397,10 +101369,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -101574,10 +101544,9 @@
     "ParentId": 1505,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -101622,8 +101591,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -101668,7 +101637,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -101722,10 +101690,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -101881,10 +101847,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -102058,10 +102022,9 @@
     "ParentId": 1505,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -102106,8 +102069,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -102152,7 +102115,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -102206,10 +102168,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129484,10 +129444,9 @@
     "ParentId": 1302,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129532,8 +129491,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129578,7 +129537,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -129632,10 +129590,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129809,10 +129765,9 @@
     "ParentId": 1205,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129857,8 +129812,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -129903,7 +129858,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -129957,10 +129911,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130134,10 +130086,9 @@
     "ParentId": 1304,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130182,8 +130133,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130228,7 +130179,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -130282,10 +130232,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130459,10 +130407,9 @@
     "ParentId": 1603,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130507,8 +130454,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130553,7 +130500,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -130607,10 +130553,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130784,10 +130728,9 @@
     "ParentId": 1505,
     "Level": 40,
     "ResonanceLevel": 0,
-    "UnlockSkillLevel": 2,
+    "UnlockSkillLevel": 1,
     "UnlockSkillNodeList": [
-      8,
-      4
+      8
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130832,8 +130775,8 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      9,
-      10
+      10,
+      11
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -130878,7 +130821,6 @@
     "UnlockSkillNodeList": [
       8,
       4,
-      5,
       9,
       10,
       11,
@@ -130932,10 +130874,8 @@
       10,
       11,
       12,
-      13,
       14,
-      15,
-      16
+      15
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
@@ -131406,11 +131346,27 @@
     ],
     "DefaultSkillBranchId": 0,
     "RoleSkin": 0,
-    "TrailWeapon": 2,
+    "TrailWeapon": 5290110,
     "PhantomEquipList": [
       {
-        "Item1": 60000132,
-        "Item2": 10042201
+        "Item1": 60002185,
+        "Item2": 30402121
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30402118
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30402118
+      },
+      {
+        "Item1": 60002125,
+        "Item2": 30402115
+      },
+      {
+        "Item1": 60002135,
+        "Item2": 30402115
       }
     ],
     "SpinePrefabResource": "",
@@ -133487,12 +133443,12 @@
         "Item2": 30415325
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415225
+        "Item1": 60002215,
+        "Item2": 30415325
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415225
+        "Item1": 60002035,
+        "Item2": 30415125
       },
       {
         "Item1": 60002105,
@@ -133501,49 +133457,6 @@
       {
         "Item1": 60002115,
         "Item2": 30415125
-      }
-    ],
-    "SpinePrefabResource": "",
-    "ContentTexturePath": ""
-  },
-  {
-    "Id": 100665,
-    "GroupId": 100665,
-    "Type": 1,
-    "WorldLevel": 1,
-    "Gender": -1,
-    "OnlyTrial": false,
-    "HideTrialLabel": false,
-    "ParentId": 1413,
-    "Level": 90,
-    "ResonanceLevel": 0,
-    "UnlockSkillLevel": 1,
-    "UnlockSkillNodeList": [
-      8
-    ],
-    "DefaultSkillBranchId": 0,
-    "RoleSkin": 0,
-    "TrailWeapon": 5290111,
-    "PhantomEquipList": [
-      {
-        "Item1": 60002215,
-        "Item2": 30385325
-      },
-      {
-        "Item1": 60002165,
-        "Item2": 30385225
-      },
-      {
-        "Item1": 60002155,
-        "Item2": 30385225
-      },
-      {
-        "Item1": 60002095,
-        "Item2": 30385125
-      },
-      {
-        "Item1": 60002085,
-        "Item2": 30385125
       }
     ],
     "SpinePrefabResource": "",
@@ -133584,12 +133497,12 @@
         "Item2": 30415325
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415225
+        "Item1": 60002215,
+        "Item2": 30415325
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415225
+        "Item1": 60002035,
+        "Item2": 30415125
       },
       {
         "Item1": 60002105,
@@ -133600,46 +133513,6 @@
         "Item2": 30415125
       }
     ],
-    "SpinePrefabResource": "",
-    "ContentTexturePath": ""
-  },
-  {
-    "Id": 100362,
-    "GroupId": 100362,
-    "Type": 1,
-    "WorldLevel": 1,
-    "Gender": -1,
-    "OnlyTrial": false,
-    "HideTrialLabel": false,
-    "ParentId": 1413,
-    "Level": 1,
-    "ResonanceLevel": 0,
-    "UnlockSkillLevel": 1,
-    "UnlockSkillNodeList": [],
-    "DefaultSkillBranchId": 0,
-    "RoleSkin": 0,
-    "TrailWeapon": 2,
-    "PhantomEquipList": [],
-    "SpinePrefabResource": "",
-    "ContentTexturePath": ""
-  },
-  {
-    "Id": 100363,
-    "GroupId": 100363,
-    "Type": 1,
-    "WorldLevel": 1,
-    "Gender": -1,
-    "OnlyTrial": false,
-    "HideTrialLabel": false,
-    "ParentId": 1212,
-    "Level": 1,
-    "ResonanceLevel": 0,
-    "UnlockSkillLevel": 1,
-    "UnlockSkillNodeList": [],
-    "DefaultSkillBranchId": 0,
-    "RoleSkin": 0,
-    "TrailWeapon": 1,
-    "PhantomEquipList": [],
     "SpinePrefabResource": "",
     "ContentTexturePath": ""
   },
@@ -133695,12 +133568,12 @@
         "Item2": 30412309
       },
       {
-        "Item1": 60002162,
-        "Item2": 30412209
+        "Item1": 60002212,
+        "Item2": 30412309
       },
       {
-        "Item1": 60002152,
-        "Item2": 30412209
+        "Item1": 60002032,
+        "Item2": 30412109
       },
       {
         "Item1": 60002102,
@@ -133741,12 +133614,12 @@
         "Item2": 30414313
       },
       {
-        "Item1": 60002164,
-        "Item2": 30414213
+        "Item1": 60002214,
+        "Item2": 30414313
       },
       {
-        "Item1": 60002154,
-        "Item2": 30414213
+        "Item1": 60002034,
+        "Item2": 30414113
       },
       {
         "Item1": 60002104,
@@ -133790,12 +133663,12 @@
         "Item2": 30414315
       },
       {
-        "Item1": 60002164,
-        "Item2": 30414215
+        "Item1": 60002214,
+        "Item2": 30414315
       },
       {
-        "Item1": 60002154,
-        "Item2": 30414215
+        "Item1": 60002034,
+        "Item2": 30414115
       },
       {
         "Item1": 60002104,
@@ -133843,12 +133716,12 @@
         "Item2": 30415318
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415218
+        "Item1": 60002215,
+        "Item2": 30415318
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415218
+        "Item1": 60002035,
+        "Item2": 30415118
       },
       {
         "Item1": 60002105,
@@ -133896,12 +133769,12 @@
         "Item2": 30415320
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415220
+        "Item1": 60002215,
+        "Item2": 30415320
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415220
+        "Item1": 60002035,
+        "Item2": 30415120
       },
       {
         "Item1": 60002105,
@@ -133949,12 +133822,12 @@
         "Item2": 30415325
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415225
+        "Item1": 60002215,
+        "Item2": 30415325
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415225
+        "Item1": 60002035,
+        "Item2": 30415125
       },
       {
         "Item1": 60002105,
@@ -134002,12 +133875,12 @@
         "Item2": 30415325
       },
       {
-        "Item1": 60002165,
-        "Item2": 30415225
+        "Item1": 60002215,
+        "Item2": 30415325
       },
       {
-        "Item1": 60002155,
-        "Item2": 30415225
+        "Item1": 60002035,
+        "Item2": 30415125
       },
       {
         "Item1": 60002105,
@@ -137424,6 +137297,49 @@
     "ContentTexturePath": ""
   },
   {
+    "Id": 100665,
+    "GroupId": 100665,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1413,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 1,
+    "UnlockSkillNodeList": [
+      8
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 5290111,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002215,
+        "Item2": 30385325
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002095,
+        "Item2": 30385125
+      },
+      {
+        "Item1": 60002085,
+        "Item2": 30385125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
     "Id": 811060,
     "GroupId": 811060,
     "Type": 1,
@@ -137524,6 +137440,1849 @@
       {
         "Item1": 60000075,
         "Item2": 110851251
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 100362,
+    "GroupId": 100362,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1413,
+    "Level": 1,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 1,
+    "UnlockSkillNodeList": [],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 2,
+    "PhantomEquipList": [],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 100363,
+    "GroupId": 100363,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1212,
+    "Level": 1,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 1,
+    "UnlockSkillNodeList": [],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 1,
+    "PhantomEquipList": [],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544001,
+    "GroupId": 544001,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1505,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000375,
+        "Item2": 20075325
+      },
+      {
+        "Item1": 60000245,
+        "Item2": 20075225
+      },
+      {
+        "Item1": 60000185,
+        "Item2": 20075225
+      },
+      {
+        "Item1": 60000255,
+        "Item2": 20075125
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 20075125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544002,
+    "GroupId": 544002,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1203,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000915,
+        "Item2": 20025325
+      },
+      {
+        "Item1": 60000295,
+        "Item2": 20025225
+      },
+      {
+        "Item1": 60000355,
+        "Item2": 20025225
+      },
+      {
+        "Item1": 60000065,
+        "Item2": 20025125
+      },
+      {
+        "Item1": 60000365,
+        "Item2": 20025125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544003,
+    "GroupId": 544003,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1303,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940001,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000525,
+        "Item2": 110853253
+      },
+      {
+        "Item1": 60000295,
+        "Item2": 110852253
+      },
+      {
+        "Item1": 60000335,
+        "Item2": 110852253
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 110851253
+      },
+      {
+        "Item1": 60000075,
+        "Item2": 110851253
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544004,
+    "GroupId": 544004,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1305,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000885,
+        "Item2": 20035325
+      },
+      {
+        "Item1": 60000195,
+        "Item2": 20035225
+      },
+      {
+        "Item1": 60000125,
+        "Item2": 20035225
+      },
+      {
+        "Item1": 60000035,
+        "Item2": 20035125
+      },
+      {
+        "Item1": 60000235,
+        "Item2": 20035125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544005,
+    "GroupId": 544005,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1202,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930001,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000915,
+        "Item2": 20025325
+      },
+      {
+        "Item1": 60000295,
+        "Item2": 20025225
+      },
+      {
+        "Item1": 60000355,
+        "Item2": 20025225
+      },
+      {
+        "Item1": 60000065,
+        "Item2": 20025125
+      },
+      {
+        "Item1": 60000365,
+        "Item2": 20025125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544006,
+    "GroupId": 544006,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1301,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000885,
+        "Item2": 20035325
+      },
+      {
+        "Item1": 60000195,
+        "Item2": 20035225
+      },
+      {
+        "Item1": 60000125,
+        "Item2": 20035225
+      },
+      {
+        "Item1": 60000035,
+        "Item2": 20035125
+      },
+      {
+        "Item1": 60000235,
+        "Item2": 20035125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544007,
+    "GroupId": 544007,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1407,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001065,
+        "Item2": 30045325
+      },
+      {
+        "Item1": 60000965,
+        "Item2": 30045225
+      },
+      {
+        "Item1": 60000975,
+        "Item2": 30045225
+      },
+      {
+        "Item1": 60000985,
+        "Item2": 30045125
+      },
+      {
+        "Item1": 60000995,
+        "Item2": 30045125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544008,
+    "GroupId": 544008,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1507,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001045,
+        "Item2": 30015325
+      },
+      {
+        "Item1": 60000925,
+        "Item2": 30015225
+      },
+      {
+        "Item1": 60000805,
+        "Item2": 30015225
+      },
+      {
+        "Item1": 60000715,
+        "Item2": 30015125
+      },
+      {
+        "Item1": 60000675,
+        "Item2": 30015125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544009,
+    "GroupId": 544009,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1207,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001145,
+        "Item2": 30065325
+      },
+      {
+        "Item1": 60001125,
+        "Item2": 30065225
+      },
+      {
+        "Item1": 60001115,
+        "Item2": 30065225
+      },
+      {
+        "Item1": 60001095,
+        "Item2": 30065125
+      },
+      {
+        "Item1": 60001085,
+        "Item2": 30065125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544010,
+    "GroupId": 544010,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1409,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001065,
+        "Item2": 30075325
+      },
+      {
+        "Item1": 60001135,
+        "Item2": 30075325
+      },
+      {
+        "Item1": 60001075,
+        "Item2": 30075125
+      },
+      {
+        "Item1": 60001085,
+        "Item2": 30075125
+      },
+      {
+        "Item1": 60001095,
+        "Item2": 30075125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544011,
+    "GroupId": 544011,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1608,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001155,
+        "Item2": 30085325
+      },
+      {
+        "Item1": 60001195,
+        "Item2": 30085225
+      },
+      {
+        "Item1": 60000205,
+        "Item2": 20065225
+      },
+      {
+        "Item1": 60001185,
+        "Item2": 30085125
+      },
+      {
+        "Item1": 60000275,
+        "Item2": 20065125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544012,
+    "GroupId": 544012,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1306,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001215,
+        "Item2": 30095325
+      },
+      {
+        "Item1": 60001615,
+        "Item2": 30095225
+      },
+      {
+        "Item1": 60000975,
+        "Item2": 30095225
+      },
+      {
+        "Item1": 60000035,
+        "Item2": 30095125
+      },
+      {
+        "Item1": 60000175,
+        "Item2": 30095125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544013,
+    "GroupId": 544013,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1410,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001605,
+        "Item2": 30115325
+      },
+      {
+        "Item1": 60001615,
+        "Item2": 30115225
+      },
+      {
+        "Item1": 60000975,
+        "Item2": 30115225
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 30115125
+      },
+      {
+        "Item1": 60000235,
+        "Item2": 30115125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544014,
+    "GroupId": 544014,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1411,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001165,
+        "Item2": 30105325
+      },
+      {
+        "Item1": 60001625,
+        "Item2": 30105225
+      },
+      {
+        "Item1": 60000965,
+        "Item2": 30105225
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 30155125
+      },
+      {
+        "Item1": 60000235,
+        "Item2": 30155125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544015,
+    "GroupId": 544015,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1208,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001205,
+        "Item2": 30135225
+      },
+      {
+        "Item1": 60001685,
+        "Item2": 30135225
+      },
+      {
+        "Item1": 60000915,
+        "Item2": 30145325
+      },
+      {
+        "Item1": 60000545,
+        "Item2": 30145125
+      },
+      {
+        "Item1": 60001705,
+        "Item2": 30135125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544016,
+    "GroupId": 544016,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1508,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001675,
+        "Item2": 30165325
+      },
+      {
+        "Item1": 60000205,
+        "Item2": 30165225
+      },
+      {
+        "Item1": 60000315,
+        "Item2": 30165225
+      },
+      {
+        "Item1": 60001719,
+        "Item2": 30165125
+      },
+      {
+        "Item1": 60001725,
+        "Item2": 30165125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544017,
+    "GroupId": 544017,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1307,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950001,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000605,
+        "Item2": 20075325
+      },
+      {
+        "Item1": 60000245,
+        "Item2": 20075225
+      },
+      {
+        "Item1": 60000185,
+        "Item2": 20075225
+      },
+      {
+        "Item1": 60000255,
+        "Item2": 20075125
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 20075125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544018,
+    "GroupId": 544018,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1209,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001905,
+        "Item2": 30195325
+      },
+      {
+        "Item1": 60001855,
+        "Item2": 30195225
+      },
+      {
+        "Item1": 60001865,
+        "Item2": 30195225
+      },
+      {
+        "Item1": 60001745,
+        "Item2": 30195125
+      },
+      {
+        "Item1": 60001775,
+        "Item2": 30195125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544019,
+    "GroupId": 544019,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1509,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 150901,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001895,
+        "Item2": 30205325
+      },
+      {
+        "Item1": 60001825,
+        "Item2": 30205225
+      },
+      {
+        "Item1": 60001865,
+        "Item2": 30205225
+      },
+      {
+        "Item1": 60001755,
+        "Item2": 30205125
+      },
+      {
+        "Item1": 60001775,
+        "Item2": 30205125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544020,
+    "GroupId": 544020,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1510,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001795,
+        "Item2": 30275225
+      },
+      {
+        "Item1": 60001895,
+        "Item2": 30275325
+      },
+      {
+        "Item1": 60001809,
+        "Item2": 30275225
+      },
+      {
+        "Item1": 60001755,
+        "Item2": 30275125
+      },
+      {
+        "Item1": 60001765,
+        "Item2": 30275125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544021,
+    "GroupId": 544021,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1210,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 121001,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001915,
+        "Item2": 30255325
+      },
+      {
+        "Item1": 60001935,
+        "Item2": 30255225
+      },
+      {
+        "Item1": 60001945,
+        "Item2": 30255225
+      },
+      {
+        "Item1": 60001975,
+        "Item2": 30255125
+      },
+      {
+        "Item1": 60001965,
+        "Item2": 30255125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544022,
+    "GroupId": 544022,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1412,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9940011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001925,
+        "Item2": 30265325
+      },
+      {
+        "Item1": 60001855,
+        "Item2": 30265225
+      },
+      {
+        "Item1": 60001865,
+        "Item2": 30265225
+      },
+      {
+        "Item1": 60001755,
+        "Item2": 30265125
+      },
+      {
+        "Item1": 60001765,
+        "Item2": 30265125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544023,
+    "GroupId": 544023,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1211,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 121102,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60000525,
+        "Item2": 110853252
+      },
+      {
+        "Item1": 60000295,
+        "Item2": 110852252
+      },
+      {
+        "Item1": 60000335,
+        "Item2": 110852252
+      },
+      {
+        "Item1": 60000085,
+        "Item2": 110851252
+      },
+      {
+        "Item1": 60000075,
+        "Item2": 110851252
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544024,
+    "GroupId": 544024,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1108,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001995,
+        "Item2": 30305325
+      },
+      {
+        "Item1": 60001885,
+        "Item2": 30305225
+      },
+      {
+        "Item1": 60001955,
+        "Item2": 30305225
+      },
+      {
+        "Item1": 60001965,
+        "Item2": 30305125
+      },
+      {
+        "Item1": 60001975,
+        "Item2": 30305125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544025,
+    "GroupId": 544025,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1109,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 110901,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001955,
+        "Item2": 30305225
+      },
+      {
+        "Item1": 60001885,
+        "Item2": 30305225
+      },
+      {
+        "Item1": 60001995,
+        "Item2": 30305325
+      },
+      {
+        "Item1": 60001965,
+        "Item2": 30305125
+      },
+      {
+        "Item1": 60001975,
+        "Item2": 30305125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544026,
+    "GroupId": 544026,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1511,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002015,
+        "Item2": 30335325
+      },
+      {
+        "Item1": 60000335,
+        "Item2": 30335225
+      },
+      {
+        "Item1": 60000215,
+        "Item2": 30335225
+      },
+      {
+        "Item1": 60000515,
+        "Item2": 30335125
+      },
+      {
+        "Item1": 60000115,
+        "Item2": 30335125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544027,
+    "GroupId": 544027,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1308,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9930011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002015,
+        "Item2": 30325325
+      },
+      {
+        "Item1": 60000335,
+        "Item2": 30325225
+      },
+      {
+        "Item1": 60000215,
+        "Item2": 30325225
+      },
+      {
+        "Item1": 60000505,
+        "Item2": 30325125
+      },
+      {
+        "Item1": 60000285,
+        "Item2": 30325125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544028,
+    "GroupId": 544028,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1610,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002185,
+        "Item2": 30402121
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30402118
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30402118
+      },
+      {
+        "Item1": 60002125,
+        "Item2": 30402115
+      },
+      {
+        "Item1": 60002135,
+        "Item2": 30402115
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544029,
+    "GroupId": 544029,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1110,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9950011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002165,
+        "Item2": 30395225
+      },
+      {
+        "Item1": 60002185,
+        "Item2": 30395325
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30395225
+      },
+      {
+        "Item1": 60002125,
+        "Item2": 30395125
+      },
+      {
+        "Item1": 60002135,
+        "Item2": 30395125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544030,
+    "GroupId": 544030,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1413,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002215,
+        "Item2": 30385325
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002095,
+        "Item2": 30385125
+      },
+      {
+        "Item1": 60002085,
+        "Item2": 30385125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 544031,
+    "GroupId": 544031,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1212,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 4190502,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002175,
+        "Item2": 30415325
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30415425
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30415425
+      },
+      {
+        "Item1": 60002105,
+        "Item2": 30415125
+      },
+      {
+        "Item1": 60002115,
+        "Item2": 30415125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 1413990000,
+    "GroupId": 141399000,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1413,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9920011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002215,
+        "Item2": 30385325
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30385225
+      },
+      {
+        "Item1": 60002095,
+        "Item2": 30385125
+      },
+      {
+        "Item1": 60002085,
+        "Item2": 30385125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 1212990000,
+    "GroupId": 121299000,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1212,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 8,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "DefaultSkillBranchId": 0,
+    "RoleSkin": 0,
+    "TrailWeapon": 9910011,
+    "PhantomEquipList": [
+      {
+        "Item1": 60002175,
+        "Item2": 30415325
+      },
+      {
+        "Item1": 60002165,
+        "Item2": 30415225
+      },
+      {
+        "Item1": 60002155,
+        "Item2": 30415225
+      },
+      {
+        "Item1": 60002105,
+        "Item2": 30415125
+      },
+      {
+        "Item1": 60002115,
+        "Item2": 30415125
+      }
+    ],
+    "SpinePrefabResource": "",
+    "ContentTexturePath": ""
+  },
+  {
+    "Id": 12117104,
+    "GroupId": 12117104,
+    "Type": 1,
+    "WorldLevel": 1,
+    "Gender": -1,
+    "OnlyTrial": false,
+    "HideTrialLabel": false,
+    "ParentId": 1211,
+    "Level": 90,
+    "ResonanceLevel": 0,
+    "UnlockSkillLevel": 10,
+    "UnlockSkillNodeList": [
+      8,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "DefaultSkillBranchId": 121102,
+    "RoleSkin": 0,
+    "TrailWeapon": 5590107,
+    "PhantomEquipList": [
+      {
+        "Item1": 60001985,
+        "Item2": 30425225
+      },
+      {
+        "Item1": 60001925,
+        "Item2": 30425325
+      },
+      {
+        "Item1": 60001839,
+        "Item2": 30425225
+      },
+      {
+        "Item1": 60001965,
+        "Item2": 30425125
+      },
+      {
+        "Item1": 60001765,
+        "Item2": 30425125
       }
     ],
     "SpinePrefabResource": "",

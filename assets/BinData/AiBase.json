@@ -12186,7 +12186,7 @@
     "Id": 7030002,
     "StateMachine": "SM_MO1HuojinMd00101",
     "AiController": "/Game/Aki/AI/AIMonster/Ordinary/AIMO1HuojinMd00101/AIC_MO1HuojinMd00101_Rogue.AIC_MO1HuojinMd00101_Rogue",
-    "BehaviorTree": "/Game/Aki/AI/AIMonster/Ordinary/AIMO1HuojinMd00101/BT_MO1HuojinMd00101_Rogue.BT_MO1HuojinMd00101_Rogue",
+    "BehaviorTree": "/Game/Aki/AI/AIMonster/Ordinary/AIMO1HuojinMd00101/BT_MO1HuojinMd00101_Rogue01.BT_MO1HuojinMd00101_Rogue01",
     "SubBehaviorConfigs": {
       "AiSense": "70065",
       "AiHate": "70065",
@@ -12718,6 +12718,21 @@
     "MonsterType": 3
   },
   {
+    "Id": 8001114,
+    "StateMachine": "SM_ML1MuyuMd00401_rogue",
+    "AiController": "/Game/Aki/AI/AIMonster/Lord/AIML1MuyuMd00401/AIC_ML1MuyuMd00401.AIC_ML1MuyuMd00401",
+    "BehaviorTree": "/Game/Aki/AI/AIMonster/Lord/AIML1MuyuMd00401/BT_ML1MuyuMd00401_rogue.BT_ML1MuyuMd00401_rogue",
+    "SubBehaviorConfigs": {
+      "AiSense": "80043",
+      "AiHate": "80043",
+      "AiWander": "2",
+      "AiBattleWander": "80043",
+      "AiBaseSkill": "80043"
+    },
+    "Team": false,
+    "MonsterType": 4
+  },
+  {
     "Id": 800046,
     "StateMachine": "SM_MB1Wuguanzhe00601_InMengZhouBOSSFight",
     "AiController": "/Game/Aki/AI/AIMonster/Boss/AIMB1Wuguanzhe00601/AIC_MB1Wuguanzhe00601_InMengZhouBOSSFight.AIC_MB1Wuguanzhe00601_InMengZhouBOSSFight",
@@ -12747,21 +12762,6 @@
     },
     "Team": true,
     "MonsterType": 3
-  },
-  {
-    "Id": 8001114,
-    "StateMachine": "SM_ML1MuyuMd00401_rogue",
-    "AiController": "/Game/Aki/AI/AIMonster/Lord/AIML1MuyuMd00401/AIC_ML1MuyuMd00401.AIC_ML1MuyuMd00401",
-    "BehaviorTree": "/Game/Aki/AI/AIMonster/Lord/AIML1MuyuMd00401/BT_ML1MuyuMd00401_rogue.BT_ML1MuyuMd00401_rogue",
-    "SubBehaviorConfigs": {
-      "AiSense": "80043",
-      "AiHate": "80043",
-      "AiWander": "2",
-      "AiBattleWander": "80043",
-      "AiBaseSkill": "80043"
-    },
-    "Team": false,
-    "MonsterType": 4
   },
   {
     "Id": 7030025,

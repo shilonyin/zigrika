@@ -8,7 +8,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 1,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 2,
@@ -19,7 +20,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 2,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 3,
@@ -30,7 +32,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 3,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 4,
@@ -41,7 +44,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 4,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 5,
@@ -52,7 +56,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 5,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 6,
@@ -63,7 +68,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 6,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 7,
@@ -74,7 +80,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 7,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 8,
@@ -85,7 +92,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 8,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 9,
@@ -96,7 +104,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 9,
     "BuffApplyPlan": 0,
-    "ActivityId": 100105523
+    "ActivityId": 100105523,
+    "IsSurvivalType": false
   },
   {
     "Id": 11,
@@ -107,7 +116,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 11,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 12,
@@ -118,7 +128,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 12,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 13,
@@ -129,7 +140,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 13,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 14,
@@ -140,7 +152,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 14,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 15,
@@ -151,7 +164,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 15,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 16,
@@ -162,7 +176,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 16,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 17,
@@ -173,7 +188,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 17,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 18,
@@ -184,7 +200,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 18,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 19,
@@ -195,7 +212,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 19,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900001
+    "ActivityId": 101900001,
+    "IsSurvivalType": false
   },
   {
     "Id": 20,
@@ -206,7 +224,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 20,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 21,
@@ -217,7 +236,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 21,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 22,
@@ -228,7 +248,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 22,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 23,
@@ -239,7 +260,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 23,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 24,
@@ -250,7 +272,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 24,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 25,
@@ -261,7 +284,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 25,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 26,
@@ -272,7 +296,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 26,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 27,
@@ -283,7 +308,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 27,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 28,
@@ -294,7 +320,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 28,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900002
+    "ActivityId": 101900002,
+    "IsSurvivalType": false
   },
   {
     "Id": 29,
@@ -305,7 +332,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 29,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 30,
@@ -316,7 +344,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 30,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 31,
@@ -327,7 +356,8 @@
     "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 31,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 32,
@@ -338,7 +368,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 32,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 33,
@@ -349,7 +380,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 33,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 34,
@@ -360,7 +392,8 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 34,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 35,
@@ -371,7 +404,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 35,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 36,
@@ -382,7 +416,8 @@
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 36,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 37,
@@ -393,105 +428,115 @@
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 37,
     "BuffApplyPlan": 0,
-    "ActivityId": 101900003
+    "ActivityId": 101900003,
+    "IsSurvivalType": false
   },
   {
     "Id": 38,
-    "PhantomItemId": 60200701,
-    "PhantomName": "MonsterInfo_340000151_Name",
-    "TypeTextId": "TowerDefence_5",
-    "TypeIcon": "SP_TagGreen",
-    "MarkHex": "SP_ItemBVisionPoint",
-    "SkillGroup": 38,
-    "BuffApplyPlan": 1,
-    "ActivityId": 101900004
-  },
-  {
-    "Id": 39,
     "PhantomItemId": 60200702,
-    "PhantomName": "MonsterInfo_310000830_Name",
+    "PhantomName": "TowerDefence_500020_PhantomTitle",
     "TypeTextId": "TowerDefence_1",
     "TypeIcon": "SP_TagRed",
     "MarkHex": "SP_ItemBVisionPoint2",
+    "SkillGroup": 38,
+    "BuffApplyPlan": 1,
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
+  },
+  {
+    "Id": 39,
+    "PhantomItemId": 60200709,
+    "PhantomName": "TowerDefence_500090_PhantomTitle",
+    "TypeTextId": "TowerDefence_2",
+    "TypeIcon": "SP_TagYellow",
+    "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 39,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   },
   {
     "Id": 40,
     "PhantomItemId": 60200703,
-    "PhantomName": "MonsterInfo_310000440_Name",
+    "PhantomName": "TowerDefence_500030_PhantomTitle",
     "TypeTextId": "TowerDefence_4",
     "TypeIcon": "SP_TagGreen",
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 40,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": true
   },
   {
     "Id": 41,
-    "PhantomItemId": 60200704,
-    "PhantomName": "MonsterInfo_320000530_Name",
-    "TypeTextId": "TowerDefence_5",
-    "TypeIcon": "SP_TagGreen",
-    "MarkHex": "SP_ItemBVisionPoint",
+    "PhantomItemId": 60200707,
+    "PhantomName": "TowerDefence_500070_PhantomTitle",
+    "TypeTextId": "TowerDefence_2",
+    "TypeIcon": "SP_TagYellow",
+    "MarkHex": "SP_ItemBVisionPoint1",
     "SkillGroup": 41,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   },
   {
     "Id": 42,
     "PhantomItemId": 60200705,
-    "PhantomName": "MonsterInfo_320000550_Name",
-    "TypeTextId": "TowerDefence_1",
-    "TypeIcon": "SP_TagRed",
-    "MarkHex": "SP_ItemBVisionPoint2",
+    "PhantomName": "TowerDefence_500050_PhantomTitle",
+    "TypeTextId": "TowerDefence_5",
+    "TypeIcon": "SP_TagGreen",
+    "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 42,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   },
   {
     "Id": 43,
-    "PhantomItemId": 60200706,
-    "PhantomName": "MonsterInfo_310000540_Name",
-    "TypeTextId": "TowerDefence_4",
+    "PhantomItemId": 60200701,
+    "PhantomName": "TowerDefence_500010_PhantomTitle",
+    "TypeTextId": "TowerDefence_5",
     "TypeIcon": "SP_TagGreen",
     "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 43,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   },
   {
     "Id": 44,
-    "PhantomItemId": 60200707,
-    "PhantomName": "MonsterInfo_330000040_Name",
-    "TypeTextId": "TowerDefence_2",
-    "TypeIcon": "SP_TagYellow",
-    "MarkHex": "SP_ItemBVisionPoint1",
+    "PhantomItemId": 60200706,
+    "PhantomName": "TowerDefence_500060_PhantomTitle",
+    "TypeTextId": "TowerDefence_4",
+    "TypeIcon": "SP_TagGreen",
+    "MarkHex": "SP_ItemBVisionPoint",
     "SkillGroup": 44,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": true
   },
   {
     "Id": 45,
-    "PhantomItemId": 60200708,
-    "PhantomName": "MonsterInfo_320000490_Name",
+    "PhantomItemId": 60200704,
+    "PhantomName": "TowerDefence_500040_PhantomTitle",
     "TypeTextId": "TowerDefence_1",
     "TypeIcon": "SP_TagRed",
     "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 45,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   },
   {
     "Id": 46,
-    "PhantomItemId": 60200709,
-    "PhantomName": "MonsterInfo_320000340_Name",
-    "TypeTextId": "TowerDefence_2",
-    "TypeIcon": "SP_TagYellow",
-    "MarkHex": "SP_ItemBVisionPoint1",
+    "PhantomItemId": 60200708,
+    "PhantomName": "TowerDefence_500080_PhantomTitle",
+    "TypeTextId": "TowerDefence_1",
+    "TypeIcon": "SP_TagRed",
+    "MarkHex": "SP_ItemBVisionPoint2",
     "SkillGroup": 46,
     "BuffApplyPlan": 1,
-    "ActivityId": 101900004
+    "ActivityId": 101900004,
+    "IsSurvivalType": false
   }
 ]

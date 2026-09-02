@@ -277,7 +277,8 @@
     "Id": 2013,
     "Desc": "RoverRogue_EventChoice_2014",
     "Params": [
-      "1200"
+      "1200",
+      "100%"
     ],
     "BriefDesc": "",
     "BriefDescParams": []

@@ -885,5 +885,53 @@
     "OccupationType": "Area",
     "OccupationData": "",
     "OccupationNameStringKey": "OccupationConfig_suisui_Name"
+  },
+  {
+    "Id": "jiadawang",
+    "OccupationType": "Npc",
+    "OccupationData": "",
+    "OccupationNameStringKey": "OccupationConfig_suisui_Name"
+  },
+  {
+    "Id": "ClosedSegmentMap900",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap906",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap909",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap911",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap912",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap913",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
+  },
+  {
+    "Id": "ClosedSegmentMap914",
+    "OccupationType": "ClosedSegment",
+    "OccupationData": "",
+    "OccupationNameStringKey": ""
   }
 ]

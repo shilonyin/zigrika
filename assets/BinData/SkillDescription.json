@@ -61445,6 +61445,39 @@
     "Order": 15
   },
   {
+    "Id": 1110711,
+    "SkillLevelGroupId": 1005707,
+    "AttributeName": "SkillDescription_1110711_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 8
+  },
+  {
     "Id": 1309039,
     "SkillLevelGroupId": 1005507,
     "AttributeName": "SkillDescription_1309039_AttributeName",
@@ -61476,6 +61509,39 @@
     ],
     "Description": "",
     "Order": 8
+  },
+  {
+    "Id": 1610038,
+    "SkillLevelGroupId": 1005407,
+    "AttributeName": "SkillDescription_1610038_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523",
+          "523"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 12
   },
   {
     "Id": 1309040,
@@ -61575,105 +61641,6 @@
     ],
     "Description": "",
     "Order": 9
-  },
-  {
-    "Id": 1610038,
-    "SkillLevelGroupId": 1005407,
-    "AttributeName": "SkillDescription_1610038_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523",
-          "523"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 12
-  },
-  {
-    "Id": 1610039,
-    "SkillLevelGroupId": 1005401,
-    "AttributeName": "SkillDescription_1610039_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 13
-  },
-  {
-    "Id": 1110711,
-    "SkillLevelGroupId": 1005707,
-    "AttributeName": "SkillDescription_1110711_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 8
   },
   {
     "Id": 1413001,
@@ -62567,42 +62534,9 @@
     "Order": 30
   },
   {
-    "Id": 1309043,
-    "SkillLevelGroupId": 1005501,
-    "AttributeName": "SkillDescription_1309043_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "94.78%",
-          "102.56%",
-          "110.33%",
-          "121.21%",
-          "128.98%",
-          "137.92%",
-          "150.35%",
-          "162.79%",
-          "175.22%",
-          "188.44%",
-          "203.98%",
-          "219.52%",
-          "235.07%",
-          "250.61%",
-          "266.16%",
-          "281.70%",
-          "297.24%",
-          "312.79%",
-          "328.33%",
-          "343.88%"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 12
-  },
-  {
-    "Id": 1309044,
-    "SkillLevelGroupId": 1005501,
-    "AttributeName": "SkillDescription_1309044_AttributeName",
+    "Id": 1610039,
+    "SkillLevelGroupId": 1005401,
+    "AttributeName": "SkillDescription_1610039_AttributeName",
     "SkillDetailNum": [
       {
         "ArrayString": [
@@ -62630,7 +62564,7 @@
       }
     ],
     "Description": "",
-    "Order": 17
+    "Order": 13
   },
   {
     "Id": 1610040,
@@ -62664,105 +62598,6 @@
     ],
     "Description": "",
     "Order": 9
-  },
-  {
-    "Id": 1413013,
-    "SkillLevelGroupId": 1005801,
-    "AttributeName": "SkillDescription_1413013_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30",
-          "30"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 13
-  },
-  {
-    "Id": 1413014,
-    "SkillLevelGroupId": 1005801,
-    "AttributeName": "SkillDescription_1413014_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20",
-          "20"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 14
-  },
-  {
-    "Id": 1413408,
-    "SkillLevelGroupId": 1005807,
-    "AttributeName": "SkillDescription_1413408_AttributeName",
-    "SkillDetailNum": [
-      {
-        "ArrayString": [
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25",
-          "25"
-        ]
-      }
-    ],
-    "Description": "",
-    "Order": 31
   },
   {
     "Id": 1212001,
@@ -63656,6 +63491,105 @@
     "Order": 31
   },
   {
+    "Id": 1413408,
+    "SkillLevelGroupId": 1005807,
+    "AttributeName": "SkillDescription_1413408_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          "25"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 31
+  },
+  {
+    "Id": 1309043,
+    "SkillLevelGroupId": 1005501,
+    "AttributeName": "SkillDescription_1309043_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "94.78%",
+          "102.56%",
+          "110.33%",
+          "121.21%",
+          "128.98%",
+          "137.92%",
+          "150.35%",
+          "162.79%",
+          "175.22%",
+          "188.44%",
+          "203.98%",
+          "219.52%",
+          "235.07%",
+          "250.61%",
+          "266.16%",
+          "281.70%",
+          "297.24%",
+          "312.79%",
+          "328.33%",
+          "343.88%"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 12
+  },
+  {
+    "Id": 1309044,
+    "SkillLevelGroupId": 1005501,
+    "AttributeName": "SkillDescription_1309044_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 17
+  },
+  {
     "Id": 1212028,
     "SkillLevelGroupId": 1005901,
     "AttributeName": "SkillDescription_1212028_AttributeName",
@@ -63687,6 +63621,72 @@
     ],
     "Description": "",
     "Order": 13
+  },
+  {
+    "Id": 1413013,
+    "SkillLevelGroupId": 1005801,
+    "AttributeName": "SkillDescription_1413013_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30",
+          "30"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 13
+  },
+  {
+    "Id": 1413014,
+    "SkillLevelGroupId": 1005801,
+    "AttributeName": "SkillDescription_1413014_AttributeName",
+    "SkillDetailNum": [
+      {
+        "ArrayString": [
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20",
+          "20"
+        ]
+      }
+    ],
+    "Description": "",
+    "Order": 14
   },
   {
     "Id": 1212030,

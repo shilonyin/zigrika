@@ -2884,8 +2884,8 @@
     "DataLayer": "DataLayerRuntime_DLTask_36DJ01",
     "CnName": "地境常驻飞梭",
     "LevelId": 911,
-    "InitLoad": true,
-    "OnlyActor": false,
+    "InitLoad": false,
+    "OnlyActor": true,
     "EnableSwitchNavMesh": false
   },
   {
@@ -2947,7 +2947,7 @@
     "DataLayer": "DataLayerRuntime_DLTask_36DJ08",
     "CnName": "地境动态山体",
     "LevelId": 911,
-    "InitLoad": true,
+    "InitLoad": false,
     "OnlyActor": true,
     "EnableSwitchNavMesh": false
   },
@@ -3091,8 +3091,8 @@
     "DataLayer": "DataLayerRuntime_DLTask_36DJFYZ",
     "CnName": "地境风云障",
     "LevelId": 911,
-    "InitLoad": true,
-    "OnlyActor": false,
+    "InitLoad": false,
+    "OnlyActor": true,
     "EnableSwitchNavMesh": false
   },
   {
@@ -3100,7 +3100,7 @@
     "DataLayer": "DataLayerRuntime_DLTask_36RJ01",
     "CnName": "人境常驻飞梭",
     "LevelId": 911,
-    "InitLoad": true,
+    "InitLoad": false,
     "OnlyActor": true,
     "EnableSwitchNavMesh": false
   },
@@ -3109,7 +3109,7 @@
     "DataLayer": "DataLayerRuntime_DLTask_36RJFYZ",
     "CnName": "人境风云障",
     "LevelId": 911,
-    "InitLoad": true,
+    "InitLoad": false,
     "OnlyActor": true,
     "EnableSwitchNavMesh": false
   },
@@ -3118,7 +3118,7 @@
     "DataLayer": "DataLayerRuntime_DLTask_36TJ01",
     "CnName": "天境常态飞梭",
     "LevelId": 911,
-    "InitLoad": true,
+    "InitLoad": false,
     "OnlyActor": false,
     "EnableSwitchNavMesh": false
   },
@@ -3399,6 +3399,33 @@
     "LevelId": 8,
     "InitLoad": false,
     "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 750109,
+    "DataLayer": "DataLayerRuntime_DLTask_35XLC01",
+    "CnName": "3.5衔翎村废墟",
+    "LevelId": 8,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 800036,
+    "DataLayer": "DataLayerRuntime_DLTask_35XLC02",
+    "CnName": "定玄之外小楼",
+    "LevelId": 8,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 800037,
+    "DataLayer": "DataLayerRuntime_DLTask_36ZXWM01",
+    "CnName": "位面副本策划投放",
+    "LevelId": 8,
+    "InitLoad": false,
+    "OnlyActor": false,
     "EnableSwitchNavMesh": false
   }
 ]

@@ -1737,7 +1737,7 @@
   },
   {
     "MapId": 1566,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/InstanceTree_ShenGongHJ",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -1947,7 +1947,7 @@
   },
   {
     "MapId": 911,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/WP/3_6_SGHJ/WP_3_6_SGHJ",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2052,14 +2052,14 @@
   },
   {
     "MapId": 1598,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/InstanceTree_XinMoHJ",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
   },
   {
     "MapId": 1601,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/InstanceTree_ShenGongHeXin",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2129,7 +2129,7 @@
   },
   {
     "MapId": 1612,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_JiGuanZhaiDi/InstanceTree_JiGuanZhaiDi",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2367,7 +2367,7 @@
   },
   {
     "MapId": 1618,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/InstanceTree_TianJing",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2430,7 +2430,7 @@
   },
   {
     "MapId": 1619,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Main/3_6_ShenGongHJ/InstanceTree_Yuanlin",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2682,15 +2682,8 @@
   },
   {
     "MapId": 2527,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/WorldInstance/3_6_Xinhu/InstanceTree_Xinhu",
-    "LoadMapMode": 0,
-    "IgnoreWorldOrigin": 0
-  },
-  {
-    "MapId": 8630,
-    "PakRule": 0,
-    "MapPath": "/Game/Aki/Map/Level/Huodong/3_6_LJboss3/InstanceTree_LJboss3",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
   },
@@ -2709,8 +2702,15 @@
     "IgnoreWorldOrigin": 0
   },
   {
+    "MapId": 8630,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/Huodong/3_6_LJboss3/InstanceTree_LJboss3",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
     "MapId": 9020,
-    "PakRule": 0,
+    "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Huodong/3_6_BugFinder/InstanceTree_3_6_BugFinder",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
@@ -2730,9 +2730,93 @@
     "IgnoreWorldOrigin": 0
   },
   {
+    "MapId": 835,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/UISceneLevel/UI_Scene/UL_UIMap_Moto_01",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 836,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/UISceneLevel/UI_Scene/UL_UIMap_Moto_01_Light",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 837,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/UISceneLevel/UI_Scene/UL_UIMap_Moto_02",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 838,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/UISceneLevel/UI_Scene/UL_UIMap_Moto_02_Light",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3928,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/TacticalHologram/3_0_TacticalHologram/Art/3_0_Instance_Hologram_Light",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3929,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/TacticalHologram/3_0_TacticalHologram/Art/3_0_Instance_Hologram_Light_UI",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3930,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/TacticalHologram/3_5_TacticalHologram/Art/3_5_Instance_Hologram_Light",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3931,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/TacticalHologram/3_5_TacticalHologram/Art/3_5_Instance_Hologram_Light_UI",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3932,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/Material_Simple/Material_Challenge/Art/Instance_Mat_Challenge_01_Light",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 3933,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/Material_Simple/Material_Challenge/Art/Instance_Mat_Challenge_01_Light_UI",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 2528,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/WorldInstance/3_6_ZhuSanDaoHome/3_6_InstanceTree_ZhuSanDaoHome",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
     "MapId": 8052,
     "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_10",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 8053,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_08_Light_2",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
   }

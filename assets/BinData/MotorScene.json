@@ -5,7 +5,7 @@
     "DefaultFlag": true,
     "SceneId": "UL_UIMap_Character_moto",
     "SceneName": "MotorScene10001",
-    "SceneIcon": ""
+    "SceneIcon": "/Game/Aki/UI/UIResources/UiMotorcycle/Image/Popup/T_MotorcyclePopup1.T_MotorcyclePopup1"
   },
   {
     "Id": 10002,
@@ -13,7 +13,7 @@
     "DefaultFlag": false,
     "SceneId": "UL_UIMap_Moto_01",
     "SceneName": "MotorScene10002",
-    "SceneIcon": ""
+    "SceneIcon": "/Game/Aki/UI/UIResources/UiMotorcycle/Image/Popup/T_MotorcyclePopup2.T_MotorcyclePopup2"
   },
   {
     "Id": 10003,
@@ -21,6 +21,6 @@
     "DefaultFlag": false,
     "SceneId": "UL_UIMap_Moto_02",
     "SceneName": "MotorScene10003",
-    "SceneIcon": ""
+    "SceneIcon": "/Game/Aki/UI/UIResources/UiMotorcycle/Image/Popup/T_MotorcyclePopup3.T_MotorcyclePopup3"
   }
 ]

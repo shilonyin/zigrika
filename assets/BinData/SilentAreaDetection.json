@@ -4740,14 +4740,14 @@
     "LockBigIcon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_34030_UI.T_IconMonsterHead_34030_UI",
     "TemporaryIconUnLock": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_QX_34011_UI.T_IconMonsterHead_QX_34011_UI",
     "TemporaryIconlock": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_QX_34011_UI.T_IconMonsterHead_QX_34011_UI",
-    "ShowReward": 49931,
+    "ShowReward": 49938,
     "ShowRewardMap": {
-      "1": 49931,
-      "2": 49932,
-      "3": 49933,
-      "4": 49934,
-      "5": 49935,
-      "6": 49936
+      "1": 49938,
+      "2": 49939,
+      "3": 49940,
+      "4": 49941,
+      "5": 49942,
+      "6": 49943
     },
     "ShowRewardMapCalabash": {
       "1": 14008
@@ -4773,6 +4773,62 @@
     "DungeonId": 0,
     "JumpType": 2,
     "InstanceDungeonEntranceId": 3925,
+    "JumpWithSubDungeonId": 0
+  },
+  {
+    "Id": 30000023,
+    "Name": "MonsterInfo_340000320_Name",
+    "GuideId": 3,
+    "LevelPlayList": [
+      316800120
+    ],
+    "InstanceSubTypeDescription": "InpuBoxText_empty",
+    "DangerType": 3,
+    "Secondary": 21,
+    "TypeDescription2": 21,
+    "MatType": 0,
+    "AttributesDescriptionLock": "MonsterInfo_340000320_UndiscoveredDes",
+    "AttributesDescriptionUnlock": "MonsterInfo_340000320_DiscoveredDes",
+    "BigIcon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_34032_UI.T_IconMonsterHead_34032_UI",
+    "Icon": "",
+    "LockBigIcon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterHead/T_IconMonsterHead_34032_UI.T_IconMonsterHead_34032_UI",
+    "TemporaryIconUnLock": "/Game/Aki/UI/UIResources/Common/Image/IconFunctionOpen/T_IconFunctionOpen_13_UI.T_IconFunctionOpen_13_UI",
+    "TemporaryIconlock": "",
+    "ShowReward": 10628,
+    "ShowRewardMap": {
+      "1": 10621,
+      "2": 10622,
+      "3": 10623,
+      "4": 10624,
+      "5": 10625,
+      "6": 10626,
+      "7": 10627,
+      "8": 10628
+    },
+    "ShowRewardMapCalabash": {
+      "1": 14008
+    },
+    "BeginTimeStamp": 0,
+    "PreOpenId": 0,
+    "MarkId": 5045,
+    "LockCon": 0,
+    "MapId": 8,
+    "PhantomId": [],
+    "FirstDropId": 0,
+    "AdditionalId": 0,
+    "SortId": 23,
+    "NewContent": "New_corner",
+    "DetectionTabType": 11,
+    "PhantomFetterGroup": [],
+    "WeaponFetterGroup": [],
+    "PeriodicityChallengeType": 0,
+    "DetectionTitlePanel": 0,
+    "LeftBgSprite": "/Game/Aki/UI/UIResources/UiDevelopmentGuide/Atlas/Period/SP_DevelopmentPeriodFSJQ01.SP_DevelopmentPeriodFSJQ01",
+    "RightBgSprite": "/Game/Aki/UI/UIResources/UiDevelopmentGuide/Atlas/Period/SP_DevelopmentPeriodFSJQ02.SP_DevelopmentPeriodFSJQ02",
+    "LeftBgTexture": "",
+    "DungeonId": 210301029,
+    "JumpType": 2,
+    "InstanceDungeonEntranceId": 0,
     "JumpWithSubDungeonId": 0
   }
 ]

@@ -2484,7 +2484,7 @@
   },
   {
     "Id": 199,
-    "Name": "景燃90-3C生命",
+    "Name": "景燃90-奥古武器",
     "OrderList": [
       "add_new_role_config 14067"
     ]
@@ -2525,6 +2525,20 @@
       "GmBabelTowerSatr 1126 4",
       "GmBabelTowerSatr 1127 4",
       "GmBabelTowerSatr 1128 4"
+    ]
+  },
+  {
+    "Id": 208,
+    "Name": "景燃90-奥古套-景燃专武",
+    "OrderList": [
+      "add_new_role_config 14073"
+    ]
+  },
+  {
+    "Id": 209,
+    "Name": "景燃90-奥古套-奥古专武",
+    "OrderList": [
+      "add_new_role_config 14074"
     ]
   }
 ]

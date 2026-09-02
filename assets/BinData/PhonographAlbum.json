@@ -232,5 +232,14 @@
     "Icon": "/Game/Aki/UI/UIResources/UiPhonograph/Atlas/SP_Albumcovers_26.SP_Albumcovers_26",
     "SortIndex": 19780,
     "Cover": "/Game/Aki/UI/UIResources/UiMotorcycle/Image/MusicAlbum/T_MusicAlbum26.T_MusicAlbum26"
+  },
+  {
+    "Id": 27,
+    "TimeQuantum": 0,
+    "Title": "PhonographMusic_Name27_Text",
+    "Desc": "PhonographMusic_Des01_Text",
+    "Icon": "/Game/Aki/UI/UIResources/UiPhonograph/Atlas/SP_Albumcovers_27.SP_Albumcovers_27",
+    "SortIndex": 19770,
+    "Cover": "/Game/Aki/UI/UIResources/UiMotorcycle/Image/MusicAlbum/T_MusicAlbum27.T_MusicAlbum27"
   }
 ]

@@ -847,7 +847,7 @@
     "LordIdleMaterialController": "",
     "IsGroup": true,
     "LordUISceneEffect": "/Game/Aki/Effect/EffectGroup/Common/Screen/DA_Fx_Group_Post_Daoguan_Star_3_5.DA_Fx_Group_Post_Daoguan_Star_3_5",
-    "StandAnim": "/Game/Aki/Character/Monster/Lord/ML1WanELaoMd00101/CommonAnim/Stand2.Stand2",
+    "StandAnim": "/Game/Aki/Character/Monster/Lord/ML1WanELaoMd00101/CommonAnim/Stand_Daoguan.Stand_Daoguan",
     "IsDebug": false
   }
 ]

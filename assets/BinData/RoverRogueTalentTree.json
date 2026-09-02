@@ -26,7 +26,7 @@
       106
     ],
     "Consule": 50,
-    "EffectTrigger": 0,
+    "EffectTrigger": 1,
     "NextLevelTalentId": 0,
     "Name": "RoverRogueTalentTree_Name_102",
     "Desc": "RoverRogueTalentTree_Desc_102",
@@ -213,7 +213,7 @@
     "Consule": 200,
     "EffectTrigger": 0,
     "NextLevelTalentId": 0,
-    "Name": "RoverRogueTalentTree_Name_112",
+    "Name": "RoverRogueTalentTree_Name_113",
     "Desc": "RoverRogueTalentTree_Desc_112",
     "Params": [
       "1",
@@ -233,7 +233,7 @@
     "Consule": 200,
     "EffectTrigger": 0,
     "NextLevelTalentId": 0,
-    "Name": "RoverRogueTalentTree_Name_113",
+    "Name": "RoverRogueTalentTree_Name_112",
     "Desc": "RoverRogueTalentTree_Desc_113",
     "Params": [
       "15%"
@@ -278,7 +278,7 @@
       "1",
       "50%"
     ],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconRogue/SP_RogueSkill_AddLife.SP_RogueSkill_AddLife"
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconRogue/SP_RogueSkill_Buff13.SP_RogueSkill_Buff13"
   },
   {
     "Id": 116,
@@ -384,7 +384,7 @@
       "1",
       "50%"
     ],
-    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconRogue/SP_RogueSkill_AddLife.SP_RogueSkill_AddLife"
+    "Icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconRogue/SP_RogueSkill_Buff13.SP_RogueSkill_Buff13"
   },
   {
     "Id": 122,
@@ -430,7 +430,7 @@
     "Type": 1,
     "PostId": [],
     "Consule": 800,
-    "EffectTrigger": 0,
+    "EffectTrigger": 1,
     "NextLevelTalentId": 129,
     "Name": "RoverRogueTalentTree_Name_124",
     "Desc": "RoverRogueTalentTree_Desc_124",
@@ -496,7 +496,7 @@
     "Type": 1,
     "PostId": [],
     "Consule": 800,
-    "EffectTrigger": 0,
+    "EffectTrigger": 1,
     "NextLevelTalentId": 134,
     "Name": "RoverRogueTalentTree_Name_129",
     "Desc": "RoverRogueTalentTree_Desc_129",
@@ -560,7 +560,7 @@
     "Type": 2,
     "PostId": [],
     "Consule": 800,
-    "EffectTrigger": 0,
+    "EffectTrigger": 1,
     "NextLevelTalentId": 0,
     "Name": "RoverRogueTalentTree_Name_134",
     "Desc": "RoverRogueTalentTree_Desc_134",

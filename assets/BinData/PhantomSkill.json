@@ -13368,10 +13368,7 @@
     "PhantomSkillId": 291001,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13459,11 +13456,7 @@
     "PhantomSkillId": 291002,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001,
-      230020002
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13531,10 +13524,7 @@
     "PhantomSkillId": 291003,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13612,11 +13602,7 @@
     "PhantomSkillId": 291004,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001,
-      230040003
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13704,10 +13690,7 @@
     "PhantomSkillId": 291005,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 8,
@@ -13765,10 +13748,7 @@
     "PhantomSkillId": 291006,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13851,10 +13831,7 @@
     "PhantomSkillId": 291007,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -13937,10 +13914,7 @@
     "PhantomSkillId": 291008,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 8,
@@ -14023,10 +13997,7 @@
     "PhantomSkillId": 291009,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -14084,10 +14055,7 @@
     "PhantomSkillId": 291010,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 8,
@@ -14150,10 +14118,7 @@
     "PhantomSkillId": 291011,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
     "SkillCD": 2,
@@ -14226,10 +14191,7 @@
     "PhantomSkillId": 291012,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 8,
@@ -15336,10 +15298,7 @@
     "PhantomSkillId": 291013,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [
-      230000007,
-      230000001
-    ],
+    "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 8,
@@ -15475,8 +15434,8 @@
         ]
       }
     ],
-    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI",
-    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI"
+    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_31103_UI.T_MstSkil_31103_UI",
+    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_31103_UI.T_MstSkil_31103_UI"
   },
   {
     "Id": 200151,
@@ -15525,17 +15484,15 @@
         ]
       }
     ],
-    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI",
-    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI"
+    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_32069_UI.T_MstSkil_32069_UI",
+    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_32069_UI.T_MstSkil_32069_UI"
   },
   {
     "Id": 280044,
     "PhantomSkillId": 280044,
     "BuffIds": [],
     "SettleIds": [
-      28004401,
-      28004402,
-      28004403
+      28004401
     ],
     "BuffEffects": [
       280044001,
@@ -15595,8 +15552,8 @@
         ]
       }
     ],
-    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI",
-    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34020_UI.T_MstSkil_34020_UI"
+    "BattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34032_UI.T_MstSkil_34032_UI",
+    "SpecialBattleViewIcon": "/Game/Aki/UI/UIResources/Common/Image/MstSkill/T_MstSkil_34032_UI.T_MstSkil_34032_UI"
   },
   {
     "Id": 292001,
@@ -15661,7 +15618,9 @@
     "PhantomSkillId": 292002,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [],
+    "BuffEffects": [
+      286132005
+    ],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 30,
@@ -15760,7 +15719,7 @@
     "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
-    "SkillCD": 30,
+    "SkillCD": 25,
     "DescriptionEx": "PhantomSkill_200120_DescriptionEx",
     "SimplyDescription": "PhantomSkill_200120_SimplyDescription",
     "IfCounterSkill": false,
@@ -15864,12 +15823,11 @@
     "BuffIds": [],
     "SettleIds": [],
     "BuffEffects": [
-      286136004,
-      286136006
+      286136010
     ],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
-    "SkillCD": 45,
+    "SkillCD": 40,
     "DescriptionEx": "PhantomSkill_200084_DescriptionEx",
     "SimplyDescription": "PhantomSkill_200084_SimplyDescription",
     "IfCounterSkill": false,
@@ -16213,7 +16171,9 @@
     "PhantomSkillId": 292002,
     "BuffIds": [],
     "SettleIds": [],
-    "BuffEffects": [],
+    "BuffEffects": [
+      286132005
+    ],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
     "SkillCD": 30,
@@ -16312,7 +16272,7 @@
     "BuffEffects": [],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200001,
-    "SkillCD": 30,
+    "SkillCD": 25,
     "DescriptionEx": "PhantomSkill_200120_DescriptionEx",
     "SimplyDescription": "PhantomSkill_200120_SimplyDescription",
     "IfCounterSkill": false,
@@ -16416,12 +16376,11 @@
     "BuffIds": [],
     "SettleIds": [],
     "BuffEffects": [
-      286136004,
-      286136006
+      286136010
     ],
     "ChargeEfficiency": 0,
     "SkillGroupId": 200002,
-    "SkillCD": 45,
+    "SkillCD": 40,
     "DescriptionEx": "PhantomSkill_200084_DescriptionEx",
     "SimplyDescription": "PhantomSkill_200084_SimplyDescription",
     "IfCounterSkill": false,

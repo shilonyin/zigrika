@@ -12603,7 +12603,7 @@
     "CharacterVoice": "RoleInfo_1402_CharacterVoice",
     "TrialRole": 100362,
     "IsAim": false,
-    "RoleGuide": 0,
+    "RoleGuide": 5063,
     "RedDotDisableRule": 0,
     "SkinDamage": [
       "/Game/Aki/Character/DA/DA_Qingxiao_BattleTex_Revert.DA_Qingxiao_BattleTex_Revert",
@@ -12784,7 +12784,7 @@
     "CharacterVoice": "RoleInfo_1402_CharacterVoice",
     "TrialRole": 100363,
     "IsAim": false,
-    "RoleGuide": 0,
+    "RoleGuide": 5064,
     "RedDotDisableRule": 0,
     "SkinDamage": [
       "/Game/Aki/Character/DA/DA_Jingran_BattleTex_Revert.DA_Jingran_BattleTex_Revert",
