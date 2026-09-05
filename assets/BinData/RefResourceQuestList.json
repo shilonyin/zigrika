@@ -347,7 +347,7 @@
   {
     "BitId": 70,
     "QuestId": 936000003,
-    "HasRefResource": 0
+    "HasRefResource": 1
   },
   {
     "BitId": 71,
@@ -356,17 +356,32 @@
   },
   {
     "BitId": 72,
-    "QuestId": 121800004,
+    "QuestId": 197000000,
     "HasRefResource": 0
   },
   {
     "BitId": 73,
-    "QuestId": 121800005,
+    "QuestId": 121800004,
     "HasRefResource": 0
   },
   {
     "BitId": 74,
+    "QuestId": 121800005,
+    "HasRefResource": 0
+  },
+  {
+    "BitId": 75,
     "QuestId": 189000005,
     "HasRefResource": 1
+  },
+  {
+    "BitId": 76,
+    "QuestId": 168000003,
+    "HasRefResource": 0
+  },
+  {
+    "BitId": 77,
+    "QuestId": 886000002,
+    "HasRefResource": 0
   }
 ]

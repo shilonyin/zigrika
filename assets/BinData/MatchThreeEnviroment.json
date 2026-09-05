@@ -1,0 +1,54 @@
+[
+  {
+    "Id": 1,
+    "Type": 1,
+    "Params": [
+      3,
+      1
+    ],
+    "Tip": "Weather_Effect_Tips_1",
+    "Name": "Weather_Effect_Name_1",
+    "Description": "Weather_Effect_Dec_1",
+    "Comment": "Weather_Effect_Comment_1",
+    "SortId": 0
+  },
+  {
+    "Id": 2,
+    "Type": 2,
+    "Params": [
+      4,
+      1
+    ],
+    "Tip": "Weather_Effect_Tips_2",
+    "Name": "Weather_Effect_Name_2",
+    "Description": "Weather_Effect_Dec_2",
+    "Comment": "Weather_Effect_Comment_2",
+    "SortId": 0
+  },
+  {
+    "Id": 3,
+    "Type": 1,
+    "Params": [
+      5,
+      2
+    ],
+    "Tip": "Weather_Effect_Tips_3",
+    "Name": "Weather_Effect_Name_3",
+    "Description": "Weather_Effect_Dec_3",
+    "Comment": "Weather_Effect_Comment_3",
+    "SortId": 0
+  },
+  {
+    "Id": 4,
+    "Type": 2,
+    "Params": [
+      6,
+      2
+    ],
+    "Tip": "Weather_Effect_Tips_4",
+    "Name": "Weather_Effect_Name_4",
+    "Description": "Weather_Effect_Dec_4",
+    "Comment": "Weather_Effect_Comment_4",
+    "SortId": 0
+  }
+]

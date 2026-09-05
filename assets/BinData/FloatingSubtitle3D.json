@@ -1,0 +1,233 @@
+[
+  {
+    "Id": 1,
+    "TextKey": "MAIN_YHX_76_1",
+    "Color": "#ff0000",
+    "Size": 1,
+    "Audio": "vo_MAIN_YHX_76_1"
+  },
+  {
+    "Id": 2,
+    "TextKey": "MAIN_YHX_76_2",
+    "Color": "#ffffff",
+    "Size": 2,
+    "Audio": "vo_MAIN_YHX_76_2"
+  },
+  {
+    "Id": 3,
+    "TextKey": "MAIN_YHX_76_4",
+    "Color": "#000000",
+    "Size": 0.800000011920929,
+    "Audio": "vo_MAIN_YHX_76_4"
+  },
+  {
+    "Id": 4,
+    "TextKey": "MAIN_YHX_78_2",
+    "Color": "#ff0000",
+    "Size": 1.2000000476837158,
+    "Audio": "vo_MAIN_YHX_78_2"
+  },
+  {
+    "Id": 5,
+    "TextKey": "MAIN_YHX_80_1",
+    "Color": "#ff0000",
+    "Size": 2,
+    "Audio": "vo_MAIN_YHX_80_1"
+  },
+  {
+    "Id": 6,
+    "TextKey": "PFZM_3D_01_01",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 7,
+    "TextKey": "PFZM_3D_01_02",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 8,
+    "TextKey": "PFZM_3D_01_03",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 9,
+    "TextKey": "PFZM_3D_01_04",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 10,
+    "TextKey": "PFZM_3D_01_05",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 11,
+    "TextKey": "PFZM_3D_01_06",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 12,
+    "TextKey": "PFZM_3D_02_01",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 13,
+    "TextKey": "PFZM_3D_02_02",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 14,
+    "TextKey": "PFZM_3D_02_03",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 15,
+    "TextKey": "PFZM_3D_02_04",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 16,
+    "TextKey": "PFZM_3D_02_05",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 17,
+    "TextKey": "PFZM_3D_02_06",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 18,
+    "TextKey": "PFZM_3D_03_01",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 19,
+    "TextKey": "PFZM_3D_03_02",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 20,
+    "TextKey": "PFZM_3D_03_03",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 21,
+    "TextKey": "PFZM_3D_03_04",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 22,
+    "TextKey": "PFZM_3D_03_05",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 23,
+    "TextKey": "PFZM_3D_03_06",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 24,
+    "TextKey": "PFZM_3D_04_01",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 25,
+    "TextKey": "PFZM_3D_04_02",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 26,
+    "TextKey": "PFZM_3D_04_03",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 27,
+    "TextKey": "PFZM_3D_04_04",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 28,
+    "TextKey": "PFZM_3D_04_05",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 29,
+    "TextKey": "PFZM_3D_05_01",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 30,
+    "TextKey": "PFZM_3D_05_02",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 31,
+    "TextKey": "PFZM_3D_05_03",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 32,
+    "TextKey": "PFZM_3D_05_04",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  },
+  {
+    "Id": 33,
+    "TextKey": "PFZM_3D_05_05",
+    "Color": "#f9f9f9",
+    "Size": 30,
+    "Audio": ""
+  }
+]

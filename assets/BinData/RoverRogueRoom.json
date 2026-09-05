@@ -172,7 +172,7 @@
   },
   {
     "Id": 100100011,
-    "RoomTypeId": "Feiqi",
+    "RoomTypeId": "FightE1",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_01_07",
       "/Game/Aki/Map/Level/System/Rogue/gameplay/3_6/Gameplay_3_6_01_Fight_E_03"
@@ -1052,7 +1052,7 @@
   },
   {
     "Id": 100100210,
-    "RoomTypeId": "Feiqi",
+    "RoomTypeId": "FightE3",
     "SubLevels": [
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/LevelInstance/LevelInstance_3_6_Rogue_03_05",
       "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_05_Light_Night",

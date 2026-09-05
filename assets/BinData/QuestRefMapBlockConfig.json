@@ -291,5 +291,12 @@
       14
     ],
     "OnlineBranch": "development"
+  },
+  {
+    "QuestId": 173000000,
+    "MapBlockId": [
+      14
+    ],
+    "OnlineBranch": "development"
   }
 ]

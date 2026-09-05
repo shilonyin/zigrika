@@ -1630,5 +1630,57 @@
       1,
       50000
     ]
+  },
+  {
+    "RoleId": 1311,
+    "ProjectGroup": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "WeaponType": 10,
+    "RecommandWeapon": [
+      21050116,
+      21050015,
+      21050084
+    ],
+    "SkillItemJumpType": [
+      {
+        "ArrayInt": [
+          4,
+          2
+        ]
+      }
+    ],
+    "KeyProperty": 0,
+    "PropertyValue": []
+  },
+  {
+    "RoleId": 1312,
+    "ProjectGroup": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005
+    ],
+    "WeaponType": 7,
+    "RecommandWeapon": [
+      21020107,
+      21020015,
+      21020074
+    ],
+    "SkillItemJumpType": [
+      {
+        "ArrayInt": [
+          4,
+          2
+        ]
+      }
+    ],
+    "KeyProperty": 0,
+    "PropertyValue": []
   }
 ]

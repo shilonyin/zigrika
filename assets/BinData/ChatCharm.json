@@ -1,0 +1,24 @@
+[
+  {
+    "Id": 80892001,
+    "QualityId": 4,
+    "ChatCharmPathSmall": "/Game/Aki/UI/UIResources/UiPhoneSystem/Image/T_PhoneSystemIconPet00Small.T_PhoneSystemIconPet00Small",
+    "Name": "ChatCharm_Name_80892001",
+    "Desc": "ChatCharm_Desc_80892001",
+    "GetWay": "ChatCharm_GetWay_80892001",
+    "SortId": 0,
+    "ItemAccess": [],
+    "SpineAtlas": "",
+    "SpineSkeleton": "",
+    "SpineAnimStandby": [],
+    "SpineAnimTouch": [],
+    "SpineAnimIdle": "",
+    "SpineStandbyTime": [],
+    "Icon": "",
+    "IconMiddle": "",
+    "IconSmall": "",
+    "TypeDescription": "ItemType_ChatCharm",
+    "AttributesDescription": "",
+    "BgDescription": ""
+  }
+]

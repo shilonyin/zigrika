@@ -1,0 +1,126 @@
+[
+  {
+    "Id": 850001,
+    "Desc": "无阶段",
+    "TriggerConditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "StableValue",
+          "StableValueOption": {
+            "Type": "Total",
+            "Range": {
+              "MinValue": {
+                "Boundary": "Closed",
+                "Value": 0
+              },
+              "MaxValue": {
+                "Boundary": "Open",
+                "Value": 7920
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ResponseFunctions": [
+      {
+        "Type": "PlayAnimation",
+        "GiantAnimationId": 850002
+      }
+    ]
+  },
+  {
+    "Id": 850002,
+    "Desc": "阶段一",
+    "TriggerConditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "StableValue",
+          "StableValueOption": {
+            "Type": "Total",
+            "Range": {
+              "MinValue": {
+                "Boundary": "Closed",
+                "Value": 7920
+              },
+              "MaxValue": {
+                "Boundary": "Open",
+                "Value": 19800
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ResponseFunctions": [
+      {
+        "Type": "PlayAnimation",
+        "GiantAnimationId": 850003
+      }
+    ]
+  },
+  {
+    "Id": 850003,
+    "Desc": "阶段二",
+    "TriggerConditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "StableValue",
+          "StableValueOption": {
+            "Type": "Total",
+            "Range": {
+              "MinValue": {
+                "Boundary": "Closed",
+                "Value": 19800
+              },
+              "MaxValue": {
+                "Boundary": "Open",
+                "Value": 35640
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ResponseFunctions": [
+      {
+        "Type": "PlayAnimation",
+        "GiantAnimationId": 850004
+      }
+    ]
+  },
+  {
+    "Id": 850004,
+    "Desc": "阶段三",
+    "TriggerConditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "StableValue",
+          "StableValueOption": {
+            "Type": "Total",
+            "Range": {
+              "MinValue": {
+                "Boundary": "Closed",
+                "Value": 35640
+              },
+              "MaxValue": {
+                "Boundary": "Open",
+                "Value": 100000
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ResponseFunctions": [
+      {
+        "Type": "PlayAnimation",
+        "GiantAnimationId": 850004
+      }
+    ]
+  }
+]

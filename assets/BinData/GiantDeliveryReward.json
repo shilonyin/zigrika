@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 0,
+    "ItemIds": [
+      40050001,
+      40050002,
+      40050003
+    ],
+    "Goal": [
+      2500,
+      6000,
+      11000
+    ],
+    "DropIds": [
+      5252014,
+      5252002,
+      5252003
+    ],
+    "UnlockCondition": 12908902,
+    "MaxLevelCost": 100,
+    "MaxLevelDropId": 5252013,
+    "MaxStableValue": 12500,
+    "MaxDeliveryCount": 99,
+    "AltarMarkId": 3740001
+  },
+  {
+    "Id": 1,
+    "ItemIds": [
+      40050011,
+      40050012,
+      40050013
+    ],
+    "Goal": [
+      2600,
+      6700,
+      12000
+    ],
+    "DropIds": [
+      5252004,
+      5252005,
+      5252006
+    ],
+    "UnlockCondition": 12908903,
+    "MaxLevelCost": 100,
+    "MaxLevelDropId": 5252013,
+    "MaxStableValue": 14300,
+    "MaxDeliveryCount": 99,
+    "AltarMarkId": 3740002
+  },
+  {
+    "Id": 2,
+    "ItemIds": [
+      40050021,
+      40050022,
+      40050023
+    ],
+    "Goal": [
+      2300,
+      6000,
+      10500
+    ],
+    "DropIds": [
+      5252007,
+      5252008,
+      5252009
+    ],
+    "UnlockCondition": 0,
+    "MaxLevelCost": 100,
+    "MaxLevelDropId": 5252013,
+    "MaxStableValue": 11800,
+    "MaxDeliveryCount": 99,
+    "AltarMarkId": 3740003
+  }
+]

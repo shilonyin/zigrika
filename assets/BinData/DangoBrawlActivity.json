@@ -1,0 +1,43 @@
+[
+  {
+    "ActivityId": 111300001,
+    "DangoBrawlGridSize": [
+      8,
+      6
+    ],
+    "DangoBrawlSellDiscount": 5000,
+    "HasteBpLimit": 1000,
+    "ShopId": 226,
+    "LimitCoinId": 80700015,
+    "ScoreItemId": 80700050,
+    "MinLuckyCoinPer": 10000,
+    "MaxLuckyCoinPer": 20000,
+    "BenchItemLimit": 100,
+    "BuffLimit": 100,
+    "DefaultUnlockRoleId": [
+      80700016,
+      80700017
+    ],
+    "VisionSkinItemId": 6010191,
+    "LimitScoreRewardId": 80065026,
+    "RecommendQuestId": 915700000,
+    "RecommendQuestLabel": "DangoBrawlGeneral_1031",
+    "MainRoleList": [
+      80700016,
+      80700017
+    ],
+    "MainRoleSexChange": {
+      "80700016": 80700017,
+      "80700017": 80700016
+    },
+    "DamageTxtNormal": 8,
+    "DamageTxtHeal": 9,
+    "DamageTxtShield": 15,
+    "DamageTxtLifeSteal": 21,
+    "CoinText": 24,
+    "ShopTipsTalkGapTime": 10000,
+    "ShopWeaponTalkQuality": 3,
+    "StartFightDuringTime": 2000,
+    "HpChangeColor": 25
+  }
+]

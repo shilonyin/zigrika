@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 850001,
+    "Desc": "通用待机",
+    "AnimData": {
+      "Type": "Idle",
+      "IdleType": "Common"
+    }
+  },
+  {
+    "Id": 850002,
+    "Desc": "监视待机",
+    "AnimData": {
+      "Type": "Idle",
+      "IdleType": "Watch"
+    }
+  },
+  {
+    "Id": 850003,
+    "Desc": "叉腰待机",
+    "AnimData": {
+      "Type": "Idle",
+      "IdleType": "Akimbo"
+    }
+  },
+  {
+    "Id": 850004,
+    "Desc": "小憩待机",
+    "AnimData": {
+      "Type": "Idle",
+      "IdleType": "Rest"
+    }
+  },
+  {
+    "Id": 850011,
+    "Desc": "招手",
+    "AnimData": {
+      "Type": "Special",
+      "MontagePath": "/Game/Aki/Character/Role/FemaleXL/Xinyuehu/GhostTitanAnim/AM_Wave.AM_Wave"
+    }
+  }
+]

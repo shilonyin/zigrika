@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 101,
+    "CondType": 1,
+    "CondDesc": "Target_101",
+    "Params": [
+      1000,
+      600,
+      300
+    ]
+  },
+  {
+    "Id": 102,
+    "CondType": 1,
+    "CondDesc": "Target_102",
+    "Params": [
+      1000,
+      600,
+      300
+    ]
+  },
+  {
+    "Id": 201,
+    "CondType": 2,
+    "CondDesc": "Target_201",
+    "Params": [
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "Id": 202,
+    "CondType": 2,
+    "CondDesc": "Target_202",
+    "Params": [
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "Id": 501,
+    "CondType": 3,
+    "CondDesc": "Target_501",
+    "Params": [
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "Id": 502,
+    "CondType": 3,
+    "CondDesc": "Target_502",
+    "Params": [
+      3,
+      2,
+      1
+    ]
+  }
+]

@@ -1,0 +1,429 @@
+[
+  {
+    "Id": 100011,
+    "Board": 1,
+    "TurnCount": 40,
+    "Goal": [
+      101
+    ],
+    "EnvironmentDesc": "Stage_Effect_100011",
+    "Enviroments": {},
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001
+    ]
+  },
+  {
+    "Id": 100012,
+    "Board": 2,
+    "TurnCount": 30,
+    "Goal": [
+      102
+    ],
+    "EnvironmentDesc": "Stage_Effect_100012",
+    "Enviroments": {},
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001
+    ]
+  },
+  {
+    "Id": 100021,
+    "Board": 3,
+    "TurnCount": 40,
+    "Goal": [
+      201
+    ],
+    "EnvironmentDesc": "Stage_Effect_100021",
+    "Enviroments": {
+      "1": 1,
+      "8": 1
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2003
+    ]
+  },
+  {
+    "Id": 100022,
+    "Board": 4,
+    "TurnCount": 30,
+    "Goal": [
+      202
+    ],
+    "EnvironmentDesc": "Stage_Effect_100022",
+    "Enviroments": {
+      "1": 1,
+      "8": 1
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2003
+    ]
+  },
+  {
+    "Id": 100031,
+    "Board": 5,
+    "TurnCount": 40,
+    "Goal": [
+      101
+    ],
+    "EnvironmentDesc": "Stage_Effect_100031",
+    "Enviroments": {
+      "2": 3,
+      "9": 1
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2003
+    ]
+  },
+  {
+    "Id": 100032,
+    "Board": 6,
+    "TurnCount": 30,
+    "Goal": [
+      102
+    ],
+    "EnvironmentDesc": "Stage_Effect_100032",
+    "Enviroments": {
+      "2": 3,
+      "9": 1
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2003
+    ]
+  },
+  {
+    "Id": 100041,
+    "Board": 7,
+    "TurnCount": 40,
+    "Goal": [
+      101
+    ],
+    "EnvironmentDesc": "Stage_Effect_100041",
+    "Enviroments": {},
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003
+    ]
+  },
+  {
+    "Id": 100042,
+    "Board": 8,
+    "TurnCount": 30,
+    "Goal": [
+      102
+    ],
+    "EnvironmentDesc": "Stage_Effect_100042",
+    "Enviroments": {},
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003
+    ]
+  },
+  {
+    "Id": 100051,
+    "Board": 9,
+    "TurnCount": 40,
+    "Goal": [
+      501
+    ],
+    "EnvironmentDesc": "Stage_Effect_100051",
+    "Enviroments": {
+      "2": 2,
+      "12": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100052,
+    "Board": 10,
+    "TurnCount": 30,
+    "Goal": [
+      502
+    ],
+    "EnvironmentDesc": "Stage_Effect_100052",
+    "Enviroments": {
+      "2": 2,
+      "12": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100061,
+    "Board": 11,
+    "TurnCount": 40,
+    "Goal": [
+      101
+    ],
+    "EnvironmentDesc": "Stage_Effect_100061",
+    "Enviroments": {
+      "3": 4,
+      "10": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100062,
+    "Board": 12,
+    "TurnCount": 30,
+    "Goal": [
+      102
+    ],
+    "EnvironmentDesc": "Stage_Effect_100062",
+    "Enviroments": {
+      "3": 4,
+      "10": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100071,
+    "Board": 13,
+    "TurnCount": 40,
+    "Goal": [
+      101
+    ],
+    "EnvironmentDesc": "Stage_Effect_100071",
+    "Enviroments": {
+      "3": 1,
+      "10": 2,
+      "15": 1,
+      "20": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100072,
+    "Board": 14,
+    "TurnCount": 30,
+    "Goal": [
+      102
+    ],
+    "EnvironmentDesc": "Stage_Effect_100072",
+    "Enviroments": {
+      "3": 1,
+      "10": 2,
+      "15": 1,
+      "20": 2
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  },
+  {
+    "Id": 100081,
+    "Board": 15,
+    "TurnCount": 50,
+    "Goal": [],
+    "EnvironmentDesc": "Stage_Effect_100081",
+    "Enviroments": {
+      "3": 1,
+      "10": 2,
+      "15": 1,
+      "20": 2,
+      "25": 3
+    },
+    "ExchangeEnergy": 50,
+    "PointerDownTimeThreshold": 800,
+    "ValidMoveTimeThreshold": 7000,
+    "FillRules": [
+      1,
+      2
+    ],
+    "SpecialTiles": [
+      1001,
+      1002,
+      1003,
+      1004,
+      2001,
+      2002,
+      2003,
+      2004
+    ]
+  }
+]

@@ -258,6 +258,18 @@
     "BtType": "Npc"
   },
   {
+    "Id": 850003,
+    "Description": "锁暝伴随AI",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Others/3_7/BT_BattleFollowingIdle_SM.BT_BattleFollowingIdle_SM",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850004,
+    "Description": "九契伴随AI",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Others/3_7/BT_BattleFollowingIdle_JQ.BT_BattleFollowingIdle_JQ",
+    "BtType": "Npc"
+  },
+  {
     "Id": 800041,
     "Description": "3_6日程表测试_坐椅子",
     "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Custom/100/BT_176800003.BT_176800003",
@@ -300,6 +312,42 @@
     "BtType": "Npc"
   },
   {
+    "Id": 850005,
+    "Description": "日程表外地游客-进入园林",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850010.BT_282850010",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850006,
+    "Description": "日程表外地游客-看杂技+糖画拍照",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850028.BT_282850028",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850007,
+    "Description": "日程表外地游客-糕点问价+休息",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850032.BT_282850032",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850008,
+    "Description": "日程表外地游客-看朝月会表演",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850033.BT_282850033",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850009,
+    "Description": "日程表外地游客-买灯",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850034.BT_282850034",
+    "BtType": "Npc"
+  },
+  {
+    "Id": 850010,
+    "Description": "日程表外地游客-离开",
+    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/8/BT_282850035.BT_282850035",
+    "BtType": "Npc"
+  },
+  {
     "Id": 800048,
     "Description": "3_6清宵NPC跟随",
     "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Others/3_6/Qingxiao/BT_FollowingOnly_NPC.BT_FollowingOnly_NPC",
@@ -321,12 +369,6 @@
     "Id": 800051,
     "Description": "3_6女主仅御剑",
     "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Others/3_6/NvZhu/BT_SwordRiding_NvZhu.BT_SwordRiding_NvZhu",
-    "BtType": "Monster"
-  },
-  {
-    "Id": 800052,
-    "Description": "3_6清宵空状态",
-    "BtPath": "/Game/Aki/AI/AINPC/LevelAiBT/Others/3_6/Qingxiao/BT_EmptyState_QX.BT_EmptyState_QX",
     "BtType": "Monster"
   }
 ]

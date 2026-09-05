@@ -94,5 +94,53 @@
     "ActivityId": 103300003,
     "Score": 1500000,
     "RewardId": 5190414
+  },
+  {
+    "Id": 17,
+    "ActivityId": 103300004,
+    "Score": 80000,
+    "RewardId": 5190407
+  },
+  {
+    "Id": 18,
+    "ActivityId": 103300004,
+    "Score": 150000,
+    "RewardId": 5190408
+  },
+  {
+    "Id": 19,
+    "ActivityId": 103300004,
+    "Score": 300000,
+    "RewardId": 5190409
+  },
+  {
+    "Id": 20,
+    "ActivityId": 103300004,
+    "Score": 450000,
+    "RewardId": 5190410
+  },
+  {
+    "Id": 21,
+    "ActivityId": 103300004,
+    "Score": 600000,
+    "RewardId": 5190411
+  },
+  {
+    "Id": 22,
+    "ActivityId": 103300004,
+    "Score": 750000,
+    "RewardId": 5190412
+  },
+  {
+    "Id": 23,
+    "ActivityId": 103300004,
+    "Score": 1000000,
+    "RewardId": 5190413
+  },
+  {
+    "Id": 24,
+    "ActivityId": 103300004,
+    "Score": 1500000,
+    "RewardId": 5190414
   }
 ]

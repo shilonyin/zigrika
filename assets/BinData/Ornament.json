@@ -22,7 +22,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870001.T_AccessoriesSkin256_80870001",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870001.T_AccessoriesSkin160_80870001",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870001.T_AccessoriesSkin80_80870001",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870001.T_AccessoriesItemSkin_80870001",
     "ModelId": [
       80870001
     ],
@@ -49,10 +48,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870001.T_AccessoriesItemSkin_80870001",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870004,
@@ -77,7 +78,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870004.T_AccessoriesSkin256_80870004",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870004.T_AccessoriesSkin160_80870004",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870004.T_AccessoriesSkin80_80870004",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870004.T_AccessoriesItemSkin_80870004",
     "ModelId": [
       80870004
     ],
@@ -100,10 +100,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870004.T_AccessoriesItemSkin_80870004",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870005,
@@ -128,7 +130,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870005.T_AccessoriesSkin256_80870005",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870005.T_AccessoriesSkin160_80870005",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870005.T_AccessoriesSkin80_80870005",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870005.T_AccessoriesItemSkin_80870005",
     "ModelId": [
       80870005
     ],
@@ -153,10 +154,12 @@
     "UiRoleState": 13,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870005.T_AccessoriesItemSkin_80870005",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80871001,
@@ -196,7 +199,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_153_UI.T_IconTask_Task_153_UI",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_153_UI.T_IconTask160_Task_153_UI",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_153_UI.T_IconTask80_Task_153_UI",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871001.T_AccessoriesItemSkin_80871001",
     "ModelId": [
       80871001,
       80872001
@@ -222,10 +224,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871001.T_AccessoriesItemSkin_80871001",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80871002,
@@ -265,7 +269,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_178_UI.T_IconTask_Task_178_UI",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_178_UI.T_IconTask160_Task_178_UI",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_178_UI.T_IconTask80_Task_178_UI",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871002.T_AccessoriesItemSkin_80871002",
     "ModelId": [
       80871002,
       80872002
@@ -291,10 +294,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871002.T_AccessoriesItemSkin_80871002",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80871003,
@@ -334,7 +339,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_190_UI.T_IconTask_Task_190_UI",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_190_UI.T_IconTask160_Task_190_UI",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_190_UI.T_IconTask80_Task_190_UI",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871003.T_AccessoriesItemSkin_80871003",
     "ModelId": [
       80871003,
       80872003
@@ -360,10 +364,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871003.T_AccessoriesItemSkin_80871003",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80871004,
@@ -403,7 +409,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_101_UI.T_IconTask_Task_101_UI",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_101_UI.T_IconTask160_Task_101_UI",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_101_UI.T_IconTask80_Task_101_UI",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871004.T_AccessoriesItemSkin_80871004",
     "ModelId": [
       80871004,
       80872004
@@ -429,10 +434,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871004.T_AccessoriesItemSkin_80871004",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870006,
@@ -457,7 +464,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.T_IconRoleHead256_7_a_UI",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.T_IconRoleHead175_7_a_UI",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.T_IconRoleHead80_7_a_UI",
-    "PreviewTextureInBuyView": "",
     "ModelId": [
       80870006
     ],
@@ -480,10 +486,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870007,
@@ -509,7 +517,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870007.T_AccessoriesSkin256_80870007",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870007.T_AccessoriesSkin160_80870007",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870007.T_AccessoriesSkin80_80870007",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870007.T_AccessoriesItemSkin_80870007",
     "ModelId": [
       80870007
     ],
@@ -532,10 +539,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870007.T_AccessoriesItemSkin_80870007",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_Linnai.T_ShopRoleAccessoriesSkin_Linnai",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_Linnai.T_ShopItemAccessoriesSkin_Linnai",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870008,
@@ -561,7 +570,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870008.T_AccessoriesSkin256_80870008",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870008.T_AccessoriesSkin160_80870008",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870008.T_AccessoriesSkin80_80870008",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870008.T_AccessoriesItemSkin_80870008",
     "ModelId": [
       80870008
     ],
@@ -588,10 +596,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870008.T_AccessoriesItemSkin_80870008",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_Moning.T_ShopRoleAccessoriesSkin_Moning",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_Moning.T_ShopItemAccessoriesSkin_Moning",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870010,
@@ -616,7 +626,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870010.T_AccessoriesSkin256_80870010",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870010.T_AccessoriesSkin160_80870010",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870010.T_AccessoriesSkin80_80870010",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870010.T_AccessoriesItemSkin_80870010",
     "ModelId": [
       80870010
     ],
@@ -639,10 +648,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870010.T_AccessoriesItemSkin_80870010",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_XuanLing.T_ShopRoleAccessoriesSkin_XuanLing",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_XuanLing.T_ShopItemAccessoriesSkin_XuanLing",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870011,
@@ -667,7 +678,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870012.T_AccessoriesSkin256_80870012",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870012.T_AccessoriesSkin160_80870012",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870012.T_AccessoriesSkin80_80870012",
-    "PreviewTextureInBuyView": "",
     "ModelId": [
       80870011
     ],
@@ -690,10 +700,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870012,
@@ -718,7 +730,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870012.T_AccessoriesSkin256_80870012",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870012.T_AccessoriesSkin160_80870012",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870012.T_AccessoriesSkin80_80870012",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870012.T_AccessoriesItemSkin_80870012",
     "ModelId": [
       80870012
     ],
@@ -741,10 +752,12 @@
     "UiRoleState": 13,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870012.T_AccessoriesItemSkin_80870012",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_SuiSui.T_ShopRoleAccessoriesSkin_SuiSui",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_SuiSui.T_ShopItemAccessoriesSkin_SuiSui",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80871005,
@@ -785,7 +798,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80871005.T_AccessoriesSkin256_80871005",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80871005.T_AccessoriesSkin160_80871005",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80871005.T_AccessoriesSkin80_80871005",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871005.T_AccessoriesItemSkin_80871005",
     "ModelId": [
       80871005,
       80872005
@@ -814,10 +826,12 @@
     "UiRoleState": 0,
     "IsNewTag": false,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80871005.T_AccessoriesItemSkin_80871005",
     "PreviewTextureInPayShop": "",
     "PopPreviewTexture": "",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870013,
@@ -842,7 +856,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870013.T_AccessoriesSkin256_80870013",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870013.T_AccessoriesSkin160_80870013",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870013.T_AccessoriesSkin80_80870013",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870013.T_AccessoriesItemSkin_80870013",
     "ModelId": [
       80870013
     ],
@@ -865,10 +878,12 @@
     "UiRoleState": 0,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870013.T_AccessoriesItemSkin_80870013",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_QingXiao.T_ShopRoleAccessoriesSkin_QingXiao",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_QingXiao.T_ShopItemAccessoriesSkin_QingXiao",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   },
   {
     "Id": 80870014,
@@ -893,7 +908,6 @@
     "Icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories256/T_AccessoriesSkin256_80870014.T_AccessoriesSkin256_80870014",
     "IconMiddle": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories160/T_AccessoriesSkin160_80870014.T_AccessoriesSkin160_80870014",
     "IconSmall": "/Game/Aki/UI/UIResources/Common/Image/Skin/Accessories80/T_AccessoriesSkin80_80870014.T_AccessoriesSkin80_80870014",
-    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870014.T_AccessoriesItemSkin_80870014",
     "ModelId": [
       80870014
     ],
@@ -916,9 +930,11 @@
     "UiRoleState": 13,
     "IsNewTag": true,
     "ShowUseButton": true,
+    "PreviewTextureInBuyView": "/Game/Aki/UI/UIResources/Common/Image/Skin/AccessoriesItem/T_AccessoriesItemSkin_80870014.T_AccessoriesItemSkin_80870014",
     "PreviewTextureInPayShop": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopRoleAccessoriesSkin_JingRan.T_ShopRoleAccessoriesSkin_JingRan",
     "PopPreviewTexture": "/Game/Aki/UI/UIResources/UiShop/Image/Skin/Accessories/T_ShopItemAccessoriesSkin_JingRan.T_ShopItemAccessoriesSkin_JingRan",
     "TitleName": "",
-    "SubDecName": ""
+    "SubDecName": "",
+    "UiModelEquipTags": []
   }
 ]

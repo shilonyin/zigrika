@@ -2761,5 +2761,28 @@
     "FoodContent": "",
     "FoodBackground": "",
     "RoleList": []
+  },
+  {
+    "Id": 10098,
+    "FormulaItemId": 80010098,
+    "FoodItemId": 80000098,
+    "TypeId": 1,
+    "Unlock": false,
+    "Name": "绿豆汤",
+    "ConsumeItems": [
+      {
+        "ItemId": 42601530,
+        "Count": 4
+      },
+      {
+        "ItemId": 80050003,
+        "Count": 3
+      }
+    ],
+    "Proficiency": 40,
+    "MaxProficiencyCount": 10,
+    "FoodContent": "",
+    "FoodBackground": "",
+    "RoleList": []
   }
 ]

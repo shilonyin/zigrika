@@ -4326,5 +4326,31 @@
     "LimitInputEnums": [],
     "UseLoopAnim": false,
     "UseMask": 0
+  },
+  {
+    "GuideId": 10605,
+    "Content": "GuideFocusNew_10605_Content",
+    "Button": [
+      "幻象1"
+    ],
+    "InputEnums": [
+      "幻象1"
+    ],
+    "LimitInputEnums": [],
+    "UseLoopAnim": false,
+    "UseMask": 0
+  },
+  {
+    "GuideId": 10608,
+    "Content": "GuideFocusNew_10608_Content",
+    "Button": [
+      "幻象1"
+    ],
+    "InputEnums": [
+      "幻象1"
+    ],
+    "LimitInputEnums": [],
+    "UseLoopAnim": false,
+    "UseMask": 0
   }
 ]

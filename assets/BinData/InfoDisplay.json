@@ -9240,24 +9240,24 @@
     "ExitAudio": ""
   },
   {
-    "Id": 350000105,
-    "ItemId": 0,
-    "Type": 3,
-    "Title": "InfoDisplay_35000105_Title",
-    "Text": "InfoDisplay_35000105_Text",
-    "Picture": "",
-    "Audio": "",
-    "Background": "",
-    "EntryAudio": "",
-    "ExitAudio": ""
-  },
-  {
     "Id": 35000021,
     "ItemId": 71300508,
     "Type": 2,
     "Title": "InfoDisplay_35000021_Title",
     "Text": "InfoDisplay_35000021_Text",
     "Picture": "/Game/Aki/UI/UIResources/UiInformation/Image/T_InformationA53.T_InformationA53",
+    "Audio": "",
+    "Background": "",
+    "EntryAudio": "",
+    "ExitAudio": ""
+  },
+  {
+    "Id": 350000105,
+    "ItemId": 0,
+    "Type": 3,
+    "Title": "InfoDisplay_35000105_Title",
+    "Text": "InfoDisplay_35000105_Text",
+    "Picture": "",
     "Audio": "",
     "Background": "",
     "EntryAudio": "",

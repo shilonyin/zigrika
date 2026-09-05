@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "GroupId": 1,
+    "DAPath": "",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": true
+  },
+  {
+    "Id": 2,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_1.DA_Normal_PhotoTemplate_1",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 3,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_2.DA_Normal_PhotoTemplate_2",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 4,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_3.DA_Normal_PhotoTemplate_3",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 5,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_4.DA_Normal_PhotoTemplate_4",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 6,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_5.DA_Normal_PhotoTemplate_5",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 7,
+    "GroupId": 1,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Normal_PhotoTemplate_6.DA_Normal_PhotoTemplate_6",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 8,
+    "GroupId": 2,
+    "DAPath": "",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": true
+  },
+  {
+    "Id": 9,
+    "GroupId": 2,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Drone_PhotoTemplate_1.DA_Drone_PhotoTemplate_1",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 10,
+    "GroupId": 2,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Drone_PhotoTemplate_2.DA_Drone_PhotoTemplate_2",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  },
+  {
+    "Id": 11,
+    "GroupId": 2,
+    "DAPath": "/Game/Aki/Data/Camera/PhotoCamera/DA/DA_Photo_Template/DA_Drone_PhotoTemplate_3.DA_Drone_PhotoTemplate_3",
+    "TextureMale": "",
+    "TextureFemale": "",
+    "IsDefault": false
+  }
+]

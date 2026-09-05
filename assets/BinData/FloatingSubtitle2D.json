@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "SequenceName": "NewLevelSequence1",
+    "TextKey": "MAIN_YHX_124_1"
+  },
+  {
+    "Id": 2,
+    "SequenceName": "NewLevelSequence2",
+    "TextKey": "MAIN_YHX_124_1"
+  }
+]

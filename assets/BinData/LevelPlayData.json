@@ -137593,7 +137593,7 @@
       "LevelPlayRewardConfig": {
         "Type": "Interact",
         "RewardId": 14001008,
-        "FirstRewardId": 14001109,
+        "FirstRewardId": 14001108,
         "RewardEntityId": 200900020,
         "RewardCompleteActions": [],
         "FirstCompleteActions": []
@@ -137699,7 +137699,7 @@
       "LevelPlayRewardConfig": {
         "Type": "Interact",
         "RewardId": 14001009,
-        "FirstRewardId": 14001108,
+        "FirstRewardId": 14001109,
         "RewardEntityId": 200900049,
         "RewardCompleteActions": [],
         "FirstCompleteActions": []
@@ -290690,12 +290690,14 @@
       "Children": [
         "e_892_200700002",
         "e_892_200700001",
-        "e_892_316800044",
-        "e_892_316800039",
-        "e_892_316800042",
-        "e_892_316800043",
-        "e_892_316800040",
-        "e_892_316800041",
+        "e_892_316850008",
+        "e_892_316850009",
+        "e_892_316850010",
+        "e_892_316850011",
+        "e_892_316850012",
+        "e_892_316850013",
+        "e_892_316850014",
+        "e_892_316850015",
         "e_892_200700000",
         "e_892_200700004",
         "e_892_200700003",
@@ -290781,17 +290783,25 @@
         "e_892_316750008",
         "e_892_316750009",
         "e_892_316750030",
-        "e_892_316750031"
+        "e_892_316750031",
+        "e_892_316800044",
+        "e_892_316800039",
+        "e_892_316800042",
+        "e_892_316800043",
+        "e_892_316800040",
+        "e_892_316800041"
       ],
       "Reference": [
         "e_892_200700002",
         "e_892_200700001",
-        "e_892_316800044",
-        "e_892_316800039",
-        "e_892_316800042",
-        "e_892_316800043",
-        "e_892_316800040",
-        "e_892_316800041",
+        "e_892_316850008",
+        "e_892_316850009",
+        "e_892_316850010",
+        "e_892_316850011",
+        "e_892_316850012",
+        "e_892_316850013",
+        "e_892_316850014",
+        "e_892_316850015",
         "e_892_200700000",
         "e_892_200700004",
         "e_892_200700003",
@@ -290877,7 +290887,13 @@
         "e_892_316750008",
         "e_892_316750009",
         "e_892_316750030",
-        "e_892_316750031"
+        "e_892_316750031",
+        "e_892_316800044",
+        "e_892_316800039",
+        "e_892_316800042",
+        "e_892_316800043",
+        "e_892_316800040",
+        "e_892_316800041"
       ]
     }
   },
@@ -326990,8 +327006,7 @@
         "e_911_196800213",
         "e_911_196800214",
         "e_911_196800215",
-        "e_911_196800468",
-        "e_911_196800523"
+        "e_911_196800468"
       ],
       "Reference": [
         "e_911_196000655",
@@ -327154,7 +327169,6 @@
         "e_911_196800433",
         "e_911_196800434",
         "e_911_196800435",
-        "e_911_196800456",
         "e_911_196800441",
         "e_911_196800449",
         "e_911_196800450",
@@ -327170,6 +327184,7 @@
         "e_911_196800257",
         "e_911_196800453",
         "e_911_196800455",
+        "e_911_196800456",
         "e_911_196800275",
         "e_911_196800276",
         "e_911_196800087",
@@ -327179,7 +327194,6 @@
         "e_911_196800026",
         "e_911_196800511",
         "e_911_196800490",
-        "e_911_196800522",
         "e_911_196800514",
         "e_911_196800036",
         "e_911_196800037",
@@ -327200,7 +327214,6 @@
         "e_911_196800215",
         "e_911_196800468",
         "e_911_196800460",
-        "e_911_196800523",
         "e_911_196800498",
         "e_911_196800505",
         "f_196000000_39",
@@ -327231,6 +327244,7 @@
         "f_196000000_92",
         "f_196000000_69",
         "f_196000000_70",
+        "f_915800001_6",
         "f_196000000_71",
         "f_196000000_72",
         "f_196000000_73",
@@ -331476,7 +331490,6 @@
         "e_911_196000660",
         "e_911_251800139",
         "e_911_251800140",
-        "e_911_251800170",
         "e_911_251800017",
         "e_911_251800135",
         "e_911_251800019",
@@ -331484,12 +331497,9 @@
         "e_911_251800133",
         "e_911_251800141",
         "e_911_251800194",
-        "e_911_251800218",
-        "e_911_251800223",
-        "e_911_251800211",
         "e_911_936800069",
         "e_911_936800070",
-        "e_911_251800210",
+        "e_911_251800211",
         "e_911_936800072",
         "e_911_936800071",
         "f_936000002_46",
@@ -331504,8 +331514,6 @@
         "e_911_251800133",
         "e_911_251800141",
         "e_911_251800194",
-        "e_911_251800218",
-        "e_911_251800223",
         "e_911_251800211"
       ]
     }
@@ -331547,10 +331555,9 @@
       },
       "Reference": [
         "e_911_196000662",
-        "e_911_251800200",
-        "e_911_251800199",
         "e_911_251800165",
         "e_911_251800167",
+        "e_911_251800155",
         "e_911_251800156",
         "e_911_251800157",
         "e_911_251800197",
@@ -331573,10 +331580,7 @@
         "e_911_251800097",
         "e_911_251800098",
         "e_911_196800290",
-        "e_911_251800220",
-        "e_911_251800222",
-        "e_911_251800221",
-        "e_911_251800155",
+        "e_911_196800522",
         "e_911_251800166",
         "e_911_251800089",
         "e_911_251800090",
@@ -331621,12 +331625,9 @@
         "e_911_251800111",
         "e_911_251800112",
         "e_911_251800113",
-        "e_911_251800212",
-        "e_911_251800213",
-        "e_911_251800214",
-        "e_911_251800215",
-        "e_911_251800216",
-        "e_911_251800217",
+        "e_911_251800114",
+        "e_911_251800115",
+        "e_911_251800116",
         "e_911_251800178",
         "e_911_251800179",
         "e_911_251800117",
@@ -331638,6 +331639,7 @@
       ],
       "CustomIcon": 1,
       "Children": [
+        "e_911_251800155",
         "e_911_251800156",
         "e_911_251800157",
         "e_911_251800197",
@@ -331660,12 +331662,6 @@
         "e_911_251800097",
         "e_911_251800098",
         "e_911_196800290",
-        "e_911_251800220",
-        "e_911_251800222",
-        "e_911_251800200",
-        "e_911_251800221",
-        "e_911_251800155",
-        "e_911_251800199",
         "e_911_251800050",
         "e_911_251800051",
         "e_911_251800052",
@@ -331706,12 +331702,9 @@
         "e_911_251800111",
         "e_911_251800112",
         "e_911_251800113",
-        "e_911_251800212",
-        "e_911_251800213",
-        "e_911_251800214",
-        "e_911_251800215",
-        "e_911_251800216",
-        "e_911_251800217",
+        "e_911_251800114",
+        "e_911_251800115",
+        "e_911_251800116",
         "e_911_251800178",
         "e_911_251800179"
       ]
@@ -331862,10 +331855,10 @@
         "e_911_936800401",
         "e_911_936800273",
         "e_911_936000095",
-        "e_911_936800578",
-        "e_911_936800579",
         "q_936000003",
         "f_936000002_14",
+        "f_936000002_72",
+        "f_936000002_15",
         "e_911_251800177",
         "e_911_251000013",
         "e_911_251800125",
@@ -331879,7 +331872,7 @@
         "e_911_251800176",
         "e_911_936800064",
         "f_936000002_17",
-        "f_936000002_15",
+        "f_936000002_73",
         "f_936000002_16",
         "f_936000002_13"
       ],
@@ -331951,10 +331944,9 @@
         "e_911_251800206",
         "e_911_251800207",
         "e_911_251800208",
-        "e_911_251800219",
-        "e_911_251800209",
         "e_911_251800123",
         "e_911_251800124",
+        "e_911_251800209",
         "e_911_251800201",
         "e_911_251800202",
         "f_936000002_79",
@@ -331969,7 +331961,6 @@
         "e_911_251800206",
         "e_911_251800207",
         "e_911_251800208",
-        "e_911_251800219",
         "e_911_251800123",
         "e_911_251800124",
         "e_911_251800209"
@@ -334396,7 +334387,6 @@
       "Reference": [
         "e_909_692850259",
         "e_909_692850257",
-        "e_909_692850258",
         "e_909_692850832",
         "q_121000040"
       ],
@@ -335167,8 +335157,7 @@
         "e_1598_915800086",
         "e_1598_915800100",
         "e_1598_915800042",
-        "e_1598_915800058",
-        "e_1598_927800002"
+        "e_1598_915800058"
       ],
       "Reference": [
         "e_1598_915800006",
@@ -335223,7 +335212,6 @@
         "e_1598_915800099",
         "e_1598_915800061",
         "e_1598_915800058",
-        "e_1598_927800002",
         "e_1598_915000064",
         "e_911_915000000",
         "f_915000009_6",
@@ -337506,7 +337494,6 @@
       "Reference": [
         "e_1601_173800008",
         "e_1601_173800003",
-        "e_1601_173800025",
         "e_1601_173800028",
         "e_911_936800067",
         "f_173000000_50",
@@ -337517,7 +337504,6 @@
       "Children": [
         "e_1601_173800008",
         "e_1601_173800003",
-        "e_1601_173800025",
         "e_1601_173800028"
       ]
     }
@@ -360885,11 +360871,6 @@
         "e_1618_923800051",
         "e_1618_923800052",
         "e_1618_251800045",
-        "e_1618_915800013",
-        "e_1618_251800056",
-        "e_1618_251800057",
-        "e_1618_251800058",
-        "e_1618_251800059",
         "e_1618_915800001",
         "e_1618_251800028",
         "e_1618_915800005",
@@ -360940,11 +360921,6 @@
         "e_1618_923800051",
         "e_1618_923800052",
         "e_1618_251800045",
-        "e_1618_915800013",
-        "e_1618_251800056",
-        "e_1618_251800057",
-        "e_1618_251800058",
-        "e_1618_251800059",
         "e_1618_251800049",
         "e_1618_251800054",
         "e_1618_196800000",
@@ -360959,11 +360935,11 @@
         "f_915000009_47",
         "f_915000009_45",
         "f_915000009_62",
-        "f_915000009_59",
-        "f_915000009_65",
         "f_915000009_63",
         "f_915000009_46",
         "f_915000009_64",
+        "f_915000009_59",
+        "f_915000009_65",
         "f_915000009_61",
         "e_1618_915800012",
         "e_1618_915800011",
@@ -360971,7 +360947,6 @@
         "e_1618_915800005",
         "e_1618_915800010",
         "e_1618_251800055",
-        "e_1618_251800050",
         "f_196000000_85"
       ]
     }
@@ -365705,6 +365680,50 @@
     }
   },
   {
+    "LevelPlayId": 42750010,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 42750010,
+      "Key": "3.5检测主控角色GameplayTag",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_42750010_LevelPlayName_42_1",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 42750085,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_42750085",
+        "e_100_42750086"
+      ],
+      "Children": [
+        "e_100_42750086"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 255750012,
     "Data": {
       "ObjType": "LevelPlay",
@@ -365869,218 +365888,6 @@
         "e_2103_255750038",
         "e_2103_255750036",
         "e_2103_255750037"
-      ]
-    }
-  },
-  {
-    "LevelPlayId": 255750016,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 255750016,
-      "Key": "领主复刷辉萤军势副本",
-      "InternalDest": "",
-      "LevelId": 2103,
-      "TidName": "LevelPlay_255750016_LevelPlayName_255_2",
-      "Type": "Dungeon",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 0,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 0,
-      "LeaveRadius": 0,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {},
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "Children": [
-        "e_2103_255750039",
-        "e_2103_255750042",
-        "e_2103_255750040",
-        "e_2103_255750041"
-      ],
-      "Reference": [
-        "e_2103_255750039",
-        "e_2103_255750042",
-        "e_2103_255750040",
-        "e_2103_255750041"
-      ]
-    }
-  },
-  {
-    "LevelPlayId": 255750017,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 255750017,
-      "Key": "领主复刷聚械机偶副本",
-      "InternalDest": "",
-      "LevelId": 2103,
-      "TidName": "LevelPlay_255750017_LevelPlayName_255_2",
-      "Type": "Dungeon",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 0,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 0,
-      "LeaveRadius": 0,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {},
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "Children": [
-        "e_2103_255750114",
-        "e_2103_255750046",
-        "e_2103_255750044",
-        "e_2103_255750045"
-      ],
-      "Reference": [
-        "e_2103_255750114",
-        "e_2103_255750046",
-        "e_2103_255750044",
-        "e_2103_255750045"
-      ]
-    }
-  },
-  {
-    "LevelPlayId": 255750018,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 255750018,
-      "Key": "领主复刷无归的谬误副本",
-      "InternalDest": "",
-      "LevelId": 2103,
-      "TidName": "LevelPlay_255750018_LevelPlayName_255_2",
-      "Type": "Dungeon",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 0,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 0,
-      "LeaveRadius": 0,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {},
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "Children": [
-        "e_2103_255750047",
-        "e_2103_255750050",
-        "e_2103_255750048",
-        "e_2103_255750049"
-      ],
-      "Reference": [
-        "e_2103_255750047",
-        "e_2103_255750050",
-        "e_2103_255750048",
-        "e_2103_255750049"
-      ]
-    }
-  },
-  {
-    "LevelPlayId": 255750019,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 255750019,
-      "Key": "领主复刷罗蕾莱副本",
-      "InternalDest": "",
-      "LevelId": 2103,
-      "TidName": "LevelPlay_255750019_LevelPlayName_255_2",
-      "Type": "Dungeon",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 0,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 0,
-      "LeaveRadius": 0,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {},
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "Children": [
-        "e_2103_255750051",
-        "e_2103_255750054",
-        "e_2103_255750052",
-        "e_2103_255750053"
-      ],
-      "Reference": [
-        "e_2103_255750051",
-        "e_2103_255750054",
-        "e_2103_255750052",
-        "e_2103_255750053"
-      ]
-    }
-  },
-  {
-    "LevelPlayId": 42750010,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 42750010,
-      "Key": "3.5检测主控角色GameplayTag",
-      "InternalDest": "",
-      "LevelId": 100,
-      "TidName": "LevelPlay_42750010_LevelPlayName_42_1",
-      "Type": "Riddle",
-      "OnlineType": "Multiplayer",
-      "PackId": 0,
-      "LevelPlayEntityId": 42750085,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 12000,
-      "LeaveRadius": 15000,
-      "DelayRefresh": true,
-      "DelayDestroy": true,
-      "AutoRestoreTreeAddedPlayerBuff": true,
-      "LevelPlayOpenCondition": {
-        "Conditions": []
-      },
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "LevelPlayTrack": {
-        "TrackRadius": 2000,
-        "TrackPriority": -5
-      },
-      "Reference": [
-        "e_100_42750085",
-        "e_100_42750086"
-      ],
-      "Children": [
-        "e_100_42750086"
       ]
     }
   },
@@ -366406,6 +366213,174 @@
       "Children": [
         "e_8_254750056",
         "e_8_254750026"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 255750016,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 255750016,
+      "Key": "领主复刷辉萤军势副本",
+      "InternalDest": "",
+      "LevelId": 2103,
+      "TidName": "LevelPlay_255750016_LevelPlayName_255_2",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "Children": [
+        "e_2103_255750039",
+        "e_2103_255750042",
+        "e_2103_255750040",
+        "e_2103_255750041"
+      ],
+      "Reference": [
+        "e_2103_255750039",
+        "e_2103_255750042",
+        "e_2103_255750040",
+        "e_2103_255750041"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 255750017,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 255750017,
+      "Key": "领主复刷聚械机偶副本",
+      "InternalDest": "",
+      "LevelId": 2103,
+      "TidName": "LevelPlay_255750017_LevelPlayName_255_2",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "Children": [
+        "e_2103_255750114",
+        "e_2103_255750046",
+        "e_2103_255750044",
+        "e_2103_255750045"
+      ],
+      "Reference": [
+        "e_2103_255750114",
+        "e_2103_255750046",
+        "e_2103_255750044",
+        "e_2103_255750045"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 255750018,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 255750018,
+      "Key": "领主复刷无归的谬误副本",
+      "InternalDest": "",
+      "LevelId": 2103,
+      "TidName": "LevelPlay_255750018_LevelPlayName_255_2",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "Children": [
+        "e_2103_255750047",
+        "e_2103_255750050",
+        "e_2103_255750048",
+        "e_2103_255750049"
+      ],
+      "Reference": [
+        "e_2103_255750047",
+        "e_2103_255750050",
+        "e_2103_255750048",
+        "e_2103_255750049"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 255750019,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 255750019,
+      "Key": "领主复刷罗蕾莱副本",
+      "InternalDest": "",
+      "LevelId": 2103,
+      "TidName": "LevelPlay_255750019_LevelPlayName_255_2",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "Children": [
+        "e_2103_255750051",
+        "e_2103_255750054",
+        "e_2103_255750052",
+        "e_2103_255750053"
+      ],
+      "Reference": [
+        "e_2103_255750051",
+        "e_2103_255750054",
+        "e_2103_255750052",
+        "e_2103_255750053"
       ]
     }
   },
@@ -371531,65 +371506,6 @@
     }
   },
   {
-    "LevelPlayId": 151750031,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 151750031,
-      "Key": "3.5-怪守藏宝点3-3小怪+1精英Pro",
-      "InternalDest": "",
-      "LevelId": 8,
-      "TidName": "LevelPlay_151750031_LevelPlayName_151_1",
-      "Type": "MonsterTreasure",
-      "OnlineType": "Multiplayer",
-      "PackId": 0,
-      "LevelPlayEntityId": 151750225,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 11000,
-      "LeaveRadius": 12000,
-      "DelayRefresh": true,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {
-        "Conditions": []
-      },
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayTrack": {
-        "TrackRadius": 3700,
-        "TrackPriority": -5
-      },
-      "Reference": [
-        "e_8_151750225",
-        "e_8_151750253",
-        "e_8_151750256",
-        "e_8_151750257",
-        "e_8_157750799",
-        "e_8_157750800",
-        "e_8_157750801",
-        "e_8_150750535"
-      ],
-      "Children": [
-        "e_8_151750253",
-        "e_8_151750256",
-        "e_8_151750257",
-        "e_8_157750799",
-        "e_8_157750800",
-        "e_8_157750801",
-        "e_8_150750535"
-      ],
-      "ExploratoryConfig": {
-        "AddType": 90,
-        "When": 0
-      }
-    }
-  },
-  {
     "LevelPlayId": 151750021,
     "Data": {
       "ObjType": "LevelPlay",
@@ -372110,48 +372026,62 @@
     }
   },
   {
-    "LevelPlayId": 320750006,
+    "LevelPlayId": 151750031,
     "Data": {
       "ObjType": "LevelPlay",
-      "Id": 320750006,
-      "Key": "开碗",
+      "Id": 151750031,
+      "Key": "3.5-怪守藏宝点3-3小怪+1精英Pro",
       "InternalDest": "",
       "LevelId": 8,
-      "TidName": "LevelPlay_320750006_LevelPlayName_320_1",
-      "Type": "Quest",
-      "OnlineType": "Local",
+      "TidName": "LevelPlay_151750031_LevelPlayName_151_1",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
       "PackId": 0,
-      "LevelPlayEntityId": 320751541,
+      "LevelPlayEntityId": 151750225,
       "LevelAdditiveId": 0,
-      "EnterRadius": 12000,
-      "LeaveRadius": 15000,
+      "EnterRadius": 11000,
+      "LeaveRadius": 12000,
       "DelayRefresh": true,
-      "DelayDestroy": true,
-      "AutoRestoreTreeAddedPlayerBuff": true,
+      "DelayDestroy": false,
       "LevelPlayOpenCondition": {
         "Conditions": []
       },
       "LevelPlayActive": {
         "ActiveType": 0
       },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
       "LevelPlayRewardConfig": {
         "Type": "None"
       },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
       "LevelPlayTrack": {
-        "TrackRadius": 2000,
+        "TrackRadius": 3700,
         "TrackPriority": -5
       },
       "Reference": [
-        "e_8_320751541",
-        "e_8_320751542",
-        "q_189000006"
+        "e_8_151750225",
+        "e_8_151750253",
+        "e_8_151750256",
+        "e_8_151750257",
+        "e_8_157750799",
+        "e_8_157750800",
+        "e_8_157750801",
+        "e_8_150750535"
       ],
-      "WeakReference": [
-        "q_189000006"
-      ]
+      "Children": [
+        "e_8_151750253",
+        "e_8_151750256",
+        "e_8_151750257",
+        "e_8_157750799",
+        "e_8_157750800",
+        "e_8_157750801",
+        "e_8_150750535"
+      ],
+      "ExploratoryConfig": {
+        "AddType": 90,
+        "When": 0
+      }
     }
   },
   {
@@ -373808,6 +373738,134 @@
         "e_100_13750107",
         "e_100_13750108",
         "e_100_13750109"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 320750006,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 320750006,
+      "Key": "开碗",
+      "InternalDest": "",
+      "LevelId": 8,
+      "TidName": "LevelPlay_320750006_LevelPlayName_320_1",
+      "Type": "Quest",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 320751541,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_8_320751541",
+        "e_8_320751542",
+        "q_189000006"
+      ],
+      "WeakReference": [
+        "q_189000006"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 260000000,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 260000000,
+      "Key": "玩法1 ",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_260000000_LevelPlayName_260_1",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 260000004,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_260000004",
+        "e_100_260000005",
+        "e_100_260000008"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 260000001,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 260000001,
+      "Key": "玩法2",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_260000001_LevelPlayName_260_1",
+      "Type": "Riddle",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 260000010,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_260000010",
+        "e_100_260000009"
       ]
     }
   },
@@ -376721,6 +376779,36 @@
     }
   },
   {
+    "LevelPlayId": 42000012,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 42000012,
+      "Key": "团子乱斗通用",
+      "InternalDest": "",
+      "LevelId": 9520,
+      "TidName": "LevelPlay_42000012_LevelPlayName_42_1",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      }
+    }
+  },
+  {
     "LevelPlayId": 147750029,
     "Data": {
       "ObjType": "LevelPlay",
@@ -378465,6 +378553,53 @@
     }
   },
   {
+    "LevelPlayId": 259750003,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 259750003,
+      "Key": "坏娃娃机玩法",
+      "InternalDest": "",
+      "LevelId": 8,
+      "TidName": "LevelPlay_259750003_LevelPlayName_259_1",
+      "Type": "Riddle",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 259750079,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_8_259750079",
+        "e_8_150750781",
+        "e_8_259750077",
+        "e_8_150750787",
+        "q_938750000"
+      ],
+      "WeakReference": [
+        "q_938750000"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 180750001,
     "Data": {
       "ObjType": "LevelPlay",
@@ -378566,53 +378701,6 @@
         "MarkId": 5044,
         "MapBgPath": ""
       }
-    }
-  },
-  {
-    "LevelPlayId": 259750003,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 259750003,
-      "Key": "坏娃娃机玩法",
-      "InternalDest": "",
-      "LevelId": 8,
-      "TidName": "LevelPlay_259750003_LevelPlayName_259_1",
-      "Type": "Riddle",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 259750079,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 12000,
-      "LeaveRadius": 15000,
-      "DelayRefresh": true,
-      "DelayDestroy": true,
-      "AutoRestoreTreeAddedPlayerBuff": true,
-      "LevelPlayOpenCondition": {
-        "Conditions": []
-      },
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "LevelPlayTrack": {
-        "TrackRadius": 2000,
-        "TrackPriority": -5
-      },
-      "Reference": [
-        "e_8_259750079",
-        "e_8_150750781",
-        "e_8_259750077",
-        "e_8_150750787",
-        "q_938750000"
-      ],
-      "WeakReference": [
-        "q_938750000"
-      ]
     }
   },
   {
@@ -381031,63 +381119,6 @@
     }
   },
   {
-    "LevelPlayId": 188750005,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 188750005,
-      "Key": "拼装机兵",
-      "InternalDest": "",
-      "LevelId": 8,
-      "TidName": "LevelPlay_188750005_LevelPlayName_188_1",
-      "Type": "Riddle",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 188750170,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 24000,
-      "LeaveRadius": 25000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "AutoRestoreTreeAddedPlayerBuff": true,
-      "LevelPlayOpenCondition": {
-        "Conditions": []
-      },
-      "LevelPlayActive": {
-        "ActiveType": 1
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "LevelPlayTrack": {
-        "TrackRadius": 2000,
-        "TrackPriority": -5
-      },
-      "Reference": [
-        "e_8_188750170",
-        "e_8_188750112",
-        "e_8_188750186",
-        "e_8_188750187",
-        "e_8_188750189",
-        "e_8_188750191",
-        "e_8_188750073",
-        "q_188750002"
-      ],
-      "WeakReference": [
-        "q_188750002"
-      ],
-      "Children": [
-        "e_8_188750186",
-        "e_8_188750187",
-        "e_8_188750189",
-        "e_8_188750191",
-        "e_8_188750073"
-      ]
-    }
-  },
-  {
     "LevelPlayId": 686750036,
     "Data": {
       "ObjType": "LevelPlay",
@@ -381354,6 +381385,63 @@
       ],
       "WeakReference": [
         "q_180000002"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 188750005,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 188750005,
+      "Key": "拼装机兵",
+      "InternalDest": "",
+      "LevelId": 8,
+      "TidName": "LevelPlay_188750005_LevelPlayName_188_1",
+      "Type": "Riddle",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 188750170,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 24000,
+      "LeaveRadius": 25000,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 1
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_8_188750170",
+        "e_8_188750112",
+        "e_8_188750186",
+        "e_8_188750187",
+        "e_8_188750189",
+        "e_8_188750191",
+        "e_8_188750073",
+        "q_188750002"
+      ],
+      "WeakReference": [
+        "q_188750002"
+      ],
+      "Children": [
+        "e_8_188750186",
+        "e_8_188750187",
+        "e_8_188750189",
+        "e_8_188750191",
+        "e_8_188750073"
       ]
     }
   },
@@ -383368,10 +383456,58 @@
       ],
       "RecallConfig": {
         "RecallId": 141000012,
-        "RecallEntityList": []
+        "RecallEntityList": [
+          662900001
+        ]
       },
       "WeakReference": [
         "l_2041_141000012"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 42000013,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 42000013,
+      "Key": "实体替换模板测试",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_42000013_LevelPlayName_42_1",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 42000373,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_42000373",
+        "e_100_42000371",
+        "e_100_42000376",
+        "e_100_42000372"
+      ],
+      "Children": [
+        "e_100_42000376"
       ]
     }
   },
@@ -385992,48 +386128,6 @@
     }
   },
   {
-    "LevelPlayId": 255750040,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 255750040,
-      "Key": "3.5角色经验本",
-      "InternalDest": "",
-      "LevelId": 4045,
-      "TidName": "LevelPlay_255750040_LevelPlayName_255_2",
-      "Type": "Dungeon",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 0,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 0,
-      "LeaveRadius": 0,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
-      "LevelPlayOpenCondition": {},
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "Reference": [
-        "e_4045_98750000",
-        "e_4045_98750002",
-        "e_4045_98750003",
-        "e_4045_98750001"
-      ],
-      "Children": [
-        "e_4045_98750002",
-        "e_4045_98750000",
-        "e_4045_98750003",
-        "e_4045_98750001"
-      ]
-    }
-  },
-  {
     "LevelPlayId": 692750003,
     "Data": {
       "ObjType": "LevelPlay",
@@ -386077,6 +386171,48 @@
       ],
       "Children": [
         "e_8_692750067"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 255750040,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 255750040,
+      "Key": "3.5角色经验本",
+      "InternalDest": "",
+      "LevelId": 4045,
+      "TidName": "LevelPlay_255750040_LevelPlayName_255_2",
+      "Type": "Dungeon",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 0,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
+      "DelayRefresh": false,
+      "DelayDestroy": false,
+      "LevelPlayOpenCondition": {},
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "Reference": [
+        "e_4045_98750000",
+        "e_4045_98750002",
+        "e_4045_98750003",
+        "e_4045_98750001"
+      ],
+      "Children": [
+        "e_4045_98750002",
+        "e_4045_98750000",
+        "e_4045_98750003",
+        "e_4045_98750001"
       ]
     }
   },
@@ -386218,6 +386354,48 @@
         "e_5001_131000005",
         "e_5001_131000014",
         "e_5001_610800000"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 45850000,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 45850000,
+      "Key": "小狐狸跳跃",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_45850000_LevelPlayName_45_1",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 45850002,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 6500,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "Completed",
+        "MinRefreshCd": 0,
+        "MaxRefreshCd": 0
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_45850002"
       ]
     }
   },
@@ -386989,61 +387167,6 @@
     }
   },
   {
-    "LevelPlayId": 686750049,
-    "Data": {
-      "ObjType": "LevelPlay",
-      "Id": 686750049,
-      "Key": "打怪玩法",
-      "InternalDest": "",
-      "LevelId": 8,
-      "TidName": "LevelPlay_686750049_LevelPlayName_686_1",
-      "Type": "Challenge",
-      "OnlineType": "Local",
-      "PackId": 0,
-      "LevelPlayEntityId": 686750983,
-      "LevelAdditiveId": 0,
-      "EnterRadius": 12000,
-      "LeaveRadius": 15000,
-      "DelayRefresh": true,
-      "DelayDestroy": true,
-      "AutoRestoreTreeAddedPlayerBuff": true,
-      "LevelPlayOpenCondition": {
-        "Conditions": [
-          {
-            "Type": "PreLevelPlay",
-            "PreLevelPlay": 686750034
-          }
-        ]
-      },
-      "LevelPlayActive": {
-        "ActiveType": 0
-      },
-      "LevelPlayRefreshConfig": {
-        "Type": "None"
-      },
-      "LevelPlayRewardConfig": {
-        "Type": "None"
-      },
-      "LevelPlayTrack": {
-        "TrackRadius": 3000,
-        "TrackPriority": -5
-      },
-      "Children": [
-        "e_8_183750130",
-        "e_8_183750241"
-      ],
-      "Reference": [
-        "e_8_686750983",
-        "e_8_183750130",
-        "e_8_183750241",
-        "l_8_686750034"
-      ],
-      "WeakReference": [
-        "l_8_686750034"
-      ]
-    }
-  },
-  {
     "LevelPlayId": 316800117,
     "Data": {
       "ObjType": "LevelPlay",
@@ -387126,6 +387249,61 @@
         "e_8200_316800096",
         "e_8200_316800116",
         "f_226900000_49"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 686750049,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 686750049,
+      "Key": "打怪玩法",
+      "InternalDest": "",
+      "LevelId": 8,
+      "TidName": "LevelPlay_686750049_LevelPlayName_686_1",
+      "Type": "Challenge",
+      "OnlineType": "Local",
+      "PackId": 0,
+      "LevelPlayEntityId": 686750983,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": [
+          {
+            "Type": "PreLevelPlay",
+            "PreLevelPlay": 686750034
+          }
+        ]
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 3000,
+        "TrackPriority": -5
+      },
+      "Children": [
+        "e_8_183750130",
+        "e_8_183750241"
+      ],
+      "Reference": [
+        "e_8_686750983",
+        "e_8_183750130",
+        "e_8_183750241",
+        "l_8_686750034"
+      ],
+      "WeakReference": [
+        "l_8_686750034"
       ]
     }
   },
@@ -388456,6 +388634,53 @@
     }
   },
   {
+    "LevelPlayId": 21850001,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 21850001,
+      "Key": "玩法1 ",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_21850001_LevelPlayName_21_1",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 21850023,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_21850023",
+        "e_100_21850024",
+        "e_100_21850028",
+        "e_100_21850031",
+        "e_100_21850030"
+      ],
+      "Children": [
+        "e_100_21850024"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 256800005,
     "Data": {
       "ObjType": "LevelPlay",
@@ -389026,7 +389251,7 @@
         "TrackPriority": -5
       },
       "LevelPlayMark": {
-        "MarkId": 5045,
+        "MarkId": 5042,
         "MapBgPath": ""
       },
       "Children": [
@@ -389147,6 +389372,132 @@
     }
   },
   {
+    "LevelPlayId": 45850001,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 45850001,
+      "Key": "独木桥",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_45850001_LevelPlayName_45_2",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 45850011,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 6500,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "Completed",
+        "MinRefreshCd": 0,
+        "MaxRefreshCd": 0
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_45850011"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 45850002,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 45850002,
+      "Key": "叼东西",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_45850002_LevelPlayName_45_2",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 45850012,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 6500,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "Completed",
+        "MinRefreshCd": 0,
+        "MaxRefreshCd": 0
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_45850012"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 45850003,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 45850003,
+      "Key": "小狐狸跳跃",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_45850003_LevelPlayName_45_3",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 45850026,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 6500,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "Completed",
+        "MinRefreshCd": 0,
+        "MaxRefreshCd": 0
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_45850026"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 923800000,
     "Data": {
       "ObjType": "LevelPlay",
@@ -389162,8 +389513,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -389188,13 +389539,11 @@
         "Type": "None"
       },
       "LevelPlayTrack": {
-        "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800010
+        "TrackRadius": 55000,
+        "TrackPriority": 5
       },
       "Reference": [
         "e_8_923800008",
-        "e_8_196800010",
         "e_8_923800003",
         "e_8_923800014",
         "e_8_923800015",
@@ -389239,8 +389588,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -389266,15 +389615,14 @@
       },
       "LevelPlayTrack": {
         "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800011
+        "TrackPriority": -5
       },
       "Reference": [
         "e_8_923800009",
-        "e_8_196800011",
         "e_8_923800004",
         "e_8_923800016",
         "e_8_923800018",
+        "e_8_923800003",
         "e_8_251800069",
         "e_8_251800006",
         "e_8_251800007",
@@ -389324,8 +389672,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -389351,15 +389699,14 @@
       },
       "LevelPlayTrack": {
         "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800012
+        "TrackPriority": -5
       },
       "Reference": [
         "e_8_923800010",
-        "e_8_196800012",
         "e_8_923800005",
         "e_8_923800022",
         "e_8_923800019",
+        "e_8_923800003",
         "e_8_251800070",
         "e_8_251800015",
         "e_8_251800016",
@@ -389370,7 +389717,6 @@
         "e_8_251800021",
         "e_8_251800022",
         "e_8_251800063",
-        "e_8_251800064",
         "q_936000005"
       ],
       "WeakReference": [
@@ -389388,8 +389734,7 @@
         "e_8_251800020",
         "e_8_251800021",
         "e_8_251800022",
-        "e_8_251800063",
-        "e_8_251800064"
+        "e_8_251800063"
       ]
     }
   },
@@ -389409,8 +389754,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -389436,15 +389781,14 @@
       },
       "LevelPlayTrack": {
         "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800013
+        "TrackPriority": -5
       },
       "Reference": [
         "e_8_923800011",
-        "e_8_196800013",
         "e_8_923800006",
         "e_8_923800023",
         "e_8_923800020",
+        "e_8_923800003",
         "e_8_251800070",
         "e_8_251800023",
         "e_8_251800024",
@@ -389500,8 +389844,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -389527,15 +389871,14 @@
       },
       "LevelPlayTrack": {
         "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800014
+        "TrackPriority": -5
       },
       "Reference": [
         "e_8_923800012",
-        "e_8_196800014",
         "e_8_923800007",
         "e_8_923800024",
         "e_8_923800021",
+        "e_8_923800003",
         "e_8_251800071",
         "e_8_251800035",
         "e_8_251800036",
@@ -389550,8 +389893,6 @@
         "e_8_251800045",
         "e_8_251800046",
         "e_8_251800047",
-        "e_8_251800066",
-        "e_8_251800067",
         "q_936000005"
       ],
       "WeakReference": [
@@ -389573,9 +389914,7 @@
         "e_8_251800044",
         "e_8_251800045",
         "e_8_251800046",
-        "e_8_251800047",
-        "e_8_251800066",
-        "e_8_251800067"
+        "e_8_251800047"
       ]
     }
   },
@@ -390230,7 +390569,7 @@
       "LevelId": 911,
       "TidName": "LevelPlay_268800000_LevelPlayName_268_1",
       "Type": "Quest",
-      "OnlineType": "Local",
+      "OnlineType": "Multiplayer",
       "PackId": 0,
       "LevelPlayEntityId": 268800193,
       "LevelAdditiveId": 0,
@@ -390480,6 +390819,47 @@
     }
   },
   {
+    "LevelPlayId": 683850000,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 683850000,
+      "Key": "第三人称修复流程测试",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_683850000_LevelPlayName_683_2",
+      "Type": "Quest",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 683850048,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 7000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_683850048",
+        "e_100_683850049"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 915800000,
     "Data": {
       "ObjType": "LevelPlay",
@@ -390531,7 +390911,6 @@
         "e_8_915800014",
         "e_8_915800015",
         "e_8_915800017",
-        "e_8_176750801",
         "e_8_915800016",
         "q_936800000",
         "f_915800003_23",
@@ -390874,6 +391253,96 @@
     }
   },
   {
+    "LevelPlayId": 13850013,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 13850013,
+      "Key": "匣子核心切换状态&回退",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_13850013_LevelPlayName_13_1",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 13850192,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Children": [
+        "e_100_13850187",
+        "e_100_13850190",
+        "e_100_13850193"
+      ],
+      "Reference": [
+        "e_100_13850192",
+        "e_100_13850191",
+        "e_100_13850187",
+        "e_100_13850190",
+        "e_100_13850193"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 683850002,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 683850002,
+      "Key": "第一人称修复流程测试",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_683850002_LevelPlayName_683_2",
+      "Type": "Quest",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 683850051,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 7000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_683850051",
+        "e_100_683850053"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 173800000,
     "Data": {
       "ObjType": "LevelPlay",
@@ -390903,8 +391372,6 @@
       },
       "Children": [
         "e_8_173800330",
-        "e_8_173800369",
-        "e_8_866800001",
         "e_8_173800247",
         "e_8_173800021",
         "e_8_173800022",
@@ -390921,7 +391388,6 @@
         "e_8_173800297",
         "e_8_173800305",
         "e_8_173800332",
-        "e_8_173800370",
         "e_8_173800175",
         "e_8_173800245",
         "e_8_173800246",
@@ -391015,7 +391481,6 @@
         "e_8_173800072",
         "e_8_173800073",
         "e_8_173800334",
-        "e_8_173800371",
         "e_8_173800104",
         "e_8_173800105",
         "e_8_173800106",
@@ -391124,8 +391589,6 @@
       ],
       "Reference": [
         "e_8_173800330",
-        "e_8_173800369",
-        "e_8_866800001",
         "e_8_173800247",
         "e_8_173800021",
         "e_8_173800022",
@@ -391145,7 +391608,6 @@
         "e_8_173800297",
         "e_8_173800305",
         "e_8_173800332",
-        "e_8_173800370",
         "e_8_173800239",
         "e_8_173800240",
         "e_8_173800241",
@@ -391256,7 +391718,6 @@
         "e_8_173800073",
         "e_8_173800116",
         "e_8_173800334",
-        "e_8_173800371",
         "e_8_173800104",
         "e_8_173800105",
         "e_8_173800106",
@@ -391579,7 +392040,7 @@
         "Conditions": [
           {
             "Type": "PreQuest",
-            "PreQuest": 936800000
+            "PreQuest": 936000005
           }
         ]
       },
@@ -391604,10 +392065,10 @@
       "Reference": [
         "e_8_168800202",
         "e_8_168800201",
-        "q_936800000"
+        "q_936000005"
       ],
       "WeakReference": [
-        "q_936800000"
+        "q_936000005"
       ]
     }
   },
@@ -391786,22 +392247,13 @@
       },
       "Reference": [
         "e_2527_915800005",
-        "e_2527_915800024",
-        "e_2527_915800001",
         "e_2527_915800004",
         "e_2527_915800020",
-        "e_2527_915800021",
-        "e_2527_915800022",
-        "e_2527_915800023",
-        "e_8_915800052",
-        "f_168800008_5",
-        "f_168800008_6"
+        "e_8_915800052"
       ],
       "Children": [
         "e_2527_915800004",
-        "e_2527_915800020",
-        "e_2527_915800021",
-        "e_2527_915800022"
+        "e_2527_915800020"
       ]
     }
   },
@@ -391821,8 +392273,8 @@
       "LevelAdditiveId": 0,
       "EnterRadius": 120000,
       "LeaveRadius": 150000,
-      "DelayRefresh": false,
-      "DelayDestroy": false,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
       "AutoRestoreTreeAddedPlayerBuff": true,
       "LevelPlayOpenCondition": {
         "Conditions": [
@@ -391830,7 +392282,7 @@
             "Type": "PreChildQuest",
             "PreChildQuest": {
               "QuestId": 936000005,
-              "ChildQuestId": 7
+              "ChildQuestId": 15
             }
           }
         ]
@@ -391848,15 +392300,14 @@
       },
       "LevelPlayTrack": {
         "TrackRadius": 2000,
-        "TrackPriority": -5,
-        "RangeEntity": 196800015
+        "TrackPriority": -5
       },
       "Reference": [
         "e_8_923800032",
-        "e_8_196800015",
         "e_8_923800028",
         "e_8_923800030",
         "e_8_923800031",
+        "e_8_923800003",
         "e_8_251800072",
         "e_8_251800048",
         "e_8_251800049",
@@ -392099,6 +392550,147 @@
     }
   },
   {
+    "LevelPlayId": 41850005,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 41850005,
+      "Key": "花车",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_41850005_LevelPlayName_41_2",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 41850050,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_41850050",
+        "e_100_41850040",
+        "e_100_41850036",
+        "e_100_41850069",
+        "e_100_41850075",
+        "e_100_41850071",
+        "e_100_41850070"
+      ],
+      "Children": [
+        "e_100_41850036",
+        "e_100_41850069",
+        "e_100_41850075",
+        "e_100_41850071",
+        "e_100_41850070"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 29850002,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 29850002,
+      "Key": "测试漂浮字幕",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_29850002_LevelPlayName_29_1",
+      "Type": "MonsterTreasure",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 29850019,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 12000,
+      "LeaveRadius": 15000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 1
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Reference": [
+        "e_100_29850019",
+        "e_100_29850020",
+        "e_100_29850021"
+      ]
+    }
+  },
+  {
+    "LevelPlayId": 41850006,
+    "Data": {
+      "ObjType": "LevelPlay",
+      "Id": 41850006,
+      "Key": "火种陶瓷管",
+      "InternalDest": "",
+      "LevelId": 100,
+      "TidName": "LevelPlay_41850006_LevelPlayName_41_1",
+      "Type": "Riddle",
+      "OnlineType": "Multiplayer",
+      "PackId": 0,
+      "LevelPlayEntityId": 41850064,
+      "LevelAdditiveId": 0,
+      "EnterRadius": 6000,
+      "LeaveRadius": 7000,
+      "DelayRefresh": true,
+      "DelayDestroy": true,
+      "AutoRestoreTreeAddedPlayerBuff": true,
+      "LevelPlayOpenCondition": {
+        "Conditions": []
+      },
+      "LevelPlayActive": {
+        "ActiveType": 0
+      },
+      "LevelPlayRefreshConfig": {
+        "Type": "None"
+      },
+      "LevelPlayRewardConfig": {
+        "Type": "None"
+      },
+      "LevelPlayTrack": {
+        "TrackRadius": 2000,
+        "TrackPriority": -5
+      },
+      "Children": [
+        "e_100_45850015",
+        "e_100_41850068"
+      ],
+      "Reference": [
+        "e_100_41850064",
+        "e_100_45850015",
+        "e_100_41850068"
+      ]
+    }
+  },
+  {
     "LevelPlayId": 158800020,
     "Data": {
       "ObjType": "LevelPlay",
@@ -392146,8 +392738,7 @@
       ],
       "WeakReference": [
         "q_936000005"
-      ],
-      "NotAllowHidedByGroup": true
+      ]
     }
   },
   {
@@ -392255,21 +392846,21 @@
     }
   },
   {
-    "LevelPlayId": 915800007,
+    "LevelPlayId": 316850030,
     "Data": {
       "ObjType": "LevelPlay",
-      "Id": 915800007,
-      "Key": "心湖首次隐藏玩法-心魔表现",
+      "Id": 316850030,
+      "Key": "3.7天演溯心复刷",
       "InternalDest": "",
-      "LevelId": 2527,
-      "TidName": "LevelPlay_915800007_LevelPlayName_915_1",
-      "Type": "Quest",
+      "LevelId": 2121,
+      "TidName": "LevelPlay_316850030_LevelPlayName_316_2",
+      "Type": "Dungeon",
       "OnlineType": "Local",
       "PackId": 0,
-      "LevelPlayEntityId": 915800028,
+      "LevelPlayEntityId": 0,
       "LevelAdditiveId": 0,
-      "EnterRadius": 12000,
-      "LeaveRadius": 15000,
+      "EnterRadius": 0,
+      "LeaveRadius": 0,
       "DelayRefresh": false,
       "DelayDestroy": false,
       "LevelPlayOpenCondition": {},
@@ -392282,16 +392873,17 @@
       "LevelPlayRewardConfig": {
         "Type": "None"
       },
-      "LevelPlayTrack": {
-        "TrackRadius": 2000,
-        "TrackPriority": -5
-      },
       "Children": [
-        "e_2527_915800025"
+        "e_2121_316850001",
+        "e_2121_316850002",
+        "e_2121_316850000",
+        "e_2121_316850003"
       ],
       "Reference": [
-        "e_2527_915800028",
-        "e_2527_915800025"
+        "e_2121_316850002",
+        "e_2121_316850001",
+        "e_2121_316850000",
+        "e_2121_316850003"
       ]
     }
   }

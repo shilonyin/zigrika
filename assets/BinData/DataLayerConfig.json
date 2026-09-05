@@ -3420,12 +3420,417 @@
     "EnableSwitchNavMesh": false
   },
   {
+    "Id": 850060,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZCZYH01",
+    "CnName": "3.7朝月会加载",
+    "LevelId": 8,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850061,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZCZYH02",
+    "CnName": "3.7朝月会卸载",
+    "LevelId": 8,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850062,
+    "DataLayer": "DataLayerRuntime_DLTask_37SGXL01",
+    "CnName": "3.7神宫陷落卸载",
+    "LevelId": 8,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850063,
+    "DataLayer": "DataLayerRuntime_DLTask_37SGXL02",
+    "CnName": "3.7神宫陷落加载",
+    "LevelId": 8,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850064,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZCZYH03",
+    "CnName": "3.7神宫陷落前氛围",
+    "LevelId": 8,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
     "Id": 800037,
     "DataLayer": "DataLayerRuntime_DLTask_36ZXWM01",
     "CnName": "位面副本策划投放",
     "LevelId": 8,
     "InitLoad": false,
     "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850065,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZXSM02",
+    "CnName": "3.7主线锁瞑木匣02",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850066,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZXJXY",
+    "CnName": "3.7主线大世界火匣",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850067,
+    "DataLayer": "DataLayerRuntime_DLTask_37ZXQXY",
+    "CnName": "3.7主线大世界水匣",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850068,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDT",
+    "CnName": "3.7大世界多态区常态",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850069,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC01",
+    "CnName": "3.7大世界多态区01",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850070,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC02",
+    "CnName": "3.7大世界多态区02",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850071,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC03",
+    "CnName": "3.7大世界多态区03",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850072,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC04",
+    "CnName": "3.7大世界多态区04",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850073,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC05",
+    "CnName": "3.7大世界多态区05",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850074,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTYC06",
+    "CnName": "3.7大世界多态区06",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850075,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTXZ01",
+    "CnName": "3.7多态区匣内01",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850076,
+    "DataLayer": "DataLayerRuntime_DLTask_37CXYDTXZ02",
+    "CnName": "3.7多态区匣内02",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850077,
+    "DataLayer": "DataLayerRuntime_DLTask_37XZJMH",
+    "CnName": "3.7三匣子解谜结束",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850078,
+    "DataLayer": "DataLayerRuntime_DLTask_37HZSD",
+    "CnName": "3.7活字山洞开启后",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850079,
+    "DataLayer": "DataLayerRuntime_DLTask_37JRJS",
+    "CnName": "3.7巨人监视玩法",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850080,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXCZ",
+    "CnName": "3.7情匣村庄",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850081,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXZH",
+    "CnName": "3.7情匣战火",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850082,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXHH",
+    "CnName": "3.7情匣黑盒",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850083,
+    "DataLayer": "DataLayerRuntime_DLTask_37FSJS",
+    "CnName": "3.7飞梭驾驶",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850084,
+    "DataLayer": "DataLayerRuntime_DLTask_37XXYH",
+    "CnName": "3.7墟心域POI结束后",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850085,
+    "DataLayer": "Area_3_7_DLTask_37JXY03",
+    "CnName": "3.7烬心域POI前",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850086,
+    "DataLayer": "Area_3_7_DLTask_37JXY04",
+    "CnName": "3.7烬心域POI后",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850087,
+    "DataLayer": "Area_3_7_DLTask_37JXY01",
+    "CnName": "3.7烬心域异常生态",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850088,
+    "DataLayer": "DataLayerRuntime_DLTask_37WOODabnormal",
+    "CnName": "3.7巨人祭坛木区域-1",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850089,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXY_In01",
+    "CnName": "3.7凄心域解谜-去程",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850090,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXY_In02",
+    "CnName": "3.7凄心域追逐-返程",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850091,
+    "DataLayer": "DataLayerRuntime_DLTask_37JXYin01",
+    "CnName": "3.7烬心域平台一",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850092,
+    "DataLayer": "DataLayerRuntime_DLTask_37JXYin02",
+    "CnName": "3.7烬心域平台二",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850093,
+    "DataLayer": "DataLayerRuntime_DLTask_37JXYin03",
+    "CnName": "3.7烬心域平台三",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850094,
+    "DataLayer": "DataLayerRuntime_DLTask_37JXYin04",
+    "CnName": "3.7烬心域总",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850095,
+    "DataLayer": "DataLayerRuntime_DLTask_37SDXZjxy04",
+    "CnName": "3.7散点匣子-烬心域4",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850096,
+    "DataLayer": "DataLayerRuntime_DLTask_37SDXZjxy03",
+    "CnName": "3.7散点匣子-烬心域3",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850097,
+    "DataLayer": "DataLayerRuntime_DLTask_37QXCY",
+    "CnName": "3.7情匣穿越",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": false,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850098,
+    "DataLayer": "DataLayerRuntime_DLTask_37WOODrebuild",
+    "CnName": "3.7巨人祭坛木区域-2",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850099,
+    "DataLayer": "DataLayerRuntime_DLTask_37FIREabnormal",
+    "CnName": "3.7巨人祭坛火区域-1",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850100,
+    "DataLayer": "DataLayerRuntime_DLTask_37FIRErebuild",
+    "CnName": "3.7巨人祭坛火区域-2",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850101,
+    "DataLayer": "DataLayerRuntime_DLTask_37WATERabnormal",
+    "CnName": "3.7巨人祭坛水区域-1",
+    "LevelId": 912,
+    "InitLoad": true,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850102,
+    "DataLayer": "DataLayerRuntime_DLTask_37WATERrebuild",
+    "CnName": "3.7巨人祭坛水区域-2",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850103,
+    "DataLayer": "DataLayerRuntime_DLTask_37SDXZjxy02",
+    "CnName": "3.7散点匣子-烬心域2",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
+    "EnableSwitchNavMesh": false
+  },
+  {
+    "Id": 850104,
+    "DataLayer": "DataLayerRuntime_DLTask_37SDXZjxy01",
+    "CnName": "3.7散点匣子-烬心域1",
+    "LevelId": 912,
+    "InitLoad": false,
+    "OnlyActor": true,
     "EnableSwitchNavMesh": false
   }
 ]

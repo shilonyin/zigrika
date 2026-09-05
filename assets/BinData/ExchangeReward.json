@@ -9008,5 +9008,248 @@
     },
     "RewardIdCalabash": {},
     "PreviewReward": {}
+  },
+  {
+    "Id": 50160,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 100062
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 50161,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 100063
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 130005,
+    "SharedId": 0,
+    "MaxCount": 0,
+    "Cost": {},
+    "RewardId": {},
+    "RewardIdCalabash": {
+      "1": 16346,
+      "5": 16347,
+      "8": 16348,
+      "15": 16349,
+      "21": 16350
+    },
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1051,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10321
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1052,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10322
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1053,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10323
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1054,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10324
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1055,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10325
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1056,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10326
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1057,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10327
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 1058,
+    "SharedId": 1,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 10328
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001028,
+    "SharedId": 0,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 17501,
+      "2": 17502,
+      "3": 17503,
+      "4": 17504,
+      "5": 17505,
+      "6": 17506,
+      "7": 17507,
+      "8": 17508
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001029,
+    "SharedId": 0,
+    "MaxCount": 0,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 17601,
+      "2": 17602,
+      "3": 17603,
+      "4": 17604,
+      "5": 17605,
+      "6": 17606,
+      "7": 17607,
+      "8": 17608
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001139,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 15036
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001141,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {},
+    "RewardId": {
+      "1": 15037
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001140,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 119101,
+      "2": 119102,
+      "3": 119103,
+      "4": 119104,
+      "5": 119105,
+      "6": 119106,
+      "7": 119107,
+      "8": 119108
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
+  },
+  {
+    "Id": 14001142,
+    "SharedId": 0,
+    "MaxCount": 1,
+    "Cost": {
+      "5": 60
+    },
+    "RewardId": {
+      "1": 119201,
+      "2": 119202,
+      "3": 119203,
+      "4": 119204,
+      "5": 119205,
+      "6": 119206,
+      "7": 119207,
+      "8": 119208
+    },
+    "RewardIdCalabash": {},
+    "PreviewReward": {}
   }
 ]

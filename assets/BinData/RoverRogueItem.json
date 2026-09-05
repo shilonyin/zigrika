@@ -830,6 +830,22 @@
     "ShowObtain": false
   },
   {
+    "Id": 7030,
+    "ActivityId": 111200001,
+    "Classify": 2,
+    "Repeated": false,
+    "Type": "RoverRogue_ShopItemType",
+    "Quality": 3,
+    "Name": "RoverRogueItem_Name_30",
+    "Desc": "RoverRogueItem_Desc_30",
+    "DescParams": [
+      "20%"
+    ],
+    "Icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_016_UI.T_IconCook160_YJ_016_UI",
+    "RoomPassedRequired": 1,
+    "ShowObtain": true
+  },
+  {
     "Id": 7031,
     "ActivityId": 111200001,
     "Classify": 2,

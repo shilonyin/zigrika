@@ -78,7 +78,10 @@
       -98184373,
       -1985287699
     ],
-    "CustomHandleId": 1000
+    "CustomHandleId": 1000,
+    "CustomHandleIds": [
+      1000
+    ]
   },
   {
     "Id": 1001,
@@ -109,7 +112,8 @@
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1002,
@@ -166,7 +170,8 @@
       "-1662213429": 1510001
     },
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1003,
@@ -187,6 +192,7 @@
       "1880780220": 300701,
       "1886329817": 800011,
       "1978109078": 200004,
+      "2091792430": 210061,
       "-833935142": 100020,
       "-1009010563": 100020,
       "-1347421268": 200004,
@@ -196,7 +202,9 @@
       "-105059496": 200006,
       "-24138824": 300702,
       "-1587786340": 210044,
-      "-71294992": 2100034
+      "-71294992": 2100034,
+      "-1942665030": 210061,
+      "-2111930239": 210063
     },
     "SkillIconTags": [
       362533963,
@@ -227,7 +235,12 @@
       -1587786340,
       -71294992,
       909363780,
-      1702161495
+      1702161495,
+      -2111930239,
+      -855906961,
+      1737808833,
+      -1942665030,
+      -1127848891
     ],
     "EnableTags": [],
     "DisableTags": [
@@ -280,6 +293,11 @@
       "1624207798": {
         "ArrayInt": [
           300701
+        ]
+      },
+      "1625828053": {
+        "ArrayInt": [
+          210061
         ]
       },
       "1637209445": {
@@ -409,7 +427,10 @@
       "-71294992": 1510003
     },
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": [
+      1003
+    ]
   },
   {
     "Id": 1004,
@@ -487,7 +508,8 @@
       "-258147035": 291003
     },
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1005,
@@ -524,7 +546,8 @@
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1006,
@@ -555,7 +578,8 @@
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1007,
@@ -593,6 +617,7 @@
       "1792016084": 1308001
     },
     "ShowLongPressTags": [],
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   }
 ]

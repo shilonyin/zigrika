@@ -464,5 +464,37 @@
     ],
     "SummonConfigId": 0,
     "NeedShowNum": false
+  },
+  {
+    "Id": 70140023,
+    "UseButtonAdditionParam": [],
+    "SpecialItemType": 0,
+    "Parameters": [
+      "Gameplay355"
+    ],
+    "UseInMultiMode": false,
+    "UseInstance": true,
+    "BanTags": [],
+    "AllowTags": [
+      "行为状态.位置状态.地面"
+    ],
+    "SummonConfigId": 0,
+    "NeedShowNum": true
+  },
+  {
+    "Id": 70140024,
+    "UseButtonAdditionParam": [],
+    "SpecialItemType": 0,
+    "Parameters": [
+      "Gameplay355"
+    ],
+    "UseInMultiMode": false,
+    "UseInstance": true,
+    "BanTags": [],
+    "AllowTags": [
+      "行为状态.位置状态.地面"
+    ],
+    "SummonConfigId": 0,
+    "NeedShowNum": true
   }
 ]

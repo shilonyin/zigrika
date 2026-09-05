@@ -801,6 +801,15 @@
     "PrefabName": "UiView_TaskTips_Prefab"
   },
   {
+    "Id": 45,
+    "ChapterNum": "QuestChapter_45_ChapterNum",
+    "SectionNum": "QuestChapter_45_SectionNum",
+    "ActName": "QuestChapter_45_ActName",
+    "ChapterName": "QuestChapter_45_ChapterName",
+    "ChapterIcon": "/Game/Aki/UI/UIResources/Common/Image/IconForceLogo/T_Logo_Mengzhou.T_Logo_Mengzhou",
+    "PrefabName": "UiView_TasktipsA_Prefab"
+  },
+  {
     "Id": 43,
     "ChapterNum": "QuestChapter_43_ChapterNum",
     "SectionNum": "QuestChapter_43_SectionNum",

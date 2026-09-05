@@ -1953,6 +1953,13 @@
     "IgnoreWorldOrigin": 0
   },
   {
+    "MapId": 912,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/WP/3_7_WXSG/WP_3_7_WXSG",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
     "MapId": 8720,
     "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Huodong/3_1_Jinbi/InstanceTree_3_1_Jinbi",
@@ -2047,6 +2054,27 @@
     "MapId": 8801,
     "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/Huodong/3_3_TuanZi/InstanceTree_3_3_TuanZiDuUma",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 1594,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/Main/3_7_XiaZhongShiJie/InstanceTree_XiaZhongShiJie_HuoXia",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 1596,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/Main/3_7_XiaZhongShiJie/InstanceTree_XiaZhongShiJie_ShuiXia",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 1597,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/Main/3_7_TianYanHuanXinBoss_Main/InstanceTree_TianYanHuanXinBoss_Main",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
   },
@@ -2492,6 +2520,13 @@
     "IgnoreWorldOrigin": 0
   },
   {
+    "MapId": 9520,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/Huodong/3_7_DangoBrawl/InstanceTree_DangoBrawl",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
     "MapId": 832,
     "PakRule": 1,
     "MapPath": "/Game/Aki/Map/UISceneLevel/UI_Scene/UL_UIMap_ChallengeUI",
@@ -2807,9 +2842,30 @@
     "IgnoreWorldOrigin": 0
   },
   {
+    "MapId": 8725,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/Huodong/3_7_Jinbi/InstanceTree_3_7_Jinbi",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
     "MapId": 8052,
     "PakRule": 1,
     "MapPath": "/Game/Aki/Map/Level/System/Rogue/Art/3_6_RoverRogue/3_3_rogue/Instance_Rogue_03_10",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 2121,
+    "PakRule": 1,
+    "MapPath": "/Game/Aki/Map/Level/Main/3_7_TianYanHuanXinBoss_Main/InstanceTree_XinBoss_Fushua",
+    "LoadMapMode": 0,
+    "IgnoreWorldOrigin": 0
+  },
+  {
+    "MapId": 2530,
+    "PakRule": 0,
+    "MapPath": "/Game/Aki/Map/Level/WorldInstance/3_7_SafeHouse/InstanceTree_SafeHouse",
     "LoadMapMode": 0,
     "IgnoreWorldOrigin": 0
   },

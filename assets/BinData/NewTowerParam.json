@@ -166,5 +166,34 @@
       "1211": 1
     },
     "CycleName": "WheelTower_Cycle5_Title"
+  },
+  {
+    "CycleId": 8,
+    "SeasonId": 2,
+    "ActivityId": 100770002,
+    "TimerId": 7700019,
+    "ShowTimerId": 7700018,
+    "RoleCount": 3,
+    "DefaultCostEnergy": 1,
+    "CostEnergy": {},
+    "EnhanceRoleIds": [
+      1109,
+      1105,
+      1302,
+      1304,
+      1205,
+      1404,
+      1305,
+      1606,
+      1206,
+      1607,
+      1603,
+      1506,
+      1107
+    ],
+    "SpecialUpRoleIds": {
+      "1109": 1
+    },
+    "CycleName": "WheelTower_Cycle6_Title"
   }
 ]

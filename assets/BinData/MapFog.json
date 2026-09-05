@@ -4,7 +4,7 @@
     "MapId": 1,
     "AreaId": 2,
     "GravityFlip": 1,
-    "UnlockCondition": 0,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -16,7 +16,7 @@
     "MapId": 1,
     "AreaId": 4,
     "GravityFlip": 1,
-    "UnlockCondition": 2001,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -54850,
       29563,
@@ -28,7 +28,7 @@
     "MapId": 1,
     "AreaId": 3,
     "GravityFlip": 1,
-    "UnlockCondition": 2002,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -48911,
       100481,
@@ -40,7 +40,7 @@
     "MapId": 1,
     "AreaId": 13,
     "GravityFlip": 1,
-    "UnlockCondition": 2003,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       27930,
       78720,
@@ -52,7 +52,7 @@
     "MapId": 1,
     "AreaId": 5,
     "GravityFlip": 1,
-    "UnlockCondition": 2004,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -44674,
       5178,
@@ -64,7 +64,7 @@
     "MapId": 1,
     "AreaId": 9,
     "GravityFlip": 1,
-    "UnlockCondition": 2005,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -76,7 +76,7 @@
     "MapId": 1,
     "AreaId": 6,
     "GravityFlip": 1,
-    "UnlockCondition": 2006,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -83658,
       201717,
@@ -88,7 +88,7 @@
     "MapId": 1,
     "AreaId": 12,
     "GravityFlip": 1,
-    "UnlockCondition": 2007,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -51809,
       170643,
@@ -100,7 +100,7 @@
     "MapId": 1,
     "AreaId": 8,
     "GravityFlip": 1,
-    "UnlockCondition": 2008,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       4280,
       191195,
@@ -112,7 +112,7 @@
     "MapId": 1,
     "AreaId": 7,
     "GravityFlip": 1,
-    "UnlockCondition": 2009,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -78439,
       291349,
@@ -124,7 +124,7 @@
     "MapId": 1,
     "AreaId": 10,
     "GravityFlip": 1,
-    "UnlockCondition": 2010,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       29507,
       276219,
@@ -136,7 +136,7 @@
     "MapId": 1,
     "AreaId": 10,
     "GravityFlip": 1,
-    "UnlockCondition": 2011,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       68197,
       245897,
@@ -148,7 +148,7 @@
     "MapId": 1,
     "AreaId": 14,
     "GravityFlip": 1,
-    "UnlockCondition": 2012,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       175132,
       277672,
@@ -160,7 +160,7 @@
     "MapId": 1,
     "AreaId": 14,
     "GravityFlip": 1,
-    "UnlockCondition": 2013,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       224070,
       307447,
@@ -172,7 +172,7 @@
     "MapId": 1,
     "AreaId": 11,
     "GravityFlip": 1,
-    "UnlockCondition": 2014,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -184,7 +184,7 @@
     "MapId": 1,
     "AreaId": 15,
     "GravityFlip": 1,
-    "UnlockCondition": 2015,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -196,7 +196,7 @@
     "MapId": 1,
     "AreaId": 16,
     "GravityFlip": 1,
-    "UnlockCondition": 2016,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       690276,
       575243,
@@ -208,7 +208,7 @@
     "MapId": 1,
     "AreaId": 20,
     "GravityFlip": 1,
-    "UnlockCondition": 2017,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       754303,
       512319,
@@ -220,7 +220,7 @@
     "MapId": 1,
     "AreaId": 20,
     "GravityFlip": 1,
-    "UnlockCondition": 2018,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       740315,
       583953,
@@ -232,7 +232,7 @@
     "MapId": 1,
     "AreaId": 18,
     "GravityFlip": 1,
-    "UnlockCondition": 2019,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       836539,
       485881,
@@ -244,7 +244,7 @@
     "MapId": 1,
     "AreaId": 19,
     "GravityFlip": 1,
-    "UnlockCondition": 2020,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       797466,
       572121,
@@ -256,7 +256,7 @@
     "MapId": 1,
     "AreaId": 22,
     "GravityFlip": 1,
-    "UnlockCondition": 2021,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       870534,
       546756,
@@ -268,7 +268,7 @@
     "MapId": 1,
     "AreaId": 21,
     "GravityFlip": 1,
-    "UnlockCondition": 2022,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       817611,
       601225,
@@ -280,7 +280,7 @@
     "MapId": 1,
     "AreaId": 23,
     "GravityFlip": 1,
-    "UnlockCondition": 2023,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       818474,
       647827,
@@ -292,7 +292,7 @@
     "MapId": 1,
     "AreaId": 17,
     "GravityFlip": 1,
-    "UnlockCondition": 2024,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       888297,
       600727,
@@ -304,7 +304,7 @@
     "MapId": 1,
     "AreaId": 27,
     "GravityFlip": 1,
-    "UnlockCondition": 2029,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -316,7 +316,7 @@
     "MapId": 1,
     "AreaId": 27,
     "GravityFlip": 1,
-    "UnlockCondition": 2026,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -328,7 +328,7 @@
     "MapId": 1,
     "AreaId": 27,
     "GravityFlip": 1,
-    "UnlockCondition": 2028,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -340,7 +340,7 @@
     "MapId": 1,
     "AreaId": 27,
     "GravityFlip": 1,
-    "UnlockCondition": 2027,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -352,7 +352,7 @@
     "MapId": 1,
     "AreaId": 27,
     "GravityFlip": 1,
-    "UnlockCondition": 2025,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -364,7 +364,7 @@
     "MapId": 1,
     "AreaId": 28,
     "GravityFlip": 1,
-    "UnlockCondition": 2031,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -376,7 +376,7 @@
     "MapId": 1,
     "AreaId": 25,
     "GravityFlip": 1,
-    "UnlockCondition": 2034,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -388,7 +388,7 @@
     "MapId": 1,
     "AreaId": 32,
     "GravityFlip": 1,
-    "UnlockCondition": 2035,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -400,7 +400,7 @@
     "MapId": 1,
     "AreaId": 33,
     "GravityFlip": 1,
-    "UnlockCondition": 2038,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1117102,
       1106732,
@@ -412,7 +412,7 @@
     "MapId": 1,
     "AreaId": 33,
     "GravityFlip": 1,
-    "UnlockCondition": 2039,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1184075,
       1146828,
@@ -424,7 +424,7 @@
     "MapId": 1,
     "AreaId": 33,
     "GravityFlip": 1,
-    "UnlockCondition": 2040,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1197028,
       1082165,
@@ -436,7 +436,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2045,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -448,7 +448,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2046,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -460,7 +460,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2047,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -472,7 +472,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2048,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -484,7 +484,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2049,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -496,7 +496,7 @@
     "MapId": 1,
     "AreaId": 34,
     "GravityFlip": 1,
-    "UnlockCondition": 2050,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -508,7 +508,7 @@
     "MapId": 1,
     "AreaId": 36,
     "GravityFlip": 1,
-    "UnlockCondition": 2051,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1185755,
       1292196,
@@ -520,7 +520,7 @@
     "MapId": 1,
     "AreaId": 36,
     "GravityFlip": 1,
-    "UnlockCondition": 2052,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1140467,
       1372344,
@@ -532,7 +532,7 @@
     "MapId": 1,
     "AreaId": 36,
     "GravityFlip": 1,
-    "UnlockCondition": 2053,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1198770,
       1358000,
@@ -544,7 +544,7 @@
     "MapId": 1,
     "AreaId": 36,
     "GravityFlip": 1,
-    "UnlockCondition": 2054,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       1117345,
       1372807,
@@ -556,7 +556,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2065,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -568,7 +568,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2066,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -580,7 +580,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2068,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -592,7 +592,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2067,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -604,7 +604,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2064,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -616,7 +616,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2069,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -628,7 +628,7 @@
     "MapId": 1,
     "AreaId": 37,
     "GravityFlip": 1,
-    "UnlockCondition": 2070,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -640,7 +640,7 @@
     "MapId": 1,
     "AreaId": 40,
     "GravityFlip": 1,
-    "UnlockCondition": 2075,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       0,
       0,
@@ -652,7 +652,7 @@
     "MapId": 1,
     "AreaId": 36102,
     "GravityFlip": 1,
-    "UnlockCondition": 2076,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -105826,
       -875157,
@@ -664,7 +664,7 @@
     "MapId": 1,
     "AreaId": 36105,
     "GravityFlip": 1,
-    "UnlockCondition": 2077,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -71363,
       -748631,
@@ -676,7 +676,7 @@
     "MapId": 1,
     "AreaId": 36106,
     "GravityFlip": 1,
-    "UnlockCondition": 2078,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -369614,
       -648180,
@@ -688,7 +688,7 @@
     "MapId": 1,
     "AreaId": 36107,
     "GravityFlip": 1,
-    "UnlockCondition": 2079,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -187808,
       -480930,
@@ -700,7 +700,7 @@
     "MapId": 1,
     "AreaId": 36108,
     "GravityFlip": 1,
-    "UnlockCondition": 2080,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -123218,
       -615503,
@@ -712,7 +712,7 @@
     "MapId": 1,
     "AreaId": 36109,
     "GravityFlip": 1,
-    "UnlockCondition": 2081,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -430,
       -660110,
@@ -724,7 +724,7 @@
     "MapId": 1,
     "AreaId": 36110,
     "GravityFlip": 1,
-    "UnlockCondition": 2082,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -48831,
       -569410,
@@ -736,7 +736,7 @@
     "MapId": 1,
     "AreaId": 36111,
     "GravityFlip": 1,
-    "UnlockCondition": 2083,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       55426,
       -410372,
@@ -748,7 +748,7 @@
     "MapId": 1,
     "AreaId": 36112,
     "GravityFlip": 1,
-    "UnlockCondition": 2084,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       72612,
       -515861,
@@ -760,7 +760,7 @@
     "MapId": 1,
     "AreaId": 41006,
     "GravityFlip": 1,
-    "UnlockCondition": 2091,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -33307,
       -780301,
@@ -772,7 +772,7 @@
     "MapId": 1,
     "AreaId": 41002,
     "GravityFlip": 1,
-    "UnlockCondition": 2092,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -153050,
       -627859,
@@ -784,7 +784,7 @@
     "MapId": 1,
     "AreaId": 41001,
     "GravityFlip": 1,
-    "UnlockCondition": 2093,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -106383,
       -552205,
@@ -796,7 +796,7 @@
     "MapId": 1,
     "AreaId": 41004,
     "GravityFlip": 1,
-    "UnlockCondition": 2092,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -153050,
       -627859,
@@ -808,7 +808,7 @@
     "MapId": 1,
     "AreaId": 41005,
     "GravityFlip": 1,
-    "UnlockCondition": 2091,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -33307,
       -780301,
@@ -820,7 +820,7 @@
     "MapId": 1,
     "AreaId": 42001,
     "GravityFlip": 1,
-    "UnlockCondition": 2099,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       173895,
       58045,
@@ -832,7 +832,7 @@
     "MapId": 1,
     "AreaId": 42002,
     "GravityFlip": 1,
-    "UnlockCondition": 2100,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       4572,
       64299,
@@ -844,7 +844,7 @@
     "MapId": 1,
     "AreaId": 42003,
     "GravityFlip": 1,
-    "UnlockCondition": 2101,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -30484,
       4408,
@@ -856,7 +856,7 @@
     "MapId": 1,
     "AreaId": 42004,
     "GravityFlip": 1,
-    "UnlockCondition": 2102,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       49434,
       -56638,
@@ -916,11 +916,23 @@
     "MapId": 1,
     "AreaId": 205,
     "GravityFlip": 1,
-    "UnlockCondition": 2111,
+    "UnlockCondition": 13020047,
     "FogUnlockPosition": [
       -147390,
       26860,
       50000
+    ]
+  },
+  {
+    "Fog": 82,
+    "MapId": 1,
+    "AreaId": 46,
+    "GravityFlip": 1,
+    "UnlockCondition": 13020047,
+    "FogUnlockPosition": [
+      -4640,
+      -12475,
+      -6971
     ]
   }
 ]

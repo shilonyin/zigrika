@@ -21,7 +21,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 1002,
@@ -45,7 +46,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 300,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 2001,
@@ -71,7 +73,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 2002,
@@ -97,7 +100,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 300,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 2003,
@@ -121,7 +125,8 @@
     "IsLongPressControlCamera": false,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 2004,
@@ -155,7 +160,8 @@
     "DynamicEffectTagMap": {
       "-600601599": 1003
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 2005,
@@ -179,7 +185,8 @@
     "IsLongPressControlCamera": false,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 3001,
@@ -205,7 +212,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 3002,
@@ -231,7 +239,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 300,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 3003,
@@ -255,7 +264,8 @@
     "IsLongPressControlCamera": false,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 3004,
@@ -289,7 +299,8 @@
     "DynamicEffectTagMap": {
       "-600601599": 1003
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 3005,
@@ -313,7 +324,8 @@
     "IsLongPressControlCamera": false,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 4001,
@@ -347,7 +359,8 @@
     "DynamicEffectTagMap": {
       "-600601599": 1003
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 5001,
@@ -371,7 +384,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 5002,
@@ -395,7 +409,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 300,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 6001,
@@ -421,7 +436,10 @@
     "DynamicEffectTagMap": {
       "199201016": 1002
     },
-    "CustomHandleId": 110702
+    "CustomHandleId": 110702,
+    "CustomHandleIds": [
+      110702
+    ]
   },
   {
     "Id": 6002,
@@ -447,7 +465,10 @@
     "DynamicEffectTagMap": {
       "199201016": 1002
     },
-    "CustomHandleId": 110702
+    "CustomHandleId": 110702,
+    "CustomHandleIds": [
+      110702
+    ]
   },
   {
     "Id": 6003,
@@ -473,7 +494,10 @@
     "DynamicEffectTagMap": {
       "199201016": 1002
     },
-    "CustomHandleId": 110702
+    "CustomHandleId": 110702,
+    "CustomHandleIds": [
+      110702
+    ]
   },
   {
     "Id": 6004,
@@ -499,7 +523,8 @@
     "DynamicEffectTagMap": {
       "199201016": 1002
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 7001,
@@ -529,7 +554,8 @@
     "DynamicEffectTagMap": {
       "656763530": 1002
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 7002,
@@ -555,7 +581,8 @@
     "IsLongPressControlCamera": true,
     "LongPressTime": 0,
     "DynamicEffectTagMap": {},
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   },
   {
     "Id": 8001,
@@ -583,6 +610,7 @@
     "DynamicEffectTagMap": {
       "-861653675": 1510004
     },
-    "CustomHandleId": 0
+    "CustomHandleId": 0,
+    "CustomHandleIds": []
   }
 ]

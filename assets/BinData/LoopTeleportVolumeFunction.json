@@ -1,0 +1,142 @@
+[
+  {
+    "Id": 850001,
+    "VolumeId": 10001,
+    "Desc": "",
+    "Conditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "CompareVar",
+          "Var1": {
+            "Type": "Boolean",
+            "Source": "Other",
+            "RefType": "Entity",
+            "RefId": 13850208,
+            "Name": "触发标记"
+          },
+          "Compare": "Eq",
+          "Var2": {
+            "Type": "Boolean",
+            "Source": "Constant",
+            "Value": false
+          }
+        },
+        {
+          "Type": "CompareEntityState",
+          "EntityId": 13850210,
+          "Compare": "Eq",
+          "State": "关卡.Common.状态.常态"
+        }
+      ]
+    },
+    "Actions": [
+      {
+        "Name": "ChangeEntityState",
+        "Params": {
+          "Type": "Directly",
+          "EntityId": 13850210,
+          "State": "关卡.Common.状态.激活"
+        },
+        "ActionGuid": "34db494e3ac94b9bb46b78a8f6a31e1f"
+      },
+      {
+        "Name": "SetVar",
+        "Params": {
+          "VarLeft": {
+            "Type": "Boolean",
+            "Source": "Other",
+            "RefType": "Entity",
+            "RefId": 13850208,
+            "Name": "触发标记"
+          },
+          "VarRight": {
+            "Type": "Boolean",
+            "Source": "Constant",
+            "Value": true
+          }
+        },
+        "ActionGuid": "f3114c663730452290514ee373c65e07"
+      }
+    ],
+    "ClientLogic": [
+      {
+        "Type": "PlayEffect",
+        "EffectConfig": {
+          "Type": "ScreenEffect",
+          "Path": "/Game/Aki/Effect/DataAsset/ScreenDA/SD_Fight/Bigworld/DA_Fx_Screen_Warning.DA_Fx_Screen_Warning"
+        }
+      }
+    ]
+  },
+  {
+    "Id": 850002,
+    "VolumeId": 10001,
+    "Desc": "",
+    "Conditions": {
+      "Type": 0,
+      "Conditions": [
+        {
+          "Type": "CompareVar",
+          "Var1": {
+            "Type": "Boolean",
+            "Source": "Other",
+            "RefType": "Entity",
+            "RefId": 13850208,
+            "Name": "触发标记"
+          },
+          "Compare": "Eq",
+          "Var2": {
+            "Type": "Boolean",
+            "Source": "Constant",
+            "Value": true
+          }
+        },
+        {
+          "Type": "CompareEntityState",
+          "EntityId": 13850210,
+          "Compare": "Eq",
+          "State": "关卡.Common.状态.激活"
+        }
+      ]
+    },
+    "Actions": [
+      {
+        "Name": "ChangeEntityState",
+        "Params": {
+          "Type": "Directly",
+          "EntityId": 13850210,
+          "State": "关卡.Common.状态.常态"
+        },
+        "ActionGuid": "34db494e3ac94b9bb46b78a8f6a31e1f"
+      },
+      {
+        "Name": "SetVar",
+        "Params": {
+          "VarLeft": {
+            "Type": "Boolean",
+            "Source": "Other",
+            "RefType": "Entity",
+            "RefId": 13850208,
+            "Name": "触发标记"
+          },
+          "VarRight": {
+            "Type": "Boolean",
+            "Source": "Constant",
+            "Value": false
+          }
+        },
+        "ActionGuid": "cf8879c00c39437ba4434d629f386544"
+      }
+    ],
+    "ClientLogic": [
+      {
+        "Type": "PlayEffect",
+        "EffectConfig": {
+          "Type": "MpcEffect",
+          "Path": "/Game/Aki/Effect/DataAsset/PostProcess/BigWorld/DA_Fx_Post_HeiChao.DA_Fx_Post_HeiChao"
+        }
+      }
+    ]
+  }
+]

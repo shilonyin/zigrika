@@ -1,0 +1,54 @@
+[
+  {
+    "Id": 1,
+    "Count": 2,
+    "EliminateProbability": 0.5,
+    "RandomProbability": 0.5,
+    "Pool": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "Id": 2,
+    "Count": 5,
+    "EliminateProbability": 0.800000011920929,
+    "RandomProbability": 0.20000000298023224,
+    "Pool": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "Id": 3,
+    "Count": 2,
+    "EliminateProbability": 0.20000000298023224,
+    "RandomProbability": 0.800000011920929,
+    "Pool": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "Id": 4,
+    "Count": 5,
+    "EliminateProbability": 0.5,
+    "RandomProbability": 0.5,
+    "Pool": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+]

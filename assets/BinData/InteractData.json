@@ -76894,9 +76894,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -115202,9 +115200,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117023,9 +117019,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117362,9 +117356,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117384,9 +117376,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117406,9 +117396,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117428,9 +117416,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -117450,9 +117436,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -131947,9 +131931,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -132133,9 +132115,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -132155,9 +132135,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -132488,9 +132466,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -133450,7 +133426,7 @@
             "EntityIds": [
               936800409
             ],
-            "BehaviorTree": 800022
+            "BehaviorTree": 800043
           },
           "ActionGuid": "c554ef6a75834dcbae2ca6c9ff09691b",
           "ActionId": 3000587
@@ -133464,9 +133440,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -133499,9 +133473,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -133562,132 +133534,6 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "07420cdba1dd4ee68c1c00ea1b1a84ce",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3.5玄方_园林区",
-        "FlowId": 2,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "Quest_320750009_InteractContent_320_1",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "092655a1e4564cd3976b7694b2c6c2ea",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_5_支线_星火艺术",
-        "FlowId": 4,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "2408611739a141978761e5ecaed404ef",
-    "Type": {
-      "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "OpenSystemBoard",
-          "Params": {
-            "SystemType": "InformationView",
-            "BoardId": 33011017
-          },
-          "ActionGuid": "65da0b25b1c940ee829ccfcbc3926af1",
-          "ActionId": 4000160
-        },
-        {
-          "Name": "PostAkEvent",
-          "Params": {
-            "EventConfig": {
-              "Type": "Target",
-              "EntityId": 687700186,
-              "AkEvent": "/Game/Aki/WwiseAudio/Events/play_sfx_gp_lsl_photo_pickup.play_sfx_gp_lsl_photo_pickup"
-            }
-          },
-          "ActionGuid": "404307a7f04446c1af887272be14c480",
-          "ActionId": 4000316
-        }
-      ]
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_687000000_InteractContent_687_16",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": "",
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "2a9912837400427191288b0204f68cbb",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3.5玄方_园林区",
-        "FlowId": 15,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "562259aa524540f69b7f2a5ec7dbe641",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_5_支线_星火艺术",
-        "FlowId": 3,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
     "Guid": "9428d7338bec46ed88dae08f749bff92",
     "Type": {
       "Type": "Flow",
@@ -133732,30 +133578,69 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "9aab187768424e329fe7e5ea929bbffa",
+    "Guid": "e13c912774194fdeb27bdf1ee7fd5910",
     "Type": {
-      "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 687700249,
-            "State": "关卡.Common.状态.激活"
-          },
-          "ActionGuid": "be5e0577dbd34532aac6fef85124a95a",
-          "ActionId": 4000031
-        }
-      ]
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_5_支线_反残象动能投射装置",
+        "FlowId": 3,
+        "StateId": 1
+      }
     },
     "Icon": "",
-    "TidContent": "LevelPlay_687000000_InteractContent_687_17",
+    "TidContent": "",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "092655a1e4564cd3976b7694b2c6c2ea",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_5_支线_星火艺术",
+        "FlowId": 4,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "562259aa524540f69b7f2a5ec7dbe641",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_5_支线_星火艺术",
+        "FlowId": 3,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
     "LongPressInteractConfig": ""
   },
   {
@@ -133765,6 +133650,50 @@
       "Flow": {
         "FlowListName": "剧情_3_5_支线_摩托玩法",
         "FlowId": 2,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "07420cdba1dd4ee68c1c00ea1b1a84ce",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3.5玄方_园林区",
+        "FlowId": 2,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "Quest_320750009_InteractContent_320_1",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "2a9912837400427191288b0204f68cbb",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3.5玄方_园林区",
+        "FlowId": 15,
         "StateId": 1
       }
     },
@@ -133792,6 +133721,51 @@
     },
     "Icon": "",
     "TidContent": "Quest_320750010_InteractContent_320_2",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "d41166ee3b2d4af7b8320efc01ad2898",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3.5玄方_园林区",
+        "FlowId": 11,
+        "StateId": 1,
+        "FlowGuid": "f402058b7ed845088c73dd58df778f55"
+      }
+    },
+    "Icon": "",
+    "TidContent": "Quest_320750010_InteractContent_320_4",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "e9378aa1784e483d8a1eef52328f8702",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3.5玄方_园林区",
+        "FlowId": 7,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "Quest_320750010_InteractContent_320_1",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
@@ -133861,70 +133835,68 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "d41166ee3b2d4af7b8320efc01ad2898",
+    "Guid": "2408611739a141978761e5ecaed404ef",
     "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3.5玄方_园林区",
-        "FlowId": 11,
-        "StateId": 1,
-        "FlowGuid": "f402058b7ed845088c73dd58df778f55"
-      }
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "OpenSystemBoard",
+          "Params": {
+            "SystemType": "InformationView",
+            "BoardId": 33011017
+          },
+          "ActionGuid": "65da0b25b1c940ee829ccfcbc3926af1",
+          "ActionId": 4000160
+        },
+        {
+          "Name": "PostAkEvent",
+          "Params": {
+            "EventConfig": {
+              "Type": "Target",
+              "EntityId": 687700186,
+              "AkEvent": "/Game/Aki/WwiseAudio/Events/play_sfx_gp_lsl_photo_pickup.play_sfx_gp_lsl_photo_pickup"
+            }
+          },
+          "ActionGuid": "404307a7f04446c1af887272be14c480",
+          "ActionId": 4000316
+        }
+      ]
     },
     "Icon": "",
-    "TidContent": "Quest_320750010_InteractContent_320_4",
+    "TidContent": "LevelPlay_687000000_InteractContent_687_16",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "e13c912774194fdeb27bdf1ee7fd5910",
+    "Guid": "9aab187768424e329fe7e5ea929bbffa",
     "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_5_支线_反残象动能投射装置",
-        "FlowId": 3,
-        "StateId": 1
-      }
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 687700249,
+            "State": "关卡.Common.状态.激活"
+          },
+          "ActionGuid": "be5e0577dbd34532aac6fef85124a95a",
+          "ActionId": 4000031
+        }
+      ]
     },
     "Icon": "",
-    "TidContent": "",
+    "TidContent": "LevelPlay_687000000_InteractContent_687_17",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "e9378aa1784e483d8a1eef52328f8702",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3.5玄方_园林区",
-        "FlowId": 7,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "Quest_320750010_InteractContent_320_1",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -136906,6 +136878,28 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "0bbf0ff0209e4c2a95ae65c07e7ff365",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_5_支线_历程记忆手册_不改旧时影",
+        "FlowId": 13,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "350aa9a4c4b04b0997a6e4df493d6d94",
     "Type": {
       "Type": "Actions",
@@ -136987,28 +136981,6 @@
     "Range": 0,
     "Duration": "",
     "OptionLockTypeList": "",
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "0bbf0ff0209e4c2a95ae65c07e7ff365",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_5_支线_历程记忆手册_不改旧时影",
-        "FlowId": 13,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
     "LongPressInteractConfig": ""
   },
   {
@@ -137858,29 +137830,6 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "54161e7e697549d6a70123d18398c27f",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3.5玄方_居民区",
-        "FlowId": 16,
-        "StateId": 1,
-        "FlowGuid": "c1ee62a0f0fb458990fd6f69b89261fe"
-      }
-    },
-    "Icon": "",
-    "TidContent": "Quest_320750015_InteractContent_320_2",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
     "Guid": "24e317023f7d425caeb4bdb4360687b0",
     "Type": {
       "Type": "Flow",
@@ -138191,6 +138140,22 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "177df218ee4541769a22b77bec99fd6c",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "Quest_30750009_InteractContent_30_1",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "91663156283f437cae9ff696f6e33e07",
     "Type": {
       "Type": "Actions",
@@ -138212,22 +138177,6 @@
     },
     "Icon": "",
     "TidContent": "LevelPlay_13750006_InteractContent_13_1",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": "",
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "177df218ee4541769a22b77bec99fd6c",
-    "Type": {
-      "Type": "Actions",
-      "Actions": []
-    },
-    "Icon": "",
-    "TidContent": "Quest_30750009_InteractContent_30_1",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
@@ -138518,6 +138467,89 @@
     "OptionLockTypeList": [
       "OnMotor"
     ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "54161e7e697549d6a70123d18398c27f",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3.5玄方_居民区",
+        "FlowId": 16,
+        "StateId": 1,
+        "FlowGuid": "c1ee62a0f0fb458990fd6f69b89261fe"
+      }
+    },
+    "Icon": "",
+    "TidContent": "Quest_320750015_InteractContent_320_2",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "04a09617c12649ca916d4714b9536172",
+    "Type": {
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "RunActorCustomEvent",
+          "Params": {
+            "ActorRef": {
+              "PathName": "/Game/Aki/Map/WPMapTest/AkiWorld_WPTest.AkiWorld_WPTest:PersistentLevel.BP_searchlight_outside_C_UAID_30C5991C7383E5DC02_1498208149",
+              "EdFolderPath": "Designer/Map_Test/Area_Test/WholeDay/Actor_Far/zhangjunyi",
+              "EdActorOwnedAssetPath": "Content/__ExternalActors__/Aki/Map/WPMapTest/AkiWorld_WPTest/C8/J7/761K3PMDMW5TS9T6W8UUJ.uasset"
+            },
+            "EventName": "Turn off"
+          },
+          "ActionGuid": "f51fb2d39d6142aab2273d51c2e1279d",
+          "ActionId": 4000001
+        }
+      ]
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "b42344697eb54aef8e95cd8c15385fb7",
+    "Type": {
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "RunActorCustomEvent",
+          "Params": {
+            "ActorRef": {
+              "PathName": "/Game/Aki/Map/WPMapTest/AkiWorld_WPTest.AkiWorld_WPTest:PersistentLevel.BP_searchlight_inside_C_UAID_30C5991C73833BDD02_1947305406",
+              "EdFolderPath": "Designer/Map_Test/Area_Test/WholeDay/Actor_Far/zhangjunyi",
+              "EdActorOwnedAssetPath": "Content/__ExternalActors__/Aki/Map/WPMapTest/AkiWorld_WPTest/75/F7/ZJ73S0YR5XHQ6RC2S81IE.uasset"
+            },
+            "EventName": "SetRotaActi"
+          },
+          "ActionGuid": "6c689c34843f4812afa29c07f217759d",
+          "ActionId": 4000004
+        }
+      ]
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -139427,24 +139459,6 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "bf7b9f7619a64ab1bcd3501e6ea75591",
-    "Type": {
-      "Type": "Actions",
-      "Actions": []
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
     "Guid": "c562e806295c4258a404508556b60b14",
     "Type": {
       "Type": "Actions",
@@ -139475,30 +139489,21 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "6646c19b4ccd4c148a1504d7fb275a8b",
+    "Guid": "bf7b9f7619a64ab1bcd3501e6ea75591",
     "Type": {
       "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 692750174,
-            "State": "关卡.Common.状态.激活"
-          },
-          "ActionGuid": "f9dc3985766246b5b3a8698d60db955f",
-          "ActionId": 4000178
-        }
-      ]
+      "Actions": []
     },
     "Icon": "",
-    "TidContent": "LevelPlay_692750002_InteractContent_692_1",
+    "TidContent": "",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
-    "Range": 600,
+    "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
     "LongPressInteractConfig": ""
   },
   {
@@ -139545,6 +139550,33 @@
     "UniquenessTest": "",
     "DoIntactType": "Direct",
     "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "6646c19b4ccd4c148a1504d7fb275a8b",
+    "Type": {
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 692750174,
+            "State": "关卡.Common.状态.激活"
+          },
+          "ActionGuid": "f9dc3985766246b5b3a8698d60db955f",
+          "ActionId": 4000178
+        }
+      ]
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_692750002_InteractContent_692_1",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 600,
     "Duration": "",
     "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
@@ -139644,84 +139676,6 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "020728a88312457db21d7e7b8b92fd7c",
-    "Type": {
-      "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 219750845,
-            "State": "关卡.LevelSeq标记.标记B"
-          },
-          "ActionGuid": "9fccbdc5c09b4805b7d674aa4221191c",
-          "ActionId": 4000008
-        },
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 219750841,
-            "State": "关卡.Common.状态.完成"
-          },
-          "ActionGuid": "adccef8fe2194f51966d3c58eb028c6a",
-          "ActionId": 4000010
-        }
-      ]
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_219750001_InteractContent_219_4",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "0ecb9dd2fb7245c6b839f4864497171e",
-    "Type": {
-      "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 219750844,
-            "State": "关卡.LevelSeq标记.标记B"
-          },
-          "ActionGuid": "6e551593c32947e6a074a3bd10263018",
-          "ActionId": 4000004
-        },
-        {
-          "Name": "ChangeEntityState",
-          "Params": {
-            "Type": "Directly",
-            "EntityId": 219750874,
-            "State": "关卡.Common.状态.完成"
-          },
-          "ActionGuid": "8636cc0d510048f7abeac4bb99aaa622",
-          "ActionId": 4000006
-        }
-      ]
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_219750001_InteractContent_219_11",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
     "Guid": "0f889e703203461cbe500f23ebc4daa7",
     "Type": {
       "Type": "Flow",
@@ -139799,6 +139753,84 @@
     },
     "Icon": "",
     "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "020728a88312457db21d7e7b8b92fd7c",
+    "Type": {
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 219750845,
+            "State": "关卡.LevelSeq标记.标记B"
+          },
+          "ActionGuid": "9fccbdc5c09b4805b7d674aa4221191c",
+          "ActionId": 4000008
+        },
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 219750841,
+            "State": "关卡.Common.状态.完成"
+          },
+          "ActionGuid": "adccef8fe2194f51966d3c58eb028c6a",
+          "ActionId": 4000010
+        }
+      ]
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_219750001_InteractContent_219_4",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "0ecb9dd2fb7245c6b839f4864497171e",
+    "Type": {
+      "Type": "Actions",
+      "Actions": [
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 219750844,
+            "State": "关卡.LevelSeq标记.标记B"
+          },
+          "ActionGuid": "6e551593c32947e6a074a3bd10263018",
+          "ActionId": 4000004
+        },
+        {
+          "Name": "ChangeEntityState",
+          "Params": {
+            "Type": "Directly",
+            "EntityId": 219750874,
+            "State": "关卡.Common.状态.完成"
+          },
+          "ActionGuid": "8636cc0d510048f7abeac4bb99aaa622",
+          "ActionId": 4000006
+        }
+      ]
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_219750001_InteractContent_219_11",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
@@ -143763,9 +143795,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -144134,6 +144164,38 @@
     "OptionLockTypeList": [
       "OnMotor"
     ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "41a7f1d85df04f89b1a5a52db47b6f71",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "c200c75938f14e4fad248c890a7b8336",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -144588,6 +144650,22 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "45d9270c52a94e52bdd0ab4fc82a37f1",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_147000033_InteractContent_40_1",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "4bee0f61d7e74fe8bfcfed285138f7d8",
     "Type": {
       "Type": "Flow",
@@ -144610,22 +144688,6 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "45d9270c52a94e52bdd0ab4fc82a37f1",
-    "Type": {
-      "Type": "Actions",
-      "Actions": []
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_147000033_InteractContent_40_1",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": "",
-    "LongPressInteractConfig": ""
-  },
-  {
     "Guid": "c5deed2b19f345c6b489911d95f44264",
     "Type": {
       "Type": "Flow",
@@ -144642,9 +144704,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -146190,15 +146250,6 @@
       "Type": "Actions",
       "Actions": [
         {
-          "Name": "SetPlayerOperationRestriction",
-          "Params": {
-            "Type": "DisableAll",
-            "DisplayMode": "ShowUi"
-          },
-          "ActionGuid": "a6402fd65df1405797527036746f2cbb",
-          "ActionId": 3000692
-        },
-        {
           "Name": "AdjustPlayerCamera",
           "Params": {
             "Option": {
@@ -146216,13 +146267,14 @@
               },
               "Fov": 60,
               "CenterPos": {
-                "X": -35971.88,
-                "Y": -1182856.25,
-                "Z": 4107.38
+                "X": -35991.871094,
+                "Y": -1182831.75,
+                "Z": 4107.381836
               },
               "CenterRot": {
-                "Y": 7.34,
-                "Z": -141.83
+                "X": 0.000028,
+                "Y": 6.542727,
+                "Z": -141.829315
               }
             }
           },
@@ -146254,14 +146306,6 @@
           },
           "Timeout": 5,
           "ActionId": 3000167
-        },
-        {
-          "Name": "SetPlayerOperationRestriction",
-          "Params": {
-            "Type": "EnableAll"
-          },
-          "ActionGuid": "5a198b2dcc9b4791bbc3221b691e9268",
-          "ActionId": 3000693
         },
         {
           "Name": "PlayFlow",
@@ -146892,9 +146936,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147353,9 +147395,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147516,9 +147556,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147547,9 +147585,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147578,9 +147614,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147704,9 +147738,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147819,9 +147851,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -147841,9 +147871,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148015,6 +148043,28 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "3437fa114bee4881b27da12d47cdde75",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_6_后日谈生态",
+        "FlowId": 23,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "7670c82168c04124bb460c12e85f7fc5",
     "Type": {
       "Type": "Flow",
@@ -148128,9 +148178,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148186,9 +148234,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148203,6 +148249,40 @@
     },
     "Icon": "",
     "TidContent": "Quest_936000003_InteractContent_936_8",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "0be7fcd00e7240a597692dfb518a38c8",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_13850013_InteractContent_13_2",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": [
+      "OnMotor"
+    ],
+    "LongPressInteractConfig": ""
+  },
+  {
+    "Guid": "0fbda3ac01ec4dad8329ffd61f856304",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_13850013_InteractContent_13_1",
     "Condition": "",
     "UniquenessTest": "",
     "DoIntactType": "Direct",
@@ -148486,19 +148566,13 @@
   {
     "Guid": "3190278719b64b9cbcfb7f528210d20b",
     "Type": {
-      "Type": "Actions",
-      "Actions": [
-        {
-          "Name": "DestroyEntity",
-          "Params": {
-            "EntityIds": [
-              173800325
-            ]
-          },
-          "ActionGuid": "93f61fd86cb9438fb287cc9e87485846",
-          "ActionId": 4000105
-        }
-      ]
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_6_玄方城",
+        "FlowId": 45,
+        "StateId": 1,
+        "FlowGuid": "633867d1412b4a2692183ce9fee77659"
+      }
     },
     "Icon": "",
     "TidContent": "LevelPlay_173800000_InteractContent_173_1",
@@ -148530,9 +148604,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148552,9 +148624,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148574,9 +148644,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -148648,7 +148716,7 @@
               264800112
             ]
           },
-          "ActionGuid": "ae978ec44a1d403096e4eba4edc591df",
+          "ActionGuid": "01b18ac751574eff9ee142861636206f",
           "ActionId": 3000206
         },
         {
@@ -148692,7 +148760,7 @@
               264800113
             ]
           },
-          "ActionGuid": "2cee978302204bef883ad9c90e32db69",
+          "ActionGuid": "06b89c55607040bab5a71ac076d08b82",
           "ActionId": 3000189
         },
         {
@@ -149097,9 +149165,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149268,9 +149334,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149423,6 +149487,22 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "a37809d1460c4c068c365bc382d34dc9",
+    "Type": {
+      "Type": "Actions",
+      "Actions": []
+    },
+    "Icon": "",
+    "TidContent": "LevelPlay_41850005_InteractContent_41_1",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "38e1744e67924ef9bee868c5329d43fe",
     "Type": {
       "Type": "Flow",
@@ -149461,9 +149541,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149618,7 +149696,7 @@
             "LocationEntityId": 268800058,
             "TransitionOption": {
               "Type": "CustomLoading",
-              "ConfigId": 6142
+              "ConfigId": 6135
             }
           },
           "ActionGuid": "b590187d0c68458da5673e2c4ac6888a",
@@ -149702,9 +149780,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149724,9 +149800,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149746,9 +149820,7 @@
     "DoIntactType": "Direct",
     "Range": 0,
     "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
+    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   },
   {
@@ -149877,6 +149949,26 @@
     "LongPressInteractConfig": ""
   },
   {
+    "Guid": "c91ca7bea58e49db96688f23435be524",
+    "Type": {
+      "Type": "Flow",
+      "Flow": {
+        "FlowListName": "剧情_3_6_神宫幻境_地境接舷战",
+        "FlowId": 81,
+        "StateId": 1
+      }
+    },
+    "Icon": "",
+    "TidContent": "",
+    "Condition": "",
+    "UniquenessTest": "",
+    "DoIntactType": "Direct",
+    "Range": 0,
+    "Duration": "",
+    "OptionLockTypeList": "",
+    "LongPressInteractConfig": ""
+  },
+  {
     "Guid": "80a2a086f7414a6db1bccc4f21e36cf1",
     "Type": {
       "Type": "Actions",
@@ -149958,35 +150050,12 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "b2ee77769a4246438b41baf34a6d381a",
+    "Guid": "a8099a188ed84d91a7d0173c46ae97cb",
     "Type": {
       "Type": "Flow",
       "Flow": {
-        "FlowListName": "剧情_3_6_支线_残像复活",
-        "FlowId": 28,
-        "StateId": 1,
-        "FlowGuid": "fc2d9fcf21f14058a37a2831673f9536"
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "09a01e926f774ac3915f18a31215d208",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_6_后日谈生态",
-        "FlowId": 23,
+        "FlowListName": "剧情_3_7_团子乱斗引导任务",
+        "FlowId": 3,
         "StateId": 1
       }
     },
@@ -150003,12 +150072,12 @@
     "LongPressInteractConfig": ""
   },
   {
-    "Guid": "c414b41cb7ae4b18bf46ec9985adbbc2",
+    "Guid": "dbb7633ff20547ef858c4c60b16edf81",
     "Type": {
       "Type": "Flow",
       "Flow": {
-        "FlowListName": "剧情_3_6_后日谈生态",
-        "FlowId": 23,
+        "FlowListName": "剧情_3_7_团子乱斗引导任务",
+        "FlowId": 2,
         "StateId": 1
       }
     },
@@ -150022,126 +150091,6 @@
     "OptionLockTypeList": [
       "OnMotor"
     ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "0fbbe134c347463f9a2ae388f53f30d5",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_6_神宫幻境_地境接舷战",
-        "FlowId": 81,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "fef8ce8a02ac443ab6a517de0cba3555",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_3_6_神宫幻境_地境接舷战",
-        "FlowId": 81,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "",
-    "Condition": "",
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": [
-      "OnMotor"
-    ],
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "0102ce2c1f224af3b6a513dcf1699552",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_角色生态_清宵_3_6",
-        "FlowId": 6,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_915800006_InteractContent_915_4",
-    "Condition": {
-      "Type": 0,
-      "Conditions": [
-        {
-          "Type": "CompareVar",
-          "Var1": {
-            "Type": "Int",
-            "Source": "Global",
-            "Keyword": "3_6清宵心湖玩法监听"
-          },
-          "Compare": "Eq",
-          "Var2": {
-            "Type": "Int",
-            "Source": "Constant",
-            "Value": 6
-          }
-        }
-      ]
-    },
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": "",
-    "LongPressInteractConfig": ""
-  },
-  {
-    "Guid": "5ab50d534de0478d91618287f544f487",
-    "Type": {
-      "Type": "Flow",
-      "Flow": {
-        "FlowListName": "剧情_角色生态_清宵_3_6",
-        "FlowId": 5,
-        "StateId": 1
-      }
-    },
-    "Icon": "",
-    "TidContent": "LevelPlay_915800006_InteractContent_915_3",
-    "Condition": {
-      "Type": 0,
-      "Conditions": [
-        {
-          "Type": "CompareVar",
-          "Var1": {
-            "Type": "Int",
-            "Source": "Global",
-            "Keyword": "3_6清宵心湖玩法监听"
-          },
-          "Compare": "Eq",
-          "Var2": {
-            "Type": "Int",
-            "Source": "Constant",
-            "Value": 1
-          }
-        }
-      ]
-    },
-    "UniquenessTest": "",
-    "DoIntactType": "Direct",
-    "Range": 0,
-    "Duration": "",
-    "OptionLockTypeList": "",
     "LongPressInteractConfig": ""
   }
 ]

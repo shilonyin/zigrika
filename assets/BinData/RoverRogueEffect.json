@@ -3751,7 +3751,7 @@
   },
   {
     "Id": 1502091311,
-    "Type": "AddEffectDelay",
+    "Type": "RiseBlessingQuality",
     "Desc": -1,
     "ClientDisplay": false
   },
@@ -4051,18 +4051,6 @@
   },
   {
     "Id": 1502051322,
-    "Type": "AddBuffs",
-    "Desc": -1,
-    "ClientDisplay": true
-  },
-  {
-    "Id": 1502091313,
-    "Type": "RiseBlessingQuality",
-    "Desc": -1,
-    "ClientDisplay": false
-  },
-  {
-    "Id": 1502070603,
     "Type": "AddBuffs",
     "Desc": -1,
     "ClientDisplay": true

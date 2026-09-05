@@ -456,6 +456,14 @@
     "ShowItemId": 5001
   },
   {
+    "Id": 7030,
+    "Type": 7,
+    "Param": 1,
+    "Price": 300,
+    "Discount": 0,
+    "ShowItemId": 7030
+  },
+  {
     "Id": 7031,
     "Type": 7,
     "Param": 1,

@@ -1746,7 +1746,9 @@
       "add_new_role_config 14064",
       "add_new_role_config 14065",
       "add_new_role_config 14066",
-      "add_new_role_config 14070"
+      "add_new_role_config 14070",
+      "add_new_role_config 14071",
+      "add_new_role_config 14072"
     ]
   },
   {
@@ -2525,6 +2527,20 @@
       "GmBabelTowerSatr 1126 4",
       "GmBabelTowerSatr 1127 4",
       "GmBabelTowerSatr 1128 4"
+    ]
+  },
+  {
+    "Id": 206,
+    "Name": "心90",
+    "OrderList": [
+      "add_new_role_config 14071"
+    ]
+  },
+  {
+    "Id": 207,
+    "Name": "锁冥90",
+    "OrderList": [
+      "add_new_role_config 14072"
     ]
   },
   {

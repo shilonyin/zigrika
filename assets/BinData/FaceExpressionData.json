@@ -26473,14 +26473,5 @@
       "Path": "/Game/Aki/Character/NPC/RoleNPC/MaleM/Nanzhu/Expression/Expression_Nanvzhu_shocked.Expression_Nanvzhu_shocked"
     },
     "CloseAutoBlink": false
-  },
-  {
-    "Id": 800220,
-    "FaceExpression": {
-      "Type": "AnimSequence",
-      "Path": "/Game/Aki/Sequence/SequenceAnim/DialogAnim/FemaleXL/Qingxiao/Expression/Helpless_chanfu.Helpless_chanfu"
-    },
-    "MaleVariant": "",
-    "CloseAutoBlink": true
   }
 ]

@@ -3598,6 +3598,20 @@
     "QuestId": 0
   },
   {
+    "Id": 37001,
+    "WhichChat": 107,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 3,
+    "ListenQuestId": 0,
+    "FinallPopType": 4,
+    "DropId": 0,
+    "QuestId": 923000000
+  },
+  {
     "Id": 36003,
     "WhichChat": 94,
     "FlowParam": [
@@ -3606,6 +3620,20 @@
       "1"
     ],
     "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37002,
+    "WhichChat": 107,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 3,
     "ListenQuestId": 0,
     "FinallPopType": 0,
     "DropId": 0,
@@ -3634,6 +3662,34 @@
       "1"
     ],
     "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37003,
+    "WhichChat": 110,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 4,
+    "DropId": 0,
+    "QuestId": 886000002
+  },
+  {
+    "Id": 37004,
+    "WhichChat": 72,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 4,
     "ListenQuestId": 0,
     "FinallPopType": 0,
     "DropId": 0,
@@ -3724,6 +3780,20 @@
     "QuestId": 0
   },
   {
+    "Id": 37005,
+    "WhichChat": 115,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
     "Id": 36010,
     "WhichChat": 116,
     "FlowParam": [
@@ -3763,7 +3833,7 @@
     "ListenQuestId": 0,
     "FinallPopType": 0,
     "DropId": 0,
-    "QuestId": 0
+    "QuestId": 226800002
   },
   {
     "Id": 36013,
@@ -3772,6 +3842,90 @@
       "剧情_3_6_群声共振模拟域引导",
       "1",
       "1"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37006,
+    "WhichChat": 121,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 4,
+    "DropId": 0,
+    "QuestId": 261000000
+  },
+  {
+    "Id": 37007,
+    "WhichChat": 122,
+    "FlowParam": [
+      "剧情_3_7_爆金币复开",
+      "1",
+      "1"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37008,
+    "WhichChat": 122,
+    "FlowParam": [
+      "剧情_3_7_爆金币复开",
+      "2",
+      "1"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37009,
+    "WhichChat": 123,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 4,
+    "DropId": 0,
+    "QuestId": 239850000
+  },
+  {
+    "Id": 37011,
+    "WhichChat": 72,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
+    ],
+    "TipType": 1,
+    "ListenQuestId": 0,
+    "FinallPopType": 0,
+    "DropId": 0,
+    "QuestId": 0
+  },
+  {
+    "Id": 37012,
+    "WhichChat": 114,
+    "FlowParam": [
+      "剧情_LHY_短信剧本测试",
+      "1",
+      "8"
     ],
     "TipType": 1,
     "ListenQuestId": 0,

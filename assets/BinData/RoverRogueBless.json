@@ -3357,7 +3357,7 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv1",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv1",
     "Params": [
-      "200%",
+      "200",
       "5"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
@@ -3490,7 +3490,7 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv2",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv2",
     "Params": [
-      "200%",
+      "200",
       "3"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
@@ -3509,7 +3509,7 @@
     "Name": "RoverRogueBless_EffectName_Aimisi_Beidong02_Lv3",
     "Desc": "RoverRogueBless_EffectDesc_Aimisi_Beidong02_Lv3",
     "Params": [
-      "200%",
+      "200",
       "1.5"
     ],
     "AdditionText": "RoverRogue_SystemShow_NormalBlessing",
