@@ -176,6 +176,7 @@ pub fn pushData(
     var iterator = role_comp.role_map.iterator();
 
     while (iterator.next()) |role| {
+        if (role.key_ptr.* > 1999 or role.key_ptr.* < 1000) continue;
         if (selected_main_role) |selected| {
             if (RoleHelper.isMainRole(assets, role.key_ptr.*) and role.key_ptr.* != selected) continue;
         }
