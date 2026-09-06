@@ -1,5 +1,5 @@
 # Zigrika
-Server Emulator for Wuthering Waves targeting 3.6 LIVE.
+Server Emulator for Wuthering Waves targeting 3.7 BETA (3.6 LIVE on `lts`).
 ![title](assets/img/screenshot.png)
 
 # Features
@@ -8,6 +8,7 @@ Server Emulator for Wuthering Waves targeting 3.6 LIVE.
 - [Goon Camera](https://git.xeondev.com/WavyRooms/goon-camera)
 
 More features are actively being worked on, so stay tuned!
+NOTE: If the game is crashing immediately upon opening while PS is open, try editing `state/cfg/index/aiHbMg6p7W25f2s5lN3w02kAehuaavii/Windows/VideoConfig.json` to have a 12BC418C58914A0769498784F5BB58EC533E9309 in IndexSha1. Report this to a maintainer on the Discord if this occurs, send Client.log in DMs too.
 
 # Getting Started
 ## Requirements
