@@ -201,6 +201,8 @@ pub const PhantomItem = struct {
     SkinId: i32 = 0,
     UnAckSubProp: std.ArrayList(PhantomPropInfo) = .empty,
     LockPropIndex: std.ArrayList(i32) = .empty,
+    StackCount: i32 = 0,
+    AddTime: i64 = 0,
 };
 pub const NormalItem = struct {
     pub const default: @This() = .{};
@@ -1076,6 +1078,14 @@ pub const ErrorCode = enum(i32) {
     ErrQuestBranchConfig = 200702,
     ErrConditionStateRequestParam = 200703,
     ErrConditionStateRequestModule = 200704,
+    ErrPolishPhantomStackKey = 200705,
+    ErrSplitPhantomStackKey = 200706,
+    ErrConsumePhantomStackKey = 200707,
+    ErrBatchPolishPhantomStackKey = 200708,
+    ErrPhantomMaxStackCount = 200709,
+    ErrReturnPhantomStackKey = 200710,
+    ErrRefiningPhantomStackKey = 200711,
+    ErrPhantomPkgFull = 200712,
     ErrMapDefault = 300000,
     ErrMapMarkNumLimit = 300001,
     ErrMapNoFogConfig = 300002,
@@ -2024,6 +2034,18 @@ pub const ErrorCode = enum(i32) {
     ErrEntityInQuickHackSkill = 900083,
     ErrEntityQuickHackSkillNoAction = 900084,
     ErrVehicleInPhantomFormation = 900085,
+    ErrGiantSystemNotOpen = 900086,
+    ErrGiantEcoIsLock = 900087,
+    ErrGiantItemInvaild = 900088,
+    ErrGiantItemNotEnough = 900089,
+    ErrGiantItemNotMatch = 900090,
+    ErrGiantMaxLevel = 900091,
+    ErrGiantMaxLevelDropLimit = 900092,
+    ErrGiantNotMaxLevel = 900093,
+    ErrGiantActivityReward = 900094,
+    ErrGiantActivityNodeNotActive = 900095,
+    ErrLoopTeleportVolumeConfig = 900096,
+    ErrLoopTeleportVolumeCondition = 900097,
     ErrBuffItemConfig = 1000000,
     ErrBuffItemNotShare = 1000001,
     ErrBuffItemShareRoleId = 1000002,
@@ -2731,6 +2753,10 @@ pub const ErrorCode = enum(i32) {
     ErrorNewTowerAwardCantGet = 1100627,
     KurotatoShopProductIsBought = 1100628,
     KurotatoShopProductAllLock = 1100629,
+    ErrorShortMessageChatThemeNoData = 1100630,
+    ErrorShortMessageChatThemeNoConf = 1100631,
+    ErrorShortMessageChatCharmNoData = 1100632,
+    ErrorShortMessageChatCharmNoConf = 1100633,
     ErrChatNotFriendNorOnline = 1200000,
     ErrChatContentFilterFailed = 1200001,
     ErrChatLockState = 1200002,
@@ -3000,6 +3026,8 @@ pub const ErrorCode = enum(i32) {
     ErrFsmActionCheckPlayEntityMontageFail = 1500164,
     ErrMontageContext1CheckPlayEntityMontageFail = 1500165,
     ErrSkillGahaveNoModifyCommonEnemyPro = 1500166,
+    ErrNotSummonEntity = 1500167,
+    ErrSkillGahaveNoTagId = 1500168,
     ErrCombatSkillGahandleGetEntityFailed = 1600000,
     ErrCombatMaterialHandleGetEntityFailed = 1600001,
     ErrCombatParticleHandleGetEntityFailed = 1600002,
@@ -3546,9 +3574,27 @@ pub const ErrorCode = enum(i32) {
     ErrTrialFollowShooterItemUse = 1900399,
     ErrMainRoleVoiceRoleId = 1900400,
     ErrTrackMoonNotInRecall = 1900401,
+    MatchThreeRoleLock = 1900402,
+    ErrMatchThreeScoreInvalid = 1900403,
+    ErrMatchThreeHourGlassInvalid = 1900404,
+    ErrMatchThreeBottleInvalid = 1900405,
+    ErrMatchThreeRecordTypeMismatch = 1900406,
+    CameraModeNotOpen = 1900407,
+    ErrItemUseBanned = 1900408,
     ErrItemUseMainRoleDead = 1900409,
     ErrWaitingOtherJoinBanUse = 1900410,
+    ErrPhantomSelfPortrait = 1900411,
+    ErrRoleTrailSelfPortrait = 1900412,
+    ErrPlayerStateSelfPortrait = 1900413,
+    ErrMainRoleDeadSelfPortrait = 1900414,
+    ErrInFlowSelfPortrait = 1900415,
+    ErrInVehicleSelfPortrait = 1900416,
+    ErrMainRoleActiveSelfPortrait = 1900417,
     ErrZitherItemUse = 1900418,
+    InTeleportItemUse = 1900419,
+    IsMatchingItemUse = 1900420,
+    InTeleportSelfPortrait = 1900421,
+    IsMatchingSelfPortrait = 1900422,
     ErrDoCommonRewardConfigError = 2000000,
     InstPlayNotSettle = 2000001,
     InstPlayNotFinishExecute = 2000002,
@@ -4252,6 +4298,22 @@ pub const ErrorCode = enum(i32) {
     SheriffClueNotUnlock = 2500369,
     SheriffEndingAlreadyFinish = 2500370,
     ErrGiftResonantChainOptionalLimit = 2500371,
+    DangoBrawlNoConfig = 2500372,
+    DangoBrawlErrMultiGame = 2500373,
+    DangoBrawlRoleErr = 2500374,
+    DangoBrawlNoComponent = 2500375,
+    DangoBrawlSceneStateErr = 2500376,
+    DangoBrawlCoinNotEnough = 2500377,
+    DangoBrawlShopSlotErr = 2500378,
+    DangoBrawlBagOpTypeErr = 2500379,
+    DangoBrawlBagItemNotFound = 2500380,
+    DangoBrawlBagSlotErr = 2500381,
+    DangoBrawlBagSlotOccupied = 2500382,
+    DangoBrawlBagOpDuplicateUid = 2500383,
+    DangoBrawlComposeNoRecipe = 2500384,
+    DangoBrawlSpeItemLimit = 2500385,
+    DangoBrawlCostOverLimit = 2500386,
+    DangoBrawlBenchFull = 2500387,
     ErrAlertAreaId = 2600000,
     ErrAlertAreaEnable = 2600001,
     ErrAlertAreaDisable = 2600002,
@@ -4377,6 +4439,19 @@ pub const ErrorCode = enum(i32) {
     LevelPlayDbDataNotExist = 2600122,
     NotInRecallInst = 2600123,
     SpecificRecallInfoNotExist = 2600124,
+    ElementalTypeNotMatch = 2600125,
+    ElementalMatchTypeIsEmpty = 2600126,
+    ErrComponentConfigNotExist = 2600127,
+    ErrHasHandCasketCore = 2600128,
+    ErrNotHandCasketCore = 2600129,
+    ErrFoundationHasCore = 2600130,
+    ErrFoundationHasNotCore = 2600131,
+    ErrFoundationInteractCondNotMatch = 2600132,
+    ErrElementalTypeNotMatch = 2600133,
+    ErrElementalHolderNotEnable = 2600134,
+    ElementalBoxNotInFoundation = 2600135,
+    ErrElementalBoxConfigNotExist = 2600136,
+    ErrMultigameQuestRecall = 2600137,
     ErrActionGetItemHasNotFreeSize = 2600138,
     IdCreateRuleChange2 = 2700001,
     RacingBetsActivityIdErr = 2700002,
@@ -4952,6 +5027,17 @@ pub const ErrorCode = enum(i32) {
     ErrXboxGiftHttpError = 3000199,
     ErrXboxGiftXstsTokenInvalid = 3000201,
     ErrXboxGiftXstsTokenMismatch = 3000202,
+    DangoBrawlActivityNotExist = 3000200,
+    DangoBrawlParamCountErr = 3000218,
+    DangoBrawlTaskFindErr = 3000219,
+    DangoBrawlActivityIdErr = 3000220,
+    DangoBrawlHadReward = 3000221,
+    DangoBrawlTaskRunning = 3000222,
+    DangoBrawlDropNoFind = 3000223,
+    DangoBrawlParamAgainErr = 3000224,
+    DangoBrawlNoReward = 3000225,
+    DangoBrawlPreChallengeNotPass = 3000226,
+    DangoBrawlWinError = 3000227,
     QingXiaoParamCountErr = 3000203,
     QingXiaoTaskFindErr = 3000204,
     QingXiaoActivityIdErr = 3000205,
@@ -4960,6 +5046,16 @@ pub const ErrorCode = enum(i32) {
     QingXiaoDropNoFind = 3000208,
     QingXiaoParamAgainErr = 3000209,
     QingXiaoNoReward = 3000210,
+    ErrVersionSignInNotOpen = 3000211,
+    ErrVersionSignInNoData = 3000212,
+    ErrVersionSignInRewardNotExist = 3000213,
+    ErrVersionSignInRewardAlreadyTaken = 3000214,
+    ErrVersionSignInDaysNotEnough = 3000215,
+    ErrVersionSignInParamError = 3000216,
+    ErrTimePointRewardActivityConditionNotFinish = 3000217,
+    MaterialReplaceTargetMismatch = 3000228,
+    MaterialReplaceNoExchangeParamConfig = 3000229,
+    ErrMotorParkourNotFound = 3000230,
     PhotoFightLevelNotFound = 3100000,
     PhotoFightActivityNotOpen = 3100001,
     PhotoFightSceneComponentInfoLost = 3100002,
@@ -5834,9 +5930,9 @@ pub const GameplayAttributeData = struct {
 pub const AttrData = struct {
     pub const default: @This() = .{};
     AttributeType: ?EAttributeType = null,
-    CurrentValue: i32 = 0,
+    WhiteValue: i32 = 0,
     ValueIncrement: i32 = 0,
-    CurrentValue2: i32 = 0,
+    CurrentValue: i32 = 0,
 };
 pub const GameplayTagData = struct {
     pub const default: @This() = .{};
@@ -6122,6 +6218,11 @@ pub const GameCtxType = enum(i32) {
     RecallQuestDestroyAction = 107,
     EdDebugEnterAction = 3401,
     SetClientGlobalVarAction = 3402,
+    CasketTrigger = 3501,
+    FoundationCoreOperate = 3502,
+    TargetGearActionByHitType = 3701,
+    LoopTeleportVolume = 3702,
+    LongPressInteract = 3703,
 };
 pub const GameCtxPb = struct {
     pub const default: @This() = .{};
@@ -6194,6 +6295,10 @@ pub const GameCtxPb = struct {
         RecallQuestFinishAction: ?RecallQuestFinishActionCtxPb,
         RecallQuestDestroyAction: ?RecallQuestDestroyActionCtxPb,
         EdDebugEnterAction: ?EdDebugEnterActionCtxPb,
+        CasketTrigger: ?CasketTriggerCtxPb,
+        FoundationOperateAction: ?FoundationOperateActionCtxPb,
+        TargetGearActionByHitTypeAction: ?TargetGearActionByHitTypeCtxPb,
+        LongPressInteractActionCtxPb: ?LongPressInteractActionCtxPb,
     } = null,
     CtxType: ?GameCtxType = null,
 };
@@ -6426,6 +6531,11 @@ pub const TargetGearHitPartCtxPb = struct {
     EntityCtx: ?EntityCtxPb = null,
     HitPartIndex: i32 = 0,
 };
+pub const TargetGearActionByHitTypeCtxPb = struct {
+    pub const default: @This() = .{};
+    EntityCtx: ?EntityCtxPb = null,
+    Index: i32 = 0,
+};
 pub const PlayFlowChildQuestNodeCtxPb = struct {
     pub const default: @This() = .{};
     BehaviorTreeCtx: ?BehaviorTreeCtxPb = null,
@@ -6538,6 +6648,23 @@ pub const RecallQuestDestroyActionCtxPb = struct {
     pub const default: @This() = .{};
     RecallQuestId: i32 = 0,
 };
+pub const CasketTriggerCtxPb = struct {
+    pub const default: @This() = .{};
+    EntityCtx: ?EntityCtxPb = null,
+    Index: i32 = 0,
+    IsEnter: bool = false,
+};
+pub const FoundationOperateActionCtxPb = struct {
+    pub const default: @This() = .{};
+    EntityCtx: ?EntityCtxPb = null,
+    PlayerId: i32 = 0,
+    IsTakeOut: bool = false,
+};
+pub const LongPressInteractActionCtxPb = struct {
+    pub const default: @This() = .{};
+    EntityCtx: ?EntityCtxPb = null,
+    OptionIndex: i32 = 0,
+};
 pub const TeleportUpdateNotify = struct {
     pub const default: @This() = .{};
     Ids: std.ArrayList(i32) = .empty,
@@ -6595,6 +6722,7 @@ pub const TeleportReason = enum(i32) {
     StrongWindField = 25,
     FastReturn = 26,
     RoverRogueRoomInChaos = 27,
+    RecallInstMark = 28,
 };
 pub const TeleportNotify = struct {
     pub const default: @This() = .{};
@@ -6980,9 +7108,12 @@ pub const ActivityType = enum(i32) {
     NewbieCourseV2 = 110,
     NewbieMain = 111,
     RoverRogue = 112,
+    DangoBrawl = 113,
     QingXiaoPlayThePiano = 114,
     PurePreviewActivity = 115,
-    PureUIActivity = 200,
+    MatchThreeActivity = 116,
+    GiantSystemActivity = 118,
+    PureUiactivity = 200,
 };
 pub const ParkourActivityChallenge = struct {
     pub const default: @This() = .{};
@@ -7221,7 +7352,10 @@ pub const ActivityData = struct {
         NewPlayerSupportActivityV2Pb: ?NewPlayerSupportActivityV2Pb,
         ThroughTrainActivityData: ?ThroughTrainActivityData,
         RoverRogueActivityData: ?RoverRogueActivityData,
+        DangoBrawlActivityInfo: ?DangoBrawlActivityInfo,
         QingXiaoActivityInfo: ?QingXiaoActivityInfo,
+        MatchThreeActivityInfo: ?MatchThreeActivityInfo,
+        GiantActivityInfo: ?GiantActivityInfo,
     } = null,
     Id: i32 = 0,
     Type: ?ActivityType = null,
@@ -7509,6 +7643,7 @@ pub const ActivityInviteNewbie = struct {
     InviteCode: []const u8 = "",
     Score: i32 = 0,
     RedDot: bool = false,
+    AllRewardClaimed: bool = false,
 };
 pub const ActivityDangoMonopolyData = struct {
     pub const default: @This() = .{};
@@ -7742,6 +7877,12 @@ pub const BossPilingActivityInfo = struct {
     ConditionTasks: std.ArrayList(ConditionTask) = .empty,
     BossPilingLevelInfos: std.ArrayList(BossPilingLevelInfo) = .empty,
 };
+pub const GiantActivityInfo = struct {
+    pub const default: @This() = .{};
+    TotalStableValue: i32 = 0,
+    GotRewardIds: std.ArrayList(i32) = .empty,
+    ActiveIds: std.ArrayList(i32) = .empty,
+};
 pub const ChallengeState = enum(i32) {
     pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
     Running = 0,
@@ -7882,6 +8023,7 @@ pub const TimePointRewardData = struct {
     RewardTime: i64 = 0,
     Rewarded: bool = false,
     CanGetReward: bool = false,
+    Task: ?ConditionTask = null,
 };
 pub const TowerDefenseActivityInfo = struct {
     pub const default: @This() = .{};
@@ -9190,6 +9332,47 @@ pub const QingXiaoActivityInfo = struct {
     pub const default: @This() = .{};
     ConditionTasks: std.ArrayList(ConditionTask) = .empty,
 };
+pub const DangoBrawlActivityInfo = struct {
+    pub const default: @This() = .{};
+    ConditionTasks: std.ArrayList(ConditionTask) = .empty,
+    UnlockedRoleIds: std.ArrayList(i32) = .empty,
+    UnlockedItemIds: std.ArrayList(i32) = .empty,
+    ChallengeInfos: std.ArrayList(DangoBrawlChallengeInfo) = .empty,
+    SaveMatchBrief: ?DangoBrawlSaveMatchBrief = null,
+    RewardScoreIds: std.ArrayList(i32) = .empty,
+    LimitCoinCost: i32 = 0,
+};
+pub const DangoBrawlSaveMatchBrief = struct {
+    pub const default: @This() = .{};
+    ChallengeId: i32 = 0,
+    RoundNum: i32 = 0,
+    RoleId: i32 = 0,
+};
+pub const DangoBrawlChallengeState = enum(i32) {
+    pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
+    Locked = 0,
+    Unlocked = 1,
+    Passed = 2,
+};
+pub const DangoBrawlChallengeInfo = struct {
+    pub const default: @This() = .{};
+    ChallengeId: i32 = 0,
+    State: ?DangoBrawlChallengeState = null,
+    RetryCount: i32 = 0,
+};
+pub const MatchThreeActivityInfo = struct {
+    pub const default: @This() = .{};
+    MatchThreeLevelInfos: std.ArrayList(MatchThreeLevelInfo) = .empty,
+};
+pub const MatchThreeLevelInfo = struct {
+    pub const default: @This() = .{};
+    Hby: ?union(enum) {
+        Score: i32,
+    } = null,
+    Id: i32 = 0,
+    UnlockTime: i64 = 0,
+    FirstPass: bool = false,
+};
 pub const AdventreTask = struct {
     pub const default: @This() = .{};
     Id: i32 = 0,
@@ -9822,6 +10005,7 @@ pub const EClientStorageSystemIdType = enum(i32) {
     WheelTowerSeasonReview = 56,
     MotorSceneHadCheck = 57,
     RoleLangCustomFuncClicked = 58,
+    ActivityRecommend2 = 59,
 };
 pub const PlayerXboxBlockListRequest = struct {
     pub const default: @This() = .{};
@@ -10329,6 +10513,11 @@ pub const EntityComponentPb = struct {
         DollGrabShowcaseComponentPb: ?DollGrabShowcaseComponentPb,
         GpuEntityComponentPb: ?GpuEntityComponentPb,
         RoverRoguePortalComponentPb: ?RoverRoguePortalComponentPb,
+        DarkTideComponentPb: ?DarkTideComponentPb,
+        ElementalHolderComponentPb: ?ElementalHolderComponentPb,
+        EntityFoundationComponentPb: ?EntityFoundationComponentPb,
+        SquadPropComponentPb: ?SquadPropComponentPb,
+        ConnectorComponentPb: ?ConnectorComponentPb,
     } = null,
 };
 pub const RoverRoguePortalComponentPb = struct {
@@ -10666,6 +10855,7 @@ pub const LivingStatus = enum(i32) {
     Alive = 0,
     Dead = 1,
     Init = 2,
+    Dying = 3,
 };
 pub const EntityState = enum(i32) {
     pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
@@ -11466,6 +11656,39 @@ pub const FurnitureComponentPb = struct {
 pub const PinballKSCRolePbData = struct {
     pub const default: @This() = .{};
 };
+pub const DarkTideComponentPb = struct {
+    pub const default: @This() = .{};
+    DarkTideDropEntityComponentPb: ?DarkTideDropEntityComponentPb = null,
+    DarkTideItemMarkPb: ?DarkTideItemMarkPb = null,
+    SelectVisionIndex: i32 = 0,
+};
+pub const ElementalHolderComponentPb = struct {
+    pub const default: @This() = .{};
+    Enable: bool = false,
+};
+pub const EntityFoundationComponentPb = struct {
+    pub const default: @This() = .{};
+    egM: ?union(enum) {
+        FoundationCoreInfo: ?FoundationCoreInfo,
+    } = null,
+};
+pub const FoundationCoreInfo = struct {
+    pub const default: @This() = .{};
+    SourceEntityId: i32 = 0,
+    ElementalBoxId: i32 = 0,
+    State: []const u8 = "",
+    ElementalType: []const u8 = "",
+    Priority: i32 = 0,
+    EntityId: i32 = 0,
+};
+pub const SquadPropComponentPb = struct {
+    pub const default: @This() = .{};
+    Attributes: std.ArrayList(GameplayAttributeData) = .empty,
+};
+pub const ConnectorComponentPb = struct {
+    pub const default: @This() = .{};
+    HasInitiatedConnect: bool = false,
+};
 pub const VisionSkillInformation = struct {
     pub const default: @This() = .{};
     SkillId: i32 = 0,
@@ -12170,7 +12393,7 @@ pub const MotorOutlookCreatePresetRequest = struct {
 };
 pub const MotorOutlookCreatePresetResponse = struct {
     pub const default: @This() = .{};
-    ErrorCode: i32 = 0,
+    ErrorCode: ?ErrorCode = null,
     MotorOutlookPreset: ?MotorOutlookPlayerPresetPb = null,
 };
 pub const MotorOutlookDeletePresetRequest = struct {
@@ -12179,7 +12402,7 @@ pub const MotorOutlookDeletePresetRequest = struct {
 };
 pub const MotorOutlookDeletePresetResponse = struct {
     pub const default: @This() = .{};
-    ErrorCode: i32 = 0,
+    ErrorCode: ?ErrorCode = null,
     MotorOutlookPreset: ?MotorOutlookPlayerPresetPb = null,
 };
 pub const MotorOutlookEditPresetRequest = struct {
@@ -12188,7 +12411,7 @@ pub const MotorOutlookEditPresetRequest = struct {
 };
 pub const MotorOutlookEditPresetResponse = struct {
     pub const default: @This() = .{};
-    ErrorCode: i32 = 0,
+    ErrorCode: ?ErrorCode = null,
     MotorOutlookPreset: ?MotorOutlookPlayerPresetPb = null,
 };
 pub const MotorOutlookEquippedChangeNotify = struct {
@@ -12250,6 +12473,79 @@ pub const MotorDiyPb = struct {
     MotorOutlookPreset: ?MotorOutlookPlayerPresetPb = null,
     LatestMotorSkinSuit: std.ArrayList(MotorDiyEquippedPb) = .empty,
     SceneInUse: i32 = 0,
+};
+pub const SwitchDarkTideWeaponPush = struct {
+    pub const default: @This() = .{};
+    NewSlotIndex: i32 = 0,
+};
+pub const SwitchDarkTideWeaponSlotNotify = struct {
+    pub const default: @This() = .{};
+    PlayerId: i32 = 0,
+    CurrentWeaponSlotIndex: i32 = 0,
+};
+pub const DarkTideDropEntityComponentPb = struct {
+    pub const default: @This() = .{};
+    uyv: ?union(enum) {
+        Weapon: ?DarkTideDropWeaponEntityCtx,
+        Item: ?DarkTideDropItemEntityCtx,
+    } = null,
+    ConfigId: i32 = 0,
+};
+pub const DarkTideDropItemEntityCtx = struct {
+    pub const default: @This() = .{};
+};
+pub const DarkTideDropWeaponEntityCtx = struct {
+    pub const default: @This() = .{};
+    Level: i32 = 0,
+    Quality: i32 = 0,
+    Affix: std.ArrayList(i32) = .empty,
+};
+pub const DarkTideItemMarkPb = struct {
+    pub const default: @This() = .{};
+    MarkPlayerId: i32 = 0,
+};
+pub const FormationAttr = struct {
+    pub const default: @This() = .{};
+    AttrId: i32 = 0,
+    Ratio: i32 = 0,
+    BaseMaxValue: i32 = 0,
+    MaxValue: i32 = 0,
+    CurrentValue: i32 = 0,
+};
+pub const FormationAttrNotify = struct {
+    pub const default: @This() = .{};
+    Duration: i64 = 0,
+    FormationAttrs: std.ArrayList(FormationAttr) = .empty,
+};
+pub const FormationAttrRequest = struct {
+    pub const default: @This() = .{};
+    Duration: i64 = 0,
+    FormationAttrs: std.ArrayList(FormationAttr) = .empty,
+};
+pub const FormationAttrResponse = struct {
+    pub const default: @This() = .{};
+    ErrorCode: ?ErrorCode = null,
+};
+pub const RecoverPropFromServer = struct {
+    pub const default: @This() = .{};
+    AttrId: i32 = 0,
+    Ratio: i32 = 0,
+    MaxValue: i32 = 0,
+    ValueIncrement: i32 = 0,
+};
+pub const RecoverPropChangedNotify = struct {
+    pub const default: @This() = .{};
+    Attributes: std.ArrayList(RecoverPropFromServer) = .empty,
+    Duration: i64 = 0,
+};
+pub const FragileChangeRequest = struct {
+    pub const default: @This() = .{};
+    EntityId: i64 = 0,
+    Flag: bool = false,
+};
+pub const FragileChangeResponse = struct {
+    pub const default: @This() = .{};
+    ErrorCode: ?ErrorCode = null,
 };
 pub const BirthRoleSelect = struct {
     pub const default: @This() = .{};
@@ -12512,6 +12808,8 @@ pub const CombatPushData = struct {
         QuickHackRamVerifyPush: ?QuickHackRamVerifyPush,
         QuickHackOpenPush: ?QuickHackOpenPush,
         DodgeInfoPush: ?DodgeInfoPush,
+        SwitchDarkTideWeaponPush: ?SwitchDarkTideWeaponPush,
+        RoleTrialSceneRollbackPush: ?RoleTrialSceneRollbackPush,
     } = null,
     CombatCommon: ?CombatCommon = null,
 };
@@ -12589,6 +12887,10 @@ pub const CombatNotifyData = struct {
         MotorSummonAndRideNotify: ?MotorSummonAndRideNotify,
         BulletPatternNotify: ?BulletPatternNotify,
         FsmMontageDurationNotify: ?FsmMontageDurationNotify,
+        SwitchDarkTideWeaponSlotNotify: ?SwitchDarkTideWeaponSlotNotify,
+        CombatValNotify: ?CombatValNotify,
+        CombatValDecayBeginNotify: ?CombatValDecayBeginNotify,
+        SquadPropChangedNotify: ?SquadPropChangedNotify,
         CombatDataMaxNotify: ?CombatDataMaxNotify,
     } = null,
     CombatCommon: ?CombatCommon = null,
@@ -12664,6 +12966,7 @@ pub const CombatRequestData = struct {
         CharacterDetachRequest: ?CharacterDetachRequest,
         ClientCurrentRoleReportRequest: ?ClientCurrentRoleReportRequest,
         GaSwitchCommonEnemyProCampRequest: ?GaSwitchCommonEnemyProCampRequest,
+        ChangeSummonEntityStateRequest: ?ChangeSummonEntityStateRequest,
         CombatMaxCaseMessageRequest: ?CombatMaxCaseMessageRequest,
     } = null,
     CombatCommon: ?CombatCommon = null,
@@ -12737,6 +13040,7 @@ pub const CombatResponseData = struct {
         CharacterDetachResponse: ?CharacterDetachResponse,
         ClientCurrentRoleReportResponse: ?ClientCurrentRoleReportResponse,
         GaSwitchCommonEnemyProCampResponse: ?GaSwitchCommonEnemyProCampResponse,
+        ChangeSummonEntityStateResponse: ?ChangeSummonEntityStateResponse,
         CombatDataMaxResponse: ?CombatDataMaxResponse,
     } = null,
     CombatCommon: ?CombatCommon = null,
@@ -14101,48 +14405,17 @@ pub const DodgeInfoPush = struct {
     BulletOwnerId: i64 = 0,
     BulletId: i64 = 0,
 };
-pub const FormationAttr = struct {
+pub const ChangeSummonEntityStateRequest = struct {
     pub const default: @This() = .{};
-    AttrId: i32 = 0,
-    Ratio: i32 = 0,
-    BaseMaxValue: i32 = 0,
-    MaxValue: i32 = 0,
-    CurrentValue: i32 = 0,
+    SummonEntityId: i64 = 0,
+    TagId: i32 = 0,
 };
-pub const FormationAttrNotify = struct {
-    pub const default: @This() = .{};
-    Duration: i64 = 0,
-    FormationAttrs: std.ArrayList(FormationAttr) = .empty,
-};
-pub const FormationAttrRequest = struct {
-    pub const default: @This() = .{};
-    Duration: i64 = 0,
-    FormationAttrs: std.ArrayList(FormationAttr) = .empty,
-};
-pub const FormationAttrResponse = struct {
+pub const ChangeSummonEntityStateResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
 };
-pub const RecoverPropFromServer = struct {
+pub const RoleTrialSceneRollbackPush = struct {
     pub const default: @This() = .{};
-    AttrId: i32 = 0,
-    Ratio: i32 = 0,
-    MaxValue: i32 = 0,
-    ValueIncrement: i32 = 0,
-};
-pub const RecoverPropChangedNotify = struct {
-    pub const default: @This() = .{};
-    Attributes: std.ArrayList(RecoverPropFromServer) = .empty,
-    Duration: i64 = 0,
-};
-pub const FragileChangeRequest = struct {
-    pub const default: @This() = .{};
-    EntityId: i64 = 0,
-    Flag: bool = false,
-};
-pub const FragileChangeResponse = struct {
-    pub const default: @This() = .{};
-    ErrorCode: ?ErrorCode = null,
 };
 pub const DamageRecordEntity = struct {
     pub const default: @This() = .{};
@@ -14299,6 +14572,7 @@ pub const FightFormationNotifyInfo = struct {
     CurRole: i32 = 0,
     RoleInfos: std.ArrayList(FormationRoleInfo) = .empty,
     IsCurrent: bool = false,
+    Name: []const u8 = "",
 };
 pub const FightFormation = struct {
     pub const default: @This() = .{};
@@ -14306,6 +14580,7 @@ pub const FightFormation = struct {
     CurRole: i32 = 0,
     RoleIds: std.ArrayList(i32) = .empty,
     IsCurrent: bool = false,
+    Name: []const u8 = "",
 };
 pub const SwitchRoleRequest = struct {
     pub const default: @This() = .{};
@@ -14367,6 +14642,26 @@ pub const ClientCurrentRoleReportResponse = struct {
     PlayerId: i32 = 0,
     CurrentEntityId: i64 = 0,
     ErrorCode: ?ErrorCode = null,
+};
+pub const CombatValType = enum(i32) {
+    pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
+    CvtNone = 0,
+    CvtVirtualHp = 1,
+};
+pub const CombatValNotify = struct {
+    pub const default: @This() = .{};
+    Type: ?CombatValType = null,
+    Value: i32 = 0,
+};
+pub const CombatValDecayBeginNotify = struct {
+    pub const default: @This() = .{};
+    Type: ?CombatValType = null,
+    Value: i32 = 0,
+    DecayRemain: i32 = 0,
+};
+pub const SquadPropChangedNotify = struct {
+    pub const default: @This() = .{};
+    Attributes: std.ArrayList(GameplayAttributeData) = .empty,
 };
 pub const ControlType = enum(i32) {
     pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
@@ -14803,6 +15098,7 @@ pub const FlowEndRequest = struct {
     FlowIncId: i64 = 0,
     IsSkip: bool = false,
     OptionInfos: std.ArrayList(MapEntry(i32, FlowOptionInfoList)) = .empty,
+    ClientError: bool = false,
 };
 pub const FlowOptionInfoList = struct {
     pub const default: @This() = .{};
@@ -16254,6 +16550,17 @@ pub const PhantomConsumeItem = struct {
     Count: i32 = 0,
     ItemId: i32 = 0,
 };
+pub const PhantomStackSplitInfo = struct {
+    pub const default: @This() = .{};
+    OperateItem: ?PhantomItem = null,
+    OperateBeforeCount: i32 = 0,
+    RemainderItem: ?PhantomItem = null,
+};
+pub const PhantomStackMergeInfo = struct {
+    pub const default: @This() = .{};
+    MergedIncrId: i32 = 0,
+    RepresentativeItem: ?PhantomItem = null,
+};
 pub const PhantomLevelUpRequest = struct {
     pub const default: @This() = .{};
     IncId: i32 = 0,
@@ -16265,6 +16572,7 @@ pub const PhantomLevelUpResponse = struct {
     ErrorCode: ?ErrorCode = null,
     UpdateInfo: ?PhantomItem = null,
     ItemMap: std.ArrayList(MapEntry(i32, i32)) = .empty,
+    StackSplitInfo: ?PhantomStackSplitInfo = null,
 };
 pub const PhantomPutOnNotify = struct {
     pub const default: @This() = .{};
@@ -16280,6 +16588,8 @@ pub const PhantomPutOnResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
     EquipInfoList: std.ArrayList(RolePhantomEquipInfo) = .empty,
+    StackSplitInfos: std.ArrayList(PhantomStackSplitInfo) = .empty,
+    StackMergeInfos: std.ArrayList(PhantomStackMergeInfo) = .empty,
 };
 pub const PhantomAutoPutRequest = struct {
     pub const default: @This() = .{};
@@ -16290,6 +16600,8 @@ pub const PhantomAutoPutResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
     EquipInfoList: std.ArrayList(RolePhantomEquipInfo) = .empty,
+    StackSplitInfos: std.ArrayList(PhantomStackSplitInfo) = .empty,
+    StackMergeInfos: std.ArrayList(PhantomStackMergeInfo) = .empty,
 };
 pub const PhantomItemUpdateNotify = struct {
     pub const default: @This() = .{};
@@ -16366,6 +16678,8 @@ pub const PhantomPolishResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
     UpdateInfo: ?PhantomItem = null,
+    StackSplitInfo: ?PhantomStackSplitInfo = null,
+    StackMergeInfos: ?PhantomStackMergeInfo = null,
 };
 pub const PhantomSettingType = enum(i32) {
     pub const default: @This() = @field(@This(), std.meta.fieldNames(@This())[0]);
@@ -16440,6 +16754,8 @@ pub const PhantomBatchPolishResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
     UpdateInfos: std.ArrayList(PhantomItem) = .empty,
+    StackSplitInfos: std.ArrayList(PhantomStackSplitInfo) = .empty,
+    StackMergeInfos: std.ArrayList(PhantomStackMergeInfo) = .empty,
 };
 pub const PhantomVicePolishRequest = struct {
     pub const default: @This() = .{};
@@ -16521,6 +16837,8 @@ pub const ApplyVisionGroupResponse = struct {
     pub const default: @This() = .{};
     ErrorCode: ?ErrorCode = null,
     EquipInfoList: std.ArrayList(RolePhantomEquipInfo) = .empty,
+    StackSplitInfos: std.ArrayList(PhantomStackSplitInfo) = .empty,
+    StackMergeInfos: std.ArrayList(PhantomStackMergeInfo) = .empty,
 };
 pub const GetMusicInfoRequest = struct {
     pub const default: @This() = .{};
@@ -16530,7 +16848,6 @@ pub const GetMusicInfoResponse = struct {
     CurMusicId: i32 = 0,
     ErrorCode: ?ErrorCode = null,
     AlbumTimeInfos: std.ArrayList(PhonographAlbumTimeInfo) = .empty,
-    TotalMusicIds: std.ArrayList(i32) = .empty,
     CollectMusicIds: std.ArrayList(i32) = .empty,
 };
 pub const FavoriteMusicMotorCycleUpdateRequest = struct {
@@ -16547,7 +16864,6 @@ pub const PhonographAlbumTimeInfo = struct {
     BeginTime: i64 = 0,
     EndTime: i64 = 0,
     MusicIds: std.ArrayList(i32) = .empty,
-    CollectMusicIds: std.ArrayList(i32) = .empty,
 };
 pub const FragmentMemoryData = struct {
     pub const default: @This() = .{};
@@ -17113,6 +17429,10 @@ pub const AllMsgResponse = struct {
     ChatBgId: i32 = 0,
     ErrCode: ?ErrorCode = null,
     PartnerChange: std.ArrayList(i32) = .empty,
+    ChatThemeId: i32 = 0,
+    ChatThemeIds: std.ArrayList(i32) = .empty,
+    ChatCharmId: i32 = 0,
+    ChatCharmIds: std.ArrayList(i32) = .empty,
 };
 pub const BattleFormation = struct {
     pub const default: @This() = .{};
@@ -17284,7 +17604,7 @@ pub const WeeklyFrameworkInfoRequest = struct {
 };
 pub const WeeklyFrameworkInfoResponse = struct {
     pub const default: @This() = .{};
-    ErrorCode: i32 = 0,
+    ErrorCode: ?ErrorCode = null,
     FrameworkInfo: ?WeeklyFrameworkInfo = null,
 };
 pub const WeeklyFrameworkInfo = struct {

@@ -41,7 +41,8 @@ pub fn onGetMusicInfoRequest(
 
     txn.respond(.{
         .ErrorCode = .Success,
-        .TotalMusicIds = music_ids,
+        // TODO: fix this later
+        // .TotalMusicIds = music_ids,
         .CollectMusicIds = music_ids,
     });
 }

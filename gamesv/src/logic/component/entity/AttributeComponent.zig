@@ -30,7 +30,7 @@ pub fn toProto(comp: Component, alloc: mem.Alloc) !pb.AttributeComponentPb {
         try comp_pb.AttrData.append(alloc.arena, .{
             .AttributeType = @field(pb.EAttributeType, field.name),
             .CurrentValue = comp.attributes[field.value].base,
-            .CurrentValue2 = comp.attributes[field.value].base,
+            .WhiteValue = comp.attributes[field.value].base,
             .ValueIncrement = comp.attributes[field.value].increment,
         });
     }

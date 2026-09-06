@@ -42,13 +42,13 @@ pub const AddCountItemInfo = struct {
     pub const IncrId_field_number: u32 = 3;
 };
 pub const ItemLockRequest = struct {
-    pub const msg_id: u16 = 28400;
-    pub const ItemId_field_number: u32 = 5;
-    pub const IncrId_field_number: u32 = 1;
+    pub const msg_id: u16 = 25683;
+    pub const ItemId_field_number: u32 = 11;
+    pub const IncrId_field_number: u32 = 15;
 };
 pub const ItemLockResponse = struct {
-    pub const msg_id: u16 = 24035;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 18915;
+    pub const ErrorCode_field_number: u32 = 6;
 };
 pub const RewardItemInfo = struct {
     pub const ShowPlanId_field_number: u32 = 1;
@@ -57,53 +57,53 @@ pub const RewardItemInfo = struct {
     pub const IncrId_field_number: u32 = 4;
 };
 pub const ItemRewardNotify = struct {
-    pub const msg_id: u16 = 26719;
-    pub const DropId_field_number: u32 = 11;
-    pub const Reason_field_number: u32 = 10;
-    pub const Magnification_field_number: u32 = 6;
-    pub const DropFrom_field_number: u32 = 1;
-    pub const RewardItems_field_number: u32 = 7;
+    pub const msg_id: u16 = 21938;
+    pub const DropId_field_number: u32 = 14;
+    pub const Reason_field_number: u32 = 11;
+    pub const Magnification_field_number: u32 = 5;
+    pub const DropFrom_field_number: u32 = 12;
+    pub const RewardItems_field_number: u32 = 9;
 };
 pub const RewardItemInfoList = struct {
     pub const ItemList_field_number: u32 = 1;
 };
 pub const NormalItemRequest = struct {
-    pub const msg_id: u16 = 29216;
+    pub const msg_id: u16 = 22983;
 };
 pub const NormalItemResponse = struct {
-    pub const msg_id: u16 = 19801;
-    pub const NormalItemList_field_number: u32 = 14;
+    pub const msg_id: u16 = 22445;
+    pub const NormalItemList_field_number: u32 = 3;
 };
 pub const NormalItemUpdateNotify = struct {
-    pub const msg_id: u16 = 24526;
-    pub const NormalItemList_field_number: u32 = 8;
-    pub const NoTips_field_number: u32 = 1;
+    pub const msg_id: u16 = 20661;
+    pub const NormalItemList_field_number: u32 = 4;
+    pub const NoTips_field_number: u32 = 11;
 };
 pub const NormalItemAddNotify = struct {
-    pub const msg_id: u16 = 25940;
-    pub const NormalItemList_field_number: u32 = 12;
-    pub const NoTips_field_number: u32 = 10;
-    pub const Reason_field_number: u32 = 3;
+    pub const msg_id: u16 = 15755;
+    pub const NormalItemList_field_number: u32 = 9;
+    pub const NoTips_field_number: u32 = 15;
+    pub const Reason_field_number: u32 = 6;
 };
 pub const WeaponItemRequest = struct {
-    pub const msg_id: u16 = 22918;
+    pub const msg_id: u16 = 25468;
 };
 pub const WeaponItemResponse = struct {
-    pub const msg_id: u16 = 20850;
-    pub const WeaponItemList_field_number: u32 = 8;
+    pub const msg_id: u16 = 27089;
+    pub const WeaponItemList_field_number: u32 = 6;
 };
 pub const WeaponItemAddNotify = struct {
-    pub const msg_id: u16 = 23989;
-    pub const WeaponItemList_field_number: u32 = 6;
-    pub const AddFromRole_field_number: u32 = 7;
-    pub const Reason_field_number: u32 = 15;
+    pub const msg_id: u16 = 24339;
+    pub const WeaponItemList_field_number: u32 = 11;
+    pub const AddFromRole_field_number: u32 = 15;
+    pub const Reason_field_number: u32 = 2;
 };
 pub const WeaponItemRemoveNotify = struct {
-    pub const msg_id: u16 = 29848;
-    pub const WeaponItemIncrIdList_field_number: u32 = 7;
+    pub const msg_id: u16 = 16873;
+    pub const WeaponItemIncrIdList_field_number: u32 = 14;
 };
 pub const PhantomItemRequest = struct {
-    pub const msg_id: u16 = 29826;
+    pub const msg_id: u16 = 24659;
 };
 pub const RolePhantomEquipInfo = struct {
     pub const RoleId_field_number: u32 = 1;
@@ -115,27 +115,27 @@ pub const RolePhantomPropInfo = struct {
     pub const AddProp_field_number: u32 = 3;
 };
 pub const PhantomItemResponse = struct {
-    pub const msg_id: u16 = 28177;
-    pub const PhantomItemList_field_number: u32 = 13;
-    pub const EquipInfoList_field_number: u32 = 15;
-    pub const PropInfo_field_number: u32 = 9;
-    pub const MaxCost_field_number: u32 = 3;
-    pub const PhantomSkinList_field_number: u32 = 6;
-    pub const DirectRefineWeekTimes_field_number: u32 = 5;
+    pub const msg_id: u16 = 26275;
+    pub const PhantomItemList_field_number: u32 = 3;
+    pub const EquipInfoList_field_number: u32 = 8;
+    pub const PropInfo_field_number: u32 = 5;
+    pub const MaxCost_field_number: u32 = 2;
+    pub const PhantomSkinList_field_number: u32 = 15;
+    pub const DirectRefineWeekTimes_field_number: u32 = 1;
 };
 pub const PhantomItemAddNotify = struct {
-    pub const msg_id: u16 = 21758;
-    pub const PhantomItemList_field_number: u32 = 7;
-    pub const Reason_field_number: u32 = 4;
+    pub const msg_id: u16 = 17848;
+    pub const PhantomItemList_field_number: u32 = 3;
+    pub const Reason_field_number: u32 = 13;
 };
 pub const PhantomItemRemoveNotify = struct {
-    pub const msg_id: u16 = 24063;
-    pub const PhantomItemIncrIdList_field_number: u32 = 1;
+    pub const msg_id: u16 = 29775;
+    pub const PhantomItemIncrIdList_field_number: u32 = 13;
 };
 pub const ItemFuncValueUpdateNotify = struct {
-    pub const msg_id: u16 = 20219;
-    pub const IncrId_field_number: u32 = 8;
-    pub const FuncValue_field_number: u32 = 12;
+    pub const msg_id: u16 = 23784;
+    pub const IncrId_field_number: u32 = 1;
+    pub const FuncValue_field_number: u32 = 14;
 };
 pub const WeaponItem = struct {
     pub const Id_field_number: u32 = 1;
@@ -159,6 +159,8 @@ pub const PhantomItem = struct {
     pub const SkinId_field_number: u32 = 9;
     pub const UnAckSubProp_field_number: u32 = 10;
     pub const LockPropIndex_field_number: u32 = 11;
+    pub const StackCount_field_number: u32 = 12;
+    pub const AddTime_field_number: u32 = 13;
 };
 pub const NormalItem = struct {
     pub const Id_field_number: u32 = 1;
@@ -170,11 +172,11 @@ pub const PhantomPropInfo = struct {
     pub const Value_field_number: u32 = 2;
 };
 pub const ItemPkgOpenNotify = struct {
-    pub const msg_id: u16 = 23295;
-    pub const OpenPkg_field_number: u32 = 13;
+    pub const msg_id: u16 = 29428;
+    pub const OpenPkg_field_number: u32 = 10;
 };
 pub const ValidTimeItemRequest = struct {
-    pub const msg_id: u16 = 27750;
+    pub const msg_id: u16 = 16123;
 };
 pub const ValidTimeItem = struct {
     pub const Id_field_number: u32 = 1;
@@ -183,8 +185,8 @@ pub const ValidTimeItem = struct {
     pub const ExpireTime_field_number: u32 = 4;
 };
 pub const ValidTimeItemResponse = struct {
-    pub const msg_id: u16 = 27294;
-    pub const ItemList_field_number: u32 = 12;
+    pub const msg_id: u16 = 20447;
+    pub const ItemList_field_number: u32 = 14;
 };
 pub const RobotRoleInfo = struct {
     pub const RoleId_field_number: u32 = 1;
@@ -193,25 +195,25 @@ pub const RobotRoleInfo = struct {
     pub const RoleEquipmentPropData_field_number: u32 = 4;
 };
 pub const RobotRolePropRequest = struct {
-    pub const msg_id: u16 = 23048;
-    pub const RoleIds_field_number: u32 = 14;
+    pub const msg_id: u16 = 22020;
+    pub const RoleIds_field_number: u32 = 13;
 };
 pub const RobotRolePropResponse = struct {
-    pub const msg_id: u16 = 16853;
-    pub const Error_field_number: u32 = 6;
-    pub const RobotRoleInfo_field_number: u32 = 5;
+    pub const msg_id: u16 = 19787;
+    pub const Error_field_number: u32 = 11;
+    pub const RobotRoleInfo_field_number: u32 = 2;
 };
 pub const ItemDeprecateRequest = struct {
-    pub const msg_id: u16 = 25713;
-    pub const ItemId_field_number: u32 = 4;
-    pub const IncrId_field_number: u32 = 12;
+    pub const msg_id: u16 = 23288;
+    pub const ItemId_field_number: u32 = 10;
+    pub const IncrId_field_number: u32 = 7;
 };
 pub const ItemDeprecateResponse = struct {
-    pub const msg_id: u16 = 25490;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 29774;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const AccessPathTimeServerConfigRequest = struct {
-    pub const msg_id: u16 = 20347;
+    pub const msg_id: u16 = 16883;
 };
 pub const AccessPathTimeServerConfig = struct {
     pub const Id_field_number: u32 = 1;
@@ -219,57 +221,57 @@ pub const AccessPathTimeServerConfig = struct {
     pub const EndTime_field_number: u32 = 3;
 };
 pub const AccessPathTimeServerConfigResponse = struct {
-    pub const msg_id: u16 = 22384;
-    pub const AccessPathTimeServerConfig_field_number: u32 = 13;
+    pub const msg_id: u16 = 24933;
+    pub const AccessPathTimeServerConfig_field_number: u32 = 5;
 };
 pub const DErrorResult = struct {
     pub const ErrorCode_field_number: u32 = 1;
     pub const ErrorParams_field_number: u32 = 2;
 };
 pub const PbGetRoleListNotify = struct {
-    pub const msg_id: u16 = 29520;
-    pub const RoleList_field_number: u32 = 5;
+    pub const msg_id: u16 = 18368;
+    pub const RoleList_field_number: u32 = 7;
 };
 pub const PbUpLevelRoleRequest = struct {
-    pub const msg_id: u16 = 17427;
-    pub const RoleId_field_number: u32 = 1;
-    pub const ItemList_field_number: u32 = 7;
+    pub const msg_id: u16 = 15445;
+    pub const RoleId_field_number: u32 = 6;
+    pub const ItemList_field_number: u32 = 9;
 };
 pub const PbUpLevelRoleResponse = struct {
-    pub const msg_id: u16 = 28924;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const RoleId_field_number: u32 = 8;
-    pub const Exp_field_number: u32 = 6;
-    pub const Level_field_number: u32 = 7;
-    pub const ItemMap_field_number: u32 = 14;
+    pub const msg_id: u16 = 17222;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const RoleId_field_number: u32 = 4;
+    pub const Exp_field_number: u32 = 15;
+    pub const Level_field_number: u32 = 14;
+    pub const ItemMap_field_number: u32 = 1;
 };
 pub const PbOverRoleRequest = struct {
-    pub const msg_id: u16 = 23087;
-    pub const RoleId_field_number: u32 = 5;
+    pub const msg_id: u16 = 18138;
+    pub const RoleId_field_number: u32 = 11;
 };
 pub const PbOverRoleResponse = struct {
-    pub const msg_id: u16 = 19514;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const RoleId_field_number: u32 = 12;
-    pub const Breakthrough_field_number: u32 = 15;
+    pub const msg_id: u16 = 29016;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const RoleId_field_number: u32 = 5;
+    pub const Breakthrough_field_number: u32 = 2;
 };
 pub const PbUpLevelSkillRequest = struct {
-    pub const msg_id: u16 = 23879;
-    pub const RoleId_field_number: u32 = 9;
-    pub const SkillId_field_number: u32 = 8;
-    pub const UseBox_field_number: u32 = 15;
+    pub const msg_id: u16 = 22382;
+    pub const RoleId_field_number: u32 = 2;
+    pub const SkillId_field_number: u32 = 14;
+    pub const UseBox_field_number: u32 = 9;
 };
 pub const PbUpLevelSkillResponse = struct {
-    pub const msg_id: u16 = 29794;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const RoleId_field_number: u32 = 2;
-    pub const SkillInfo_field_number: u32 = 1;
+    pub const msg_id: u16 = 17988;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const RoleId_field_number: u32 = 1;
+    pub const SkillInfo_field_number: u32 = 3;
 };
 pub const PbRolePropsNotify = struct {
-    pub const msg_id: u16 = 29840;
-    pub const RoleId_field_number: u32 = 5;
-    pub const BaseProp_field_number: u32 = 3;
-    pub const AddProp_field_number: u32 = 2;
+    pub const msg_id: u16 = 28533;
+    pub const RoleId_field_number: u32 = 8;
+    pub const BaseProp_field_number: u32 = 14;
+    pub const AddProp_field_number: u32 = 1;
 };
 pub const ArrayIntInt = struct {
     pub const Key_field_number: u32 = 1;
@@ -311,9 +313,9 @@ pub const RoleInfo = struct {
     pub const EnableSelfBgm_field_number: u32 = 22;
 };
 pub const PbRoleSkillLevelNotify = struct {
-    pub const msg_id: u16 = 29836;
-    pub const RoleId_field_number: u32 = 1;
-    pub const SkillInfo_field_number: u32 = 8;
+    pub const msg_id: u16 = 17396;
+    pub const RoleId_field_number: u32 = 5;
+    pub const SkillInfo_field_number: u32 = 10;
 };
 pub const SkillEffect = struct {
     pub const Level_field_number: u32 = 1;
@@ -324,153 +326,153 @@ pub const OneSkillEffect = struct {
     pub const Desc_field_number: u32 = 3;
 };
 pub const RoleLevelUpViewRequest = struct {
-    pub const msg_id: u16 = 24495;
-    pub const RoleId_field_number: u32 = 14;
-    pub const MaxItemId_field_number: u32 = 1;
-    pub const ItemList_field_number: u32 = 12;
+    pub const msg_id: u16 = 19849;
+    pub const RoleId_field_number: u32 = 1;
+    pub const MaxItemId_field_number: u32 = 7;
+    pub const ItemList_field_number: u32 = 2;
 };
 pub const RoleLevelUpViewResponse = struct {
-    pub const msg_id: u16 = 24347;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const Level_field_number: u32 = 10;
-    pub const LevelExpInfo_field_number: u32 = 9;
-    pub const Exp_field_number: u32 = 7;
-    pub const AddExp_field_number: u32 = 13;
-    pub const FinalProp_field_number: u32 = 15;
-    pub const CostList_field_number: u32 = 4;
-    pub const OverflowList_field_number: u32 = 8;
-    pub const ItemList_field_number: u32 = 14;
+    pub const msg_id: u16 = 15925;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const Level_field_number: u32 = 11;
+    pub const LevelExpInfo_field_number: u32 = 12;
+    pub const Exp_field_number: u32 = 1;
+    pub const AddExp_field_number: u32 = 5;
+    pub const FinalProp_field_number: u32 = 9;
+    pub const CostList_field_number: u32 = 15;
+    pub const OverflowList_field_number: u32 = 10;
+    pub const ItemList_field_number: u32 = 7;
 };
 pub const RoleBreakThroughViewRequest = struct {
-    pub const msg_id: u16 = 23195;
+    pub const msg_id: u16 = 25405;
     pub const RoleId_field_number: u32 = 8;
 };
 pub const RoleBreakThroughViewResponse = struct {
-    pub const msg_id: u16 = 15163;
-    pub const ErrorCode_field_number: u32 = 2;
-    pub const LevelLimit_field_number: u32 = 12;
-    pub const UnLockSkillId_field_number: u32 = 7;
-    pub const CostList_field_number: u32 = 14;
-    pub const RewardList_field_number: u32 = 3;
-    pub const FinalProp_field_number: u32 = 15;
-    pub const IsConditionFinish_field_number: u32 = 4;
+    pub const msg_id: u16 = 21102;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const LevelLimit_field_number: u32 = 4;
+    pub const UnLockSkillId_field_number: u32 = 11;
+    pub const CostList_field_number: u32 = 3;
+    pub const RewardList_field_number: u32 = 13;
+    pub const FinalProp_field_number: u32 = 9;
+    pub const IsConditionFinish_field_number: u32 = 7;
 };
 pub const RoleSkillLevelUpViewRequest = struct {
-    pub const msg_id: u16 = 27567;
-    pub const RoleId_field_number: u32 = 6;
-    pub const SkillId_field_number: u32 = 1;
+    pub const msg_id: u16 = 18841;
+    pub const RoleId_field_number: u32 = 12;
+    pub const SkillId_field_number: u32 = 8;
 };
 pub const RoleSkillLevelUpViewResponse = struct {
-    pub const msg_id: u16 = 29970;
-    pub const ErrorCode_field_number: u32 = 15;
-    pub const SkillEffectList_field_number: u32 = 4;
-    pub const CostList_field_number: u32 = 1;
+    pub const msg_id: u16 = 17683;
+    pub const ErrorCode_field_number: u32 = 14;
+    pub const SkillEffectList_field_number: u32 = 3;
+    pub const CostList_field_number: u32 = 12;
 };
 pub const RoleSkillViewRequest = struct {
-    pub const msg_id: u16 = 23092;
-    pub const RoleId_field_number: u32 = 3;
-    pub const SkillId_field_number: u32 = 15;
+    pub const msg_id: u16 = 26728;
+    pub const RoleId_field_number: u32 = 15;
+    pub const SkillId_field_number: u32 = 6;
 };
 pub const RoleSkillViewResponse = struct {
-    pub const msg_id: u16 = 22663;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const SkillEffectList_field_number: u32 = 4;
-    pub const PreSkillEffectList_field_number: u32 = 5;
-    pub const IsConditionFinish_field_number: u32 = 1;
+    pub const msg_id: u16 = 20300;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const SkillEffectList_field_number: u32 = 1;
+    pub const PreSkillEffectList_field_number: u32 = 6;
+    pub const IsConditionFinish_field_number: u32 = 15;
 };
 pub const RoleActivateSkillRequest = struct {
-    pub const msg_id: u16 = 24339;
-    pub const RoleId_field_number: u32 = 8;
-    pub const SkillNodeId_field_number: u32 = 10;
+    pub const msg_id: u16 = 20952;
+    pub const RoleId_field_number: u32 = 7;
+    pub const SkillNodeId_field_number: u32 = 9;
 };
 pub const RoleActivateSkillResponse = struct {
-    pub const msg_id: u16 = 26119;
+    pub const msg_id: u16 = 17555;
     pub const ErrorCode_field_number: u32 = 13;
-    pub const RoleId_field_number: u32 = 14;
-    pub const SkillInfo_field_number: u32 = 10;
+    pub const RoleId_field_number: u32 = 15;
+    pub const SkillInfo_field_number: u32 = 3;
 };
 pub const RoleSkillNodeNotify = struct {
-    pub const msg_id: u16 = 27849;
-    pub const RoleId_field_number: u32 = 9;
-    pub const SkillNodeState_field_number: u32 = 2;
+    pub const msg_id: u16 = 18129;
+    pub const RoleId_field_number: u32 = 13;
+    pub const SkillNodeState_field_number: u32 = 8;
 };
 pub const ResonantChainUnlockRequest = struct {
-    pub const msg_id: u16 = 18343;
-    pub const RoleId_field_number: u32 = 11;
+    pub const msg_id: u16 = 15098;
+    pub const RoleId_field_number: u32 = 9;
 };
 pub const ResonantChainUnlockResponse = struct {
-    pub const msg_id: u16 = 20812;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const RoleId_field_number: u32 = 7;
-    pub const ResonantChainGroupIndex_field_number: u32 = 13;
+    pub const msg_id: u16 = 29448;
+    pub const ErrorCode_field_number: u32 = 3;
+    pub const RoleId_field_number: u32 = 4;
+    pub const ResonantChainGroupIndex_field_number: u32 = 6;
 };
 pub const RoleSexChangeRequest = struct {
-    pub const msg_id: u16 = 25431;
-    pub const Sex_field_number: u32 = 7;
+    pub const msg_id: u16 = 24765;
+    pub const Sex_field_number: u32 = 3;
 };
 pub const RoleSexChangeResponse = struct {
-    pub const msg_id: u16 = 25854;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const Sex_field_number: u32 = 6;
+    pub const msg_id: u16 = 18787;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const Sex_field_number: u32 = 10;
 };
 pub const RoleElementChangeRequest = struct {
-    pub const msg_id: u16 = 16331;
-    pub const ElementType_field_number: u32 = 2;
+    pub const msg_id: u16 = 20709;
+    pub const ElementType_field_number: u32 = 13;
 };
 pub const RoleElementChangeResponse = struct {
-    pub const msg_id: u16 = 26044;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 17259;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const RoleChangeNotify = struct {
-    pub const msg_id: u16 = 22372;
-    pub const SourceRoleId_field_number: u32 = 1;
-    pub const RoleInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 28197;
+    pub const SourceRoleId_field_number: u32 = 12;
+    pub const RoleInfo_field_number: u32 = 10;
 };
 pub const RoleChangeUnlockNotify = struct {
-    pub const msg_id: u16 = 29988;
-    pub const UnlockRoleIds_field_number: u32 = 12;
-    pub const NextAllowChangeTime_field_number: u32 = 8;
+    pub const msg_id: u16 = 26358;
+    pub const UnlockRoleIds_field_number: u32 = 10;
+    pub const NextAllowChangeTime_field_number: u32 = 11;
 };
 pub const RoleSkinChangeRequest = struct {
-    pub const msg_id: u16 = 27771;
-    pub const RoleId_field_number: u32 = 9;
-    pub const SkinId_field_number: u32 = 13;
+    pub const msg_id: u16 = 25393;
+    pub const RoleId_field_number: u32 = 14;
+    pub const SkinId_field_number: u32 = 4;
     pub const IsWearWeaponSkin_field_number: u32 = 2;
 };
 pub const RoleSkinChangeResponse = struct {
-    pub const msg_id: u16 = 23402;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 23541;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const UnlockRoleSkinListRequest = struct {
-    pub const msg_id: u16 = 20733;
+    pub const msg_id: u16 = 23414;
 };
 pub const UnlockRoleSkinListResponse = struct {
-    pub const msg_id: u16 = 24815;
-    pub const RoleSkinList_field_number: u32 = 3;
+    pub const msg_id: u16 = 22316;
+    pub const RoleSkinList_field_number: u32 = 14;
 };
 pub const UnlockRoleSkinListNofity = struct {
-    pub const msg_id: u16 = 25673;
-    pub const RoleSkinList_field_number: u32 = 4;
+    pub const msg_id: u16 = 23089;
+    pub const RoleSkinList_field_number: u32 = 6;
 };
 pub const RoleOperateSelfBgmRequest = struct {
-    pub const msg_id: u16 = 20516;
-    pub const RoleId_field_number: u32 = 7;
-    pub const IsOpen_field_number: u32 = 6;
+    pub const msg_id: u16 = 24710;
+    pub const RoleId_field_number: u32 = 6;
+    pub const IsOpen_field_number: u32 = 14;
 };
 pub const RoleOperateSelfBgmResponse = struct {
-    pub const msg_id: u16 = 15784;
-    pub const ErrorCode_field_number: u32 = 14;
-    pub const RoleId_field_number: u32 = 1;
-    pub const IsOpen_field_number: u32 = 3;
+    pub const msg_id: u16 = 26577;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const RoleId_field_number: u32 = 14;
+    pub const IsOpen_field_number: u32 = 13;
 };
 pub const RoleDevelopConfigRequest = struct {
-    pub const msg_id: u16 = 26334;
+    pub const msg_id: u16 = 17421;
     aVersion: ?union(enum) {
     } = null,
-    pub const Version_field_number: u32 = 4;
+    pub const Version_field_number: u32 = 9;
 };
 pub const RoleDevelopConfigResponse = struct {
-    pub const msg_id: u16 = 19230;
+    pub const msg_id: u16 = 15651;
     pub const Configs_field_number: u32 = 12;
     pub const ErrorCode_field_number: u32 = 10;
 };
@@ -513,45 +515,45 @@ pub const SpecialGachaPair = struct {
     pub const GachaId_field_number: u32 = 2;
 };
 pub const RoleConfigInfoNotify = struct {
-    pub const msg_id: u16 = 22377;
-    pub const RoleConfigs_field_number: u32 = 1;
+    pub const msg_id: u16 = 18250;
+    pub const RoleConfigs_field_number: u32 = 7;
 };
 pub const RoleConfigInfo = struct {
     pub const RoleId_field_number: u32 = 1;
     pub const SkillBranch_field_number: u32 = 2;
 };
 pub const RoleSkillBranchModifyRequest = struct {
-    pub const msg_id: u16 = 23861;
-    pub const RoleId_field_number: u32 = 12;
-    pub const SkillBranch_field_number: u32 = 9;
+    pub const msg_id: u16 = 27456;
+    pub const RoleId_field_number: u32 = 4;
+    pub const SkillBranch_field_number: u32 = 5;
 };
 pub const RoleSkillBranchModifyResponse = struct {
-    pub const msg_id: u16 = 19854;
-    pub const ErrorCode_field_number: u32 = 10;
+    pub const msg_id: u16 = 17930;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const RoleConfigInfoUpdateNotify = struct {
-    pub const msg_id: u16 = 23877;
-    pub const RoleConfigs_field_number: u32 = 2;
+    pub const msg_id: u16 = 24298;
+    pub const RoleConfigs_field_number: u32 = 8;
 };
 pub const RoleSkillQuickLevelUpRequest = struct {
-    pub const msg_id: u16 = 25103;
-    pub const RoleId_field_number: u32 = 10;
-    pub const SkillId_field_number: u32 = 6;
-    pub const TargetLevel_field_number: u32 = 15;
-    pub const UseBox_field_number: u32 = 7;
+    pub const msg_id: u16 = 29779;
+    pub const RoleId_field_number: u32 = 15;
+    pub const SkillId_field_number: u32 = 9;
+    pub const TargetLevel_field_number: u32 = 1;
+    pub const UseBox_field_number: u32 = 2;
 };
 pub const RoleSkillQuickLevelUpResponse = struct {
-    pub const msg_id: u16 = 16282;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const RoleInfo_field_number: u32 = 4;
+    pub const msg_id: u16 = 18822;
+    pub const ErrorCode_field_number: u32 = 14;
+    pub const RoleInfo_field_number: u32 = 15;
 };
 pub const SecGetReportData2FlowRequest = struct {
-    pub const msg_id: u16 = 24945;
-    pub const ReportData_field_number: u32 = 11;
+    pub const msg_id: u16 = 27333;
+    pub const ReportData_field_number: u32 = 5;
 };
 pub const SecGetReportData2FlowResponse = struct {
-    pub const msg_id: u16 = 16138;
-    pub const Error_field_number: u32 = 14;
+    pub const msg_id: u16 = 27302;
+    pub const Error_field_number: u32 = 15;
 };
 pub const Vector = struct {
     pub const X_field_number: u32 = 1;
@@ -574,9 +576,9 @@ pub const GameplayAttributeData = struct {
 };
 pub const AttrData = struct {
     pub const AttributeType_field_number: u32 = 1;
-    pub const CurrentValue_field_number: u32 = 2;
+    pub const WhiteValue_field_number: u32 = 2;
     pub const ValueIncrement_field_number: u32 = 3;
-    pub const CurrentValue2_field_number: u32 = 4;
+    pub const CurrentValue_field_number: u32 = 4;
 };
 pub const GameplayTagData = struct {
     pub const Id_field_number: u32 = 1;
@@ -703,31 +705,31 @@ pub const AchievementGroupInfo = struct {
     pub const AchievementEntryList_field_number: u32 = 2;
 };
 pub const AchievementInfoRequest = struct {
-    pub const msg_id: u16 = 18849;
+    pub const msg_id: u16 = 23322;
 };
 pub const AchievementInfoResponse = struct {
-    pub const msg_id: u16 = 28221;
-    pub const AchievementGroupInfoList_field_number: u32 = 5;
-    pub const AchievementFinishedStar_field_number: u32 = 10;
-    pub const FinishedAchievementNum_field_number: u32 = 13;
+    pub const msg_id: u16 = 26649;
+    pub const AchievementGroupInfoList_field_number: u32 = 9;
+    pub const AchievementFinishedStar_field_number: u32 = 4;
+    pub const FinishedAchievementNum_field_number: u32 = 1;
 };
 pub const UpdateAchievementInfoRequest = struct {
-    pub const msg_id: u16 = 25344;
+    pub const msg_id: u16 = 29393;
 };
 pub const UpdateAchievementInfoResponse = struct {
-    pub const msg_id: u16 = 27285;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const AchievementEntryList_field_number: u32 = 8;
+    pub const msg_id: u16 = 21082;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const AchievementEntryList_field_number: u32 = 12;
 };
 pub const LevelEventNotify = struct {
-    pub const msg_id: u16 = 19151;
-    pub const PlayerId_field_number: u32 = 3;
-    pub const IncId_field_number: u32 = 8;
-    pub const GameCtx_field_number: u32 = 1;
-    pub const TotalCount_field_number: u32 = 5;
+    pub const msg_id: u16 = 24784;
+    pub const PlayerId_field_number: u32 = 15;
+    pub const IncId_field_number: u32 = 9;
+    pub const GameCtx_field_number: u32 = 11;
+    pub const TotalCount_field_number: u32 = 3;
     pub const StartIndex_field_number: u32 = 7;
-    pub const EndIndex_field_number: u32 = 10;
-    pub const NeedFinishReq_field_number: u32 = 9;
+    pub const EndIndex_field_number: u32 = 2;
+    pub const NeedFinishReq_field_number: u32 = 1;
 };
 pub const GameCtxPb = struct {
     CtxInfo: ?union(enum) {
@@ -800,6 +802,10 @@ pub const GameCtxPb = struct {
     pub const RecallQuestFinishAction_field_number: u32 = 68;
     pub const RecallQuestDestroyAction_field_number: u32 = 69;
     pub const EdDebugEnterAction_field_number: u32 = 3401;
+    pub const CasketTrigger_field_number: u32 = 3501;
+    pub const FoundationOperateAction_field_number: u32 = 3502;
+    pub const TargetGearActionByHitTypeAction_field_number: u32 = 3701;
+    pub const LongPressInteractActionCtxPb_field_number: u32 = 3702;
     pub const CtxType_field_number: u32 = 1;
 };
 pub const EntityCtxPb = struct {
@@ -976,6 +982,10 @@ pub const TargetGearHitPartCtxPb = struct {
     pub const EntityCtx_field_number: u32 = 1;
     pub const HitPartIndex_field_number: u32 = 2;
 };
+pub const TargetGearActionByHitTypeCtxPb = struct {
+    pub const EntityCtx_field_number: u32 = 1;
+    pub const Index_field_number: u32 = 2;
+};
 pub const PlayFlowChildQuestNodeCtxPb = struct {
     pub const BehaviorTreeCtx_field_number: u32 = 1;
 };
@@ -1051,46 +1061,60 @@ pub const RecallQuestFinishActionCtxPb = struct {
 pub const RecallQuestDestroyActionCtxPb = struct {
     pub const RecallQuestId_field_number: u32 = 1;
 };
+pub const CasketTriggerCtxPb = struct {
+    pub const EntityCtx_field_number: u32 = 1;
+    pub const Index_field_number: u32 = 2;
+    pub const IsEnter_field_number: u32 = 3;
+};
+pub const FoundationOperateActionCtxPb = struct {
+    pub const EntityCtx_field_number: u32 = 1;
+    pub const PlayerId_field_number: u32 = 2;
+    pub const IsTakeOut_field_number: u32 = 3;
+};
+pub const LongPressInteractActionCtxPb = struct {
+    pub const EntityCtx_field_number: u32 = 1;
+    pub const OptionIndex_field_number: u32 = 2;
+};
 pub const TeleportUpdateNotify = struct {
-    pub const msg_id: u16 = 20363;
-    pub const Ids_field_number: u32 = 5;
+    pub const msg_id: u16 = 23109;
+    pub const Ids_field_number: u32 = 15;
 };
 pub const TeleportDataRequest = struct {
-    pub const msg_id: u16 = 26838;
+    pub const msg_id: u16 = 22238;
 };
 pub const TeleportDataResponse = struct {
-    pub const msg_id: u16 = 16502;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const Ids_field_number: u32 = 2;
+    pub const msg_id: u16 = 18941;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const Ids_field_number: u32 = 7;
 };
 pub const TeleportTransferRequest = struct {
-    pub const msg_id: u16 = 16026;
-    pub const Id_field_number: u32 = 6;
+    pub const msg_id: u16 = 29918;
+    pub const Id_field_number: u32 = 4;
 };
 pub const TeleportTransferResponse = struct {
-    pub const msg_id: u16 = 20168;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const MapId_field_number: u32 = 14;
-    pub const PosX_field_number: u32 = 6;
-    pub const PosY_field_number: u32 = 11;
-    pub const PosZ_field_number: u32 = 9;
-    pub const Pitch_field_number: u32 = 12;
-    pub const Yaw_field_number: u32 = 10;
-    pub const Roll_field_number: u32 = 13;
+    pub const msg_id: u16 = 24923;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const MapId_field_number: u32 = 13;
+    pub const PosX_field_number: u32 = 12;
+    pub const PosY_field_number: u32 = 3;
+    pub const PosZ_field_number: u32 = 14;
+    pub const Pitch_field_number: u32 = 9;
+    pub const Yaw_field_number: u32 = 15;
+    pub const Roll_field_number: u32 = 4;
 };
 pub const TeleportNotify = struct {
-    pub const msg_id: u16 = 27302;
+    pub const msg_id: u16 = 18633;
     v70: ?union(enum) {
     } = null,
-    pub const TransferEffectId_field_number: u32 = 9;
-    pub const MapId_field_number: u32 = 2;
-    pub const Pos_field_number: u32 = 11;
-    pub const Rot_field_number: u32 = 4;
-    pub const Gravity_field_number: u32 = 12;
-    pub const Reason_field_number: u32 = 5;
-    pub const GameCtx_field_number: u32 = 13;
-    pub const TransitionOption_field_number: u32 = 6;
-    pub const DisableAutoFade_field_number: u32 = 1;
+    pub const TransferEffectId_field_number: u32 = 4;
+    pub const MapId_field_number: u32 = 8;
+    pub const Pos_field_number: u32 = 1;
+    pub const Rot_field_number: u32 = 15;
+    pub const Gravity_field_number: u32 = 2;
+    pub const Reason_field_number: u32 = 12;
+    pub const GameCtx_field_number: u32 = 7;
+    pub const TransitionOption_field_number: u32 = 5;
+    pub const DisableAutoFade_field_number: u32 = 13;
 };
 pub const TransitionOptionPb = struct {
     Option: ?union(enum) {
@@ -1165,11 +1189,11 @@ pub const SeamlessTeleportFinishConfigPb = struct {
     pub const EffectExtraState_field_number: u32 = 2;
 };
 pub const TeleportFinishRequest = struct {
-    pub const msg_id: u16 = 23486;
+    pub const msg_id: u16 = 23654;
 };
 pub const TeleportFinishResponse = struct {
-    pub const msg_id: u16 = 15237;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 18021;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const TransitionWithSpineLoadingPb = struct {
     BackgroundFadeInEffectPb: ?union(enum) {
@@ -1492,7 +1516,10 @@ pub const ActivityData = struct {
     pub const NewPlayerSupportActivityV2Pb_field_number: u32 = 114;
     pub const ThroughTrainActivityData_field_number: u32 = 115;
     pub const RoverRogueActivityData_field_number: u32 = 116;
-    pub const QingXiaoActivityInfo_field_number: u32 = 117;
+    pub const DangoBrawlActivityInfo_field_number: u32 = 117;
+    pub const QingXiaoActivityInfo_field_number: u32 = 118;
+    pub const MatchThreeActivityInfo_field_number: u32 = 120;
+    pub const GiantActivityInfo_field_number: u32 = 121;
     pub const Id_field_number: u32 = 1;
     pub const Type_field_number: u32 = 2;
     pub const BeginShowTime_field_number: u32 = 3;
@@ -1511,12 +1538,12 @@ pub const ActivityData = struct {
     pub const EndRewardTimeInternal_field_number: u32 = 70;
 };
 pub const ActivityRequest = struct {
-    pub const msg_id: u16 = 28374;
+    pub const msg_id: u16 = 24675;
 };
 pub const ActivityResponse = struct {
-    pub const msg_id: u16 = 17580;
-    pub const Activities_field_number: u32 = 7;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 24041;
+    pub const Activities_field_number: u32 = 15;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const ActivityTurnTableData = struct {
     pub const IsAllFinish_field_number: u32 = 1;
@@ -1681,10 +1708,10 @@ pub const RogueResTaskData = struct {
     pub const RogueResCollectionState_field_number: u32 = 2;
 };
 pub const PermanentRogueData = struct {
-    pub const msg_id: u16 = 17498;
+    pub const msg_id: u16 = 18189;
     Data: ?union(enum) {
     } = null,
-    pub const RogueResTaskThemeData_field_number: u32 = 10;
+    pub const RogueResTaskThemeData_field_number: u32 = 5;
 };
 pub const RogueResTaskThemeData = struct {
     pub const RogueSignReward_field_number: u32 = 1;
@@ -1737,6 +1764,7 @@ pub const ActivityInviteNewbie = struct {
     pub const InviteCode_field_number: u32 = 1;
     pub const Score_field_number: u32 = 2;
     pub const RedDot_field_number: u32 = 3;
+    pub const AllRewardClaimed_field_number: u32 = 4;
 };
 pub const ActivityDangoMonopolyData = struct {
     pub const CurrentBoardId_field_number: u32 = 1;
@@ -1891,13 +1919,13 @@ pub const ActivitySoarData = struct {
     pub const QuestId_field_number: u32 = 1;
 };
 pub const InitHonamiActivityRequest = struct {
-    pub const msg_id: u16 = 20902;
-    pub const ActivityId_field_number: u32 = 12;
+    pub const msg_id: u16 = 22792;
+    pub const ActivityId_field_number: u32 = 3;
 };
 pub const InitHonamiActivityResponse = struct {
-    pub const msg_id: u16 = 25258;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const HonamiStoryActivityData_field_number: u32 = 2;
+    pub const msg_id: u16 = 24610;
+    pub const ErrorCode_field_number: u32 = 11;
+    pub const HonamiStoryActivityData_field_number: u32 = 5;
 };
 pub const HonamiStoryActivityData = struct {
     pub const PlayerBagInfo_field_number: u32 = 1;
@@ -1928,6 +1956,11 @@ pub const FlagChallengeActivityInfo = struct {
 pub const BossPilingActivityInfo = struct {
     pub const ConditionTasks_field_number: u32 = 1;
     pub const BossPilingLevelInfos_field_number: u32 = 2;
+};
+pub const GiantActivityInfo = struct {
+    pub const TotalStableValue_field_number: u32 = 1;
+    pub const GotRewardIds_field_number: u32 = 2;
+    pub const ActiveIds_field_number: u32 = 3;
 };
 pub const DailyAdventureActivityTask = struct {
     pub const Id_field_number: u32 = 1;
@@ -2012,6 +2045,7 @@ pub const TimePointRewardData = struct {
     pub const RewardTime_field_number: u32 = 2;
     pub const Rewarded_field_number: u32 = 3;
     pub const CanGetReward_field_number: u32 = 4;
+    pub const Task_field_number: u32 = 5;
 };
 pub const TowerDefenseActivityInfo = struct {
     pub const InstanceInfos_field_number: u32 = 1;
@@ -2371,8 +2405,8 @@ pub const LevelData = struct {
     pub const IsUnlocked_field_number: u32 = 5;
 };
 pub const FightPhotoLevelDataUpdateNotify = struct {
-    pub const msg_id: u16 = 25208;
-    pub const levels_field_number: u32 = 7;
+    pub const msg_id: u16 = 16757;
+    pub const levels_field_number: u32 = 2;
 };
 pub const TaskData = struct {
     pub const Id_field_number: u32 = 1;
@@ -2896,15 +2930,15 @@ pub const EdgeRunnerLordGymPassRecord = struct {
     pub const PassTime_field_number: u32 = 2;
 };
 pub const LordGymInfoRequest = struct {
-    pub const msg_id: u16 = 18431;
+    pub const msg_id: u16 = 24619;
 };
 pub const LordGymInfoResponse = struct {
-    pub const msg_id: u16 = 27680;
-    pub const UnlockLoadGymIds_field_number: u32 = 9;
-    pub const ReadLoadGymIds_field_number: u32 = 6;
-    pub const LordGymPassRecords_field_number: u32 = 14;
-    pub const LordGymEntranceInfos_field_number: u32 = 15;
-    pub const LordGymGroupInfos_field_number: u32 = 11;
+    pub const msg_id: u16 = 27687;
+    pub const UnlockLoadGymIds_field_number: u32 = 15;
+    pub const ReadLoadGymIds_field_number: u32 = 4;
+    pub const LordGymPassRecords_field_number: u32 = 12;
+    pub const LordGymEntranceInfos_field_number: u32 = 6;
+    pub const LordGymGroupInfos_field_number: u32 = 1;
 };
 pub const LordGymEntranceInfo = struct {
     pub const ConfigId_field_number: u32 = 1;
@@ -3085,6 +3119,36 @@ pub const RoverRogueHistoryInsInfo = struct {
 pub const QingXiaoActivityInfo = struct {
     pub const ConditionTasks_field_number: u32 = 1;
 };
+pub const DangoBrawlActivityInfo = struct {
+    pub const ConditionTasks_field_number: u32 = 1;
+    pub const UnlockedRoleIds_field_number: u32 = 2;
+    pub const UnlockedItemIds_field_number: u32 = 3;
+    pub const ChallengeInfos_field_number: u32 = 4;
+    pub const SaveMatchBrief_field_number: u32 = 5;
+    pub const RewardScoreIds_field_number: u32 = 6;
+    pub const LimitCoinCost_field_number: u32 = 7;
+};
+pub const DangoBrawlSaveMatchBrief = struct {
+    pub const ChallengeId_field_number: u32 = 1;
+    pub const RoundNum_field_number: u32 = 2;
+    pub const RoleId_field_number: u32 = 3;
+};
+pub const DangoBrawlChallengeInfo = struct {
+    pub const ChallengeId_field_number: u32 = 1;
+    pub const State_field_number: u32 = 2;
+    pub const RetryCount_field_number: u32 = 3;
+};
+pub const MatchThreeActivityInfo = struct {
+    pub const MatchThreeLevelInfos_field_number: u32 = 1;
+};
+pub const MatchThreeLevelInfo = struct {
+    Hby: ?union(enum) {
+    } = null,
+    pub const Score_field_number: u32 = 4;
+    pub const Id_field_number: u32 = 1;
+    pub const UnlockTime_field_number: u32 = 2;
+    pub const FirstPass_field_number: u32 = 3;
+};
 pub const AdventreTask = struct {
     pub const Id_field_number: u32 = 1;
     pub const State_field_number: u32 = 2;
@@ -3125,35 +3189,35 @@ pub const SelectDetectionTarget = struct {
     pub const IsTrace_field_number: u32 = 4;
 };
 pub const AdventureManualDataRequest = struct {
-    pub const msg_id: u16 = 29160;
-    pub const PlayerId_field_number: u32 = 6;
+    pub const msg_id: u16 = 29621;
+    pub const PlayerId_field_number: u32 = 14;
 };
 pub const AdventureManualDataResponse = struct {
-    pub const msg_id: u16 = 28629;
-    pub const ErrorCode_field_number: u32 = 14;
-    pub const AdventureManualData_field_number: u32 = 5;
+    pub const msg_id: u16 = 17876;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const AdventureManualData_field_number: u32 = 1;
 };
 pub const AdventureUpdateNotify = struct {
-    pub const msg_id: u16 = 24195;
-    pub const AdventureManualData_field_number: u32 = 12;
+    pub const msg_id: u16 = 25180;
+    pub const AdventureManualData_field_number: u32 = 7;
 };
 pub const AdventureManualRequest = struct {
-    pub const msg_id: u16 = 20163;
-    pub const PlayerId_field_number: u32 = 8;
+    pub const msg_id: u16 = 26238;
+    pub const PlayerId_field_number: u32 = 5;
 };
 pub const AdventureManualResponse = struct {
-    pub const msg_id: u16 = 27833;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const AdventureManualData_field_number: u32 = 12;
-    pub const DetectionTarget_field_number: u32 = 7;
-    pub const AdventureRewardData_field_number: u32 = 4;
-    pub const DetectionUnlocks_field_number: u32 = 15;
-    pub const NowSelectDetectionTarget_field_number: u32 = 3;
-    pub const SlientFirstAwardMap_field_number: u32 = 1;
-    pub const SilenceAreaConfigs_field_number: u32 = 2;
-    pub const DungeonDetections_field_number: u32 = 9;
-    pub const PreOpeDungeonDetections_field_number: u32 = 6;
-    pub const PreOpenSilenceAreaDetections_field_number: u32 = 8;
+    pub const msg_id: u16 = 23292;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const AdventureManualData_field_number: u32 = 13;
+    pub const DetectionTarget_field_number: u32 = 10;
+    pub const AdventureRewardData_field_number: u32 = 7;
+    pub const DetectionUnlocks_field_number: u32 = 12;
+    pub const NowSelectDetectionTarget_field_number: u32 = 2;
+    pub const SlientFirstAwardMap_field_number: u32 = 3;
+    pub const SilenceAreaConfigs_field_number: u32 = 14;
+    pub const DungeonDetections_field_number: u32 = 4;
+    pub const PreOpeDungeonDetections_field_number: u32 = 11;
+    pub const PreOpenSilenceAreaDetections_field_number: u32 = 9;
 };
 pub const PreOpenDetections = struct {
     pub const Id_field_number: u32 = 1;
@@ -3171,24 +3235,24 @@ pub const UnlockDetectionLabelInfo = struct {
     pub const UnlockedDetectionTextIds_field_number: u32 = 2;
 };
 pub const GetDetectionLabelInfoRequest = struct {
-    pub const msg_id: u16 = 20178;
+    pub const msg_id: u16 = 15760;
 };
 pub const GetDetectionLabelInfoResponse = struct {
-    pub const msg_id: u16 = 24153;
-    pub const UnlockLabelInfo_field_number: u32 = 15;
+    pub const msg_id: u16 = 24360;
+    pub const UnlockLabelInfo_field_number: u32 = 14;
 };
 pub const AdviceSettingNotify = struct {
-    pub const msg_id: u16 = 28625;
-    pub const IsShow_field_number: u32 = 1;
+    pub const msg_id: u16 = 18981;
+    pub const IsShow_field_number: u32 = 12;
 };
 pub const AdviceSetRequest = struct {
-    pub const msg_id: u16 = 21659;
-    pub const IsShow_field_number: u32 = 1;
+    pub const msg_id: u16 = 17909;
+    pub const IsShow_field_number: u32 = 3;
 };
 pub const AdviceSetResponse = struct {
-    pub const msg_id: u16 = 25432;
-    pub const IsShow_field_number: u32 = 14;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 27439;
+    pub const IsShow_field_number: u32 = 1;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const PbAdvice = struct {
     pub const Id_field_number: u32 = 1;
@@ -3207,12 +3271,12 @@ pub const PbAdviceContent = struct {
     pub const Word_field_number: u32 = 3;
 };
 pub const AdviceRequest = struct {
-    pub const msg_id: u16 = 25888;
+    pub const msg_id: u16 = 24258;
 };
 pub const AdviceResponse = struct {
-    pub const msg_id: u16 = 18557;
-    pub const Advices_field_number: u32 = 5;
-    pub const UpVoteIds_field_number: u32 = 12;
+    pub const msg_id: u16 = 17200;
+    pub const Advices_field_number: u32 = 9;
+    pub const UpVoteIds_field_number: u32 = 15;
     pub const ErrorCode_field_number: u32 = 6;
 };
 pub const AiHateEntity = struct {
@@ -3233,67 +3297,67 @@ pub const AiInformation = struct {
     pub const AiBlackboardCd_field_number: u32 = 3;
 };
 pub const AiInformationRequest = struct {
-    pub const msg_id: u16 = 26333;
-    pub const AiInfo_field_number: u32 = 4;
+    pub const msg_id: u16 = 27094;
+    pub const AiInfo_field_number: u32 = 14;
 };
 pub const AiInformationPush = struct {
-    pub const msg_id: u16 = 27990;
-    pub const AiInfo_field_number: u32 = 9;
+    pub const msg_id: u16 = 20879;
+    pub const AiInfo_field_number: u32 = 4;
 };
 pub const AiInformationResponse = struct {
-    pub const msg_id: u16 = 21592;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 16509;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const AiInformationNotify = struct {
-    pub const msg_id: u16 = 15805;
-    pub const AiBlackboardCd_field_number: u32 = 15;
+    pub const msg_id: u16 = 27868;
+    pub const AiBlackboardCd_field_number: u32 = 10;
 };
 pub const AiBlackboardsRequest = struct {
-    pub const msg_id: u16 = 16504;
-    pub const AiBlackboards_field_number: u32 = 2;
+    pub const msg_id: u16 = 17413;
+    pub const AiBlackboards_field_number: u32 = 14;
 };
 pub const AiBlackboardsPush = struct {
-    pub const msg_id: u16 = 20334;
-    pub const AiBlackboards_field_number: u32 = 4;
+    pub const msg_id: u16 = 21837;
+    pub const AiBlackboards_field_number: u32 = 5;
 };
 pub const AiBlackboardsResponse = struct {
-    pub const msg_id: u16 = 21397;
+    pub const msg_id: u16 = 23212;
     pub const ErrorCode_field_number: u32 = 10;
 };
 pub const AiBlackboardCdRequest = struct {
-    pub const msg_id: u16 = 25857;
-    pub const AiBlackboardCdModify_field_number: u32 = 7;
-    pub const AiBlackboardCdComplete_field_number: u32 = 4;
+    pub const msg_id: u16 = 28767;
+    pub const AiBlackboardCdModify_field_number: u32 = 4;
+    pub const AiBlackboardCdComplete_field_number: u32 = 13;
 };
 pub const AiBlackboardCdPush = struct {
-    pub const msg_id: u16 = 27774;
-    pub const AiBlackboardCdModify_field_number: u32 = 7;
-    pub const AiBlackboardCdComplete_field_number: u32 = 11;
+    pub const msg_id: u16 = 25416;
+    pub const AiBlackboardCdModify_field_number: u32 = 15;
+    pub const AiBlackboardCdComplete_field_number: u32 = 3;
 };
 pub const AiBlackboardCdResponse = struct {
-    pub const msg_id: u16 = 16519;
-    pub const ErrorCode_field_number: u32 = 9;
+    pub const msg_id: u16 = 24526;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const AiBlackboardCdNotify = struct {
-    pub const msg_id: u16 = 22240;
-    pub const AiBlackboardCdDel_field_number: u32 = 12;
-    pub const AiBlackboardCdModify_field_number: u32 = 4;
-    pub const AiBlackboardCdComplete_field_number: u32 = 7;
+    pub const msg_id: u16 = 26627;
+    pub const AiBlackboardCdDel_field_number: u32 = 10;
+    pub const AiBlackboardCdModify_field_number: u32 = 14;
+    pub const AiBlackboardCdComplete_field_number: u32 = 12;
 };
 pub const AiHateRequest = struct {
-    pub const msg_id: u16 = 20606;
-    pub const HateList_field_number: u32 = 13;
+    pub const msg_id: u16 = 27946;
+    pub const HateList_field_number: u32 = 4;
 };
 pub const AiHatePush = struct {
-    pub const msg_id: u16 = 21860;
-    pub const HateList_field_number: u32 = 7;
+    pub const msg_id: u16 = 25194;
+    pub const HateList_field_number: u32 = 5;
 };
 pub const AiHateResponse = struct {
-    pub const msg_id: u16 = 15211;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 28446;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const AiHateNotify = struct {
-    pub const msg_id: u16 = 29150;
+    pub const msg_id: u16 = 21698;
     pub const HateList_field_number: u32 = 6;
 };
 pub const IntArrayBlackboard = struct {
@@ -3334,14 +3398,14 @@ pub const BlackboardParam = struct {
     pub const Type_field_number: u32 = 2;
 };
 pub const EnterAreaRequest = struct {
-    pub const msg_id: u16 = 27794;
-    pub const Id_field_number: u32 = 15;
+    pub const msg_id: u16 = 28495;
+    pub const Id_field_number: u32 = 9;
     pub const LeaveId_field_number: u32 = 6;
 };
 pub const EnterAreaResponse = struct {
-    pub const msg_id: u16 = 17948;
-    pub const ErrorCode_field_number: u32 = 2;
-    pub const Id_field_number: u32 = 8;
+    pub const msg_id: u16 = 23858;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const Id_field_number: u32 = 14;
 };
 pub const AudioState = struct {
     pub const TreeOwnerId_field_number: u32 = 1;
@@ -3358,50 +3422,50 @@ pub const CardShowEntry = struct {
     pub const IsRead_field_number: u32 = 2;
 };
 pub const BasicInfoNotify = struct {
-    pub const msg_id: u16 = 29300;
-    pub const Id_field_number: u32 = 14;
-    pub const Attributes_field_number: u32 = 10;
-    pub const MingSuGenInfos_field_number: u32 = 12;
-    pub const DragonPoolInfos_field_number: u32 = 11;
-    pub const RoleShowList_field_number: u32 = 15;
-    pub const CurCardId_field_number: u32 = 2;
-    pub const Birthday_field_number: u32 = 7;
-    pub const CardUnlockList_field_number: u32 = 8;
-    pub const RandomSeed_field_number: u32 = 1;
-    pub const DisplayBirthDay_field_number: u32 = 6;
-    pub const LastModifyNameTime_field_number: u32 = 5;
-    pub const ModifyNameTime_field_number: u32 = 3;
+    pub const msg_id: u16 = 15380;
+    pub const Id_field_number: u32 = 15;
+    pub const Attributes_field_number: u32 = 14;
+    pub const MingSuGenInfos_field_number: u32 = 4;
+    pub const DragonPoolInfos_field_number: u32 = 3;
+    pub const RoleShowList_field_number: u32 = 12;
+    pub const CurCardId_field_number: u32 = 8;
+    pub const Birthday_field_number: u32 = 1;
+    pub const CardUnlockList_field_number: u32 = 13;
+    pub const RandomSeed_field_number: u32 = 10;
+    pub const DisplayBirthDay_field_number: u32 = 11;
+    pub const LastModifyNameTime_field_number: u32 = 6;
+    pub const ModifyNameTime_field_number: u32 = 2;
     pub const BusinessCompliance_field_number: u32 = 9;
-    pub const NewbieGuideV2_field_number: u32 = 4;
+    pub const NewbieGuideV2_field_number: u32 = 5;
 };
 pub const ModifyNameRequest = struct {
-    pub const msg_id: u16 = 17271;
-    pub const Name_field_number: u32 = 1;
+    pub const msg_id: u16 = 20729;
+    pub const Name_field_number: u32 = 9;
 };
 pub const ModifyNameResponse = struct {
-    pub const msg_id: u16 = 22158;
-    pub const Name_field_number: u32 = 8;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const LastModifyNameTime_field_number: u32 = 12;
-    pub const ModifyNameTime_field_number: u32 = 1;
+    pub const msg_id: u16 = 29083;
+    pub const Name_field_number: u32 = 5;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const LastModifyNameTime_field_number: u32 = 8;
+    pub const ModifyNameTime_field_number: u32 = 14;
 };
 pub const ModifySignatureRequest = struct {
-    pub const msg_id: u16 = 27721;
-    pub const Signature_field_number: u32 = 5;
+    pub const msg_id: u16 = 21047;
+    pub const Signature_field_number: u32 = 6;
 };
 pub const ModifySignatureResponse = struct {
-    pub const msg_id: u16 = 22846;
-    pub const Signature_field_number: u32 = 3;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 19625;
+    pub const Signature_field_number: u32 = 1;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const ChangeHeadPhotoRequest = struct {
-    pub const msg_id: u16 = 28207;
-    pub const HeadPhotoId_field_number: u32 = 10;
+    pub const msg_id: u16 = 17034;
+    pub const HeadPhotoId_field_number: u32 = 9;
 };
 pub const ChangeHeadPhotoResponse = struct {
-    pub const msg_id: u16 = 22077;
+    pub const msg_id: u16 = 20433;
     pub const HeadPhotoId_field_number: u32 = 15;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const ClientBasicInfo = struct {
     pub const Platform_field_number: u32 = 1;
@@ -3426,104 +3490,104 @@ pub const ClientBasicInfo = struct {
     pub const OSVersion_field_number: u32 = 20;
 };
 pub const PlayerBasicInfoGetRequest = struct {
-    pub const msg_id: u16 = 18999;
+    pub const msg_id: u16 = 19634;
     pub const Id_field_number: u32 = 2;
 };
 pub const PlayerBasicInfoGetResponse = struct {
-    pub const msg_id: u16 = 27753;
-    pub const Info_field_number: u32 = 11;
+    pub const msg_id: u16 = 22549;
+    pub const Info_field_number: u32 = 10;
     pub const ErrorCode_field_number: u32 = 15;
 };
 pub const BirthdayInitRequest = struct {
-    pub const msg_id: u16 = 17909;
-    pub const Birthday_field_number: u32 = 8;
+    pub const msg_id: u16 = 25294;
+    pub const Birthday_field_number: u32 = 4;
 };
 pub const BirthdayInitResponse = struct {
-    pub const msg_id: u16 = 17137;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 23451;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const RoleShowListUpdateRequest = struct {
-    pub const msg_id: u16 = 16952;
-    pub const RoleList_field_number: u32 = 8;
+    pub const msg_id: u16 = 16909;
+    pub const RoleList_field_number: u32 = 3;
 };
 pub const RoleShowListUpdateResponse = struct {
-    pub const msg_id: u16 = 17207;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 21892;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const ChangeCardRequest = struct {
-    pub const msg_id: u16 = 26472;
-    pub const CardId_field_number: u32 = 8;
+    pub const msg_id: u16 = 20690;
+    pub const CardId_field_number: u32 = 3;
 };
 pub const ChangeCardResponse = struct {
-    pub const msg_id: u16 = 29217;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 28852;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const ReadCardRequest = struct {
-    pub const msg_id: u16 = 15863;
-    pub const CardId_field_number: u32 = 10;
+    pub const msg_id: u16 = 18462;
+    pub const CardId_field_number: u32 = 14;
 };
 pub const ReadCardResponse = struct {
-    pub const msg_id: u16 = 22941;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 25329;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const BirthdayShowSetRequest = struct {
-    pub const msg_id: u16 = 28857;
-    pub const DisPlay_field_number: u32 = 14;
+    pub const msg_id: u16 = 27587;
+    pub const DisPlay_field_number: u32 = 9;
 };
 pub const BirthdayShowSetResponse = struct {
-    pub const msg_id: u16 = 24192;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 19338;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const PlayerNameUpdateNotify = struct {
-    pub const msg_id: u16 = 17076;
+    pub const msg_id: u16 = 24589;
     pub const Name_field_number: u32 = 10;
-    pub const LastModifyNameTime_field_number: u32 = 3;
+    pub const LastModifyNameTime_field_number: u32 = 11;
 };
 pub const UpdatePlayStationBlockAccountRequest = struct {
-    pub const msg_id: u16 = 17068;
-    pub const BlockedIds_field_number: u32 = 14;
+    pub const msg_id: u16 = 18200;
+    pub const BlockedIds_field_number: u32 = 4;
 };
 pub const UpdatePlayStationBlockAccountResponse = struct {
-    pub const msg_id: u16 = 16611;
+    pub const msg_id: u16 = 26528;
 };
 pub const PlayerHeadDataRequest = struct {
-    pub const msg_id: u16 = 15090;
+    pub const msg_id: u16 = 26575;
 };
 pub const PlayerHeadDataResponse = struct {
-    pub const msg_id: u16 = 26481;
-    pub const PlayerHeadDataIds_field_number: u32 = 11;
+    pub const msg_id: u16 = 20990;
+    pub const PlayerHeadDataIds_field_number: u32 = 9;
 };
 pub const WebSignRequest = struct {
-    pub const msg_id: u16 = 20272;
+    pub const msg_id: u16 = 23683;
 };
 pub const WebSignResponse = struct {
-    pub const msg_id: u16 = 15812;
-    pub const NoticeSign_field_number: u32 = 11;
+    pub const msg_id: u16 = 28955;
+    pub const NoticeSign_field_number: u32 = 2;
 };
 pub const StorageInfoNotify = struct {
-    pub const msg_id: u16 = 22882;
-    pub const Infos_field_number: u32 = 14;
+    pub const msg_id: u16 = 24801;
+    pub const Infos_field_number: u32 = 2;
 };
 pub const StorageInfoUpdateNotify = struct {
-    pub const msg_id: u16 = 19726;
-    pub const Adds_field_number: u32 = 1;
-    pub const Updates_field_number: u32 = 13;
-    pub const Removes_field_number: u32 = 5;
+    pub const msg_id: u16 = 23161;
+    pub const Adds_field_number: u32 = 6;
+    pub const Updates_field_number: u32 = 1;
+    pub const Removes_field_number: u32 = 11;
 };
 pub const StorageInfoRequest = struct {
-    pub const msg_id: u16 = 24737;
+    pub const msg_id: u16 = 25920;
 };
 pub const StorageInfoResponse = struct {
-    pub const msg_id: u16 = 19447;
-    pub const Infos_field_number: u32 = 4;
+    pub const msg_id: u16 = 20464;
+    pub const Infos_field_number: u32 = 6;
 };
 pub const StorageInfoUpdateRequest = struct {
-    pub const msg_id: u16 = 27208;
-    pub const Infos_field_number: u32 = 3;
+    pub const msg_id: u16 = 21380;
+    pub const Infos_field_number: u32 = 4;
 };
 pub const StorageInfoUpdateResponse = struct {
-    pub const msg_id: u16 = 15680;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 15571;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const ClientStorageInfo = struct {
     Data: ?union(enum) {
@@ -3567,35 +3631,35 @@ pub const ClientStorageStringData = struct {
     pub const Data_field_number: u32 = 1;
 };
 pub const PlayerXboxBlockListRequest = struct {
-    pub const msg_id: u16 = 22114;
-    pub const XboxAccountIds_field_number: u32 = 10;
+    pub const msg_id: u16 = 28660;
+    pub const XboxAccountIds_field_number: u32 = 13;
 };
 pub const PlayerXboxBlockListResponse = struct {
-    pub const msg_id: u16 = 25592;
+    pub const msg_id: u16 = 24484;
 };
 pub const RoleVoice = struct {
     pub const RoleId_field_number: u32 = 1;
     pub const VoiceId_field_number: u32 = 2;
 };
 pub const PlayerVoiceLanguageRequest = struct {
-    pub const msg_id: u16 = 20779;
+    pub const msg_id: u16 = 29926;
 };
 pub const PlayerVoiceLanguageResponse = struct {
-    pub const msg_id: u16 = 26822;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const RoleVoices_field_number: u32 = 15;
+    pub const msg_id: u16 = 17604;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const RoleVoices_field_number: u32 = 13;
 };
 pub const RoleVoiceSetting = struct {
     pub const RoleId_field_number: u32 = 1;
     pub const VoiceLanguage_field_number: u32 = 2;
 };
 pub const PlayerRoleVoiceSetRequest = struct {
-    pub const msg_id: u16 = 15648;
-    pub const RoleVoices_field_number: u32 = 7;
+    pub const msg_id: u16 = 20371;
+    pub const RoleVoices_field_number: u32 = 2;
 };
 pub const PlayerRoleVoiceSetResponse = struct {
-    pub const msg_id: u16 = 29893;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 15331;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const PlayerAttr = struct {
     Value: ?union(enum) {
@@ -3606,7 +3670,7 @@ pub const PlayerAttr = struct {
     pub const ValueType_field_number: u32 = 2;
 };
 pub const PlayerAttrNotify = struct {
-    pub const msg_id: u16 = 25010;
+    pub const msg_id: u16 = 20778;
     pub const Attributes_field_number: u32 = 2;
 };
 pub const MingSuGenInfo = struct {
@@ -3631,16 +3695,16 @@ pub const DragonPoolDropItems = struct {
     pub const DropItems_field_number: u32 = 3;
 };
 pub const DarkCoastDeliveryRequest = struct {
-    pub const msg_id: u16 = 22572;
-    pub const DragonPoolId_field_number: u32 = 14;
+    pub const msg_id: u16 = 29597;
+    pub const DragonPoolId_field_number: u32 = 15;
 };
 pub const DarkCoastDeliveryResponse = struct {
-    pub const msg_id: u16 = 25351;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const DragonPoolDropItems_field_number: u32 = 4;
-    pub const DefeatedGuard_field_number: u32 = 12;
-    pub const ReceivedGuardReward_field_number: u32 = 13;
-    pub const LevelGain_field_number: u32 = 9;
+    pub const msg_id: u16 = 20782;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const DragonPoolDropItems_field_number: u32 = 3;
+    pub const DefeatedGuard_field_number: u32 = 1;
+    pub const ReceivedGuardReward_field_number: u32 = 12;
+    pub const LevelGain_field_number: u32 = 13;
 };
 pub const TransferContextId = struct {
     pub const BulletContextId_field_number: u32 = 1;
@@ -3669,12 +3733,12 @@ pub const PbBattlePass = struct {
     pub const HadEnter_field_number: u32 = 11;
 };
 pub const BattlePassRequest = struct {
-    pub const msg_id: u16 = 20218;
+    pub const msg_id: u16 = 28338;
 };
 pub const BattlePassResponse = struct {
-    pub const msg_id: u16 = 19513;
-    pub const BattlePass_field_number: u32 = 1;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 26818;
+    pub const BattlePass_field_number: u32 = 15;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const NodeInfo = struct {
     ExtraInfo: ?union(enum) {
@@ -3698,12 +3762,12 @@ pub const TreeInfo = struct {
     pub const SuspendNodeId_field_number: u32 = 13;
 };
 pub const BehaviorTreeInfoNotify = struct {
-    pub const msg_id: u16 = 23728;
-    pub const TreeInfos_field_number: u32 = 10;
+    pub const msg_id: u16 = 27985;
+    pub const TreeInfos_field_number: u32 = 9;
 };
 pub const BehaviorTreeDeleteNotify = struct {
-    pub const msg_id: u16 = 27135;
-    pub const TreeIncIds_field_number: u32 = 9;
+    pub const msg_id: u16 = 27847;
+    pub const TreeIncIds_field_number: u32 = 7;
 };
 pub const ChildQuestNodeProgress = struct {
     Progress: ?union(enum) {
@@ -3771,25 +3835,25 @@ pub const CompleteInstProgress = struct {
     pub const Count_field_number: u32 = 2;
 };
 pub const UpdateNodeProgressNotify = struct {
-    pub const msg_id: u16 = 26566;
-    pub const TreeOwnerId_field_number: u32 = 12;
-    pub const TreeIncId_field_number: u32 = 15;
-    pub const NodeId_field_number: u32 = 14;
-    pub const Progress_field_number: u32 = 8;
+    pub const msg_id: u16 = 27949;
+    pub const TreeOwnerId_field_number: u32 = 10;
+    pub const TreeIncId_field_number: u32 = 3;
+    pub const NodeId_field_number: u32 = 12;
+    pub const Progress_field_number: u32 = 13;
 };
 pub const UpdateChildQuestNodeStatusNotify = struct {
-    pub const msg_id: u16 = 21167;
-    pub const TreeOwnerId_field_number: u32 = 1;
-    pub const TreeIncId_field_number: u32 = 2;
-    pub const NodeId_field_number: u32 = 7;
-    pub const Status_field_number: u32 = 11;
+    pub const msg_id: u16 = 20398;
+    pub const TreeOwnerId_field_number: u32 = 15;
+    pub const TreeIncId_field_number: u32 = 7;
+    pub const NodeId_field_number: u32 = 3;
+    pub const Status_field_number: u32 = 10;
 };
 pub const UpdateNodeStatusNotify = struct {
-    pub const msg_id: u16 = 20143;
-    pub const TreeOwnerId_field_number: u32 = 8;
-    pub const TreeIncId_field_number: u32 = 1;
-    pub const NodeId_field_number: u32 = 13;
-    pub const Status_field_number: u32 = 7;
+    pub const msg_id: u16 = 18896;
+    pub const TreeOwnerId_field_number: u32 = 9;
+    pub const TreeIncId_field_number: u32 = 13;
+    pub const NodeId_field_number: u32 = 2;
+    pub const Status_field_number: u32 = 6;
 };
 pub const OccupationPbInfo = struct {
     pub const ResourceName_field_number: u32 = 1;
@@ -3955,6 +4019,11 @@ pub const EntityComponentPb = struct {
     pub const DollGrabShowcaseComponentPb_field_number: u32 = 93;
     pub const GpuEntityComponentPb_field_number: u32 = 94;
     pub const RoverRoguePortalComponentPb_field_number: u32 = 95;
+    pub const DarkTideComponentPb_field_number: u32 = 96;
+    pub const ElementalHolderComponentPb_field_number: u32 = 97;
+    pub const EntityFoundationComponentPb_field_number: u32 = 98;
+    pub const SquadPropComponentPb_field_number: u32 = 99;
+    pub const ConnectorComponentPb_field_number: u32 = 103;
 };
 pub const RoverRoguePortalComponentPb = struct {
     pub const RewardType_field_number: u32 = 1;
@@ -4199,14 +4268,14 @@ pub const BulletComponentPb = struct {
     pub const ConstateId_field_number: u32 = 1;
 };
 pub const EntityAddNotify = struct {
-    pub const msg_id: u16 = 24934;
+    pub const msg_id: u16 = 25185;
     pub const EntityPbs_field_number: u32 = 6;
-    pub const RemoveTagIds_field_number: u32 = 10;
+    pub const RemoveTagIds_field_number: u32 = 1;
 };
 pub const EntityRemoveNotify = struct {
-    pub const msg_id: u16 = 23010;
-    pub const RemoveInfos_field_number: u32 = 2;
-    pub const IsRemove_field_number: u32 = 11;
+    pub const msg_id: u16 = 17769;
+    pub const RemoveInfos_field_number: u32 = 5;
+    pub const IsRemove_field_number: u32 = 4;
 };
 pub const VarDefinePb = struct {
     Value: ?union(enum) {
@@ -4227,145 +4296,145 @@ pub const NpcPb = struct {
     pub const SpawnEntityId_field_number: u32 = 3;
 };
 pub const LogicStateInitRequest = struct {
-    pub const msg_id: u16 = 17932;
-    pub const CombatCommon_field_number: u32 = 10;
-    pub const EntityId_field_number: u32 = 15;
-    pub const InitData_field_number: u32 = 3;
-    pub const ClientEntityId_field_number: u32 = 2;
-};
-pub const LogicStateInitPush = struct {
-    pub const msg_id: u16 = 27995;
-    pub const CombatCommon_field_number: u32 = 8;
-    pub const EntityId_field_number: u32 = 2;
-    pub const InitData_field_number: u32 = 6;
-    pub const ClientEntityId_field_number: u32 = 10;
-};
-pub const LogicStateInitResponse = struct {
-    pub const msg_id: u16 = 28559;
-    pub const ErrorCode_field_number: u32 = 7;
-};
-pub const LogicStateInitNotify = struct {
-    pub const msg_id: u16 = 22556;
+    pub const msg_id: u16 = 26172;
     pub const CombatCommon_field_number: u32 = 1;
-    pub const EntityId_field_number: u32 = 13;
-    pub const InitData_field_number: u32 = 9;
-};
-pub const SwitchLogicStateRequest = struct {
-    pub const msg_id: u16 = 21267;
-    pub const States_field_number: u32 = 11;
-    pub const ClientEntityId_field_number: u32 = 4;
-};
-pub const SwitchLogicStatePush = struct {
-    pub const msg_id: u16 = 21298;
-    pub const States_field_number: u32 = 14;
+    pub const EntityId_field_number: u32 = 2;
+    pub const InitData_field_number: u32 = 5;
     pub const ClientEntityId_field_number: u32 = 7;
 };
+pub const LogicStateInitPush = struct {
+    pub const msg_id: u16 = 20507;
+    pub const CombatCommon_field_number: u32 = 8;
+    pub const EntityId_field_number: u32 = 4;
+    pub const InitData_field_number: u32 = 1;
+    pub const ClientEntityId_field_number: u32 = 14;
+};
+pub const LogicStateInitResponse = struct {
+    pub const msg_id: u16 = 25241;
+    pub const ErrorCode_field_number: u32 = 12;
+};
+pub const LogicStateInitNotify = struct {
+    pub const msg_id: u16 = 24779;
+    pub const CombatCommon_field_number: u32 = 11;
+    pub const EntityId_field_number: u32 = 12;
+    pub const InitData_field_number: u32 = 13;
+};
+pub const SwitchLogicStateRequest = struct {
+    pub const msg_id: u16 = 18438;
+    pub const States_field_number: u32 = 5;
+    pub const ClientEntityId_field_number: u32 = 12;
+};
+pub const SwitchLogicStatePush = struct {
+    pub const msg_id: u16 = 27786;
+    pub const States_field_number: u32 = 14;
+    pub const ClientEntityId_field_number: u32 = 11;
+};
 pub const SwitchLogicStateResponse = struct {
-    pub const msg_id: u16 = 29656;
+    pub const msg_id: u16 = 25754;
     pub const ErrorCode_field_number: u32 = 11;
 };
 pub const SwitchLogicStateNotify = struct {
-    pub const msg_id: u16 = 25867;
-    pub const States_field_number: u32 = 2;
+    pub const msg_id: u16 = 19887;
+    pub const States_field_number: u32 = 8;
 };
 pub const EntityActiveRequest = struct {
-    pub const msg_id: u16 = 29189;
-    pub const EntityId_field_number: u32 = 2;
+    pub const msg_id: u16 = 28481;
+    pub const EntityId_field_number: u32 = 4;
 };
 pub const EntityActiveResponse = struct {
-    pub const msg_id: u16 = 23468;
-    pub const ErrorCode_field_number: u32 = 13;
-    pub const ComponentPbs_field_number: u32 = 10;
-    pub const IsVisible_field_number: u32 = 4;
-    pub const Pos_field_number: u32 = 1;
-    pub const Rot_field_number: u32 = 8;
-    pub const AiControlPlayerId_field_number: u32 = 12;
+    pub const msg_id: u16 = 26702;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const ComponentPbs_field_number: u32 = 11;
+    pub const IsVisible_field_number: u32 = 12;
+    pub const Pos_field_number: u32 = 2;
+    pub const Rot_field_number: u32 = 4;
+    pub const AiControlPlayerId_field_number: u32 = 3;
 };
 pub const AnimationGameplayTagRequest = struct {
-    pub const msg_id: u16 = 27099;
-    pub const AddTagIds_field_number: u32 = 11;
+    pub const msg_id: u16 = 25863;
+    pub const AddTagIds_field_number: u32 = 1;
     pub const RemoveTagIds_field_number: u32 = 9;
 };
 pub const AnimationGameplayTagPush = struct {
-    pub const msg_id: u16 = 20767;
-    pub const AddTagIds_field_number: u32 = 3;
-    pub const RemoveTagIds_field_number: u32 = 9;
+    pub const msg_id: u16 = 20216;
+    pub const AddTagIds_field_number: u32 = 1;
+    pub const RemoveTagIds_field_number: u32 = 15;
 };
 pub const AnimationGameplayTagResponse = struct {
-    pub const msg_id: u16 = 23411;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 20718;
+    pub const ErrorCode_field_number: u32 = 8;
 };
 pub const AnimationGameplayTagNotify = struct {
-    pub const msg_id: u16 = 16847;
-    pub const AddTagIds_field_number: u32 = 1;
-    pub const RemoveTagIds_field_number: u32 = 14;
+    pub const msg_id: u16 = 17636;
+    pub const AddTagIds_field_number: u32 = 15;
+    pub const RemoveTagIds_field_number: u32 = 5;
 };
 pub const AnimalDieRequest = struct {
-    pub const msg_id: u16 = 21844;
-    pub const EntityId_field_number: u32 = 13;
-    pub const Pos_field_number: u32 = 12;
+    pub const msg_id: u16 = 21599;
+    pub const EntityId_field_number: u32 = 12;
+    pub const Pos_field_number: u32 = 6;
 };
 pub const AnimalDieResponse = struct {
-    pub const msg_id: u16 = 19423;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 22932;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const AnimalDestroyRequest = struct {
-    pub const msg_id: u16 = 17358;
-    pub const EntityId_field_number: u32 = 14;
+    pub const msg_id: u16 = 16245;
+    pub const EntityId_field_number: u32 = 1;
 };
 pub const AnimalDestroyResponse = struct {
-    pub const msg_id: u16 = 21969;
-    pub const ErrorCode_field_number: u32 = 10;
-};
-pub const AnimalDropRequest = struct {
-    pub const msg_id: u16 = 27703;
-    pub const EntityId_field_number: u32 = 13;
-};
-pub const AnimalDropResponse = struct {
-    pub const msg_id: u16 = 22256;
-    pub const ErrorCode_field_number: u32 = 14;
-};
-pub const EntityStateReadyNotify = struct {
-    pub const msg_id: u16 = 20256;
-    pub const EntityId_field_number: u32 = 10;
-    pub const TagId_field_number: u32 = 1;
-    pub const Ready_field_number: u32 = 13;
-};
-pub const EntityInteractRequest = struct {
-    pub const msg_id: u16 = 25096;
-    pub const EntityId_field_number: u32 = 5;
-    pub const OptionIndex_field_number: u32 = 6;
-    pub const VisionEntityId_field_number: u32 = 3;
-};
-pub const EntityInteractResponse = struct {
-    pub const msg_id: u16 = 17192;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const Interacting_field_number: u32 = 6;
-};
-pub const EntityDynamicInteractRequest = struct {
-    pub const msg_id: u16 = 21019;
-    pub const EntityId_field_number: u32 = 13;
-    pub const OptionGuid_field_number: u32 = 2;
-};
-pub const EntityDynamicInteractResponse = struct {
-    pub const msg_id: u16 = 26768;
-    pub const ErrorCode_field_number: u32 = 14;
-    pub const Interacting_field_number: u32 = 11;
-};
-pub const BoneVisibleChangeRequest = struct {
-    pub const msg_id: u16 = 16080;
-    pub const BoneVisibleData_field_number: u32 = 4;
-};
-pub const BoneVisibleChangePush = struct {
-    pub const msg_id: u16 = 24360;
-    pub const BoneVisibleData_field_number: u32 = 5;
-};
-pub const BoneVisibleChangeResponse = struct {
-    pub const msg_id: u16 = 15448;
+    pub const msg_id: u16 = 26691;
     pub const ErrorCode_field_number: u32 = 12;
 };
+pub const AnimalDropRequest = struct {
+    pub const msg_id: u16 = 29107;
+    pub const EntityId_field_number: u32 = 2;
+};
+pub const AnimalDropResponse = struct {
+    pub const msg_id: u16 = 25751;
+    pub const ErrorCode_field_number: u32 = 10;
+};
+pub const EntityStateReadyNotify = struct {
+    pub const msg_id: u16 = 23517;
+    pub const EntityId_field_number: u32 = 1;
+    pub const TagId_field_number: u32 = 10;
+    pub const Ready_field_number: u32 = 8;
+};
+pub const EntityInteractRequest = struct {
+    pub const msg_id: u16 = 18643;
+    pub const EntityId_field_number: u32 = 7;
+    pub const OptionIndex_field_number: u32 = 2;
+    pub const VisionEntityId_field_number: u32 = 8;
+};
+pub const EntityInteractResponse = struct {
+    pub const msg_id: u16 = 29908;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const Interacting_field_number: u32 = 9;
+};
+pub const EntityDynamicInteractRequest = struct {
+    pub const msg_id: u16 = 18350;
+    pub const EntityId_field_number: u32 = 10;
+    pub const OptionGuid_field_number: u32 = 5;
+};
+pub const EntityDynamicInteractResponse = struct {
+    pub const msg_id: u16 = 17030;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const Interacting_field_number: u32 = 7;
+};
+pub const BoneVisibleChangeRequest = struct {
+    pub const msg_id: u16 = 20124;
+    pub const BoneVisibleData_field_number: u32 = 5;
+};
+pub const BoneVisibleChangePush = struct {
+    pub const msg_id: u16 = 19234;
+    pub const BoneVisibleData_field_number: u32 = 13;
+};
+pub const BoneVisibleChangeResponse = struct {
+    pub const msg_id: u16 = 20334;
+    pub const ErrorCode_field_number: u32 = 8;
+};
 pub const BoneVisibleChangeNotify = struct {
-    pub const msg_id: u16 = 21869;
+    pub const msg_id: u16 = 16295;
     pub const BoneVisibleData_field_number: u32 = 6;
 };
 pub const EquipComponentPb = struct {
@@ -4383,62 +4452,62 @@ pub const CharacterAttachComponentPb = struct {
     pub const PbCombineTargetServerId_field_number: u32 = 2;
 };
 pub const EntityEquipChangeNotify = struct {
-    pub const msg_id: u16 = 29283;
-    pub const EntityId_field_number: u32 = 12;
+    pub const msg_id: u16 = 16817;
+    pub const EntityId_field_number: u32 = 14;
     pub const EquipComponent_field_number: u32 = 5;
 };
 pub const EntityEquipSkinChangeNotify = struct {
-    pub const msg_id: u16 = 27386;
-    pub const EntityId_field_number: u32 = 12;
-    pub const WeaponSkinComponentPb_field_number: u32 = 2;
+    pub const msg_id: u16 = 23591;
+    pub const EntityId_field_number: u32 = 2;
+    pub const WeaponSkinComponentPb_field_number: u32 = 4;
 };
 pub const EntityDressOrnamentChangeNotify = struct {
-    pub const msg_id: u16 = 24402;
-    pub const EntityId_field_number: u32 = 1;
-    pub const OrnamentComponentPb_field_number: u32 = 7;
+    pub const msg_id: u16 = 19511;
+    pub const EntityId_field_number: u32 = 9;
+    pub const OrnamentComponentPb_field_number: u32 = 4;
 };
 pub const EntityStaticHookMoveRequest = struct {
-    pub const msg_id: u16 = 16855;
+    pub const msg_id: u16 = 18356;
     Target: ?union(enum) {
     } = null,
-    pub const TargetEntityId_field_number: u32 = 14;
-    pub const TargetPos_field_number: u32 = 7;
-    pub const EntityId_field_number: u32 = 2;
-    pub const HookMoveType_field_number: u32 = 15;
+    pub const TargetEntityId_field_number: u32 = 2;
+    pub const TargetPos_field_number: u32 = 15;
+    pub const EntityId_field_number: u32 = 13;
+    pub const HookMoveType_field_number: u32 = 3;
 };
 pub const EntityStaticHookMovePush = struct {
-    pub const msg_id: u16 = 26844;
+    pub const msg_id: u16 = 27494;
     Target: ?union(enum) {
     } = null,
-    pub const TargetEntityId_field_number: u32 = 6;
-    pub const TargetPos_field_number: u32 = 4;
-    pub const EntityId_field_number: u32 = 15;
-    pub const HookMoveType_field_number: u32 = 9;
+    pub const TargetEntityId_field_number: u32 = 3;
+    pub const TargetPos_field_number: u32 = 7;
+    pub const EntityId_field_number: u32 = 9;
+    pub const HookMoveType_field_number: u32 = 10;
 };
 pub const EntityStaticHookMoveResponse = struct {
-    pub const msg_id: u16 = 15900;
-    pub const ErrorCode_field_number: u32 = 3;
+    pub const msg_id: u16 = 24175;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const EntityStaticHookMoveNotify = struct {
-    pub const msg_id: u16 = 29924;
+    pub const msg_id: u16 = 26938;
     Target: ?union(enum) {
     } = null,
-    pub const TargetEntityId_field_number: u32 = 13;
-    pub const TargetPos_field_number: u32 = 11;
-    pub const EntityId_field_number: u32 = 12;
-    pub const HookMoveType_field_number: u32 = 6;
+    pub const TargetEntityId_field_number: u32 = 1;
+    pub const TargetPos_field_number: u32 = 9;
+    pub const EntityId_field_number: u32 = 11;
+    pub const HookMoveType_field_number: u32 = 12;
 };
 pub const SilenceNpcNotify = struct {
-    pub const msg_id: u16 = 22123;
-    pub const vTs_field_number: u32 = 1;
+    pub const msg_id: u16 = 21690;
+    pub const vTs_field_number: u32 = 11;
 };
 pub const EntityPatrolStopRequest = struct {
-    pub const msg_id: u16 = 22837;
-    pub const EntityId_field_number: u32 = 12;
+    pub const msg_id: u16 = 27475;
+    pub const EntityId_field_number: u32 = 3;
 };
 pub const EntityPatrolStopResponse = struct {
-    pub const msg_id: u16 = 27586;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 23618;
+    pub const ErrorCode_field_number: u32 = 5;
 };
 pub const PatrolComponentPb = struct {
     pub const Dir_field_number: u32 = 1;
@@ -4455,13 +4524,13 @@ pub const DollGrabShowcaseComponentPb = struct {
     pub const DollItems_field_number: u32 = 1;
 };
 pub const DollSmallMapInfoRequest = struct {
-    pub const msg_id: u16 = 28182;
+    pub const msg_id: u16 = 21017;
 };
 pub const DollSmallMapInfoResponse = struct {
-    pub const msg_id: u16 = 29935;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const SceneUnlimitedScoreInfos_field_number: u32 = 11;
-    pub const SceneDollDeliveryInfos_field_number: u32 = 14;
+    pub const msg_id: u16 = 22797;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const SceneUnlimitedScoreInfos_field_number: u32 = 13;
+    pub const SceneDollDeliveryInfos_field_number: u32 = 7;
 };
 pub const SceneUnlimitedScoreInfo = struct {
     pub const instId_field_number: u32 = 1;
@@ -4481,14 +4550,14 @@ pub const DollDeliveryInfo = struct {
     pub const DeliveredDolls_field_number: u32 = 2;
 };
 pub const EntityPositionRequest = struct {
-    pub const msg_id: u16 = 27346;
-    pub const ConfigId_field_number: u32 = 5;
-    pub const DungeonInstanceId_field_number: u32 = 12;
+    pub const msg_id: u16 = 16467;
+    pub const ConfigId_field_number: u32 = 7;
+    pub const DungeonInstanceId_field_number: u32 = 9;
 };
 pub const EntityPositionResponse = struct {
-    pub const msg_id: u16 = 20311;
-    pub const ErrorCode_field_number: u32 = 13;
-    pub const Pos_field_number: u32 = 9;
+    pub const msg_id: u16 = 25394;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const Pos_field_number: u32 = 3;
 };
 pub const ShieldInfoPb = struct {
     pub const Handle_field_number: u32 = 1;
@@ -4513,98 +4582,98 @@ pub const AttributesIdsComponentPb = struct {
     pub const PbSceneItemAttributeIds_field_number: u32 = 1;
 };
 pub const VehicleManipulateRequest = struct {
-    pub const msg_id: u16 = 29131;
+    pub const msg_id: u16 = 29971;
     Exit: ?union(enum) {
     } = null,
-    pub const ExitType_field_number: u32 = 10;
-    pub const EntityId_field_number: u32 = 13;
-    pub const HostPlayerId_field_number: u32 = 4;
-    pub const IsEntering_field_number: u32 = 2;
-    pub const Seat_field_number: u32 = 15;
+    pub const ExitType_field_number: u32 = 3;
+    pub const EntityId_field_number: u32 = 1;
+    pub const HostPlayerId_field_number: u32 = 8;
+    pub const IsEntering_field_number: u32 = 5;
+    pub const Seat_field_number: u32 = 7;
     pub const ClientPredicted_field_number: u32 = 11;
-    pub const ReasonMsg_field_number: u32 = 14;
+    pub const ReasonMsg_field_number: u32 = 12;
 };
 pub const VehicleManipulateResponse = struct {
-    pub const msg_id: u16 = 26229;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 18852;
+    pub const ErrorCode_field_number: u32 = 5;
 };
 pub const VehicleFinishRequest = struct {
-    pub const msg_id: u16 = 22362;
-    pub const EntityId_field_number: u32 = 9;
+    pub const msg_id: u16 = 18022;
+    pub const EntityId_field_number: u32 = 7;
 };
 pub const VehicleFinishResponse = struct {
-    pub const msg_id: u16 = 24967;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 23136;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const EntityEnterVehicleRequest = struct {
-    pub const msg_id: u16 = 16496;
+    pub const msg_id: u16 = 23956;
     Exit: ?union(enum) {
     } = null,
     pub const ExitType_field_number: u32 = 5;
-    pub const EntityId_field_number: u32 = 2;
+    pub const EntityId_field_number: u32 = 9;
     pub const VehicleCreatureId_field_number: u32 = 10;
-    pub const HostPlayerId_field_number: u32 = 8;
-    pub const IsEntering_field_number: u32 = 11;
-    pub const Seat_field_number: u32 = 4;
-    pub const ClientPredicted_field_number: u32 = 14;
-    pub const ReasonMsg_field_number: u32 = 13;
+    pub const HostPlayerId_field_number: u32 = 1;
+    pub const IsEntering_field_number: u32 = 14;
+    pub const Seat_field_number: u32 = 12;
+    pub const ClientPredicted_field_number: u32 = 2;
+    pub const ReasonMsg_field_number: u32 = 15;
 };
 pub const EntityEnterVehicleResponse = struct {
-    pub const msg_id: u16 = 20762;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 28752;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const VehicleUpdateEntityNotify = struct {
-    pub const msg_id: u16 = 22121;
-    pub const EntityId_field_number: u32 = 10;
-    pub const VehicleCreatureId_field_number: u32 = 5;
-    pub const Seat_field_number: u32 = 7;
-    pub const IsEntering_field_number: u32 = 6;
-    pub const ExitType_field_number: u32 = 13;
-    pub const ClientPredicted_field_number: u32 = 2;
+    pub const msg_id: u16 = 25063;
+    pub const EntityId_field_number: u32 = 2;
+    pub const VehicleCreatureId_field_number: u32 = 13;
+    pub const Seat_field_number: u32 = 3;
+    pub const IsEntering_field_number: u32 = 14;
+    pub const ExitType_field_number: u32 = 10;
+    pub const ClientPredicted_field_number: u32 = 11;
 };
 pub const VehiclePlayerData = struct {
     pub const EntityId_field_number: u32 = 1;
     pub const Seat_field_number: u32 = 2;
 };
 pub const ChangeVehicleRideSharingRequest = struct {
-    pub const msg_id: u16 = 19111;
-    pub const RoleId_field_number: u32 = 14;
-    pub const Seat_field_number: u32 = 10;
+    pub const msg_id: u16 = 21416;
+    pub const RoleId_field_number: u32 = 6;
+    pub const Seat_field_number: u32 = 3;
 };
 pub const ChangeVehicleRideSharingResponse = struct {
-    pub const msg_id: u16 = 18705;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 20697;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const RemoveRideSharingPassengerRequest = struct {
-    pub const msg_id: u16 = 27695;
-    pub const RoleId_field_number: u32 = 12;
+    pub const msg_id: u16 = 22646;
+    pub const RoleId_field_number: u32 = 2;
 };
 pub const RemoveRideSharingPassengerResponse = struct {
-    pub const msg_id: u16 = 28336;
+    pub const msg_id: u16 = 23958;
     pub const ErrorCode_field_number: u32 = 5;
 };
 pub const UpdateVehicleRideSharingNotify = struct {
-    pub const msg_id: u16 = 29293;
+    pub const msg_id: u16 = 21681;
     pub const PlayerId_field_number: u32 = 13;
     pub const RoleId_field_number: u32 = 6;
-    pub const Seat_field_number: u32 = 5;
-    pub const EntityId_field_number: u32 = 2;
+    pub const Seat_field_number: u32 = 4;
+    pub const EntityId_field_number: u32 = 3;
 };
 pub const SendMovieModeRideSharingRequest = struct {
-    pub const msg_id: u16 = 17464;
-    pub const IsInMovieRideSharingMode_field_number: u32 = 14;
-    pub const ShareRideMode_field_number: u32 = 11;
+    pub const msg_id: u16 = 24127;
+    pub const IsInMovieRideSharingMode_field_number: u32 = 15;
+    pub const ShareRideMode_field_number: u32 = 9;
 };
 pub const SendMovieModeRideSharingResponse = struct {
-    pub const msg_id: u16 = 29870;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 29612;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const VehicleShareNotify = struct {
-    pub const msg_id: u16 = 16414;
+    pub const msg_id: u16 = 25947;
     pub const PlayerId_field_number: u32 = 10;
-    pub const ShareRideMode_field_number: u32 = 9;
-    pub const IsInMovieRideSharingMode_field_number: u32 = 1;
-    pub const Reason_field_number: u32 = 5;
+    pub const ShareRideMode_field_number: u32 = 6;
+    pub const IsInMovieRideSharingMode_field_number: u32 = 8;
+    pub const Reason_field_number: u32 = 15;
 };
 pub const PatrolInfoComponentPb = struct {
     pub const SceneAiEnabled_field_number: u32 = 1;
@@ -4805,9 +4874,9 @@ pub const CalabashSkinComponentPb = struct {
     pub const CalabashSkinId_field_number: u32 = 1;
 };
 pub const EntityCalabashSkinChangeNotify = struct {
-    pub const msg_id: u16 = 17510;
-    pub const EntityId_field_number: u32 = 7;
-    pub const CalabashSkinCoponent_field_number: u32 = 9;
+    pub const msg_id: u16 = 15059;
+    pub const EntityId_field_number: u32 = 10;
+    pub const CalabashSkinCoponent_field_number: u32 = 12;
 };
 pub const HonamiStoryDropItemComponentPb = struct {
     pub const Item_field_number: u32 = 1;
@@ -4897,6 +4966,33 @@ pub const FurnitureComponentPb = struct {
 };
 pub const PinballKSCRolePbData = struct {
 };
+pub const DarkTideComponentPb = struct {
+    pub const DarkTideDropEntityComponentPb_field_number: u32 = 1;
+    pub const DarkTideItemMarkPb_field_number: u32 = 2;
+    pub const SelectVisionIndex_field_number: u32 = 3;
+};
+pub const ElementalHolderComponentPb = struct {
+    pub const Enable_field_number: u32 = 1;
+};
+pub const EntityFoundationComponentPb = struct {
+    egM: ?union(enum) {
+    } = null,
+    pub const FoundationCoreInfo_field_number: u32 = 1;
+};
+pub const FoundationCoreInfo = struct {
+    pub const SourceEntityId_field_number: u32 = 1;
+    pub const ElementalBoxId_field_number: u32 = 2;
+    pub const State_field_number: u32 = 3;
+    pub const ElementalType_field_number: u32 = 4;
+    pub const Priority_field_number: u32 = 5;
+    pub const EntityId_field_number: u32 = 6;
+};
+pub const SquadPropComponentPb = struct {
+    pub const Attributes_field_number: u32 = 1;
+};
+pub const ConnectorComponentPb = struct {
+    pub const HasInitiatedConnect_field_number: u32 = 1;
+};
 pub const VisionSkillInformation = struct {
     pub const SkillId_field_number: u32 = 1;
     pub const Level_field_number: u32 = 2;
@@ -4905,18 +5001,18 @@ pub const VisionSkillInformation = struct {
     pub const Index_field_number: u32 = 5;
 };
 pub const VisionSkillChangeNotify = struct {
-    pub const msg_id: u16 = 15344;
-    pub const EntityId_field_number: u32 = 11;
-    pub const VisionSkillInfos_field_number: u32 = 12;
-    pub const PhantomSkillInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 15184;
+    pub const EntityId_field_number: u32 = 13;
+    pub const VisionSkillInfos_field_number: u32 = 7;
+    pub const PhantomSkillInfo_field_number: u32 = 8;
 };
 pub const PartComponentPb = struct {
     pub const PartLifeInfos_field_number: u32 = 1;
 };
 pub const PartComponentInitNotify = struct {
-    pub const msg_id: u16 = 16221;
-    pub const EntityId_field_number: u32 = 14;
-    pub const PartComponent_field_number: u32 = 2;
+    pub const msg_id: u16 = 27435;
+    pub const EntityId_field_number: u32 = 9;
+    pub const PartComponent_field_number: u32 = 13;
 };
 pub const PartInformation = struct {
     pub const PartIndex_field_number: u32 = 1;
@@ -4931,230 +5027,230 @@ pub const PartUpdateInfo = struct {
     pub const Reset_field_number: u32 = 3;
 };
 pub const PartUpdateRequest = struct {
-    pub const msg_id: u16 = 21344;
-    pub const EntityId_field_number: u32 = 4;
-    pub const PartUpdateInfos_field_number: u32 = 9;
+    pub const msg_id: u16 = 23337;
+    pub const EntityId_field_number: u32 = 8;
+    pub const PartUpdateInfos_field_number: u32 = 12;
 };
 pub const PartUpdatePush = struct {
-    pub const msg_id: u16 = 15701;
-    pub const EntityId_field_number: u32 = 8;
-    pub const PartUpdateInfos_field_number: u32 = 10;
+    pub const msg_id: u16 = 29042;
+    pub const EntityId_field_number: u32 = 2;
+    pub const PartUpdateInfos_field_number: u32 = 7;
 };
 pub const PartUpdateResponse = struct {
-    pub const msg_id: u16 = 26290;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 28131;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const PartUpdateNotify = struct {
-    pub const msg_id: u16 = 29702;
-    pub const EntityId_field_number: u32 = 15;
-    pub const PartInfos_field_number: u32 = 4;
+    pub const msg_id: u16 = 23036;
+    pub const EntityId_field_number: u32 = 4;
+    pub const PartInfos_field_number: u32 = 14;
 };
 pub const ApplyGameplayEffectRequest = struct {
-    pub const msg_id: u16 = 28580;
+    pub const msg_id: u16 = 22973;
     Time: ?union(enum) {
     } = null,
-    pub const Duration_field_number: u32 = 7;
-    pub const Handle_field_number: u32 = 2;
-    pub const Id_field_number: u32 = 3;
-    pub const Level_field_number: u32 = 12;
-    pub const InstigatorId_field_number: u32 = 9;
-    pub const ApplyType_field_number: u32 = 6;
+    pub const Duration_field_number: u32 = 2;
+    pub const Handle_field_number: u32 = 14;
+    pub const Id_field_number: u32 = 7;
+    pub const Level_field_number: u32 = 4;
+    pub const InstigatorId_field_number: u32 = 5;
+    pub const ApplyType_field_number: u32 = 10;
     pub const ServerId_field_number: u32 = 11;
-    pub const StackCount_field_number: u32 = 15;
-    pub const IsActive_field_number: u32 = 8;
+    pub const StackCount_field_number: u32 = 3;
+    pub const IsActive_field_number: u32 = 15;
 };
 pub const ApplyGameplayEffectPush = struct {
-    pub const msg_id: u16 = 22678;
+    pub const msg_id: u16 = 29488;
     Time: ?union(enum) {
     } = null,
-    pub const Duration_field_number: u32 = 10;
-    pub const Handle_field_number: u32 = 1;
-    pub const Id_field_number: u32 = 2;
-    pub const Level_field_number: u32 = 5;
-    pub const InstigatorId_field_number: u32 = 8;
-    pub const ApplyType_field_number: u32 = 6;
-    pub const ServerId_field_number: u32 = 3;
-    pub const StackCount_field_number: u32 = 11;
-    pub const IsActive_field_number: u32 = 13;
-    pub const Reason_field_number: u32 = 12;
-    pub const ConfBuffId_field_number: u32 = 7;
+    pub const Duration_field_number: u32 = 8;
+    pub const Handle_field_number: u32 = 3;
+    pub const Id_field_number: u32 = 5;
+    pub const Level_field_number: u32 = 7;
+    pub const InstigatorId_field_number: u32 = 10;
+    pub const ApplyType_field_number: u32 = 13;
+    pub const ServerId_field_number: u32 = 14;
+    pub const StackCount_field_number: u32 = 4;
+    pub const IsActive_field_number: u32 = 6;
+    pub const Reason_field_number: u32 = 2;
+    pub const ConfBuffId_field_number: u32 = 12;
 };
 pub const ApplyGameplayEffectResponse = struct {
-    pub const msg_id: u16 = 29902;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 22915;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const ApplyGameplayEffectNotify = struct {
-    pub const msg_id: u16 = 17019;
+    pub const msg_id: u16 = 25830;
     CRoundAction: ?union(enum) {
     } = null,
     Time: ?union(enum) {
     } = null,
-    pub const Duration_field_number: u32 = 5;
-    pub const LeftDuration_field_number: u32 = 10;
-    pub const Handle_field_number: u32 = 12;
-    pub const Id_field_number: u32 = 2;
-    pub const Level_field_number: u32 = 7;
-    pub const EntityId_field_number: u32 = 15;
-    pub const InstigatorId_field_number: u32 = 6;
-    pub const ApplyType_field_number: u32 = 4;
-    pub const IsActive_field_number: u32 = 1;
-    pub const ServerId_field_number: u32 = 11;
-    pub const StackCount_field_number: u32 = 13;
+    pub const Duration_field_number: u32 = 15;
+    pub const LeftDuration_field_number: u32 = 12;
+    pub const Handle_field_number: u32 = 2;
+    pub const Id_field_number: u32 = 11;
+    pub const Level_field_number: u32 = 5;
+    pub const EntityId_field_number: u32 = 7;
+    pub const InstigatorId_field_number: u32 = 8;
+    pub const ApplyType_field_number: u32 = 9;
+    pub const IsActive_field_number: u32 = 6;
+    pub const ServerId_field_number: u32 = 10;
+    pub const StackCount_field_number: u32 = 1;
     pub const ConfBuffId_field_number: u32 = 14;
 };
 pub const RemoveGameplayEffectRequest = struct {
-    pub const msg_id: u16 = 22464;
-    pub const Handle_field_number: u32 = 13;
-    pub const EntityId_field_number: u32 = 12;
-    pub const IsPrematureRemoval_field_number: u32 = 7;
+    pub const msg_id: u16 = 19884;
+    pub const Handle_field_number: u32 = 6;
+    pub const EntityId_field_number: u32 = 2;
+    pub const IsPrematureRemoval_field_number: u32 = 3;
 };
 pub const RemoveGameplayEffectPush = struct {
-    pub const msg_id: u16 = 26179;
-    pub const Handle_field_number: u32 = 2;
-    pub const EntityId_field_number: u32 = 11;
-    pub const IsPrematureRemoval_field_number: u32 = 4;
-    pub const Reason_field_number: u32 = 13;
-    pub const InstigatorId_field_number: u32 = 15;
+    pub const msg_id: u16 = 20358;
+    pub const Handle_field_number: u32 = 14;
+    pub const EntityId_field_number: u32 = 15;
+    pub const IsPrematureRemoval_field_number: u32 = 10;
+    pub const Reason_field_number: u32 = 1;
+    pub const InstigatorId_field_number: u32 = 4;
 };
 pub const RemoveGameplayEffectResponse = struct {
-    pub const msg_id: u16 = 16882;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const Handle_field_number: u32 = 1;
+    pub const msg_id: u16 = 28077;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const Handle_field_number: u32 = 2;
 };
 pub const RemoveGameplayEffectNotify = struct {
-    pub const msg_id: u16 = 16773;
-    pub const Handle_field_number: u32 = 5;
-    pub const EntityId_field_number: u32 = 6;
-    pub const InstigatorId_field_number: u32 = 1;
+    pub const msg_id: u16 = 18345;
+    pub const Handle_field_number: u32 = 13;
+    pub const EntityId_field_number: u32 = 5;
+    pub const InstigatorId_field_number: u32 = 14;
 };
 pub const OrderApplyBuffRequest = struct {
-    pub const msg_id: u16 = 27423;
+    pub const msg_id: u16 = 21800;
+    Time: ?union(enum) {
+    } = null,
+    pub const Duration_field_number: u32 = 13;
+    pub const Id_field_number: u32 = 9;
+    pub const Level_field_number: u32 = 1;
+    pub const InstigatorId_field_number: u32 = 10;
+    pub const ApplyType_field_number: u32 = 5;
+    pub const ServerId_field_number: u32 = 7;
+    pub const StackCount_field_number: u32 = 12;
+    pub const IsIterable_field_number: u32 = 2;
+    pub const TransferContextId_field_number: u32 = 8;
+    pub const Reason_field_number: u32 = 6;
+};
+pub const OrderApplyBuffResponse = struct {
+    pub const msg_id: u16 = 27266;
+    pub const ErrorCode_field_number: u32 = 3;
+};
+pub const OrderRemoveBuffRequest = struct {
+    pub const msg_id: u16 = 29255;
+    pub const Id_field_number: u32 = 7;
+    pub const StackCount_field_number: u32 = 10;
+    pub const Reason_field_number: u32 = 9;
+    pub const InstigatorId_field_number: u32 = 15;
+};
+pub const OrderRemoveBuffResponse = struct {
+    pub const msg_id: u16 = 17452;
+    pub const ErrorCode_field_number: u32 = 7;
+};
+pub const OrderApplyBuffNotify = struct {
+    pub const msg_id: u16 = 26471;
+    Time: ?union(enum) {
+    } = null,
+    pub const Duration_field_number: u32 = 15;
+    pub const Id_field_number: u32 = 9;
+    pub const Level_field_number: u32 = 5;
+    pub const InstigatorId_field_number: u32 = 10;
+    pub const ApplyType_field_number: u32 = 1;
+    pub const ServerId_field_number: u32 = 3;
+    pub const StackCount_field_number: u32 = 13;
+    pub const IsIterable_field_number: u32 = 6;
+};
+pub const OrderRemoveBuffNotify = struct {
+    pub const msg_id: u16 = 17807;
+    pub const Id_field_number: u32 = 12;
+    pub const StackCount_field_number: u32 = 5;
+};
+pub const ApplyBuffS2cRequestNotify = struct {
+    pub const msg_id: u16 = 18641;
     Time: ?union(enum) {
     } = null,
     pub const Duration_field_number: u32 = 3;
     pub const Id_field_number: u32 = 4;
-    pub const Level_field_number: u32 = 6;
-    pub const InstigatorId_field_number: u32 = 8;
-    pub const ApplyType_field_number: u32 = 15;
-    pub const ServerId_field_number: u32 = 7;
-    pub const StackCount_field_number: u32 = 14;
-    pub const IsIterable_field_number: u32 = 12;
-    pub const TransferContextId_field_number: u32 = 10;
-    pub const Reason_field_number: u32 = 13;
-};
-pub const OrderApplyBuffResponse = struct {
-    pub const msg_id: u16 = 25892;
-    pub const ErrorCode_field_number: u32 = 9;
-};
-pub const OrderRemoveBuffRequest = struct {
-    pub const msg_id: u16 = 22866;
-    pub const Id_field_number: u32 = 4;
-    pub const StackCount_field_number: u32 = 12;
-    pub const Reason_field_number: u32 = 14;
-    pub const InstigatorId_field_number: u32 = 1;
-};
-pub const OrderRemoveBuffResponse = struct {
-    pub const msg_id: u16 = 23758;
-    pub const ErrorCode_field_number: u32 = 3;
-};
-pub const OrderApplyBuffNotify = struct {
-    pub const msg_id: u16 = 23435;
-    Time: ?union(enum) {
-    } = null,
-    pub const Duration_field_number: u32 = 8;
-    pub const Id_field_number: u32 = 14;
-    pub const Level_field_number: u32 = 10;
-    pub const InstigatorId_field_number: u32 = 1;
-    pub const ApplyType_field_number: u32 = 4;
-    pub const ServerId_field_number: u32 = 5;
-    pub const StackCount_field_number: u32 = 11;
-    pub const IsIterable_field_number: u32 = 6;
-};
-pub const OrderRemoveBuffNotify = struct {
-    pub const msg_id: u16 = 17314;
-    pub const Id_field_number: u32 = 3;
-    pub const StackCount_field_number: u32 = 2;
-};
-pub const ApplyBuffS2cRequestNotify = struct {
-    pub const msg_id: u16 = 22273;
-    Time: ?union(enum) {
-    } = null,
-    pub const Duration_field_number: u32 = 5;
-    pub const Id_field_number: u32 = 11;
     pub const Level_field_number: u32 = 8;
-    pub const InstigatorId_field_number: u32 = 14;
-    pub const ApplyType_field_number: u32 = 13;
-    pub const ServerId_field_number: u32 = 2;
-    pub const StackCount_field_number: u32 = 10;
-    pub const IsIterable_field_number: u32 = 6;
-    pub const Reason_field_number: u32 = 12;
+    pub const InstigatorId_field_number: u32 = 15;
+    pub const ApplyType_field_number: u32 = 5;
+    pub const ServerId_field_number: u32 = 10;
+    pub const StackCount_field_number: u32 = 11;
+    pub const IsIterable_field_number: u32 = 1;
+    pub const Reason_field_number: u32 = 9;
 };
 pub const ApplyBuffS2cResponsePush = struct {
-    pub const msg_id: u16 = 27434;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const Handle_field_number: u32 = 5;
-    pub const IsActive_field_number: u32 = 12;
+    pub const msg_id: u16 = 16890;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const Handle_field_number: u32 = 11;
+    pub const IsActive_field_number: u32 = 5;
 };
 pub const RemoveBuffS2cRequestNotify = struct {
-    pub const msg_id: u16 = 17221;
-    pub const Handle_field_number: u32 = 7;
-    pub const StackCount_field_number: u32 = 2;
-    pub const Reason_field_number: u32 = 8;
-    pub const InstigatorId_field_number: u32 = 1;
+    pub const msg_id: u16 = 20022;
+    pub const Handle_field_number: u32 = 1;
+    pub const StackCount_field_number: u32 = 12;
+    pub const Reason_field_number: u32 = 11;
+    pub const InstigatorId_field_number: u32 = 2;
 };
 pub const RemoveBuffS2cResponsePush = struct {
-    pub const msg_id: u16 = 26537;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 23971;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const RemoveBuffByIdS2cRequestNotify = struct {
-    pub const msg_id: u16 = 24468;
-    pub const BuffId_field_number: u32 = 2;
-    pub const StackCount_field_number: u32 = 3;
-    pub const Reason_field_number: u32 = 4;
-    pub const InstigatorId_field_number: u32 = 15;
+    pub const msg_id: u16 = 19482;
+    pub const BuffId_field_number: u32 = 4;
+    pub const StackCount_field_number: u32 = 13;
+    pub const Reason_field_number: u32 = 10;
+    pub const InstigatorId_field_number: u32 = 6;
 };
 pub const RemoveBuffByIdS2cResponsePush = struct {
-    pub const msg_id: u16 = 28575;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 19162;
+    pub const ErrorCode_field_number: u32 = 15;
 };
 pub const BroadcastAddBuffFailedNotify = struct {
-    pub const msg_id: u16 = 23768;
-    pub const BuffId_field_number: u32 = 10;
-    pub const StackCount_field_number: u32 = 11;
+    pub const msg_id: u16 = 22435;
+    pub const BuffId_field_number: u32 = 3;
+    pub const StackCount_field_number: u32 = 7;
     pub const InstigatorId_field_number: u32 = 2;
     pub const TransferContextId_field_number: u32 = 15;
 };
 pub const ActivateBuffRequest = struct {
-    pub const msg_id: u16 = 15227;
+    pub const msg_id: u16 = 17149;
     pub const Handle_field_number: u32 = 1;
-    pub const On_field_number: u32 = 11;
-};
-pub const ActiveBuffPush = struct {
-    pub const msg_id: u16 = 25271;
-    pub const Handle_field_number: u32 = 9;
     pub const On_field_number: u32 = 15;
 };
+pub const ActiveBuffPush = struct {
+    pub const msg_id: u16 = 20926;
+    pub const Handle_field_number: u32 = 5;
+    pub const On_field_number: u32 = 2;
+};
 pub const ActivateBuffResponse = struct {
-    pub const msg_id: u16 = 25973;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 19917;
+    pub const ErrorCode_field_number: u32 = 6;
 };
 pub const ActivateBuffNotify = struct {
-    pub const msg_id: u16 = 24594;
-    pub const Handle_field_number: u32 = 12;
-    pub const On_field_number: u32 = 4;
+    pub const msg_id: u16 = 28221;
+    pub const Handle_field_number: u32 = 8;
+    pub const On_field_number: u32 = 1;
 };
 pub const OrderRemoveBuffByTagsRequest = struct {
-    pub const msg_id: u16 = 24948;
-    pub const TagIds_field_number: u32 = 1;
-    pub const InstigatorId_field_number: u32 = 12;
+    pub const msg_id: u16 = 22742;
+    pub const TagIds_field_number: u32 = 11;
+    pub const InstigatorId_field_number: u32 = 15;
 };
 pub const OrderRemoveBuffByTagsResponse = struct {
-    pub const msg_id: u16 = 27151;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 16551;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const OrderRemoveBuffByTagsNotify = struct {
-    pub const msg_id: u16 = 24782;
-    pub const TagIds_field_number: u32 = 13;
+    pub const msg_id: u16 = 24520;
+    pub const TagIds_field_number: u32 = 7;
     pub const InstigatorId_field_number: u32 = 12;
 };
 pub const AttributeEventEffectData = struct {
@@ -5169,123 +5265,123 @@ pub const FightBuffEffectContext = struct {
     pub const AttributeEventEffectData_field_number: u32 = 6;
 };
 pub const BuffStackCountRequest = struct {
-    pub const msg_id: u16 = 26325;
-    pub const HandleId_field_number: u32 = 1;
-    pub const NewStackCount_field_number: u32 = 11;
-    pub const IsPrematureRemoval_field_number: u32 = 7;
-    pub const InstigatorId_field_number: u32 = 2;
+    pub const msg_id: u16 = 19820;
+    pub const HandleId_field_number: u32 = 6;
+    pub const NewStackCount_field_number: u32 = 12;
+    pub const IsPrematureRemoval_field_number: u32 = 10;
+    pub const InstigatorId_field_number: u32 = 13;
 };
 pub const BuffStackCountPush = struct {
-    pub const msg_id: u16 = 25789;
-    pub const HandleId_field_number: u32 = 9;
-    pub const NewStackCount_field_number: u32 = 1;
-    pub const IsPrematureRemoval_field_number: u32 = 4;
-    pub const InstigatorId_field_number: u32 = 13;
-    pub const NotRefreshDuration_field_number: u32 = 8;
-    pub const NotRefreshPeriod_field_number: u32 = 6;
-    pub const Duration_field_number: u32 = 12;
-    pub const Reason_field_number: u32 = 10;
+    pub const msg_id: u16 = 21666;
+    pub const HandleId_field_number: u32 = 2;
+    pub const NewStackCount_field_number: u32 = 14;
+    pub const IsPrematureRemoval_field_number: u32 = 8;
+    pub const InstigatorId_field_number: u32 = 12;
+    pub const NotRefreshDuration_field_number: u32 = 4;
+    pub const NotRefreshPeriod_field_number: u32 = 5;
+    pub const Duration_field_number: u32 = 13;
+    pub const Reason_field_number: u32 = 3;
 };
 pub const BuffStackCountResponse = struct {
-    pub const msg_id: u16 = 17439;
-    pub const ErrorCode_field_number: u32 = 10;
+    pub const msg_id: u16 = 26251;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const BuffStackCountNotify = struct {
-    pub const msg_id: u16 = 17206;
+    pub const msg_id: u16 = 29363;
     Time: ?union(enum) {
     } = null,
     gFs: ?union(enum) {
     } = null,
-    pub const Duration_field_number: u32 = 6;
-    pub const LeftDuration_field_number: u32 = 13;
-    pub const HandleId_field_number: u32 = 15;
-    pub const NewStackCount_field_number: u32 = 12;
-    pub const InstigatorId_field_number: u32 = 5;
-    pub const NotRefreshDuration_field_number: u32 = 14;
-    pub const NotRefreshPeriod_field_number: u32 = 8;
+    pub const Duration_field_number: u32 = 7;
+    pub const LeftDuration_field_number: u32 = 11;
+    pub const HandleId_field_number: u32 = 9;
+    pub const NewStackCount_field_number: u32 = 4;
+    pub const InstigatorId_field_number: u32 = 13;
+    pub const NotRefreshDuration_field_number: u32 = 6;
+    pub const NotRefreshPeriod_field_number: u32 = 1;
 };
 pub const BuffEffectCd = struct {
     pub const BuffId_field_number: u32 = 1;
     pub const ListCdRemaining_field_number: u32 = 2;
 };
 pub const BuffEffectRequest = struct {
-    pub const msg_id: u16 = 15926;
-    pub const HandleId_field_number: u32 = 13;
-    pub const Index_field_number: u32 = 10;
+    pub const msg_id: u16 = 22540;
+    pub const HandleId_field_number: u32 = 7;
+    pub const Index_field_number: u32 = 12;
 };
 pub const BuffEffectPush = struct {
-    pub const msg_id: u16 = 17315;
-    pub const HandleId_field_number: u32 = 11;
-    pub const Index_field_number: u32 = 7;
+    pub const msg_id: u16 = 20706;
+    pub const HandleId_field_number: u32 = 7;
+    pub const Index_field_number: u32 = 8;
 };
 pub const BuffEffectResponse = struct {
-    pub const msg_id: u16 = 22178;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 16967;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const BuffDurationNotify = struct {
-    pub const msg_id: u16 = 25585;
+    pub const msg_id: u16 = 16974;
     Time: ?union(enum) {
     } = null,
     gFs: ?union(enum) {
     } = null,
-    pub const Duration_field_number: u32 = 12;
-    pub const LeftDuration_field_number: u32 = 13;
-    pub const HandleId_field_number: u32 = 4;
+    pub const Duration_field_number: u32 = 2;
+    pub const LeftDuration_field_number: u32 = 5;
+    pub const HandleId_field_number: u32 = 12;
 };
 pub const RefreshBuffDurationPush = struct {
-    pub const msg_id: u16 = 17043;
-    pub const BuffIds_field_number: u32 = 6;
+    pub const msg_id: u16 = 27178;
+    pub const BuffIds_field_number: u32 = 12;
 };
 pub const BuffEffectExecutePush = struct {
-    pub const msg_id: u16 = 25695;
-    pub const HandleId_field_number: u32 = 3;
-    pub const Index_field_number: u32 = 15;
+    pub const msg_id: u16 = 18099;
+    pub const HandleId_field_number: u32 = 2;
+    pub const Index_field_number: u32 = 13;
 };
 pub const RemoveBuffByServerIdS2cRequestNotify = struct {
-    pub const msg_id: u16 = 25836;
-    pub const ServerId_field_number: u32 = 2;
-    pub const StackCount_field_number: u32 = 11;
-    pub const Reason_field_number: u32 = 14;
-    pub const InstigatorId_field_number: u32 = 15;
+    pub const msg_id: u16 = 23494;
+    pub const ServerId_field_number: u32 = 7;
+    pub const StackCount_field_number: u32 = 13;
+    pub const Reason_field_number: u32 = 10;
+    pub const InstigatorId_field_number: u32 = 14;
 };
 pub const ChangeStateRequest = struct {
-    pub const msg_id: u16 = 17079;
-    pub const FsmId_field_number: u32 = 14;
-    pub const FromState_field_number: u32 = 1;
-    pub const ToState_field_number: u32 = 4;
+    pub const msg_id: u16 = 25799;
+    pub const FsmId_field_number: u32 = 3;
+    pub const FromState_field_number: u32 = 8;
+    pub const ToState_field_number: u32 = 1;
 };
 pub const ChangeStateResponse = struct {
-    pub const msg_id: u16 = 24498;
-    pub const FsmId_field_number: u32 = 11;
-    pub const Error_field_number: u32 = 10;
-    pub const CurrentState_field_number: u32 = 4;
+    pub const msg_id: u16 = 27097;
+    pub const FsmId_field_number: u32 = 9;
+    pub const Error_field_number: u32 = 4;
+    pub const CurrentState_field_number: u32 = 11;
 };
 pub const ChangeStateNotify = struct {
-    pub const msg_id: u16 = 23950;
-    pub const FsmId_field_number: u32 = 5;
-    pub const FromState_field_number: u32 = 8;
-    pub const ToState_field_number: u32 = 3;
+    pub const msg_id: u16 = 21371;
+    pub const FsmId_field_number: u32 = 11;
+    pub const FromState_field_number: u32 = 7;
+    pub const ToState_field_number: u32 = 6;
 };
 pub const ChangeStateConfirmRequest = struct {
-    pub const msg_id: u16 = 22422;
-    pub const FsmId_field_number: u32 = 12;
-    pub const State_field_number: u32 = 9;
+    pub const msg_id: u16 = 27052;
+    pub const FsmId_field_number: u32 = 9;
+    pub const State_field_number: u32 = 5;
 };
 pub const ChangeStateConfirmPush = struct {
-    pub const msg_id: u16 = 27062;
-    pub const FsmId_field_number: u32 = 14;
-    pub const State_field_number: u32 = 4;
+    pub const msg_id: u16 = 16165;
+    pub const FsmId_field_number: u32 = 2;
+    pub const State_field_number: u32 = 1;
 };
 pub const ChangeStateConfirmResponse = struct {
-    pub const msg_id: u16 = 21653;
-    pub const FsmId_field_number: u32 = 7;
-    pub const State_field_number: u32 = 3;
-    pub const Error_field_number: u32 = 14;
+    pub const msg_id: u16 = 23779;
+    pub const FsmId_field_number: u32 = 1;
+    pub const State_field_number: u32 = 2;
+    pub const Error_field_number: u32 = 4;
 };
 pub const ChangeStateConfirmNotify = struct {
-    pub const msg_id: u16 = 23954;
-    pub const FsmId_field_number: u32 = 4;
-    pub const State_field_number: u32 = 9;
+    pub const msg_id: u16 = 20811;
+    pub const FsmId_field_number: u32 = 3;
+    pub const State_field_number: u32 = 11;
 };
 pub const DFsm = struct {
     pub const FsmId_field_number: u32 = 1;
@@ -5301,40 +5397,40 @@ pub const EntityFsmComponentPb = struct {
     pub const FsmCustomBlackboardDatas_field_number: u32 = 5;
 };
 pub const FsmConditionPassRequest = struct {
-    pub const msg_id: u16 = 19219;
-    pub const FsmId_field_number: u32 = 14;
-    pub const FromState_field_number: u32 = 13;
-    pub const ToState_field_number: u32 = 11;
-    pub const ConditionIndex_field_number: u32 = 3;
-    pub const Value_field_number: u32 = 2;
+    pub const msg_id: u16 = 22886;
+    pub const FsmId_field_number: u32 = 11;
+    pub const FromState_field_number: u32 = 6;
+    pub const ToState_field_number: u32 = 12;
+    pub const ConditionIndex_field_number: u32 = 7;
+    pub const Value_field_number: u32 = 9;
 };
 pub const FsmConditionPassResponse = struct {
-    pub const msg_id: u16 = 15892;
-    pub const FsmId_field_number: u32 = 10;
-    pub const Error_field_number: u32 = 11;
+    pub const msg_id: u16 = 27979;
+    pub const FsmId_field_number: u32 = 5;
+    pub const Error_field_number: u32 = 9;
 };
 pub const FsmConditionPassPush = struct {
-    pub const msg_id: u16 = 22624;
-    pub const FsmId_field_number: u32 = 7;
-    pub const FromState_field_number: u32 = 1;
-    pub const ToState_field_number: u32 = 8;
-    pub const ConditionIndex_field_number: u32 = 4;
-    pub const Value_field_number: u32 = 3;
+    pub const msg_id: u16 = 19070;
+    pub const FsmId_field_number: u32 = 11;
+    pub const FromState_field_number: u32 = 3;
+    pub const ToState_field_number: u32 = 1;
+    pub const ConditionIndex_field_number: u32 = 10;
+    pub const Value_field_number: u32 = 12;
 };
 pub const FsmResetNotify = struct {
-    pub const msg_id: u16 = 19920;
-    pub const EntityFsmComponentPb_field_number: u32 = 2;
+    pub const msg_id: u16 = 16867;
+    pub const EntityFsmComponentPb_field_number: u32 = 5;
 };
 pub const FsmBlackboardNotify = struct {
-    pub const msg_id: u16 = 23682;
-    pub const FsmBlackBoards_field_number: u32 = 12;
+    pub const msg_id: u16 = 18761;
+    pub const FsmBlackBoards_field_number: u32 = 9;
 };
 pub const FsmCustomBlackboardDatas = struct {
     pub const BlackboardIntValues_field_number: u32 = 1;
 };
 pub const FsmCustomBlackboardNotify = struct {
-    pub const msg_id: u16 = 24597;
-    pub const FsmCustomBlackboardDatas_field_number: u32 = 10;
+    pub const msg_id: u16 = 19239;
+    pub const FsmCustomBlackboardDatas_field_number: u32 = 9;
 };
 pub const DFsmBlackBoard = struct {
     pub const Key_field_number: u32 = 1;
@@ -5345,42 +5441,42 @@ pub const DFsmBlackboardCustom = struct {
     pub const Value_field_number: u32 = 2;
 };
 pub const FsmStateBehaviorRequest = struct {
-    pub const msg_id: u16 = 29933;
-    pub const FsmId_field_number: u32 = 2;
-    pub const State_field_number: u32 = 4;
-    pub const Index_field_number: u32 = 12;
-    pub const Type_field_number: u32 = 6;
+    pub const msg_id: u16 = 15369;
+    pub const FsmId_field_number: u32 = 5;
+    pub const State_field_number: u32 = 10;
+    pub const Index_field_number: u32 = 15;
+    pub const Type_field_number: u32 = 13;
 };
 pub const FsmStateBehaviorResponse = struct {
-    pub const msg_id: u16 = 18491;
-    pub const FsmId_field_number: u32 = 13;
-    pub const State_field_number: u32 = 5;
-    pub const ErrorCode_field_number: u32 = 10;
+    pub const msg_id: u16 = 18875;
+    pub const FsmId_field_number: u32 = 4;
+    pub const State_field_number: u32 = 12;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const FsmPlayMontageRequest = struct {
-    pub const msg_id: u16 = 19301;
-    pub const MontageName_field_number: u32 = 15;
-    pub const MontagePathHash_field_number: u32 = 11;
-    pub const SpeedRatio_field_number: u32 = 2;
-    pub const StartSection_field_number: u32 = 6;
-    pub const StartTimeSeconds_field_number: u32 = 9;
+    pub const msg_id: u16 = 25452;
+    pub const MontageName_field_number: u32 = 6;
+    pub const MontagePathHash_field_number: u32 = 15;
+    pub const SpeedRatio_field_number: u32 = 1;
+    pub const StartSection_field_number: u32 = 3;
+    pub const StartTimeSeconds_field_number: u32 = 12;
 };
 pub const FsmPlayMontagePush = struct {
-    pub const msg_id: u16 = 21922;
-    pub const MontageName_field_number: u32 = 11;
-    pub const MontagePathHash_field_number: u32 = 5;
-    pub const SpeedRatio_field_number: u32 = 2;
-    pub const StartSection_field_number: u32 = 10;
-    pub const StartTimeSeconds_field_number: u32 = 8;
+    pub const msg_id: u16 = 23876;
+    pub const MontageName_field_number: u32 = 5;
+    pub const MontagePathHash_field_number: u32 = 7;
+    pub const SpeedRatio_field_number: u32 = 11;
+    pub const StartSection_field_number: u32 = 2;
+    pub const StartTimeSeconds_field_number: u32 = 10;
 };
 pub const FsmPlayMontageResponse = struct {
-    pub const msg_id: u16 = 22569;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 22825;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const FsmMontageDurationNotify = struct {
-    pub const msg_id: u16 = 24423;
-    pub const MontageHashCode_field_number: u32 = 1;
-    pub const DurationTime_field_number: u32 = 11;
+    pub const msg_id: u16 = 20087;
+    pub const MontageHashCode_field_number: u32 = 4;
+    pub const DurationTime_field_number: u32 = 6;
 };
 pub const BoardGridDynamicConfig = struct {
     pub const RowIndex_field_number: u32 = 1;
@@ -5486,72 +5582,72 @@ pub const RbJumpMovement = struct {
     pub const Direction_field_number: u32 = 1;
 };
 pub const MotorDiyInfoRequest = struct {
-    pub const msg_id: u16 = 27056;
+    pub const msg_id: u16 = 24056;
 };
 pub const MotorDiyInfoResponse = struct {
-    pub const msg_id: u16 = 20233;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const MotorDiy_field_number: u32 = 1;
+    pub const msg_id: u16 = 15636;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const MotorDiy_field_number: u32 = 6;
 };
 pub const MotorUseSkinRequest = struct {
-    pub const msg_id: u16 = 22022;
+    pub const msg_id: u16 = 26877;
     pub const SkinId_field_number: u32 = 15;
 };
 pub const MotorUseSkinResponse = struct {
-    pub const msg_id: u16 = 28777;
-    pub const ErrorCode_field_number: u32 = 2;
-};
-pub const MotorChangeOutlookRequest = struct {
-    pub const msg_id: u16 = 23455;
-    pub const StickerEquipped_field_number: u32 = 7;
-    pub const DecorationsEquipped_field_number: u32 = 2;
-    pub const FrameEquipped_field_number: u32 = 14;
-};
-pub const MotorChangeOutlookResponse = struct {
-    pub const msg_id: u16 = 18201;
+    pub const msg_id: u16 = 18288;
     pub const ErrorCode_field_number: u32 = 3;
 };
+pub const MotorChangeOutlookRequest = struct {
+    pub const msg_id: u16 = 17225;
+    pub const StickerEquipped_field_number: u32 = 7;
+    pub const DecorationsEquipped_field_number: u32 = 3;
+    pub const FrameEquipped_field_number: u32 = 2;
+};
+pub const MotorChangeOutlookResponse = struct {
+    pub const msg_id: u16 = 21672;
+    pub const ErrorCode_field_number: u32 = 13;
+};
 pub const MotorOutlookCreatePresetRequest = struct {
-    pub const msg_id: u16 = 26068;
-    pub const Preset_field_number: u32 = 9;
-    pub const name_field_number: u32 = 12;
+    pub const msg_id: u16 = 21586;
+    pub const Preset_field_number: u32 = 12;
+    pub const name_field_number: u32 = 1;
 };
 pub const MotorOutlookCreatePresetResponse = struct {
-    pub const msg_id: u16 = 15857;
-    pub const ErrorCode_field_number: u32 = 15;
-    pub const MotorOutlookPreset_field_number: u32 = 11;
+    pub const msg_id: u16 = 17753;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const MotorOutlookPreset_field_number: u32 = 14;
 };
 pub const MotorOutlookDeletePresetRequest = struct {
-    pub const msg_id: u16 = 26346;
-    pub const id_field_number: u32 = 5;
+    pub const msg_id: u16 = 27258;
+    pub const id_field_number: u32 = 9;
 };
 pub const MotorOutlookDeletePresetResponse = struct {
-    pub const msg_id: u16 = 28577;
+    pub const msg_id: u16 = 28770;
     pub const ErrorCode_field_number: u32 = 9;
-    pub const MotorOutlookPreset_field_number: u32 = 15;
+    pub const MotorOutlookPreset_field_number: u32 = 11;
 };
 pub const MotorOutlookEditPresetRequest = struct {
-    pub const msg_id: u16 = 22065;
-    pub const PresetPlan_field_number: u32 = 1;
+    pub const msg_id: u16 = 22163;
+    pub const PresetPlan_field_number: u32 = 6;
 };
 pub const MotorOutlookEditPresetResponse = struct {
-    pub const msg_id: u16 = 17807;
-    pub const ErrorCode_field_number: u32 = 6;
-    pub const MotorOutlookPreset_field_number: u32 = 8;
+    pub const msg_id: u16 = 24760;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const MotorOutlookPreset_field_number: u32 = 5;
 };
 pub const MotorOutlookEquippedChangeNotify = struct {
-    pub const msg_id: u16 = 25829;
-    pub const MotorDiyEquipped_field_number: u32 = 4;
-    pub const LatestMotorSkinSuit_field_number: u32 = 1;
+    pub const msg_id: u16 = 16900;
+    pub const MotorDiyEquipped_field_number: u32 = 15;
+    pub const LatestMotorSkinSuit_field_number: u32 = 2;
 };
 pub const EntityMotorOutlookChangeNotify = struct {
-    pub const msg_id: u16 = 16019;
-    pub const EntityId_field_number: u32 = 1;
-    pub const MotorDiyEquipped_field_number: u32 = 5;
+    pub const msg_id: u16 = 22728;
+    pub const EntityId_field_number: u32 = 11;
+    pub const MotorDiyEquipped_field_number: u32 = 10;
 };
 pub const MotorOutlookRegionInfoNotify = struct {
-    pub const msg_id: u16 = 15872;
-    pub const MotorOutlookRegion_field_number: u32 = 13;
+    pub const msg_id: u16 = 23727;
+    pub const MotorOutlookRegion_field_number: u32 = 1;
 };
 pub const MotorDiyEquippedPb = struct {
     pub const SkinEquipped_field_number: u32 = 1;
@@ -5592,15 +5688,82 @@ pub const MotorDiyPb = struct {
     pub const LatestMotorSkinSuit_field_number: u32 = 4;
     pub const SceneInUse_field_number: u32 = 5;
 };
+pub const SwitchDarkTideWeaponPush = struct {
+    pub const msg_id: u16 = 15777;
+    pub const NewSlotIndex_field_number: u32 = 9;
+};
+pub const SwitchDarkTideWeaponSlotNotify = struct {
+    pub const msg_id: u16 = 18091;
+    pub const PlayerId_field_number: u32 = 1;
+    pub const CurrentWeaponSlotIndex_field_number: u32 = 4;
+};
+pub const DarkTideDropEntityComponentPb = struct {
+    uyv: ?union(enum) {
+    } = null,
+    pub const Weapon_field_number: u32 = 8;
+    pub const Item_field_number: u32 = 9;
+    pub const ConfigId_field_number: u32 = 1;
+};
+pub const DarkTideDropItemEntityCtx = struct {
+};
+pub const DarkTideDropWeaponEntityCtx = struct {
+    pub const Level_field_number: u32 = 1;
+    pub const Quality_field_number: u32 = 2;
+    pub const Affix_field_number: u32 = 3;
+};
+pub const DarkTideItemMarkPb = struct {
+    pub const MarkPlayerId_field_number: u32 = 1;
+};
+pub const FormationAttr = struct {
+    pub const AttrId_field_number: u32 = 1;
+    pub const Ratio_field_number: u32 = 2;
+    pub const BaseMaxValue_field_number: u32 = 3;
+    pub const MaxValue_field_number: u32 = 4;
+    pub const CurrentValue_field_number: u32 = 5;
+};
+pub const FormationAttrNotify = struct {
+    pub const msg_id: u16 = 26658;
+    pub const Duration_field_number: u32 = 10;
+    pub const FormationAttrs_field_number: u32 = 14;
+};
+pub const FormationAttrRequest = struct {
+    pub const msg_id: u16 = 21778;
+    pub const Duration_field_number: u32 = 4;
+    pub const FormationAttrs_field_number: u32 = 15;
+};
+pub const FormationAttrResponse = struct {
+    pub const msg_id: u16 = 26997;
+    pub const ErrorCode_field_number: u32 = 9;
+};
+pub const RecoverPropFromServer = struct {
+    pub const AttrId_field_number: u32 = 1;
+    pub const Ratio_field_number: u32 = 2;
+    pub const MaxValue_field_number: u32 = 4;
+    pub const ValueIncrement_field_number: u32 = 5;
+};
+pub const RecoverPropChangedNotify = struct {
+    pub const msg_id: u16 = 29454;
+    pub const Attributes_field_number: u32 = 6;
+    pub const Duration_field_number: u32 = 3;
+};
+pub const FragileChangeRequest = struct {
+    pub const msg_id: u16 = 29703;
+    pub const EntityId_field_number: u32 = 10;
+    pub const Flag_field_number: u32 = 12;
+};
+pub const FragileChangeResponse = struct {
+    pub const msg_id: u16 = 16203;
+    pub const ErrorCode_field_number: u32 = 9;
+};
 pub const BirthRoleSelect = struct {
     pub const Year_field_number: u32 = 1;
     pub const Role_field_number: u32 = 2;
 };
 pub const BirthdayInfoUpdateNotify = struct {
-    pub const msg_id: u16 = 23660;
-    pub const BirthDayReset_field_number: u32 = 4;
-    pub const RecentRewardTime_field_number: u32 = 14;
-    pub const Roles_field_number: u32 = 3;
+    pub const msg_id: u16 = 19209;
+    pub const BirthDayReset_field_number: u32 = 12;
+    pub const RecentRewardTime_field_number: u32 = 3;
+    pub const Roles_field_number: u32 = 15;
 };
 pub const BuffItem = struct {
     pub const ItemId_field_number: u32 = 1;
@@ -5611,25 +5774,25 @@ pub const EquipBuffItem = struct {
     pub const Equiped_field_number: u32 = 2;
 };
 pub const BuffItemNotify = struct {
-    pub const msg_id: u16 = 24446;
-    pub const ItemBuffList_field_number: u32 = 6;
-    pub const EquipItemList_field_number: u32 = 8;
+    pub const msg_id: u16 = 19044;
+    pub const ItemBuffList_field_number: u32 = 12;
+    pub const EquipItemList_field_number: u32 = 5;
 };
 pub const ButtonEnableResult = struct {
     pub const Type_field_number: u32 = 2;
     pub const Enabled_field_number: u32 = 3;
 };
 pub const BtnStateRequest = struct {
-    pub const msg_id: u16 = 26012;
-    pub const Type_field_number: u32 = 7;
-    pub const Types_field_number: u32 = 11;
+    pub const msg_id: u16 = 26588;
+    pub const Type_field_number: u32 = 8;
+    pub const Types_field_number: u32 = 3;
 };
 pub const BtnStateResponse = struct {
-    pub const msg_id: u16 = 17586;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const Type_field_number: u32 = 9;
-    pub const Enabled_field_number: u32 = 14;
-    pub const Result_field_number: u32 = 7;
+    pub const msg_id: u16 = 19953;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const Type_field_number: u32 = 4;
+    pub const Enabled_field_number: u32 = 12;
+    pub const Result_field_number: u32 = 1;
 };
 pub const CalabashDevelopConditionState = struct {
     pub const ConditionId_field_number: u32 = 1;
@@ -5653,54 +5816,54 @@ pub const CalabashCfg = struct {
     pub const CatchGain_field_number: u32 = 4;
 };
 pub const CalabashMsgNotify = struct {
-    pub const msg_id: u16 = 26332;
-    pub const CalabashMsg_field_number: u32 = 8;
-    pub const CalabashCfg_field_number: u32 = 6;
+    pub const msg_id: u16 = 18974;
+    pub const CalabashMsg_field_number: u32 = 4;
+    pub const CalabashCfg_field_number: u32 = 9;
 };
 pub const CalabashLevelsRewardNotify = struct {
-    pub const msg_id: u16 = 26252;
-    pub const RewardedLevels_field_number: u32 = 13;
+    pub const msg_id: u16 = 15335;
+    pub const RewardedLevels_field_number: u32 = 12;
 };
 pub const CalabashLevelRewardRequest = struct {
-    pub const msg_id: u16 = 19859;
-    pub const Level_field_number: u32 = 1;
+    pub const msg_id: u16 = 23794;
+    pub const Level_field_number: u32 = 12;
 };
 pub const CalabashLevelRewardResponse = struct {
-    pub const msg_id: u16 = 25634;
+    pub const msg_id: u16 = 25587;
     pub const ErrorCode_field_number: u32 = 11;
 };
 pub const CalabashSkinDataRequest = struct {
-    pub const msg_id: u16 = 26827;
+    pub const msg_id: u16 = 26014;
 };
 pub const CalabashSkinDataResponse = struct {
-    pub const msg_id: u16 = 20621;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const EquipedSkinId_field_number: u32 = 2;
-    pub const SkinIdList_field_number: u32 = 15;
+    pub const msg_id: u16 = 17073;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const EquipedSkinId_field_number: u32 = 10;
+    pub const SkinIdList_field_number: u32 = 7;
 };
 pub const CalabashSkinTakeOnRequest = struct {
-    pub const msg_id: u16 = 21847;
-    pub const SkinId_field_number: u32 = 6;
+    pub const msg_id: u16 = 20574;
+    pub const SkinId_field_number: u32 = 14;
 };
 pub const CalabashSkinTakeOnResponse = struct {
-    pub const msg_id: u16 = 27078;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const SkinId_field_number: u32 = 1;
+    pub const msg_id: u16 = 29991;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const SkinId_field_number: u32 = 7;
 };
 pub const PrivateChatRequest = struct {
-    pub const msg_id: u16 = 20090;
-    pub const TargetUid_field_number: u32 = 11;
-    pub const ChatContentType_field_number: u32 = 3;
+    pub const msg_id: u16 = 23483;
+    pub const TargetUid_field_number: u32 = 8;
+    pub const ChatContentType_field_number: u32 = 10;
     pub const Content_field_number: u32 = 15;
-    pub const XboxBlockedPlayerIds_field_number: u32 = 2;
+    pub const XboxBlockedPlayerIds_field_number: u32 = 5;
 };
 pub const PrivateChatResponse = struct {
-    pub const msg_id: u16 = 28633;
-    pub const TargetUid_field_number: u32 = 9;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const MsgId_field_number: u32 = 11;
-    pub const FilterMsg_field_number: u32 = 7;
-    pub const BanEndTime_field_number: u32 = 1;
+    pub const msg_id: u16 = 16640;
+    pub const TargetUid_field_number: u32 = 7;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const MsgId_field_number: u32 = 3;
+    pub const FilterMsg_field_number: u32 = 1;
+    pub const BanEndTime_field_number: u32 = 8;
 };
 pub const ChatContentProto = struct {
     pub const SenderUid_field_number: u32 = 1;
@@ -5713,18 +5876,18 @@ pub const ChatContentProto = struct {
     pub const XboxAccountId_field_number: u32 = 8;
 };
 pub const PrivateMessageNotify = struct {
-    pub const msg_id: u16 = 15918;
-    pub const ChatContent_field_number: u32 = 12;
+    pub const msg_id: u16 = 24284;
+    pub const ChatContent_field_number: u32 = 2;
 };
 pub const PrivateChatHistoryRequest = struct {
-    pub const msg_id: u16 = 23875;
-    pub const TargetUid_field_number: u32 = 11;
-    pub const StartIndex_field_number: u32 = 8;
+    pub const msg_id: u16 = 23362;
+    pub const TargetUid_field_number: u32 = 9;
+    pub const StartIndex_field_number: u32 = 11;
 };
 pub const PrivateChatHistoryResponse = struct {
-    pub const msg_id: u16 = 29406;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const Data_field_number: u32 = 12;
+    pub const msg_id: u16 = 29725;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const Data_field_number: u32 = 9;
 };
 pub const PrivateChatHistoryContentProto = struct {
     pub const TargetUid_field_number: u32 = 1;
@@ -5733,24 +5896,24 @@ pub const PrivateChatHistoryContentProto = struct {
     pub const TotalNums_field_number: u32 = 4;
 };
 pub const PrivateChatHistoryNotify = struct {
-    pub const msg_id: u16 = 29871;
+    pub const msg_id: u16 = 24594;
     pub const AllChats_field_number: u32 = 11;
 };
 pub const PrivateChatDataRequest = struct {
-    pub const msg_id: u16 = 24257;
+    pub const msg_id: u16 = 16343;
 };
 pub const PrivateChatDataResponse = struct {
-    pub const msg_id: u16 = 21502;
-    pub const LoadSucc_field_number: u32 = 4;
+    pub const msg_id: u16 = 19466;
+    pub const LoadSucc_field_number: u32 = 12;
 };
 pub const PrivateChatOperateRequest = struct {
-    pub const msg_id: u16 = 19749;
-    pub const OperateType_field_number: u32 = 11;
+    pub const msg_id: u16 = 27275;
+    pub const OperateType_field_number: u32 = 12;
     pub const TargetPlayerId_field_number: u32 = 9;
 };
 pub const PrivateChatOperateResponse = struct {
-    pub const msg_id: u16 = 25224;
-    pub const ErrorCode_field_number: u32 = 3;
+    pub const msg_id: u16 = 16211;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const CombatPushData = struct {
     Message: ?union(enum) {
@@ -5822,6 +5985,8 @@ pub const CombatPushData = struct {
     pub const QuickHackRamVerifyPush_field_number: u32 = 68;
     pub const QuickHackOpenPush_field_number: u32 = 69;
     pub const DodgeInfoPush_field_number: u32 = 70;
+    pub const SwitchDarkTideWeaponPush_field_number: u32 = 71;
+    pub const RoleTrialSceneRollbackPush_field_number: u32 = 72;
     pub const CombatCommon_field_number: u32 = 1;
 };
 pub const CombatNotifyData = struct {
@@ -5898,11 +6063,15 @@ pub const CombatNotifyData = struct {
     pub const MotorSummonAndRideNotify_field_number: u32 = 81;
     pub const BulletPatternNotify_field_number: u32 = 82;
     pub const FsmMontageDurationNotify_field_number: u32 = 83;
+    pub const SwitchDarkTideWeaponSlotNotify_field_number: u32 = 84;
+    pub const CombatValNotify_field_number: u32 = 85;
+    pub const CombatValDecayBeginNotify_field_number: u32 = 86;
+    pub const SquadPropChangedNotify_field_number: u32 = 87;
     pub const CombatDataMaxNotify_field_number: u32 = 100;
     pub const CombatCommon_field_number: u32 = 1;
 };
 pub const CombatDataMaxNotify = struct {
-    pub const msg_id: u16 = 26218;
+    pub const msg_id: u16 = 28947;
 };
 pub const CombatRequestData = struct {
     Message: ?union(enum) {
@@ -5972,6 +6141,7 @@ pub const CombatRequestData = struct {
     pub const CharacterDetachRequest_field_number: u32 = 70;
     pub const ClientCurrentRoleReportRequest_field_number: u32 = 71;
     pub const GaSwitchCommonEnemyProCampRequest_field_number: u32 = 72;
+    pub const ChangeSummonEntityStateRequest_field_number: u32 = 73;
     pub const CombatMaxCaseMessageRequest_field_number: u32 = 99;
     pub const CombatCommon_field_number: u32 = 1;
     pub const RequestId_field_number: u32 = 2;
@@ -6044,6 +6214,7 @@ pub const CombatResponseData = struct {
     pub const CharacterDetachResponse_field_number: u32 = 70;
     pub const ClientCurrentRoleReportResponse_field_number: u32 = 71;
     pub const GaSwitchCommonEnemyProCampResponse_field_number: u32 = 72;
+    pub const ChangeSummonEntityStateResponse_field_number: u32 = 73;
     pub const CombatDataMaxResponse_field_number: u32 = 100;
     pub const CombatCommon_field_number: u32 = 1;
     pub const RequestId_field_number: u32 = 2;
@@ -6063,37 +6234,37 @@ pub const CombatReceiveData = struct {
     pub const CombatResponseData_field_number: u32 = 3;
 };
 pub const CombatSendPackRequest = struct {
-    pub const msg_id: u16 = 21430;
-    pub const Data_field_number: u32 = 6;
-    pub const HostPlayerId_field_number: u32 = 4;
+    pub const msg_id: u16 = 19470;
+    pub const Data_field_number: u32 = 14;
+    pub const HostPlayerId_field_number: u32 = 8;
 };
 pub const CombatSendPackResponse = struct {
-    pub const msg_id: u16 = 29680;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const ReceivePackNotify_field_number: u32 = 3;
+    pub const msg_id: u16 = 20332;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const ReceivePackNotify_field_number: u32 = 14;
 };
 pub const CombatReceivePackNotify = struct {
-    pub const msg_id: u16 = 27783;
-    pub const Data_field_number: u32 = 14;
+    pub const msg_id: u16 = 25706;
+    pub const Data_field_number: u32 = 5;
 };
 pub const CombatMaxCaseMessageRequest = struct {
-    pub const msg_id: u16 = 26975;
+    pub const msg_id: u16 = 22467;
 };
 pub const EntityLoadCompleteNotify = struct {
-    pub const msg_id: u16 = 22803;
-    pub const PlayerId_field_number: u32 = 14;
-    pub const EntityIds_field_number: u32 = 12;
-    pub const EntityIdsUnload_field_number: u32 = 3;
+    pub const msg_id: u16 = 29145;
+    pub const PlayerId_field_number: u32 = 11;
+    pub const EntityIds_field_number: u32 = 5;
+    pub const EntityIdsUnload_field_number: u32 = 2;
 };
 pub const MaterialRequest = struct {
-    pub const msg_id: u16 = 20595;
-    pub const MaterialInfo_field_number: u32 = 5;
-    pub const CombatCommon_field_number: u32 = 3;
+    pub const msg_id: u16 = 18588;
+    pub const MaterialInfo_field_number: u32 = 8;
+    pub const CombatCommon_field_number: u32 = 7;
 };
 pub const MaterialPush = struct {
-    pub const msg_id: u16 = 26588;
-    pub const MaterialInfo_field_number: u32 = 6;
-    pub const CombatCommon_field_number: u32 = 7;
+    pub const msg_id: u16 = 24645;
+    pub const MaterialInfo_field_number: u32 = 11;
+    pub const CombatCommon_field_number: u32 = 6;
 };
 pub const MaterialInfo = struct {
     pub const EntityId_field_number: u32 = 1;
@@ -6101,13 +6272,13 @@ pub const MaterialInfo = struct {
     pub const IsGroup_field_number: u32 = 3;
 };
 pub const MaterialResponse = struct {
-    pub const msg_id: u16 = 29768;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 22263;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const MaterialNotify = struct {
-    pub const msg_id: u16 = 24215;
+    pub const msg_id: u16 = 29636;
     pub const MaterialInfo_field_number: u32 = 12;
-    pub const CombatCommon_field_number: u32 = 13;
+    pub const CombatCommon_field_number: u32 = 10;
 };
 pub const DynamicEntityInformation = struct {
     pub const Id_field_number: u32 = 1;
@@ -6143,8 +6314,8 @@ pub const DynamicEntityInformation = struct {
     pub const ComponentPbs_field_number: u32 = 32;
 };
 pub const EntityLivingStatusNotify = struct {
-    pub const msg_id: u16 = 28600;
-    pub const Id_field_number: u32 = 8;
+    pub const msg_id: u16 = 23945;
+    pub const Id_field_number: u32 = 6;
     pub const LivingStatus_field_number: u32 = 15;
     pub const DropVisionItem_field_number: u32 = 4;
 };
@@ -6193,7 +6364,7 @@ pub const FightRoleInfos = struct {
     pub const IsFixedLocation_field_number: u32 = 5;
 };
 pub const UpdateGroupFormationNotify = struct {
-    pub const msg_id: u16 = 17867;
+    pub const msg_id: u16 = 17286;
     pub const GroupFormation_field_number: u32 = 2;
 };
 pub const SceneInformation = struct {
@@ -6227,9 +6398,9 @@ pub const SceneAreaState = struct {
     pub const State_field_number: u32 = 2;
 };
 pub const HostTeleportUnlockNotify = struct {
-    pub const msg_id: u16 = 19715;
-    pub const HostPlayerId_field_number: u32 = 9;
-    pub const HostTeleportId_field_number: u32 = 4;
+    pub const msg_id: u16 = 22223;
+    pub const HostPlayerId_field_number: u32 = 3;
+    pub const HostTeleportId_field_number: u32 = 9;
 };
 pub const SceneTimeInfo = struct {
     pub const Hour_field_number: u32 = 1;
@@ -6237,24 +6408,24 @@ pub const SceneTimeInfo = struct {
     pub const OwnerTimeClockTimeSpan_field_number: u32 = 3;
 };
 pub const JoinSceneNotify = struct {
-    pub const msg_id: u16 = 24702;
-    pub const SceneInfo_field_number: u32 = 11;
-    pub const MaxEntityId_field_number: u32 = 14;
-    pub const TransitionOption_field_number: u32 = 9;
+    pub const msg_id: u16 = 18559;
+    pub const SceneInfo_field_number: u32 = 5;
+    pub const MaxEntityId_field_number: u32 = 10;
+    pub const TransitionOption_field_number: u32 = 15;
 };
 pub const SceneTraceRequest = struct {
-    pub const msg_id: u16 = 22453;
-    pub const SceneTraceId_field_number: u32 = 5;
+    pub const msg_id: u16 = 27120;
+    pub const SceneTraceId_field_number: u32 = 12;
 };
 pub const SceneTraceResponse = struct {
-    pub const msg_id: u16 = 20031;
+    pub const msg_id: u16 = 29017;
 };
 pub const AfterJoinSceneNotify = struct {
-    pub const msg_id: u16 = 21950;
+    pub const msg_id: u16 = 22156;
 };
 pub const LeaveSceneNotify = struct {
-    pub const msg_id: u16 = 21946;
-    pub const PlayerId_field_number: u32 = 4;
+    pub const msg_id: u16 = 28361;
+    pub const PlayerId_field_number: u32 = 5;
     pub const SceneId_field_number: u32 = 1;
     pub const TransitionOption_field_number: u32 = 13;
 };
@@ -6265,107 +6436,107 @@ pub const MovingEntityData = struct {
     pub const ForcePush_field_number: u32 = 4;
 };
 pub const MovePackagePush = struct {
-    pub const msg_id: u16 = 17573;
-    pub const MovingEntities_field_number: u32 = 8;
-    pub const SceneOwnerId_field_number: u32 = 11;
+    pub const msg_id: u16 = 24756;
+    pub const MovingEntities_field_number: u32 = 12;
+    pub const SceneOwnerId_field_number: u32 = 4;
 };
 pub const MovePackageNotify = struct {
-    pub const msg_id: u16 = 23017;
-    pub const MovingEntities_field_number: u32 = 8;
+    pub const msg_id: u16 = 17992;
+    pub const MovingEntities_field_number: u32 = 14;
 };
 pub const EntitySimplyMoveInfoPackagePush = struct {
-    pub const msg_id: u16 = 22126;
+    pub const msg_id: u16 = 18037;
     pub const MoveInfos_field_number: u32 = 2;
-    pub const SceneOwnerId_field_number: u32 = 10;
+    pub const SceneOwnerId_field_number: u32 = 12;
 };
 pub const RemoveSummonEntityRequest = struct {
-    pub const msg_id: u16 = 23132;
-    pub const SummonerId_field_number: u32 = 13;
-    pub const SkillId_field_number: u32 = 6;
-    pub const RemoveType_field_number: u32 = 14;
-    pub const RemoveENtityIds_field_number: u32 = 4;
+    pub const msg_id: u16 = 18845;
+    pub const SummonerId_field_number: u32 = 14;
+    pub const SkillId_field_number: u32 = 8;
+    pub const RemoveType_field_number: u32 = 1;
+    pub const RemoveENtityIds_field_number: u32 = 9;
 };
 pub const RemoveSummonEntityResponse = struct {
-    pub const msg_id: u16 = 21424;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 17688;
+    pub const ErrorCode_field_number: u32 = 6;
 };
 pub const EntityOnLandedRequest = struct {
-    pub const msg_id: u16 = 29272;
-    pub const EntityId_field_number: u32 = 3;
+    pub const msg_id: u16 = 25532;
+    pub const EntityId_field_number: u32 = 5;
 };
 pub const EntityOnLandedResponse = struct {
-    pub const msg_id: u16 = 29410;
+    pub const msg_id: u16 = 17811;
 };
 pub const AttributeChangedRequest = struct {
-    pub const msg_id: u16 = 17525;
-    pub const Id_field_number: u32 = 15;
-    pub const Attributes_field_number: u32 = 14;
-};
-pub const AttributeChangedResponse = struct {
-    pub const msg_id: u16 = 19459;
-    pub const ErrorCode_field_number: u32 = 11;
-};
-pub const AttributeChangedNotify = struct {
-    pub const msg_id: u16 = 27104;
+    pub const msg_id: u16 = 17782;
+    pub const Id_field_number: u32 = 1;
     pub const Attributes_field_number: u32 = 10;
 };
-pub const AnimationStateInitRequest = struct {
-    pub const msg_id: u16 = 29564;
-    pub const CombatCommon_field_number: u32 = 13;
-    pub const Id_field_number: u32 = 9;
-    pub const States_field_number: u32 = 3;
-    pub const SpecialStates_field_number: u32 = 14;
-    pub const ModelId_field_number: u32 = 8;
+pub const AttributeChangedResponse = struct {
+    pub const msg_id: u16 = 21027;
+    pub const ErrorCode_field_number: u32 = 2;
 };
-pub const AnimationStateInitPush = struct {
-    pub const msg_id: u16 = 15019;
+pub const AttributeChangedNotify = struct {
+    pub const msg_id: u16 = 27832;
+    pub const Attributes_field_number: u32 = 8;
+};
+pub const AnimationStateInitRequest = struct {
+    pub const msg_id: u16 = 16475;
     pub const CombatCommon_field_number: u32 = 15;
-    pub const Id_field_number: u32 = 1;
-    pub const States_field_number: u32 = 7;
-    pub const SpecialStates_field_number: u32 = 10;
+    pub const Id_field_number: u32 = 8;
+    pub const States_field_number: u32 = 3;
+    pub const SpecialStates_field_number: u32 = 1;
     pub const ModelId_field_number: u32 = 4;
 };
+pub const AnimationStateInitPush = struct {
+    pub const msg_id: u16 = 29933;
+    pub const CombatCommon_field_number: u32 = 7;
+    pub const Id_field_number: u32 = 13;
+    pub const States_field_number: u32 = 8;
+    pub const SpecialStates_field_number: u32 = 14;
+    pub const ModelId_field_number: u32 = 5;
+};
 pub const AnimationStateInitResponse = struct {
-    pub const msg_id: u16 = 25726;
-    pub const ErrorCode_field_number: u32 = 4;
+    pub const msg_id: u16 = 28333;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const AnimationStateInitNotify = struct {
-    pub const msg_id: u16 = 29050;
-    pub const CombatCommon_field_number: u32 = 15;
-    pub const Id_field_number: u32 = 3;
-    pub const States_field_number: u32 = 11;
-    pub const TimeStamp_field_number: u32 = 12;
-    pub const SpecialStates_field_number: u32 = 13;
-    pub const ModelId_field_number: u32 = 8;
+    pub const msg_id: u16 = 27651;
+    pub const CombatCommon_field_number: u32 = 6;
+    pub const Id_field_number: u32 = 8;
+    pub const States_field_number: u32 = 1;
+    pub const TimeStamp_field_number: u32 = 15;
+    pub const SpecialStates_field_number: u32 = 12;
+    pub const ModelId_field_number: u32 = 4;
 };
 pub const AnimationStateChangedRequest = struct {
-    pub const msg_id: u16 = 15115;
-    pub const CombatCommon_field_number: u32 = 10;
-    pub const Id_field_number: u32 = 14;
-    pub const States_field_number: u32 = 12;
-    pub const SpecialStates_field_number: u32 = 8;
-    pub const ModelId_field_number: u32 = 2;
+    pub const msg_id: u16 = 26812;
+    pub const CombatCommon_field_number: u32 = 4;
+    pub const Id_field_number: u32 = 3;
+    pub const States_field_number: u32 = 7;
+    pub const SpecialStates_field_number: u32 = 1;
+    pub const ModelId_field_number: u32 = 11;
 };
 pub const AnimationStateChangedPush = struct {
-    pub const msg_id: u16 = 29396;
-    pub const CombatCommon_field_number: u32 = 1;
-    pub const Id_field_number: u32 = 10;
-    pub const States_field_number: u32 = 15;
-    pub const SpecialStates_field_number: u32 = 5;
-    pub const ModelId_field_number: u32 = 12;
+    pub const msg_id: u16 = 20495;
+    pub const CombatCommon_field_number: u32 = 14;
+    pub const Id_field_number: u32 = 6;
+    pub const States_field_number: u32 = 11;
+    pub const SpecialStates_field_number: u32 = 9;
+    pub const ModelId_field_number: u32 = 4;
 };
 pub const AnimationStateChangedResponse = struct {
-    pub const msg_id: u16 = 19053;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 16407;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const AnimationStateChangedNotify = struct {
-    pub const msg_id: u16 = 16544;
-    pub const CombatCommon_field_number: u32 = 11;
+    pub const msg_id: u16 = 15580;
+    pub const CombatCommon_field_number: u32 = 1;
     pub const Id_field_number: u32 = 9;
-    pub const States_field_number: u32 = 14;
-    pub const TimeStamp_field_number: u32 = 13;
-    pub const SpecialStates_field_number: u32 = 15;
-    pub const ModelId_field_number: u32 = 3;
+    pub const States_field_number: u32 = 12;
+    pub const TimeStamp_field_number: u32 = 10;
+    pub const SpecialStates_field_number: u32 = 2;
+    pub const ModelId_field_number: u32 = 14;
 };
 pub const AnimStateChangeInfo = struct {
     pub const AnimationStates_field_number: u32 = 1;
@@ -6377,13 +6548,13 @@ pub const AnimStateChangeInfoList = struct {
     pub const AnimStateChangeInfo_field_number: u32 = 2;
 };
 pub const PackAnimChangedNotify = struct {
-    pub const msg_id: u16 = 22007;
-    pub const EntityAnimState_field_number: u32 = 14;
+    pub const msg_id: u16 = 27418;
+    pub const EntityAnimState_field_number: u32 = 2;
 };
 pub const EntityCommonTagNotify = struct {
-    pub const msg_id: u16 = 27236;
+    pub const msg_id: u16 = 19566;
     pub const Id_field_number: u32 = 5;
-    pub const Tags_field_number: u32 = 8;
+    pub const Tags_field_number: u32 = 6;
 };
 pub const SummonRequestInfo = struct {
     pub const SummonEntityId_field_number: u32 = 1;
@@ -6394,39 +6565,39 @@ pub const SummonRequestInfo = struct {
     pub const IsVisible_field_number: u32 = 6;
 };
 pub const SummonRequest = struct {
-    pub const msg_id: u16 = 17249;
-    pub const SummonerEntityId_field_number: u32 = 15;
-    pub const SummonInfo_field_number: u32 = 7;
+    pub const msg_id: u16 = 27379;
+    pub const SummonerEntityId_field_number: u32 = 1;
+    pub const SummonInfo_field_number: u32 = 8;
 };
 pub const SummonResponse = struct {
-    pub const msg_id: u16 = 28242;
-    pub const ErrorCode_field_number: u32 = 3;
+    pub const msg_id: u16 = 18705;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const Summon3Request = struct {
-    pub const msg_id: u16 = 26738;
-    pub const SummonerEntityId_field_number: u32 = 13;
-    pub const SummonInfo_field_number: u32 = 3;
+    pub const msg_id: u16 = 22732;
+    pub const SummonerEntityId_field_number: u32 = 5;
+    pub const SummonInfo_field_number: u32 = 6;
 };
 pub const Summon3Response = struct {
-    pub const msg_id: u16 = 28474;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 29484;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const SummonEntityNotify = struct {
-    pub const msg_id: u16 = 22558;
-    pub const SummonerId_field_number: u32 = 6;
-    pub const SummonIds_field_number: u32 = 2;
+    pub const msg_id: u16 = 15942;
+    pub const SummonerId_field_number: u32 = 13;
+    pub const SummonIds_field_number: u32 = 8;
 };
 pub const UpdateSceneDateRequest = struct {
-    pub const msg_id: u16 = 28810;
-    pub const AddDays_field_number: u32 = 3;
-    pub const Hour_field_number: u32 = 9;
-    pub const Minute_field_number: u32 = 12;
-    pub const Reason_field_number: u32 = 1;
+    pub const msg_id: u16 = 15194;
+    pub const AddDays_field_number: u32 = 5;
+    pub const Hour_field_number: u32 = 10;
+    pub const Minute_field_number: u32 = 8;
+    pub const Reason_field_number: u32 = 2;
 };
 pub const UpdateSceneDateResponse = struct {
-    pub const msg_id: u16 = 17269;
-    pub const ErrorCode_field_number: u32 = 15;
-    pub const CurrDate_field_number: u32 = 11;
+    pub const msg_id: u16 = 18163;
+    pub const ErrorCode_field_number: u32 = 11;
+    pub const CurrDate_field_number: u32 = 6;
 };
 pub const PlayerSceneAoiData = struct {
     pub const DynamicEntityList_field_number: u32 = 1;
@@ -6439,90 +6610,90 @@ pub const SummonInfo = struct {
     pub const SummonSkillId_field_number: u32 = 3;
 };
 pub const WeatherControlInfoWithoutCheckAsyncRequest = struct {
-    pub const msg_id: u16 = 16268;
+    pub const msg_id: u16 = 17029;
 };
 pub const WeatherControlInfoWithoutCheckAsyncResponse = struct {
-    pub const msg_id: u16 = 27291;
-    pub const UnlockedWeatherSwitchConfigIdList_field_number: u32 = 13;
+    pub const msg_id: u16 = 21840;
+    pub const UnlockedWeatherSwitchConfigIdList_field_number: u32 = 9;
 };
 pub const EntityFollowTrackRequest = struct {
-    pub const msg_id: u16 = 16415;
-    pub const EntityId_field_number: u32 = 6;
+    pub const msg_id: u16 = 15030;
+    pub const EntityId_field_number: u32 = 15;
 };
 pub const EntityFollowTrackResponse = struct {
-    pub const msg_id: u16 = 27755;
-    pub const ErrorCode_field_number: u32 = 15;
-};
-pub const PlayerRebackSceneNotify = struct {
-    pub const msg_id: u16 = 22786;
-    pub const EntityId_field_number: u32 = 14;
-};
-pub const DrownRequest = struct {
-    pub const msg_id: u16 = 19185;
-};
-pub const DrownPush = struct {
-    pub const msg_id: u16 = 18025;
-};
-pub const DrownResponse = struct {
-    pub const msg_id: u16 = 28206;
+    pub const msg_id: u16 = 22950;
     pub const ErrorCode_field_number: u32 = 6;
 };
+pub const PlayerRebackSceneNotify = struct {
+    pub const msg_id: u16 = 25253;
+    pub const EntityId_field_number: u32 = 12;
+};
+pub const DrownRequest = struct {
+    pub const msg_id: u16 = 18070;
+};
+pub const DrownPush = struct {
+    pub const msg_id: u16 = 18544;
+};
+pub const DrownResponse = struct {
+    pub const msg_id: u16 = 18315;
+    pub const ErrorCode_field_number: u32 = 12;
+};
 pub const DrownNotify = struct {
-    pub const msg_id: u16 = 19577;
+    pub const msg_id: u16 = 26523;
 };
 pub const DrownEndTeleportRequest = struct {
-    pub const msg_id: u16 = 16593;
+    pub const msg_id: u16 = 20649;
 };
 pub const DrownEndTeleportPush = struct {
-    pub const msg_id: u16 = 18456;
+    pub const msg_id: u16 = 20074;
     ycu: ?union(enum) {
     } = null,
     pub const TeleportPos_field_number: u32 = 15;
 };
 pub const DrownEndTeleportResponse = struct {
-    pub const msg_id: u16 = 29224;
+    pub const msg_id: u16 = 17520;
     pub const ErrorCode_field_number: u32 = 1;
 };
 pub const MonsterDrownRequest = struct {
-    pub const msg_id: u16 = 19568;
+    pub const msg_id: u16 = 21217;
     pub const Pos_field_number: u32 = 10;
 };
 pub const MonsterDrownPush = struct {
-    pub const msg_id: u16 = 17504;
-    pub const Pos_field_number: u32 = 9;
+    pub const msg_id: u16 = 24106;
+    pub const Pos_field_number: u32 = 4;
 };
 pub const MonsterDrownResponse = struct {
-    pub const msg_id: u16 = 20244;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 25334;
+    pub const ErrorCode_field_number: u32 = 8;
 };
 pub const SceneLoadingFinishRequest = struct {
-    pub const msg_id: u16 = 18077;
-    pub const SceneId_field_number: u32 = 2;
+    pub const msg_id: u16 = 20048;
+    pub const SceneId_field_number: u32 = 8;
 };
 pub const SceneLoadingFinishResponse = struct {
-    pub const msg_id: u16 = 23226;
+    pub const msg_id: u16 = 25807;
     pub const ErrorCode_field_number: u32 = 13;
 };
 pub const UpdateVoxelEnvRequest = struct {
-    pub const msg_id: u16 = 21822;
-    pub const ServerCaveMode_field_number: u32 = 11;
+    pub const msg_id: u16 = 18071;
+    pub const ServerCaveMode_field_number: u32 = 13;
 };
 pub const UpdateVoxelEnvResponse = struct {
-    pub const msg_id: u16 = 27036;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const ServerCaveMode_field_number: u32 = 3;
+    pub const msg_id: u16 = 21932;
+    pub const ErrorCode_field_number: u32 = 13;
+    pub const ServerCaveMode_field_number: u32 = 15;
 };
 pub const SceneRoadSyncNotify = struct {
-    pub const msg_id: u16 = 26641;
-    pub const SceneId_field_number: u32 = 6;
-    pub const InstanceId_field_number: u32 = 13;
-    pub const EnabledRoads_field_number: u32 = 15;
+    pub const msg_id: u16 = 29415;
+    pub const SceneId_field_number: u32 = 2;
+    pub const InstanceId_field_number: u32 = 15;
+    pub const EnabledRoads_field_number: u32 = 7;
 };
 pub const BlackScreenStatePush = struct {
-    pub const msg_id: u16 = 24501;
-    pub const IsOpen_field_number: u32 = 4;
-    pub const Source_field_number: u32 = 1;
-    pub const BlackScreenReason_field_number: u32 = 14;
+    pub const msg_id: u16 = 16136;
+    pub const IsOpen_field_number: u32 = 15;
+    pub const Source_field_number: u32 = 10;
+    pub const BlackScreenReason_field_number: u32 = 12;
 };
 pub const MontageContext = struct {
     pub const SkillId_field_number: u32 = 1;
@@ -6568,37 +6739,37 @@ pub const SkillNodeInfo = struct {
     pub const StartTimeSeconds_field_number: u32 = 7;
 };
 pub const SkillRequest = struct {
-    pub const msg_id: u16 = 16541;
-    pub const UseSkillInfo_field_number: u32 = 4;
-    pub const SkillNodeInfos_field_number: u32 = 15;
+    pub const msg_id: u16 = 29518;
+    pub const UseSkillInfo_field_number: u32 = 12;
+    pub const SkillNodeInfos_field_number: u32 = 7;
 };
 pub const SkillResponse = struct {
-    pub const msg_id: u16 = 26642;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 20499;
+    pub const ErrorCode_field_number: u32 = 14;
 };
 pub const SkillNotify = struct {
-    pub const msg_id: u16 = 25519;
-    pub const UseSkillInfo_field_number: u32 = 12;
-    pub const SkillNodeInfos_field_number: u32 = 9;
+    pub const msg_id: u16 = 20156;
+    pub const UseSkillInfo_field_number: u32 = 13;
+    pub const SkillNodeInfos_field_number: u32 = 10;
 };
 pub const UseSkillRequest = struct {
-    pub const msg_id: u16 = 17540;
-    pub const CombatCommon_field_number: u32 = 3;
-    pub const UseSkillInfo_field_number: u32 = 1;
+    pub const msg_id: u16 = 21005;
+    pub const CombatCommon_field_number: u32 = 13;
+    pub const UseSkillInfo_field_number: u32 = 15;
     pub const SkillSingleId_field_number: u32 = 5;
-    pub const BattleFlags_field_number: u32 = 10;
+    pub const BattleFlags_field_number: u32 = 1;
 };
 pub const UseSkillResponse = struct {
-    pub const msg_id: u16 = 17977;
-    pub const UseSkillInfo_field_number: u32 = 8;
-    pub const SkillSingleId_field_number: u32 = 4;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 28239;
+    pub const UseSkillInfo_field_number: u32 = 15;
+    pub const SkillSingleId_field_number: u32 = 13;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const UseSkillNotify = struct {
-    pub const msg_id: u16 = 18004;
-    pub const CombatCommon_field_number: u32 = 11;
-    pub const UseSkillInfo_field_number: u32 = 9;
-    pub const SkillSingleId_field_number: u32 = 10;
+    pub const msg_id: u16 = 20528;
+    pub const CombatCommon_field_number: u32 = 9;
+    pub const UseSkillInfo_field_number: u32 = 4;
+    pub const SkillSingleId_field_number: u32 = 13;
 };
 pub const InterruptSkillInfo = struct {
     pub const EntityId_field_number: u32 = 1;
@@ -6606,92 +6777,92 @@ pub const InterruptSkillInfo = struct {
     pub const BulletId_field_number: u32 = 3;
 };
 pub const EndSkillRequest = struct {
-    pub const msg_id: u16 = 21923;
-    pub const CombatCommon_field_number: u32 = 7;
-    pub const UseSkillInfo_field_number: u32 = 2;
-    pub const SkillSingleId_field_number: u32 = 6;
-    pub const Reason_field_number: u32 = 8;
-    pub const InterruptSkillInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 24580;
+    pub const CombatCommon_field_number: u32 = 11;
+    pub const UseSkillInfo_field_number: u32 = 1;
+    pub const SkillSingleId_field_number: u32 = 10;
+    pub const Reason_field_number: u32 = 13;
+    pub const InterruptSkillInfo_field_number: u32 = 4;
 };
 pub const EndSkillPush = struct {
-    pub const msg_id: u16 = 20417;
-    pub const CombatCommon_field_number: u32 = 4;
-    pub const UseSkillInfo_field_number: u32 = 8;
-    pub const SkillSingleId_field_number: u32 = 6;
-    pub const Reason_field_number: u32 = 12;
-    pub const InterruptSkillInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 15273;
+    pub const CombatCommon_field_number: u32 = 8;
+    pub const UseSkillInfo_field_number: u32 = 11;
+    pub const SkillSingleId_field_number: u32 = 12;
+    pub const Reason_field_number: u32 = 15;
+    pub const InterruptSkillInfo_field_number: u32 = 9;
 };
 pub const EndSkillResponse = struct {
-    pub const msg_id: u16 = 17824;
-    pub const UseSkillInfo_field_number: u32 = 13;
-    pub const SkillSingleId_field_number: u32 = 7;
+    pub const msg_id: u16 = 29159;
+    pub const UseSkillInfo_field_number: u32 = 3;
+    pub const SkillSingleId_field_number: u32 = 12;
     pub const ErrorCode_field_number: u32 = 9;
 };
 pub const EndSkillNotify = struct {
-    pub const msg_id: u16 = 24698;
-    pub const CombatCommon_field_number: u32 = 1;
-    pub const UseSkillInfo_field_number: u32 = 10;
-    pub const SkillSingleId_field_number: u32 = 11;
+    pub const msg_id: u16 = 25131;
+    pub const CombatCommon_field_number: u32 = 10;
+    pub const UseSkillInfo_field_number: u32 = 13;
+    pub const SkillSingleId_field_number: u32 = 5;
 };
 pub const InterruptSkillInDelayRequest = struct {
-    pub const msg_id: u16 = 26516;
-    pub const SkillId_field_number: u32 = 8;
+    pub const msg_id: u16 = 17561;
+    pub const SkillId_field_number: u32 = 14;
 };
 pub const InterruptSkillInDelayPush = struct {
-    pub const msg_id: u16 = 20045;
-    pub const SkillId_field_number: u32 = 15;
+    pub const msg_id: u16 = 24695;
+    pub const SkillId_field_number: u32 = 8;
 };
 pub const InterruptSkillInDelayResponse = struct {
-    pub const msg_id: u16 = 18325;
-    pub const SkillId_field_number: u32 = 8;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 15726;
+    pub const SkillId_field_number: u32 = 2;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const UseSkillFailRequest = struct {
-    pub const msg_id: u16 = 20384;
-    pub const SkillId_field_number: u32 = 9;
+    pub const msg_id: u16 = 22140;
+    pub const SkillId_field_number: u32 = 3;
 };
 pub const UseSkillFailPush = struct {
-    pub const msg_id: u16 = 26026;
-    pub const SkillId_field_number: u32 = 5;
+    pub const msg_id: u16 = 22464;
+    pub const SkillId_field_number: u32 = 14;
 };
 pub const UseSkillFailResponse = struct {
-    pub const msg_id: u16 = 23723;
-    pub const SkillId_field_number: u32 = 13;
-    pub const Error_field_number: u32 = 5;
+    pub const msg_id: u16 = 28988;
+    pub const SkillId_field_number: u32 = 14;
+    pub const Error_field_number: u32 = 6;
 };
 pub const CounterAttackPush = struct {
-    pub const msg_id: u16 = 15091;
-    pub const CounterAttackInfo_field_number: u32 = 3;
+    pub const msg_id: u16 = 21067;
+    pub const CounterAttackInfo_field_number: u32 = 13;
 };
 pub const HitRequest = struct {
-    pub const msg_id: u16 = 17801;
-    pub const CombatCommon_field_number: u32 = 1;
-    pub const HitInfo_field_number: u32 = 3;
-    pub const SkillMessageId_field_number: u32 = 12;
+    pub const msg_id: u16 = 15093;
+    pub const CombatCommon_field_number: u32 = 12;
+    pub const HitInfo_field_number: u32 = 4;
+    pub const SkillMessageId_field_number: u32 = 5;
 };
 pub const HitResponse = struct {
-    pub const msg_id: u16 = 22229;
-    pub const HitInfo_field_number: u32 = 10;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 16481;
+    pub const HitInfo_field_number: u32 = 2;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const HitNotify = struct {
-    pub const msg_id: u16 = 22832;
-    pub const CombatCommon_field_number: u32 = 5;
-    pub const HitInfo_field_number: u32 = 2;
+    pub const msg_id: u16 = 27776;
+    pub const CombatCommon_field_number: u32 = 3;
+    pub const HitInfo_field_number: u32 = 11;
 };
 pub const HitEndRequest = struct {
-    pub const msg_id: u16 = 28975;
-    pub const CombatCommon_field_number: u32 = 2;
-    pub const TargetId_field_number: u32 = 15;
+    pub const msg_id: u16 = 25554;
+    pub const CombatCommon_field_number: u32 = 5;
+    pub const TargetId_field_number: u32 = 1;
 };
 pub const HitEndPush = struct {
-    pub const msg_id: u16 = 19045;
-    pub const CombatCommon_field_number: u32 = 10;
-    pub const TargetId_field_number: u32 = 8;
+    pub const msg_id: u16 = 21148;
+    pub const CombatCommon_field_number: u32 = 14;
+    pub const TargetId_field_number: u32 = 13;
 };
 pub const HitEndResponse = struct {
-    pub const msg_id: u16 = 18488;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 28059;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const CaughtInfo = struct {
     pub const Attacker_field_number: u32 = 1;
@@ -6700,113 +6871,113 @@ pub const CaughtInfo = struct {
     pub const FightState_field_number: u32 = 4;
 };
 pub const CaughtRequest = struct {
-    pub const msg_id: u16 = 29690;
-    pub const Info_field_number: u32 = 6;
+    pub const msg_id: u16 = 21766;
+    pub const Info_field_number: u32 = 13;
 };
 pub const CaughtPush = struct {
-    pub const msg_id: u16 = 21930;
-    pub const Info_field_number: u32 = 10;
+    pub const msg_id: u16 = 19906;
+    pub const Info_field_number: u32 = 13;
 };
 pub const CaughtResponse = struct {
-    pub const msg_id: u16 = 26880;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 17589;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const CaughtNotify = struct {
-    pub const msg_id: u16 = 23930;
-    pub const Info_field_number: u32 = 6;
+    pub const msg_id: u16 = 17797;
+    pub const Info_field_number: u32 = 11;
 };
 pub const ActiveBulletHandle = struct {
     pub const PlayerId_field_number: u32 = 1;
     pub const HandleId_field_number: u32 = 2;
 };
 pub const CreateBulletRequest = struct {
-    pub const msg_id: u16 = 20984;
+    pub const msg_id: u16 = 16833;
+    ParentHandle: ?union(enum) {
+    } = null,
+    pub const BulletHandle_field_number: u32 = 14;
+    pub const CombatCommon_field_number: u32 = 8;
+    pub const Handle_field_number: u32 = 6;
+    pub const OwnerEntityId_field_number: u32 = 12;
+    pub const BulletId_field_number: u32 = 15;
+    pub const SkillId_field_number: u32 = 1;
+    pub const Location_field_number: u32 = 4;
+    pub const Rotation_field_number: u32 = 5;
+    pub const TargetId_field_number: u32 = 2;
+    pub const SpawnEntityId_field_number: u32 = 10;
+    pub const SpawnVelocityEntityId_field_number: u32 = 7;
+    pub const IsLocal_field_number: u32 = 11;
+    pub const DtType_field_number: u32 = 13;
+    pub const RandomPosOffset_field_number: u32 = 3;
+    pub const RandomInitSpeedOffset_field_number: u32 = 9;
+};
+pub const CreateBulletResponsePush = struct {
+    pub const msg_id: u16 = 15442;
     ParentHandle: ?union(enum) {
     } = null,
     pub const BulletHandle_field_number: u32 = 13;
-    pub const CombatCommon_field_number: u32 = 10;
-    pub const Handle_field_number: u32 = 14;
+    pub const CombatCommon_field_number: u32 = 12;
+    pub const Handle_field_number: u32 = 2;
     pub const OwnerEntityId_field_number: u32 = 5;
-    pub const BulletId_field_number: u32 = 6;
-    pub const SkillId_field_number: u32 = 11;
-    pub const Location_field_number: u32 = 1;
-    pub const Rotation_field_number: u32 = 7;
-    pub const TargetId_field_number: u32 = 15;
-    pub const SpawnEntityId_field_number: u32 = 4;
-    pub const SpawnVelocityEntityId_field_number: u32 = 9;
-    pub const IsLocal_field_number: u32 = 3;
-    pub const DtType_field_number: u32 = 2;
-    pub const RandomPosOffset_field_number: u32 = 12;
-    pub const RandomInitSpeedOffset_field_number: u32 = 8;
-};
-pub const CreateBulletResponsePush = struct {
-    pub const msg_id: u16 = 23111;
-    ParentHandle: ?union(enum) {
-    } = null,
-    pub const BulletHandle_field_number: u32 = 12;
-    pub const CombatCommon_field_number: u32 = 3;
-    pub const Handle_field_number: u32 = 6;
-    pub const OwnerEntityId_field_number: u32 = 7;
-    pub const BulletId_field_number: u32 = 11;
-    pub const SkillId_field_number: u32 = 10;
-    pub const Location_field_number: u32 = 2;
-    pub const Rotation_field_number: u32 = 13;
-    pub const TargetId_field_number: u32 = 9;
-    pub const SpawnEntityId_field_number: u32 = 8;
-    pub const SpawnVelocityEntityId_field_number: u32 = 5;
+    pub const BulletId_field_number: u32 = 4;
+    pub const SkillId_field_number: u32 = 9;
+    pub const Location_field_number: u32 = 15;
+    pub const Rotation_field_number: u32 = 6;
+    pub const TargetId_field_number: u32 = 3;
+    pub const SpawnEntityId_field_number: u32 = 11;
+    pub const SpawnVelocityEntityId_field_number: u32 = 10;
     pub const IsLocal_field_number: u32 = 1;
-    pub const DtType_field_number: u32 = 4;
-    pub const RandomPosOffset_field_number: u32 = 15;
-    pub const RandomInitSpeedOffset_field_number: u32 = 14;
+    pub const DtType_field_number: u32 = 8;
+    pub const RandomPosOffset_field_number: u32 = 14;
+    pub const RandomInitSpeedOffset_field_number: u32 = 7;
 };
 pub const CreateBulletResponse = struct {
-    pub const msg_id: u16 = 18324;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 20162;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const CreateBulletNotify = struct {
-    pub const msg_id: u16 = 24878;
+    pub const msg_id: u16 = 29868;
     ParentHandle: ?union(enum) {
     } = null,
     LocationId: ?union(enum) {
     } = null,
-    pub const BulletHandle_field_number: u32 = 214;
-    pub const LocationEntityId_field_number: u32 = 60;
-    pub const CombatCommon_field_number: u32 = 126;
-    pub const Handle_field_number: u32 = 211;
-    pub const OwnerEntityId_field_number: u32 = 29;
-    pub const BulletId_field_number: u32 = 244;
-    pub const SkillId_field_number: u32 = 55;
-    pub const Location_field_number: u32 = 67;
-    pub const Rotation_field_number: u32 = 239;
-    pub const TargetId_field_number: u32 = 114;
-    pub const SpawnEntityId_field_number: u32 = 167;
-    pub const SpawnVelocityEntityId_field_number: u32 = 24;
-    pub const TarLocation_field_number: u32 = 227;
-    pub const DtType_field_number: u32 = 26;
-    pub const Size_field_number: u32 = 134;
-    pub const RandomPosOffset_field_number: u32 = 212;
-    pub const RandomInitSpeedOffset_field_number: u32 = 76;
-    pub const HitCase_field_number: u32 = 200;
+    pub const BulletHandle_field_number: u32 = 89;
+    pub const LocationEntityId_field_number: u32 = 229;
+    pub const CombatCommon_field_number: u32 = 51;
+    pub const Handle_field_number: u32 = 74;
+    pub const OwnerEntityId_field_number: u32 = 138;
+    pub const BulletId_field_number: u32 = 120;
+    pub const SkillId_field_number: u32 = 111;
+    pub const Location_field_number: u32 = 170;
+    pub const Rotation_field_number: u32 = 142;
+    pub const TargetId_field_number: u32 = 66;
+    pub const SpawnEntityId_field_number: u32 = 50;
+    pub const SpawnVelocityEntityId_field_number: u32 = 57;
+    pub const TarLocation_field_number: u32 = 128;
+    pub const DtType_field_number: u32 = 245;
+    pub const Size_field_number: u32 = 97;
+    pub const RandomPosOffset_field_number: u32 = 69;
+    pub const RandomInitSpeedOffset_field_number: u32 = 1;
+    pub const HitCase_field_number: u32 = 254;
 };
 pub const DestroyBulletRequest = struct {
-    pub const msg_id: u16 = 24707;
-    pub const CombatCommon_field_number: u32 = 15;
-    pub const Handle_field_number: u32 = 9;
+    pub const msg_id: u16 = 26218;
+    pub const CombatCommon_field_number: u32 = 4;
+    pub const Handle_field_number: u32 = 13;
 };
 pub const DestroyBulletResponsePush = struct {
-    pub const msg_id: u16 = 22024;
-    pub const CombatCommon_field_number: u32 = 2;
-    pub const Handle_field_number: u32 = 8;
+    pub const msg_id: u16 = 22933;
+    pub const CombatCommon_field_number: u32 = 6;
+    pub const Handle_field_number: u32 = 4;
 };
 pub const DestroyBulletResponse = struct {
-    pub const msg_id: u16 = 21020;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 22475;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const DestroyBulletNotify = struct {
-    pub const msg_id: u16 = 26875;
-    pub const CombatCommon_field_number: u32 = 15;
+    pub const msg_id: u16 = 16776;
+    pub const CombatCommon_field_number: u32 = 10;
     pub const Handle_field_number: u32 = 2;
-    pub const IsCreateSubBullet_field_number: u32 = 7;
+    pub const IsCreateSubBullet_field_number: u32 = 14;
 };
 pub const ModifyBulletParams = struct {
     pub const CombatCommon_field_number: u32 = 1;
@@ -6814,20 +6985,20 @@ pub const ModifyBulletParams = struct {
     pub const TargetId_field_number: u32 = 3;
 };
 pub const ModifyBulletParamsRequest = struct {
-    pub const msg_id: u16 = 17397;
-    pub const ModifyBulletParams_field_number: u32 = 14;
+    pub const msg_id: u16 = 16767;
+    pub const ModifyBulletParams_field_number: u32 = 4;
 };
 pub const ModifyBulletParamsPush = struct {
-    pub const msg_id: u16 = 20730;
-    pub const ModifyBulletParams_field_number: u32 = 8;
+    pub const msg_id: u16 = 21952;
+    pub const ModifyBulletParams_field_number: u32 = 4;
 };
 pub const ModifyBulletParamsResponse = struct {
-    pub const msg_id: u16 = 26453;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 21100;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const ModifyBulletParamsNotify = struct {
-    pub const msg_id: u16 = 18305;
-    pub const ModifyBulletParams_field_number: u32 = 13;
+    pub const msg_id: u16 = 17666;
+    pub const ModifyBulletParams_field_number: u32 = 6;
 };
 pub const DamageContext = struct {
     Source: ?union(enum) {
@@ -6845,125 +7016,125 @@ pub const DamageContext = struct {
     pub const BulletTags_field_number: u32 = 3;
 };
 pub const DamageExecuteRequest = struct {
-    pub const msg_id: u16 = 23274;
-    pub const DamageId_field_number: u32 = 3;
-    pub const SkillLevel_field_number: u32 = 15;
+    pub const msg_id: u16 = 22022;
+    pub const DamageId_field_number: u32 = 9;
+    pub const SkillLevel_field_number: u32 = 12;
     pub const AttackerEntityId_field_number: u32 = 13;
-    pub const TargetEntityId_field_number: u32 = 6;
-    pub const IsAddEnergy_field_number: u32 = 10;
-    pub const IsCounterAttack_field_number: u32 = 5;
+    pub const TargetEntityId_field_number: u32 = 10;
+    pub const IsAddEnergy_field_number: u32 = 6;
+    pub const IsCounterAttack_field_number: u32 = 1;
     pub const ForceCritical_field_number: u32 = 2;
-    pub const IsBlocked_field_number: u32 = 1;
-    pub const PartIndex_field_number: u32 = 14;
-    pub const CounterSkillMessageId_field_number: u32 = 9;
-    pub const DamageContext_field_number: u32 = 8;
-    pub const RandomSeed_field_number: u32 = 7;
-    pub const IsBreakWeakness_field_number: u32 = 11;
+    pub const IsBlocked_field_number: u32 = 7;
+    pub const PartIndex_field_number: u32 = 5;
+    pub const CounterSkillMessageId_field_number: u32 = 3;
+    pub const DamageContext_field_number: u32 = 15;
+    pub const RandomSeed_field_number: u32 = 4;
+    pub const IsBreakWeakness_field_number: u32 = 8;
 };
 pub const DamageExecuteResponse = struct {
-    pub const msg_id: u16 = 22365;
-    pub const ErrorCode_field_number: u32 = 6;
-    pub const AttackerEntityId_field_number: u32 = 15;
-    pub const TargetEntityId_field_number: u32 = 4;
-    pub const Damage_field_number: u32 = 3;
+    pub const msg_id: u16 = 22796;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const AttackerEntityId_field_number: u32 = 8;
+    pub const TargetEntityId_field_number: u32 = 2;
+    pub const Damage_field_number: u32 = 10;
     pub const PartIndex_field_number: u32 = 1;
-    pub const IsCrit_field_number: u32 = 14;
-    pub const KilledTarget_field_number: u32 = 11;
-    pub const ShieldCoverDamage_field_number: u32 = 2;
-    pub const ImmuneType_field_number: u32 = 13;
-    pub const ElementType_field_number: u32 = 9;
-    pub const ChangeLife_field_number: u32 = 8;
-    pub const ChangeWeakness_field_number: u32 = 7;
+    pub const IsCrit_field_number: u32 = 11;
+    pub const KilledTarget_field_number: u32 = 13;
+    pub const ShieldCoverDamage_field_number: u32 = 15;
+    pub const ImmuneType_field_number: u32 = 5;
+    pub const ElementType_field_number: u32 = 3;
+    pub const ChangeLife_field_number: u32 = 7;
+    pub const ChangeWeakness_field_number: u32 = 9;
 };
 pub const DamageExecuteNotify = struct {
-    pub const msg_id: u16 = 15695;
-    pub const DamageId_field_number: u32 = 14;
-    pub const AttackerEntityId_field_number: u32 = 13;
-    pub const TargetEntityId_field_number: u32 = 2;
-    pub const Damage_field_number: u32 = 9;
-    pub const PartIndex_field_number: u32 = 3;
-    pub const IsCrit_field_number: u32 = 10;
-    pub const KilledTarget_field_number: u32 = 1;
-    pub const ShieldCoverDamage_field_number: u32 = 12;
-    pub const SkillLevel_field_number: u32 = 8;
-    pub const DamageContext_field_number: u32 = 5;
-    pub const ImmuneType_field_number: u32 = 7;
-    pub const ElementType_field_number: u32 = 15;
-    pub const ChangeLife_field_number: u32 = 6;
-    pub const ChangeWeakness_field_number: u32 = 4;
-    pub const Bop_field_number: u32 = 11;
+    pub const msg_id: u16 = 28964;
+    pub const DamageId_field_number: u32 = 7;
+    pub const AttackerEntityId_field_number: u32 = 14;
+    pub const TargetEntityId_field_number: u32 = 12;
+    pub const Damage_field_number: u32 = 13;
+    pub const PartIndex_field_number: u32 = 11;
+    pub const IsCrit_field_number: u32 = 8;
+    pub const KilledTarget_field_number: u32 = 3;
+    pub const ShieldCoverDamage_field_number: u32 = 4;
+    pub const SkillLevel_field_number: u32 = 6;
+    pub const DamageContext_field_number: u32 = 15;
+    pub const ImmuneType_field_number: u32 = 1;
+    pub const ElementType_field_number: u32 = 5;
+    pub const ChangeLife_field_number: u32 = 10;
+    pub const ChangeWeakness_field_number: u32 = 2;
+    pub const Bop_field_number: u32 = 9;
 };
 pub const PassiveSkillAddRequest = struct {
-    pub const msg_id: u16 = 25127;
+    pub const msg_id: u16 = 23740;
     pub const PassiveSkillId_field_number: u32 = 12;
-    pub const TargetEntityId_field_number: u32 = 7;
+    pub const TargetEntityId_field_number: u32 = 2;
 };
 pub const PassiveSkillAddPush = struct {
-    pub const msg_id: u16 = 27373;
-    pub const PassiveSkillId_field_number: u32 = 15;
-    pub const TargetEntityId_field_number: u32 = 9;
+    pub const msg_id: u16 = 21813;
+    pub const PassiveSkillId_field_number: u32 = 3;
+    pub const TargetEntityId_field_number: u32 = 13;
 };
 pub const PassiveSkillAddResponse = struct {
-    pub const msg_id: u16 = 25044;
-    pub const ErrorCode_field_number: u32 = 6;
-};
-pub const PassiveSkillRemoveRequest = struct {
-    pub const msg_id: u16 = 17981;
-    pub const PassiveSkillId_field_number: u32 = 4;
-    pub const TargetEntityId_field_number: u32 = 15;
-};
-pub const PassiveSkillRemovePush = struct {
-    pub const msg_id: u16 = 27845;
-    pub const PassiveSkillId_field_number: u32 = 15;
-    pub const TargetEntityId_field_number: u32 = 4;
-};
-pub const PassiveSkillRemoveResponse = struct {
-    pub const msg_id: u16 = 26405;
-    pub const ErrorCode_field_number: u32 = 10;
-};
-pub const PassiveSkillAddNotify = struct {
-    pub const msg_id: u16 = 21022;
-    pub const EntityId_field_number: u32 = 12;
-    pub const PassiveSkillItemPbList_field_number: u32 = 4;
-};
-pub const PassiveSkillRemoveNotify = struct {
-    pub const msg_id: u16 = 18426;
-    pub const EntityId_field_number: u32 = 3;
-    pub const SkillIdList_field_number: u32 = 12;
-};
-pub const EnterViewDirectionRequest = struct {
-    pub const msg_id: u16 = 26251;
-};
-pub const EnterViewDirectionPush = struct {
-    pub const msg_id: u16 = 28335;
-};
-pub const EnterViewDirectionResponse = struct {
-    pub const msg_id: u16 = 21062;
+    pub const msg_id: u16 = 20187;
     pub const ErrorCode_field_number: u32 = 14;
 };
+pub const PassiveSkillRemoveRequest = struct {
+    pub const msg_id: u16 = 21925;
+    pub const PassiveSkillId_field_number: u32 = 2;
+    pub const TargetEntityId_field_number: u32 = 11;
+};
+pub const PassiveSkillRemovePush = struct {
+    pub const msg_id: u16 = 15649;
+    pub const PassiveSkillId_field_number: u32 = 12;
+    pub const TargetEntityId_field_number: u32 = 11;
+};
+pub const PassiveSkillRemoveResponse = struct {
+    pub const msg_id: u16 = 20593;
+    pub const ErrorCode_field_number: u32 = 12;
+};
+pub const PassiveSkillAddNotify = struct {
+    pub const msg_id: u16 = 22690;
+    pub const EntityId_field_number: u32 = 1;
+    pub const PassiveSkillItemPbList_field_number: u32 = 11;
+};
+pub const PassiveSkillRemoveNotify = struct {
+    pub const msg_id: u16 = 22034;
+    pub const EntityId_field_number: u32 = 10;
+    pub const SkillIdList_field_number: u32 = 3;
+};
+pub const EnterViewDirectionRequest = struct {
+    pub const msg_id: u16 = 18587;
+};
+pub const EnterViewDirectionPush = struct {
+    pub const msg_id: u16 = 28007;
+};
+pub const EnterViewDirectionResponse = struct {
+    pub const msg_id: u16 = 26211;
+    pub const ErrorCode_field_number: u32 = 4;
+};
 pub const ExitViewDirectionRequest = struct {
-    pub const msg_id: u16 = 15700;
+    pub const msg_id: u16 = 25488;
 };
 pub const ExitViewDirectionPush = struct {
-    pub const msg_id: u16 = 18304;
+    pub const msg_id: u16 = 19441;
 };
 pub const ExitViewDirectionResponse = struct {
-    pub const msg_id: u16 = 19929;
+    pub const msg_id: u16 = 20227;
     pub const ErrorCode_field_number: u32 = 10;
 };
 pub const TriggerExitSkillRequest = struct {
-    pub const msg_id: u16 = 18090;
-    pub const EnterEntityId_field_number: u32 = 2;
-    pub const LeaveEntityId_field_number: u32 = 13;
+    pub const msg_id: u16 = 29898;
+    pub const EnterEntityId_field_number: u32 = 5;
+    pub const LeaveEntityId_field_number: u32 = 7;
 };
 pub const TriggerExitSkillPush = struct {
-    pub const msg_id: u16 = 17172;
-    pub const EnterEntityId_field_number: u32 = 13;
-    pub const LeaveEntityId_field_number: u32 = 2;
+    pub const msg_id: u16 = 20414;
+    pub const EnterEntityId_field_number: u32 = 8;
+    pub const LeaveEntityId_field_number: u32 = 12;
 };
 pub const TriggerExitSkillResponse = struct {
-    pub const msg_id: u16 = 26246;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 22190;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const MonsterInfo = struct {
     pub const MonsterId_field_number: u32 = 1;
@@ -6971,173 +7142,173 @@ pub const MonsterInfo = struct {
     pub const GenId_field_number: u32 = 3;
 };
 pub const SwitchBattleModeNotify = struct {
-    pub const msg_id: u16 = 23796;
-    pub const ServerControllerModules_field_number: u32 = 10;
-    pub const ClientControllerModules_field_number: u32 = 6;
+    pub const msg_id: u16 = 24226;
+    pub const ServerControllerModules_field_number: u32 = 1;
+    pub const ClientControllerModules_field_number: u32 = 3;
 };
 pub const EntityIsVisibleRequest = struct {
-    pub const msg_id: u16 = 25818;
-    pub const Id_field_number: u32 = 11;
-    pub const IsVisible_field_number: u32 = 13;
-    pub const CombatCommon_field_number: u32 = 14;
+    pub const msg_id: u16 = 24121;
+    pub const Id_field_number: u32 = 9;
+    pub const IsVisible_field_number: u32 = 4;
+    pub const CombatCommon_field_number: u32 = 7;
 };
 pub const EntityIsVisiblePush = struct {
-    pub const msg_id: u16 = 19102;
-    pub const Id_field_number: u32 = 3;
+    pub const msg_id: u16 = 23399;
+    pub const Id_field_number: u32 = 6;
     pub const IsVisible_field_number: u32 = 13;
-    pub const CombatCommon_field_number: u32 = 8;
-};
-pub const EntityIsVisibleResponse = struct {
-    pub const msg_id: u16 = 28946;
-    pub const ErrorCode_field_number: u32 = 11;
-};
-pub const EntityIsVisibleNotify = struct {
-    pub const msg_id: u16 = 20105;
-    pub const Id_field_number: u32 = 5;
-    pub const IsVisible_field_number: u32 = 9;
-    pub const CombatCommon_field_number: u32 = 11;
-};
-pub const MotorIsEnablePush = struct {
-    pub const msg_id: u16 = 20155;
-    pub const Id_field_number: u32 = 1;
-    pub const IsEnable_field_number: u32 = 4;
     pub const CombatCommon_field_number: u32 = 2;
 };
-pub const ActorVisibleRequest = struct {
-    pub const msg_id: u16 = 17738;
-    pub const Id_field_number: u32 = 15;
-    pub const IsActorVisible_field_number: u32 = 7;
+pub const EntityIsVisibleResponse = struct {
+    pub const msg_id: u16 = 27951;
+    pub const ErrorCode_field_number: u32 = 9;
 };
-pub const ActorVisiblePush = struct {
-    pub const msg_id: u16 = 17010;
-    pub const Id_field_number: u32 = 11;
+pub const EntityIsVisibleNotify = struct {
+    pub const msg_id: u16 = 17405;
+    pub const Id_field_number: u32 = 4;
+    pub const IsVisible_field_number: u32 = 6;
+    pub const CombatCommon_field_number: u32 = 10;
+};
+pub const MotorIsEnablePush = struct {
+    pub const msg_id: u16 = 28828;
+    pub const Id_field_number: u32 = 14;
+    pub const IsEnable_field_number: u32 = 15;
+    pub const CombatCommon_field_number: u32 = 8;
+};
+pub const ActorVisibleRequest = struct {
+    pub const msg_id: u16 = 20487;
+    pub const Id_field_number: u32 = 4;
     pub const IsActorVisible_field_number: u32 = 5;
 };
+pub const ActorVisiblePush = struct {
+    pub const msg_id: u16 = 22507;
+    pub const Id_field_number: u32 = 14;
+    pub const IsActorVisible_field_number: u32 = 10;
+};
 pub const ActorVisibleResponse = struct {
-    pub const msg_id: u16 = 22884;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 29481;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const ActorVisibleNotify = struct {
-    pub const msg_id: u16 = 20661;
-    pub const Id_field_number: u32 = 9;
-    pub const IsActorVisible_field_number: u32 = 15;
+    pub const msg_id: u16 = 23346;
+    pub const Id_field_number: u32 = 4;
+    pub const IsActorVisible_field_number: u32 = 2;
 };
 pub const SwitchCharacterStateRequest = struct {
-    pub const msg_id: u16 = 18632;
-    pub const CombatCommon_field_number: u32 = 3;
-    pub const Id_field_number: u32 = 10;
-    pub const OldState_field_number: u32 = 15;
-    pub const NewState_field_number: u32 = 13;
+    pub const msg_id: u16 = 27567;
+    pub const CombatCommon_field_number: u32 = 12;
+    pub const Id_field_number: u32 = 3;
+    pub const OldState_field_number: u32 = 7;
+    pub const NewState_field_number: u32 = 8;
 };
 pub const SwitchCharacterStatePush = struct {
-    pub const msg_id: u16 = 18523;
-    pub const CombatCommon_field_number: u32 = 7;
-    pub const Id_field_number: u32 = 3;
-    pub const OldState_field_number: u32 = 10;
+    pub const msg_id: u16 = 19156;
+    pub const CombatCommon_field_number: u32 = 2;
+    pub const Id_field_number: u32 = 10;
+    pub const OldState_field_number: u32 = 12;
     pub const NewState_field_number: u32 = 8;
 };
 pub const SwitchCharacterStateResponse = struct {
-    pub const msg_id: u16 = 21244;
-    pub const ErrorCode_field_number: u32 = 9;
+    pub const msg_id: u16 = 24015;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const SwitchCharacterStateNotify = struct {
-    pub const msg_id: u16 = 17151;
-    pub const CombatCommon_field_number: u32 = 8;
-    pub const Id_field_number: u32 = 10;
-    pub const OldState_field_number: u32 = 6;
-    pub const NewState_field_number: u32 = 12;
+    pub const msg_id: u16 = 15678;
+    pub const CombatCommon_field_number: u32 = 5;
+    pub const Id_field_number: u32 = 2;
+    pub const OldState_field_number: u32 = 15;
+    pub const NewState_field_number: u32 = 11;
 };
 pub const BattleStateChangeRequest = struct {
-    pub const msg_id: u16 = 28011;
-    pub const EntityId_field_number: u32 = 3;
-    pub const InBattle_field_number: u32 = 8;
+    pub const msg_id: u16 = 19661;
+    pub const EntityId_field_number: u32 = 2;
+    pub const InBattle_field_number: u32 = 13;
 };
 pub const BattleStateChangePush = struct {
-    pub const msg_id: u16 = 15902;
-    pub const EntityId_field_number: u32 = 1;
-    pub const InBattle_field_number: u32 = 10;
+    pub const msg_id: u16 = 29436;
+    pub const EntityId_field_number: u32 = 13;
+    pub const InBattle_field_number: u32 = 8;
 };
 pub const BattleStateChangeResponse = struct {
-    pub const msg_id: u16 = 20194;
-    pub const ErrorCode_field_number: u32 = 9;
+    pub const msg_id: u16 = 27150;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const BattleStateChangeNotify = struct {
-    pub const msg_id: u16 = 24642;
-    pub const EntityId_field_number: u32 = 3;
-    pub const InBattle_field_number: u32 = 9;
+    pub const msg_id: u16 = 22142;
+    pub const EntityId_field_number: u32 = 7;
+    pub const InBattle_field_number: u32 = 14;
 };
 pub const ToughCalcExtraRatioChangeRequest = struct {
-    pub const msg_id: u16 = 17701;
-    pub const Id_field_number: u32 = 12;
-    pub const Duration_field_number: u32 = 8;
-};
-pub const ToughCalcExtraRatioChangePush = struct {
-    pub const msg_id: u16 = 21213;
-    pub const Id_field_number: u32 = 12;
+    pub const msg_id: u16 = 23954;
+    pub const Id_field_number: u32 = 13;
     pub const Duration_field_number: u32 = 4;
 };
+pub const ToughCalcExtraRatioChangePush = struct {
+    pub const msg_id: u16 = 24319;
+    pub const Id_field_number: u32 = 11;
+    pub const Duration_field_number: u32 = 12;
+};
 pub const ToughCalcExtraRatioChangeResponse = struct {
-    pub const msg_id: u16 = 20600;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 18566;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const MonsterBoomRequest = struct {
-    pub const msg_id: u16 = 29006;
-    pub const Delay_field_number: u32 = 9;
+    pub const msg_id: u16 = 27664;
+    pub const Delay_field_number: u32 = 1;
 };
 pub const MonsterBoomPush = struct {
-    pub const msg_id: u16 = 29973;
-    pub const Delay_field_number: u32 = 3;
+    pub const msg_id: u16 = 26387;
+    pub const Delay_field_number: u32 = 14;
 };
 pub const MonsterBoomResponse = struct {
-    pub const msg_id: u16 = 27210;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 23701;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const MontagePlayNotify = struct {
-    pub const msg_id: u16 = 18893;
-    pub const SkillId_field_number: u32 = 3;
-    pub const MontageIndex_field_number: u32 = 5;
+    pub const msg_id: u16 = 17788;
+    pub const SkillId_field_number: u32 = 12;
+    pub const MontageIndex_field_number: u32 = 11;
 };
 pub const ANStartRequest = struct {
-    pub const msg_id: u16 = 29586;
-    pub const SkillId_field_number: u32 = 15;
-    pub const MontageIndex_field_number: u32 = 14;
-    pub const AnIndex_field_number: u32 = 1;
+    pub const msg_id: u16 = 23064;
+    pub const SkillId_field_number: u32 = 7;
+    pub const MontageIndex_field_number: u32 = 11;
+    pub const AnIndex_field_number: u32 = 6;
 };
 pub const ANStartPush = struct {
-    pub const msg_id: u16 = 29839;
-    pub const SkillId_field_number: u32 = 7;
-    pub const MontageIndex_field_number: u32 = 13;
-    pub const AnIndex_field_number: u32 = 2;
+    pub const msg_id: u16 = 22773;
+    pub const SkillId_field_number: u32 = 10;
+    pub const MontageIndex_field_number: u32 = 15;
+    pub const AnIndex_field_number: u32 = 9;
 };
 pub const ANStartResponse = struct {
-    pub const msg_id: u16 = 23265;
-    pub const SkillId_field_number: u32 = 2;
-    pub const MontageIndex_field_number: u32 = 5;
-    pub const AnIndex_field_number: u32 = 9;
-    pub const Error_field_number: u32 = 6;
+    pub const msg_id: u16 = 15208;
+    pub const SkillId_field_number: u32 = 14;
+    pub const MontageIndex_field_number: u32 = 6;
+    pub const AnIndex_field_number: u32 = 13;
+    pub const Error_field_number: u32 = 11;
 };
 pub const ANStartNotify = struct {
-    pub const msg_id: u16 = 15832;
-    pub const SkillId_field_number: u32 = 12;
-    pub const MontageIndex_field_number: u32 = 6;
-    pub const AnIndex_field_number: u32 = 7;
+    pub const msg_id: u16 = 24660;
+    pub const SkillId_field_number: u32 = 8;
+    pub const MontageIndex_field_number: u32 = 4;
+    pub const AnIndex_field_number: u32 = 5;
 };
 pub const CharacterBattleStateInfo = struct {
     pub const EntityId_field_number: u32 = 1;
     pub const InBattle_field_number: u32 = 2;
 };
 pub const PushContextIdNotify = struct {
-    pub const msg_id: u16 = 27862;
-    pub const Id_field_number: u32 = 3;
+    pub const msg_id: u16 = 16119;
+    pub const Id_field_number: u32 = 14;
 };
 pub const CharacterBattleStateChangeNotify = struct {
-    pub const msg_id: u16 = 21986;
-    pub const CharacterBattleStateInfo_field_number: u32 = 2;
+    pub const msg_id: u16 = 25768;
+    pub const CharacterBattleStateInfo_field_number: u32 = 7;
 };
 pub const PlayerBattleStateChangeNotify = struct {
-    pub const msg_id: u16 = 25868;
-    pub const PlayerId_field_number: u32 = 8;
-    pub const InBattle_field_number: u32 = 11;
+    pub const msg_id: u16 = 25044;
+    pub const PlayerId_field_number: u32 = 15;
+    pub const InBattle_field_number: u32 = 5;
 };
 pub const ShieldUpdateInfo = struct {
     pub const Handle_field_number: u32 = 1;
@@ -7146,211 +7317,182 @@ pub const ShieldUpdateInfo = struct {
     pub const UpdateType_field_number: u32 = 4;
 };
 pub const ShieldUpdateNotify = struct {
-    pub const msg_id: u16 = 25263;
-    pub const Shields_field_number: u32 = 10;
+    pub const msg_id: u16 = 26592;
+    pub const Shields_field_number: u32 = 15;
 };
 pub const RoleTagChangeRequest = struct {
-    pub const msg_id: u16 = 16227;
-    pub const TagId_field_number: u32 = 14;
-    pub const TagCount_field_number: u32 = 7;
+    pub const msg_id: u16 = 25844;
+    pub const TagId_field_number: u32 = 12;
+    pub const TagCount_field_number: u32 = 4;
 };
 pub const RoleTagChangePush = struct {
-    pub const msg_id: u16 = 28115;
-    pub const TagId_field_number: u32 = 5;
-    pub const TagCount_field_number: u32 = 13;
+    pub const msg_id: u16 = 20435;
+    pub const TagId_field_number: u32 = 4;
+    pub const TagCount_field_number: u32 = 1;
 };
 pub const RoleTagChangeResponse = struct {
-    pub const msg_id: u16 = 17680;
-    pub const ErrorCode_field_number: u32 = 6;
+    pub const msg_id: u16 = 28943;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const GameplayCueRequest = struct {
-    pub const msg_id: u16 = 21164;
-    pub const GameplayCueId_field_number: u32 = 10;
+    pub const msg_id: u16 = 20103;
+    pub const GameplayCueId_field_number: u32 = 4;
 };
 pub const GameplayCuePush = struct {
-    pub const msg_id: u16 = 21482;
-    pub const GameplayCueId_field_number: u32 = 8;
+    pub const msg_id: u16 = 19183;
+    pub const GameplayCueId_field_number: u32 = 3;
 };
 pub const GameplayCueResponse = struct {
-    pub const msg_id: u16 = 23404;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 21252;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const GameplayCueNotify = struct {
-    pub const msg_id: u16 = 23053;
-    pub const GameplayCueId_field_number: u32 = 12;
+    pub const msg_id: u16 = 29715;
+    pub const GameplayCueId_field_number: u32 = 4;
 };
 pub const ExecuteQteNotify = struct {
-    pub const msg_id: u16 = 27341;
-    pub const DownEntityId_field_number: u32 = 8;
-    pub const UpEntityId_field_number: u32 = 13;
+    pub const msg_id: u16 = 20131;
+    pub const DownEntityId_field_number: u32 = 15;
+    pub const UpEntityId_field_number: u32 = 8;
     pub const FnvHash_field_number: u32 = 10;
 };
 pub const ExecuteQteRequest = struct {
-    pub const msg_id: u16 = 26045;
-    pub const DownEntityId_field_number: u32 = 12;
-    pub const UpEntityId_field_number: u32 = 4;
-    pub const FnvHash_field_number: u32 = 10;
+    pub const msg_id: u16 = 29269;
+    pub const DownEntityId_field_number: u32 = 15;
+    pub const UpEntityId_field_number: u32 = 8;
+    pub const FnvHash_field_number: u32 = 6;
 };
 pub const ExecuteQtePush = struct {
-    pub const msg_id: u16 = 23998;
-    pub const DownEntityId_field_number: u32 = 12;
-    pub const UpEntityId_field_number: u32 = 4;
-    pub const FnvHash_field_number: u32 = 15;
+    pub const msg_id: u16 = 24316;
+    pub const DownEntityId_field_number: u32 = 1;
+    pub const UpEntityId_field_number: u32 = 15;
+    pub const FnvHash_field_number: u32 = 4;
 };
 pub const ExecuteQteResponse = struct {
-    pub const msg_id: u16 = 26083;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 26990;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const NewLinkStateNotify = struct {
-    pub const msg_id: u16 = 25621;
-    pub const LinkConfigId_field_number: u32 = 10;
-    pub const Current_field_number: u32 = 1;
-    pub const PlayerId_field_number: u32 = 15;
+    pub const msg_id: u16 = 23833;
+    pub const LinkConfigId_field_number: u32 = 5;
+    pub const Current_field_number: u32 = 13;
+    pub const PlayerId_field_number: u32 = 2;
 };
 pub const NewLinkBurstPush = struct {
-    pub const msg_id: u16 = 29774;
+    pub const msg_id: u16 = 22970;
 };
 pub const CharacterAttachRequest = struct {
-    pub const msg_id: u16 = 21700;
-    pub const CharacterAttachInfo_field_number: u32 = 9;
-    pub const TargetEntity_field_number: u32 = 2;
+    pub const msg_id: u16 = 19641;
+    pub const CharacterAttachInfo_field_number: u32 = 14;
+    pub const TargetEntity_field_number: u32 = 5;
 };
 pub const AddCombineEntitiesRelationNotify = struct {
-    pub const msg_id: u16 = 23953;
-    pub const CharacterAttachInfo_field_number: u32 = 11;
-    pub const TargetEntity_field_number: u32 = 6;
+    pub const msg_id: u16 = 25278;
+    pub const CharacterAttachInfo_field_number: u32 = 10;
+    pub const TargetEntity_field_number: u32 = 8;
 };
 pub const RemoveCombineRelationNotify = struct {
-    pub const msg_id: u16 = 23757;
-    pub const CombineEntity_field_number: u32 = 5;
-    pub const TargetEntity_field_number: u32 = 15;
+    pub const msg_id: u16 = 17117;
+    pub const CombineEntity_field_number: u32 = 12;
+    pub const TargetEntity_field_number: u32 = 5;
 };
 pub const CharacterAttachResponse = struct {
-    pub const msg_id: u16 = 29140;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 17364;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const CharacterDetachRequest = struct {
-    pub const msg_id: u16 = 24875;
-    pub const EntityA_field_number: u32 = 7;
-    pub const EntityB_field_number: u32 = 8;
+    pub const msg_id: u16 = 21623;
+    pub const EntityA_field_number: u32 = 10;
+    pub const EntityB_field_number: u32 = 3;
 };
 pub const CharacterDetachResponse = struct {
-    pub const msg_id: u16 = 25523;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 23102;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const ModifyEntityCampNotify = struct {
-    pub const msg_id: u16 = 23862;
-    pub const TargetEntityId_field_number: u32 = 5;
-    pub const Camp_field_number: u32 = 10;
+    pub const msg_id: u16 = 28258;
+    pub const TargetEntityId_field_number: u32 = 7;
+    pub const Camp_field_number: u32 = 6;
 };
 pub const MontagePlayPush = struct {
-    pub const msg_id: u16 = 27045;
-    pub const Name_field_number: u32 = 7;
-    pub const Path_field_number: u32 = 8;
-    pub const SpeedRatio_field_number: u32 = 1;
-    pub const StartSection_field_number: u32 = 13;
-    pub const StartTimeSeconds_field_number: u32 = 12;
+    pub const msg_id: u16 = 22159;
+    pub const Name_field_number: u32 = 15;
+    pub const Path_field_number: u32 = 4;
+    pub const SpeedRatio_field_number: u32 = 10;
+    pub const StartSection_field_number: u32 = 1;
+    pub const StartTimeSeconds_field_number: u32 = 7;
 };
 pub const VisionTriggerPush = struct {
-    pub const msg_id: u16 = 23489;
-    pub const VisionId_field_number: u32 = 9;
+    pub const msg_id: u16 = 19341;
+    pub const VisionId_field_number: u32 = 15;
 };
 pub const VisionTriggerNotify = struct {
-    pub const msg_id: u16 = 29084;
-    pub const VisionId_field_number: u32 = 2;
+    pub const msg_id: u16 = 21314;
+    pub const VisionId_field_number: u32 = 15;
 };
 pub const TransformBuffStackNotify = struct {
-    pub const msg_id: u16 = 15366;
-    pub const BuffHandle_field_number: u32 = 5;
-    pub const BuffId_field_number: u32 = 13;
-    pub const BuffStackModifier_field_number: u32 = 15;
+    pub const msg_id: u16 = 27991;
+    pub const BuffHandle_field_number: u32 = 7;
+    pub const BuffId_field_number: u32 = 15;
+    pub const BuffStackModifier_field_number: u32 = 8;
 };
 pub const MotorSummonAndRidePush = struct {
-    pub const msg_id: u16 = 27271;
-    pub const EntityId_field_number: u32 = 7;
-    pub const VehicleIncId_field_number: u32 = 11;
-    pub const Transform_field_number: u32 = 9;
+    pub const msg_id: u16 = 23028;
+    pub const EntityId_field_number: u32 = 3;
+    pub const VehicleIncId_field_number: u32 = 2;
+    pub const Transform_field_number: u32 = 4;
 };
 pub const MotorSummonAndRideNotify = struct {
-    pub const msg_id: u16 = 15635;
+    pub const msg_id: u16 = 20643;
     pub const PlayerId_field_number: u32 = 4;
-    pub const EntityId_field_number: u32 = 13;
-    pub const VehicleIncId_field_number: u32 = 10;
-    pub const Transform_field_number: u32 = 9;
+    pub const EntityId_field_number: u32 = 1;
+    pub const VehicleIncId_field_number: u32 = 7;
+    pub const Transform_field_number: u32 = 3;
 };
 pub const GaSwitchCommonEnemyProCampRequest = struct {
-    pub const msg_id: u16 = 24385;
+    pub const msg_id: u16 = 17625;
 };
 pub const GaSwitchCommonEnemyProCampResponse = struct {
-    pub const msg_id: u16 = 26298;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 23547;
+    pub const ErrorCode_field_number: u32 = 15;
 };
 pub const BulletPatternPush = struct {
-    pub const msg_id: u16 = 26393;
-    pub const BulletPatternHandleId_field_number: u32 = 9;
-    pub const BulletPatternId_field_number: u32 = 12;
+    pub const msg_id: u16 = 27859;
+    pub const BulletPatternHandleId_field_number: u32 = 3;
+    pub const BulletPatternId_field_number: u32 = 1;
 };
 pub const BulletPatternNotify = struct {
-    pub const msg_id: u16 = 23009;
+    pub const msg_id: u16 = 29108;
     pub const BulletPatternHandleId_field_number: u32 = 6;
     pub const BulletPatternId_field_number: u32 = 11;
 };
 pub const QuickHackOpenPush = struct {
-    pub const msg_id: u16 = 20498;
-    pub const DeviceId_field_number: u32 = 15;
-    pub const OwnerEntityId_field_number: u32 = 1;
+    pub const msg_id: u16 = 16504;
+    pub const DeviceId_field_number: u32 = 12;
+    pub const OwnerEntityId_field_number: u32 = 13;
 };
 pub const QuickHackRamVerifyPush = struct {
-    pub const msg_id: u16 = 18127;
-    pub const DeviceId_field_number: u32 = 8;
-    pub const QuickHackSkillIdList_field_number: u32 = 2;
-    pub const OpenQuickHackPreMessageId_field_number: u32 = 12;
+    pub const msg_id: u16 = 25141;
+    pub const DeviceId_field_number: u32 = 11;
+    pub const QuickHackSkillIdList_field_number: u32 = 6;
+    pub const OpenQuickHackPreMessageId_field_number: u32 = 8;
 };
 pub const DodgeInfoPush = struct {
-    pub const msg_id: u16 = 26215;
-    pub const BulletOwnerId_field_number: u32 = 1;
-    pub const BulletId_field_number: u32 = 8;
+    pub const msg_id: u16 = 29777;
+    pub const BulletOwnerId_field_number: u32 = 2;
+    pub const BulletId_field_number: u32 = 12;
 };
-pub const FormationAttr = struct {
-    pub const AttrId_field_number: u32 = 1;
-    pub const Ratio_field_number: u32 = 2;
-    pub const BaseMaxValue_field_number: u32 = 3;
-    pub const MaxValue_field_number: u32 = 4;
-    pub const CurrentValue_field_number: u32 = 5;
+pub const ChangeSummonEntityStateRequest = struct {
+    pub const msg_id: u16 = 26759;
+    pub const SummonEntityId_field_number: u32 = 12;
+    pub const TagId_field_number: u32 = 6;
 };
-pub const FormationAttrNotify = struct {
-    pub const msg_id: u16 = 18969;
-    pub const Duration_field_number: u32 = 14;
-    pub const FormationAttrs_field_number: u32 = 6;
+pub const ChangeSummonEntityStateResponse = struct {
+    pub const msg_id: u16 = 21132;
+    pub const ErrorCode_field_number: u32 = 6;
 };
-pub const FormationAttrRequest = struct {
-    pub const msg_id: u16 = 26954;
-    pub const Duration_field_number: u32 = 12;
-    pub const FormationAttrs_field_number: u32 = 10;
-};
-pub const FormationAttrResponse = struct {
-    pub const msg_id: u16 = 27295;
-    pub const ErrorCode_field_number: u32 = 11;
-};
-pub const RecoverPropFromServer = struct {
-    pub const AttrId_field_number: u32 = 1;
-    pub const Ratio_field_number: u32 = 2;
-    pub const MaxValue_field_number: u32 = 4;
-    pub const ValueIncrement_field_number: u32 = 5;
-};
-pub const RecoverPropChangedNotify = struct {
-    pub const msg_id: u16 = 21270;
-    pub const Attributes_field_number: u32 = 6;
-    pub const Duration_field_number: u32 = 4;
-};
-pub const FragileChangeRequest = struct {
-    pub const msg_id: u16 = 27454;
-    pub const EntityId_field_number: u32 = 15;
-    pub const Flag_field_number: u32 = 3;
-};
-pub const FragileChangeResponse = struct {
-    pub const msg_id: u16 = 23596;
-    pub const ErrorCode_field_number: u32 = 15;
+pub const RoleTrialSceneRollbackPush = struct {
+    pub const msg_id: u16 = 15207;
 };
 pub const DamageRecordEntity = struct {
     pub const EntityId_field_number: u32 = 1;
@@ -7379,19 +7521,19 @@ pub const DamageCalculationDetails = struct {
     pub const ExceptedDamageValue_field_number: u32 = 18;
 };
 pub const DamageRecordNotify = struct {
-    pub const msg_id: u16 = 20320;
-    pub const TimestampMs_field_number: u32 = 1;
-    pub const DamageConfId_field_number: u32 = 13;
-    pub const DamageValue_field_number: u32 = 12;
-    pub const SkillId_field_number: u32 = 4;
-    pub const SkillLevel_field_number: u32 = 8;
-    pub const BulletId_field_number: u32 = 15;
-    pub const DamageSourceType_field_number: u32 = 7;
-    pub const IsCritical_field_number: u32 = 2;
-    pub const Attacker_field_number: u32 = 11;
-    pub const Victim_field_number: u32 = 9;
-    pub const DamageCalculationDetails_field_number: u32 = 3;
-    pub const IsWeakness_field_number: u32 = 6;
+    pub const msg_id: u16 = 22979;
+    pub const TimestampMs_field_number: u32 = 9;
+    pub const DamageConfId_field_number: u32 = 14;
+    pub const DamageValue_field_number: u32 = 7;
+    pub const SkillId_field_number: u32 = 15;
+    pub const SkillLevel_field_number: u32 = 4;
+    pub const BulletId_field_number: u32 = 12;
+    pub const DamageSourceType_field_number: u32 = 11;
+    pub const IsCritical_field_number: u32 = 8;
+    pub const Attacker_field_number: u32 = 13;
+    pub const Victim_field_number: u32 = 10;
+    pub const DamageCalculationDetails_field_number: u32 = 2;
+    pub const IsWeakness_field_number: u32 = 3;
 };
 pub const TestDamageRecordEntity = struct {
     pub const EntityId_field_number: u32 = 1;
@@ -7400,84 +7542,84 @@ pub const TestDamageRecordEntity = struct {
     pub const Attr_field_number: u32 = 4;
 };
 pub const TestDamageRecordNotify = struct {
-    pub const msg_id: u16 = 28891;
+    pub const msg_id: u16 = 22542;
     pub const TimestampMs_field_number: u32 = 2;
     pub const Entities_field_number: u32 = 7;
 };
 pub const TimeStopPush = struct {
-    pub const msg_id: u16 = 29732;
-    pub const TimeDilation_field_number: u32 = 2;
+    pub const msg_id: u16 = 23351;
+    pub const TimeDilation_field_number: u32 = 15;
 };
 pub const TsAnimNotifyStateAbsoluteTimeStopRequest = struct {
-    pub const msg_id: u16 = 21590;
-    pub const Duration_field_number: u32 = 3;
-    pub const Dilation_field_number: u32 = 1;
+    pub const msg_id: u16 = 28204;
+    pub const Duration_field_number: u32 = 10;
+    pub const Dilation_field_number: u32 = 6;
 };
 pub const TsAnimNotifyStateAbsoluteTimeStopPush = struct {
-    pub const msg_id: u16 = 24520;
-    pub const Duration_field_number: u32 = 5;
-    pub const Dilation_field_number: u32 = 3;
+    pub const msg_id: u16 = 23930;
+    pub const Duration_field_number: u32 = 6;
+    pub const Dilation_field_number: u32 = 8;
 };
 pub const TsAnimNotifyStateAbsoluteTimeStopResponse = struct {
-    pub const msg_id: u16 = 22524;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 20676;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const RTimeStopRequest = struct {
-    pub const msg_id: u16 = 22962;
-    pub const IsStopCharacter_field_number: u32 = 13;
-    pub const Duration_field_number: u32 = 14;
+    pub const msg_id: u16 = 17578;
+    pub const IsStopCharacter_field_number: u32 = 12;
+    pub const Duration_field_number: u32 = 4;
 };
 pub const RTimeStopPush = struct {
-    pub const msg_id: u16 = 26196;
-    pub const IsStopCharacter_field_number: u32 = 7;
-    pub const Duration_field_number: u32 = 13;
+    pub const msg_id: u16 = 19986;
+    pub const IsStopCharacter_field_number: u32 = 14;
+    pub const Duration_field_number: u32 = 2;
     pub const Dilation_field_number: u32 = 15;
 };
 pub const RTimeStopResponse = struct {
-    pub const msg_id: u16 = 26617;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 29193;
+    pub const ErrorCode_field_number: u32 = 12;
 };
 pub const EntityTimeDilationPush = struct {
-    pub const msg_id: u16 = 16779;
+    pub const msg_id: u16 = 25999;
     pub const EntityId_field_number: u32 = 9;
-    pub const TimeDilation_field_number: u32 = 11;
+    pub const TimeDilation_field_number: u32 = 15;
 };
 pub const RTimeStopInstRequest = struct {
-    pub const msg_id: u16 = 25664;
-    pub const Flag_field_number: u32 = 9;
-    pub const Duration_field_number: u32 = 7;
-};
-pub const RTimeStopInstPush = struct {
-    pub const msg_id: u16 = 19708;
-    pub const Flag_field_number: u32 = 9;
+    pub const msg_id: u16 = 21786;
+    pub const Flag_field_number: u32 = 11;
     pub const Duration_field_number: u32 = 6;
 };
+pub const RTimeStopInstPush = struct {
+    pub const msg_id: u16 = 20510;
+    pub const Flag_field_number: u32 = 14;
+    pub const Duration_field_number: u32 = 13;
+};
 pub const RTimeStopInstResponse = struct {
-    pub const msg_id: u16 = 22922;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 29799;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const TimeCheckRequest = struct {
-    pub const msg_id: u16 = 18687;
-    pub const ClientTime_field_number: u32 = 10;
-    pub const TimeDilation_field_number: u32 = 8;
-    pub const FlowTimeDilation_field_number: u32 = 6;
+    pub const msg_id: u16 = 28306;
+    pub const ClientTime_field_number: u32 = 4;
+    pub const TimeDilation_field_number: u32 = 1;
+    pub const FlowTimeDilation_field_number: u32 = 9;
 };
 pub const TimeCheckNotify = struct {
-    pub const msg_id: u16 = 25753;
-    pub const ClientTime_field_number: u32 = 9;
-    pub const ServerTime_field_number: u32 = 13;
+    pub const msg_id: u16 = 20474;
+    pub const ClientTime_field_number: u32 = 7;
+    pub const ServerTime_field_number: u32 = 6;
     pub const ServerCombatTime_field_number: u32 = 5;
-    pub const ServerStopTime_field_number: u32 = 6;
-    pub const ServerFlowTimestamp_field_number: u32 = 3;
+    pub const ServerStopTime_field_number: u32 = 15;
+    pub const ServerFlowTimestamp_field_number: u32 = 4;
 };
 pub const TimeCheckResponse = struct {
-    pub const msg_id: u16 = 27958;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const ClientTime_field_number: u32 = 8;
-    pub const ServerTime_field_number: u32 = 6;
-    pub const ServerCombatTime_field_number: u32 = 2;
-    pub const ServerStopTime_field_number: u32 = 10;
-    pub const ServerFlowTimestamp_field_number: u32 = 5;
+    pub const msg_id: u16 = 17250;
+    pub const ErrorCode_field_number: u32 = 14;
+    pub const ClientTime_field_number: u32 = 2;
+    pub const ServerTime_field_number: u32 = 10;
+    pub const ServerCombatTime_field_number: u32 = 11;
+    pub const ServerStopTime_field_number: u32 = 7;
+    pub const ServerFlowTimestamp_field_number: u32 = 1;
 };
 pub const FormationRoleInfo = struct {
     pub const roleId_field_number: u32 = 1;
@@ -7496,72 +7638,89 @@ pub const FightFormationNotifyInfo = struct {
     pub const CurRole_field_number: u32 = 2;
     pub const RoleInfos_field_number: u32 = 3;
     pub const IsCurrent_field_number: u32 = 4;
+    pub const Name_field_number: u32 = 5;
 };
 pub const FightFormation = struct {
     pub const FormationId_field_number: u32 = 1;
     pub const CurRole_field_number: u32 = 2;
     pub const RoleIds_field_number: u32 = 3;
     pub const IsCurrent_field_number: u32 = 4;
+    pub const Name_field_number: u32 = 5;
 };
 pub const SwitchRoleRequest = struct {
-    pub const msg_id: u16 = 23252;
+    pub const msg_id: u16 = 20789;
     transform: ?union(enum) {
     } = null,
-    pub const Transform_field_number: u32 = 7;
-    pub const RoleId_field_number: u32 = 9;
-    pub const SwitchType_field_number: u32 = 13;
-    pub const OnStageWithoutControl_field_number: u32 = 4;
+    pub const Transform_field_number: u32 = 9;
+    pub const RoleId_field_number: u32 = 8;
+    pub const SwitchType_field_number: u32 = 15;
+    pub const OnStageWithoutControl_field_number: u32 = 6;
 };
 pub const SwitchRoleResponse = struct {
-    pub const msg_id: u16 = 26956;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const RoleId_field_number: u32 = 10;
+    pub const msg_id: u16 = 16059;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const RoleId_field_number: u32 = 13;
 };
 pub const RoleGoDownPush = struct {
-    pub const msg_id: u16 = 15459;
+    pub const msg_id: u16 = 21463;
 };
 pub const UpdateFormationRequest = struct {
-    pub const msg_id: u16 = 17332;
-    pub const Formations_field_number: u32 = 5;
+    pub const msg_id: u16 = 18636;
+    pub const Formations_field_number: u32 = 12;
 };
 pub const UpdateFormationResponse = struct {
-    pub const msg_id: u16 = 21849;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const Formation_field_number: u32 = 1;
+    pub const msg_id: u16 = 25651;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const Formation_field_number: u32 = 8;
 };
 pub const PlayerFightFormations = struct {
     pub const PlayerId_field_number: u32 = 1;
     pub const Formations_field_number: u32 = 2;
 };
 pub const UpdateFormationNotify = struct {
-    pub const msg_id: u16 = 16356;
-    pub const PlayersFormations_field_number: u32 = 12;
+    pub const msg_id: u16 = 23626;
+    pub const PlayersFormations_field_number: u32 = 4;
 };
 pub const GetFormationDataRequest = struct {
-    pub const msg_id: u16 = 20044;
+    pub const msg_id: u16 = 17698;
 };
 pub const GetFormationDataResponse = struct {
-    pub const msg_id: u16 = 24981;
-    pub const ErrorCode_field_number: u32 = 14;
-    pub const Formations_field_number: u32 = 1;
+    pub const msg_id: u16 = 22433;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const Formations_field_number: u32 = 10;
 };
 pub const ClientCurrentRoleReportRequest = struct {
-    pub const msg_id: u16 = 27745;
-    pub const PlayerId_field_number: u32 = 2;
-    pub const CurrentRoleId_field_number: u32 = 1;
-    pub const CurrentEntityId_field_number: u32 = 8;
+    pub const msg_id: u16 = 27281;
+    pub const PlayerId_field_number: u32 = 15;
+    pub const CurrentRoleId_field_number: u32 = 9;
+    pub const CurrentEntityId_field_number: u32 = 1;
 };
 pub const ClientCurrentRoleReportPush = struct {
-    pub const msg_id: u16 = 24919;
-    pub const PlayerId_field_number: u32 = 2;
-    pub const CurrentRoleId_field_number: u32 = 11;
-    pub const CurrentEntityId_field_number: u32 = 13;
+    pub const msg_id: u16 = 20213;
+    pub const PlayerId_field_number: u32 = 9;
+    pub const CurrentRoleId_field_number: u32 = 7;
+    pub const CurrentEntityId_field_number: u32 = 12;
 };
 pub const ClientCurrentRoleReportResponse = struct {
-    pub const msg_id: u16 = 21407;
-    pub const PlayerId_field_number: u32 = 3;
-    pub const CurrentEntityId_field_number: u32 = 15;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 24285;
+    pub const PlayerId_field_number: u32 = 13;
+    pub const CurrentEntityId_field_number: u32 = 7;
+    pub const ErrorCode_field_number: u32 = 4;
+};
+pub const CombatValNotify = struct {
+    pub const msg_id: u16 = 28115;
+    pub const Type_field_number: u32 = 12;
+    pub const Value_field_number: u32 = 15;
+};
+pub const CombatValDecayBeginNotify = struct {
+    pub const msg_id: u16 = 19990;
+    pub const Type_field_number: u32 = 5;
+    pub const Value_field_number: u32 = 7;
+    pub const DecayRemain_field_number: u32 = 13;
+};
+pub const SquadPropChangedNotify = struct {
+    pub const msg_id: u16 = 21485;
+    pub const Attributes_field_number: u32 = 13;
 };
 pub const ControlTemporaryTeleportParam = struct {
     pub const TemporaryTeleportIds_field_number: u32 = 1;
@@ -7573,17 +7732,17 @@ pub const ControlParam = struct {
     pub const ControlType_field_number: u32 = 1;
 };
 pub const ControlInfoNotify = struct {
-    pub const msg_id: u16 = 22988;
-    pub const ForbidList_field_number: u32 = 15;
+    pub const msg_id: u16 = 22077;
+    pub const ForbidList_field_number: u32 = 13;
 };
 pub const DirectTrainGetPlayerIdRequest = struct {
-    pub const msg_id: u16 = 29824;
+    pub const msg_id: u16 = 26229;
 };
 pub const DirectTrainGetPlayerIdResponse = struct {
-    pub const msg_id: u16 = 29505;
+    pub const msg_id: u16 = 28515;
     MU1: ?union(enum) {
     } = null,
-    pub const Activities_field_number: u32 = 6;
+    pub const Activities_field_number: u32 = 2;
     pub const Activitys_field_number: u32 = 14;
 };
 pub const EnergyInfo = struct {
@@ -7592,21 +7751,21 @@ pub const EnergyInfo = struct {
     pub const EnergyType_field_number: u32 = 3;
 };
 pub const EnergyUpdateNotify = struct {
-    pub const msg_id: u16 = 27552;
-    pub const UpdateInfo_field_number: u32 = 7;
+    pub const msg_id: u16 = 19527;
+    pub const UpdateInfo_field_number: u32 = 11;
 };
 pub const EnergySyncRequest = struct {
-    pub const msg_id: u16 = 23091;
+    pub const msg_id: u16 = 24596;
     pub const EnergyTypes_field_number: u32 = 10;
 };
 pub const EnergySyncResponse = struct {
-    pub const msg_id: u16 = 17149;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const SyncInfo_field_number: u32 = 11;
+    pub const msg_id: u16 = 18125;
+    pub const ErrorCode_field_number: u32 = 13;
+    pub const SyncInfo_field_number: u32 = 5;
 };
 pub const ExploreProgressRequest = struct {
-    pub const msg_id: u16 = 20987;
-    pub const AreaIds_field_number: u32 = 11;
+    pub const msg_id: u16 = 19237;
+    pub const AreaIds_field_number: u32 = 3;
 };
 pub const AreaExploreInfo = struct {
     pub const AreaId_field_number: u32 = 1;
@@ -7621,25 +7780,25 @@ pub const OneExploreItem = struct {
     pub const IsLocked_field_number: u32 = 5;
 };
 pub const ExploreProgressResponse = struct {
-    pub const msg_id: u16 = 28268;
-    pub const AreaProgress_field_number: u32 = 14;
+    pub const msg_id: u16 = 26475;
+    pub const AreaProgress_field_number: u32 = 10;
 };
 pub const MultiExploreScoreRewardRequest = struct {
-    pub const msg_id: u16 = 21383;
-    pub const nBs_field_number: u32 = 4;
+    pub const msg_id: u16 = 18094;
+    pub const nBs_field_number: u32 = 15;
 };
 pub const MultiExploreScoreRewardResponse = struct {
-    pub const msg_id: u16 = 19735;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 15959;
+    pub const ErrorCode_field_number: u32 = 5;
 };
 pub const CountryExploreScoreInfoRequest = struct {
-    pub const msg_id: u16 = 22253;
-    pub const CountryId_field_number: u32 = 10;
+    pub const msg_id: u16 = 25855;
+    pub const CountryId_field_number: u32 = 1;
 };
 pub const CountryExploreScoreInfoResponse = struct {
-    pub const msg_id: u16 = 27413;
-    pub const ExploreScore_field_number: u32 = 6;
-    pub const CountryExploreScoreReceived_field_number: u32 = 7;
+    pub const msg_id: u16 = 19799;
+    pub const ExploreScore_field_number: u32 = 9;
+    pub const CountryExploreScoreReceived_field_number: u32 = 4;
 };
 pub const CountryExploreScoreReceived = struct {
     pub const AreaId_field_number: u32 = 1;
@@ -7650,45 +7809,45 @@ pub const CountryExploreLevel = struct {
     pub const ExploreLevel_field_number: u32 = 2;
 };
 pub const ExploreLevelNotify = struct {
-    pub const msg_id: u16 = 25479;
-    pub const CountryExploreLevel_field_number: u32 = 3;
+    pub const msg_id: u16 = 26692;
+    pub const CountryExploreLevel_field_number: u32 = 12;
 };
 pub const ReceiveAreaStageRewardAsyncRequest = struct {
-    pub const msg_id: u16 = 17449;
-    pub const AreaStageRewardDataList_field_number: u32 = 7;
+    pub const msg_id: u16 = 17400;
+    pub const AreaStageRewardDataList_field_number: u32 = 14;
 };
 pub const ReceiveAreaStageRewardAsyncResponse = struct {
-    pub const msg_id: u16 = 17012;
-    pub const AreaStageRewardDataList_field_number: u32 = 2;
+    pub const msg_id: u16 = 25710;
+    pub const AreaStageRewardDataList_field_number: u32 = 10;
 };
 pub const ExploreProgressRewardIdsNotify = struct {
-    pub const msg_id: u16 = 21703;
-    pub const AreaStageRewardDataList_field_number: u32 = 8;
+    pub const msg_id: u16 = 18889;
+    pub const AreaStageRewardDataList_field_number: u32 = 14;
 };
 pub const ExploreToolAllNotify = struct {
-    pub const msg_id: u16 = 29842;
-    pub const SkillList_field_number: u32 = 4;
-    pub const ExploreSkill_field_number: u32 = 14;
+    pub const msg_id: u16 = 27129;
+    pub const SkillList_field_number: u32 = 3;
+    pub const ExploreSkill_field_number: u32 = 15;
     pub const NewUnlock_field_number: u32 = 9;
 };
 pub const ExploreSkillRouletteUpdateNotify = struct {
-    pub const msg_id: u16 = 25654;
-    pub const RouletteInfo_field_number: u32 = 6;
+    pub const msg_id: u16 = 25292;
+    pub const RouletteInfo_field_number: u32 = 4;
 };
 pub const VisionExploreSkillSetRequest = struct {
-    pub const msg_id: u16 = 18340;
-    pub const SkillId_field_number: u32 = 11;
-    pub const IsAutoChange_field_number: u32 = 3;
-    pub const RouletteType_field_number: u32 = 15;
+    pub const msg_id: u16 = 23633;
+    pub const SkillId_field_number: u32 = 2;
+    pub const IsAutoChange_field_number: u32 = 7;
+    pub const RouletteType_field_number: u32 = 9;
 };
 pub const VisionExploreSkillSetResponse = struct {
-    pub const msg_id: u16 = 15328;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const SkillId_field_number: u32 = 12;
+    pub const msg_id: u16 = 18650;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const SkillId_field_number: u32 = 6;
 };
 pub const VisionExploreSkillNotify = struct {
-    pub const msg_id: u16 = 22748;
-    pub const ExploreSkill_field_number: u32 = 1;
+    pub const msg_id: u16 = 15314;
+    pub const ExploreSkill_field_number: u32 = 3;
 };
 pub const ExploreSkillRoulette = struct {
     pub const SkillIds_field_number: u32 = 1;
@@ -7696,17 +7855,17 @@ pub const ExploreSkillRoulette = struct {
     pub const ExploreSkill_field_number: u32 = 3;
 };
 pub const ExploreSkillRouletteSetRequest = struct {
-    pub const msg_id: u16 = 27804;
-    pub const SkillRoulette_field_number: u32 = 2;
-    pub const RouletteType_field_number: u32 = 4;
-    pub const SkillRoulettes_field_number: u32 = 15;
+    pub const msg_id: u16 = 25875;
+    pub const SkillRoulette_field_number: u32 = 11;
+    pub const RouletteType_field_number: u32 = 5;
+    pub const SkillRoulettes_field_number: u32 = 8;
 };
 pub const ExploreSkillRouletteSetResponse = struct {
-    pub const msg_id: u16 = 26388;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const SkillRoulette_field_number: u32 = 14;
-    pub const RouletteType_field_number: u32 = 9;
-    pub const SkillRoulettes_field_number: u32 = 11;
+    pub const msg_id: u16 = 24039;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const SkillRoulette_field_number: u32 = 3;
+    pub const RouletteType_field_number: u32 = 15;
+    pub const SkillRoulettes_field_number: u32 = 6;
 };
 pub const UnlockIllustratedPhantom = struct {
     pub const MonsterId_field_number: u32 = 1;
@@ -7715,33 +7874,33 @@ pub const UnlockIllustratedPhantom = struct {
     pub const IsSpecial_field_number: u32 = 4;
 };
 pub const PhantomInteractionUnlockNotify = struct {
-    pub const msg_id: u16 = 17651;
-    pub const UnlockIllustratedPhantoms_field_number: u32 = 3;
-    pub const EquipedMonsterIds_field_number: u32 = 8;
+    pub const msg_id: u16 = 16490;
+    pub const UnlockIllustratedPhantoms_field_number: u32 = 10;
+    pub const EquipedMonsterIds_field_number: u32 = 14;
 };
 pub const PhantomInteractionInfoUpdateNotify = struct {
-    pub const msg_id: u16 = 26989;
-    pub const UnlockIllustratedPhantom_field_number: u32 = 8;
+    pub const msg_id: u16 = 18664;
+    pub const UnlockIllustratedPhantom_field_number: u32 = 9;
 };
 pub const PhantomInteractionEquipRequest = struct {
-    pub const msg_id: u16 = 26392;
-    pub const EquipedMonsterIds_field_number: u32 = 11;
+    pub const msg_id: u16 = 16770;
+    pub const EquipedMonsterIds_field_number: u32 = 6;
 };
 pub const PhantomInteractionEquipResponse = struct {
-    pub const msg_id: u16 = 20467;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 25626;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const SkinChangeInfo = struct {
     pub const MonsterId_field_number: u32 = 1;
     pub const SkinId_field_number: u32 = 2;
 };
 pub const PhantomInteractionSkinChangeRequest = struct {
-    pub const msg_id: u16 = 15087;
-    pub const SkinChangeInfos_field_number: u32 = 2;
+    pub const msg_id: u16 = 26605;
+    pub const SkinChangeInfos_field_number: u32 = 12;
 };
 pub const PhantomInteractionSkinChangeResponse = struct {
-    pub const msg_id: u16 = 25282;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 20674;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const FavorQuest = struct {
     pub const Chapter_field_number: u32 = 1;
@@ -7761,16 +7920,16 @@ pub const RoleFavor = struct {
     pub const FavorQuest_field_number: u32 = 7;
 };
 pub const RoleFavorListRequest = struct {
-    pub const msg_id: u16 = 27723;
+    pub const msg_id: u16 = 28257;
 };
 pub const RoleFavorListResponse = struct {
-    pub const msg_id: u16 = 26093;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const FavorList_field_number: u32 = 9;
+    pub const msg_id: u16 = 24905;
+    pub const ErrorCode_field_number: u32 = 3;
+    pub const FavorList_field_number: u32 = 12;
 };
 pub const RoleFavorListNotify = struct {
-    pub const msg_id: u16 = 21057;
-    pub const FavorList_field_number: u32 = 11;
+    pub const msg_id: u16 = 19733;
+    pub const FavorList_field_number: u32 = 12;
     pub const RoleConditionInfoMap_field_number: u32 = 10;
 };
 pub const ItemFinishList = struct {
@@ -7787,16 +7946,16 @@ pub const RoleMotion = struct {
     pub const MotionIds_field_number: u32 = 2;
 };
 pub const RoleMotionListNotify = struct {
-    pub const msg_id: u16 = 22867;
-    pub const MotionList_field_number: u32 = 10;
+    pub const msg_id: u16 = 16513;
+    pub const MotionList_field_number: u32 = 4;
     pub const RoleConditionInfoMap_field_number: u32 = 5;
 };
 pub const FishingDataRequest = struct {
-    pub const msg_id: u16 = 18671;
+    pub const msg_id: u16 = 17766;
 };
 pub const FishingDataResponse = struct {
-    pub const msg_id: u16 = 24415;
-    pub const FishingData_field_number: u32 = 8;
+    pub const msg_id: u16 = 22596;
+    pub const FishingData_field_number: u32 = 7;
 };
 pub const FishingData = struct {
     pub const Entrusts_field_number: u32 = 3;
@@ -7905,23 +8064,24 @@ pub const HandInInfo = struct {
     pub const FishingItem_field_number: u32 = 2;
 };
 pub const FlowStartNotify = struct {
-    pub const msg_id: u16 = 17347;
-    pub const FlowIncId_field_number: u32 = 14;
-    pub const FlowListName_field_number: u32 = 2;
-    pub const FlowId_field_number: u32 = 15;
-    pub const StateId_field_number: u32 = 1;
-    pub const GameCtx_field_number: u32 = 10;
-    pub const PlotMode_field_number: u32 = 6;
-    pub const aAsync_field_number: u32 = 8;
-    pub const IsSkip_field_number: u32 = 4;
-    pub const HasPlotPos_field_number: u32 = 3;
-    pub const PlotCoordinates_field_number: u32 = 7;
+    pub const msg_id: u16 = 23786;
+    pub const FlowIncId_field_number: u32 = 12;
+    pub const FlowListName_field_number: u32 = 15;
+    pub const FlowId_field_number: u32 = 8;
+    pub const StateId_field_number: u32 = 10;
+    pub const GameCtx_field_number: u32 = 4;
+    pub const PlotMode_field_number: u32 = 2;
+    pub const aAsync_field_number: u32 = 3;
+    pub const IsSkip_field_number: u32 = 5;
+    pub const HasPlotPos_field_number: u32 = 11;
+    pub const PlotCoordinates_field_number: u32 = 14;
 };
 pub const FlowEndRequest = struct {
-    pub const msg_id: u16 = 19567;
+    pub const msg_id: u16 = 16032;
     pub const FlowIncId_field_number: u32 = 11;
-    pub const IsSkip_field_number: u32 = 13;
-    pub const OptionInfos_field_number: u32 = 4;
+    pub const IsSkip_field_number: u32 = 8;
+    pub const OptionInfos_field_number: u32 = 15;
+    pub const ClientError_field_number: u32 = 4;
 };
 pub const FlowOptionInfoList = struct {
     pub const OptionIndexList_field_number: u32 = 1;
@@ -7931,51 +8091,51 @@ pub const FlowOptionInfo = struct {
     pub const OptionIndex_field_number: u32 = 2;
 };
 pub const FlowEndResponse = struct {
-    pub const msg_id: u16 = 21796;
-    pub const ErrorCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 24390;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const FlowActionRequest = struct {
-    pub const msg_id: u16 = 22245;
-    pub const FlowIncId_field_number: u32 = 9;
-    pub const ActionId_field_number: u32 = 14;
+    pub const msg_id: u16 = 21156;
+    pub const FlowIncId_field_number: u32 = 1;
+    pub const ActionId_field_number: u32 = 7;
 };
 pub const FlowActionResponse = struct {
-    pub const msg_id: u16 = 19764;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 21929;
+    pub const ErrorCode_field_number: u32 = 5;
 };
 pub const FlySkinEquipData = struct {
     pub const SkinId_field_number: u32 = 1;
     pub const RoleIds_field_number: u32 = 2;
 };
 pub const RoleFlyEquipNotify = struct {
-    pub const msg_id: u16 = 24499;
-    pub const FlySkinEquipData_field_number: u32 = 13;
+    pub const msg_id: u16 = 29874;
+    pub const FlySkinEquipData_field_number: u32 = 11;
 };
 pub const FlySkinWearRequest = struct {
-    pub const msg_id: u16 = 22754;
-    pub const RoleId_field_number: u32 = 1;
-    pub const SkinId_field_number: u32 = 14;
+    pub const msg_id: u16 = 15148;
+    pub const RoleId_field_number: u32 = 2;
+    pub const SkinId_field_number: u32 = 5;
 };
 pub const FlySkinWearResponse = struct {
-    pub const msg_id: u16 = 28448;
-    pub const ErrorCode_field_number: u32 = 10;
+    pub const msg_id: u16 = 17717;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const EquipFlySkinData = struct {
     pub const RoleId_field_number: u32 = 1;
     pub const SkinId_field_number: u32 = 2;
 };
 pub const FlySkinWearAllRoleRequest = struct {
-    pub const msg_id: u16 = 28161;
-    pub const SkinId_field_number: u32 = 10;
+    pub const msg_id: u16 = 19185;
+    pub const SkinId_field_number: u32 = 5;
 };
 pub const FlySkinWearAllRoleResponse = struct {
-    pub const msg_id: u16 = 26368;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const FlySkinData_field_number: u32 = 2;
+    pub const msg_id: u16 = 25354;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const FlySkinData_field_number: u32 = 6;
 };
 pub const RoleFlyEquipChangeNotify = struct {
-    pub const msg_id: u16 = 19968;
-    pub const FlySkinData_field_number: u32 = 15;
+    pub const msg_id: u16 = 20739;
+    pub const FlySkinData_field_number: u32 = 13;
 };
 pub const FlySkinConfigData = struct {
     pub const SkinId_field_number: u32 = 1;
@@ -7986,21 +8146,21 @@ pub const EntityFlySkinChangeData = struct {
     pub const FlySkinConfigData_field_number: u32 = 2;
 };
 pub const SoarWingOrParaglidingSkinChangeNotify = struct {
-    pub const msg_id: u16 = 23570;
-    pub const FlySkinData_field_number: u32 = 15;
+    pub const msg_id: u16 = 17450;
+    pub const FlySkinData_field_number: u32 = 8;
 };
 pub const FlyEquipAddNotify = struct {
-    pub const msg_id: u16 = 22611;
-    pub const UnlockFlySkinIds_field_number: u32 = 10;
+    pub const msg_id: u16 = 16449;
+    pub const UnlockFlySkinIds_field_number: u32 = 5;
 };
 pub const ForgeInfoRequest = struct {
-    pub const msg_id: u16 = 27432;
+    pub const msg_id: u16 = 23896;
 };
 pub const ForgeInfoResponse = struct {
-    pub const msg_id: u16 = 18525;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const ForgeInfoList_field_number: u32 = 11;
-    pub const ForgeConfigs_field_number: u32 = 7;
+    pub const msg_id: u16 = 28293;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const ForgeInfoList_field_number: u32 = 2;
+    pub const ForgeConfigs_field_number: u32 = 14;
     pub const LimitRefreshTime_field_number: u32 = 5;
 };
 pub const OneForgeInfo = struct {
@@ -8031,21 +8191,21 @@ pub const FriendApply = struct {
     pub const CreatedTime_field_number: u32 = 2;
 };
 pub const FriendAllRequest = struct {
-    pub const msg_id: u16 = 15309;
+    pub const msg_id: u16 = 16982;
 };
 pub const FriendAllResponse = struct {
-    pub const msg_id: u16 = 24093;
-    pub const FriendInfoList_field_number: u32 = 2;
-    pub const FriendApplyList_field_number: u32 = 8;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 17252;
+    pub const FriendInfoList_field_number: u32 = 5;
+    pub const FriendApplyList_field_number: u32 = 11;
+    pub const ErrorCode_field_number: u32 = 8;
 };
 pub const Function = struct {
     pub const Id_field_number: u32 = 1;
     pub const Flag_field_number: u32 = 5;
 };
 pub const FuncOpenNotify = struct {
-    pub const msg_id: u16 = 25723;
-    pub const Func_field_number: u32 = 5;
+    pub const msg_id: u16 = 23390;
+    pub const Func_field_number: u32 = 14;
 };
 pub const GachaConsume = struct {
     pub const Times_field_number: u32 = 1;
@@ -8102,34 +8262,34 @@ pub const GachaResult = struct {
     pub const TransformRewards_field_number: u32 = 4;
 };
 pub const GachaInfoRequest = struct {
-    pub const msg_id: u16 = 23116;
-    pub const Language_field_number: u32 = 13;
+    pub const msg_id: u16 = 28888;
+    pub const Language_field_number: u32 = 4;
 };
 pub const GachaInfoResponse = struct {
-    pub const msg_id: u16 = 15380;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 18695;
+    pub const ErrorCode_field_number: u32 = 6;
     pub const GachaInfos_field_number: u32 = 1;
-    pub const DailyTotalLeftTimes_field_number: u32 = 5;
-    pub const RecordId_field_number: u32 = 10;
+    pub const DailyTotalLeftTimes_field_number: u32 = 14;
+    pub const RecordId_field_number: u32 = 15;
 };
 pub const GachaRequest = struct {
-    pub const msg_id: u16 = 23981;
-    pub const GachaId_field_number: u32 = 14;
-    pub const GachaTimes_field_number: u32 = 8;
+    pub const msg_id: u16 = 25270;
+    pub const GachaId_field_number: u32 = 13;
+    pub const GachaTimes_field_number: u32 = 3;
 };
 pub const GachaResponse = struct {
-    pub const msg_id: u16 = 16966;
-    pub const ErrorCode_field_number: u32 = 2;
-    pub const GachaResults_field_number: u32 = 5;
+    pub const msg_id: u16 = 19056;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const GachaResults_field_number: u32 = 9;
 };
 pub const GachaUsePoolRequest = struct {
-    pub const msg_id: u16 = 16528;
-    pub const GachaId_field_number: u32 = 10;
-    pub const PoolId_field_number: u32 = 6;
+    pub const msg_id: u16 = 21879;
+    pub const GachaId_field_number: u32 = 1;
+    pub const PoolId_field_number: u32 = 9;
 };
 pub const GachaUsePoolResponse = struct {
-    pub const msg_id: u16 = 28808;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 25952;
+    pub const ErrorCode_field_number: u32 = 15;
 };
 pub const GachaItem = struct {
     pub const ItemId_field_number: u32 = 1;
@@ -8150,45 +8310,45 @@ pub const GachaPoolDetail = struct {
     pub const ThreeStarDetail_field_number: u32 = 12;
 };
 pub const GachaPoolDetailRequest = struct {
-    pub const msg_id: u16 = 24316;
-    pub const PoolId_field_number: u32 = 1;
+    pub const msg_id: u16 = 28380;
+    pub const PoolId_field_number: u32 = 5;
 };
 pub const GachaPoolDetailResponse = struct {
-    pub const msg_id: u16 = 26534;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const GachaPoolDetail_field_number: u32 = 2;
+    pub const msg_id: u16 = 26540;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const GachaPoolDetail_field_number: u32 = 7;
 };
 pub const GivebackInfoRequest = struct {
-    pub const msg_id: u16 = 18802;
+    pub const msg_id: u16 = 15161;
 };
 pub const GivebackInfoResponse = struct {
-    pub const msg_id: u16 = 16402;
-    pub const ErrorCode_field_number: u32 = 10;
+    pub const msg_id: u16 = 29313;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const GuideInfoRequest = struct {
-    pub const msg_id: u16 = 23491;
+    pub const msg_id: u16 = 17498;
 };
 pub const GuideInfoResponse = struct {
-    pub const msg_id: u16 = 18765;
-    pub const GuideGroupFinishList_field_number: u32 = 2;
+    pub const msg_id: u16 = 23730;
+    pub const GuideGroupFinishList_field_number: u32 = 7;
 };
 pub const GuideTriggerRequest = struct {
-    pub const msg_id: u16 = 18262;
+    pub const msg_id: u16 = 28091;
     pub const GroupId_field_number: u32 = 2;
 };
 pub const GuideTriggerResponse = struct {
-    pub const msg_id: u16 = 29786;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const ErrorParams_field_number: u32 = 1;
+    pub const msg_id: u16 = 25821;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const ErrorParams_field_number: u32 = 9;
 };
 pub const GuideFinishRequest = struct {
-    pub const msg_id: u16 = 29779;
-    pub const GroupId_field_number: u32 = 5;
+    pub const msg_id: u16 = 23117;
+    pub const GroupId_field_number: u32 = 15;
 };
 pub const GuideFinishResponse = struct {
-    pub const msg_id: u16 = 20283;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const ErrorParams_field_number: u32 = 10;
+    pub const msg_id: u16 = 25597;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const ErrorParams_field_number: u32 = 4;
 };
 pub const HeartbeatRequest = struct {
     pub const msg_id: u16 = 1650;
@@ -8211,22 +8371,22 @@ pub const IllustratedClass = struct {
     pub const IllustratedEntryList_field_number: u32 = 2;
 };
 pub const IllustratedInfoRequest = struct {
-    pub const msg_id: u16 = 17767;
-    pub const TypeList_field_number: u32 = 13;
+    pub const msg_id: u16 = 17985;
+    pub const TypeList_field_number: u32 = 8;
 };
 pub const IllustratedInfoResponse = struct {
-    pub const msg_id: u16 = 21722;
-    pub const ErrorCode_field_number: u32 = 15;
-    pub const ErrorParams_field_number: u32 = 10;
-    pub const IllustratedClassList_field_number: u32 = 7;
+    pub const msg_id: u16 = 24603;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const ErrorParams_field_number: u32 = 12;
+    pub const IllustratedClassList_field_number: u32 = 13;
 };
 pub const RoleIllustratedInfoRequest = struct {
-    pub const msg_id: u16 = 18736;
+    pub const msg_id: u16 = 26704;
 };
 pub const RoleIllustratedInfoResponse = struct {
-    pub const msg_id: u16 = 16392;
-    pub const Roles_field_number: u32 = 10;
-    pub const Weapons_field_number: u32 = 15;
+    pub const msg_id: u16 = 16765;
+    pub const Roles_field_number: u32 = 13;
+    pub const Weapons_field_number: u32 = 6;
 };
 pub const RoleHandbookInfo = struct {
     pub const RoleId_field_number: u32 = 1;
@@ -8237,11 +8397,11 @@ pub const WeaponHandbookInfo = struct {
     pub const UnlockTime_field_number: u32 = 2;
 };
 pub const InfluenceInfoRequest = struct {
-    pub const msg_id: u16 = 17295;
+    pub const msg_id: u16 = 25529;
 };
 pub const InfluenceInfoResponse = struct {
-    pub const msg_id: u16 = 21948;
-    pub const InfluenceInfos_field_number: u32 = 14;
+    pub const msg_id: u16 = 29322;
+    pub const InfluenceInfos_field_number: u32 = 4;
 };
 pub const InfluenceInfo = struct {
     pub const InfluenceId_field_number: u32 = 1;
@@ -8249,16 +8409,16 @@ pub const InfluenceInfo = struct {
     pub const Relation_field_number: u32 = 3;
 };
 pub const InfrInfoRequest = struct {
-    pub const msg_id: u16 = 21566;
+    pub const msg_id: u16 = 26916;
 };
 pub const InfrInfoResponse = struct {
-    pub const msg_id: u16 = 17052;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const InfrInfo_field_number: u32 = 4;
+    pub const msg_id: u16 = 24251;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const InfrInfo_field_number: u32 = 2;
 };
 pub const InfrRoadUpdateNotify = struct {
-    pub const msg_id: u16 = 29738;
-    pub const RoadInfo_field_number: u32 = 14;
+    pub const msg_id: u16 = 16869;
+    pub const RoadInfo_field_number: u32 = 7;
 };
 pub const InfrPb = struct {
     pub const FireInfo_field_number: u32 = 1;
@@ -8308,12 +8468,12 @@ pub const InfrV2Pb = struct {
     pub const TreeFinishCond_field_number: u32 = 5;
 };
 pub const InfrV2InfoRequest = struct {
-    pub const msg_id: u16 = 24789;
+    pub const msg_id: u16 = 21305;
 };
 pub const InfrV2InfoResponse = struct {
-    pub const msg_id: u16 = 24146;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const InfrInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 17321;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const InfrInfo_field_number: u32 = 9;
 };
 pub const InfrV2FirePb = struct {
     pub const FireExp_field_number: u32 = 1;
@@ -8333,24 +8493,24 @@ pub const InfrV2OneTree = struct {
     pub const LastGiftTime_field_number: u32 = 5;
 };
 pub const InstDataNotify = struct {
-    pub const msg_id: u16 = 23938;
-    pub const EnterInfos_field_number: u32 = 15;
+    pub const msg_id: u16 = 27555;
+    pub const EnterInfos_field_number: u32 = 3;
 };
 pub const InstEnterInfoPb = struct {
     pub const Id_field_number: u32 = 1;
     pub const ChallengedTimes_field_number: u32 = 2;
 };
 pub const CreateInstanceDungeonNotify = struct {
-    pub const msg_id: u16 = 23078;
+    pub const msg_id: u16 = 15456;
     pub const LevelPlayId_field_number: u32 = 7;
 };
 pub const ExchangeRewardRequest = struct {
-    pub const msg_id: u16 = 24210;
+    pub const msg_id: u16 = 26002;
 };
 pub const ExchangeRewardResponse = struct {
-    pub const msg_id: u16 = 20131;
-    pub const ExchangeShareData_field_number: u32 = 15;
-    pub const ExchangeRewardData_field_number: u32 = 11;
+    pub const msg_id: u16 = 28025;
+    pub const ExchangeShareData_field_number: u32 = 7;
+    pub const ExchangeRewardData_field_number: u32 = 9;
 };
 pub const ItemExchangeInfo = struct {
     pub const ItemId_field_number: u32 = 1;
@@ -8360,11 +8520,11 @@ pub const ItemExchangeInfo = struct {
     pub const TotalLimit_field_number: u32 = 5;
 };
 pub const ItemExchangeInfoRequest = struct {
-    pub const msg_id: u16 = 25367;
+    pub const msg_id: u16 = 17245;
 };
 pub const ItemExchangeInfoResponse = struct {
-    pub const msg_id: u16 = 23692;
-    pub const ItemExchangeInfos_field_number: u32 = 7;
+    pub const msg_id: u16 = 20569;
+    pub const ItemExchangeInfos_field_number: u32 = 10;
 };
 pub const SimpleCombatEntityAttributePbInfo = struct {
     pub const AttributeMap_field_number: u32 = 1;
@@ -8378,16 +8538,16 @@ pub const LevelPlayInfo = struct {
     pub const GetRewardCount_field_number: u32 = 5;
 };
 pub const LevelPlayInfoNotify = struct {
-    pub const msg_id: u16 = 21617;
-    pub const LevelPlayInfo_field_number: u32 = 13;
+    pub const msg_id: u16 = 19789;
+    pub const LevelPlayInfo_field_number: u32 = 6;
 };
 pub const SimpleTrackReportAsyncRequest = struct {
-    pub const msg_id: u16 = 22812;
+    pub const msg_id: u16 = 26465;
 };
 pub const SimpleTrackReportAsyncResponse = struct {
-    pub const msg_id: u16 = 24540;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const SimpleTrackReportMsgs_field_number: u32 = 8;
+    pub const msg_id: u16 = 22473;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const SimpleTrackReportMsgs_field_number: u32 = 15;
 };
 pub const SimpleTrackReportMsg = struct {
     pub const InstId_field_number: u32 = 1;
@@ -8395,24 +8555,24 @@ pub const SimpleTrackReportMsg = struct {
     pub const GainTreasureCount_field_number: u32 = 3;
 };
 pub const LevelPlayVarAsyncRequest = struct {
-    pub const msg_id: u16 = 15401;
-    pub const InstId_field_number: u32 = 9;
-    pub const LevelPlayId_field_number: u32 = 11;
+    pub const msg_id: u16 = 15438;
+    pub const InstId_field_number: u32 = 7;
+    pub const LevelPlayId_field_number: u32 = 1;
 };
 pub const LevelPlayVarAsyncResponse = struct {
-    pub const msg_id: u16 = 25835;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const Vars_field_number: u32 = 2;
+    pub const msg_id: u16 = 15621;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const Vars_field_number: u32 = 1;
 };
 pub const PlayPointStateAsyncRequest = struct {
-    pub const msg_id: u16 = 21677;
-    pub const InstId_field_number: u32 = 14;
-    pub const ArenaId_field_number: u32 = 13;
+    pub const msg_id: u16 = 19230;
+    pub const InstId_field_number: u32 = 10;
+    pub const ArenaId_field_number: u32 = 11;
 };
 pub const PlayPointStateAsyncResponse = struct {
-    pub const msg_id: u16 = 25158;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const LevelPlayStateDict_field_number: u32 = 2;
+    pub const msg_id: u16 = 24154;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const LevelPlayStateDict_field_number: u32 = 6;
 };
 pub const LevelPlayStateMsg = struct {
     pub const LevelPlayEntityId_field_number: u32 = 1;
@@ -8440,20 +8600,20 @@ pub const LivenessTask = struct {
     pub const ConditionFinishState_field_number: u32 = 6;
 };
 pub const LivenessRequest = struct {
-    pub const msg_id: u16 = 29540;
+    pub const msg_id: u16 = 25906;
 };
 pub const LivenessResponse = struct {
-    pub const msg_id: u16 = 17543;
-    pub const LivenessInfo_field_number: u32 = 12;
+    pub const msg_id: u16 = 28359;
+    pub const LivenessInfo_field_number: u32 = 6;
 };
 pub const LivenessTakeRequest = struct {
-    pub const msg_id: u16 = 18185;
-    pub const Ids_field_number: u32 = 3;
+    pub const msg_id: u16 = 29270;
+    pub const Ids_field_number: u32 = 2;
 };
 pub const LivenessTakeResponse = struct {
-    pub const msg_id: u16 = 24855;
-    pub const Ids_field_number: u32 = 5;
-    pub const ErrorCode_field_number: u32 = 4;
+    pub const msg_id: u16 = 20024;
+    pub const Ids_field_number: u32 = 4;
+    pub const ErrorCode_field_number: u32 = 2;
 };
 pub const RoleLoadEquipData = struct {
     pub const RoleId_field_number: u32 = 1;
@@ -8465,52 +8625,52 @@ pub const LoadEquipData = struct {
     pub const SkinId_field_number: u32 = 2;
 };
 pub const WeaponSkinRequest = struct {
-    pub const msg_id: u16 = 23225;
+    pub const msg_id: u16 = 25260;
 };
 pub const WeaponSkinResponse = struct {
-    pub const msg_id: u16 = 24572;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const EquipList_field_number: u32 = 14;
+    pub const msg_id: u16 = 23620;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const EquipList_field_number: u32 = 9;
 };
 pub const EquipTakeOnRequest = struct {
-    pub const msg_id: u16 = 29929;
-    pub const Data_field_number: u32 = 12;
+    pub const msg_id: u16 = 29592;
+    pub const Data_field_number: u32 = 5;
 };
 pub const EquipTakeOnResponse = struct {
-    pub const msg_id: u16 = 26033;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 28184;
+    pub const ErrorCode_field_number: u32 = 2;
     pub const DataList_field_number: u32 = 1;
 };
 pub const EquipTakeOnNotify = struct {
-    pub const msg_id: u16 = 27175;
-    pub const DataList_field_number: u32 = 14;
+    pub const msg_id: u16 = 28760;
+    pub const DataList_field_number: u32 = 5;
 };
 pub const UnlockSkinDataNotify = struct {
-    pub const msg_id: u16 = 26126;
-    pub const PhantomSkinList_field_number: u32 = 13;
-    pub const IsLogin_field_number: u32 = 12;
+    pub const msg_id: u16 = 21360;
+    pub const PhantomSkinList_field_number: u32 = 6;
+    pub const IsLogin_field_number: u32 = 2;
 };
 pub const WeaponSkinDeleteNotify = struct {
-    pub const msg_id: u16 = 20828;
-    pub const RoleId_field_number: u32 = 14;
-    pub const SkinId_field_number: u32 = 6;
+    pub const msg_id: u16 = 20040;
+    pub const RoleId_field_number: u32 = 7;
+    pub const SkinId_field_number: u32 = 14;
 };
 pub const EquipWeaponSkinRequest = struct {
-    pub const msg_id: u16 = 23583;
-    pub const Data_field_number: u32 = 1;
+    pub const msg_id: u16 = 26203;
+    pub const Data_field_number: u32 = 11;
 };
 pub const EquipWeaponSkinResponse = struct {
-    pub const msg_id: u16 = 21170;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const DataList_field_number: u32 = 14;
+    pub const msg_id: u16 = 24452;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const DataList_field_number: u32 = 10;
 };
 pub const SendEquipSkinRequest = struct {
-    pub const msg_id: u16 = 15297;
-    pub const RoleId_field_number: u32 = 2;
+    pub const msg_id: u16 = 16068;
+    pub const RoleId_field_number: u32 = 9;
 };
 pub const SendEquipSkinResponse = struct {
-    pub const msg_id: u16 = 29003;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 16037;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const AceBlackProductAccountInfo = struct {
     pub const TdmDeviceId_field_number: u32 = 1;
@@ -8627,11 +8787,11 @@ pub const VersionInfoPush = struct {
     pub const ResourceVersion_field_number: u32 = 3;
 };
 pub const LoadingConfigRequest = struct {
-    pub const msg_id: u16 = 23899;
+    pub const msg_id: u16 = 24141;
 };
 pub const LoadingConfigResponse = struct {
-    pub const msg_id: u16 = 19069;
-    pub const LoadingConfig_field_number: u32 = 6;
+    pub const msg_id: u16 = 19391;
+    pub const LoadingConfig_field_number: u32 = 11;
 };
 pub const LoadingConfig = struct {
     pub const Id_field_number: u32 = 1;
@@ -8664,15 +8824,15 @@ pub const PbMailInfo = struct {
     pub const IsIntervalMail_field_number: u32 = 14;
 };
 pub const MailInfosNotify = struct {
-    pub const msg_id: u16 = 23473;
-    pub const MailInfos_field_number: u32 = 14;
+    pub const msg_id: u16 = 25021;
+    pub const MailInfos_field_number: u32 = 5;
 };
 pub const MailBindInfoRequest = struct {
-    pub const msg_id: u16 = 25484;
+    pub const msg_id: u16 = 26354;
 };
 pub const MailBindInfoResponse = struct {
-    pub const msg_id: u16 = 16403;
-    pub const MailBind_field_number: u32 = 2;
+    pub const msg_id: u16 = 26430;
+    pub const MailBind_field_number: u32 = 1;
 };
 pub const MailBind = struct {
     pub const IsBind_field_number: u32 = 1;
@@ -8712,12 +8872,12 @@ pub const AttachMarkInfo = struct {
     pub const MarkPointInfo_field_number: u32 = 1;
 };
 pub const MapUnlockFieldInfoRequest = struct {
-    pub const msg_id: u16 = 26550;
+    pub const msg_id: u16 = 23298;
 };
 pub const MapUnlockFieldInfoResponse = struct {
-    pub const msg_id: u16 = 18332;
-    pub const ErrorCode_field_number: u32 = 2;
-    pub const FieldId_field_number: u32 = 11;
+    pub const msg_id: u16 = 24181;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const FieldId_field_number: u32 = 14;
 };
 pub const MapMarkShowInfo = struct {
     pub const MarkId_field_number: u32 = 1;
@@ -8727,76 +8887,76 @@ pub const TemporaryTeleportParam = struct {
     pub const temporaryTeleportId_field_number: u32 = 1;
 };
 pub const MapMarkRequest = struct {
-    pub const msg_id: u16 = 27039;
+    pub const msg_id: u16 = 18642;
     Params: ?union(enum) {
     } = null,
-    pub const TemporaryTeleportParam_field_number: u32 = 14;
-    pub const TreasureBoxParam_field_number: u32 = 12;
-    pub const MarkPointRequestInfo_field_number: u32 = 13;
+    pub const TemporaryTeleportParam_field_number: u32 = 12;
+    pub const TreasureBoxParam_field_number: u32 = 6;
+    pub const MarkPointRequestInfo_field_number: u32 = 10;
 };
 pub const MapMarkResponse = struct {
-    pub const msg_id: u16 = 26086;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const Info_field_number: u32 = 9;
+    pub const msg_id: u16 = 27926;
+    pub const ErrorCode_field_number: u32 = 13;
+    pub const Info_field_number: u32 = 10;
 };
 pub const RemoveMapMarkRequest = struct {
-    pub const msg_id: u16 = 18447;
-    pub const MarkList_field_number: u32 = 9;
+    pub const msg_id: u16 = 15669;
+    pub const MarkList_field_number: u32 = 7;
 };
 pub const RemoveMapMarkResponse = struct {
-    pub const msg_id: u16 = 26046;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const MarkList_field_number: u32 = 10;
+    pub const msg_id: u16 = 24173;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const MarkList_field_number: u32 = 9;
 };
 pub const MapUnlockFieldNotify = struct {
-    pub const msg_id: u16 = 26718;
-    pub const FieldId_field_number: u32 = 9;
+    pub const msg_id: u16 = 18018;
+    pub const FieldId_field_number: u32 = 4;
 };
 pub const MapTraceInfoRequest = struct {
-    pub const msg_id: u16 = 18875;
+    pub const msg_id: u16 = 22743;
 };
 pub const MapTraceInfoResponse = struct {
-    pub const msg_id: u16 = 28077;
-    pub const ErrorCode_field_number: u32 = 3;
+    pub const msg_id: u16 = 28319;
+    pub const ErrorCode_field_number: u32 = 5;
     pub const MarkIdList_field_number: u32 = 12;
 };
 pub const MapTraceRequest = struct {
-    pub const msg_id: u16 = 25924;
-    pub const MarkId_field_number: u32 = 2;
+    pub const msg_id: u16 = 17647;
+    pub const MarkId_field_number: u32 = 9;
 };
 pub const MapTraceResponse = struct {
-    pub const msg_id: u16 = 18528;
-    pub const ErrorCode_field_number: u32 = 2;
-    pub const MarkId_field_number: u32 = 10;
+    pub const msg_id: u16 = 22948;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const MarkId_field_number: u32 = 14;
 };
 pub const MapCancelTraceRequest = struct {
-    pub const msg_id: u16 = 29099;
-    pub const MarkId_field_number: u32 = 7;
+    pub const msg_id: u16 = 29421;
+    pub const MarkId_field_number: u32 = 14;
 };
 pub const MapCancelTraceResponse = struct {
-    pub const msg_id: u16 = 25962;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const MarkId_field_number: u32 = 4;
+    pub const msg_id: u16 = 29919;
+    pub const ErrorCode_field_number: u32 = 9;
+    pub const MarkId_field_number: u32 = 6;
 };
 pub const MapMarkInfoNotify = struct {
-    pub const msg_id: u16 = 19625;
-    pub const InfoList_field_number: u32 = 10;
-    pub const ShowMarkIds_field_number: u32 = 9;
-    pub const UnlockMarkIds_field_number: u32 = 13;
-    pub const EntityMapMarkInfo_field_number: u32 = 8;
+    pub const msg_id: u16 = 16185;
+    pub const InfoList_field_number: u32 = 13;
+    pub const ShowMarkIds_field_number: u32 = 3;
+    pub const UnlockMarkIds_field_number: u32 = 5;
+    pub const EntityMapMarkInfo_field_number: u32 = 4;
     pub const SystemMarkHideInfo_field_number: u32 = 7;
-    pub const CompleteMarkIds_field_number: u32 = 4;
+    pub const CompleteMarkIds_field_number: u32 = 1;
 };
 pub const MapMarkAddNotify = struct {
-    pub const msg_id: u16 = 15177;
-    pub const Info_field_number: u32 = 3;
-    pub const TreasureBoxMarkInfo_field_number: u32 = 6;
-    pub const AttackMark_field_number: u32 = 8;
+    pub const msg_id: u16 = 28060;
+    pub const Info_field_number: u32 = 8;
+    pub const TreasureBoxMarkInfo_field_number: u32 = 7;
+    pub const AttackMark_field_number: u32 = 14;
 };
 pub const MapUnlockDataNotify = struct {
-    pub const msg_id: u16 = 18606;
-    pub const UnlockMultiMapIds_field_number: u32 = 4;
-    pub const UnlockMapBlockIds_field_number: u32 = 3;
+    pub const msg_id: u16 = 29652;
+    pub const UnlockMultiMapIds_field_number: u32 = 2;
+    pub const UnlockMapBlockIds_field_number: u32 = 15;
 };
 pub const EntityMapMarkInfoPb = struct {
     pub const InstId_field_number: u32 = 1;
@@ -8809,19 +8969,19 @@ pub const SystemMarkHideInfoPb = struct {
     pub const HideInfo_field_number: u32 = 3;
 };
 pub const MonthCardRequest = struct {
-    pub const msg_id: u16 = 29887;
+    pub const msg_id: u16 = 15066;
 };
 pub const MonthCardResponse = struct {
-    pub const msg_id: u16 = 26034;
-    pub const Days_field_number: u32 = 10;
-    pub const IsDailyGot_field_number: u32 = 15;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 29522;
+    pub const Days_field_number: u32 = 12;
+    pub const IsDailyGot_field_number: u32 = 6;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const MonthCardDailyRewardNotify = struct {
-    pub const msg_id: u16 = 25210;
-    pub const ItemId_field_number: u32 = 11;
-    pub const Count_field_number: u32 = 8;
-    pub const Days_field_number: u32 = 14;
+    pub const msg_id: u16 = 20826;
+    pub const ItemId_field_number: u32 = 1;
+    pub const Count_field_number: u32 = 14;
+    pub const Days_field_number: u32 = 8;
 };
 pub const MotorTaskProcessPb = struct {
     pub const Current_field_number: u32 = 1;
@@ -8841,55 +9001,55 @@ pub const MotorTaskPb = struct {
     pub const StartTime_field_number: u32 = 6;
 };
 pub const MotorInfoRequest = struct {
-    pub const msg_id: u16 = 26961;
+    pub const msg_id: u16 = 16731;
 };
 pub const MotorInfoResponse = struct {
-    pub const msg_id: u16 = 27581;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const Motor_field_number: u32 = 12;
+    pub const msg_id: u16 = 27754;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const Motor_field_number: u32 = 14;
 };
 pub const MotorTechLevelUpRequest = struct {
-    pub const msg_id: u16 = 28622;
-    pub const TechId_field_number: u32 = 3;
+    pub const msg_id: u16 = 24261;
+    pub const TechId_field_number: u32 = 13;
 };
 pub const MotorTechLevelUpResponse = struct {
-    pub const msg_id: u16 = 19362;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const Tree_field_number: u32 = 13;
+    pub const msg_id: u16 = 27374;
+    pub const ErrorCode_field_number: u32 = 3;
+    pub const Tree_field_number: u32 = 4;
 };
 pub const MotorTechTreeSwitchRequest = struct {
-    pub const msg_id: u16 = 25231;
-    pub const TreeId_field_number: u32 = 1;
+    pub const msg_id: u16 = 28833;
+    pub const TreeId_field_number: u32 = 14;
 };
 pub const MotorTechTreeSwitchResponse = struct {
-    pub const msg_id: u16 = 23652;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const TreeInUse_field_number: u32 = 8;
+    pub const msg_id: u16 = 29362;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const TreeInUse_field_number: u32 = 5;
 };
 pub const MotorLevelOneKeyRewardRequest = struct {
-    pub const msg_id: u16 = 16527;
+    pub const msg_id: u16 = 25015;
 };
 pub const MotorLevelOneKeyRewardResponse = struct {
-    pub const msg_id: u16 = 19868;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 26315;
+    pub const ErrorCode_field_number: u32 = 2;
     pub const MotorRewardedLvMax_field_number: u32 = 14;
 };
 pub const MotorTaskOneKeyRewardRequest = struct {
-    pub const msg_id: u16 = 22052;
-    pub const TaskIds_field_number: u32 = 11;
+    pub const msg_id: u16 = 25118;
+    pub const TaskIds_field_number: u32 = 8;
 };
 pub const MotorTaskOneKeyRewardResponse = struct {
-    pub const msg_id: u16 = 27415;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 26287;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const MotorTaskUpdateNotify = struct {
-    pub const msg_id: u16 = 22563;
-    pub const Task_field_number: u32 = 4;
+    pub const msg_id: u16 = 23000;
+    pub const Task_field_number: u32 = 10;
 };
 pub const MotorLockedTechUpdateNotify = struct {
-    pub const msg_id: u16 = 26485;
-    pub const TreeId_field_number: u32 = 4;
-    pub const Tech_field_number: u32 = 12;
+    pub const msg_id: u16 = 18686;
+    pub const TreeId_field_number: u32 = 3;
+    pub const Tech_field_number: u32 = 5;
 };
 pub const MotorTechPb = struct {
     pub const Id_field_number: u32 = 1;
@@ -8918,12 +9078,12 @@ pub const MotorTaskTreePb = struct {
     pub const TpRewarded_field_number: u32 = 3;
 };
 pub const MotorCreateRequest = struct {
-    pub const msg_id: u16 = 25453;
-    pub const IsCreate_field_number: u32 = 8;
+    pub const msg_id: u16 = 23555;
+    pub const IsCreate_field_number: u32 = 14;
 };
 pub const MotorCreateResponse = struct {
-    pub const msg_id: u16 = 24369;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 27756;
+    pub const ErrorCode_field_number: u32 = 11;
 };
 pub const OrnamentInfo = struct {
     pub const UnlockOrnamentIds_field_number: u32 = 1;
@@ -8935,22 +9095,22 @@ pub const OrnamentDressInfo = struct {
     pub const DressOrnamentIds_field_number: u32 = 2;
 };
 pub const OrnamentInfoNotify = struct {
-    pub const msg_id: u16 = 24275;
-    pub const OrnamentInfo_field_number: u32 = 12;
+    pub const msg_id: u16 = 27306;
+    pub const OrnamentInfo_field_number: u32 = 8;
 };
 pub const OrnamentDressInfoUpdateNotify = struct {
-    pub const msg_id: u16 = 19829;
+    pub const msg_id: u16 = 21795;
     pub const OrnamentDressInfos_field_number: u32 = 15;
 };
 pub const ChangeOrnamentRequest = struct {
-    pub const msg_id: u16 = 23269;
-    pub const RoleSkinId_field_number: u32 = 3;
-    pub const OrnamentId_field_number: u32 = 4;
-    pub const IsDress_field_number: u32 = 10;
+    pub const msg_id: u16 = 27956;
+    pub const RoleSkinId_field_number: u32 = 6;
+    pub const OrnamentId_field_number: u32 = 11;
+    pub const IsDress_field_number: u32 = 14;
 };
 pub const ChangeOrnamentResponse = struct {
-    pub const msg_id: u16 = 29379;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 19523;
+    pub const ErrorCode_field_number: u32 = 15;
 };
 pub const PayItemInfo = struct {
     pub const Id_field_number: u32 = 1;
@@ -9002,14 +9162,14 @@ pub const PayGiftInfo = struct {
     pub const NeedConsoleRulePrompt_field_number: u32 = 33;
 };
 pub const PayInfoRequest = struct {
-    pub const msg_id: u16 = 27640;
+    pub const msg_id: u16 = 18331;
     pub const Version_field_number: u32 = 10;
 };
 pub const PayInfoResponse = struct {
-    pub const msg_id: u16 = 27137;
-    pub const Infos_field_number: u32 = 14;
-    pub const Version_field_number: u32 = 13;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 25815;
+    pub const Infos_field_number: u32 = 7;
+    pub const Version_field_number: u32 = 12;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const PayShopPrice = struct {
     pub const Id_field_number: u32 = 1;
@@ -9075,17 +9235,17 @@ pub const PayGiftShopInfo = struct {
     pub const Version_field_number: u32 = 2;
 };
 pub const PayShopInfoRequest = struct {
-    pub const msg_id: u16 = 29434;
+    pub const msg_id: u16 = 20758;
     pub const Version_field_number: u32 = 5;
 };
 pub const PayShopInfoResponse = struct {
-    pub const msg_id: u16 = 29687;
-    pub const Infos_field_number: u32 = 1;
-    pub const Version_field_number: u32 = 5;
+    pub const msg_id: u16 = 25954;
+    pub const Infos_field_number: u32 = 6;
+    pub const Version_field_number: u32 = 2;
     pub const ErrorCode_field_number: u32 = 10;
-    pub const PayGiftShopInfo_field_number: u32 = 3;
-    pub const PayShopTabData_field_number: u32 = 2;
-    pub const PayShopRecommendData_field_number: u32 = 14;
+    pub const PayGiftShopInfo_field_number: u32 = 14;
+    pub const PayShopTabData_field_number: u32 = 11;
+    pub const PayShopRecommendData_field_number: u32 = 4;
 };
 pub const ShopTab = struct {
     pub const ShopId_field_number: u32 = 1;
@@ -9128,225 +9288,241 @@ pub const PhBaOneAllSuitPlan = struct {
     pub const Name_field_number: u32 = 2;
 };
 pub const PhBaPlanUsePlanRequest = struct {
-    pub const msg_id: u16 = 24029;
+    pub const msg_id: u16 = 15249;
 };
 pub const PhBaPlanUsePlanResponse = struct {
-    pub const msg_id: u16 = 27839;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const SelfPlanCode_field_number: u32 = 7;
-    pub const UsePlan_field_number: u32 = 3;
-    pub const FiveStarSwitch_field_number: u32 = 9;
-    pub const TowPlanSame_field_number: u32 = 2;
+    pub const msg_id: u16 = 24680;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const SelfPlanCode_field_number: u32 = 13;
+    pub const UsePlan_field_number: u32 = 7;
+    pub const FiveStarSwitch_field_number: u32 = 10;
+    pub const TowPlanSame_field_number: u32 = 4;
 };
 pub const PhBaPlanSaveUsePlanRequest = struct {
-    pub const msg_id: u16 = 19819;
-    pub const UsePlan_field_number: u32 = 13;
+    pub const msg_id: u16 = 27330;
+    pub const UsePlan_field_number: u32 = 4;
 };
 pub const PhBaPlanSaveUsePlanResponse = struct {
-    pub const msg_id: u16 = 23276;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const SelfPlanCode_field_number: u32 = 5;
-    pub const TowPlanSame_field_number: u32 = 9;
+    pub const msg_id: u16 = 16798;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const SelfPlanCode_field_number: u32 = 12;
+    pub const TowPlanSame_field_number: u32 = 13;
 };
 pub const PhBaPlanFindPlanRequest = struct {
-    pub const msg_id: u16 = 28642;
-    pub const TargetCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 22650;
+    pub const TargetCode_field_number: u32 = 2;
 };
 pub const PhBaPlanFindPlanResponse = struct {
-    pub const msg_id: u16 = 23396;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const Plan_field_number: u32 = 15;
-    pub const TowPlanSame_field_number: u32 = 8;
+    pub const msg_id: u16 = 27942;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const Plan_field_number: u32 = 13;
+    pub const TowPlanSame_field_number: u32 = 3;
 };
 pub const PhBaPlanSetStatusInfo = struct {
     pub const Open_field_number: u32 = 1;
     pub const Suit_field_number: u32 = 2;
 };
 pub const PhBaPlanSetPlanStatusRequest = struct {
-    pub const msg_id: u16 = 15279;
+    pub const msg_id: u16 = 16741;
     pub const SetInfo_field_number: u32 = 4;
 };
 pub const PhBaPlanSetPlanStatusResponse = struct {
-    pub const msg_id: u16 = 20350;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const TowPlanSame_field_number: u32 = 6;
+    pub const msg_id: u16 = 16878;
+    pub const ErrorCode_field_number: u32 = 13;
+    pub const TowPlanSame_field_number: u32 = 12;
 };
 pub const PhBaPlanUpdatePlanRequest = struct {
-    pub const msg_id: u16 = 21412;
+    pub const msg_id: u16 = 28006;
 };
 pub const PhBaPlanUpdatePlanResponse = struct {
-    pub const msg_id: u16 = 29895;
-    pub const ErrorCode_field_number: u32 = 6;
-    pub const SelfPlanCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 29442;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const SelfPlanCode_field_number: u32 = 10;
 };
 pub const PhBaPlanSetFiveStarSwitchRequest = struct {
-    pub const msg_id: u16 = 26311;
-    pub const Open_field_number: u32 = 4;
+    pub const msg_id: u16 = 25722;
+    pub const Open_field_number: u32 = 11;
 };
 pub const PhBaPlanSetFiveStarSwitchResponse = struct {
-    pub const msg_id: u16 = 20974;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 16406;
+    pub const ErrorCode_field_number: u32 = 4;
 };
 pub const PhBaPlanBatchOper = struct {
     pub const Oper_field_number: u32 = 1;
     pub const IncrId_field_number: u32 = 2;
 };
 pub const PhBaPlanBatchOperRequest = struct {
-    pub const msg_id: u16 = 15088;
-    pub const BatchOper_field_number: u32 = 4;
+    pub const msg_id: u16 = 28530;
+    pub const BatchOper_field_number: u32 = 10;
 };
 pub const PhBaPlanBatchOperResponse = struct {
-    pub const msg_id: u16 = 19616;
-    pub const errCode_field_number: u32 = 13;
+    pub const msg_id: u16 = 25404;
+    pub const errCode_field_number: u32 = 9;
 };
 pub const PhantomConsumeItem = struct {
     pub const IncId_field_number: u32 = 1;
     pub const Count_field_number: u32 = 2;
     pub const ItemId_field_number: u32 = 3;
 };
+pub const PhantomStackSplitInfo = struct {
+    pub const OperateItem_field_number: u32 = 1;
+    pub const OperateBeforeCount_field_number: u32 = 2;
+    pub const RemainderItem_field_number: u32 = 3;
+};
+pub const PhantomStackMergeInfo = struct {
+    pub const MergedIncrId_field_number: u32 = 1;
+    pub const RepresentativeItem_field_number: u32 = 2;
+};
 pub const PhantomLevelUpRequest = struct {
-    pub const msg_id: u16 = 29915;
-    pub const IncId_field_number: u32 = 12;
-    pub const ConsumeList_field_number: u32 = 6;
-    pub const SlotCount_field_number: u32 = 11;
+    pub const msg_id: u16 = 16448;
+    pub const IncId_field_number: u32 = 9;
+    pub const ConsumeList_field_number: u32 = 1;
+    pub const SlotCount_field_number: u32 = 7;
 };
 pub const PhantomLevelUpResponse = struct {
-    pub const msg_id: u16 = 24219;
-    pub const ErrorCode_field_number: u32 = 14;
-    pub const UpdateInfo_field_number: u32 = 8;
-    pub const ItemMap_field_number: u32 = 2;
+    pub const msg_id: u16 = 22489;
+    pub const ErrorCode_field_number: u32 = 11;
+    pub const UpdateInfo_field_number: u32 = 14;
+    pub const ItemMap_field_number: u32 = 4;
+    pub const StackSplitInfo_field_number: u32 = 13;
 };
 pub const PhantomPutOnNotify = struct {
-    pub const msg_id: u16 = 20066;
+    pub const msg_id: u16 = 15372;
     pub const EquipInfoList_field_number: u32 = 2;
 };
 pub const PhantomPutOnRequest = struct {
-    pub const msg_id: u16 = 27019;
-    pub const IncId_field_number: u32 = 7;
-    pub const RoleId_field_number: u32 = 5;
-    pub const Pos_field_number: u32 = 8;
+    pub const msg_id: u16 = 29319;
+    pub const IncId_field_number: u32 = 14;
+    pub const RoleId_field_number: u32 = 12;
+    pub const Pos_field_number: u32 = 5;
 };
 pub const PhantomPutOnResponse = struct {
-    pub const msg_id: u16 = 18225;
+    pub const msg_id: u16 = 16317;
     pub const ErrorCode_field_number: u32 = 1;
-    pub const EquipInfoList_field_number: u32 = 8;
+    pub const EquipInfoList_field_number: u32 = 12;
+    pub const StackSplitInfos_field_number: u32 = 7;
+    pub const StackMergeInfos_field_number: u32 = 11;
 };
 pub const PhantomAutoPutRequest = struct {
-    pub const msg_id: u16 = 19258;
+    pub const msg_id: u16 = 26414;
     pub const RoleId_field_number: u32 = 8;
-    pub const PhantomItemIncrId_field_number: u32 = 15;
+    pub const PhantomItemIncrId_field_number: u32 = 9;
 };
 pub const PhantomAutoPutResponse = struct {
-    pub const msg_id: u16 = 24247;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const EquipInfoList_field_number: u32 = 9;
+    pub const msg_id: u16 = 19223;
+    pub const ErrorCode_field_number: u32 = 3;
+    pub const EquipInfoList_field_number: u32 = 4;
+    pub const StackSplitInfos_field_number: u32 = 15;
+    pub const StackMergeInfos_field_number: u32 = 5;
 };
 pub const PhantomItemUpdateNotify = struct {
-    pub const msg_id: u16 = 25512;
-    pub const UpdateInfo_field_number: u32 = 2;
+    pub const msg_id: u16 = 28162;
+    pub const UpdateInfo_field_number: u32 = 4;
 };
 pub const RolePhantomPropUpdateNotify = struct {
-    pub const msg_id: u16 = 27391;
-    pub const PropInfo_field_number: u32 = 3;
+    pub const msg_id: u16 = 23392;
+    pub const PropInfo_field_number: u32 = 7;
 };
 pub const PhantomIdentifyRequest = struct {
-    pub const msg_id: u16 = 25175;
-    pub const IncrId_field_number: u32 = 6;
-    pub const Count_field_number: u32 = 2;
+    pub const msg_id: u16 = 18169;
+    pub const IncrId_field_number: u32 = 15;
+    pub const Count_field_number: u32 = 11;
 };
 pub const PhantomIdentifyResponse = struct {
-    pub const msg_id: u16 = 23012;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const UpdateInfo_field_number: u32 = 2;
+    pub const msg_id: u16 = 21034;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const UpdateInfo_field_number: u32 = 11;
 };
 pub const PhantomSkinUnlockNotify = struct {
-    pub const msg_id: u16 = 19840;
-    pub const PhantomSkinList_field_number: u32 = 7;
+    pub const msg_id: u16 = 24383;
+    pub const PhantomSkinList_field_number: u32 = 15;
 };
 pub const PhantomSkinChangeRequest = struct {
-    pub const msg_id: u16 = 29315;
-    pub const IncrId_field_number: u32 = 4;
-    pub const SkinId_field_number: u32 = 15;
+    pub const msg_id: u16 = 25116;
+    pub const IncrId_field_number: u32 = 3;
+    pub const SkinId_field_number: u32 = 2;
     pub const ChangeDefault_field_number: u32 = 14;
 };
 pub const PhantomSkinChangeResponse = struct {
-    pub const msg_id: u16 = 15410;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 29630;
+    pub const ErrorCode_field_number: u32 = 15;
 };
 pub const PhantomRefiningRequest = struct {
-    pub const msg_id: u16 = 19552;
-    pub const IncrIdList_field_number: u32 = 4;
+    pub const msg_id: u16 = 25546;
+    pub const IncrIdList_field_number: u32 = 8;
 };
 pub const PhantomRefiningResponse = struct {
-    pub const msg_id: u16 = 15082;
-    pub const ErrorCode_field_number: u32 = 2;
+    pub const msg_id: u16 = 29840;
+    pub const ErrorCode_field_number: u32 = 5;
     pub const Items_field_number: u32 = 11;
-    pub const ExtraItems_field_number: u32 = 1;
-    pub const CostPhantoms_field_number: u32 = 7;
+    pub const ExtraItems_field_number: u32 = 3;
+    pub const CostPhantoms_field_number: u32 = 9;
 };
 pub const CalabashBatchRefiningRequest = struct {
-    pub const msg_id: u16 = 17707;
-    pub const IncrIdList_field_number: u32 = 1;
+    pub const msg_id: u16 = 15619;
+    pub const IncrIdList_field_number: u32 = 13;
 };
 pub const CalabashBatchRefiningResponse = struct {
-    pub const msg_id: u16 = 23668;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const Items_field_number: u32 = 1;
-    pub const ExtraItems_field_number: u32 = 13;
-    pub const CostPhantoms_field_number: u32 = 14;
+    pub const msg_id: u16 = 22170;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const Items_field_number: u32 = 15;
+    pub const ExtraItems_field_number: u32 = 8;
+    pub const CostPhantoms_field_number: u32 = 1;
 };
 pub const PhantomBatchDirectRefiningRequest = struct {
-    pub const msg_id: u16 = 15644;
-    pub const IncrIdList_field_number: u32 = 9;
-    pub const TargetFetterGroupId_field_number: u32 = 13;
+    pub const msg_id: u16 = 25223;
+    pub const IncrIdList_field_number: u32 = 14;
+    pub const TargetFetterGroupId_field_number: u32 = 4;
 };
 pub const PhantomBatchDirectRefiningResponse = struct {
-    pub const msg_id: u16 = 17669;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const Items_field_number: u32 = 9;
-    pub const CostPhantoms_field_number: u32 = 11;
-    pub const DirectRefineWeekTimes_field_number: u32 = 10;
+    pub const msg_id: u16 = 29320;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const Items_field_number: u32 = 3;
+    pub const CostPhantoms_field_number: u32 = 5;
+    pub const DirectRefineWeekTimes_field_number: u32 = 15;
 };
 pub const PhantomPolishRequest = struct {
-    pub const msg_id: u16 = 17878;
-    pub const IncrId_field_number: u32 = 1;
-    pub const PhantomMainPropItemId_field_number: u32 = 15;
+    pub const msg_id: u16 = 28425;
+    pub const IncrId_field_number: u32 = 9;
+    pub const PhantomMainPropItemId_field_number: u32 = 12;
 };
 pub const PhantomPolishResponse = struct {
-    pub const msg_id: u16 = 22869;
-    pub const ErrorCode_field_number: u32 = 15;
-    pub const UpdateInfo_field_number: u32 = 1;
+    pub const msg_id: u16 = 16484;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const UpdateInfo_field_number: u32 = 14;
+    pub const StackSplitInfo_field_number: u32 = 7;
+    pub const StackMergeInfos_field_number: u32 = 10;
 };
 pub const PhantomManageConfigUpdateRequest = struct {
-    pub const msg_id: u16 = 24693;
+    pub const msg_id: u16 = 26506;
     pub const Setting_field_number: u32 = 6;
-    pub const SettingType_field_number: u32 = 14;
+    pub const SettingType_field_number: u32 = 15;
 };
 pub const PhantomManageConfigUpdateResponse = struct {
-    pub const msg_id: u16 = 21618;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const Setting_field_number: u32 = 12;
+    pub const msg_id: u16 = 20909;
+    pub const ErrorCode_field_number: u32 = 14;
+    pub const Setting_field_number: u32 = 2;
 };
 pub const PhantomSettingInfo = struct {
     pub const Setting_field_number: u32 = 1;
     pub const SettingType_field_number: u32 = 2;
 };
 pub const PhantomSettingBatchUpdateRequest = struct {
-    pub const msg_id: u16 = 18296;
-    pub const Settings_field_number: u32 = 4;
+    pub const msg_id: u16 = 26395;
+    pub const Settings_field_number: u32 = 15;
 };
 pub const PhantomSettingBatchUpdateResponse = struct {
-    pub const msg_id: u16 = 24032;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const Settings_field_number: u32 = 10;
+    pub const msg_id: u16 = 25796;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const Settings_field_number: u32 = 8;
 };
 pub const PhantomManageConfigRequest = struct {
-    pub const msg_id: u16 = 29137;
+    pub const msg_id: u16 = 26762;
 };
 pub const PhantomManageConfigResponse = struct {
-    pub const msg_id: u16 = 24076;
-    pub const AutoLock_field_number: u32 = 13;
-    pub const AutoDisuse_field_number: u32 = 3;
+    pub const msg_id: u16 = 29364;
+    pub const AutoLock_field_number: u32 = 15;
+    pub const AutoDisuse_field_number: u32 = 11;
 };
 pub const PhantomManageConfig = struct {
     pub const Index_field_number: u32 = 1;
@@ -9359,129 +9535,131 @@ pub const PhantomRuleMap = struct {
     pub const ValueList_field_number: u32 = 2;
 };
 pub const PhantomFuncValueBatchRequest = struct {
-    pub const msg_id: u16 = 19893;
-    pub const FuncValue_field_number: u32 = 15;
-    pub const IncrId_field_number: u32 = 1;
+    pub const msg_id: u16 = 29114;
+    pub const FuncValue_field_number: u32 = 9;
+    pub const IncrId_field_number: u32 = 11;
 };
 pub const PhantomFuncValueBatchResponse = struct {
-    pub const msg_id: u16 = 15157;
-    pub const ErrorCode_field_number: u32 = 11;
+    pub const msg_id: u16 = 18810;
+    pub const ErrorCode_field_number: u32 = 13;
 };
 pub const PhantomBatchPolishRequest = struct {
-    pub const msg_id: u16 = 23281;
-    pub const IncrIds_field_number: u32 = 9;
-    pub const PhantomMainPropItemId_field_number: u32 = 1;
+    pub const msg_id: u16 = 22703;
+    pub const IncrIds_field_number: u32 = 14;
+    pub const PhantomMainPropItemId_field_number: u32 = 5;
 };
 pub const PhantomBatchPolishResponse = struct {
-    pub const msg_id: u16 = 21278;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const UpdateInfos_field_number: u32 = 3;
+    pub const msg_id: u16 = 26035;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const UpdateInfos_field_number: u32 = 12;
+    pub const StackSplitInfos_field_number: u32 = 14;
+    pub const StackMergeInfos_field_number: u32 = 10;
 };
 pub const PhantomVicePolishRequest = struct {
-    pub const msg_id: u16 = 24159;
-    pub const IncrId_field_number: u32 = 12;
-    pub const LockPropIndex_field_number: u32 = 8;
+    pub const msg_id: u16 = 19711;
+    pub const IncrId_field_number: u32 = 14;
+    pub const LockPropIndex_field_number: u32 = 10;
 };
 pub const PhantomVicePolishResponse = struct {
-    pub const msg_id: u16 = 16787;
-    pub const ErrorCode_field_number: u32 = 9;
-    pub const PhantomSubProp_field_number: u32 = 3;
+    pub const msg_id: u16 = 27294;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const PhantomSubProp_field_number: u32 = 7;
 };
 pub const PhantomVicePolishAckRequest = struct {
-    pub const msg_id: u16 = 15598;
-    pub const IncrId_field_number: u32 = 4;
-    pub const Ack_field_number: u32 = 6;
+    pub const msg_id: u16 = 21501;
+    pub const IncrId_field_number: u32 = 10;
+    pub const Ack_field_number: u32 = 11;
 };
 pub const PhantomVicePolishAckResponse = struct {
-    pub const msg_id: u16 = 25917;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const UpdateInfo_field_number: u32 = 2;
+    pub const msg_id: u16 = 22926;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const UpdateInfo_field_number: u32 = 10;
 };
 pub const RefreshVisionEquipGroupData = struct {
     pub const IncId_field_number: u32 = 1;
     pub const Name_field_number: u32 = 2;
 };
 pub const VisionEquipGroupInfoRequest = struct {
-    pub const msg_id: u16 = 25243;
+    pub const msg_id: u16 = 18533;
 };
 pub const VisionEquipGroupInfoResponse = struct {
-    pub const msg_id: u16 = 21324;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const VisionEquipList_field_number: u32 = 8;
-};
-pub const AddVisionEquipGroupRequest = struct {
-    pub const msg_id: u16 = 25994;
-    pub const RoleId_field_number: u32 = 10;
-    pub const Name_field_number: u32 = 11;
-};
-pub const AddVisionEquipGroupResponse = struct {
-    pub const msg_id: u16 = 23202;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const VisionEquipList_field_number: u32 = 1;
-};
-pub const DeleteVisionEquipGroupRequest = struct {
-    pub const msg_id: u16 = 23109;
-    pub const Index_field_number: u32 = 6;
-};
-pub const DeleteVisionEquipGroupResponse = struct {
-    pub const msg_id: u16 = 26003;
-    pub const ErrorCode_field_number: u32 = 13;
-    pub const VisionEquipList_field_number: u32 = 4;
-};
-pub const PutVisionGroupToTopRequest = struct {
-    pub const msg_id: u16 = 23121;
-    pub const Index_field_number: u32 = 8;
-};
-pub const PutVisionGroupToTopResponse = struct {
-    pub const msg_id: u16 = 18781;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 21429;
+    pub const ErrorCode_field_number: u32 = 2;
     pub const VisionEquipList_field_number: u32 = 10;
 };
-pub const ChangeVisionGroupNameRequest = struct {
-    pub const msg_id: u16 = 18634;
-    pub const Index_field_number: u32 = 8;
-    pub const Name_field_number: u32 = 15;
+pub const AddVisionEquipGroupRequest = struct {
+    pub const msg_id: u16 = 24382;
+    pub const RoleId_field_number: u32 = 5;
+    pub const Name_field_number: u32 = 12;
 };
-pub const ChangeVisionGroupNameResponse = struct {
-    pub const msg_id: u16 = 22084;
-    pub const ErrorCode_field_number: u32 = 2;
+pub const AddVisionEquipGroupResponse = struct {
+    pub const msg_id: u16 = 18193;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const VisionEquipList_field_number: u32 = 3;
+};
+pub const DeleteVisionEquipGroupRequest = struct {
+    pub const msg_id: u16 = 26973;
+    pub const Index_field_number: u32 = 13;
+};
+pub const DeleteVisionEquipGroupResponse = struct {
+    pub const msg_id: u16 = 26711;
+    pub const ErrorCode_field_number: u32 = 10;
+    pub const VisionEquipList_field_number: u32 = 12;
+};
+pub const PutVisionGroupToTopRequest = struct {
+    pub const msg_id: u16 = 20387;
+    pub const Index_field_number: u32 = 11;
+};
+pub const PutVisionGroupToTopResponse = struct {
+    pub const msg_id: u16 = 27536;
+    pub const ErrorCode_field_number: u32 = 6;
     pub const VisionEquipList_field_number: u32 = 4;
 };
+pub const ChangeVisionGroupNameRequest = struct {
+    pub const msg_id: u16 = 18119;
+    pub const Index_field_number: u32 = 7;
+    pub const Name_field_number: u32 = 10;
+};
+pub const ChangeVisionGroupNameResponse = struct {
+    pub const msg_id: u16 = 18227;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const VisionEquipList_field_number: u32 = 8;
+};
 pub const ApplyVisionGroupRequest = struct {
-    pub const msg_id: u16 = 23152;
-    pub const Index_field_number: u32 = 13;
-    pub const RoleId_field_number: u32 = 7;
+    pub const msg_id: u16 = 17437;
+    pub const Index_field_number: u32 = 4;
+    pub const RoleId_field_number: u32 = 12;
 };
 pub const ApplyVisionGroupResponse = struct {
-    pub const msg_id: u16 = 20670;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const EquipInfoList_field_number: u32 = 2;
+    pub const msg_id: u16 = 21750;
+    pub const ErrorCode_field_number: u32 = 11;
+    pub const EquipInfoList_field_number: u32 = 5;
+    pub const StackSplitInfos_field_number: u32 = 6;
+    pub const StackMergeInfos_field_number: u32 = 14;
 };
 pub const GetMusicInfoRequest = struct {
-    pub const msg_id: u16 = 21085;
+    pub const msg_id: u16 = 19247;
 };
 pub const GetMusicInfoResponse = struct {
-    pub const msg_id: u16 = 27484;
-    pub const CurMusicId_field_number: u32 = 15;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const AlbumTimeInfos_field_number: u32 = 1;
-    pub const TotalMusicIds_field_number: u32 = 11;
-    pub const CollectMusicIds_field_number: u32 = 5;
+    pub const msg_id: u16 = 22582;
+    pub const CurMusicId_field_number: u32 = 8;
+    pub const ErrorCode_field_number: u32 = 6;
+    pub const AlbumTimeInfos_field_number: u32 = 11;
+    pub const CollectMusicIds_field_number: u32 = 9;
 };
 pub const FavoriteMusicMotorCycleUpdateRequest = struct {
-    pub const msg_id: u16 = 27306;
-    pub const FavoriteMusicList_field_number: u32 = 13;
+    pub const msg_id: u16 = 24815;
+    pub const FavoriteMusicList_field_number: u32 = 8;
 };
 pub const FavoriteMusicMotorCycleUpdateResponse = struct {
-    pub const msg_id: u16 = 28833;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 29261;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const PhonographAlbumTimeInfo = struct {
     pub const AlbumId_field_number: u32 = 1;
     pub const BeginTime_field_number: u32 = 2;
     pub const EndTime_field_number: u32 = 3;
     pub const MusicIds_field_number: u32 = 4;
-    pub const CollectMusicIds_field_number: u32 = 5;
 };
 pub const FragmentMemoryData = struct {
     pub const Id_field_number: u32 = 1;
@@ -9494,11 +9672,11 @@ pub const FragmentMemoryItem = struct {
     pub const IsUnlock_field_number: u32 = 3;
 };
 pub const PhotoMemoryRequest = struct {
-    pub const msg_id: u16 = 15846;
+    pub const msg_id: u16 = 16350;
 };
 pub const PhotoMemoryResponse = struct {
-    pub const msg_id: u16 = 27200;
-    pub const Item_field_number: u32 = 12;
+    pub const msg_id: u16 = 24419;
+    pub const Item_field_number: u32 = 14;
 };
 pub const VisionFetterRecommendInfo = struct {
     pub const Usage_field_number: u32 = 2;
@@ -9525,22 +9703,22 @@ pub const CostVisionAttrRecommendInfo = struct {
     pub const GetSubAttrRecommendInfo_field_number: u32 = 3;
 };
 pub const RoleVisionRecommendDataRequest = struct {
-    pub const msg_id: u16 = 24976;
-    pub const RoleId_field_number: u32 = 11;
+    pub const msg_id: u16 = 15990;
+    pub const RoleId_field_number: u32 = 8;
 };
 pub const RoleVisionRecommendDataResponse = struct {
-    pub const msg_id: u16 = 26801;
-    pub const ErrorCode_field_number: u32 = 4;
-    pub const VisionFetterRecommendInfo_field_number: u32 = 11;
+    pub const msg_id: u16 = 15665;
+    pub const ErrorCode_field_number: u32 = 1;
+    pub const VisionFetterRecommendInfo_field_number: u32 = 15;
 };
 pub const RoleVisionRecommendAttrRequest = struct {
-    pub const msg_id: u16 = 26830;
-    pub const RoleId_field_number: u32 = 10;
+    pub const msg_id: u16 = 29865;
+    pub const RoleId_field_number: u32 = 14;
 };
 pub const RoleVisionRecommendAttrResponse = struct {
-    pub const msg_id: u16 = 21509;
-    pub const ErrorCode_field_number: u32 = 3;
-    pub const VisionAttrRecommendInfos_field_number: u32 = 7;
+    pub const msg_id: u16 = 22535;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const VisionAttrRecommendInfos_field_number: u32 = 6;
 };
 pub const MainPhantomRecommendInfo = struct {
     pub const Usage_field_number: u32 = 1;
@@ -9548,13 +9726,13 @@ pub const MainPhantomRecommendInfo = struct {
     pub const FetterGroupId_field_number: u32 = 3;
 };
 pub const RoleVisionMainPhantomRequest = struct {
-    pub const msg_id: u16 = 20399;
-    pub const RoleId_field_number: u32 = 13;
+    pub const msg_id: u16 = 19481;
+    pub const RoleId_field_number: u32 = 2;
 };
 pub const RoleVisionMainPhantomResponse = struct {
-    pub const msg_id: u16 = 26939;
-    pub const ErrorCode_field_number: u32 = 12;
-    pub const RecommendInfo_field_number: u32 = 7;
+    pub const msg_id: u16 = 17594;
+    pub const ErrorCode_field_number: u32 = 5;
+    pub const RecommendInfo_field_number: u32 = 13;
 };
 pub const PassiveSkillInfo = struct {
     pub const SkillId_field_number: u32 = 1;
@@ -9565,8 +9743,8 @@ pub const RolePassiveSkillInfo = struct {
     pub const PassiveSkillInfoList_field_number: u32 = 2;
 };
 pub const PassiveSkillNotify = struct {
-    pub const msg_id: u16 = 23150;
-    pub const RolePassiveSkillInfoList_field_number: u32 = 13;
+    pub const msg_id: u16 = 26386;
+    pub const RolePassiveSkillInfoList_field_number: u32 = 4;
 };
 pub const PlayerTitleData = struct {
     pub const PlayerTitleId_field_number: u32 = 1;
@@ -9576,18 +9754,18 @@ pub const PlayerTitleData = struct {
     pub const ActivityServerRewardItemData_field_number: u32 = 5;
 };
 pub const SetDressedPlayerTitleNotify = struct {
-    pub const msg_id: u16 = 17570;
-    pub const PlayerTitleId_field_number: u32 = 4;
-    pub const CurPlayerTitleId_field_number: u32 = 7;
+    pub const msg_id: u16 = 29816;
+    pub const PlayerTitleId_field_number: u32 = 11;
+    pub const CurPlayerTitleId_field_number: u32 = 2;
 };
 pub const PlayerTitleDataRequest = struct {
-    pub const msg_id: u16 = 29113;
+    pub const msg_id: u16 = 21582;
 };
 pub const PlayerTitleDataResponse = struct {
-    pub const msg_id: u16 = 29735;
-    pub const PlayerTitleData_field_number: u32 = 2;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const PlayerTitleLimitInfos_field_number: u32 = 14;
+    pub const msg_id: u16 = 18669;
+    pub const PlayerTitleData_field_number: u32 = 5;
+    pub const ErrorCode_field_number: u32 = 15;
+    pub const PlayerTitleLimitInfos_field_number: u32 = 9;
 };
 pub const PlayerTitleLimitInfo = struct {
     pub const PlayerTitleId_field_number: u32 = 1;
@@ -9595,141 +9773,141 @@ pub const PlayerTitleLimitInfo = struct {
     pub const EndTime_field_number: u32 = 3;
 };
 pub const ChangePlayerTitleRequest = struct {
-    pub const msg_id: u16 = 16235;
-    pub const PlayerTitleId_field_number: u32 = 2;
+    pub const msg_id: u16 = 22152;
+    pub const PlayerTitleId_field_number: u32 = 6;
 };
 pub const ChangePlayerTitleResponse = struct {
-    pub const msg_id: u16 = 25847;
-    pub const ErrorCode_field_number: u32 = 4;
+    pub const msg_id: u16 = 21696;
+    pub const ErrorCode_field_number: u32 = 1;
 };
 pub const PlayerVarNotify = struct {
-    pub const msg_id: u16 = 21874;
-    pub const VarInfos_field_number: u32 = 6;
+    pub const msg_id: u16 = 23542;
+    pub const VarInfos_field_number: u32 = 15;
 };
 pub const PlayerMotionRequest = struct {
-    pub const msg_id: u16 = 23967;
-    pub const Motion_field_number: u32 = 9;
+    pub const msg_id: u16 = 18827;
+    pub const Motion_field_number: u32 = 6;
 };
 pub const PlayerMotionResponse = struct {
-    pub const msg_id: u16 = 21656;
-    pub const ErrorId_field_number: u32 = 8;
+    pub const msg_id: u16 = 21104;
+    pub const ErrorId_field_number: u32 = 2;
 };
 pub const JSPatchNotify = struct {
-    pub const msg_id: u16 = 24958;
-    pub const Content_field_number: u32 = 3;
+    pub const msg_id: u16 = 25006;
+    pub const Content_field_number: u32 = 14;
 };
 pub const QuestInfo = struct {
     pub const QuestId_field_number: u32 = 1;
     pub const Status_field_number: u32 = 2;
 };
 pub const QuestListNotify = struct {
-    pub const msg_id: u16 = 25474;
-    pub const Quests_field_number: u32 = 11;
+    pub const msg_id: u16 = 23759;
+    pub const Quests_field_number: u32 = 6;
 };
 pub const TraceQuestNotify = struct {
-    pub const msg_id: u16 = 21168;
-    pub const QuestId_field_number: u32 = 4;
+    pub const msg_id: u16 = 26198;
+    pub const QuestId_field_number: u32 = 11;
 };
 pub const TraceQuestRequest = struct {
-    pub const msg_id: u16 = 27549;
-    pub const TraceType_field_number: u32 = 6;
-    pub const QuestId_field_number: u32 = 5;
-    pub const Operate_field_number: u32 = 15;
+    pub const msg_id: u16 = 28978;
+    pub const TraceType_field_number: u32 = 9;
+    pub const QuestId_field_number: u32 = 3;
+    pub const Operate_field_number: u32 = 1;
 };
 pub const TraceQuestResponse = struct {
-    pub const msg_id: u16 = 20341;
-    pub const ErrorId_field_number: u32 = 10;
+    pub const msg_id: u16 = 29698;
+    pub const ErrorId_field_number: u32 = 1;
 };
 pub const QuestReadyListNotify = struct {
-    pub const msg_id: u16 = 20130;
-    pub const QuestId_field_number: u32 = 7;
+    pub const msg_id: u16 = 24620;
+    pub const QuestId_field_number: u32 = 8;
 };
 pub const QuestShowListNotify = struct {
-    pub const msg_id: u16 = 21274;
-    pub const QuestId_field_number: u32 = 5;
-};
-pub const QuestFinishListNotify = struct {
-    pub const msg_id: u16 = 27820;
-    pub const QuestId_field_number: u32 = 15;
-};
-pub const QuestRedDotRequest = struct {
-    pub const msg_id: u16 = 20525;
-    pub const QuestId_field_number: u32 = 7;
-    pub const Operate_field_number: u32 = 14;
-};
-pub const QuestRedDotResponse = struct {
-    pub const msg_id: u16 = 24256;
-    pub const ErrorId_field_number: u32 = 13;
-};
-pub const QuestRedDotNotify = struct {
-    pub const msg_id: u16 = 16468;
+    pub const msg_id: u16 = 17562;
     pub const QuestId_field_number: u32 = 12;
 };
+pub const QuestFinishListNotify = struct {
+    pub const msg_id: u16 = 17000;
+    pub const QuestId_field_number: u32 = 12;
+};
+pub const QuestRedDotRequest = struct {
+    pub const msg_id: u16 = 16021;
+    pub const QuestId_field_number: u32 = 15;
+    pub const Operate_field_number: u32 = 7;
+};
+pub const QuestRedDotResponse = struct {
+    pub const msg_id: u16 = 18604;
+    pub const ErrorId_field_number: u32 = 15;
+};
+pub const QuestRedDotNotify = struct {
+    pub const msg_id: u16 = 23522;
+    pub const QuestId_field_number: u32 = 11;
+};
 pub const ConfirmQuestResourceRequest = struct {
-    pub const msg_id: u16 = 19981;
-    pub const QuestIds_field_number: u32 = 1;
+    pub const msg_id: u16 = 27492;
+    pub const QuestIds_field_number: u32 = 14;
 };
 pub const ConfirmQuestResourceResponse = struct {
-    pub const msg_id: u16 = 26227;
-    pub const ErrorId_field_number: u32 = 13;
+    pub const msg_id: u16 = 26295;
+    pub const ErrorId_field_number: u32 = 6;
 };
 pub const SetQuestFocusModeRequest = struct {
-    pub const msg_id: u16 = 23532;
-    pub const QuestId_field_number: u32 = 10;
+    pub const msg_id: u16 = 29838;
+    pub const QuestId_field_number: u32 = 15;
 };
 pub const SetQuestFocusModeResponse = struct {
-    pub const msg_id: u16 = 20414;
-    pub const ErrorCode_field_number: u32 = 15;
+    pub const msg_id: u16 = 21189;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const CancelQuestFocusModeRequest = struct {
-    pub const msg_id: u16 = 22143;
-    pub const QuestId_field_number: u32 = 4;
+    pub const msg_id: u16 = 23764;
+    pub const QuestId_field_number: u32 = 10;
 };
 pub const CancelQuestFocusModeResponse = struct {
-    pub const msg_id: u16 = 15535;
-    pub const ErrorCode_field_number: u32 = 12;
+    pub const msg_id: u16 = 29321;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const AcceptFocusWaitQuestRequest = struct {
-    pub const msg_id: u16 = 23689;
-    pub const QuestId_field_number: u32 = 7;
+    pub const msg_id: u16 = 29846;
+    pub const QuestId_field_number: u32 = 3;
 };
 pub const AcceptFocusWaitQuestResponse = struct {
-    pub const msg_id: u16 = 27817;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 17260;
+    pub const ErrorCode_field_number: u32 = 7;
 };
 pub const FocusQuestSetNotify = struct {
-    pub const msg_id: u16 = 26564;
-    pub const FocusQuestId_field_number: u32 = 15;
-    pub const Reason_field_number: u32 = 12;
+    pub const msg_id: u16 = 17380;
+    pub const FocusQuestId_field_number: u32 = 11;
+    pub const Reason_field_number: u32 = 5;
 };
 pub const FocusQuestChangeNotify = struct {
-    pub const msg_id: u16 = 22946;
-    pub const FocusQuestId_field_number: u32 = 4;
+    pub const msg_id: u16 = 18164;
+    pub const FocusQuestId_field_number: u32 = 13;
 };
 pub const SetFocusModeDeterConditionRequest = struct {
-    pub const msg_id: u16 = 21629;
-    pub const DisableId_field_number: u32 = 12;
+    pub const msg_id: u16 = 27054;
+    pub const DisableId_field_number: u32 = 5;
 };
 pub const SetFocusModeDeterConditionResponse = struct {
-    pub const msg_id: u16 = 20065;
-    pub const ErrorCode_field_number: u32 = 14;
+    pub const msg_id: u16 = 22252;
+    pub const ErrorCode_field_number: u32 = 10;
 };
 pub const ClientPullResourcePackageRequest = struct {
-    pub const msg_id: u16 = 29373;
-    pub const Holder_field_number: u32 = 4;
+    pub const msg_id: u16 = 26961;
+    pub const Holder_field_number: u32 = 2;
 };
 pub const ClientPullResourcePackageResponse = struct {
-    pub const msg_id: u16 = 22049;
-    pub const ErrorId_field_number: u32 = 5;
-    pub const FinishMp4QuestIds_field_number: u32 = 3;
-    pub const NeedConfirmQuestIds_field_number: u32 = 12;
+    pub const msg_id: u16 = 26304;
+    pub const ErrorId_field_number: u32 = 15;
+    pub const FinishMp4QuestIds_field_number: u32 = 11;
+    pub const NeedConfirmQuestIds_field_number: u32 = 2;
 };
 pub const QuestReviewDataRequest = struct {
-    pub const msg_id: u16 = 22457;
+    pub const msg_id: u16 = 24599;
 };
 pub const QuestReviewDataResponse = struct {
-    pub const msg_id: u16 = 22672;
-    pub const ErrorCode_field_number: u32 = 1;
+    pub const msg_id: u16 = 16788;
+    pub const ErrorCode_field_number: u32 = 8;
 };
 pub const QuestBranchInfo = struct {
     pub const QuestBranchInfos_field_number: u32 = 1;
@@ -9742,12 +9920,12 @@ pub const OneQuestBranchPageInfo = struct {
     pub const CompleteBranches_field_number: u32 = 3;
 };
 pub const QuestBranchRequest = struct {
-    pub const msg_id: u16 = 23494;
+    pub const msg_id: u16 = 29163;
 };
 pub const QuestBranchResponse = struct {
-    pub const msg_id: u16 = 26678;
-    pub const errorCode_field_number: u32 = 6;
-    pub const QuestBranchInfo_field_number: u32 = 14;
+    pub const msg_id: u16 = 24229;
+    pub const errorCode_field_number: u32 = 1;
+    pub const QuestBranchInfo_field_number: u32 = 6;
 };
 pub const EntityAccessInfo = struct {
     pub const EntityId_field_number: u32 = 1;
@@ -9755,40 +9933,40 @@ pub const EntityAccessInfo = struct {
     pub const AcessRangeResults_field_number: u32 = 3;
 };
 pub const EntityAccessRangeRequest = struct {
-    pub const msg_id: u16 = 17555;
-    pub const EntityId_field_number: u32 = 1;
-    pub const EntitiesToCheck_field_number: u32 = 10;
-    pub const RangeType_field_number: u32 = 2;
+    pub const msg_id: u16 = 23148;
+    pub const EntityId_field_number: u32 = 5;
+    pub const EntitiesToCheck_field_number: u32 = 9;
+    pub const RangeType_field_number: u32 = 4;
 };
 pub const EntityAccessRangeResponse = struct {
-    pub const msg_id: u16 = 15504;
-    pub const ErrorCode_field_number: u32 = 13;
-    pub const EntityId_field_number: u32 = 6;
-    pub const Info_field_number: u32 = 11;
+    pub const msg_id: u16 = 22572;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const EntityId_field_number: u32 = 10;
+    pub const Info_field_number: u32 = 9;
 };
 pub const PlayerAccessEffectAreaRequest = struct {
-    pub const msg_id: u16 = 23423;
-    pub const EntityId_field_number: u32 = 12;
-    pub const RangeType_field_number: u32 = 1;
+    pub const msg_id: u16 = 26712;
+    pub const EntityId_field_number: u32 = 8;
+    pub const RangeType_field_number: u32 = 6;
 };
 pub const PlayerAccessEffectAreaResponse = struct {
-    pub const msg_id: u16 = 29362;
-    pub const ErrorCode_field_number: u32 = 8;
-    pub const EntityId_field_number: u32 = 12;
-    pub const Info_field_number: u32 = 9;
+    pub const msg_id: u16 = 19314;
+    pub const ErrorCode_field_number: u32 = 14;
+    pub const EntityId_field_number: u32 = 4;
+    pub const Info_field_number: u32 = 6;
 };
 pub const InitRangeRequest = struct {
-    pub const msg_id: u16 = 29177;
-    pub const EntityId_field_number: u32 = 13;
-    pub const EntitiesToRequest_field_number: u32 = 8;
-    pub const IsPlayerInRange_field_number: u32 = 15;
+    pub const msg_id: u16 = 29050;
+    pub const EntityId_field_number: u32 = 8;
+    pub const EntitiesToRequest_field_number: u32 = 1;
+    pub const IsPlayerInRange_field_number: u32 = 10;
 };
 pub const InitRangeResponse = struct {
-    pub const msg_id: u16 = 15432;
-    pub const ErrorCode_field_number: u32 = 1;
-    pub const EntityId_field_number: u32 = 15;
+    pub const msg_id: u16 = 19814;
+    pub const ErrorCode_field_number: u32 = 2;
+    pub const EntityId_field_number: u32 = 4;
     pub const Info_field_number: u32 = 9;
-    pub const PlayerAccessRangeResult_field_number: u32 = 2;
+    pub const PlayerAccessRangeResult_field_number: u32 = 11;
 };
 pub const ExtraDeadInfo = struct {
     Message: ?union(enum) {
@@ -9796,23 +9974,23 @@ pub const ExtraDeadInfo = struct {
     pub const BtBloodBathedModeInfo_field_number: u32 = 1;
 };
 pub const PlayerDeadNotify = struct {
-    pub const msg_id: u16 = 25670;
-    pub const PlayerId_field_number: u32 = 13;
-    pub const DelaySeconds_field_number: u32 = 10;
-    pub const IsAutoRevive_field_number: u32 = 1;
-    pub const ReviveId_field_number: u32 = 2;
-    pub const IsLogin_field_number: u32 = 5;
-    pub const IsShowRevive_field_number: u32 = 4;
-    pub const ExtraDeadInfos_field_number: u32 = 11;
+    pub const msg_id: u16 = 27670;
+    pub const PlayerId_field_number: u32 = 4;
+    pub const DelaySeconds_field_number: u32 = 12;
+    pub const IsAutoRevive_field_number: u32 = 9;
+    pub const ReviveId_field_number: u32 = 13;
+    pub const IsLogin_field_number: u32 = 1;
+    pub const IsShowRevive_field_number: u32 = 10;
+    pub const ExtraDeadInfos_field_number: u32 = 14;
 };
 pub const DeathStatusInfo = struct {
     pub const GroupType_field_number: u32 = 1;
     pub const LivingStatus_field_number: u32 = 2;
 };
 pub const AliveStatusNotify = struct {
-    pub const msg_id: u16 = 15458;
-    pub const PlayerId_field_number: u32 = 11;
-    pub const Info_field_number: u32 = 7;
+    pub const msg_id: u16 = 22492;
+    pub const PlayerId_field_number: u32 = 5;
+    pub const Info_field_number: u32 = 3;
 };
 pub const BtBloodBathedModeInfo = struct {
     pub const BtType_field_number: u32 = 1;
@@ -9820,20 +9998,20 @@ pub const BtBloodBathedModeInfo = struct {
     pub const BtObjSetting_field_number: u32 = 3;
 };
 pub const RoguelikeCurrencyNotify = struct {
-    pub const msg_id: u16 = 18382;
-    pub const V2s_field_number: u32 = 5;
+    pub const msg_id: u16 = 17560;
+    pub const V2s_field_number: u32 = 14;
 };
 pub const SceneBlockSplitPlayerNeedBlockPush = struct {
-    pub const msg_id: u16 = 29426;
-    pub const PlayerNeedBlockId_field_number: u32 = 11;
+    pub const msg_id: u16 = 16044;
+    pub const PlayerNeedBlockId_field_number: u32 = 4;
 };
 pub const GetRewardTreasureBoxRequest = struct {
-    pub const msg_id: u16 = 24690;
-    pub const EntityId_field_number: u32 = 12;
+    pub const msg_id: u16 = 24443;
+    pub const EntityId_field_number: u32 = 9;
 };
 pub const GetRewardTreasureBoxResponse = struct {
-    pub const msg_id: u16 = 17694;
-    pub const ErrorCode_field_number: u32 = 7;
+    pub const msg_id: u16 = 28349;
+    pub const ErrorCode_field_number: u32 = 9;
 };
 pub const MobileButtonSetting = struct {
     pub const Id_field_number: u32 = 1;
@@ -9845,22 +10023,22 @@ pub const MobileButtonSetting = struct {
     pub const PanelLevel_field_number: u32 = 7;
 };
 pub const SettingNotify = struct {
-    pub const msg_id: u16 = 26279;
-    pub const MobileButtonSettings_field_number: u32 = 1;
+    pub const msg_id: u16 = 22267;
+    pub const MobileButtonSettings_field_number: u32 = 10;
 };
 pub const LanguageSettingUpdateRequest = struct {
-    pub const msg_id: u16 = 18438;
-    pub const Language_field_number: u32 = 8;
+    pub const msg_id: u16 = 15385;
+    pub const Language_field_number: u32 = 9;
 };
 pub const LanguageSettingUpdateResponse = struct {
-    pub const msg_id: u16 = 17563;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 27367;
+    pub const ErrorCode_field_number: u32 = 3;
 };
 pub const ServerPlayStationPlayOnlyStateRequest = struct {
-    pub const msg_id: u16 = 29952;
+    pub const msg_id: u16 = 24714;
 };
 pub const ServerPlayStationPlayOnlyStateResponse = struct {
-    pub const msg_id: u16 = 20560;
+    pub const msg_id: u16 = 24512;
     pub const CrossPlayEnabled_field_number: u32 = 15;
 };
 pub const CombinationKey = struct {
@@ -9902,26 +10080,26 @@ pub const DeviceInputSetting = struct {
     pub const InputCombinationAxis_field_number: u32 = 10;
 };
 pub const InputSettingRequest = struct {
-    pub const msg_id: u16 = 21665;
+    pub const msg_id: u16 = 17784;
 };
 pub const InputSettingResponse = struct {
-    pub const msg_id: u16 = 21942;
-    pub const InputSettingData_field_number: u32 = 13;
+    pub const msg_id: u16 = 18992;
+    pub const InputSettingData_field_number: u32 = 3;
 };
 pub const InputSettingUpdateRequest = struct {
-    pub const msg_id: u16 = 19722;
-    pub const InputSettingData_field_number: u32 = 4;
+    pub const msg_id: u16 = 29143;
+    pub const InputSettingData_field_number: u32 = 9;
 };
 pub const InputSettingUpdateResponse = struct {
-    pub const msg_id: u16 = 16181;
-    pub const ErrorCode_field_number: u32 = 8;
+    pub const msg_id: u16 = 29097;
+    pub const ErrorCode_field_number: u32 = 5;
 };
 pub const XboxSettingRequest = struct {
-    pub const msg_id: u16 = 16406;
+    pub const msg_id: u16 = 21284;
 };
 pub const XboxSettingResponse = struct {
-    pub const msg_id: u16 = 29066;
-    pub const MatchXboxUser_field_number: u32 = 15;
+    pub const msg_id: u16 = 23818;
+    pub const MatchXboxUser_field_number: u32 = 2;
 };
 pub const SheriffCriminalInfo = struct {
     pub const CriminalId_field_number: u32 = 1;
@@ -9944,13 +10122,13 @@ pub const SheriffZoneInfo = struct {
     pub const ItemCount_field_number: u32 = 4;
 };
 pub const SheriffZoneInfoRequest = struct {
-    pub const msg_id: u16 = 28956;
-    pub const ZoneIds_field_number: u32 = 12;
+    pub const msg_id: u16 = 17467;
+    pub const ZoneIds_field_number: u32 = 13;
 };
 pub const SheriffZoneInfoResponse = struct {
-    pub const msg_id: u16 = 29617;
-    pub const errorCode_field_number: u32 = 11;
-    pub const ZoneInfos_field_number: u32 = 5;
+    pub const msg_id: u16 = 25267;
+    pub const errorCode_field_number: u32 = 5;
+    pub const ZoneInfos_field_number: u32 = 4;
 };
 pub const ShortMessageInfo = struct {
     pub const ConfigId_field_number: u32 = 1;
@@ -9962,17 +10140,21 @@ pub const ShortMessageInfo = struct {
     pub const IsFinish_field_number: u32 = 7;
 };
 pub const AllMsgRequest = struct {
-    pub const msg_id: u16 = 28440;
+    pub const msg_id: u16 = 15653;
 };
 pub const AllMsgResponse = struct {
-    pub const msg_id: u16 = 21036;
-    pub const ShortMessageInfos_field_number: u32 = 5;
-    pub const BubbleIds_field_number: u32 = 14;
+    pub const msg_id: u16 = 23875;
+    pub const ShortMessageInfos_field_number: u32 = 2;
+    pub const BubbleIds_field_number: u32 = 3;
     pub const BubbleId_field_number: u32 = 1;
-    pub const ChatBgIds_field_number: u32 = 3;
-    pub const ChatBgId_field_number: u32 = 13;
-    pub const ErrCode_field_number: u32 = 9;
-    pub const PartnerChange_field_number: u32 = 15;
+    pub const ChatBgIds_field_number: u32 = 10;
+    pub const ChatBgId_field_number: u32 = 5;
+    pub const ErrCode_field_number: u32 = 14;
+    pub const PartnerChange_field_number: u32 = 6;
+    pub const ChatThemeId_field_number: u32 = 9;
+    pub const ChatThemeIds_field_number: u32 = 15;
+    pub const ChatCharmId_field_number: u32 = 13;
+    pub const ChatCharmIds_field_number: u32 = 4;
 };
 pub const BattleFormation = struct {
     pub const SelectRoles_field_number: u32 = 1;
@@ -9990,17 +10172,17 @@ pub const SlashLevelPlayInfo = struct {
     pub const IsEasyPass_field_number: u32 = 8;
 };
 pub const SlashAndTowerInfoRequest = struct {
-    pub const msg_id: u16 = 17493;
+    pub const msg_id: u16 = 26076;
 };
 pub const SlashAndTowerInfoResponse = struct {
-    pub const msg_id: u16 = 18229;
-    pub const ErrorCode_field_number: u32 = 5;
+    pub const msg_id: u16 = 22143;
+    pub const ErrorCode_field_number: u32 = 8;
     pub const SlashLevelPlayInfo_field_number: u32 = 4;
-    pub const RewardsReceived_field_number: u32 = 6;
-    pub const CurSeasonEndTime_field_number: u32 = 10;
-    pub const UpdateSeason_field_number: u32 = 9;
-    pub const CurIsHaveRecord_field_number: u32 = 14;
-    pub const BuffCache_field_number: u32 = 2;
+    pub const RewardsReceived_field_number: u32 = 7;
+    pub const CurSeasonEndTime_field_number: u32 = 14;
+    pub const UpdateSeason_field_number: u32 = 15;
+    pub const CurIsHaveRecord_field_number: u32 = 13;
+    pub const BuffCache_field_number: u32 = 10;
 };
 pub const TowerInfo = struct {
     pub const CurrentSeason_field_number: u32 = 1;
@@ -10034,29 +10216,29 @@ pub const TowerRolePb = struct {
     pub const SkillBranchId_field_number: u32 = 3;
 };
 pub const TowerRequest = struct {
-    pub const msg_id: u16 = 25227;
+    pub const msg_id: u16 = 20908;
 };
 pub const TowerResponse = struct {
-    pub const msg_id: u16 = 21232;
-    pub const TowerInfo_field_number: u32 = 12;
+    pub const msg_id: u16 = 16485;
+    pub const TowerInfo_field_number: u32 = 10;
 };
 pub const TowerSeasonUpdateRequest = struct {
-    pub const msg_id: u16 = 19054;
+    pub const msg_id: u16 = 20997;
 };
 pub const TowerSeasonUpdateResponse = struct {
-    pub const msg_id: u16 = 23170;
+    pub const msg_id: u16 = 18739;
     Towers: ?union(enum) {
     } = null,
-    pub const TowerInfo_field_number: u32 = 9;
-    pub const MaxUnlockDifficulty_field_number: u32 = 12;
+    pub const TowerInfo_field_number: u32 = 11;
+    pub const MaxUnlockDifficulty_field_number: u32 = 6;
 };
 pub const MoonChasingTrackMoonHandbookRewardNotify = struct {
-    pub const msg_id: u16 = 23897;
-    pub const Ids_field_number: u32 = 8;
+    pub const msg_id: u16 = 18595;
+    pub const Ids_field_number: u32 = 14;
 };
 pub const MoonChasingTargetGetCountNotify = struct {
-    pub const msg_id: u16 = 29671;
-    pub const TargetGetCount_field_number: u32 = 5;
+    pub const msg_id: u16 = 20701;
+    pub const TargetGetCount_field_number: u32 = 3;
 };
 pub const TutorialInfo = struct {
     pub const Id_field_number: u32 = 1;
@@ -10064,31 +10246,31 @@ pub const TutorialInfo = struct {
     pub const GetAward_field_number: u32 = 3;
 };
 pub const TutorialInfoRequest = struct {
-    pub const msg_id: u16 = 21281;
+    pub const msg_id: u16 = 15592;
 };
 pub const TutorialInfoResponse = struct {
-    pub const msg_id: u16 = 25064;
-    pub const UnlockList_field_number: u32 = 11;
+    pub const msg_id: u16 = 26976;
+    pub const UnlockList_field_number: u32 = 12;
 };
 pub const TutorialReceiveRequest = struct {
-    pub const msg_id: u16 = 24252;
+    pub const msg_id: u16 = 25497;
     pub const Id_field_number: u32 = 14;
 };
 pub const TutorialReceiveResponse = struct {
-    pub const msg_id: u16 = 22731;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const ErrorParams_field_number: u32 = 10;
-    pub const ItemMap_field_number: u32 = 12;
+    pub const msg_id: u16 = 26141;
+    pub const ErrorCode_field_number: u32 = 12;
+    pub const ErrorParams_field_number: u32 = 15;
+    pub const ItemMap_field_number: u32 = 7;
 };
 pub const TutorialUnlockRequest = struct {
-    pub const msg_id: u16 = 23137;
-    pub const Id_field_number: u32 = 7;
+    pub const msg_id: u16 = 26906;
+    pub const Id_field_number: u32 = 6;
 };
 pub const TutorialUnlockResponse = struct {
-    pub const msg_id: u16 = 26171;
-    pub const ErrorCode_field_number: u32 = 11;
-    pub const ErrorParams_field_number: u32 = 14;
-    pub const UnLockInfo_field_number: u32 = 10;
+    pub const msg_id: u16 = 21973;
+    pub const ErrorCode_field_number: u32 = 8;
+    pub const ErrorParams_field_number: u32 = 13;
+    pub const UnLockInfo_field_number: u32 = 11;
 };
 pub const WeaponConsumeItem = struct {
     pub const IncId_field_number: u32 = 1;
@@ -10096,47 +10278,47 @@ pub const WeaponConsumeItem = struct {
     pub const ItemId_field_number: u32 = 3;
 };
 pub const WeaponLevelUpRequest = struct {
-    pub const msg_id: u16 = 19280;
-    pub const IncId_field_number: u32 = 14;
-    pub const ConsumeList_field_number: u32 = 11;
+    pub const msg_id: u16 = 28155;
+    pub const IncId_field_number: u32 = 1;
+    pub const ConsumeList_field_number: u32 = 9;
 };
 pub const WeaponLevelUpResponse = struct {
-    pub const msg_id: u16 = 21421;
-    pub const ErrorCode_field_number: u32 = 10;
-    pub const IncId_field_number: u32 = 13;
-    pub const WeaponLevel_field_number: u32 = 2;
-    pub const WeaponExp_field_number: u32 = 3;
-    pub const ItemMap_field_number: u32 = 5;
+    pub const msg_id: u16 = 21842;
+    pub const ErrorCode_field_number: u32 = 11;
+    pub const IncId_field_number: u32 = 4;
+    pub const WeaponLevel_field_number: u32 = 1;
+    pub const WeaponExp_field_number: u32 = 9;
+    pub const ItemMap_field_number: u32 = 6;
 };
 pub const WeaponBreachRequest = struct {
-    pub const msg_id: u16 = 19109;
-    pub const IncId_field_number: u32 = 4;
+    pub const msg_id: u16 = 17857;
+    pub const IncId_field_number: u32 = 12;
 };
 pub const WeaponBreachResponse = struct {
-    pub const msg_id: u16 = 27219;
-    pub const ErrorCode_field_number: u32 = 5;
-    pub const IncId_field_number: u32 = 12;
-    pub const WeaponBreach_field_number: u32 = 3;
+    pub const msg_id: u16 = 24159;
+    pub const ErrorCode_field_number: u32 = 7;
+    pub const IncId_field_number: u32 = 4;
+    pub const WeaponBreach_field_number: u32 = 11;
 };
 pub const WeaponResonUpRequest = struct {
-    pub const msg_id: u16 = 20804;
-    pub const IncId_field_number: u32 = 2;
-    pub const ConsumeList_field_number: u32 = 8;
-    pub const ConsumeItemList_field_number: u32 = 7;
+    pub const msg_id: u16 = 27212;
+    pub const IncId_field_number: u32 = 7;
+    pub const ConsumeList_field_number: u32 = 6;
+    pub const ConsumeItemList_field_number: u32 = 9;
 };
 pub const WeaponResonUpResponse = struct {
-    pub const msg_id: u16 = 20680;
+    pub const msg_id: u16 = 24490;
     pub const ErrorCode_field_number: u32 = 1;
-    pub const IncId_field_number: u32 = 12;
-    pub const ResonLevel_field_number: u32 = 4;
+    pub const IncId_field_number: u32 = 11;
+    pub const ResonLevel_field_number: u32 = 15;
 };
 pub const WeeklyFrameworkInfoRequest = struct {
-    pub const msg_id: u16 = 24197;
+    pub const msg_id: u16 = 16625;
 };
 pub const WeeklyFrameworkInfoResponse = struct {
-    pub const msg_id: u16 = 16309;
-    pub const ErrorCode_field_number: u32 = 6;
-    pub const FrameworkInfo_field_number: u32 = 11;
+    pub const msg_id: u16 = 19130;
+    pub const ErrorCode_field_number: u32 = 3;
+    pub const FrameworkInfo_field_number: u32 = 5;
 };
 pub const WeeklyFrameworkInfo = struct {
     pub const ConfigId_field_number: u32 = 1;
@@ -10161,11 +10343,11 @@ pub const FloroFarmPlayData = struct {
     pub const HasRecord_field_number: u32 = 1;
 };
 pub const LobbyListRequest = struct {
-    pub const msg_id: u16 = 17638;
-    pub const IsFriend_field_number: u32 = 8;
+    pub const msg_id: u16 = 27091;
+    pub const IsFriend_field_number: u32 = 7;
 };
 pub const LobbyListResponse = struct {
-    pub const msg_id: u16 = 20257;
-    pub const ErrorCode_field_number: u32 = 7;
-    pub const ItemList_field_number: u32 = 1;
+    pub const msg_id: u16 = 16660;
+    pub const ErrorCode_field_number: u32 = 4;
+    pub const ItemList_field_number: u32 = 10;
 };

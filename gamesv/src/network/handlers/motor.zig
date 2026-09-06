@@ -948,7 +948,7 @@ pub fn MotorOutlookCreatePresetRequest(
     motor_comp: *PlayerMotorComponent,
 ) !void {
     const equipped = txn.message.Preset orelse {
-        txn.respond(.{ .ErrorCode = @intFromEnum(pb.ErrorCode.MotorOutlookPresetInputInvalid) });
+        txn.respond(.{ .ErrorCode = pb.ErrorCode.MotorOutlookPresetInputInvalid });
         return;
     };
 
@@ -970,7 +970,7 @@ pub fn MotorOutlookCreatePresetRequest(
 
     try motor_comp.save(fs, alloc.arena);
     txn.respond(.{
-        .ErrorCode = @intFromEnum(pb.ErrorCode.Success),
+        .ErrorCode = pb.ErrorCode.Success,
         .MotorOutlookPreset = try buildPresetList(motor_comp, alloc),
     });
 }
@@ -990,7 +990,7 @@ pub fn onMotorOutlookDeletePresetRequest(
     }
 
     const remove_index = index orelse {
-        txn.respond(.{ .ErrorCode = @intFromEnum(pb.ErrorCode.MotorOutlookPresetNotExist) });
+        txn.respond(.{ .ErrorCode = pb.ErrorCode.MotorOutlookPresetNotExist });
         return;
     };
 
@@ -1006,7 +1006,7 @@ pub fn onMotorOutlookDeletePresetRequest(
 
     try motor_comp.save(fs, alloc.arena);
     txn.respond(.{
-        .ErrorCode = @intFromEnum(pb.ErrorCode.Success),
+        .ErrorCode = pb.ErrorCode.Success,
         .MotorOutlookPreset = try buildPresetList(motor_comp, alloc),
     });
 }
@@ -1018,11 +1018,11 @@ pub fn onMotorOutlookEditPresetRequest(
     motor_comp: *PlayerMotorComponent,
 ) !void {
     const request = txn.message.PresetPlan orelse {
-        txn.respond(.{ .ErrorCode = @intFromEnum(pb.ErrorCode.MotorOutlookPresetInputInvalid) });
+        txn.respond(.{ .ErrorCode = pb.ErrorCode.MotorOutlookPresetInputInvalid });
         return;
     };
     const equipped = request.Preset orelse {
-        txn.respond(.{ .ErrorCode = @intFromEnum(pb.ErrorCode.MotorOutlookPresetInputInvalid) });
+        txn.respond(.{ .ErrorCode = pb.ErrorCode.MotorOutlookPresetInputInvalid });
         return;
     };
 
@@ -1032,13 +1032,13 @@ pub fn onMotorOutlookEditPresetRequest(
         preset.* = try makePreset(alloc.gpa, request.Id, request.Mame, equipped, motor_comp.info.equipped_skin);
         try motor_comp.save(fs, alloc.arena);
         txn.respond(.{
-            .ErrorCode = @intFromEnum(pb.ErrorCode.Success),
+            .ErrorCode = pb.ErrorCode.Success,
             .MotorOutlookPreset = try buildPresetList(motor_comp, alloc),
         });
         return;
     }
 
     txn.respond(.{
-        .ErrorCode = @intFromEnum(pb.ErrorCode.MotorOutlookPresetNotExist),
+        .ErrorCode = pb.ErrorCode.MotorOutlookPresetNotExist,
     });
 }
