@@ -5,7 +5,6 @@ Server Emulator for Wuthering Waves targeting 3.7 BETA (3.6 LIVE on `lts`).
 # Features
 - Exploration
 - Working Characters
-- [Goon Camera](https://git.xeondev.com/WavyRooms/goon-camera)
 
 More features are actively being worked on, so stay tuned!
 NOTE: If the game is crashing immediately upon opening while PS is open, try editing `state/cfg/index/aiHbMg6p7W25f2s5lN3w02kAehuaavii/Windows/VideoConfig.json` to have a 12BC418C58914A0769498784F5BB58EC533E9309 in IndexSha1. Report this to a maintainer on the Discord if this occurs, send Client.log in DMs too.
@@ -17,22 +16,26 @@ NOTE: If the game is crashing immediately upon opening while PS is open, try edi
 #### For additional help, you can join our [discord server](https://discord.xeondev.com)
 
 ## Setup
-### Building from sources
+### BinData Setup
+1. Go to [BinData repository's releases](https://git.xeondev.com/WavyRooms/zigrika-bindata/releases) and grab the latest release corresponding to the server's/client's version.
+2. Go to `assets` in `zigrika` and delete the old BinData folder if there is one.
+3. Put the zip in `assets` and unzip it, it should create a BinData folder.
+4. Delete the zip.
+### Building from source
+Make sure Git is installed before running the commands below.
+
 #### Linux
 ```sh
 git clone https://git.xeondev.com/WavyRooms/zigrika
 cd zigrika
 . ./envrc # In case you don't have zig installed, `envrc` can do this for you.
-zig build run-cfgsv &
-zig build run-loginsv &
-zig build run-gamesv
+zig build serve-all
 ```
 #### Windows
 ```sh
-# Assuming you have git installed and are using cmd or powershell.
 git clone https://git.xeondev.com/WavyRooms/zigrika
 cd zigrika
-start start-zigrika.cmd
+.\start-zigrika.cmd
 ```
 
 ### Logging in

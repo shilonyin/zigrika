@@ -33,7 +33,7 @@ fn build_fight_formations(
         }
 
         try fight_formations.append(alloc.arena, .{
-            .FormationId = @intCast(i),
+            .FormationId = @intCast(i + 1),
             .CurRole = fight_formation.cur_role,
             .RoleIds = role_ids,
             .IsCurrent = (i == scene.formation_info.cur_formation),
@@ -84,24 +84,12 @@ pub fn onUpdateFormationRequest(
     const now_ms = (std.Io.Clock.awake).now(io).toMilliseconds();
 
     for (txn.message.Formations.items) |fight_formation| {
-        const formation_id = fight_formation.FormationId - 1;
-        const idx: usize = @intCast(formation_id);
+        const idx: usize = @intCast(fight_formation.FormationId - 1);
         const is_current = fight_formation.IsCurrent;
 
-        if (idx + 1 > scene.formation_info.formations.len) {
-            const old_len = scene.formation_info.formations.len;
-            const new_formations = try alloc.gpa.realloc(scene.formation_info.formations, idx + 1);
-            scene.formation_info.formations = new_formations;
-            for (new_formations[old_len..]) |*f| {
-                f.* = .{ .cur_role = 0, .roles = .{ null, null, null } };
-            }
-        }
-
         if (is_current) {
-            const old_formation_copy = scene.formation_info.formations[@intCast(scene.formation_info.cur_formation)];
-            const old_formation = &old_formation_copy;
-            scene.formation_info.cur_formation = formation_id;
-
+            const old_formation = scene.formation_info.formations[@intCast(scene.formation_info.cur_formation)];
+            scene.formation_info.cur_formation = @intCast(idx);
             const current_formation = &scene.formation_info.formations[idx];
             var roles: [3]?FormationInfo.Formation.Role = .{ null, null, null };
             for (fight_formation.RoleIds.items, 0..) |role_id, i| {
@@ -126,7 +114,7 @@ pub fn onUpdateFormationRequest(
             };
 
             var added_roles: std.ArrayList(i32) = .empty;
-            for (current_formation.*.roles) |maybe_role| {
+            for (current_formation.roles) |maybe_role| {
                 const role = maybe_role orelse continue;
                 const contained_in_old = blk: {
                     for (old_formation.roles) |maybe_old_role| {
@@ -141,7 +129,7 @@ pub fn onUpdateFormationRequest(
             }
 
             var removed_entity_ids: std.ArrayList(i64) = .empty;
-            for (old_formation.*.roles) |maybe_role| {
+            for (old_formation.roles) |maybe_role| {
                 const role = maybe_role orelse continue;
                 const contained_in_current = blk: {
                     for (current_formation.roles) |maybe_cf_role| {
@@ -254,7 +242,7 @@ pub fn onUpdateFormationRequest(
             concom_entity_add_notify.EntityPbs = concom_entity_pbs;
             try txn.conn.push(alloc.gpa, io, concom_entity_add_notify);
 
-            current_formation.*.cur_role = blk: {
+            current_formation.cur_role = blk: {
                 for (current_formation.roles) |maybe_cf_role| {
                     const cf_role = maybe_cf_role orelse continue;
                     if (cf_role.role_id == old_formation.cur_role) break :blk old_formation.cur_role;
@@ -274,7 +262,7 @@ pub fn onUpdateFormationRequest(
                     i -= 1;
                 }
 
-                break :blk current_formation.*.roles[0].?.role_id;
+                break :blk current_formation.roles[0].?.role_id;
             };
 
             var fight_role_infos: std.ArrayList(pb.FightRoleInfo) = .empty;
@@ -340,8 +328,20 @@ pub fn onFormationDataRequest(
 ) !void {
     const fight_formations: std.ArrayList(pb.FightFormation) = try build_fight_formations(alloc, scene);
 
-    const log = std.log.scoped(.formation);
-    log.debug("{any}\n", .{fight_formations});
-
     txn.respond(.{ .Formations = fight_formations });
+}
+
+pub fn onRenameFormationRequest(
+    txn: *Transaction(pb.RenameFormationRequest),
+    events: *EventQueue,
+    alloc: mem.Alloc,
+    fs: *FileSystem,
+    scene: *Scene,
+) !void {
+    const idx: usize = @intCast(txn.message.FormationId - 1);
+    if (idx >= 20) return error.FormationIndexOutOfBounds;
+    scene.formation_info.formations[idx].name = try alloc.gpa.dupe(u8, txn.message.Name);
+    try scene.save(fs, alloc.gpa);
+    try events.enqueue(.update_formations, .{});
+    txn.respond(.{ .ErrorCode = .Success });
 }

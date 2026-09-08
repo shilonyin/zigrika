@@ -6,3 +6,6 @@ proto/pb/*
 # Persistent state
 state/account/
 state/player/
+
+# Large local-only data file (exceeds GitHub 100MB limit; restore from BinData release zip)
+assets/BinData/LevelEntityConfig.json

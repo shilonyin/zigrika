@@ -29,27 +29,24 @@ const lahai_roi_dungeon_id = 906;
 const roulette_slot_count = 8;
 const default_formation_roles = [_]i32{ 1211, 1108, 1506 };
 
-fn ensureValidFormation(gpa: std.mem.Allocator, formation_info: *FormationInfo) !void {
-    if (formation_info.formations.len == 0) {
-        formation_info.formations = try gpa.alloc(FormationInfo.Formation, 1);
-        formation_info.formations[0] = .{
-            .cur_role = default_formation_roles[0],
-            .roles = undefined,
-        };
-        formation_info.cur_formation = 0;
+fn ensureValidFormation(formation_info: *FormationInfo) void {
+    const first = &formation_info.formations[0];
+    const is_empty = for (first.roles) |maybe_role| {
+        if (maybe_role != null) break false;
+    } else true;
 
+    if (is_empty) {
+        first.cur_role = default_formation_roles[0];
         for (default_formation_roles, 0..) |role_id, i| {
-            formation_info.formations[0].roles[i] = .{
+            first.roles[i] = .{
                 .role_id = role_id,
                 .entity_id = -1,
                 .on_stage_without_control = false,
             };
         }
-        return;
-    }
-
-    if (formation_info.cur_formation < 0 or
-        @as(usize, @intCast(formation_info.cur_formation)) >= formation_info.formations.len)
+        formation_info.cur_formation = 0;
+    } else if (formation_info.cur_formation < 0 or
+        formation_info.cur_formation >= 20)
     {
         formation_info.cur_formation = 0;
     }
@@ -321,7 +318,7 @@ pub fn onInitialSceneJoin(
         scene.explore_tools_info.active_motorcycle_skill = 6001;
     }
 
-    try ensureValidFormation(alloc.gpa, &scene.formation_info);
+    ensureValidFormation(&scene.formation_info);
 
     const new_scene_now_ms = (Io.Clock.awake).now(io).toMilliseconds();
     try buff_timers.ensureAllRegistered(alloc.gpa, &scene, assets, new_scene_now_ms);
@@ -449,7 +446,7 @@ pub fn notifyJoinScene(
                     .Yaw = scene_player.rotation[2],
                 },
                 .FightRoleInfos = fight_role_groups,
-                .CurRole = scene.formation_info.formations[@intCast(scene.formation_info.cur_formation)].cur_role,
+                .CurRole = formation.cur_role,
                 .VehiclePlayerData = .{},
                 .PlayerPrefix = 1,
                 .PlayerGEIncHandle = 0,
@@ -511,6 +508,10 @@ pub fn formationUpdateNotify(
     var formations: std.ArrayList(pb.FightFormationNotifyInfo) = .empty;
 
     for (scene.formation_info.formations, 1..) |formation, i| {
+        const has_any_role = for (formation.roles) |maybe_role| {
+            if (maybe_role != null) break true;
+        } else false;
+        if (!has_any_role) continue;
         const id: i32 = @intCast(i);
         var role_infos: std.ArrayList(pb.FormationRoleInfo) = .empty;
 
@@ -554,6 +555,7 @@ pub fn formationUpdateNotify(
                 .MaxHp = role_info.base_prop[@intFromEnum(pb.EAttributeType.LifeMax)],
                 .CurHp = role_info.base_prop[@intFromEnum(pb.EAttributeType.Life)],
                 .Level = role_info.level,
+                .SkillBranchId = role_info.skill_branch,
                 .RoleSkinId = role_info.role_skin_id,
                 .WeaponBreachLevel = weapon_info.breach,
                 .WeaponId = weapon_info.id,
@@ -564,6 +566,7 @@ pub fn formationUpdateNotify(
 
         try formations.append(alloc.arena, pb.FightFormationNotifyInfo{
             .FormationId = id,
+            .Name = formation.name orelse "",
             .CurRole = formation.cur_role,
             .RoleInfos = role_infos,
             .IsCurrent = scene.formation_info.cur_formation == i - 1,
@@ -642,8 +645,6 @@ pub fn afterSceneJoin(
     try conn.push(alloc.gpa, io, pb.JSPatchNotify{ .Content = watermark_js });
 
     const patch_files = [_][]const u8{
-        "assets/scripts/join_scene_patches/goon_camera.js",
-        "assets/scripts/join_scene_patches/camera_bindata.js",
         "assets/scripts/join_scene_patches/censorshipfix.js",
         "assets/scripts/join_scene_patches/debug_disable.js",
         "assets/scripts/join_scene_patches/main_watermask_disable.js",

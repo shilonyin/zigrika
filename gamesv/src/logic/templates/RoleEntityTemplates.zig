@@ -334,7 +334,7 @@ pub fn createRoleEntity(
     const role_info = role_comp.role_map.getPtr(role).?;
 
     const weapon = weapon_comp.weapon_map.get(role_info.weapon) orelse unreachable;
-    var role_base_buffs = try assets.tables.getRoleAutoBuffs(role, weapon, alloc.gpa);
+    var role_base_buffs = try assets.tables.getRoleAutoBuffs(role, weapon, role_info.skill_branch, alloc.gpa);
     defer role_base_buffs.deinit(alloc.gpa);
 
     // resonant chain buffs

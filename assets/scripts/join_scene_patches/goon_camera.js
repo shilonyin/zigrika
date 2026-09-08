@@ -93,7 +93,7 @@ setTimeout(() => {
   const TimerSystem_1 = require("Core/Timer/TimerSystem.js");
   const LocalStorageDefine_1 = require("Game/Common/LocalStorageDefine.js");
   const LocalStorage_1 = require("Game/Common/LocalStorage.js");
-  const MAX_ID = 9;
+  const MAX_ID = 25;
   const {
     PhotographValueSetup,
   } = require("Game/Module/Photograph/View/PhotographValueSetup.js");

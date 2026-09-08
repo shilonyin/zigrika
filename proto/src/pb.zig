@@ -14608,6 +14608,15 @@ pub const UpdateFormationResponse = struct {
     ErrorCode: ?ErrorCode = null,
     Formation: ?FightFormation = null,
 };
+pub const RenameFormationRequest = struct {
+    pub const default: @This() = .{};
+    FormationId: i32 = 0,
+    Name: []const u8 = "",
+};
+pub const RenameFormationResponse = struct {
+    pub const default: @This() = .{};
+    ErrorCode: ?ErrorCode = null,
+};
 pub const PlayerFightFormations = struct {
     pub const default: @This() = .{};
     PlayerId: i32 = 0,

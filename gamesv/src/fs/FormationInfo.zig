@@ -6,11 +6,12 @@ const Allocator = std.mem.Allocator;
 pub const default: FormationInfo = .{};
 
 cur_formation: i32 = 0,
-formations: []Formation = &.{},
+formations: [20]Formation = @splat(.{}),
 
 pub const Formation = struct {
-    cur_role: i32,
-    roles: [3]?Role,
+    cur_role: i32 = 0,
+    name: ?[]const u8 = null,
+    roles: [3]?Role = .{ null, null, null },
 
     pub const Role = struct {
         role_id: i32,

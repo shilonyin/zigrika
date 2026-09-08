@@ -76,7 +76,7 @@ setTimeout(() => {
     ),
   );
 
-  const MAX_ID = 9;
+  const MAX_ID = 25;
 
   const make_photo_setup = (buf) =>
     PhotoSetup.getRootAsPhotoSetup(new ByteBuffer(buf));

@@ -23,7 +23,7 @@ pub fn pushData(
     var iterator = role_comp.role_map.iterator();
 
     while (iterator.next()) |role| {
-        try role_notify.RoleConfigs.append(alloc.arena, pb.RoleConfigInfo{ .RoleId = role.key_ptr.*, .SkillBranch = 0 });
+        try role_notify.RoleConfigs.append(alloc.arena, pb.RoleConfigInfo{ .RoleId = role.key_ptr.*, .SkillBranch = role.value_ptr.skill_branch });
     }
 
     try conn.push(alloc.gpa, io, role_notify);

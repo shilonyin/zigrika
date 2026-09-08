@@ -146,7 +146,7 @@ pub fn buildRoleTags(
     errdefer tags.deinit(gpa);
 
     const weapon = weapon_comp.weapon_map.get(role_info.weapon) orelse return tags;
-    var buffs = try assets.tables.getRoleAutoBuffs(role_id, weapon, gpa);
+    var buffs = try assets.tables.getRoleAutoBuffs(role_id, weapon, role_info.skill_branch, gpa);
     defer buffs.deinit(gpa);
 
     for (buffs.items) |entry| {

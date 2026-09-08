@@ -7673,6 +7673,15 @@ pub const UpdateFormationResponse = struct {
     pub const ErrorCode_field_number: u32 = 1;
     pub const Formation_field_number: u32 = 8;
 };
+pub const RenameFormationRequest = struct {
+    pub const msg_id: u16 = 24542;
+    pub const FormationId_field_number: u32 = 7;
+    pub const Name_field_number: u32 = 14;
+};
+pub const RenameFormationResponse = struct {
+    pub const msg_id: u16 = 17954;
+    pub const ErrorCode_field_number: u32 = 4;
+};
 pub const PlayerFightFormations = struct {
     pub const PlayerId_field_number: u32 = 1;
     pub const Formations_field_number: u32 = 2;

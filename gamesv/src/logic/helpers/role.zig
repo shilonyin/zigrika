@@ -100,7 +100,7 @@ fn replaceFormationRole(scene: *Scene, source_role_id: i32, target_role_id: i32)
     if (source_role_id == target_role_id) return false;
 
     var changed = false;
-    for (scene.formation_info.formations) |*formation| {
+    for (&scene.formation_info.formations) |*formation| {
         if (formation.cur_role == source_role_id) {
             formation.cur_role = target_role_id;
             changed = true;

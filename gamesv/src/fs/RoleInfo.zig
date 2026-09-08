@@ -13,6 +13,7 @@ level: i32 = 1,
 exp: i32 = 0,
 breakthrough: i32 = 0,
 skills: ArrayIntInt = &.{},
+skill_branch: i32 = 0,
 phantom: ArrayIntInt = &.{},
 weapon: i32 = 0,
 star: i32 = 0,
@@ -265,6 +266,7 @@ pub fn createDefault(gpa: Allocator, assets: *const Assets, id: i32) !RoleInfo {
     var role: RoleInfo = .{
         .level = info.MaxLevel,
         .breakthrough = 6,
+        .skill_branch = info.DefaultSkillBranchId,
         .role_skin_id = info.SkinId,
     };
     errdefer role.deinit(gpa);

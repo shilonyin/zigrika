@@ -805,3 +805,71 @@ pub fn onResonantChainUnlockRequest(
         .ResonantChainGroupIndex = role.resonant_chain_group_index,
     });
 }
+
+pub fn onRoleSkillBranchModifyRequest(
+    txn: *Transaction(pb.RoleSkillBranchModifyRequest),
+    alloc: mem.Alloc,
+    assets: *const Assets,
+    events: *EventQueue,
+    role_comp: *PlayerRoleComponent,
+    query: Scene.Query(&.{
+        Scene.Entity,
+        *Scene.Entity.ConfigComponent,
+    }),
+) !void {
+    if (role_comp.role_map.getPtr(txn.message.RoleId)) |role| {
+        const prev_skill_branch = role.skill_branch;
+
+        if (assets.tables.skill_branch_buff.getDataById(prev_skill_branch)) |prev_branch_data| {
+            var entity_handle: ?Scene.Entity = null;
+            var it = query.iterator;
+            while (it.next()) |item| {
+                const entity, const config = item;
+                if (config.config_id == txn.message.RoleId) {
+                    entity_handle = entity;
+                    break;
+                }
+            }
+
+            if (entity_handle) |handle| {
+                for (prev_branch_data.Buffs) |buff_id| {
+                    try events.enqueue(.buff_removal_by_id, .{
+                        .entity = handle,
+                        .buff_id = buff_id,
+                    });
+                }
+
+                if (assets.tables.skill_branch_buff.getDataById(txn.message.SkillBranch)) |new_branch_data| {
+                    var add_buffs: std.ArrayList(Events.BuffAdditionEntry) = .empty;
+                    for (new_branch_data.Buffs) |buff_id| {
+                        try add_buffs.append(alloc.arena, .{
+                            .id = buff_id,
+                            .is_active = true,
+                            .stack_count = 1,
+                        });
+                    }
+                    try events.enqueue(.buff_addition, .{
+                        .target = handle,
+                        .instigator = handle,
+                        .buffs = add_buffs.items,
+                    });
+                } else {
+                    txn.respond(.{ .ErrorCode = .ErrSkillBranchNotValid });
+                    return;
+                }
+            }
+        } else {
+            txn.respond(.{ .ErrorCode = .ErrSkillBranchNotValid });
+            return;
+        }
+
+        role.*.skill_branch = txn.message.SkillBranch;
+        try events.enqueue(.role_info_modified, .{ .role_id = txn.message.RoleId });
+        try events.enqueue(.update_formations, .{});
+    } else {
+        txn.respond(.{ .ErrorCode = .ErrSkillBranchRoleValid });
+        return;
+    }
+
+    txn.respond(.{ .ErrorCode = .Success });
+}

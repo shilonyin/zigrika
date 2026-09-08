@@ -384,10 +384,24 @@ pub fn getMotorcycleConfigId(tables: *const DataTables) ?i32 {
 
 const BuffAdditionEntry = @import("../logic/events.zig").BuffAdditionEntry;
 
+fn is_active_cond(buff: Buff) bool {
+    // is_buff_active check from wicked
+    return buff.ModifierMagnitude.len == 0 and
+        buff.BuffAction.len == 0 and
+        buff.OngoingTagRequirements.len == 0 and
+        buff.OngoingTagIgnores.len == 0 and
+        buff.RemovalTagRequirements.len == 0 and
+        buff.RemovalTagIgnores.len == 0 and
+        buff.ApplicationSourceTagIgnores.len == 0 and
+        buff.ApplicationTagIgnores.len == 0 and
+        buff.ExtraEffectRequirements.len == 0;
+}
+
 pub fn getRoleAutoBuffs(
     tables: *const DataTables,
     role_id: i32,
     weapon: WeaponItem,
+    skill_branch: i32,
     gpa: Allocator,
 ) !std.ArrayListUnmanaged(BuffAdditionEntry) {
     const logger = std.log.scoped(.autobuff);
@@ -438,18 +452,14 @@ pub fn getRoleAutoBuffs(
 
             for (init_info.FightBuffs) |buff_id| {
                 const buff = tables.buff.getDataById(buff_id) orelse continue;
-                const is_active =
-                    buff.ModifierMagnitude.len == 0 and
-                    buff.BuffAction.len == 0 and
-                    buff.OngoingTagRequirements.len == 0 and
-                    buff.OngoingTagIgnores.len == 0 and
-                    buff.RemovalTagRequirements.len == 0 and
-                    buff.RemovalTagIgnores.len == 0 and
-                    buff.ApplicationSourceTagIgnores.len == 0 and
-                    buff.ApplicationTagIgnores.len == 0 and
-                    buff.ExtraEffectRequirements.len == 0;
+                try results.append(gpa, .{ .id = buff_id, .is_active = is_active_cond(buff) });
+            }
+        }
 
-                try results.append(gpa, .{ .id = buff_id, .is_active = is_active });
+        if (init_info.AdditionalFightBuffs) |add_role_buffs| {
+            for (add_role_buffs) |buff_id| {
+                const buff = tables.buff.getDataById(buff_id) orelse continue;
+                try results.append(gpa, .{ .id = buff_id, .is_active = is_active_cond(buff) });
             }
         }
     }
@@ -500,43 +510,9 @@ pub fn getRoleAutoBuffs(
                 if (!valid) continue;
             }
 
-            // is_buff_active check from wicked
-            const is_active =
-                buff.ModifierMagnitude.len == 0 and
-                buff.BuffAction.len == 0 and
-                buff.OngoingTagRequirements.len == 0 and
-                buff.OngoingTagIgnores.len == 0 and
-                buff.RemovalTagRequirements.len == 0 and
-                buff.RemovalTagIgnores.len == 0 and
-                buff.ApplicationSourceTagIgnores.len == 0 and
-                buff.ApplicationTagIgnores.len == 0 and
-                buff.ExtraEffectRequirements.len == 0;
-
-            try results.append(gpa, .{ .id = buff.Id, .is_active = is_active });
+            try results.append(gpa, .{ .id = buff.Id, .is_active = is_active_cond(buff.*) });
         }
     }
-
-    for (additional_buffs) |id| {
-        try results.append(gpa, .{ .id = id, .is_active = true });
-    }
-
-    if (tables.main_role_config.getDataById(role_id)) |main_role| {
-        if (mainRoleTagBuffId(main_role.Gender)) |tag_buff_id| {
-            try results.append(gpa, .{ .id = tag_buff_id, .is_active = true });
-        }
-    }
-
-    if (std.mem.findScalar(i32, ConcertoExceptions, role_id) == null) {
-        try results.append(gpa, .{ .id = 1101002011, .is_active = true });
-    }
-
-    for (reson_conf.Effect) |id| {
-        try results.append(gpa, .{ .id = id, .is_active = true });
-    }
-
-    try results.append(gpa, .{ .id = 1101007999 + role_info.ElementId, .is_active = true });
-    try results.append(gpa, .{ .id = 1001001015 + (role_info.ElementId * 2), .is_active = true });
-    try results.append(gpa, .{ .id = 3080 + role_info.ElementId, .is_active = true });
 
     if (do_autobuff) {
         var illegal_ids: std.AutoHashMapUnmanaged(i64, void) = .empty;
@@ -599,6 +575,14 @@ pub fn getRoleAutoBuffs(
             }
         }
 
+        // skill branch buffs
+        for (tables.skill_branch_buff.items) |branch_data| {
+            if (branch_data.RoleId != role_id) continue;
+            for (branch_data.Buffs) |buff_id| {
+                try illegal_ids.put(gpa, buff_id, {});
+            }
+        }
+
         if (illegal_ids.count() > 0) {
             var i: usize = 0;
             while (i < results.items.len) {
@@ -610,6 +594,35 @@ pub fn getRoleAutoBuffs(
             }
         }
     }
+
+    for (additional_buffs) |id| {
+        try results.append(gpa, .{ .id = id, .is_active = true });
+    }
+
+    if (tables.skill_branch_buff.getDataById(skill_branch)) |branch_data| {
+        for (branch_data.Buffs) |buff_id| {
+            try results.append(gpa, .{ .id = buff_id, .is_active = true });
+        }
+    }
+
+    if (tables.main_role_config.getDataById(role_id)) |main_role| {
+        if (mainRoleTagBuffId(main_role.Gender)) |tag_buff_id| {
+            try results.append(gpa, .{ .id = tag_buff_id, .is_active = true });
+        }
+    }
+
+    if (std.mem.findScalar(i32, ConcertoExceptions, role_id) == null) {
+        try results.append(gpa, .{ .id = 1101002011, .is_active = true });
+    }
+
+    for (reson_conf.Effect) |id| {
+        try results.append(gpa, .{ .id = id, .is_active = true });
+    }
+
+    try results.append(gpa, .{ .id = 1101007999 + role_info.ElementId, .is_active = true });
+    try results.append(gpa, .{ .id = 1001001015 + (role_info.ElementId * 2), .is_active = true });
+    try results.append(gpa, .{ .id = 3080 + role_info.ElementId, .is_active = true });
+
     logger.info("autobuff results for: {d}, {any}", .{ role_id, results.items });
 
     return results;
